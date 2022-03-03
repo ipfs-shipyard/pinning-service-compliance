@@ -1,0 +1,120 @@
+{
+  "name": "@ipfs-shipyard/pinning-service-compliance",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Russell Dempsey <1173416+SgtPooki@users.noreply.github.com>",
+  "license": "Apache-2.0 OR MIT",
+  "homepage": "https://github.com/ipfs-shipyard/pinning-service-compliance#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipfs-shipyard/pinning-service-compliance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ipfs-shipyard/pinning-service-compliance/issues"
+  },
+  "keywords": [
+    "ipfs"
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "eslintConfig": {
+    "extends": "ipfs"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "conventionalcommits",
+          "releaseRules": [
+            {
+              "breaking": true,
+              "release": "major"
+            },
+            {
+              "revert": true,
+              "release": "patch"
+            },
+            {
+              "type": "feat",
+              "release": "minor"
+            },
+            {
+              "type": "fix",
+              "release": "patch"
+            },
+            {
+              "type": "chore",
+              "release": "patch"
+            },
+            {
+              "type": "docs",
+              "release": "patch"
+            },
+            {
+              "type": "test",
+              "release": "patch"
+            },
+            {
+              "scope": "no-release",
+              "release": false
+            }
+          ]
+        }
+      ],
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "preset": "conventionalcommits",
+          "presetConfig": {
+            "types": [
+              {
+                "type": "feat",
+                "section": "Features"
+              },
+              {
+                "type": "fix",
+                "section": "Bug Fixes"
+              },
+              {
+                "type": "chore",
+                "section": "Trivial Changes"
+              },
+              {
+                "type": "docs",
+                "section": "Trivial Changes"
+              },
+              {
+                "type": "test",
+                "section": "Tests"
+              }
+            ]
+          }
+        }
+      ],
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      "@semantic-release/git"
+    ]
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "aegir": "^36.1.3",
+    "check-aegir-project": "^1.1.1",
+    "typescript": "^4.4.4"
+  }
+}
