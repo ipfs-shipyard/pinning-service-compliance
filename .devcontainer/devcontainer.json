@@ -12,23 +12,25 @@
       "VARIANT": "16-bullseye"
     }
   },
-
   // Set *default* container specific settings.json values on container create.
   "settings": {},
-
-
   // Add the IDs of extensions you want installed when the container is created.
   "extensions": [
     "dbaeumer.vscode-eslint"
   ],
-
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
-
   // Use 'postCreateCommand' to run commands after the container is created.
   // "postCreateCommand": "yarn install",
-
   // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "node",
-  "mounts": ["source=${localWorkspaceFolder}/../pinning-service-client,target=/workspaces/pinning-service-client,type=bind,consistency=cached"]
+  "mounts": [
+    "source=${localWorkspaceFolder}/../pinning-service-client,target=/workspaces/pinning-service-client,type=bind,consistency=cached"
+  ],
+  "containerEnv": {
+  },
+  "remoteEnv": {
+    "PATH": "${containerWorkspaceFolder}/node_modules/.bin:${containerEnv:PATH}",
+  },
+  // "runArgs": ["--env-file",".devcontainer/devcontainer.env"]
 }
