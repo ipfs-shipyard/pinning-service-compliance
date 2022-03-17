@@ -1,13 +1,23 @@
-import { PinResults, Status, PinsGetRequest } from '@ipfs-shipyard/pinning-service-client'
-import {clientFromServiceAndTokenPair} from './clientFromServiceAndTokenPair'
-const validatePinningService = async (pair: ServiceAndTokenPair) => {
+/* eslint-disable no-console */
+import { clientFromServiceAndTokenPair } from './clientFromServiceAndTokenPair'
+import { Check, CheckRunner } from './checks'
 
-  const pinsGetOptions: PinsGetRequest = {
-    limit: 10,
-    status: new Set([Status.Failed])
-  }
+const validatePinningService = async (pair: ServiceAndTokenPair) => {
   const client = clientFromServiceAndTokenPair(pair)
-  const { count, results }: PinResults = await client.pinsGet(pinsGetOptions)
+
+  const checks: Check[] = [
+    new Check(client, 'pinsGet'),
+    new Check(client, 'pinsPost', {
+      pin: {
+        cid: 'bafybeibwzifw52ttrkqlikfzext5akxu7lz4xiwjgwzmqcpdzmp3n5vnbe' // 1x1.png
+      }
+
+    })
+  ]
+
+  const runner = new CheckRunner(checks)
+
+  await runner.run()
 }
 
 export { validatePinningService }

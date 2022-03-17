@@ -25,7 +25,14 @@
   // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "node",
   "mounts": [
-    "source=${localWorkspaceFolder}/../pinning-service-client,target=/workspaces/pinning-service-client,type=bind,consistency=cached"
+    // "source=${localWorkspaceFolder}/../pinning-service-client,target=/workspaces/pinning-service-client,type=volume,consistency=cached",
+    "source=pinning-service-compliance,target=/workspace,type=volume"
+  ],
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": [
+    "sudo git clone https://github.com/ipfs-shipyard/js-pinning-service-http-client.git /workspaces/js-pinning-service-http-client",
+    // "sudo chown -R node:node /workspaces/js-pinning-service-http-client",
+    // "cd /workspace/pinning-service-compliance && npm link ../js-pinning-service-http-client"
   ],
   "containerEnv": {
   },
