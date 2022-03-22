@@ -24,12 +24,15 @@ const stringifyHeaders = (headers?: Headers | HeadersInit) => {
     })
   } else {
     const headersInit = headers as Record<string, string>
-    for (const key in headersInit) {
-      if (Object.prototype.isPrototypeOf.call(headersInit, key)) {
-        const val = headersInit[key]
-        headerString = `${headerString}${key}:${val};`
+    console.log('headersInit: ', headersInit)
+    Object.keys(headersInit).forEach((key) => {
+      let val = headersInit[key]
+      if (/authorization/i.test(key)) {
+        // Authorization: <auth-scheme> <authorization-parameters>
+        val = `${val.split(' ')[0]} REDACTED`
       }
-    }
+      headerString = `${headerString}${key}:${val};`
+    })
   }
   return headerString
 }
