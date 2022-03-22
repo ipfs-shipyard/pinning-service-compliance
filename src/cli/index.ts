@@ -20,13 +20,13 @@ const main = async () => {
   // for (let i = 0; i < pinningServicePairs.length; i += 2) {
   //   const [service, key] = pinningServicePairs.slice(i, i + 2)
   for await (const [service, key] of argv.serviceAndToken as ServiceAndTokenPairCollection) {
-    console.log(service, key)
+    // console.log(service, key)
     try {
       await validatePinningService([service, key])
       // console.log('result: ', result)
     } catch (err) {
-      console.error('could not validate pinning service')
-      console.error(err)
+      // console.error('could not validate pinning service')
+      // console.error(err)
     }
   }
   // console.log(argv)

@@ -20,7 +20,7 @@ class Check<T extends ImplementableMethods & string = ImplementableMethods & str
   // abstract method: T
 
   // args: Parameters<PinsApi[T]>[0]
-  constructor (protected readonly client: PinsApi, protected readonly method: T, protected readonly args?: Parameters<PinsApi[T]>[0]) {
+  constructor (protected readonly client: PinsApi, protected readonly method: T, protected readonly args: Exclude<Parameters<PinsApi[T]>[0], undefined>) {
     this.task = this.task.bind(this)
   }
 
