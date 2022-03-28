@@ -1,66 +1,61 @@
-/* eslint-disable @typescript-eslint/restrict-template-expressions */
-/* eslint-disable no-console */
-import type { PinsApi } from '@ipfs-shipyard/pinning-service-client'
-import type { ListrTaskObject } from 'listr'
+import type { Schema, ValidationResult } from '@hapi/joi'
+import type { RemotePinningServiceClient, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
+import { clientFromServiceAndTokenPair } from '../clientFromServiceAndTokenPair'
+import { renderComplianceCheckResults } from '../output/renderComplianceCheckResults'
+import { buildComplianceCheckDetails } from '../utils/buildComplianceCheckDetails'
 
-type ImplementableMethods = keyof Omit<PinsApi, 'withMiddleware' | 'withPreMiddleware' | 'withPostMiddleware'>
-type PinsApiMethod<T extends ImplementableMethods = ImplementableMethods> = PinsApi[T] extends never ? never : T
+// type ImplementableMethods = keyof Omit<PinsApi, 'withMiddleware' | 'withPreMiddleware' | 'withPostMiddleware'>
 
-// const method: PinsApiMethod = 'pinsGet'
-
-// console.log(method)
-/**
- * An abstract representation of a single compliance check
- *
- * Every compliance check should extend from this class
- */
-class Check<T extends ImplementableMethods & string = ImplementableMethods & string> {
-  // protected readonly client: PinsApi
-
-  // abstract method: T
-
-  // args: Parameters<PinsApi[T]>[0]
-  constructor (protected readonly client: PinsApi, protected readonly method: T, protected readonly args: Exclude<Parameters<PinsApi[T]>[0], undefined>) {
-    this.task = this.task.bind(this)
-  }
-
-  get apiMethod () {
-    return this.client[this.method]
-  }
-
-  get title () {
-    return this.method
-  }
-
-  // public get task
-
+interface ComplianceCheckOptions<T> {
   /**
-   * The primary method called when testing compliance of an IPFS Pinning Service implementation
+   * The title of the compliance check
    */
-  public async task (ctx: any, task: ListrTaskObject<any>): Promise<ReturnType<PinsApi[T]>> {
-    // console.log('this.apiMethod: ', this.apiMethod)
-    // console.log('this.client[this.method]: ', this.client[this.method])
+  title: string
+  pair: ServiceAndTokenPair
+  runCheck: (details: ComplianceCheckDetailsCallbackArg & {result: T|null}) => Promise<boolean>
+  apiCall: (client: RemotePinningServiceClient) => Promise<T>
+  schema?: Schema
+}
 
-    try {
-      const response = await this.client[this.method](this.args)
-      task.title = `${task.title} - SUCCESS`
-      return response
-    } catch (err: any) {
-      task.title = `${task.title} - ERROR: ${err?.message ?? ''}`
-      console.log('err: ', err)
-      // task.hasFailed()
-      console.log('task', task)
-      // process.stdout.write('task:')
-      // process.stdout.write(JSON.stringify(Object.keys(task)))
-      await task.skip('FAILED')
+const Check = async <T>({ pair, runCheck, apiCall, title, schema }: ComplianceCheckOptions<T>) => {
+  let details: ComplianceCheckDetailsCallbackArg | ResponseContext | undefined
+  const getDetails: ComplianceCheckDetailsCallback = async (d) => {
+    details = d
+  }
+  const client = clientFromServiceAndTokenPair(pair, getDetails)
+
+  let result: T | null = null
+  let validationResult: ValidationResult | null = null
+  try {
+    result = await apiCall(client)
+    if (schema != null) {
+      validationResult = schema.validate(result)
+    }
+  } catch (err) {
+    // ignore thrown errors. They should be handled by the provided `runCheck` function
+  }
+
+  if (details == null) {
+    // console.error('details is null')
+    throw new Error('The details object was not set in the middleware')
+  } else {
+    let successful = await runCheck({
+      result,
+      ...details as ComplianceCheckDetailsCallbackArg
+    })
+    if (validationResult != null) {
+      if (validationResult.error != null || validationResult.errors != null) {
+        successful = false
+      }
     }
 
-    // if (!response.ok) { return response }
-    // .catch(() => {
-    //   // no-op
-    // }).finally(() => {
-    //   // done
-    // })
+    renderComplianceCheckResults(buildComplianceCheckDetails({
+      title,
+      details,
+      successful,
+      result,
+      validationResult: validationResult as ValidationResult
+    }))
   }
 }
 

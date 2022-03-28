@@ -1,17 +1,34 @@
 /* eslint-disable no-console */
-import { PinsApi, Configuration } from '@ipfs-shipyard/pinning-service-client'
+import { RemotePinningServiceClient, Configuration } from '@ipfs-shipyard/pinning-service-client'
 import { requestResponseLogger } from './middleware/requestReponseLogger'
+import fetchPonyfill from 'fetch-ponyfill'
 
-function clientFromServiceAndTokenPair ([basePath, accessToken]: ServiceAndTokenPair) {
+const { fetch } = fetchPonyfill()
+
+const fetchWrapper = async (input: RequestInfo, init?: RequestInit | undefined): Promise<Response> => {
+  try {
+    console.log('init: ', init)
+    console.log('input: ', input)
+    const result = await fetch(input, init)
+    console.log('result: ', result)
+    return result
+  } catch (err) {
+    console.log('err: ', err)
+    console.error('error in fetch wrapper')
+    console.error(err)
+    return err as Response
+  }
+}
+function clientFromServiceAndTokenPair ([endpointUrl, accessToken]: ServiceAndTokenPair, callback: ComplianceCheckDetailsCallback): RemotePinningServiceClient {
   const config = new Configuration({
-    basePath,
+    endpointUrl,
     accessToken,
     middleware: [
-      requestResponseLogger
+      requestResponseLogger(callback)
     ]
   })
 
-  return new PinsApi(config)
+  return new RemotePinningServiceClient(config)
 }
 
-export { clientFromServiceAndTokenPair }
+export { clientFromServiceAndTokenPair, fetchWrapper }

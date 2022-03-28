@@ -1,14 +1,17 @@
 {
   "extends": "aegir/src/config/tsconfig.aegir.json",
   "compilerOptions": {
+    // "module": "ES2020",
+    "moduleResolution": "Node",
     "outDir": "dist",
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
       "*": [
         "./types/*"
       ]
     },
-    "types": ["@ipfs-shipyard/pinning-service-client", "node"]
+    "types": ["@ipfs-shipyard/pinning-service-client", "node"],
+    "allowSyntheticDefaultImports": true,
   },
   "include": [
     "types",
@@ -18,6 +21,10 @@
     "generated/*.json"
   ],
   "ts-node": {
-      "transpileOnly": true
+      "transpileOnly": true,
+      "compilerOptions": {
+        // "module": "ES2020",
+    // "moduleResolution": "Node",
+      }
   }
 }
