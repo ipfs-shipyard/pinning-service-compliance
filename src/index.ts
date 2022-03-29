@@ -2,7 +2,7 @@
 
 import chalk from 'chalk'
 
-import { getAllPins, checkEmptyBearerToken, checkInvalidBearerToken } from './checks'
+import { getAllPins, checkEmptyBearerToken, checkInvalidBearerToken, addPin } from './checks'
 import { getFormatter } from './output/formatter'
 
 const formatter = getFormatter({
@@ -15,6 +15,7 @@ const validatePinningService = async (pair: ServiceAndTokenPair) => {
     await checkEmptyBearerToken(pair)
     await checkInvalidBearerToken(pair)
     await getAllPins(pair)
+    await addPin(pair)
   } catch (err) {
     console.error('problem running a compliance check')
     console.error(err)
