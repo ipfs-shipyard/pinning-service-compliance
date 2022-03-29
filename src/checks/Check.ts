@@ -36,7 +36,6 @@ const Check = async <T>({ pair, runCheck, apiCall, title, schema }: ComplianceCh
   }
 
   if (details == null) {
-    // console.error('details is null')
     throw new Error('The details object was not set in the middleware')
   } else {
     let successful = await runCheck({

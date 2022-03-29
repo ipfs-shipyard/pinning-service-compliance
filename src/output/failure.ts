@@ -20,11 +20,6 @@ const failure = (details: ComplianceCheckDetails) => {
     joiValidationFailures = ''
 
     errors.details.forEach((errorItem) => {
-      // let context = ''
-      // if (errorItem.context != null) {
-      //   context = `\`\`\`${JSON.stringify(errorItem.context)}\`\`\``
-      // }
-      // const path = errorItem.path.join('.')
       joiValidationFailures = `${joiValidationFailures}
 * ${errorItem.message}
 `

@@ -27,7 +27,6 @@ interface ComplianceCheckDetails {
   method: string
   title: string
   successful: boolean
-  failureDetails?: string // not needed??
   validationResult?: ValidationResult
   request: ComplianceCheckRequest
   response: ComplianceCheckResponse

@@ -10,20 +10,12 @@ interface BuildComplianceCheckDetailsOptions {
 }
 const buildComplianceCheckDetails = ({ details, title, successful, validationResult, result }: BuildComplianceCheckDetailsOptions): ComplianceCheckDetails => {
   const { response, url, init } = details
-  // let failureDetails = ''
 
-  // if (validationResult.errors != null) {
-  //   failureDetails += '###'
-  //   validationResult.errors.details.forEach((errorItem) => {
-  //     failureDetails
-  //   })
-  // }
   return {
     title,
     url,
     method: details.init.method ?? 'Unknown',
     successful,
-    // failureDetails,
     validationResult,
     result,
     request: {
