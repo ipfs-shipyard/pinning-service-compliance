@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import type { Schema, ValidationResult } from '@hapi/joi'
 import type { RemotePinningServiceClient, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
 import { clientFromServiceAndTokenPair } from '../clientFromServiceAndTokenPair'
@@ -32,7 +33,11 @@ const Check = async <T>({ pair, runCheck, apiCall, title, schema }: ComplianceCh
       validationResult = schema.validate(result)
     }
   } catch (err) {
-    // ignore thrown errors. They should be handled by the provided `runCheck` function
+    console.error('You must catch any errors within your Check implementation')
+    console.error(err)
+
+    // They should be handled by the provided `runCheck` function
+    throw err
   }
 
   if (details == null) {

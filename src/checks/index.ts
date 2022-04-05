@@ -1,6 +1,6 @@
 
 export * from './Check'
-export * from './auth/checkEmptyBearerToken'
-export * from './auth/checkInvalidBearerToken'
-export * from './get/getAllPins'
-export * from './add/addPin'
+export * from './add'
+export * from './auth'
+export * from './delete'
+export * from './get'
