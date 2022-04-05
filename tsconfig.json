@@ -20,6 +20,9 @@
     "src/global.d.ts",
     "generated/*.json"
   ],
+  "exclude": [
+    "node_modules"
+  ],
   "ts-node": {
       "transpileOnly": true,
       "compilerOptions": {

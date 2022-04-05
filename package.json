@@ -146,10 +146,21 @@
     "listr": "^0.14.3",
     "listr2": "^4.0.5",
     "oas2joi": "^2.0.2",
+    "p-queue": "^6.6.0",
     "yargs": "^17.3.1"
   },
   "aegir": {
-    "tsRepo": true
+    "docs": {
+      "publish": true,
+      "entryPoint": "./"
+    },
+    "tsRepo": true,
+    "build": {
+      "config": {
+        "platform": "node"
+      },
+      "bundlesizeMax": "44KB"
+    }
   },
   "todo": [
     "test happy paths for each method in the spec: 1 for each right now"

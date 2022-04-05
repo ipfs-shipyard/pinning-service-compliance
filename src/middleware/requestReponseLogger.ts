@@ -5,21 +5,43 @@ const requestResponseLogger: (callback: ComplianceCheckDetailsCallback) => Middl
 
   post: async (context) => {
     const { response } = context
+    console.log('response: ', response)
+    let normalizedResult: any = {
+      url: context.url,
+      init: context.init,
+      fetch: context.fetch
+    }
     try {
       // eslint-disable-next-line node/no-callback-literal
-      await callback({
+      const json = await response.clone().json()
+      let text = await response.clone().text()
+      let body = await response.clone().body?.toString() ?? null
+
+      // Attempt to address https://github.com/web3-storage/web3.storage/issues/1221
+      if (context.url.includes('/pins?')) {
+        json.results = json.results.map((pin) => ({
+          ...pin,
+          requestid: pin.requestid ?? pin.requestId
+        }))
+        body = text = JSON.stringify(json)
+      }
+
+      normalizedResult = {
         ...context,
         response: {
           ...response,
-          json: await response.clone().json(),
-          body: await response.clone().body?.toString() ?? null,
-          text: await response.clone().text(),
+          json,
+          body,
+          text,
           headers: response.headers,
           status: response.status,
           statusText: response.statusText,
           ok: response.ok
         }
-      })
+      }
+      console.log('normalizedResult: ', normalizedResult)
+      await callback(normalizedResult)
+      return normalizedResult.response
     } catch (err) {
       console.error('error in callback provided to the middleware')
       console.error(err)
