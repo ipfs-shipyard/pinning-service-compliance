@@ -1,50 +1,91 @@
 /* eslint-disable no-console */
-import type { Middleware } from '@ipfs-shipyard/pinning-service-client'
+import type { Middleware, RequestContext } from '@ipfs-shipyard/pinning-service-client'
+import { URL } from 'url'
+import { waitForDate } from '../utils/waitForDate'
 
-const requestResponseLogger: (callback: ComplianceCheckDetailsCallback) => Middleware = (callback) => ({
+const getHostnameFromContext = (context: RequestContext | ResponseContext) => {
+  const { hostname } = new URL(context.url)
+  return hostname
+}
+const requestResponseLogger: (callback: ComplianceCheckDetailsCallback) => Middleware = (callback) => {
+  const rateLimitHandlers: Map<string, Array<Promise<void>>> = new Map()
+  return ({
+    pre: async (context) => {
+      const hostname = getHostnameFromContext(context)
+      if (rateLimitHandlers.has(hostname)) {
+        const promises = rateLimitHandlers.get(hostname) as Array<Promise<void>>
+        if (promises.length > 0) {
+          await Promise.all(promises)
+          rateLimitHandlers.set(hostname, [])
+        }
+      } else {
+        rateLimitHandlers.set(hostname, [])
+      }
 
-  post: async (context) => {
-    const { response } = context
-    let normalizedResult: any = {
-      url: context.url,
-      init: context.init,
-      fetch: context.fetch
-    }
-    try {
-      // eslint-disable-next-line node/no-callback-literal
-      const json = await response.clone().json()
-      const text = await response.clone().text()
-      const body = await response.clone().body?.toString() ?? null
+      return context
+    },
 
-      // Attempt to address https://github.com/web3-storage/web3.storage/issues/1221
-      // if (context.url.includes('/pins?')) {
-      //   json.results = json.results.map((pin) => ({
-      //     ...pin,
-      //     requestid: pin.requestid ?? pin.requestId
-      //   }))
-      //   body = text = JSON.stringify(json)
-      // }
-
-      normalizedResult = {
-        ...context,
-        response: {
-          ...response,
-          json,
-          body,
-          text,
-          headers: response.headers,
-          status: response.status,
-          statusText: response.statusText,
-          ok: response.ok
+    post: async (context) => {
+      const { response } = context
+      const errors: Error[] = []
+      let json: any = {}
+      try {
+        json = await response.clone().json()
+      } catch (err) {
+        errors.push(err as Error)
+      }
+      let text: string = ''
+      try {
+        text = await response.clone().text()
+      } catch (err) {
+        errors.push(err as Error)
+      }
+      let body: string | null = ''
+      try {
+        body = response.clone().body?.toString() ?? null
+      } catch (err) {
+        errors.push(err as Error)
+      }
+      const hostname = getHostnameFromContext(context)
+      if (response.headers.has('x-ratelimit-reset') && response.headers.has('x-ratelimit-remaining')) {
+        const rateLimitReset = Number(response.headers.get('x-ratelimit-reset') as string)
+        const dateOfReset = new Date(rateLimitReset * 1000)
+        const rateLimit = Number(response.headers.get('x-ratelimit-limit') as string)
+        const rateRemaining = Number(response.headers.get('x-ratelimit-remaining') as string)
+        console.log(`${hostname}: Rate limit is ${rateLimit} and we have ${rateRemaining} tokens remaining.`)
+        if (rateRemaining === 0) {
+          console.log(`No rate tokens remaining.. we need to wait until ${dateOfReset.toString()}`)
+          const promises = rateLimitHandlers.get(hostname) as Array<Promise<void>>
+          promises.push(waitForDate(dateOfReset))
+          // await
         }
       }
-      await callback(normalizedResult)
-    } catch (err) {
-      console.error('error in callback provided to the middleware')
-      console.error(err)
+      try {
+        const normalizedResult: ComplianceCheckDetailsCallbackArg = {
+          ...context,
+          url: context.url,
+          init: context.init,
+          fetch: context.fetch,
+          errors,
+          response: {
+            ...response,
+            json,
+            body,
+            text,
+            headers: response.headers,
+            status: response.status,
+            statusText: response.statusText,
+            ok: response.ok
+          }
+        }
+        await callback(normalizedResult)
+      } catch (err) {
+        console.error('error in callback provided to the middleware')
+        console.error(err)
+      }
+      return response
     }
-    return response
-  }
-})
+  })
+}
 
 export { requestResponseLogger }
