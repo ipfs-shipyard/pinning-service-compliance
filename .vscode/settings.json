@@ -9,5 +9,9 @@
     "javascript.preferences.importModuleSpecifier": "relative",
     "typescript.preferences.importModuleSpecifier": "relative",
     "javascript.preferences.importModuleSpecifierEnding": "minimal",
-    "typescript.preferences.importModuleSpecifierEnding": "minimal"
+    "typescript.preferences.importModuleSpecifierEnding": "minimal",
+    // "terminal.integrated.shellArgs.linux": ["-c", "export `cat .env`; zsh"],
+    // // "terminal.integrated.shellArgs.osx": ["-c", "export `cat .env`; zsh"],
+    // // "terminal.integrated"
+    // "terminal.integrated.shellArgs.osx": ["-c", "if [ -e .env ]; then export `cat .env`; fi; if [ -e .vscode/.env ]; then export `cat .vscode/.env`; fi; zsh;"]
 }

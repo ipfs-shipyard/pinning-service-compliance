@@ -33,7 +33,17 @@ const failure = (details: ComplianceCheckDetails) => {
 #### Errors
 
 ${details.errors.map((error) => {
-  return `* ${error.name} - ${error.message}`
+  let errorOutput = ''
+  if (error.name != null && error.message != null) {
+    errorOutput = `* ${error.name} - ${error.message}`
+    if (error.stack != null) {
+      errorOutput += `
+  * ${error.stack}`
+    }
+  } else {
+    errorOutput = `* ${inspect(error)}`
+  }
+  return errorOutput
 }).join('\n')}
 
 #### Response data from RemotePinningServiceClient
