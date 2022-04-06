@@ -24,6 +24,7 @@ interface ComplianceCheckResponse extends ComplianceCheckRequest {
 }
 
 interface ComplianceCheckDetails {
+  time: Date
   url: string
   method: string
   title: string
@@ -39,14 +40,6 @@ interface ComplianceCheckDetails {
 // }
 type ResponseContext = import('@ipfs-shipyard/pinning-service-client').ResponseContext
 // eslint-disable-next-line @typescript-eslint/dot-notation
-interface ProcessedResponse extends Response {
-  text: string
-  json: Record<string, any>
-  body: string | null
-}
-interface ComplianceCheckDetailsCallbackArg extends ResponseContext {
-  response: ProcessedResponse
-}
 
 interface ComplianceCheckDetailsCallback {
   (details: ComplianceCheckDetailsCallbackArg): Promise<void>

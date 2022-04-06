@@ -6,22 +6,38 @@ import { renderComplianceCheckResults } from '../output/renderComplianceCheckRes
 import { buildComplianceCheckDetails } from '../utils/buildComplianceCheckDetails'
 
 // type ImplementableMethods = keyof Omit<PinsApi, 'withMiddleware' | 'withPreMiddleware' | 'withPostMiddleware'>
-
+interface ProcessedResponse {
+  text: string
+  json: Record<string, any>
+  body: string | null
+  headers: any
+  ok: boolean
+  redirected: unknown
+  status: unknown
+  statusText: unknown
+  type: unknown
+  url: unknown
+  bodyUsed: unknown
+}
+interface ComplianceCheckDetailsCallbackArg { // } extends ResponseContext {
+  response: ProcessedResponse | Response
+}
 interface ComplianceCheckOptions<T> {
   /**
    * The title of the compliance check
    */
   title: string
   pair: ServiceAndTokenPair
-  runCheck: (details: ComplianceCheckDetailsCallbackArg & {result: T|null}) => Promise<boolean>
+  runCheck: (details: {result: T|null, details: CheckDetails}) => Promise<boolean>
   apiCall: (client: RemotePinningServiceClient) => Promise<T>
   schema?: Schema
 }
+type CheckDetails = Map<number, ComplianceCheckDetailsCallbackArg | ResponseContext | undefined>
 
 const Check = async <T>({ pair, runCheck, apiCall, title, schema }: ComplianceCheckOptions<T>) => {
-  let details: ComplianceCheckDetailsCallbackArg | ResponseContext | undefined
+  const details: CheckDetails = new Map()
   const getDetails: ComplianceCheckDetailsCallback = async (d) => {
-    details = d
+    details.set(Date.now(), d)
   }
   const client = clientFromServiceAndTokenPair(pair, getDetails)
 
@@ -45,22 +61,22 @@ const Check = async <T>({ pair, runCheck, apiCall, title, schema }: ComplianceCh
   } else {
     let successful = await runCheck({
       result,
-      ...details as ComplianceCheckDetailsCallbackArg
+      details
     })
     if (validationResult != null) {
       if (validationResult.error != null || validationResult.errors != null) {
         successful = false
       }
     }
-
-    renderComplianceCheckResults(buildComplianceCheckDetails({
+    buildComplianceCheckDetails({
       title,
       details,
       successful,
       result,
       validationResult: validationResult as ValidationResult
-    }))
+    }).forEach(renderComplianceCheckResults)
   }
 }
 
 export { Check }
+export type { CheckDetails, ComplianceCheckOptions }
