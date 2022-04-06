@@ -1,4 +1,4 @@
-import { PinResults, PinStatus } from '@ipfs-shipyard/pinning-service-client'
+import type { PinResults, PinStatus } from '@ipfs-shipyard/pinning-service-client'
 import { allPinStatuses } from '../../utils/constants'
 
 import { getOldestPinCreateDate } from '../../utils/getOldestPinCreateDate'

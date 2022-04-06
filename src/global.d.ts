@@ -24,6 +24,7 @@ interface ComplianceCheckResponse extends ComplianceCheckRequest {
 }
 
 interface ComplianceCheckDetails {
+  errors: Error[]
   url: string
   method: string
   title: string

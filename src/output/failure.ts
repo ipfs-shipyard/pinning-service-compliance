@@ -30,6 +30,12 @@ const failure = (details: ComplianceCheckDetails) => {
   // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
   console.log(formatter(`## ${title} - ✘ FAILED
 ### Details
+#### Errors
+
+${details.errors.map((error) => {
+  return `* ${error.name} - ${error.message}`
+}).join('\n')}
+
 #### Response data from RemotePinningServiceClient
 *via util.inspect*
 \`\`\`

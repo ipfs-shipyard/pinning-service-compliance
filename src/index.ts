@@ -16,8 +16,8 @@ const validatePinningService = async (pair: ServiceAndTokenPair) => {
     // await checkInvalidBearerToken(pair)
     // await getAllPins(pair)
     // await addPin(pair)
+    await deleteAllPins(pair)
     await testPagination(pair)
-    // await deleteAllPins(pair)
   } catch (err) {
     console.error('problem running a compliance check')
     console.error(err)
