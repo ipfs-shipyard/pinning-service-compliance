@@ -2,6 +2,13 @@
 
 ## Getting started
 
+### Set up your environment variables
+```bash
+cp .env-copy .env
+```
+Then replace all variables with the appropriate endpoints and tokens
+
+### Run the script
 ```bash
 npm install
 npm run setup
