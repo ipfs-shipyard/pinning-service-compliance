@@ -15,7 +15,7 @@ interface ComplianceCheckOptions<T> {
   title: string
   pair: ServiceAndTokenPair
   runCheck: (details: ComplianceCheckDetailsCallbackArg & {result: T|null}, errors: Error[]) => Promise<boolean>
-  apiCall: (client: RemotePinningServiceClient, errors: Error[]) => Promise<T>
+  apiCall: (client: RemotePinningServiceClient, errors: Error[]) => Promise<T | null>
   schema?: Schema
 }
 
@@ -27,6 +27,7 @@ const Check = async <T>({ pair, runCheck, apiCall, title, schema }: ComplianceCh
   let details: ComplianceCheckDetailsCallbackArg | ResponseContext | undefined
   const getDetails: ComplianceCheckDetailsCallback = async (d) => {
     details = d
+    errors.push(...d.errors)
   }
   const client = clientFromServiceAndTokenPair(pair, getDetails)
 

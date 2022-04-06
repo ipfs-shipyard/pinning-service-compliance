@@ -47,6 +47,7 @@ interface ProcessedResponse extends Response {
 }
 interface ComplianceCheckDetailsCallbackArg extends ResponseContext {
   response: ProcessedResponse
+  errors: Error[]
 }
 
 interface ComplianceCheckDetailsCallback {
