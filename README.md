@@ -26,6 +26,14 @@ A compliance check consists of:
 3. An expected response
 4. A summary
 
+## Troubleshooting / Debugging
+If you're using VScode, you can follow these steps:
+
+```bash
+cp .vscode/launch-copy.json .vscode/launch.json
+```
+Replace your endpoint and token, and then start the "Debug compliance checker" launch config.
+
 ## TODO:
 ### Eventually add Crustio
 https://wiki.crust.network/docs/en/buildIPFSW3AuthPin
