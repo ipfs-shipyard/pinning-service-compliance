@@ -1,19 +1,11 @@
 /* eslint-disable no-console */
-import { PinStatus, Status } from '@ipfs-shipyard/pinning-service-client'
+import type { PinStatus } from '@ipfs-shipyard/pinning-service-client'
+import { expect404 } from '../../expectations'
 import { getInlineCid } from '../../utils/getInlineCid'
 
 import { getQueue } from '../../utils/getQueue'
+import { knownFailureStatusPin } from '../../utils/knownFailureStatusPin'
 import { Check } from '../Check'
-
-const knownFailureStatusPin: PinStatus = {
-  requestid: 'N/A',
-  created: new Date(),
-  status: Status.Failed,
-  pin: {
-    cid: 'fake'
-  },
-  delegates: new Set()
-}
 
 const deleteNewPin = async ([endpointUrl, accessToken]: ServiceAndTokenPair) => {
   const queue = getQueue(endpointUrl)
@@ -21,17 +13,17 @@ const deleteNewPin = async ([endpointUrl, accessToken]: ServiceAndTokenPair) => 
   return await Check<PinStatus>({
     pair: [endpointUrl, accessToken],
     title: 'Can delete a newly created Pin',
-    runCheck: async (details, errors) => {
-      const result = details.result as PinStatus
-      if (result === knownFailureStatusPin) {
-        return false
-      }
-      if (result == null) {
-        return true
-      }
+    // runCheck: async (details, errors) => {
+    //   const result = details.result as PinStatus
+    //   if (result === knownFailureStatusPin) {
+    //     return false
+    //   }
+    //   if (result == null) {
+    //     return true
+    //   }
 
-      return false
-    },
+    //   return false
+    // },
     apiCall: async (client, errors) => {
       const cid = await getInlineCid()
       let pinPostResult: PinStatus | null = null
@@ -49,6 +41,11 @@ const deleteNewPin = async ([endpointUrl, accessToken]: ServiceAndTokenPair) => 
 
       const { requestid } = pinPostResult
 
+      if (requestid == null) {
+        errors.push(new Error('PinStatus does not contain expected `requestid` property'))
+        return knownFailureStatusPin
+      }
+
       try {
         await queue.add(async () => await client.pinsRequestidDelete({ requestid }))
       } catch (err) {
@@ -60,6 +57,7 @@ const deleteNewPin = async ([endpointUrl, accessToken]: ServiceAndTokenPair) => 
         return pinGetRequest
       } catch (err) {
         // we're expecting an error because the pin shouldn't exist
+        expect404(err, errors)
         return null
       }
     }

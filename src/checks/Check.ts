@@ -14,7 +14,7 @@ interface ComplianceCheckOptions<T> {
    */
   title: string
   pair: ServiceAndTokenPair
-  runCheck: (details: ComplianceCheckDetailsCallbackArg & {result: T|null}, errors: Error[]) => Promise<boolean>
+  runCheck?: (details: ComplianceCheckDetailsCallbackArg & {result: T|null}, errors: Error[]) => Promise<boolean>
   apiCall: (client: RemotePinningServiceClient, errors: Error[]) => Promise<T | null>
   schema?: Schema
 }
@@ -49,15 +49,23 @@ const Check = async <T>({ pair, runCheck, apiCall, title, schema }: ComplianceCh
   if (details == null) {
     throw new Error('The details object was not set in the middleware')
   } else {
-    let successful = await runCheck({
-      result,
-      ...details as ComplianceCheckDetailsCallbackArg
-    }, errors)
+    let successful = true
+    if (runCheck != null) {
+      successful = await runCheck({
+        result,
+        ...details as ComplianceCheckDetailsCallbackArg
+      }, errors)
+    }
     if (validationResult != null) {
       if (validationResult.error != null || validationResult.errors != null) {
         successful = false
       }
     }
+
+    if (errors.length > 0) {
+      successful = false
+    }
+
     const { response, url, init } = details
 
     // return
