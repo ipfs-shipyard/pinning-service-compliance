@@ -1,36 +1,23 @@
 
 /* eslint-disable no-console */
 import { inspect } from 'util'
-import type { ValidationError } from '@hapi/joi'
 import chalk from 'chalk'
 import { stringifyHeaders } from '../utils/stringifyHeaders'
 import { getFormatter } from './formatter'
+import { joiValidationAsMarkdown } from './joiValidationAsMarkdown'
 
 const formatter = getFormatter({
   paragraph: chalk.reset,
   heading: chalk.redBright
 })
-const failure = (details: ComplianceCheckDetails) => {
-  const { request, response, title, url, method, validationResult, result: apiResult } = details
+const failure = (details: ComplianceCheckDetails): string => {
+  const { request, response, title, url, method, validationResult, result: clientParsedResult } = details
   // console.log('validationResult: ', validationResult)
-  let joiValidationFailures: string = 'No failures'
-  if (validationResult?.errors != null || validationResult?.error != null) {
-    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
-    const errors = (validationResult.errors || validationResult.error) as ValidationError
-    joiValidationFailures = ''
 
-    errors.details.forEach((errorItem) => {
-      joiValidationFailures = `${joiValidationFailures}
-* ${errorItem.message}
-`
-    })
-  }
-
-  const stringifiedResult = inspect(apiResult, { depth: 4 })
+  // const stringifiedResult =
   // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-  console.log(formatter(`## ${title} - ✘ FAILED
-### Details
-#### Errors
+  const reportEntry = `## ${title} - ✘ FAILED
+### Expectations
 
 ${details.errors.map((error) => {
   let errorOutput = ''
@@ -46,13 +33,8 @@ ${details.errors.map((error) => {
   return errorOutput
 }).join('\n')}
 
-#### Response data from RemotePinningServiceClient
-*via util.inspect*
-\`\`\`
-${stringifiedResult}
-\`\`\`
-#### Joi validation failures
-${joiValidationFailures}
+### Details
+
 #### Request - ${method}: ${url}
 ##### Headers
 \`\`\`json
@@ -62,6 +44,22 @@ ${stringifyHeaders(request.headers)}
 \`\`\`json
 ${request.body}
 \`\`\`
+
+#### Response data from ${url}
+*via util.inspect*
+\`\`\`
+${inspect(response.json, { depth: 4 })}
+\`\`\`
+
+#### Response data after being parsed by RemotePinningServiceClient
+*via util.inspect*
+\`\`\`
+${inspect(clientParsedResult, { depth: 4 })}
+\`\`\`
+
+#### Joi validation failures
+${joiValidationAsMarkdown(validationResult)}
+
 #### Response - ${response.statusText} (${response.status})
 ##### Headers
 \`\`\`json
@@ -70,7 +68,10 @@ ${stringifyHeaders(response.headers)}
 ##### Body
 \`\`\`json
 ${response.body}
-\`\`\``))
+\`\`\``
+  console.log(formatter(reportEntry))
+
+  return reportEntry
 }
 
 export { failure }

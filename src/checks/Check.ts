@@ -2,9 +2,11 @@
 import type { Schema, ValidationResult } from '@hapi/joi'
 import type { RemotePinningServiceClient, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
 import { clientFromServiceAndTokenPair } from '../clientFromServiceAndTokenPair'
+import { addToReport } from '../output/addToReport'
 // import { renderComplianceCheckResults } from '../output/renderComplianceCheckResults'
 import { failure } from '../output/failure'
 import { success } from '../output/success'
+import type { ComplianceCheckDetailsCallbackArg } from '../types'
 
 // type ImplementableMethods = keyof Omit<PinsApi, 'withMiddleware' | 'withPreMiddleware' | 'withPostMiddleware'>
 
@@ -36,7 +38,7 @@ const Check = async <T>({ pair, runCheck, apiCall, title, schema }: ComplianceCh
   try {
     result = await apiCall(client, errors)
     if (schema != null) {
-      validationResult = schema.validate(result)
+      validationResult = schema.validate(details?.response.json, { convert: true, abortEarly: false })
     }
   } catch (err) {
     console.error('You must catch any errors within your Check implementation')
@@ -66,14 +68,15 @@ const Check = async <T>({ pair, runCheck, apiCall, title, schema }: ComplianceCh
       successful = false
     }
 
-    const { response, url, init } = details
+    const { response, url, init } = details as ResponseContext
 
     // return
     const complianceCheckDetails: ComplianceCheckDetails = {
+      pair,
       errors,
       title,
       url,
-      method: details.init.method ?? 'Unknown',
+      method: init.method ?? 'Unknown',
       successful,
       validationResult,
       result,
@@ -82,6 +85,7 @@ const Check = async <T>({ pair, runCheck, apiCall, title, schema }: ComplianceCh
         headers: init.headers ?? {}
       },
       response: {
+        ...response,
         body: JSON.stringify(response.json, null, 2),
         headers: response.headers,
         status: response.status,
@@ -89,11 +93,7 @@ const Check = async <T>({ pair, runCheck, apiCall, title, schema }: ComplianceCh
       }
     }
 
-    if (successful) {
-      success(complianceCheckDetails)
-    } else {
-      failure(complianceCheckDetails)
-    }
+    await addToReport(complianceCheckDetails)
   }
 }
 

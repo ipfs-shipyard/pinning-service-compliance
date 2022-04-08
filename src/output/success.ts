@@ -7,7 +7,10 @@ const formatter = getFormatter({
   heading: chalk.green
 })
 const success = (details: ComplianceCheckDetails) => {
-  console.log(formatter(`## ${details.title} - ✓ SUCCESS`))
+  const reportEntry = `## ${details.title} - ✓ SUCCESS`
+  console.log(formatter(reportEntry))
+
+  return reportEntry
 }
 
 export { success }
