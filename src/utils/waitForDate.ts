@@ -1,6 +1,8 @@
 /* eslint-disable no-console */
+
+import { sleep } from './sleep'
+
 /* eslint-disable no-loop-func */
-const sleep = async (delay: number) => await new Promise((resolve) => setTimeout(resolve, delay))
 const waitForDate = async (date: Date): Promise<void> => {
   let delay = 1000
 
