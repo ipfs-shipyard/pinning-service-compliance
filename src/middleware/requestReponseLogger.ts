@@ -1,17 +1,24 @@
 /* eslint-disable no-console */
-import type { Middleware, RequestContext } from '@ipfs-shipyard/pinning-service-client'
-import { URL } from 'url'
-import { waitForDate } from '../utils/waitForDate'
+import type { Middleware, RequestContext, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
 
-const getHostnameFromContext = (context: RequestContext | ResponseContext) => {
-  const { hostname } = new URL(context.url)
-  return hostname
+import { responseHasContent } from '../utils/responseHasContent'
+// import { streamToString } from '../utils/streamToString'
+import { waitForDate } from '../utils/waitForDate'
+import { getHostnameFromUrl } from '../utils/getHostnameFromUrl'
+import type { ComplianceCheckDetailsCallbackArg } from '../types'
+
+interface RequestResponseLoggerOptions {
+  finalCb?: (details: ComplianceCheckDetailsCallbackArg) => void | Promise<void>
+  preCb?: (context: RequestContext) => void | Promise<void>
+  postCb?: (context: ResponseContext) => void | Promise<void>
 }
-const requestResponseLogger: (callback: ComplianceCheckDetailsCallback) => Middleware = (callback) => {
+
+const requestResponseLogger: (opts: RequestResponseLoggerOptions) => Middleware = ({ preCb, postCb, finalCb }) => {
   const rateLimitHandlers: Map<string, Array<Promise<void>>> = new Map()
   return ({
     pre: async (context) => {
-      const hostname = getHostnameFromContext(context)
+      if (preCb != null) await preCb(context)
+      const hostname = getHostnameFromUrl(context.url)
       if (rateLimitHandlers.has(hostname)) {
         const promises = rateLimitHandlers.get(hostname) as Array<Promise<void>>
         if (promises.length > 0) {
@@ -26,27 +33,30 @@ const requestResponseLogger: (callback: ComplianceCheckDetailsCallback) => Middl
     },
 
     post: async (context) => {
+      if (postCb != null) await postCb(context)
       const { response } = context
       const errors: Error[] = []
-      let json: any = {}
-      try {
-        json = await response.clone().json()
-      } catch (err) {
-        errors.push(err as Error)
-      }
-      let text: string = ''
+
+      const hasContent = await responseHasContent(response)
+
+      let text: string | null = null
       try {
         text = await response.clone().text()
       } catch (err) {
         errors.push(err as Error)
       }
-      let body: string | null = ''
+      let json: any
       try {
-        body = response.clone().body?.toString() ?? null
+        if (hasContent) {
+          json = await response.clone().json()
+        }
       } catch (err) {
+        // debugger
         errors.push(err as Error)
       }
-      const hostname = getHostnameFromContext(context)
+
+      const hostname = getHostnameFromUrl(context.url)
+      // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
       if (response.headers.has('x-ratelimit-reset') && response.headers.has('x-ratelimit-remaining')) {
         const rateLimitReset = Number(response.headers.get('x-ratelimit-reset') as string)
         const dateOfReset = new Date(rateLimitReset * 1000)
@@ -70,15 +80,15 @@ const requestResponseLogger: (callback: ComplianceCheckDetailsCallback) => Middl
           response: {
             ...response,
             json,
-            body,
-            text,
-            headers: response.headers,
-            status: response.status,
-            statusText: response.statusText,
-            ok: response.ok
+            // body,
+            text
+            // headers: response.headers,
+            // status: response.status,
+            // statusText: response.statusText,
+            // ok: response.ok
           }
         }
-        await callback(normalizedResult)
+        if (finalCb != null) await finalCb(normalizedResult)
       } catch (err) {
         console.error('error in callback provided to the middleware')
         console.error(err)
@@ -88,4 +98,5 @@ const requestResponseLogger: (callback: ComplianceCheckDetailsCallback) => Middl
   })
 }
 
+export type { RequestResponseLoggerOptions }
 export { requestResponseLogger }

@@ -1,10 +1,12 @@
+#!/usr/bin/env ts-node
+
 /* eslint-disable no-console */
 import { writeFile } from 'fs/promises'
+
 import oas2joi from 'oas2joi'
-import { generatedDir, localSpecPath } from './constants'
-// import { serialize } from 'joi-serialization'
 import type { Schema } from '@hapi/joi'
-import { join } from 'path'
+
+import { getJoiSchemaPath, localSpecPath } from './utils/constants'
 
 const main = async () => {
   const joiSchema: Record<string, Schema> = await oas2joi(localSpecPath)
@@ -21,7 +23,7 @@ const main = async () => {
     }
 
     try {
-      await writeFile(join(generatedDir, `${schemaName}JoiSchema.json`), schemaJson)
+      await writeFile(getJoiSchemaPath(schemaName), schemaJson)
     } catch (err) {
       console.error(`problem writing joi schema for ${schemaName}`)
       console.error(err)

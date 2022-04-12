@@ -5,6 +5,7 @@ const responseHasContent = async (response: Response) => {
   //   console.log('headerKey, headerValue: ', headerKey, headerValue)
   // }
   // debugger
+  // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
   if (clone.headers.has('content-length')) {
     return Number(clone.headers.get('content-length')) > 0
   }

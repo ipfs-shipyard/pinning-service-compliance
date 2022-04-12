@@ -18,38 +18,40 @@ interface ComplianceCheckRequest {
   headers: Headers | string[][] | Record<string, string>
   body: string
 }
-interface ComplianceCheckResponse extends ComplianceCheckRequest {
+interface ComplianceCheckResponse {
+  headers: Headers | string[][] | Record<string, string>
   status: number
   statusText: string
+  json: Record<string, any> | null
+  body: string
 }
 
-interface ComplianceCheckDetails {
+interface ComplianceCheckDetails<T> {
+  pair: ServiceAndTokenPair
   errors: Error[]
   url: string
   method: string
   title: string
   successful: boolean
-  validationResult?: ValidationResult
+  validationResult: import('@hapi/joi').ValidationResult | null
   request: ComplianceCheckRequest
   response: ComplianceCheckResponse
-  result: any
+  result: T | null
+  successes: Array<{title: string}>
+  failures: Array<{title: string}>
 
 }
 // interface ComplianceCheckFetchData {
 
 // }
-type ResponseContext = import('@ipfs-shipyard/pinning-service-client').ResponseContext
+// type ResponseContext = import('@ipfs-shipyard/pinning-service-client').ResponseContext
 // eslint-disable-next-line @typescript-eslint/dot-notation
 interface ProcessedResponse extends Response {
-  text: string
+  text: string | null
   json: Record<string, any>
-  body: string | null
-}
-interface ComplianceCheckDetailsCallbackArg extends ResponseContext {
-  response: ProcessedResponse
-  errors: Error[]
+  // body: string | null
 }
 
 interface ComplianceCheckDetailsCallback {
-  (details: ComplianceCheckDetailsCallbackArg): Promise<void>
+  (details: ComplianceCheckDetailsCallbackArg): void
 }
