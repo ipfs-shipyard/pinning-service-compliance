@@ -11,9 +11,7 @@ import { docsDir } from '../utils/constants'
 import { getHostnameFromUrl } from '../utils/getHostnameFromUrl'
 import { getFormatter } from './formatter'
 import { getReportEntry } from './getReportEntry'
-// import { success } from './success'
-
-const reportsStarted: Set<string> = new Set()
+import { getHeader } from './getHeader'
 
 const successFormatter = getFormatter({
   paragraph: chalk.reset,
@@ -24,19 +22,18 @@ const failureFormatter = getFormatter({
   paragraph: chalk.reset,
   heading: chalk.redBright
 })
+
+const getReportFilePath = (hostname: string) => {
+  const filename = `${hostname}.md`
+  return join(docsDir, filename)
+}
 // Need summary at the top for each service: # pass/fail
 const addToReport = async <T>(details: ComplianceCheckDetails<T>) => {
-  // const { successful } = details
   const reportEntryMarkdown = getReportEntry(details)
   const formatter = details.successful ? successFormatter : failureFormatter
-  // if (successful) {
-  //   reportEntryMarkdown = success(details)
-  // } else {
-  //   reportEntryMarkdown = failure(details)
-  // }
+
   const hostname = getHostnameFromUrl(details.url)
-  const filename = `${hostname}.md`
-  const reportFilePath = join(docsDir, filename)
+  const reportFilePath = getReportFilePath(hostname)
 
   try {
     await access(docsDir, fsConstants.R_OK | fsConstants.W_OK)
@@ -52,14 +49,6 @@ const addToReport = async <T>(details: ComplianceCheckDetails<T>) => {
   }
 
   try {
-    // console.log('reportsStarted: ', reportsStarted)
-    // console.log('reportsStarted.has(hostname): ', reportsStarted.has(hostname))
-    if (!reportsStarted.has(hostname)) {
-      const header = `# ${details.pair[0]} compliance:\n\n`
-      await writeFile(reportFilePath, header)
-      console.log(formatter(header))
-      reportsStarted.add(hostname)
-    }
     await appendFile(reportFilePath, reportEntryMarkdown)
     console.log(formatter(reportEntryMarkdown))
   } catch (err) {
@@ -68,11 +57,14 @@ const addToReport = async <T>(details: ComplianceCheckDetails<T>) => {
   }
 }
 
+const reports: Map<string, Array<ComplianceCheckDetails<any>>> = new Map()
+
 const addApiCallToReport = async <T>(apiCall: ApiCall<T>) => {
   const { pair, errors, title, httpRequest, result, httpResponse, failures, successes } = apiCall
   const { url, headers: requestHeaders } = httpRequest
   const method = httpRequest.method ?? 'Unknown'
   const requestBody = await httpRequest.clone().text()
+  const hostname = getHostnameFromUrl(url)
 
   const complianceCheckDetails: ComplianceCheckDetails<T> = {
     pair,
@@ -98,6 +90,30 @@ const addApiCallToReport = async <T>(apiCall: ApiCall<T>) => {
     }
   }
 
-  await addToReport(complianceCheckDetails)
+  if (reports.has(hostname)) {
+    const hostReport = reports.get(hostname) as Array<ComplianceCheckDetails<any>>
+    hostReport.push(complianceCheckDetails)
+  } else {
+    reports.set(hostname, [complianceCheckDetails])
+  }
 }
-export { addToReport, addApiCallToReport }
+
+const createReport = async <T>(hostname: string, details: Array<ComplianceCheckDetails<T>>) => {
+  const reportFilePath = getReportFilePath(hostname)
+
+  const header = getHeader(details)
+  await writeFile(reportFilePath, header)
+  console.log(header)
+
+  for await (const detailItem of details) {
+    await addToReport(detailItem)
+  }
+}
+
+const writeReports = async () => {
+  for await (const [hostname, details] of reports.entries()) {
+    await createReport(hostname, details)
+  }
+}
+
+export { addToReport, addApiCallToReport, writeReports }

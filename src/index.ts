@@ -24,6 +24,7 @@ const validatePinningService = async (pair: ServiceAndTokenPair) => {
     console.error('problem running a compliance check')
     console.error(err)
   }
+  await writeReports()
 }
 
 export { validatePinningService }
