@@ -1,25 +1,20 @@
 /* eslint-disable no-console */
 
-import chalk from 'chalk'
+import { getAllPins, checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteAllPins, testPagination, deleteNewPin, replacePin, matchPin } from './checks'
+import { writeReports } from './output/reporting'
+import type { ServiceAndTokenPair } from './types'
 
-import { getAllPins, checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteAllPins, testPagination, deleteNewPin, replacePin } from './checks'
-import { getFormatter } from './output/formatter'
-
-const formatter = getFormatter({
-  paragraph: chalk.green,
-  heading: chalk.green
-})
 const validatePinningService = async (pair: ServiceAndTokenPair) => {
-  console.log(formatter(`# ${pair[0]} compliance:`))
   try {
-    // await checkEmptyBearerToken(pair)
-    // await checkInvalidBearerToken(pair)
-    // await getAllPins(pair)
-    // await addPin(pair)
-    // await deleteAllPins(pair)
-    // await testPagination(pair)
-    // await deleteNewPin(pair)
+    await checkEmptyBearerToken(pair)
+    await checkInvalidBearerToken(pair)
+    await addPin(pair)
+    await deleteNewPin(pair)
+    await getAllPins(pair)
     await replacePin(pair)
+    await matchPin(pair)
+    await testPagination(pair)
+    await deleteAllPins(pair)
   } catch (err) {
     console.error('problem running a compliance check')
     console.error(err)
