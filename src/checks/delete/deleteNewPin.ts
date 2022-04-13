@@ -1,67 +1,49 @@
-/* eslint-disable no-console */
-import type { PinStatus } from '@ipfs-shipyard/pinning-service-client'
-import { expect404 } from '../../expectations'
 import { getInlineCid } from '../../utils/getInlineCid'
+import { ApiCall } from '../../ApiCall'
+import { getRequestid } from '../../utils/getRequestid'
+import type { ServiceAndTokenPair } from '../../types'
 
-import { getQueue } from '../../utils/getQueue'
-import { knownFailureStatusPin } from '../../utils/knownFailureStatusPin'
-import { Check } from '../Check'
-
-const deleteNewPin = async ([endpointUrl, accessToken]: ServiceAndTokenPair) => {
-  const queue = getQueue(endpointUrl)
-
-  return await Check<PinStatus>({
-    pair: [endpointUrl, accessToken],
-    title: 'Can delete a newly created Pin',
-    // runCheck: async (details, errors) => {
-    //   const result = details.result as PinStatus
-    //   if (result === knownFailureStatusPin) {
-    //     return false
-    //   }
-    //   if (result == null) {
-    //     return true
-    //   }
-
-    //   return false
-    // },
-    apiCall: async (client, errors) => {
-      const cid = await getInlineCid()
-      let pinPostResult: PinStatus | null = null
-      try {
-        pinPostResult = await queue.add(async () => await client.pinsPost({ pin: { cid } }))
-      } catch (err) {
-        errors.push(err as Error)
-      }
-
-      if (pinPostResult == null) {
-        errors.push(new Error('Did not create a pin successfully, so we cannot attempt to delete it.'))
-
-        return knownFailureStatusPin
-      }
-
-      const { requestid } = pinPostResult
-
-      if (requestid == null) {
-        errors.push(new Error('PinStatus does not contain expected `requestid` property'))
-        return knownFailureStatusPin
-      }
-
-      try {
-        await queue.add(async () => await client.pinsRequestidDelete({ requestid }))
-      } catch (err) {
-        errors.push(err as Error)
-        return pinPostResult
-      }
-      try {
-        const pinGetRequest = await queue.add(async () => await client.pinsRequestidGet({ requestid }))
-        return pinGetRequest
-      } catch (err) {
-        // we're expecting an error because the pin shouldn't exist
-        expect404(err, errors)
-        return null
-      }
+const deleteNewPin = async (pair: ServiceAndTokenPair) => {
+  const cid = await getInlineCid()
+  const createNewPinApiCall = new ApiCall({
+    pair,
+    title: 'Can create and then delete a new pin',
+    fn: async (client) => {
+      return await client.pinsPost({ pin: { cid } })
     }
   })
+
+  const pin = await createNewPinApiCall.result
+  createNewPinApiCall.expect({
+    title: 'Pin was created',
+    fn: async ({ result }) => result != null
+  })
+  createNewPinApiCall.expect({
+    title: 'Creation response code is 200',
+    fn: ({ apiCall }) => apiCall.response.status === 200
+  })
+
+  if (pin != null) {
+    const requestid = getRequestid(pin, createNewPinApiCall)
+    const deleteApiCall = new ApiCall({
+      pair,
+      fn: async (client) => await client.pinsRequestidDelete({ requestid }),
+      title: 'Can delete pin'
+    })
+    await deleteApiCall.result
+
+    createNewPinApiCall.expect({
+      title: 'Pin was deleted',
+      fn: () => deleteApiCall.response.ok
+    })
+    createNewPinApiCall.expect({
+      title: 'Pin deletion response code is 202',
+      fn: () => deleteApiCall.response.status === 202
+    })
+  } else {
+    throw new Error('No Pin in ApiCall to delete')
+  }
+  await createNewPinApiCall.runExpectations()
 }
 
 export { deleteNewPin }

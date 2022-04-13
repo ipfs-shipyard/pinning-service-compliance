@@ -1,9 +1,10 @@
 /* eslint-disable no-console */
-import type { PinResults, PinStatus } from '@ipfs-shipyard/pinning-service-client'
+import type { PinResults } from '@ipfs-shipyard/pinning-service-client'
 
 import { ApiCall } from '../../ApiCall'
 import { allPinStatuses } from '../../utils/constants'
 import { getOldestPinCreateDate } from '../../utils/getOldestPinCreateDate'
+import { getRequestid } from '../../utils/getRequestid'
 
 const getAllPinsApiCall = async (pair: ServiceAndTokenPair, before?: Date) => {
   let title = 'Can delete all pins'
@@ -29,15 +30,7 @@ const addPinDeletionExpectations = async (apiCall: ApiCall<PinResults>) => {
 
   if (pinResults != null) {
     for await (const pin of pinResults.results) {
-      let { requestid, pin: { cid } } = pin
-      if (requestid == null && apiCall.json?.results != null) {
-        apiCall.logger.debug('Implementing workaround to get "requestid" from raw response')
-        /**
-         * This workaround is needed because web3.storage is returning requestid as 'requestId' as of 2022-04-12
-         */
-        const rawPinStatus = Array.from(apiCall.json.results).find((pinStatus) => pinStatus.pin.cid === cid) as PinStatus
-        requestid = (rawPinStatus as PinStatus & {requestId: string}).requestId
-      }
+      const requestid = getRequestid(pin, apiCall)
 
       const deleteApiCall = new ApiCall({
         pair: apiCall.pair,

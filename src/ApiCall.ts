@@ -8,7 +8,7 @@ import type { RemotePinningServiceClient, RequestContext, ResponseContext } from
 
 import { getQueue } from './utils/getQueue'
 import { clientFromServiceAndTokenPair } from './clientFromServiceAndTokenPair'
-import type { ComplianceCheckDetailsCallbackArg } from './types'
+import type { ComplianceCheckDetailsCallbackArg, ExpectationResult, ServiceAndTokenPair } from './types'
 import { addApiCallToReport } from './output/reporting'
 import { getLogger } from './output/getLogger'
 
@@ -21,11 +21,6 @@ interface ApiCallOptions<T> {
 
   title: string
 
-}
-interface ExpectationResult {
-  error?: Error
-  success: boolean
-  title: string
 }
 interface ExpectationError {
   error: Error
@@ -56,14 +51,13 @@ class ApiCall<T> {
   expectations: Array<Expectation<T>> = []
   response!: Response
   errors: ExpectationError[] = []
-  failures: any[] = []
-  successes: any[] = []
   title: string
   expectationResults: ExpectationResult[] = []
   pair: ServiceAndTokenPair
   client: RemotePinningServiceClient
   validationErrors: ValidationError | undefined
   validationResult: ValidationResult | null = null
+  successful: boolean = true
   json: T | null = null
   // body: ReadableStream<Uint8Array> | null
   text: string | null = null
@@ -119,22 +113,14 @@ class ApiCall<T> {
           apiCall: this,
           result
         })
-
-        if (success) {
-        // successful message needs saved.
-          // console.log('success', title)
-          this.successes.push({ title })
-        } else {
-        // failure message needs saved.
-          // console.log('failure', title)
-          this.failures.push({ title })
-        }
+        this.successful = this.successful && success
 
         this.expectationResults.push({
           success,
           title
         })
       } catch (error) {
+        this.successful = false
         this.expectationResults.push({
           success: false,
           error: error as Error,
@@ -180,8 +166,6 @@ class ApiCall<T> {
     this.logger.debug(`${this.title}: Saving response context for '${context.url}'`)
     const response = this.response = context.response.clone()
     this.json = await response.clone().json()
-    // console.log('this.json: ', this.json)
-    // this.body = response.clone().body
     this.text = await response.clone().text()
     this.responseContext = context
   }

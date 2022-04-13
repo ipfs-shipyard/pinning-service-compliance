@@ -1,7 +1,9 @@
 
 import { inspect } from 'util'
+import type { ComplianceCheckDetails } from '../types'
 
 import { stringifyHeaders } from '../utils/stringifyHeaders'
+import { getExpectationsMarkdown } from './getExpectationsMarkdown'
 import { joiValidationAsMarkdown } from './joiValidationAsMarkdown'
 
 const getReportEntry = <T>(details: ComplianceCheckDetails<T>): string => {
@@ -11,14 +13,9 @@ const getReportEntry = <T>(details: ComplianceCheckDetails<T>): string => {
   // const stringifiedResult =
   // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
   const reportEntry = `## ${title} - ${details.successful ? '✓ SUCCESS' : '✘ FAILED'}
-### Expectations
 
-${details.successes.map(({ title }) => {
-  return `* ${title} - success`
-}).join('\n')}
-${details.failures.map(({ title }) => {
-  return `* ${title} - failure`
-}).join('\n')}
+${getExpectationsMarkdown(details)}
+
 ${details.errors.map((error) => {
   let errorOutput = ''
   if (error.name != null && error.message != null) {

@@ -12,6 +12,7 @@ import { getHostnameFromUrl } from '../utils/getHostnameFromUrl'
 import { getFormatter } from './formatter'
 import { getReportEntry } from './getReportEntry'
 import { getHeader } from './getHeader'
+import type { ComplianceCheckDetails } from '../types'
 
 const successFormatter = getFormatter({
   paragraph: chalk.reset,
@@ -60,7 +61,7 @@ const addToReport = async <T>(details: ComplianceCheckDetails<T>) => {
 const reports: Map<string, Array<ComplianceCheckDetails<any>>> = new Map()
 
 const addApiCallToReport = async <T>(apiCall: ApiCall<T>) => {
-  const { pair, errors, title, httpRequest, result, httpResponse, failures, successes } = apiCall
+  const { pair, errors, title, httpRequest, result, httpResponse, expectationResults, successful } = apiCall
   const { url, headers: requestHeaders } = httpRequest
   const method = httpRequest.method ?? 'Unknown'
   const requestBody = await httpRequest.clone().text()
@@ -69,12 +70,11 @@ const addApiCallToReport = async <T>(apiCall: ApiCall<T>) => {
   const complianceCheckDetails: ComplianceCheckDetails<T> = {
     pair,
     errors: errors.map((expectationError) => expectationError.error),
-    failures,
-    successes,
+    expectationResults,
     title,
     url,
     method,
-    successful: errors.length + failures.length === 0,
+    successful,
     validationResult: apiCall.validationResult,
     result: await result,
     request: {
