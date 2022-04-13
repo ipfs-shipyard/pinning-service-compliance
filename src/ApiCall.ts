@@ -35,7 +35,7 @@ interface ExpectationCallbackArg<T> {
 interface ExpectationFn<T> {
   (arg: ExpectationCallbackArg<T>): boolean | Promise<boolean>
 }
-interface Expectation<T> {
+interface ApiCallExpectation<T> {
   fn: ExpectationFn<T>
   title: string
 }
@@ -48,7 +48,7 @@ class ApiCall<T> {
   requestContext!: RequestContext
   responseContext!: ResponseContext
   failureReason: Error | unknown
-  expectations: Array<Expectation<T>> = []
+  expectations: Array<ApiCallExpectation<T>> = []
   response!: Response
   errors: ExpectationError[] = []
   title: string
@@ -98,8 +98,9 @@ class ApiCall<T> {
     throw new Error('Method not implemented.')
   }
 
-  expect (expectation: Expectation<T>) {
+  expect (expectation: ApiCallExpectation<T>) {
     this.expectations.push(expectation)
+    return this
   }
 
   async runExpectations () {
@@ -130,6 +131,7 @@ class ApiCall<T> {
       }
     }
     await addApiCallToReport(this)
+    return this
   }
 
   addSchema (schema: Schema) {
@@ -179,3 +181,4 @@ class ApiCall<T> {
 }
 
 export { ApiCall }
+export type { ApiCallExpectation }
