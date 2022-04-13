@@ -29,8 +29,10 @@ ${details.errors.map((error) => {
   }
   return errorOutput
 }).join('\n')}
+
 #### Joi validation failures
 ${joiValidationAsMarkdown(validationResult)}
+
 ### Details
 
 #### Request - ${method}: ${url}

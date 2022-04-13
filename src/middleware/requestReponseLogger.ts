@@ -2,9 +2,7 @@
 import type { Middleware, RequestContext, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
 
 import { responseHasContent } from '../utils/responseHasContent'
-// import { streamToString } from '../utils/streamToString'
 import { waitForDate } from '../utils/waitForDate'
-// import { getHostnameFromUrl } from '../utils/getHostnameFromUrl'
 import type { ComplianceCheckDetailsCallbackArg } from '../types'
 
 interface RequestResponseLoggerOptions {
