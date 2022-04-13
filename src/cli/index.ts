@@ -20,6 +20,7 @@ const main = async () => {
       await validatePinningService([service, key])
     } catch (err) {
       console.error('could not validate pinning service')
+      console.error(err)
     }
   }
 }

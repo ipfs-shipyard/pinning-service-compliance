@@ -2,12 +2,15 @@
 // import type PQueue from 'p-queue/dist'
 import type { Schema, ValidationError, ValidationResult } from '@hapi/joi'
 import fetchPonyfill from 'fetch-ponyfill'
+import type { Logger } from 'winston'
+
 import type { RemotePinningServiceClient, RequestContext, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
 
 import { getQueue } from './utils/getQueue'
 import { clientFromServiceAndTokenPair } from './clientFromServiceAndTokenPair'
 import type { ComplianceCheckDetailsCallbackArg } from './types'
-import { addApiCallToReport } from './output/addToReport'
+import { addApiCallToReport } from './output/reporting'
+import { getLogger } from './output/getLogger'
 
 const { Request } = fetchPonyfill()
 
@@ -64,8 +67,12 @@ class ApiCall<T> {
   json: T | null = null
   // body: ReadableStream<Uint8Array> | null
   text: string | null = null
+  logger: Logger
 
   constructor ({ pair, fn, schema, title }: ApiCallOptions<T>) {
+    this.logger = getLogger(pair[0])
+    this.logger.debug(`Creating new ApiCall: ${title}`)
+
     this.title = title
     this.pair = pair
     this.client = clientFromServiceAndTokenPair(pair, {
@@ -140,6 +147,10 @@ class ApiCall<T> {
   }
 
   addSchema (schema: Schema) {
+    // console.log('schema: ', schema)
+    // @ts-expect-error
+    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+    this.logger.debug(`Adding schema ${schema._description}`)
     this.expect({
       title: 'Response object matches api spec schema',
       fn: async ({ apiCall }): Promise<boolean> => {
@@ -155,16 +166,18 @@ class ApiCall<T> {
             return true
           }
         }
-        throw new Error('Could not compare against joi Schema because result is null')
+        throw new Error('Could not compare against joi Schema')
       }
     })
   }
 
   private saveRequest (context: RequestContext) {
+    this.logger.debug(`${this.title}: Saving request context for '${context.url}'`)
     this.requestContext = context
   }
 
   private async saveResponse (context: ResponseContext) {
+    this.logger.debug(`${this.title}: Saving response context for '${context.url}'`)
     const response = this.response = context.response.clone()
     this.json = await response.clone().json()
     // console.log('this.json: ', this.json)

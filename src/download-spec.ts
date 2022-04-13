@@ -1,11 +1,11 @@
 /* eslint-disable no-console */
 import fetchPonyfill from 'fetch-ponyfill'
 import { writeFile } from 'fs/promises'
-import { specLocation, localSpecPath } from './constants'
+import { specLocation, localSpecPath } from './utils/constants'
 
 const { fetch } = fetchPonyfill()
 
-fetch(specLocation).then(async (r) => await r.text()).then(async (spec) => {
+fetch(specLocation).then(async (r) => r.text()).then(async (spec) => {
   try {
     await writeFile(localSpecPath, spec)
   } catch (err) {

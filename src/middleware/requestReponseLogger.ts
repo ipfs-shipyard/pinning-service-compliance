@@ -4,7 +4,7 @@ import type { Middleware, RequestContext, ResponseContext } from '@ipfs-shipyard
 import { responseHasContent } from '../utils/responseHasContent'
 // import { streamToString } from '../utils/streamToString'
 import { waitForDate } from '../utils/waitForDate'
-import { getHostnameFromUrl } from '../utils/getHostnameFromUrl'
+// import { getHostnameFromUrl } from '../utils/getHostnameFromUrl'
 import type { ComplianceCheckDetailsCallbackArg } from '../types'
 
 interface RequestResponseLoggerOptions {
@@ -13,20 +13,26 @@ interface RequestResponseLoggerOptions {
   postCb?: (context: ResponseContext) => void | Promise<void>
 }
 
+type RateLimitKey = string
+const rateLimitHandlers: Map<RateLimitKey, Array<Promise<void>>> = new Map()
+const getRateLimitKeyFromUrl = (url: string): RateLimitKey => {
+  return url.split('?')[0]
+}
 const requestResponseLogger: (opts: RequestResponseLoggerOptions) => Middleware = ({ preCb, postCb, finalCb }) => {
-  const rateLimitHandlers: Map<string, Array<Promise<void>>> = new Map()
   return ({
     pre: async (context) => {
       if (preCb != null) await preCb(context)
-      const hostname = getHostnameFromUrl(context.url)
-      if (rateLimitHandlers.has(hostname)) {
-        const promises = rateLimitHandlers.get(hostname) as Array<Promise<void>>
+
+      const rateLimitKey = getRateLimitKeyFromUrl(context.url)
+
+      if (rateLimitHandlers.has(rateLimitKey)) {
+        const promises = rateLimitHandlers.get(rateLimitKey) as Array<Promise<void>>
         if (promises.length > 0) {
           await Promise.all(promises)
-          rateLimitHandlers.set(hostname, [])
+          rateLimitHandlers.set(rateLimitKey, [])
         }
       } else {
-        rateLimitHandlers.set(hostname, [])
+        rateLimitHandlers.set(rateLimitKey, [])
       }
 
       return context
@@ -55,17 +61,18 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => Middleware 
         errors.push(err as Error)
       }
 
-      const hostname = getHostnameFromUrl(context.url)
+      // const hostname = getHostnameFromUrl(context.url)
       // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
       if (response.headers.has('x-ratelimit-reset') && response.headers.has('x-ratelimit-remaining')) {
+        const rateLimitKey = getRateLimitKeyFromUrl(context.url)
         const rateLimitReset = Number(response.headers.get('x-ratelimit-reset') as string)
         const dateOfReset = new Date(rateLimitReset * 1000)
         const rateLimit = Number(response.headers.get('x-ratelimit-limit') as string)
         const rateRemaining = Number(response.headers.get('x-ratelimit-remaining') as string)
-        console.log(`${hostname}: Rate limit is ${rateLimit} and we have ${rateRemaining} tokens remaining.`)
+        console.log(`${rateLimitKey}: Rate limit is ${rateLimit} and we have ${rateRemaining} tokens remaining.`)
         if (rateRemaining === 0) {
           console.log(`No rate tokens remaining.. we need to wait until ${dateOfReset.toString()}`)
-          const promises = rateLimitHandlers.get(hostname) as Array<Promise<void>>
+          const promises = rateLimitHandlers.get(rateLimitKey) as Array<Promise<void>>
           promises.push(waitForDate(dateOfReset))
           // await
         }
