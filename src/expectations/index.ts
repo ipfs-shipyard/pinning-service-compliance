@@ -1,8 +1,5 @@
 import type { ApiCallExpectation } from '../ApiCall'
 
-export * from './expect404'
-export * from './expectSuccessfulResponse'
-
 const expectOkResponse: ApiCallExpectation<any> = {
   title: 'Response is ok',
   fn: ({ apiCall }) => {
