@@ -13,7 +13,27 @@ Then replace all variables with the appropriate endpoints and tokens
 npm install
 npm run setup
 
-ts-node src/cli/index.ts -s $PINATA_API_ENDPOINT $PINATA_API_TOKEN -s $ESTUARY_API_ENDPOINT $ESTUARY_API_TOKEN -s $NFT_API_ENDPOINT $NFT_API_TOKEN -s $WEB3_API_ENDPOINT $WEB3_API_TOKEN
+node -r ts-node/register src/index.ts -s $PINATA_API_ENDPOINT $PINATA_API_TOKEN
+node -r ts-node/register src/index.ts -s $ESTUARY_API_ENDPOINT $ESTUARY_API_TOKEN
+node -r ts-node/register src/index.ts -s $NFT_API_ENDPOINT $NFT_API_TOKEN
+node -r ts-node/register src/index.ts -s $WEB3_API_ENDPOINT $WEB3_API_TOKEN
+ # or
+node -r ts-node/register src/index.ts -s $PINATA_API_ENDPOINT $PINATA_API_TOKEN -s $ESTUARY_API_ENDPOINT $ESTUARY_API_TOKEN -s $NFT_API_ENDPOINT $NFT_API_TOKEN -s $WEB3_API_ENDPOINT $WEB3_API_TOKEN
+```
+
+or
+
+```bash
+npm install
+npm run setup
+npm run build
+
+node dist/src/index.js -s $PINATA_API_ENDPOINT $PINATA_API_TOKEN
+node dist/src/index.js -s $ESTUARY_API_ENDPOINT $ESTUARY_API_TOKEN
+node dist/src/index.js -s $NFT_API_ENDPOINT $NFT_API_TOKEN
+node dist/src/index.js -s $WEB3_API_ENDPOINT $WEB3_API_TOKEN
+
+node dist/src/index.js -s $PINATA_API_ENDPOINT $PINATA_API_TOKEN -s $ESTUARY_API_ENDPOINT $ESTUARY_API_TOKEN -s $NFT_API_ENDPOINT $NFT_API_TOKEN -s $WEB3_API_ENDPOINT $WEB3_API_TOKEN
 ```
 
 ## General architecture of the compliance checker
@@ -33,6 +53,14 @@ If you're using VScode, you can follow these steps:
 cp .vscode/launch-copy.json .vscode/launch.json
 ```
 Replace your endpoint and token, and then start the "Debug compliance checker" launch config.
+
+### Testing a github action
+
+Use https://github.com/nektos/act like so:
+
+```bash
+act --container-architecture linux/amd64 -W .github/workflows/build-and-publish-reports.yml -v -s PINATA_API_ENDPOINT -s PINATA_API_TOKEN -s WEB3_API_ENDPOINT -s WEB3_API_TOKEN -s ESTUARY_API_ENDPOINT -s ESTUARY_API_TOKEN -s NFT_API_ENDPOINT -s NFT_API_TOKEN -r
+```
 
 ## TODO:
 ### Eventually add Crustio

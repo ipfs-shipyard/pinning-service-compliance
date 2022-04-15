@@ -6,6 +6,7 @@ import oas2joi from 'oas2joi'
 import { Status } from '@ipfs-shipyard/pinning-service-client'
 // import Joi from '@hapi/joi'
 import type { Schema as JoiSchema } from '@hapi/joi'
+import type { PinningSpecJoiSchema } from '../types'
 const allPinStatuses = new Set([Status.Failed, Status.Pinned, Status.Pinning, Status.Queued])
 
 /* eslint-disable no-console */
@@ -97,12 +98,6 @@ const modifySchema = (schemaName: keyof PinningSpecJoiSchema, schema: JoiSchema)
 // eslint-disable-next-line @typescript-eslint/return-await
 const getJoiSchema = async <T extends keyof PinningSpecJoiSchema>(schemaName: T): Promise<PinningSpecJoiSchema[T]> => {
   const schema: PinningSpecJoiSchema = (await oas2joi(localSpecPath))
-
-  // const schemaJson = schema.describe()
-  // console.log(schemaJson)
-  // debugger
-  // debugger
-  // return schema[schemaName]
 
   modifySchema(schemaName, schema[schemaName])
 

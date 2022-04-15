@@ -8,7 +8,7 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/src/cli/index.ts",
+      "program": "${workspaceFolder}/src/index.ts",
       "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/ts-node",
       "args": [
         "-s",

@@ -2,6 +2,7 @@
 import type { PinResults } from '@ipfs-shipyard/pinning-service-client'
 
 import { ApiCall } from '../../ApiCall'
+import type { ServiceAndTokenPair } from '../../types'
 import { allPinStatuses } from '../../utils/constants'
 import { getOldestPinCreateDate } from '../../utils/getOldestPinCreateDate'
 import { getRequestid } from '../../utils/getRequestid'

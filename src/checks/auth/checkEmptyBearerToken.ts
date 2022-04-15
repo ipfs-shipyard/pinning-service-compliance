@@ -1,5 +1,6 @@
 import { getJoiSchema } from '../../utils/constants'
 import { ApiCall } from '../../ApiCall'
+import type { ServiceAndTokenPair } from '../../types'
 
 const checkEmptyBearerToken = async (pair: ServiceAndTokenPair) => {
   const schema = await getJoiSchema('Failure')

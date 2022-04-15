@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 // create separate markdown file per service
 import { constants as fsConstants } from 'fs'
-import { access, mkdir, writeFile, appendFile } from 'fs/promises'
+import { access, mkdir, writeFile, appendFile, readFile } from 'fs/promises'
 import { join } from 'path'
 
 import chalk from 'chalk'
@@ -11,7 +11,7 @@ import { docsDir } from '../utils/constants'
 import { getHostnameFromUrl } from '../utils/getHostnameFromUrl'
 import { getFormatter } from './formatter'
 import { getReportEntry } from './getReportEntry'
-import { getHeader } from './getHeader'
+import { getHeader, RequiredHeaderProps } from './getHeader'
 import type { ComplianceCheckDetails } from '../types'
 
 const successFormatter = getFormatter({
@@ -58,23 +58,22 @@ const addToReport = async <T>(details: ComplianceCheckDetails<T>) => {
   }
 }
 
-const reports: Map<string, Array<ComplianceCheckDetails<any>>> = new Map()
+const reportSummaryInfo: Map<string, Array<RequiredHeaderProps<any>>> = new Map()
 
 const addApiCallToReport = async <T>(apiCall: ApiCall<T>) => {
-  const { pair, errors, title, httpRequest, result, httpResponse, expectationResults, successful } = apiCall
+  const { pair, errors, title, httpRequest, result, response, expectationResults, successful } = apiCall
   const { url, headers: requestHeaders } = httpRequest
   const method = httpRequest.method ?? 'Unknown'
   const requestBody = await httpRequest.clone().text()
   const hostname = getHostnameFromUrl(url)
 
+  const headerProps: RequiredHeaderProps<T> = { pair, title, successful }
   const complianceCheckDetails: ComplianceCheckDetails<T> = {
-    pair,
+    ...headerProps,
     errors: errors.map((expectationError) => expectationError.error),
     expectationResults,
-    title,
     url,
     method,
-    successful,
     validationResult: apiCall.validationResult,
     result: await result,
     request: {
@@ -84,36 +83,40 @@ const addApiCallToReport = async <T>(apiCall: ApiCall<T>) => {
     response: {
       json: apiCall.json,
       body: apiCall.text ?? '',
-      headers: httpResponse.headers,
-      status: httpResponse.status,
-      statusText: httpResponse.statusText
+      headers: response.headers,
+      status: response.status,
+      statusText: response.statusText
     }
   }
 
-  if (reports.has(hostname)) {
-    const hostReport = reports.get(hostname) as Array<ComplianceCheckDetails<any>>
-    hostReport.push(complianceCheckDetails)
+  if (reportSummaryInfo.has(hostname)) {
+    const hostReport = reportSummaryInfo.get(hostname) as Array<RequiredHeaderProps<any>>
+    hostReport.push(headerProps)
   } else {
-    reports.set(hostname, [complianceCheckDetails])
+    reportSummaryInfo.set(hostname, [headerProps])
+    // clear out the file
+    await writeFile(getReportFilePath(hostname), '')
   }
+  await addToReport(complianceCheckDetails)
 }
 
-const createReport = async <T>(hostname: string, details: Array<ComplianceCheckDetails<T>>) => {
+const createReport = async <T>(hostname: string, details: Array<RequiredHeaderProps<T>>) => {
   const reportFilePath = getReportFilePath(hostname)
 
   const header = getHeader(details)
-  await writeFile(reportFilePath, header)
-  console.log(header)
+  const fileContents = await readFile(reportFilePath, 'utf8')
+  await writeFile(reportFilePath, header + fileContents)
+  // console.log(header)
 
-  for await (const detailItem of details) {
-    await addToReport(detailItem)
-  }
+  // for await (const detailItem of details) {
+  //   await addToReport(detailItem)
+  // }
 }
 
-const writeReports = async () => {
-  for await (const [hostname, details] of reports.entries()) {
+const writeHeaders = async () => {
+  for await (const [hostname, details] of reportSummaryInfo.entries()) {
     await createReport(hostname, details)
   }
 }
 
-export { addToReport, addApiCallToReport, writeReports }
+export { addToReport, addApiCallToReport, writeHeaders }

@@ -1,4 +1,5 @@
 import type { Options } from 'yargs'
+import type { ServiceAndTokenPair } from '../../types'
 
 const serviceAndToken: Options = {
   type: 'string',
@@ -7,7 +8,7 @@ const serviceAndToken: Options = {
   nargs: 2,
   requiresArg: true,
   coerce: (pinningServicePairs) => {
-    const coercedPairs: ServiceAndTokenPairCollection = []
+    const coercedPairs: ServiceAndTokenPair[] = []
     for (let i = 0; i < pinningServicePairs.length; i += 2) {
       const [service, key] = pinningServicePairs.slice(i, i + 2)
       coercedPairs.push([service, key])

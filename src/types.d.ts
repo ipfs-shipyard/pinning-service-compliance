@@ -23,7 +23,7 @@ interface ExpectationResult {
 }
 
 type ServiceAndTokenPair = [endpointUrl: string, authToken: string | undefined]
-type ServiceAndTokenPairCollection = ServiceAndTokenPair[]
+// type ServiceAndTokenPairCollection = ServiceAndTokenPair[]
 
 type PinsApiType = import('@ipfs-shipyard/pinning-service-client').PinsApi
 type ImplementableMethods = keyof Omit<PinsApiType, 'withMiddleware' | 'withPreMiddleware' | 'withPostMiddleware'>
@@ -82,5 +82,6 @@ export type {
   ProcessedResponse,
   ComplianceCheckDetailsCallback,
   ComplianceCheckDetailsCallbackArg,
+  PinningSpecJoiSchema,
   ServiceAndTokenPair
 }

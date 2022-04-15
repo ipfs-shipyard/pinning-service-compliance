@@ -1,6 +1,8 @@
 import type { ComplianceCheckDetails } from '../types'
 
-const getHeader = <T>(details: Array<ComplianceCheckDetails<T>>) => {
+type RequiredHeaderProps<T> = Pick<ComplianceCheckDetails<T>, 'title' | 'successful' | 'pair'>
+
+const getHeader = <T>(details: Array<RequiredHeaderProps<T>>) => {
   const endpointUrl = details[0].pair[0]
   let checks = 0
   let successes = 0
@@ -25,3 +27,4 @@ const getHeader = <T>(details: Array<ComplianceCheckDetails<T>>) => {
 }
 
 export { getHeader }
+export type { RequiredHeaderProps }

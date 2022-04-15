@@ -3,6 +3,7 @@ import { Status } from '@ipfs-shipyard/pinning-service-client'
 import { getInlineCid } from '../../utils/getInlineCid'
 import { getJoiSchema } from '../../utils/constants'
 import { ApiCall } from '../../ApiCall'
+import type { ServiceAndTokenPair } from '../../types'
 
 const addPin = async (pair: ServiceAndTokenPair) => {
   const cid = await getInlineCid()
