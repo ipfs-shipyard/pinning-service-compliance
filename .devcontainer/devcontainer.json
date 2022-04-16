@@ -1,0 +1,43 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.224.2/containers/typescript-node
+{
+  "name": "Node.js & TypeScript",
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile",
+    // Update 'VARIANT' to pick a Node version: 16, 14, 12.
+    // Append -bullseye or -buster to pin to an OS version.
+    // Use -bullseye variants on local on arm64/Apple Silicon.
+    "args": {
+      "VARIANT": "16-bullseye"
+    }
+  },
+  // Set *default* container specific settings.json values on container create.
+  "settings": {},
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": [
+    "dbaeumer.vscode-eslint"
+  ],
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "yarn install",
+  // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  "remoteUser": "node",
+  "mounts": [
+    // "source=${localWorkspaceFolder}/../pinning-service-client,target=/workspaces/pinning-service-client,type=volume,consistency=cached",
+    "source=pinning-service-compliance,target=/workspace,type=volume"
+  ],
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": [
+    "sudo git clone https://github.com/ipfs-shipyard/js-pinning-service-http-client.git /workspaces/js-pinning-service-http-client",
+    // "sudo chown -R node:node /workspaces/js-pinning-service-http-client",
+    // "cd /workspace/pinning-service-compliance && npm link ../js-pinning-service-http-client"
+  ],
+  "containerEnv": {
+  },
+  "remoteEnv": {
+    "PATH": "${containerWorkspaceFolder}/node_modules/.bin:${containerEnv:PATH}",
+  },
+  // "runArgs": ["--env-file",".devcontainer/devcontainer.env"]
+}
