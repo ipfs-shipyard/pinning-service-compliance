@@ -1,3 +1,11 @@
+
+# https://api.estuary.tech/pinning compliance:
+
+## Summary (0/2 successful)
+
+  ✘ Request with no authentication token
+  ✘ Request with invalid token
+
 ## Request with no authentication token - ✘ FAILED
 
 ### Expectations (1/2 successful)
