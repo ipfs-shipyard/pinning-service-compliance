@@ -110,11 +110,10 @@
     ]
   },
   "scripts": {
-    "clean": "npx rimraf dist node_modules",
+    "clean": "npx rimraf downloaded/*.yaml generated dist node_modules",
     "test": "test",
-    "setup": "run-s setup:download-spec setup:generate-joi",
+    "setup": "run-s setup:download-spec",
     "setup:download-spec": "ts-node ./src/download-spec.ts",
-    "setup:generate-joi": "ts-node ./src/generate-joi.ts",
     "build": "tsc",
     "cli": "node dist/src/index.js"
   },

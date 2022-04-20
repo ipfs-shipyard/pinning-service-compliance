@@ -5,7 +5,7 @@ import { specLocation, localSpecPath } from './utils/constants'
 
 const { fetch } = fetchPonyfill()
 
-fetch(specLocation).then(async (r) => r.text()).then(async (spec) => {
+fetch(specLocation).then(async (r) => await r.text()).then(async (spec) => {
   try {
     await writeFile(localSpecPath, spec)
   } catch (err) {
