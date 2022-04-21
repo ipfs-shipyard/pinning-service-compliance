@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-
 import { writeSync } from 'fs'
 
 import { getAllPins, checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteAllPins, testPagination, deleteNewPin, replacePin, matchPin } from './checks'
-import { argv } from './cli'
+import { cli } from './cli'
+import { serviceAndToken } from './cli/options'
 import { writeHeaders } from './output/reporting'
 import type { ServiceAndTokenPair } from './types'
 import { logger } from './utils/logs'
@@ -22,7 +22,7 @@ const validatePinningService = async (pair: ServiceAndTokenPair) => {
 }
 
 const main = async () => {
-  // const argv = await cli.argv
+  const argv = await cli.option('serviceAndToken', { require: true, ...serviceAndToken }).argv
 
   for await (const serviceAndToken of argv.serviceAndToken) {
     const [service, key] = serviceAndToken
@@ -40,8 +40,6 @@ main().catch((err) => {
   logger.error(err)
   process.exit(1)
 })
-
-export { validatePinningService }
 
 process.on('unhandledRejection', (err, origin) => {
   logger.log('unhandledRejection', err)
