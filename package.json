@@ -1,6 +1,6 @@
 {
   "name": "@ipfs-shipyard/pinning-service-compliance",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "author": "Russell Dempsey <1173416+SgtPooki@users.noreply.github.com>",
   "license": "Apache-2.0 OR MIT",
@@ -22,9 +22,12 @@
   "main": "src/index.ts",
   "files": [
     "src",
-    "dist"
+    "dist",
+    "downloaded"
   ],
-  "bin": "dist/src/index.js",
+  "bin": {
+    "@ipfs-shipyard/pinning-service-compliance": "./dist/index.js"
+  },
   "eslintConfig": {
     "extends": "ipfs"
   },
@@ -110,11 +113,12 @@
     ]
   },
   "scripts": {
-    "clean": "npx rimraf downloaded/*.yaml generated dist node_modules",
-    "test": "test",
-    "setup": "run-s setup:download-spec",
+    "clean": "rimraf downloaded/*.yaml generated dist node_modules",
+    "test": "aegir test -t node",
     "setup:download-spec": "ts-node ./src/download-spec.ts",
-    "build": "tsc",
+    "build": "run-s setup:download-spec build:aegir",
+    "build:aegir": "aegir build",
+    "release": "npm run build && aegir release",
     "cli": "node dist/src/index.js"
   },
   "devDependencies": {
@@ -132,6 +136,7 @@
     "marked": "^4.0.12",
     "marked-terminal": "^5.1.1",
     "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.2"
   },
@@ -149,19 +154,6 @@
     "uuid": "^8.3.2",
     "winston": "^3.7.2",
     "yargs": "^17.3.1"
-  },
-  "aegir": {
-    "docs": {
-      "publish": true,
-      "entryPoint": "./"
-    },
-    "tsRepo": true,
-    "build": {
-      "config": {
-        "platform": "node"
-      },
-      "bundlesizeMax": "44KB"
-    }
   },
   "todo": [
     "test happy paths for each method in the spec: 1 for each right now"

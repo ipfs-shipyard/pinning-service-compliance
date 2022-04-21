@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 // create separate markdown file per service
 import { constants as fsConstants } from 'fs'
 import { access, mkdir, writeFile, appendFile, readFile } from 'fs/promises'
@@ -13,6 +12,7 @@ import { getFormatter } from './formatter'
 import { getReportEntry } from './getReportEntry'
 import { getHeader, RequiredHeaderProps } from './getHeader'
 import type { ComplianceCheckDetails } from '../types'
+import { logger } from '../utils/logs'
 
 const successFormatter = getFormatter({
   paragraph: chalk.reset,
@@ -42,8 +42,8 @@ const addToReport = async <T>(details: ComplianceCheckDetails<T>) => {
     try {
       await mkdir(docsDir, { recursive: true })
     } catch (err) {
-      console.error(`Unexpected error when attempting to create docs directory ${docsDir}`)
-      console.error(err)
+      logger.error(`Unexpected error when attempting to create docs directory ${docsDir}`)
+      logger.error(err)
 
       return
     }
@@ -51,10 +51,12 @@ const addToReport = async <T>(details: ComplianceCheckDetails<T>) => {
 
   try {
     await appendFile(reportFilePath, reportEntryMarkdown)
-    console.log(formatter(reportEntryMarkdown))
+    logger.debug(`Wrote markdown to ${reportFilePath}`)
+
+    logger.verbose(formatter(reportEntryMarkdown), { messageOnly: true })
   } catch (err) {
-    console.error(`Unexpected error when attempting to write report entry markdown to ${reportFilePath}`)
-    console.error(err)
+    logger.error(`Unexpected error when attempting to write report entry markdown to ${reportFilePath}`)
+    logger.error(err)
   }
 }
 
@@ -106,11 +108,8 @@ const createReport = async <T>(hostname: string, details: Array<RequiredHeaderPr
   const header = getHeader(details)
   const fileContents = await readFile(reportFilePath, 'utf8')
   await writeFile(reportFilePath, header + fileContents)
-  // console.log(header)
-
-  // for await (const detailItem of details) {
-  //   await addToReport(detailItem)
-  // }
+  const consoleHeader = `${header.replace(/#+ /gm, '')}\nSee the full report at ${reportFilePath}`
+  logger.info(consoleHeader, { messageOnly: true })
 }
 
 const writeHeaders = async () => {

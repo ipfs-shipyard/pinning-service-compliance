@@ -2,6 +2,15 @@
 
 ## Getting started
 
+### Run the compliance checker against a service:
+
+```bash
+npx -p @ipfs-shipyard/pinning-service-compliance -- pinning-service-compliance -s <pinning_service_endpoint> <auth_token>
+
+```
+
+## Development
+
 ### Set up your environment variables
 ```bash
 cp .env-copy .env
@@ -9,23 +18,9 @@ cp .env-copy .env
 Then replace all variables with the appropriate endpoints and tokens
 
 ### Run the script
-```bash
-npm install
-npm run setup
-
-node -r ts-node/register src/index.ts -s $PINATA_API_ENDPOINT $PINATA_API_TOKEN
-node -r ts-node/register src/index.ts -s $ESTUARY_API_ENDPOINT $ESTUARY_API_TOKEN
-node -r ts-node/register src/index.ts -s $NFT_API_ENDPOINT $NFT_API_TOKEN
-node -r ts-node/register src/index.ts -s $WEB3_API_ENDPOINT $WEB3_API_TOKEN
- # or
-node -r ts-node/register src/index.ts -s $PINATA_API_ENDPOINT $PINATA_API_TOKEN -s $ESTUARY_API_ENDPOINT $ESTUARY_API_TOKEN -s $NFT_API_ENDPOINT $NFT_API_TOKEN -s $WEB3_API_ENDPOINT $WEB3_API_TOKEN
-```
-
-or
 
 ```bash
 npm install
-npm run setup
 npm run build
 
 node dist/src/index.js -s $PINATA_API_ENDPOINT $PINATA_API_TOKEN
@@ -45,14 +40,6 @@ A compliance check consists of:
 2. A Payload
 3. An expected response
 4. A summary
-
-## Troubleshooting / Debugging
-If you're using VScode, you can follow these steps:
-
-```bash
-cp .vscode/launch-copy.json .vscode/launch.json
-```
-Replace your endpoint and token, and then start the "Debug compliance checker" launch config.
 
 ### Testing a github action
 

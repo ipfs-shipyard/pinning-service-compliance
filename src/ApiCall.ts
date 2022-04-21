@@ -1,5 +1,3 @@
-// /* eslint-disable no-console */
-// import type PQueue from 'p-queue/dist'
 import type { Schema, ValidationError, ValidationResult } from '@hapi/joi'
 import fetchPonyfill from 'fetch-ponyfill'
 import type { Logger } from 'winston'
@@ -10,7 +8,9 @@ import { getQueue } from './utils/getQueue'
 import { clientFromServiceAndTokenPair } from './clientFromServiceAndTokenPair'
 import type { ComplianceCheckDetailsCallbackArg, ExpectationResult, ServiceAndTokenPair } from './types'
 import { addApiCallToReport } from './output/reporting'
-import { getLogger } from './output/getLogger'
+import { getServiceLogger, logger as consoleLogger } from './utils/logs'
+import { getSuccessIcon } from './output/getSuccessIcon'
+import { Icons } from './utils/constants'
 
 const { Request } = fetchPonyfill()
 
@@ -40,10 +40,8 @@ interface ApiCallExpectation<T> {
   title: string
 }
 class ApiCall<T> {
-  // pair: ServiceAndTokenPair
-  // queue: PQueue
-
-  result!: Promise<T | null>
+  result: T | null
+  request: Promise<T|null>
   details!: ComplianceCheckDetailsCallbackArg
   requestContext!: RequestContext
   responseContext!: ResponseContext
@@ -64,7 +62,7 @@ class ApiCall<T> {
   logger: Logger
 
   constructor ({ pair, fn, schema, title }: ApiCallOptions<T>) {
-    this.logger = getLogger(pair[0])
+    this.logger = getServiceLogger(pair[0])
     this.logger.debug(`Creating new ApiCall: ${title}`)
 
     this.title = title
@@ -78,8 +76,12 @@ class ApiCall<T> {
       this.addSchema(schema)
     }
 
-    this.result = getQueue(pair[0]).add(async () => await fn(this.client)).catch((reason) => {
+    this.request = getQueue(pair[0]).add(async () => await fn(this.client)).then((result) => {
+      this.result = result
+      return result
+    }).catch((reason) => {
       this.failureReason = reason
+      this.result = null
       return null
     })
   }
@@ -104,7 +106,14 @@ class ApiCall<T> {
   }
 
   async runExpectations () {
-    const result = await this.result
+    consoleLogger.info(`${this.title}`, { messageOnly: true })
+    try {
+      await this.request
+    } catch (err) {
+      consoleLogger.error('Error occurred while waiting for request to conclude', err)
+    }
+
+    const result = this.result
     for await (const expectation of this.expectations) {
       const { fn, title } = expectation
       try {
@@ -114,13 +123,17 @@ class ApiCall<T> {
           apiCall: this,
           result
         })
+        consoleLogger.info(`${getSuccessIcon(success)} ${title}`, { nested: true })
         this.successful = this.successful && success
+        // consoleLogger.info(`${title} - `)
 
         this.expectationResults.push({
           success,
           title
         })
       } catch (error) {
+        consoleLogger.info(`${Icons.ERROR} ${title}`, { nested: true })
+        consoleLogger.error('Unexpected error occurred while running expectation function', error)
         this.successful = false
         this.expectationResults.push({
           success: false,
@@ -130,22 +143,23 @@ class ApiCall<T> {
         this.errors.push({ title, error: error as Error })
       }
     }
-    await addApiCallToReport(this)
+
+    try {
+      await addApiCallToReport(this)
+    } catch (err) {
+      consoleLogger.error(`Could not add details of ApiCall '${this.title}' to report`, err)
+    }
+
     return this
   }
 
   addSchema (schema: Schema) {
-    // console.log('schema: ', schema)
-    // @ts-expect-error
-    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-    this.logger.debug(`Adding schema ${schema._description}`)
     this.expect({
       title: 'Response object matches api spec schema',
       fn: async ({ apiCall }): Promise<boolean> => {
-        const result = await this.result
+        const result = await this.request
         if (result != null || this.failureReason != null) {
           this.validationResult = schema.validate(this.json ?? this.failureReason, { abortEarly: false, convert: true })
-          // console.log('this.validationResult: ', this.validationResult)
           if (this.validationResult.error != null || this.validationResult.errors != null) {
             const validationErrors = this.validationResult.errors ?? this.validationResult.error as ValidationError
             this.validationErrors = validationErrors
