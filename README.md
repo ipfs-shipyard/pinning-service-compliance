@@ -1,5 +1,7 @@
 # pinning-service-compliance
 
+> The compliance test suite for [IPFS Pinning Service API Spec](https://ipfs.github.io/pinning-services-api-spec/)
+
 ## Getting started
 
 ### Run the compliance checker against a service:
@@ -23,12 +25,9 @@ Then replace all variables with the appropriate endpoints and tokens
 npm install
 npm run build
 
-node dist/src/index.js -s $PINATA_API_ENDPOINT $PINATA_API_TOKEN
-node dist/src/index.js -s $ESTUARY_API_ENDPOINT $ESTUARY_API_TOKEN
-node dist/src/index.js -s $NFT_API_ENDPOINT $NFT_API_TOKEN
-node dist/src/index.js -s $WEB3_API_ENDPOINT $WEB3_API_TOKEN
-
-node dist/src/index.js -s $PINATA_API_ENDPOINT $PINATA_API_TOKEN -s $ESTUARY_API_ENDPOINT $ESTUARY_API_TOKEN -s $NFT_API_ENDPOINT $NFT_API_TOKEN -s $WEB3_API_ENDPOINT $WEB3_API_TOKEN
+node dist/src/index.js -s $API_ENDPOINT $ACCESS_TOKEN
+ # or
+node dist/src/index.js -s $API_ENDPOINT1 $ACCESS_TOKEN1 -s $API_ENDPOINT2 $ACCESS_TOKEN2
 ```
 
 ## General architecture of the compliance checker
@@ -48,7 +47,3 @@ Use https://github.com/nektos/act like so:
 ```bash
 act --container-architecture linux/amd64 -W .github/workflows/build-and-publish-reports.yml -v -s PINATA_API_ENDPOINT -s PINATA_API_TOKEN -s WEB3_API_ENDPOINT -s WEB3_API_TOKEN -s ESTUARY_API_ENDPOINT -s ESTUARY_API_TOKEN -s NFT_API_ENDPOINT -s NFT_API_TOKEN -r
 ```
-
-## TODO:
-### Eventually add Crustio
-https://wiki.crust.network/docs/en/buildIPFSW3AuthPin
