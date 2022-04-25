@@ -8,16 +8,9 @@
 
 ```bash
 npx -p @ipfs-shipyard/pinning-service-compliance -- pinning-service-compliance -s <pinning_service_endpoint> <auth_token>
-
 ```
 
 ## Development
-
-### Set up your environment variables
-```bash
-cp .env-copy .env
-```
-Then replace all variables with the appropriate endpoints and tokens
 
 ### Run the script
 
@@ -30,7 +23,7 @@ node dist/src/index.js -s $API_ENDPOINT $ACCESS_TOKEN
 node dist/src/index.js -s $API_ENDPOINT1 $ACCESS_TOKEN1 -s $API_ENDPOINT2 $ACCESS_TOKEN2
 ```
 
-## General architecture of the compliance checker
+## FAQ
 
 ### What is a Compliance Check?
 A compliance check consists of:
@@ -40,10 +33,11 @@ A compliance check consists of:
 3. An expected response
 4. A summary
 
-### Testing a github action
+### How to avoid typing secrets by  hand?
 
-Use https://github.com/nektos/act like so:
+To avoid setting secrets by hand:
 
 ```bash
-act --container-architecture linux/amd64 -W .github/workflows/build-and-publish-reports.yml -v -s PINATA_API_ENDPOINT -s PINATA_API_TOKEN -s WEB3_API_ENDPOINT -s WEB3_API_TOKEN -s ESTUARY_API_ENDPOINT -s ESTUARY_API_TOKEN -s NFT_API_ENDPOINT -s NFT_API_TOKEN -r
+cp .env-copy .env
 ```
+Then replace all variables with the appropriate endpoints and tokens

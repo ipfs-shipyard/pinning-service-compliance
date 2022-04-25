@@ -117,12 +117,11 @@
   },
   "scripts": {
     "clean": "rimraf downloaded/*.yaml generated dist node_modules",
-    "test": "aegir test -t node",
+    "test": "echo \"No tests, run build instead\" && exit 1",
     "setup:download-spec": "ts-node ./src/download-spec.ts",
     "build": "run-s setup:download-spec build:aegir",
     "build:aegir": "aegir build",
-    "release": "npm run build && aegir release --test false --docs false",
-    "cli": "node dist/src/index.js"
+    "release": "npm run build && aegir release --test false --docs false"
   },
   "devDependencies": {
     "@types/hapi__joi": "^17.1.8",
@@ -142,8 +141,6 @@
     "typescript": "^4.6.2"
   },
   "dependencies": {
-    "marked": "^4.0.12",
-    "marked-terminal": "^5.1.1",
     "@hapi/joi": "^14.5.0",
     "@ipfs-shipyard/pinning-service-client": "^0.0.4",
     "fetch-ponyfill": "^7.1.0",
@@ -152,6 +149,8 @@
     "ipfs-core": "^0.14.1",
     "ipfs-http-client": "^56.0.1",
     "ipfsd-ctl": "^10.0.6",
+    "marked": "^4.0.12",
+    "marked-terminal": "^5.1.1",
     "oas2joi": "^2.0.2",
     "p-queue": "^6.6.0",
     "uuid": "^8.3.2",
