@@ -9,7 +9,6 @@ import type { Schema as JoiSchema } from '@hapi/joi'
 import type { PinningSpecJoiSchema } from '../types'
 const allPinStatuses = new Set([Status.Failed, Status.Pinned, Status.Pinning, Status.Queued])
 
-/* eslint-disable no-console */
 const specVersion = 'v1.0.0'
 const specFile = 'ipfs-pinning-service.yaml'
 const specLocation = `https://raw.githubusercontent.com/ipfs/pinning-services-api-spec/${specVersion}/${specFile}`
@@ -24,7 +23,11 @@ const localJoiSchemaPath = join(generatedDir, joiSchemaFile)
 
 // eslint-disable-next-line @typescript-eslint/no-namespace
 // declare namespace Joi {
-
+enum Icons {
+  SUCCESS = '✓',
+  FAILURE = '✘',
+  ERROR = '⚠'
+}
 type Schema = JoiSchema & InnerSchema
 interface InnerSchemaChild {
   key: string
@@ -117,5 +120,6 @@ export {
   localJoiSchemaPath,
   specFile,
   specLocation,
-  specVersion
+  specVersion,
+  Icons
 }

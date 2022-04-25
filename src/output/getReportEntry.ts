@@ -1,18 +1,16 @@
 
 import { inspect } from 'util'
-import type { ComplianceCheckDetails } from '../types'
 
+import type { ComplianceCheckDetails } from '../types'
+import { Icons } from '../utils/constants'
 import { stringifyHeaders } from '../utils/stringifyHeaders'
 import { getExpectationsMarkdown } from './getExpectationsMarkdown'
 import { joiValidationAsMarkdown } from './joiValidationAsMarkdown'
 
 const getReportEntry = <T>(details: ComplianceCheckDetails<T>): string => {
   const { request, response, title, url, method, validationResult, result: clientParsedResult } = details
-  // console.log('validationResult: ', validationResult)
 
-  // const stringifiedResult =
-  // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-  const reportEntry = `## ${title} - ${details.successful ? '✓ SUCCESS' : '✘ FAILED'}
+  const reportEntry = `## ${title} - ${details.successful ? `${Icons.SUCCESS} SUCCESS` : `${Icons.FAILURE} FAILED`}
 
 ${getExpectationsMarkdown(details)}
 
@@ -46,12 +44,10 @@ ${stringifyHeaders(request.headers)}
 ${request.body}
 \`\`\`
 #### Response data from ${url}
-*via util.inspect*
 \`\`\`
 ${inspect(response.json, { depth: 4 })}
 \`\`\`
 #### Response data after being parsed by RemotePinningServiceClient
-*via util.inspect*
 \`\`\`
 ${inspect(clientParsedResult, { depth: 4 })}
 \`\`\`

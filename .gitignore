@@ -1,5 +1,7 @@
 .envrc
 docs
+.devcontainer
+.vscode
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,windows,linux,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos,windows,linux,node
 

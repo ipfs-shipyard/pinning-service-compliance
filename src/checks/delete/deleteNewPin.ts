@@ -13,7 +13,7 @@ const deleteNewPin = async (pair: ServiceAndTokenPair) => {
     }
   })
 
-  const pin = await createNewPinApiCall.result
+  const pin = await createNewPinApiCall.request
   createNewPinApiCall.expect({
     title: 'Pin was created',
     fn: async ({ result }) => result != null
@@ -30,7 +30,7 @@ const deleteNewPin = async (pair: ServiceAndTokenPair) => {
       fn: async (client) => await client.pinsRequestidDelete({ requestid }),
       title: 'Can delete pin'
     })
-    await deleteApiCall.result
+    await deleteApiCall.request
 
     createNewPinApiCall.expect({
       title: 'Pin was deleted',

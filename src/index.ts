@@ -1,52 +1,58 @@
-/* eslint-disable no-console */
+#!/usr/bin/env node
+import { writeSync } from 'fs'
 
 import { getAllPins, checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteAllPins, testPagination, deleteNewPin, replacePin, matchPin } from './checks'
 import { cli } from './cli'
+import { serviceAndToken } from './cli/options'
 import { writeHeaders } from './output/reporting'
 import type { ServiceAndTokenPair } from './types'
-
-// setInterval(() => {
-//   const memoryUsage = process.memoryUsage()
-//   const keys = Object.keys(memoryUsage) as Array<keyof NodeJS.MemoryUsage>
-//   keys.forEach((key) => {
-//     console.log(`${key} ${Math.round(memoryUsage[key] / 1024 / 1024 * 100) / 100} MB`)
-//   })
-// }, 1000)
+import { logger } from './utils/logs'
 
 const validatePinningService = async (pair: ServiceAndTokenPair) => {
-  try {
-    await checkEmptyBearerToken(pair)
-    await checkInvalidBearerToken(pair)
-    await addPin(pair)
-    await deleteNewPin(pair)
-    await getAllPins(pair)
-    await replacePin(pair)
-    await matchPin(pair)
-    await testPagination(pair)
-    await deleteAllPins(pair)
-  } catch (err) {
-    console.error('problem running a compliance check')
-    console.error(err)
+  const complianceCheckFunctions = [checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteNewPin, getAllPins, replacePin, matchPin, testPagination, deleteAllPins]
+  for await (const complianceCheckFn of complianceCheckFunctions) {
+    logger.debug(`Starting compliance check '${complianceCheckFn.name}'`)
+    try {
+      await complianceCheckFn(pair)
+    } catch (err) {
+      logger.error(`Problem running compliance check: '${complianceCheckFn.name}': ${err as string}`)
+      // logger.error(err)
+    }
   }
 }
 
 const main = async () => {
-  const argv = await cli.argv
+  const argv = await cli.option('serviceAndToken', { require: true, ...serviceAndToken }).argv
 
-  for await (const [service, key] of argv.serviceAndToken as ServiceAndTokenPair[]) {
+  for await (const serviceAndToken of argv.serviceAndToken) {
+    const [service, key] = serviceAndToken
+
     try {
       await validatePinningService([service, key])
     } catch (err) {
-      console.error('could not validate pinning service')
-      console.error(err)
+      logger.error('could not validate pinning service')
+      logger.error(err)
     }
   }
   await writeHeaders()
 }
-// console.log(cli.argv)
-// eslint-disable-next-line no-unexpected-multiline
 main().catch((err) => {
-  console.error(err)
+  logger.error(err)
+  process.exit(1)
 })
 
-export { validatePinningService }
+process.on('unhandledRejection', (err, origin) => {
+  logger.log('unhandledRejection', err)
+  writeSync(
+    process.stderr.fd,
+    `Caught exception: ${JSON.stringify(err, null, 2)}\n`
+  )
+})
+process.on('uncaughtException', (err, origin) => {
+  logger.log('uncaughtException', err)
+  writeSync(
+    process.stderr.fd,
+    `Caught exception: ${JSON.stringify(err, null, 2)}\n` +
+    `Exception origin: ${origin}`
+  )
+})

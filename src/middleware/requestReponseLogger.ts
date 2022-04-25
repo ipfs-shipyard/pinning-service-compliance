@@ -1,9 +1,9 @@
-/* eslint-disable no-console */
 import type { Middleware, RequestContext, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
 
 import { responseHasContent } from '../utils/responseHasContent'
 import { waitForDate } from '../utils/waitForDate'
 import type { ComplianceCheckDetailsCallbackArg } from '../types'
+import { logger } from '../utils/logs'
 
 interface RequestResponseLoggerOptions {
   finalCb?: (details: ComplianceCheckDetailsCallbackArg) => void | Promise<void>
@@ -77,9 +77,9 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => Middleware 
         const dateOfReset = new Date(rateLimitReset * 1000)
         const rateLimit = Number(response.headers.get('x-ratelimit-limit'))
         const rateRemaining = Number(response.headers.get('x-ratelimit-remaining'))
-        console.log(`${rateLimitKey}: Rate limit is ${rateLimit} and we have ${rateRemaining} tokens remaining.`)
+        logger.debug(`${rateLimitKey}: Rate limit is ${rateLimit} and we have ${rateRemaining} tokens remaining.`)
         if (rateRemaining === 0) {
-          console.log(`No rate tokens remaining.. we need to wait until ${dateOfReset.toString()}`)
+          logger.debug(`${rateLimitKey}: No rate tokens remaining, we need to wait until ${dateOfReset.toString()}`)
           // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
           const promises = rateLimitHandlers.get(rateLimitKey) as Array<Promise<void>>
           promises.push(waitForDate(dateOfReset))
@@ -105,8 +105,8 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => Middleware 
         }
         if (finalCb != null) await finalCb(normalizedResult)
       } catch (err) {
-        console.error('error in callback provided to the middleware')
-        console.error(err)
+        logger.error('error in callback provided to the middleware')
+        logger.error(err)
       }
       return response
     }

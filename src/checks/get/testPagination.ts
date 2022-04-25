@@ -25,7 +25,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
   await getPinsApiCall
     .runExpectations()
 
-  const pins = await getPinsApiCall.result as PinResults
+  const pins = await getPinsApiCall.request as PinResults
   let pinsNeededToBeCreated = pinsNeededToTestPagination - pins.count
   while (pinsNeededToBeCreated > 0) {
     const cid = await getInlineCid()
@@ -66,7 +66,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
   await firstPageOfPins
     .runExpectations()
 
-  const firstPageResult = await firstPageOfPins.result as PinResults
+  const firstPageResult = await firstPageOfPins.request as PinResults
   const before = getOldestPinCreateDate(firstPageResult.results)
 
   const cids: Set<string> = new Set()

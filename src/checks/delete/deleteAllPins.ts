@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import type { PinResults } from '@ipfs-shipyard/pinning-service-client'
 
 import { ApiCall } from '../../ApiCall'
@@ -27,7 +26,7 @@ const getAllPinsApiCall = async (pair: ServiceAndTokenPair, before?: Date) => {
  * @param apiCall - The root ApiCall instance that all expectations should be added to
  */
 const addPinDeletionExpectations = async (apiCall: ApiCall<PinResults>) => {
-  const pinResults: PinResults = await apiCall.result as PinResults
+  const pinResults: PinResults = await apiCall.request as PinResults
 
   if (pinResults != null) {
     for await (const pin of pinResults.results) {
@@ -41,7 +40,7 @@ const addPinDeletionExpectations = async (apiCall: ApiCall<PinResults>) => {
       apiCall.expect({
         title: `Can delete pin with requestid '${requestid}'`,
         fn: async () => {
-          await deleteApiCall.result
+          await deleteApiCall.request
           return deleteApiCall.response.status === 202
         }
       })
@@ -65,7 +64,7 @@ const deleteAllPins = async (pair: ServiceAndTokenPair) => {
   allPinsApiCall.expect({
     title: 'Final pinsGet call returns a count of zero',
     fn: async () => {
-      const result = await confirmEmptyApiCall.result
+      const result = await confirmEmptyApiCall.request
       return result?.count === 0
     }
   })

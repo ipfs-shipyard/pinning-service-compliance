@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import type { PinStatus } from '@ipfs-shipyard/pinning-service-client'
 
 import { ApiCall } from '../../ApiCall'
@@ -22,7 +21,7 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
     fn: async (client) => await client.pinsPost({ pin: { cid } }),
     title: 'Can create and replace a pin\'s CID'
   })
-  const originalPin = await createPinApiCall.result
+  const originalPin = await createPinApiCall.request
   createPinApiCall.expect({
     title: 'Pin exists',
     fn: async ({ result }) => result != null
@@ -38,7 +37,7 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
     title: `Pin's with requestid '${requestid}' can have cid '${cid}' replaced with '${newCid}'`,
     fn: async (client) => await client.pinsRequestidPost({ requestid, pin: { cid: newCid } })
   })
-  const newPin = await replaceCidApiCall.result
+  const newPin = await replaceCidApiCall.request
   createPinApiCall.expect({
     title: replaceCidApiCall.title,
     fn: async () => replaceCidApiCall.response.ok
@@ -57,7 +56,7 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
     fn: async (client) => await client.pinsRequestidGet({ requestid: requestid }),
     title: ''
   })
-  await getOriginalPinByRequestidApiCall.result
+  await getOriginalPinByRequestidApiCall.request
   createPinApiCall.expect({
     title: 'Original Pin\'s requestid cannot be found',
     fn: async () => getOriginalPinByRequestidApiCall.response.status === 404
@@ -68,7 +67,7 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
     fn: async (client) => await client.pinsRequestidGet({ requestid: newRequestid }),
     title: ''
   })
-  await getNewPinByRequestidApiCall.result
+  await getNewPinByRequestidApiCall.request
 
   createPinApiCall.expect({
     title: 'New Pin\'s requestid can be found',

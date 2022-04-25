@@ -1,20 +1,25 @@
-#!/usr/bin/env node
-/* eslint-disable no-console */
-
 import yargs from 'yargs/yargs'
 import { hideBin } from 'yargs/helpers'
 
-import { serviceAndToken } from './options'
-// import { validatePinningService } from '../index'
-// import type { ServiceAndTokenPair } from '../types'
+import { serviceAndToken, verbose, debug } from './options'
+import type { ServiceAndTokenPair } from '../types'
 
-const cli = yargs(hideBin(process.argv))
+const cli = yargs(hideBin(process.argv)).options({
+  serviceAndToken,
+  verbose,
+  debug
+})
 
-// eslint-disable-next-line @typescript-eslint/func-call-spacing
-void cli.options({ serviceAndToken })
+/**
+ * yargs typings can be extremely naive and incorrect
+ */
+const argv = cli.argv as {
+  [x: string]: unknown
+  serviceAndToken: ServiceAndTokenPair[]
+  verbose: boolean
+  debug: boolean
+  _: Array<string | number>
+  $0: string
+}
 
-
-
-export { cli }
-
-// https://service.example.com secret-token
+export { cli, argv }
