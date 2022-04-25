@@ -121,6 +121,7 @@
     "setup:download-spec": "ts-node ./src/download-spec.ts",
     "build": "run-s setup:download-spec build:aegir",
     "build:aegir": "aegir build",
+    "start": "node dist/index.js",
     "release": "npm run build && aegir release --test false --docs false"
   },
   "devDependencies": {

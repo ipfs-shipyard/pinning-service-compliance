@@ -15,12 +15,12 @@ npx -p @ipfs-shipyard/pinning-service-compliance -- pinning-service-compliance -
 ### Run the script
 
 ```bash
-npm install
+npm ci
 npm run build
 
-node dist/src/index.js -s $API_ENDPOINT $ACCESS_TOKEN
- # or
-node dist/src/index.js -s $API_ENDPOINT1 $ACCESS_TOKEN1 -s $API_ENDPOINT2 $ACCESS_TOKEN2
+npm start -- -s $API_ENDPOINT $ACCESS_TOKEN
+ # or multiple endpoints
+npm start -- -s $API_ENDPOINT1 $ACCESS_TOKEN1 -s $API_ENDPOINT2 $ACCESS_TOKEN2
 ```
 
 ## FAQ
