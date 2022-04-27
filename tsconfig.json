@@ -21,7 +21,7 @@
       "dom",
       "dom.iterable"
     ],
-    "types": ["@ipfs-shipyard/pinning-service-client", "node"],
+    "types": ["@ipfs-shipyard/pinning-service-client", "node", "multiformats"],
     "allowSyntheticDefaultImports": true,
 
         "esModuleInterop": true,
