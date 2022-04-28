@@ -8,14 +8,10 @@ const getInlineCid = async (value: string = Date.now().toString()): Promise<stri
   const inlineUint8Array = fromString(value)
   try {
     const inlineDateDigest = await identity.digest(inlineUint8Array)
-    try {
-      return CID.createV1(identity.code, inlineDateDigest).toString()
-    } catch (err) {
-      logger.error('Problem creating an inline CID', err)
-      throw err
-    }
+
+    return CID.createV1(identity.code, inlineDateDigest).toString()
   } catch (err) {
-    logger.error('Could not get an ipfs client', err)
+    logger.error('Problem creating an inline CID', err)
     throw err
   }
 }
