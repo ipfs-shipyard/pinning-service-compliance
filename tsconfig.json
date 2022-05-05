@@ -1,17 +1,10 @@
 {
-  // "extends": "aegir/src/config/tsconfig.aegir.json",
   "compilerOptions": {
     "module": "commonjs",
     "moduleResolution": "Node",
     "outDir": "dist",
     "composite": false,
     "skipLibCheck": true,
-    // "baseUrl": ".",
-    // "paths": {
-    //   "*": [
-    //     "./types/*"
-    //   ]
-    // },
     "target": "ES2020",
     "lib": [
       "es2020",
@@ -21,18 +14,16 @@
       "dom",
       "dom.iterable"
     ],
-    "types": ["@ipfs-shipyard/pinning-service-client", "node"],
+    "types": ["node"],
     "allowSyntheticDefaultImports": true,
 
         "esModuleInterop": true,
-        // "moduleResolution": "node",
         "noImplicitReturns": false,
         "noFallthroughCasesInSwitch": true,
         "noUnusedLocals": true,
         "noUnusedParameters": false,
         "importsNotUsedAsValues": "error",
         "forceConsistentCasingInFileNames": true,
-        // "skipLibCheck": true,
         "stripInternal": true,
         "resolveJsonModule": true,
         "strictNullChecks": true
@@ -48,8 +39,6 @@
   "ts-node": {
       "transpileOnly": true,
       "compilerOptions": {
-        // "module": "ES2020",
-    // "moduleResolution": "Node",
       }
   }
 }

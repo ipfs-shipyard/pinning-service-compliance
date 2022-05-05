@@ -1,3 +1,12 @@
+## [0.0.3](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v0.0.2...v0.0.3) (2022-04-25)
+
+
+### Bug Fixes
+
+* Use existing client if one is running ([830ea3b](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/830ea3b77daf8e67f67f94de2ec1b5acb7352a5f)), closes [#25](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/25)
+
+
+
 ## 0.0.2 (2022-04-21)
 
 

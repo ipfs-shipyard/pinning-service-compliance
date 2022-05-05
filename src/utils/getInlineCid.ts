@@ -1,20 +1,19 @@
-import Ctl from 'ipfsd-ctl'
-import * as ipfsHttpClient from 'ipfs-http-client'
-import type { HTTPClientExtraOptions } from 'ipfs-http-client/types/src/types'
-import type { API } from 'ipfs-core-types/src/root'
-import { join } from 'path'
-import type { ImportCandidate } from 'ipfs-core-types/src/utils'
+import { identity } from 'multiformats/hashes/identity'
+import { bytes, CID } from 'multiformats'
 
-const getInlineCid = async (value: ImportCandidate = Date.now().toString()): Promise<string> => {
-  const ipfsd = await Ctl.createController({
-    ipfsHttpModule: ipfsHttpClient,
-    ipfsBin: join('node_modules', '.bin', 'ipfs')
-  })
-  const { path } = await (ipfsd.api as API<HTTPClientExtraOptions & {inline: boolean}>).add(value, { rawLeaves: true, inline: true })
+import { logger } from './logs'
 
-  await ipfsd.stop()
+const { fromString } = bytes
+const getInlineCid = async (value: string = Date.now().toString()): Promise<string> => {
+  const inlineUint8Array = fromString(value)
+  try {
+    const inlineDateDigest = await identity.digest(inlineUint8Array)
 
-  return path
+    return CID.createV1(identity.code, inlineDateDigest).toString()
+  } catch (err) {
+    logger.error('Problem creating an inline CID', err)
+    throw err
+  }
 }
 
 export { getInlineCid }

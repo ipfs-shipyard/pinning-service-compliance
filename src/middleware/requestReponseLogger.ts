@@ -60,7 +60,7 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => Middleware 
       } catch (err) {
         errors.push(err as Error)
       }
-      let json: any
+      let json: any = null
       try {
         if (hasContent) {
           json = await response.clone().json()
