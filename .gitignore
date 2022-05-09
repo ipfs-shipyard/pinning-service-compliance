@@ -1,4 +1,7 @@
 .envrc
+docs
+.devcontainer
+.vscode
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,windows,linux,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos,windows,linux,node
 
@@ -190,7 +193,7 @@ dist
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
-!.vscode/launch.json
+!.vscode/launch-copy.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 
@@ -234,6 +237,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,windows,linux,node
-package-lock.json
 downloaded
 generated

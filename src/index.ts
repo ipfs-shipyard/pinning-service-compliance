@@ -1,24 +1,58 @@
-/* eslint-disable no-console */
+#!/usr/bin/env node
+import { writeSync } from 'fs'
 
-import chalk from 'chalk'
+import { getAllPins, checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteAllPins, testPagination, deleteNewPin, replacePin, matchPin } from './checks'
+import { cli } from './cli'
+import { serviceAndToken } from './cli/options'
+import { writeHeaders } from './output/reporting'
+import type { ServiceAndTokenPair } from './types'
+import { logger } from './utils/logs'
 
-import { getAllPins, checkEmptyBearerToken, checkInvalidBearerToken } from './checks'
-import { getFormatter } from './output/formatter'
-
-const formatter = getFormatter({
-  paragraph: chalk.green,
-  heading: chalk.green
-})
 const validatePinningService = async (pair: ServiceAndTokenPair) => {
-  console.log(formatter(`# ${pair[0]} compliance:`))
-  try {
-    await checkEmptyBearerToken(pair)
-    await checkInvalidBearerToken(pair)
-    await getAllPins(pair)
-  } catch (err) {
-    console.error('problem running a compliance check')
-    console.error(err)
+  const complianceCheckFunctions = [checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteNewPin, getAllPins, replacePin, matchPin, testPagination, deleteAllPins]
+  for await (const complianceCheckFn of complianceCheckFunctions) {
+    logger.debug(`Starting compliance check '${complianceCheckFn.name}'`)
+    try {
+      await complianceCheckFn(pair)
+    } catch (err) {
+      logger.error(`Problem running compliance check: '${complianceCheckFn.name}': ${err as string}`)
+      // logger.error(err)
+    }
   }
 }
 
-export { validatePinningService }
+const main = async () => {
+  const argv = await cli.option('serviceAndToken', { require: true, ...serviceAndToken }).argv
+
+  for await (const serviceAndToken of argv.serviceAndToken) {
+    const [service, key] = serviceAndToken
+
+    try {
+      await validatePinningService([service, key])
+    } catch (err) {
+      logger.error('could not validate pinning service')
+      logger.error(err)
+    }
+  }
+  await writeHeaders()
+}
+main().catch((err) => {
+  logger.error(err)
+  process.exit(1)
+})
+
+process.on('unhandledRejection', (err, origin) => {
+  logger.log('unhandledRejection', err)
+  writeSync(
+    process.stderr.fd,
+    `Caught exception: ${JSON.stringify(err, null, 2)}\n`
+  )
+})
+process.on('uncaughtException', (err, origin) => {
+  logger.log('uncaughtException', err)
+  writeSync(
+    process.stderr.fd,
+    `Caught exception: ${JSON.stringify(err, null, 2)}\n` +
+    `Exception origin: ${origin}`
+  )
+})

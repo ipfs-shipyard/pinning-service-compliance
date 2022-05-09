@@ -1,6 +1,6 @@
 {
   "name": "@ipfs-shipyard/pinning-service-compliance",
-  "version": "1.0.0",
+  "version": "0.0.3",
   "description": "",
   "author": "Russell Dempsey <1173416+SgtPooki@users.noreply.github.com>",
   "license": "Apache-2.0 OR MIT",
@@ -22,9 +22,15 @@
   "main": "src/index.ts",
   "files": [
     "src",
-    "dist"
+    "dist",
+    "downloaded"
   ],
-  "bin": "dist/cli.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "@ipfs-shipyard/pinning-service-compliance": "./dist/index.js"
+  },
   "eslintConfig": {
     "extends": "ipfs"
   },
@@ -110,42 +116,54 @@
     ]
   },
   "scripts": {
-    "test": "test",
-    "setup": "run-s setup:download-spec setup:generate-joi",
+    "clean": "rimraf downloaded/*.yaml generated dist node_modules",
+    "test": "echo \"No tests, run build instead\" && exit 1",
     "setup:download-spec": "ts-node ./src/download-spec.ts",
-    "setup:generate-joi": "ts-node ./src/generate-joi.ts"
+    "build": "run-s setup:download-spec build:aegir",
+    "build:aegir": "aegir build",
+    "start": "node dist/index.js",
+    "release": "npm run build && aegir release --test false --docs false"
   },
   "devDependencies": {
-    "@types/chalk": "^2.2.0",
     "@types/hapi__joi": "^17.1.8",
-    "@types/listr": "^0.14.4",
     "@types/marked": "^4.0.3",
     "@types/marked-terminal": "^3.1.3",
-    "@types/node": "^17.0.21",
+    "@types/node": "^17.0.25",
+    "@types/uuid": "^8.3.4",
     "@types/yargs": "^17.0.9",
     "aegir": "^36.1.3",
     "chalk": "^4.1.2",
     "check-aegir-project": "^1.1.1",
-    "marked": "^4.0.12",
-    "marked-terminal": "^5.1.1",
+    "cp-cli": "^2.0.0",
+    "ipfs-core-types": "^0.10.2",
     "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.2"
   },
   "dependencies": {
     "@hapi/joi": "^14.5.0",
-    "@ipfs-shipyard/pinning-service-client": "file:../pinning-service-client",
+    "@ipfs-shipyard/pinning-service-client": "^0.0.4",
     "fetch-ponyfill": "^7.1.0",
-    "joi-serialization": "^2.0.2",
-    "listr": "^0.14.3",
-    "listr2": "^4.0.5",
+    "go-ipfs": "^0.12.1",
+    "ipfs": "^0.62.1",
+    "ipfs-core": "^0.14.1",
+    "ipfs-http-client": "^56.0.1",
+    "ipfsd-ctl": "^10.0.6",
+    "marked": "^4.0.12",
+    "marked-terminal": "^5.1.1",
+    "multiformats": "^9.6.4",
     "oas2joi": "^2.0.2",
+    "p-queue": "^6.6.0",
+    "uuid": "^8.3.2",
+    "winston": "^3.7.2",
     "yargs": "^17.3.1"
-  },
-  "aegir": {
-    "tsRepo": true
   },
   "todo": [
     "test happy paths for each method in the spec: 1 for each right now"
+  ],
+  "contributors": [
+    "Russell Dempsey <1173416+SgtPooki@users.noreply.github.com>",
+    "Marcin Rataj <lidel@lidel.org>"
   ]
 }

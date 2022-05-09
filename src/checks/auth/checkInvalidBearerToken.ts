@@ -1,10 +1,23 @@
-import { Check } from '../Check'
+import { getJoiSchema } from '../../utils/constants'
+import { ApiCall } from '../../ApiCall'
+import type { ServiceAndTokenPair } from '../../types'
 
-const checkInvalidBearerToken = async (pair: ServiceAndTokenPair) => await Check({
-  pair: [pair[0], 'purposefullyInvalid'],
-  title: 'Return 403 for requests with an invalid authentication token',
-  runCheck: async (details) => details.response.status === 403,
-  apiCall: async (client) => await client.pinsGet({})
-})
+const checkInvalidBearerToken = async (pair: ServiceAndTokenPair) => {
+  const schema = await getJoiSchema('Failure')
+
+  const apiCall = new ApiCall({
+    pair: [pair[0], 'purposefullyInvalid'],
+    fn: async (client) => await client.pinsGet({}),
+    schema,
+    title: 'Request with invalid token'
+  })
+
+  apiCall.expect({
+    title: 'Returns a 403',
+    fn: async ({ details }) => details.response.status === 403
+  })
+
+  await apiCall.runExpectations()
+}
 
 export { checkInvalidBearerToken }

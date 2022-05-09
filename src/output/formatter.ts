@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { marked } from 'marked'
 import TerminalRenderer from 'marked-terminal'
 import chalk from 'chalk'

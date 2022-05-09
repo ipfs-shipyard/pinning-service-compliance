@@ -1,15 +1,43 @@
 # pinning-service-compliance
 
+> The compliance test suite for [IPFS Pinning Service API Spec](https://ipfs.github.io/pinning-services-api-spec/)
+
 ## Getting started
 
-```bash
-npm install
-npm run setup
+### Run the compliance checker against a service:
 
-ts-node src/cli/index.ts -s $PINATA_API_ENDPOINT $PINATA_API_TOKEN -s $ESTUARY_API_ENDPOINT $ESTUARY_API_TOKEN -s $NFT_API_ENDPOINT $NFT_API_TOKEN -s $WEB3_API_ENDPOINT $WEB3_API_TOKEN
+```bash
+npx -p @ipfs-shipyard/pinning-service-compliance -- pinning-service-compliance -s <pinning_service_endpoint> <auth_token>
 ```
 
+## Development
 
-## TODO:
-### Eventually add Crustio
-https://wiki.crust.network/docs/en/buildIPFSW3AuthPin
+### Run the script
+
+```bash
+npm ci
+npm run build
+
+npm start -- -s $API_ENDPOINT $ACCESS_TOKEN
+ # or multiple endpoints
+npm start -- -s $API_ENDPOINT1 $ACCESS_TOKEN1 -s $API_ENDPOINT2 $ACCESS_TOKEN2
+```
+
+## FAQ
+
+### What is a Compliance Check?
+A compliance check consists of:
+
+1. An API call
+2. A Payload
+3. An expected response
+4. A summary
+
+### How to avoid typing secrets by  hand?
+
+To avoid setting secrets by hand:
+
+```bash
+cp .env-copy .env
+```
+Then replace all variables with the appropriate endpoints and tokens

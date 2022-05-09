@@ -1,0 +1,40 @@
+name: Build and publish compliance reports
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 6" # Run at 00:00 on every saturday
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+    branches: [ main ]
+jobs:
+  build-and-publish:
+    strategy:
+      fail-fast: false
+      matrix:
+        args: ["${{ secrets.PINATA_API_ENDPOINT }} ${{ secrets.PINATA_API_TOKEN }}", "${{ secrets.ESTUARY_API_ENDPOINT }} ${{ secrets.ESTUARY_API_TOKEN }}", "${{ secrets.NFT_API_ENDPOINT }} ${{ secrets.NFT_API_TOKEN }}", "${{ secrets.WEB3_API_ENDPOINT }} ${{ secrets.WEB3_API_TOKEN }}"]
+
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run setup script
+        run: npm run setup
+
+      - name: Generate reports
+        run: node -r ts-node/register src/index.ts -s ${{ matrix.args }}
+      # Deploy to gh pages branch
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@399aab378450f99b7de6767f62b0d1dbfcb58b53
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: docs
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
