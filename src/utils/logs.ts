@@ -1,7 +1,7 @@
 import { join } from 'path'
 
-import { format, createLogger, transports } from 'winston/dist/winston.js'
-import type { Logform, transport } from 'winston/dist/winston.js'
+import { format, createLogger, transports } from 'winston'
+import type { Logform, transport } from 'winston'
 
 import { docsDir } from './constants.js'
 import { getHostnameFromUrl } from './getHostnameFromUrl.js'
@@ -27,7 +27,7 @@ interface LoggerInfo extends Logform.TransformableInfo {
   messageOnly?: boolean
 }
 // const consoleTransport =
-const myFormat = printf(({ level, message, timestamp, hostname, nested, messageOnly, ...metadata }: LoggerInfo) => {
+const myFormat = printf(({ level, message, timestamp, nested, messageOnly, ...metadata }: Logform.TransformableInfo) => {
   if (nested === true) {
     return `\t${message}`
   }
@@ -35,13 +35,13 @@ const myFormat = printf(({ level, message, timestamp, hostname, nested, messageO
     return `${message}`
   }
 
-  return `${timestamp} [${level}] : ${message}`
+  return `${timestamp as LoggerInfo['timestamp']} [${level}] : ${message}`
 })
 
 /**
  * supplying the cli with the '-v' or '--verbose' flag will output the full report details as they're generated.
  */
-const verboseFilter = format((info: LoggerInfo) => {
+const verboseFilter = format((info: Logform.TransformableInfo) => {
   const { level } = info
   if (level === 'verbose') {
     return argv.verbose ? info : false
@@ -55,7 +55,7 @@ const verboseFilter = format((info: LoggerInfo) => {
 /**
  * supplying the cli with the '-d' or '--debug' flag will output additional information about the state of the compliance checks in order to assist with debugging/troubleshooting
  */
-const debugFilter = format((info: LoggerInfo, options) => {
+const debugFilter = format((info: Logform.TransformableInfo, options) => {
   const { level } = info
   if (level === 'debug') {
     return argv.debug ? info : false
