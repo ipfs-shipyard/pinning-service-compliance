@@ -40,7 +40,7 @@ interface ApiCallExpectation<T> {
   title: string
 }
 class ApiCall<T> {
-  result: T | null
+  result: T | null = null
   request: Promise<T|null>
   details!: ComplianceCheckDetailsCallbackArg
   requestContext!: RequestContext
