@@ -1,8 +1,9 @@
-import yargs from 'yargs/yargs'
+// import yargs from 'yargs/yargs'
+import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 
-import { serviceAndToken, verbose, debug } from './options'
-import type { ServiceAndTokenPair } from '../types'
+import { serviceAndToken, verbose, debug } from './options/index.js'
+import type { ServiceAndTokenPair } from '../types.js'
 
 const cli = yargs(hideBin(process.argv)).options({
   serviceAndToken,

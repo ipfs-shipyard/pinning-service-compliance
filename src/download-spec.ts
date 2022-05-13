@@ -2,8 +2,8 @@ import { writeFile } from 'fs/promises'
 
 import fetchPonyfill from 'fetch-ponyfill'
 
-import { specLocation, localSpecPath } from './utils/constants'
-import { logger } from './utils/logs'
+import { specLocation, localSpecPath } from './utils/constants.js'
+import { logger } from './utils/logs.js'
 
 const { fetch } = fetchPonyfill()
 

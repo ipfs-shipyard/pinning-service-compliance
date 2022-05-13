@@ -1,6 +1,7 @@
 import { readFile } from 'fs/promises'
 
-import Joi, { Schema } from '@hapi/joi'
+import Joi from '@hapi/joi'
+import type { Schema } from '@hapi/joi'
 
 import { getJoiSchemaPath } from './constants'
 import { logger } from './logs'
