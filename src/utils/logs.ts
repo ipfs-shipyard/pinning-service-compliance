@@ -1,7 +1,7 @@
 import { join } from 'path'
 
-import { format, createLogger, transports } from 'winston/dist/winston.js'
-import type { Logform, transport } from 'winston/dist/winston.js'
+import { format, createLogger, transports } from 'winston'
+import type { Logform, transport } from 'winston'
 
 import { docsDir } from './constants.js'
 import { getHostnameFromUrl } from './getHostnameFromUrl.js'
@@ -26,7 +26,6 @@ interface LoggerInfo extends Logform.TransformableInfo {
   nested?: boolean
   messageOnly?: boolean
 }
-
 const myFormat = printf(({ level, message, timestamp, nested, messageOnly, ...metadata }: Logform.TransformableInfo) => {
   if (nested === true) {
     return `\t${message}`
