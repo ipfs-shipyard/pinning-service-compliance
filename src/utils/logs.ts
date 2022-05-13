@@ -1,7 +1,7 @@
 import { join } from 'path'
 
-import { format, createLogger, transports } from 'winston'
-import type { Logform, transport } from 'winston'
+import { format, createLogger, transports } from 'winston/dist/winston.js'
+import type { Logform, transport } from 'winston/dist/winston.js'
 
 import { docsDir } from './constants.js'
 import { getHostnameFromUrl } from './getHostnameFromUrl.js'

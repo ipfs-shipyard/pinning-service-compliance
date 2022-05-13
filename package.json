@@ -118,9 +118,11 @@
   },
   "scripts": {
     "clean": "rimraf downloaded/*.yaml generated dist node_modules",
-    "test": "aegir lint",
-    "build": "aegir build",
-    "start": "node dist/src/index.js",
+    "test": "echo \"No tests, run build instead\" && exit 1",
+    "setup:download-spec": "ts-node-esm ./src/download-spec.ts",
+    "build": "run-s setup:download-spec build:aegir",
+    "build:aegir": "aegir build",
+    "start": "node dist/index.js",
     "release": "npm run build && aegir release --test false --docs false"
   },
   "devDependencies": {
