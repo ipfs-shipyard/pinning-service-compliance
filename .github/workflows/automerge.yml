@@ -42,7 +42,7 @@ jobs:
         wait-interval: 10
         running-workflow-name: 'automerge' # the name of this job
     - name: Merge PR
-      uses: pascalgn/automerge-action@741c311a47881be9625932b0a0de1b0937aab1ae # v0.13.1
+      uses: pascalgn/automerge-action@2e9644b0b86a2c052525921f181f905dc8102da5 # v0.15.3
       env:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         MERGE_LABELS: ""
