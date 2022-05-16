@@ -1,9 +1,7 @@
 import oas2joi from 'oas2joi'
-// import Joi from '@hapi/joi'
 import type { Schema as JoiSchema } from '@hapi/joi'
 
 import type { PinningSpecJoiSchema } from '../types.js'
-// import { getPinningSpec } from '../getPinningSpec.js'
 import { logger } from './logs.js'
 import { specLocation } from './constants.js'
 
@@ -34,9 +32,6 @@ const getInnerSchema = (schema: Schema | JoiSchema, path: string[]) => {
   }
 
   return finalSchema as JoiSchema
-  // path.reduce((finalSchema, keyName) => {
-  //   return (finalSchema)._inner.children.find(({ key }) => key === keyName).schema
-  // }, schema)
 }
 
 const setInnerSchema = (rootSchema: Schema | JoiSchema, path: string[], newSchema: Schema | JoiSchema) => {
@@ -64,25 +59,16 @@ const modifySchema = (schemaName: keyof PinningSpecJoiSchema, schema: JoiSchema)
       const nameSchema = getInnerSchema(schema, namePath)
       setInnerSchema(schema, namePath, nameSchema.allow(null))
 
-      // const originsPath = ['pin', 'origins']
-      // const originsSchema = getInnerSchema(schema, originsPath)
-      // setInnerSchema(schema, originsPath, originsSchema.allow(null))
-
-      // const metaPath = ['pin', 'meta']
-      // const metaSchema = getInnerSchema(schema, metaPath)
-      // setInnerSchema(schema, metaPath, metaSchema.allow(null))
       break
     }
     default: {
-      // return schema
+      break
     }
   }
 }
 
-// eslint-disable-next-line @typescript-eslint/return-await
 const getJoiSchema = async <T extends keyof PinningSpecJoiSchema>(schemaName: T): Promise<PinningSpecJoiSchema[T] | undefined> => {
   try {
-    // const pinningSpec = await getPinningSpec()
     const schema: PinningSpecJoiSchema = (await oas2joi(specLocation))
 
     modifySchema(schemaName, schema[schemaName])

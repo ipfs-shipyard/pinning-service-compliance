@@ -26,7 +26,7 @@ interface LoggerInfo extends Logform.TransformableInfo {
   nested?: boolean
   messageOnly?: boolean
 }
-// const consoleTransport =
+
 const myFormat = printf(({ level, message, timestamp, nested, messageOnly, ...metadata }: Logform.TransformableInfo) => {
   if (nested === true) {
     return `\t${message}`
