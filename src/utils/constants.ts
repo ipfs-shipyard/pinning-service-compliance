@@ -2,9 +2,9 @@ import { join, resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
 import oas2joi from 'oas2joi'
+import type { Schema as JoiSchema } from '@hapi/joi'
 
 import { Status } from '@ipfs-shipyard/pinning-service-client'
-import type { Schema as JoiSchema } from '@hapi/joi'
 import type { PinningSpecJoiSchema } from '../types.js'
 
 const _filename = fileURLToPath(import.meta.url)
