@@ -1,23 +1,25 @@
-import { readFile } from 'fs/promises'
+// import { readFile } from 'fs/promises'
 
-import Joi from '@hapi/joi'
-import type { Schema } from '@hapi/joi'
+// import Joi from '@hapi/joi'
+// import type { Schema } from '@hapi/joi'
 
-import { getJoiSchemaPath } from './constants.js'
-import { logger } from './logs.js'
+// import { getJoiSchemaPath } from './constants.js'
+// import { logger } from './logs.js'
 
-type SchemaNames = 'Delegates' | 'Failure' | 'Origins' | 'Pin' | 'PinMeta' | 'PinResults' | 'PinStatus' | 'StatusInfo' | 'Status' | 'TextMatchingStrategy'
+// type SchemaNames = 'Delegates' | 'Failure' | 'Origins' | 'Pin' | 'PinMeta' | 'PinResults' | 'PinStatus' | 'StatusInfo' | 'Status' | 'TextMatchingStrategy'
 
-const loadJoiSchema = async (schemaName: SchemaNames): Promise<Schema> => {
-  const schemaPath = getJoiSchemaPath(schemaName)
+// const loadJoiSchema = async (schemaName: SchemaNames): Promise<Schema> => {
+//   const schemaPath = getJoiSchemaPath(schemaName)
 
-  try {
-    const schemaJson = await readFile(schemaPath, { encoding: 'utf8' })
-    return Joi.compile(schemaJson)
-  } catch (err) {
-    logger.error('Could not load Joi Schema')
-    throw err
-  }
-}
+//   try {
+//     const schemaJson = await readFile(schemaPath, { encoding: 'utf8' })
+//     return Joi.compile(schemaJson)
+//   } catch (err) {
+//     logger.error('Could not load Joi Schema')
+//     throw err
+//   }
+// }
 
-export { loadJoiSchema }
+// export { loadJoiSchema }
+const foo = 1
+export { foo }
