@@ -155,7 +155,7 @@
     "marked-terminal": "^5.1.1",
     "multiformats": "^9.6.4",
     "oas2joi": "^2.0.2",
-    "p-queue": "^6.6.0",
+    "p-queue": "^7.2.0",
     "uuid": "^8.3.2",
     "winston": "^3.7.2",
     "yargs": "^17.5.0"

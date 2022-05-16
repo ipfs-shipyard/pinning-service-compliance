@@ -9,7 +9,6 @@ interface ComplianceCheckDetailsCallbackArg extends ResponseContext {
 interface ProcessedResponse extends Response {
   text: string | null
   json: Record<string, any>
-  // body: string | null
 }
 
 interface ComplianceCheckDetailsCallback {
@@ -23,7 +22,6 @@ interface ExpectationResult {
 }
 
 type ServiceAndTokenPair = [endpointUrl: string, authToken: string | undefined]
-// type ServiceAndTokenPairCollection = ServiceAndTokenPair[]
 
 type PinsApiType = import('@ipfs-shipyard/pinning-service-client').PinsApi
 type ImplementableMethods = keyof Omit<PinsApiType, 'withMiddleware' | 'withPreMiddleware' | 'withPostMiddleware'>
@@ -61,15 +59,10 @@ interface ComplianceCheckDetails<T> {
   expectationResults: ExpectationResult[]
 
 }
-// interface ComplianceCheckFetchData {
-
-// }
-// type ResponseContext = import('@ipfs-shipyard/pinning-service-client').ResponseContext
 // eslint-disable-next-line @typescript-eslint/dot-notation
 interface ProcessedResponse extends Response {
   text: string | null
   json: Record<string, any>
-  // body: string | null
 }
 
 interface ComplianceCheckDetailsCallback {
