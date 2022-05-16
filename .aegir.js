@@ -3,7 +3,7 @@
 export default {
   docs: {
     publish: true,
-    entryPoint: './'
+    entryPoint: './docs'
   },
   tsRepo: true,
   build: {

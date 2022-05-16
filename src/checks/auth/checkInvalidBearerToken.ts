@@ -1,4 +1,4 @@
-import { getJoiSchema } from '../../utils/constants.js'
+import { getJoiSchema } from '../../utils/getJoiSchema.js'
 import { ApiCall } from '../../ApiCall.js'
 import type { ServiceAndTokenPair } from '../../types.js'
 
