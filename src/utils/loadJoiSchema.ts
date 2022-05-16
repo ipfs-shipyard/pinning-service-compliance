@@ -3,8 +3,8 @@ import { readFile } from 'fs/promises'
 import Joi from '@hapi/joi'
 import type { Schema } from '@hapi/joi'
 
-import { getJoiSchemaPath } from './constants'
-import { logger } from './logs'
+import { getJoiSchemaPath } from './constants.js'
+import { logger } from './logs.js'
 
 type SchemaNames = 'Delegates' | 'Failure' | 'Origins' | 'Pin' | 'PinMeta' | 'PinResults' | 'PinStatus' | 'StatusInfo' | 'Status' | 'TextMatchingStrategy'
 

@@ -1,1 +1,1 @@
-export * from './replacePin'
+export * from './replacePin.js'

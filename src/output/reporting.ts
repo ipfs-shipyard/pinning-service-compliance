@@ -5,14 +5,14 @@ import { join } from 'path'
 
 import chalk from 'chalk'
 
-import type { ApiCall } from '../ApiCall'
-import { docsDir } from '../utils/constants'
-import { getHostnameFromUrl } from '../utils/getHostnameFromUrl'
-import { getFormatter } from './formatter'
-import { getReportEntry } from './getReportEntry'
-import { getHeader, RequiredHeaderProps } from './getHeader'
-import type { ComplianceCheckDetails } from '../types'
-import { logger } from '../utils/logs'
+import type { ApiCall } from '../ApiCall.js'
+import { docsDir } from '../utils/constants.js'
+import { getHostnameFromUrl } from '../utils/getHostnameFromUrl.js'
+import { getFormatter } from './formatter.js'
+import { getReportEntry } from './getReportEntry.js'
+import { getHeader, RequiredHeaderProps } from './getHeader.js'
+import type { ComplianceCheckDetails } from '../types.js'
+import { logger } from '../utils/logs.js'
 
 const successFormatter = getFormatter({
   paragraph: chalk.reset,

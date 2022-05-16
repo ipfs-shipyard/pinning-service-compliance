@@ -1,4 +1,4 @@
-import type { ServiceAndTokenPair } from '../../types'
+import type { ServiceAndTokenPair } from '../../types.js'
 
 const serviceAndToken = {
   alias: 's',

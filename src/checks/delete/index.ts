@@ -1,2 +1,2 @@
-export * from './deleteAllPins'
-export * from './deleteNewPin'
+export * from './deleteAllPins.js'
+export * from './deleteNewPin.js'

@@ -1,7 +1,7 @@
-import { getInlineCid } from '../../utils/getInlineCid'
-import { ApiCall } from '../../ApiCall'
-import { getRequestid } from '../../utils/getRequestid'
-import type { ServiceAndTokenPair } from '../../types'
+import { getInlineCid } from '../../utils/getInlineCid.js'
+import { ApiCall } from '../../ApiCall.js'
+import { getRequestid } from '../../utils/getRequestid.js'
+import type { ServiceAndTokenPair } from '../../types.js'
 
 const deleteNewPin = async (pair: ServiceAndTokenPair) => {
   const cid = await getInlineCid()

@@ -5,7 +5,7 @@ import * as ipfsHttpClient from 'ipfs-http-client'
 import type { HTTPClientExtraOptions } from 'ipfs-http-client/types/src/types'
 import type { API } from 'ipfs-core-types/src/root'
 
-import { logger } from './logs'
+import { logger } from './logs.js'
 
 type InlineableClient = API<HTTPClientExtraOptions & {inline: boolean}>
 

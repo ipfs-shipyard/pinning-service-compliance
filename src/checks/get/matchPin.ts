@@ -2,10 +2,10 @@ import { v4 as uuidv4 } from 'uuid'
 
 import { TextMatchingStrategy } from '@ipfs-shipyard/pinning-service-client'
 
-import { getInlineCid } from '../../utils/getInlineCid'
-import { ApiCall } from '../../ApiCall'
-import type { ServiceAndTokenPair } from '../../types'
-import { expectNonNullResult, expectOkResponse } from '../../expectations'
+import { getInlineCid } from '../../utils/getInlineCid.js'
+import { ApiCall } from '../../ApiCall.js'
+import type { ServiceAndTokenPair } from '../../types.js'
+import { expectNonNullResult, expectOkResponse } from '../../expectations/index.js'
 
 const matchApiCallExpectation = async (pair: ServiceAndTokenPair, match: TextMatchingStrategy, name: string) => {
   await new ApiCall({

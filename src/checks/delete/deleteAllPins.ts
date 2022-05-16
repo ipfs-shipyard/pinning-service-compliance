@@ -1,10 +1,10 @@
 import type { PinResults } from '@ipfs-shipyard/pinning-service-client'
 
-import { ApiCall } from '../../ApiCall'
-import type { ServiceAndTokenPair } from '../../types'
-import { allPinStatuses } from '../../utils/constants'
-import { getOldestPinCreateDate } from '../../utils/getOldestPinCreateDate'
-import { getRequestid } from '../../utils/getRequestid'
+import { ApiCall } from '../../ApiCall.js'
+import type { ServiceAndTokenPair } from '../../types.js'
+import { allPinStatuses } from '../../utils/constants.js'
+import { getOldestPinCreateDate } from '../../utils/getOldestPinCreateDate.js'
+import { getRequestid } from '../../utils/getRequestid.js'
 
 const getAllPinsApiCall = async (pair: ServiceAndTokenPair, before?: Date) => {
   let title = 'Can delete all pins'

@@ -1,5 +1,5 @@
 import type { PinResults, PinStatus } from '@ipfs-shipyard/pinning-service-client'
-import type { ApiCall } from '../ApiCall'
+import type { ApiCall } from '../ApiCall.js'
 
 const getRequestid = (pin: PinStatus, apiCall: ApiCall<PinResults> | ApiCall<PinStatus>) => {
   let { requestid, pin: { cid } } = pin

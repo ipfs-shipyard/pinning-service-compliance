@@ -1,4 +1,4 @@
-import type { ApiCallExpectation } from '../ApiCall'
+import type { ApiCallExpectation } from '../ApiCall.js'
 
 const expectOkResponse: ApiCallExpectation<any> = {
   title: 'Response is ok',

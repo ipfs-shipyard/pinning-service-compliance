@@ -1,6 +1,6 @@
-import { ApiCall } from '../../ApiCall'
-import type { ServiceAndTokenPair } from '../../types'
-import { allPinStatuses, getJoiSchema } from '../../utils/constants'
+import { ApiCall } from '../../ApiCall.js'
+import type { ServiceAndTokenPair } from '../../types.js'
+import { allPinStatuses, getJoiSchema } from '../../utils/constants.js'
 
 const getAllPins = async (pair: ServiceAndTokenPair) => {
   const allPinsApiCall = new ApiCall({

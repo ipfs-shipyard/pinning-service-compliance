@@ -29,7 +29,7 @@
     "access": "public"
   },
   "bin": {
-    "@ipfs-shipyard/pinning-service-compliance": "./dist/index.js"
+    "@ipfs-shipyard/pinning-service-compliance": "./dist/index.min.js"
   },
   "type": "module",
   "eslintConfig": {
@@ -118,11 +118,11 @@
   },
   "scripts": {
     "clean": "rimraf downloaded/*.yaml generated dist node_modules",
-    "test": "echo \"No tests, run build instead\" && exit 1",
+    "test": "aegir lint",
     "setup:download-spec": "ts-node-esm ./src/download-spec.ts",
     "build": "run-s setup:download-spec build:aegir",
     "build:aegir": "aegir build",
-    "start": "node dist/index.js",
+    "start": "node dist/src/index.js",
     "release": "npm run build && aegir release --test false --docs false"
   },
   "devDependencies": {
@@ -144,7 +144,7 @@
   },
   "dependencies": {
     "@hapi/joi": "^14.5.0",
-    "@ipfs-shipyard/pinning-service-client": "^0.0.4",
+    "@ipfs-shipyard/pinning-service-client": "^1.0.1",
     "fetch-ponyfill": "^7.1.0",
     "go-ipfs": "^0.12.1",
     "ipfs": "^0.62.1",
