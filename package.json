@@ -29,7 +29,7 @@
     "access": "public"
   },
   "bin": {
-    "@ipfs-shipyard/pinning-service-compliance": "./dist/index.min.js"
+    "@ipfs-shipyard/pinning-service-compliance": "./dist/src/index.js"
   },
   "type": "module",
   "eslintConfig": {
