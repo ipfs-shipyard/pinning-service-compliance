@@ -1,5 +1,5 @@
 import type { Schema, ValidationError, ValidationResult } from '@hapi/joi'
-import fetchPonyfill from 'fetch-ponyfill'
+import { Request } from 'node-fetch'
 import type { Logger } from 'winston'
 
 import type { RemotePinningServiceClient, RequestContext, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
@@ -11,8 +11,6 @@ import { addApiCallToReport } from './output/reporting.js'
 import { getServiceLogger, logger as consoleLogger } from './utils/logs.js'
 import { getSuccessIcon } from './output/getSuccessIcon.js'
 import { Icons } from './utils/constants.js'
-
-const { Request } = fetchPonyfill()
 
 interface ApiCallOptions<T> {
   pair: ServiceAndTokenPair

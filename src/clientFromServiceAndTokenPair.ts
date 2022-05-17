@@ -1,3 +1,5 @@
+import fetch from 'node-fetch'
+
 import { RemotePinningServiceClient, Configuration } from '@ipfs-shipyard/pinning-service-client'
 
 import { requestResponseLogger, RequestResponseLoggerOptions } from './middleware/requestReponseLogger.js'
@@ -7,6 +9,7 @@ function clientFromServiceAndTokenPair ([endpointUrl, accessToken]: ServiceAndTo
   const config = new Configuration({
     endpointUrl,
     accessToken,
+    fetchApi: fetch,
     middleware: [
       requestResponseLogger(middleWareOptions)
     ]
