@@ -1,5 +1,6 @@
 import type { Schema, ValidationError, ValidationResult } from '@hapi/joi'
 import { Request } from 'node-fetch'
+import type { RequestInit } from 'node-fetch'
 import type { Logger } from 'winston'
 
 import type { RemotePinningServiceClient, RequestContext, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
@@ -11,6 +12,8 @@ import { addApiCallToReport } from './output/reporting.js'
 import { getServiceLogger, logger as consoleLogger } from './utils/logs.js'
 import { getSuccessIcon } from './output/getSuccessIcon.js'
 import { Icons } from './utils/constants.js'
+import { globalReport } from './utils/report.js'
+import { isError } from './guards/isError.js'
 
 interface ApiCallOptions<T> {
   pair: ServiceAndTokenPair
@@ -37,6 +40,7 @@ interface ApiCallExpectation<T> {
   fn: ExpectationFn<T>
   title: string
 }
+
 class ApiCall<T> {
   result: T | null = null
   request: Promise<T|null>
@@ -60,24 +64,42 @@ class ApiCall<T> {
   logger: Logger
 
   constructor ({ pair, fn, schema, title }: ApiCallOptions<T>) {
+    globalReport.incrementApiCallsCount()
     this.logger = getServiceLogger(pair[0])
     this.logger.debug(`Creating new ApiCall: ${title}`)
-
+    // consoleLogger.info(`ApiCall Count is '${globalReport.apiCallCount}'`)
+    this.saveRequest = this.saveRequest.bind(this)
+    this.saveResponse = this.saveResponse.bind(this)
+    this.saveDetails = this.saveDetails.bind(this)
     this.title = title
     this.pair = pair
+
     this.client = clientFromServiceAndTokenPair(pair, {
-      preCb: this.saveRequest.bind(this),
-      postCb: this.saveResponse.bind(this),
-      finalCb: this.saveDetails.bind(this)
+      preCb: this.saveRequest,
+      postCb: this.saveResponse,
+      finalCb: this.saveDetails
     })
     if (schema != null) {
       this.addSchema(schema)
     }
 
-    this.request = getQueue(pair[0]).add(async () => await fn(this.client)).then((result) => {
+    this.request = getQueue(pair[0]).add(async () => {
+      consoleLogger.debug('Running primary fn')
+      try {
+        return await fn(this.client)
+      } catch (err) {
+        const error = isError(err) ? err : new Error(err as string)
+        this.errors.push({
+          title: 'Error running primary ApiCall fn',
+          error
+        })
+        throw err
+      }
+    }).then((result) => {
       this.result = result
       return result
     }).catch((reason) => {
+      consoleLogger.debug('Caught error during primary fn', { error: reason })
       this.failureReason = reason
       this.result = null
       return null
@@ -89,13 +111,9 @@ class ApiCall<T> {
   }
 
   get httpRequest () {
-    const request = new Request(this.requestContext.url, this.requestContext.init)
+    const request = new Request(this.requestContext.url, this.requestContext.init as RequestInit)
 
     return request
-  }
-
-  get clientResponse () {
-    throw new Error('Method not implemented.')
   }
 
   expect (expectation: ApiCallExpectation<T>) {
@@ -105,6 +123,8 @@ class ApiCall<T> {
 
   async runExpectations () {
     consoleLogger.info(`${this.title}`, { messageOnly: true })
+    globalReport.incrementRunExpectationsCallCount()
+    // consoleLogger.info(`runExpectations call Count is '${++runExpectationsCount}'`)
     try {
       await this.request
     } catch (err) {
@@ -113,6 +133,8 @@ class ApiCall<T> {
 
     const result = this.result
     for await (const expectation of this.expectations) {
+      globalReport.incrementTotalExpectationsCount()
+      // consoleLogger.info(`Total Expectation Count is '${++totalExpectationsCount}'`)
       const { fn, title } = expectation
       try {
         const success = await fn({
@@ -165,8 +187,12 @@ class ApiCall<T> {
           } else {
             return true
           }
+        } else {
+          consoleLogger.info('Result or failureReason is null')
+          console.log(result, this.failureReason, this.response)
+          this.errors.push({ error: new Error('Could not compare against joi Schema'), title: 'Result and failureReason are both, unexpectedly, null' })
+          return false
         }
-        throw new Error('Could not compare against joi Schema')
       }
     })
   }
@@ -177,11 +203,23 @@ class ApiCall<T> {
   }
 
   private async saveResponse (context: ResponseContext) {
-    this.logger.debug(`${this.title}: Saving response context for '${context.url}'`)
-    const response = this.response = context.response.clone()
-    this.json = await response.clone().json()
-    this.text = await response.clone().text()
+    // this.logger.debug()
+    consoleLogger.debug(`${this.title}: Saving response context for '${context.url}'`)
+    this.response = context.response.clone()
+    consoleLogger.debug('ApiCall.saveResponse: after setting this.response')
     this.responseContext = context
+    consoleLogger.debug('ApiCall.saveResponse: after setting this.responseContext')
+    try {
+      this.text = await this.response.clone().text()
+      // consoleLogger.debug('ApiCall.saveResponse: after setting this.text')
+    } catch (error) {
+      consoleLogger.debug('Error getting response text', { error })
+    }
+    try {
+      this.json = await this.response.clone().json()
+    } catch (error) {
+      consoleLogger.debug('Error getting response json', { error })
+    }
   }
 
   /**

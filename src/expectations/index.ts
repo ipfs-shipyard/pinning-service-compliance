@@ -1,15 +1,22 @@
 import type { ApiCallExpectation } from '../ApiCall.js'
 
-const expectOkResponse: ApiCallExpectation<any> = {
+const responseOk = <T>(): ApiCallExpectation<T> => ({
   title: 'Response is ok',
-  fn: ({ apiCall }) => {
-    return apiCall.response.ok
-  }
-}
+  fn: ({ apiCall }) => apiCall.response.ok
+})
 
-const expectNonNullResult: ApiCallExpectation<any> = {
+const resultNotNull = <T>(): ApiCallExpectation<T> => ({
   title: 'Result is not null',
   fn: ({ result }) => result != null
-}
+})
 
-export { expectOkResponse, expectNonNullResult }
+const responseCode = <T>(code: number): ApiCallExpectation<T> => ({
+  title: `Response code is ${code}`,
+  fn: ({ apiCall }) => apiCall.response.status === code
+})
+
+export {
+  responseOk,
+  resultNotNull,
+  responseCode
+}
