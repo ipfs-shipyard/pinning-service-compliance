@@ -29,7 +29,12 @@ const rateLimitHandlers: Map<RateLimitKey, Array<Promise<void>>> = new Map()
 const requestResponseLogger: (opts: RequestResponseLoggerOptions) => Middleware = ({ preCb, postCb, finalCb }) => {
   return ({
     pre: async (context) => {
-      if (preCb != null) await preCb(context)
+      logger.debug('In middleware.pre')
+      try {
+        if (preCb != null) await preCb(context)
+      } catch (err) {
+        logger.error(err)
+      }
 
       const rateLimitKey = getRateLimitKeyFromContext(context)
 
@@ -37,7 +42,11 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => Middleware 
         // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
         const promises = rateLimitHandlers.get(rateLimitKey) as Array<Promise<void>>
         if (promises.length > 0) {
-          await Promise.all(promises)
+          try {
+            await Promise.all(promises)
+          } catch (err) {
+            logger.error(err)
+          }
           rateLimitHandlers.set(rateLimitKey, [])
         }
       } else {
@@ -48,25 +57,42 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => Middleware 
     },
 
     post: async (context) => {
-      if (postCb != null) await postCb(context)
+      logger.debug('In middleware.post')
+      if (postCb != null) {
+        logger.debug('In middleware.post, postCb exists')
+        // console.log(postCb)
+        try {
+          await postCb(context)
+          logger.debug('In middleware.post after successful postCb')
+        } catch (err) {
+          logger.error('In middleware.post after failed postCb', err)
+        }
+      } else {
+        logger.debug('In middleware.post, postCb is null')
+      }
       const { response } = context
       const errors: Error[] = []
 
+      logger.debug('In middleware.post prior to checking response for content')
       const hasContent = await responseHasContent(response)
+      logger.debug(`In middleware.post, after checking response for content. (${hasContent ? 'Yes' : 'No'})`)
 
       let text: string | null = null
-      try {
-        text = await response.clone().text()
-      } catch (err) {
-        errors.push(err as Error)
-      }
       let json: any = null
-      try {
-        if (hasContent) {
-          json = await response.clone().json()
+      if (hasContent) {
+        try {
+          text = await response.clone().text()
+        } catch (err) {
+          errors.push(err as Error)
         }
-      } catch (err) {
-        errors.push(err as Error)
+        logger.debug('In middleware.post after text')
+        try {
+          // if (hasContent) {
+          json = await response.clone().json()
+          // }
+        } catch (err) {
+          errors.push(err as Error)
+        }
       }
 
       // const hostname = getHostnameFromUrl(context.url)
@@ -103,7 +129,11 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => Middleware 
             // ok: response.ok
           }
         }
-        if (finalCb != null) await finalCb(normalizedResult)
+        try {
+          if (finalCb != null) await finalCb(normalizedResult)
+        } catch (err) {
+          logger.error(err)
+        }
       } catch (err) {
         logger.error('error in callback provided to the middleware')
         logger.error(err)

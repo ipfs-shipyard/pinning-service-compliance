@@ -1,5 +1,3 @@
-import type { PinStatus } from '@ipfs-shipyard/pinning-service-client'
-
 import { ApiCall } from '../../ApiCall.js'
 import type { ServiceAndTokenPair } from '../../types.js'
 import { getInlineCid } from '../../utils/getInlineCid.js'
@@ -15,7 +13,6 @@ import { getRequestid } from '../../utils/getRequestid.js'
 const replacePin = async (pair: ServiceAndTokenPair) => {
   const cid = await getInlineCid()
   const newCid = await getInlineCid()
-  // const queue = getQueue(endpointUrl)
   const createPinApiCall = new ApiCall({
     pair,
     fn: async (client) => await client.pinsPost({ pin: { cid } }),
@@ -26,10 +23,11 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
     title: 'Pin exists',
     fn: async ({ result }) => result != null
   })
-  const requestid = getRequestid(originalPin as PinStatus, createPinApiCall)
+
+  const requestid = getRequestid(originalPin, createPinApiCall)
   createPinApiCall.expect({
     title: `Could obtain requestid from new pin (${requestid})`,
-    fn: () => requestid != null
+    fn: () => requestid != null && requestid !== 'null'
   })
 
   const replaceCidApiCall = new ApiCall({
@@ -41,12 +39,12 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
   createPinApiCall.expect({
     title: replaceCidApiCall.title,
     fn: async () => replaceCidApiCall.response.ok
-  })
-  createPinApiCall.expect({
+  }).expect({
     title: 'Replaced pin has the new & expected CID',
     fn: async () => newPin?.pin.cid === newCid
   })
-  const newRequestid = getRequestid(newPin as PinStatus, replaceCidApiCall)
+
+  const newRequestid = getRequestid(newPin, replaceCidApiCall)
   createPinApiCall.expect({
     title: 'Replaced pin has a different requestid',
     fn: async () => newRequestid !== requestid
@@ -54,7 +52,7 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
   const getOriginalPinByRequestidApiCall = new ApiCall({
     pair,
     fn: async (client) => await client.pinsRequestidGet({ requestid: requestid }),
-    title: ''
+    title: 'Get original pin via requestid'
   })
   await getOriginalPinByRequestidApiCall.request
   createPinApiCall.expect({
@@ -65,7 +63,7 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
   const getNewPinByRequestidApiCall = new ApiCall({
     pair,
     fn: async (client) => await client.pinsRequestidGet({ requestid: newRequestid }),
-    title: ''
+    title: 'Get new pin via requestid'
   })
   await getNewPinByRequestidApiCall.request
 

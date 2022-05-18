@@ -67,17 +67,19 @@ const modifySchema = (schemaName: keyof PinningSpecJoiSchema, schema: JoiSchema)
   }
 }
 
+let schema: PinningSpecJoiSchema | null = null
 const getJoiSchema = async <T extends keyof PinningSpecJoiSchema>(schemaName: T): Promise<PinningSpecJoiSchema[T] | undefined> => {
-  try {
-    const schema: PinningSpecJoiSchema = (await oas2joi(specLocation))
-
-    modifySchema(schemaName, schema[schemaName])
-
-    return schema[schemaName]
-  } catch (err) {
-    logger.error('Could not get joi schema, returning undefined', err)
-    return undefined
+  if (schema == null) {
+    try {
+      schema = await oas2joi(specLocation)
+    } catch (err) {
+      logger.error('Could not get joi schema, returning undefined', err)
+      return undefined
+    }
   }
+  modifySchema(schemaName, (schema as PinningSpecJoiSchema)[schemaName])
+
+  return (schema as PinningSpecJoiSchema)[schemaName]
 }
 
 export { getJoiSchema }

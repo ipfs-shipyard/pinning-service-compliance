@@ -11,38 +11,31 @@ const deleteNewPin = async (pair: ServiceAndTokenPair) => {
     fn: async (client) => {
       return await client.pinsPost({ pin: { cid } })
     }
-  })
-
-  const pin = await createNewPinApiCall.request
-  createNewPinApiCall.expect({
+  }).expect({
     title: 'Pin was created',
     fn: async ({ result }) => result != null
-  })
-  createNewPinApiCall.expect({
+  }).expect({
     title: 'Creation response code is 200',
     fn: ({ apiCall }) => apiCall.response.status === 200
   })
 
-  if (pin != null) {
-    const requestid = getRequestid(pin, createNewPinApiCall)
-    const deleteApiCall = new ApiCall({
-      pair,
-      fn: async (client) => await client.pinsRequestidDelete({ requestid }),
-      title: 'Can delete pin'
-    })
-    await deleteApiCall.request
+  const pin = await createNewPinApiCall.request
+  const requestid = getRequestid(pin, createNewPinApiCall)
+  const deleteApiCall = new ApiCall({
+    pair,
+    fn: async (client) => await client.pinsRequestidDelete({ requestid }),
+    title: 'Can delete pin'
+  })
+  await deleteApiCall.request
 
-    createNewPinApiCall.expect({
-      title: 'Pin was deleted',
-      fn: () => deleteApiCall.response.ok
-    })
-    createNewPinApiCall.expect({
-      title: 'Pin deletion response code is 202',
-      fn: () => deleteApiCall.response.status === 202
-    })
-  } else {
-    throw new Error('No Pin in ApiCall to delete')
-  }
+  createNewPinApiCall.expect({
+    title: 'Pin was deleted',
+    fn: () => deleteApiCall.response.ok
+  }).expect({
+    title: 'Pin deletion response code is 202',
+    fn: () => deleteApiCall.response.status === 202
+  })
+
   await createNewPinApiCall.runExpectations()
 }
 

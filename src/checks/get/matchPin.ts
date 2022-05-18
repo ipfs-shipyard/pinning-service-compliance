@@ -5,7 +5,7 @@ import { TextMatchingStrategy } from '@ipfs-shipyard/pinning-service-client'
 import { getInlineCid } from '../../utils/getInlineCid.js'
 import { ApiCall } from '../../ApiCall.js'
 import type { ServiceAndTokenPair } from '../../types.js'
-import { expectNonNullResult, expectOkResponse } from '../../expectations/index.js'
+import { resultNotNull, responseOk } from '../../expectations/index.js'
 
 const matchApiCallExpectation = async (pair: ServiceAndTokenPair, match: TextMatchingStrategy, name: string) => {
   await new ApiCall({
@@ -13,8 +13,8 @@ const matchApiCallExpectation = async (pair: ServiceAndTokenPair, match: TextMat
     title: `Can retrieve pin with name '${name}' via the '${match}' TextMatchingStrategy`,
     fn: async (client) => await client.pinsGet({ match, name })
   })
-    .expect(expectOkResponse)
-    .expect(expectNonNullResult)
+    .expect(responseOk())
+    .expect(resultNotNull())
     .runExpectations()
 }
 /**
@@ -31,8 +31,8 @@ const matchPin = async (pair: ServiceAndTokenPair) => {
     title: `Can create a pin with name='${name}'`,
     fn: async (client) => await client.pinsPost({ pin: { name, cid } })
   })
-    .expect(expectOkResponse)
-    .expect(expectNonNullResult)
+    .expect(responseOk())
+    .expect(resultNotNull())
     .expect({
       title: 'Name matches name provided during creation',
       fn: ({ result }) => result?.pin.name === name
