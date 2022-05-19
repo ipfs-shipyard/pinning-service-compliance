@@ -121,7 +121,8 @@
     "test": "aegir lint",
     "build": "aegir build",
     "start": "node dist/src/index.js",
-    "release": "npm run build && aegir release --test false --docs false"
+    "release": "npm run build && aegir release --test false --docs false",
+    "rebuild": "npm run clean && npm install && npm run build"
   },
   "devDependencies": {
     "@types/hapi__joi": "^17.1.8",

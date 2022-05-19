@@ -6,7 +6,7 @@ import { logger } from './logs.js'
 
 const responseHasContent = async <T>(response: Response | ApiCall<T>['response']): Promise<boolean> => {
   logger.debug('Checking to see if response has content')
-  const clone = response.clone()
+  const clone = response //.clone()
   // console.log(clone.headers)
   // const body = response.clone().body
   // console.log('body: ', body)

@@ -13,6 +13,7 @@ import { getReportEntry } from './getReportEntry.js'
 import { getHeader, RequiredHeaderProps } from './getHeader.js'
 import type { ComplianceCheckDetails } from '../types.js'
 import { logger } from '../utils/logs.js'
+// import { getText } from '../utils/fetchSafe/getText.js'
 
 const successFormatter = getFormatter({
   paragraph: chalk.reset,
@@ -66,7 +67,7 @@ const addApiCallToReport = async <T>(apiCall: ApiCall<T>) => {
   const { pair, errors, title, httpRequest, result, response, expectationResults, successful } = apiCall
   const { url, headers: requestHeaders } = httpRequest
   const method = httpRequest.method ?? 'Unknown'
-  const requestBody = await httpRequest.clone().text()
+  const requestBody = apiCall.text ?? ''
   const hostname = getHostnameFromUrl(url)
 
   const headerProps: RequiredHeaderProps<T> = { pair, title, successful }
