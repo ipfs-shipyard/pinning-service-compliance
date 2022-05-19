@@ -12,7 +12,6 @@ import { getRequestid } from '../../utils/getRequestid.js'
  */
 const replacePin = async (pair: ServiceAndTokenPair) => {
   const cid = await getInlineCid()
-  const newCid = await getInlineCid()
   const createPinApiCall = new ApiCall({
     pair,
     fn: async (client) => await client.pinsPost({ pin: { cid } }),
@@ -30,6 +29,7 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
     fn: () => requestid != null && requestid !== 'null'
   })
 
+  const newCid = await getInlineCid()
   const replaceCidApiCall = new ApiCall({
     pair,
     title: `Pin's with requestid '${requestid}' can have cid '${cid}' replaced with '${newCid}'`,
