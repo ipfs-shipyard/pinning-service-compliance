@@ -2,6 +2,7 @@ import { ApiCall } from '../../ApiCall.js'
 import type { ServiceAndTokenPair } from '../../types.js'
 import { getInlineCid } from '../../utils/getInlineCid.js'
 import { getRequestid } from '../../utils/getRequestid.js'
+import { sleep } from '../../utils/sleep.js'
 
 /**
  * https://github.com/ipfs-shipyard/pinning-service-compliance/issues/8
@@ -29,7 +30,16 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
     fn: () => requestid != null && requestid !== 'null'
   })
 
-  const newCid = await getInlineCid()
+  let newCid = await getInlineCid()
+  let delay = 1000
+  /**
+   * If we run too fast, the timestamp returned ends up generating the same CID
+   */
+  while (cid === newCid) {
+    await sleep(delay*=.75)
+    newCid = await getInlineCid()
+  }
+
   const replaceCidApiCall = new ApiCall({
     pair,
     title: `Pin's with requestid '${requestid}' can have cid '${cid}' replaced with '${newCid}'`,
