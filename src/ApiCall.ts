@@ -14,8 +14,10 @@ import { getSuccessIcon } from './output/getSuccessIcon.js'
 import { Icons } from './utils/constants.js'
 import { globalReport } from './utils/report.js'
 import { isError } from './guards/isError.js'
-import { responseHasContent } from './utils/responseHasContent.js'
-import { getJson } from './utils/fetchSafe/getJson'
+// import { responseHasContent } from './utils/responseHasContent.js'
+// import { getJson } from './utils/fetchSafe/getJson.js'
+// import { getText } from './utils/fetchSafe/getText.js'
+import { getTextAndJson } from './utils/fetchSafe/getTextAndJson.js'
 
 interface ApiCallOptions<T> {
   pair: ServiceAndTokenPair
@@ -79,7 +81,7 @@ class ApiCall<T> {
     this.client = clientFromServiceAndTokenPair(pair, {
       preCb: this.saveRequest,
       postCb: this.saveResponse,
-      finalCb: this.saveDetails
+      // finalCb: this.saveDetails
     })
     if (schema != null) {
       this.addSchema(schema)
@@ -109,7 +111,7 @@ class ApiCall<T> {
   }
 
   get httpResponse () {
-    return this.response.clone()
+    return this.response //.clone()
   }
 
   get httpRequest () {
@@ -207,26 +209,54 @@ class ApiCall<T> {
   private async saveResponse (context: ResponseContext) {
     // this.logger.debug()
     consoleLogger.debug(`${this.title}: Saving response context for '${context.url}'`)
-    this.response = context.response.clone() as Response
+    // this.response = context.response.clone() as unknown as Response
+    this.response = context.response as unknown as ApiCall<T>['response']
     consoleLogger.debug('ApiCall.saveResponse: after setting this.response')
     this.responseContext = context
     consoleLogger.debug('ApiCall.saveResponse: after setting this.responseContext')
-    const hasContent = await responseHasContent(this.response)
-    consoleLogger.debug(`ApiCall.saveResponse: checked if content exists. (${hasContent ? 'Yes' : 'No'})`)
-    if (hasContent) {
-      try {
-        this.text = await this.response.clone().text()
-      // consoleLogger.debug('ApiCall.saveResponse: after setting this.text')
-      } catch (error) {
-        consoleLogger.debug('Error getting response text', { error })
-      }
-      try {
-        // this.json = (await this.response.clone().json()) as T
-        this.json = await getJson(this.response) as T
-      } catch (error) {
-        consoleLogger.debug('Error getting response json', { error })
-      }
+    // const hasContent = await responseHasContent(this.response)
+    // consoleLogger.debug(`ApiCall.saveResponse: checked if content exists. (${hasContent ? 'Yes' : 'No'})`)
+    // if (hasContent) {
+    try {
+      const both = await getTextAndJson(this.response)
+      this.text = both.text
+      this.json = both.json as T
+    } catch (err) {
+      this.errors.push(err as ExpectationError)
     }
+    // const processedResponse: ProcessedResponse = {
+    //   ...this.response,
+    //   json: this.json,
+    //   // body,
+    //   text: this.text
+    //   // headers: response.headers,
+    //   // status: response.status,
+    //   // statusText: response.statusText,
+    //   // ok: response.ok
+    // }
+    const normalizedResult: ComplianceCheckDetailsCallbackArg = {
+      ...context,
+      url: context.url,
+      init: context.init,
+      fetch: context.fetch,
+      errors: [],
+      response: this.response
+    }
+
+    this.details = normalizedResult
+      // try {
+      //   this.text = await getText(this.response)
+      // // consoleLogger.debug('ApiCall.saveResponse: after setting this.text')
+      // } catch (error) {
+      //   consoleLogger.debug('Error getting response text', { error })
+      // }
+      // try {
+      //   // this.json = (await this.response.clone().json()) as T
+      //   this.json = this.text == null ? null : JSON.parse(this.text)
+      // } catch (error) {
+      //   consoleLogger.debug('Error getting response json', { error })
+      // }
+    // }
   }
 
   /**

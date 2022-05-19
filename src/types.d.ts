@@ -48,7 +48,7 @@ declare module '@ipfs-shipyard/pinning-service-client' {
 }
 
 interface ComplianceCheckDetailsCallbackArg extends NodeFetch.ResponseContext {
-  response: ProcessedResponse
+  response: Response
   errors: Error[]
   url: string
 }

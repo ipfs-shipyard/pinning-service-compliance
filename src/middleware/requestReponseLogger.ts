@@ -1,10 +1,13 @@
 import type { NodeFetch } from '@ipfs-shipyard/pinning-service-client'
 // import type { Request, RequestInit, Response } from 'node-fetch'
 
-import { responseHasContent } from '../utils/responseHasContent.js'
+// import { responseHasContent } from '../utils/responseHasContent.js'
 import { waitForDate } from '../utils/waitForDate.js'
-import type { ComplianceCheckDetailsCallbackArg, ProcessedResponse } from '../types.js'
+import type { ComplianceCheckDetailsCallbackArg } from '../types.js'
 import { logger } from '../utils/logs.js'
+// import { getJson } from '../utils/fetchSafe/getJson.js'
+// import { getText } from '../utils/fetchSafe/getText.js'
+// import { getTextAndJson } from '../utils/fetchSafe/getTextAndJson.js'
 
 interface RequestResponseLoggerOptions {
   finalCb?: (details: ComplianceCheckDetailsCallbackArg) => void | Promise<void>
@@ -75,26 +78,33 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => NodeFetch.M
       const errors: Error[] = []
 
       logger.debug('In middleware.post prior to checking response for content')
-      const hasContent = await responseHasContent(response)
-      logger.debug(`In middleware.post, after checking response for content. (${hasContent ? 'Yes' : 'No'})`)
+      // const hasContent = await responseHasContent(response)
+      // logger.debug(`In middleware.post, after checking response for content. (${hasContent ? 'Yes' : 'No'})`)
 
-      let text: string | null = null
-      let json: any = null
-      if (hasContent) {
-        try {
-          text = await response.clone().text()
-        } catch (err) {
-          errors.push(err as Error)
-        }
-        logger.debug('In middleware.post after text')
-        try {
-          // if (hasContent) {
-          json = await response.clone().json()
-          // }
-        } catch (err) {
-          errors.push(err as Error)
-        }
-      }
+      // let text: string | null = null
+      // let json: any = null
+      // if (hasContent) {
+        // try {
+        //   text = await getText(response)
+        // } catch (err) {
+        //   errors.push(err as Error)
+        // }
+        // logger.debug('In middleware.post after text')
+        // try {
+        //   // if (hasContent) {
+        //   json = await getJson(response)
+        //   // }
+        // } catch (err) {
+        //   errors.push(err as Error)
+        // }
+        // try {
+        //   const both = await getTextAndJson(response)
+        //   text = both.text
+        //   json = both.json
+        // } catch (err) {
+        //   errors.push(err as Error)
+        // }
+      // }
 
       // const hostname = getHostnameFromUrl(context.url)
       // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
@@ -112,29 +122,33 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => NodeFetch.M
           promises.push(waitForDate(dateOfReset))
         }
       }
-      const processedResponse: ProcessedResponse = {
-        ...response,
-        json,
-        // body,
-        text
-        // headers: response.headers,
-        // status: response.status,
-        // statusText: response.statusText,
-        // ok: response.ok
-      }
-      const normalizedResult: ComplianceCheckDetailsCallbackArg = {
-        ...context,
-        url: context.url,
-        init: context.init,
-        fetch: context.fetch,
-        errors,
-        response: processedResponse
-      }
-      try {
-        if (finalCb != null) await finalCb(normalizedResult)
-      } catch (err) {
-        logger.error('error in callback provided to the middleware')
-        logger.error(err)
+      if (finalCb != null) {
+        // const processedResponse: ProcessedResponse = {
+        //   ...response,
+        //   json,
+        //   // body,
+        //   text
+        //   // headers: response.headers,
+        //   // status: response.status,
+        //   // statusText: response.statusText,
+        //   // ok: response.ok
+        // }
+        // const normalizedResult: ComplianceCheckDetailsCallbackArg = {
+        //   ...context,
+        //   url: context.url,
+        //   init: context.init,
+        //   fetch: context.fetch,
+        //   errors,
+        //   response: processedResponse
+        // }
+        // try {
+        //   await finalCb(normalizedResult)
+        // } catch (err) {
+        //   logger.error('error in callback provided to the middleware')
+        //   logger.error(err)
+        // }
+      } else {
+        errors.forEach((error) => logger.error(error));
       }
       return response
     }
