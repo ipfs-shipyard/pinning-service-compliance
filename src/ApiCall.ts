@@ -1,6 +1,6 @@
 import type { Schema, ValidationError, ValidationResult } from '@hapi/joi'
 import { Request } from 'node-fetch'
-import type { RequestInit } from 'node-fetch'
+import type { RequestInit, Response } from 'node-fetch'
 import type { Logger } from 'winston'
 
 import type { RemotePinningServiceClient, RequestContext, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
@@ -14,6 +14,8 @@ import { getSuccessIcon } from './output/getSuccessIcon.js'
 import { Icons } from './utils/constants.js'
 import { globalReport } from './utils/report.js'
 import { isError } from './guards/isError.js'
+import { responseHasContent } from './utils/responseHasContent.js'
+import { getJson } from './utils/fetchSafe/getJson'
 
 interface ApiCallOptions<T> {
   pair: ServiceAndTokenPair
@@ -189,7 +191,7 @@ class ApiCall<T> {
           }
         } else {
           consoleLogger.info('Result or failureReason is null')
-          console.log(result, this.failureReason, this.response)
+          // console.log(result, this.failureReason, this.response)
           this.errors.push({ error: new Error('Could not compare against joi Schema'), title: 'Result and failureReason are both, unexpectedly, null' })
           return false
         }
@@ -205,25 +207,30 @@ class ApiCall<T> {
   private async saveResponse (context: ResponseContext) {
     // this.logger.debug()
     consoleLogger.debug(`${this.title}: Saving response context for '${context.url}'`)
-    this.response = context.response.clone()
+    this.response = context.response.clone() as Response
     consoleLogger.debug('ApiCall.saveResponse: after setting this.response')
     this.responseContext = context
     consoleLogger.debug('ApiCall.saveResponse: after setting this.responseContext')
-    try {
-      this.text = await this.response.clone().text()
+    const hasContent = await responseHasContent(this.response)
+    consoleLogger.debug(`ApiCall.saveResponse: checked if content exists. (${hasContent ? 'Yes' : 'No'})`)
+    if (hasContent) {
+      try {
+        this.text = await this.response.clone().text()
       // consoleLogger.debug('ApiCall.saveResponse: after setting this.text')
-    } catch (error) {
-      consoleLogger.debug('Error getting response text', { error })
-    }
-    try {
-      this.json = await this.response.clone().json()
-    } catch (error) {
-      consoleLogger.debug('Error getting response json', { error })
+      } catch (error) {
+        consoleLogger.debug('Error getting response text', { error })
+      }
+      try {
+        // this.json = (await this.response.clone().json()) as T
+        this.json = await getJson(this.response) as T
+      } catch (error) {
+        consoleLogger.debug('Error getting response json', { error })
+      }
     }
   }
 
   /**
-   * Details is set in {requestReponseLogger} middleware after the call is complete
+   * Details is set in {requestResponseLogger} middleware after the call is complete
    */
   private saveDetails (details: ComplianceCheckDetailsCallbackArg) {
     this.details = details

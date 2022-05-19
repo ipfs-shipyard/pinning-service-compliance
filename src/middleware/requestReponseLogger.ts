@@ -1,18 +1,19 @@
-import type { Middleware, RequestContext, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
+import type { NodeFetch } from '@ipfs-shipyard/pinning-service-client'
+// import type { Request, RequestInit, Response } from 'node-fetch'
 
 import { responseHasContent } from '../utils/responseHasContent.js'
 import { waitForDate } from '../utils/waitForDate.js'
-import type { ComplianceCheckDetailsCallbackArg } from '../types.js'
+import type { ComplianceCheckDetailsCallbackArg, ProcessedResponse } from '../types.js'
 import { logger } from '../utils/logs.js'
 
 interface RequestResponseLoggerOptions {
   finalCb?: (details: ComplianceCheckDetailsCallbackArg) => void | Promise<void>
-  preCb?: (context: RequestContext) => void | Promise<void>
-  postCb?: (context: ResponseContext) => void | Promise<void>
+  preCb?: (context: NodeFetch.RequestContext) => void | Promise<void>
+  postCb?: (context: NodeFetch.ResponseContext) => void | Promise<void>
 }
 
 type RateLimitKey = string
-const getRateLimitKeyFromContext = (context: ResponseContext | RequestContext): RateLimitKey => {
+const getRateLimitKeyFromContext = (context: NodeFetch.ResponseContext | NodeFetch.RequestContext): RateLimitKey => {
   const { init, url } = context
   const { method } = init
   const urlWithoutQuery = url.split('?')[0]
@@ -26,7 +27,7 @@ const getRateLimitKeyFromContext = (context: ResponseContext | RequestContext): 
   return key
 }
 const rateLimitHandlers: Map<RateLimitKey, Array<Promise<void>>> = new Map()
-const requestResponseLogger: (opts: RequestResponseLoggerOptions) => Middleware = ({ preCb, postCb, finalCb }) => {
+const requestResponseLogger: (opts: RequestResponseLoggerOptions) => NodeFetch.Middleware = ({ preCb, postCb, finalCb }) => {
   return ({
     pre: async (context) => {
       logger.debug('In middleware.pre')
@@ -111,29 +112,26 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => Middleware 
           promises.push(waitForDate(dateOfReset))
         }
       }
+      const processedResponse: ProcessedResponse = {
+        ...response,
+        json,
+        // body,
+        text
+        // headers: response.headers,
+        // status: response.status,
+        // statusText: response.statusText,
+        // ok: response.ok
+      }
+      const normalizedResult: ComplianceCheckDetailsCallbackArg = {
+        ...context,
+        url: context.url,
+        init: context.init,
+        fetch: context.fetch,
+        errors,
+        response: processedResponse
+      }
       try {
-        const normalizedResult: ComplianceCheckDetailsCallbackArg = {
-          ...context,
-          url: context.url,
-          init: context.init,
-          fetch: context.fetch,
-          errors,
-          response: {
-            ...response,
-            json,
-            // body,
-            text
-            // headers: response.headers,
-            // status: response.status,
-            // statusText: response.statusText,
-            // ok: response.ok
-          }
-        }
-        try {
-          if (finalCb != null) await finalCb(normalizedResult)
-        } catch (err) {
-          logger.error(err)
-        }
+        if (finalCb != null) await finalCb(normalizedResult)
       } catch (err) {
         logger.error('error in callback provided to the middleware')
         logger.error(err)

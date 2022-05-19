@@ -4,7 +4,7 @@ import type { ServiceAndTokenPair } from '../../types.js'
 import { allPinStatuses } from '../../utils/constants.js'
 import { getInlineCid } from '../../utils/getInlineCid.js'
 import { getOldestPinCreateDate } from '../../utils/getOldestPinCreateDate.js'
-// import { logger } from '../../utils/logs.js'
+import { logger } from '../../utils/logs.js'
 
 /**
  * https://github.com/ipfs-shipyard/pinning-service-compliance/issues/6
@@ -16,7 +16,14 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
   const getPinsApiCall = new ApiCall({
     pair,
     title: 'Get all pins',
-    fn: async (client) => await client.pinsGet({ status: allPinStatuses })
+    fn: async (client) => {
+      try {
+        const result = await client.pinsGet({ status: allPinStatuses })
+        return result
+      } catch (error) {
+        logger.debug('error trying to get all pins for testing pagination', { error })
+      }
+    }
   })
     .expect(responseOk())
     .expect(resultNotNull())

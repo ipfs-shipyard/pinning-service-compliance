@@ -1,7 +1,53 @@
+import type { Response } from 'node-fetch'
+import type fetch from 'node-fetch'
+import type {
+  NodeFetch,
+  ConfigurationParameters as ConfigurationParameters_og,
+  Configuration as Configuration_og
+} from '@ipfs-shipyard/pinning-service-client'
 
-import type { ResponseContext } from '@ipfs-shipyard/pinning-service-client'
+/**
+ * This should move to the pinning-service-client package.
+ */
+declare module '@ipfs-shipyard/pinning-service-client' {
+  // eslint-disable-next-line @typescript-eslint/no-namespace
+  namespace NodeFetch {
+    interface RequestContext {
 
-interface ComplianceCheckDetailsCallbackArg extends ResponseContext {
+      fetch: typeof fetch
+      url: string
+      init: RequestInit
+    }
+
+    interface ResponseContext {
+      fetch: typeof fetch
+      url: string
+      init: RequestInit
+      response: Response | any
+    }
+
+    interface FetchParams {
+      url: string
+      init: RequestInit
+    }
+
+    interface Middleware {
+      // eslint-disable-next-line @typescript-eslint/no-invalid-void-type
+      pre?: (context: NodeFetch.RequestContext) => Promise<NodeFetch.FetchParams | void>
+      // eslint-disable-next-line @typescript-eslint/no-invalid-void-type
+      post?: (context: NodeFetch.ResponseContext) => Promise<Response | void>
+    }
+
+    interface ConfigurationParameters extends ConfigurationParameters_og {
+      middleware: NodeFetch.Middleware[]
+    }
+    class Configuration extends Configuration_og {
+      constructor (options: NodeFetch.ConfigurationParameters): Configuration
+    }
+  }
+}
+
+interface ComplianceCheckDetailsCallbackArg extends NodeFetch.ResponseContext {
   response: ProcessedResponse
   errors: Error[]
   url: string
