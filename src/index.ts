@@ -14,7 +14,7 @@ import { globalReport } from './utils/report.js'
 const validatePinningService = async (pair: ServiceAndTokenPair) => {
   let complianceCheckFunctions = [checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteNewPin, getAllPins, replacePin, matchPin, testPagination, deleteAllPins]
   complianceCheckFunctions = complianceCheckFunctions.slice(2)
-  complianceCheckFunctions = [testPagination]
+  // complianceCheckFunctions = [testPagination]
   for await (const complianceCheckFn of complianceCheckFunctions) {
     logger.debug(`Starting compliance check '${complianceCheckFn.name}'`)
     try {
@@ -24,8 +24,10 @@ const validatePinningService = async (pair: ServiceAndTokenPair) => {
       if (isError(error)) {
         // nothing
         logger.debug(msg, { error })
+      } else {
+        logger.error(msg)
       }
-      throw error
+      // throw error
       // if (typeof error === 'string') {
       //   logger.error(`${msg}: ${error}`)
       // } else {
@@ -33,6 +35,7 @@ const validatePinningService = async (pair: ServiceAndTokenPair) => {
       // }
     } finally {
       // console.log('wut')
+      logger.debug(`Completed compliance check '${complianceCheckFn.name}'`)
     }
   }
 }
@@ -55,7 +58,6 @@ const main = async () => {
   } catch (err) {
     logger.error(err)
   }
-  logger.info(globalReport)
 }
 
 const getUncaughtListener = (type: 'unhandledRejection' | 'uncaughtException' | 'uncaughtExceptionMonitor'): NodeJS.UncaughtExceptionListener => (err, origin) => {
@@ -79,4 +81,6 @@ main().catch((err) => {
   logger.error(err)
   logger.debug('Exiting process due to unexpected error')
   // process.exit(1)
+}).finally(() => {
+  logger.info(globalReport)
 })
