@@ -1,5 +1,5 @@
 import type { ApiCall } from '../../ApiCall.js'
-import { logger } from '../logs.js'
+// import { logger } from '../logs.js'
 import { getText } from './getText.js'
 
 // const catchHandler = (err: Error) => {
@@ -7,18 +7,30 @@ import { getText } from './getText.js'
 //   return ''
 // }
 
-const getTextAndJson = async <T>(response: ApiCall<T>['response']): Promise<{ text: string, json: T | null }> => {
-  const text = await getText(response.clone())
+const getTextAndJson = async <T>(response: ApiCall<T>['response']): Promise<{ text: string | null, json: T | null, errors: Error[] }> => {
+  const errors: Error[] = []
+  let text: string | null = null
   let json: T | null = null
   try {
-    json = text != null ? JSON.parse(text) as T : null
+    text = await getText(response)
+    if (text != null) {
+      try {
+        json = JSON.parse(text) as T
+      } catch (err) {
+        // logger.error(err)
+        errors.push(err)
+      }
+    }
   } catch (err) {
-    logger.error(err)
+    errors.push(err as Error)
   }
+
+  // console.log(`errors: `, errors);
 
   return {
     text,
-    json
+    json,
+    errors
   }
 }
 

@@ -125,9 +125,11 @@ class ApiCall<T> {
     return this
   }
 
-  async runExpectations () {
+  async runExpectations <T>(parent?: ApiCall<T>) {
     consoleLogger.info(`${this.title}`, { messageOnly: true })
-    globalReport.incrementRunExpectationsCallCount()
+    if (parent == null) {
+      globalReport.incrementRunExpectationsCallCount()
+    }
     // consoleLogger.info(`runExpectations call Count is '${++runExpectationsCount}'`)
     try {
       await this.request
@@ -168,13 +170,30 @@ class ApiCall<T> {
       }
     }
 
-    try {
-      await addApiCallToReport(this)
-    } catch (err) {
-      consoleLogger.error(`Could not add details of ApiCall '${this.title}' to report`, err)
+    if (parent == null) {
+      try {
+        await addApiCallToReport(this)
+      } catch (err) {
+        consoleLogger.error(`Could not add details of ApiCall '${this.title}' to report`, err)
+      }
+    } else {
+      this.addExpectationResults(this.expectationResults)
+      this.addExpectationErrors(this.errors)
     }
 
     return this
+  }
+
+  addExpectationResults (results: ExpectationResult[]) {
+    if (results.length > 0) {
+      this.expectationResults.push(...results)
+    }
+  }
+
+  addExpectationErrors (errors: ExpectationError[]) {
+    if (errors.length > 0) {
+      this.errors.push(...errors)
+    }
   }
 
   addSchema (schema: Schema) {
@@ -218,9 +237,10 @@ class ApiCall<T> {
     // consoleLogger.debug(`ApiCall.saveResponse: checked if content exists. (${hasContent ? 'Yes' : 'No'})`)
     // if (hasContent) {
     try {
-      const both = await getTextAndJson(this.response)
-      this.text = both.text
-      this.json = both.json as T
+      const {text, json, errors} = await getTextAndJson(this.response)
+      this.text = text
+      this.json = json as T
+      this.addExpectationErrors(errors.map((err) => ({error: err, title: 'Problem when attempting to get response text and json'})))
     } catch (err) {
       this.errors.push(err as ExpectationError)
     }
