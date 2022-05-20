@@ -131,7 +131,7 @@
     "@types/uuid": "^8.3.4",
     "@types/yargs": "^17.0.10",
     "aegir": "^37.0.15",
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.1",
     "check-aegir-project": "^1.1.1",
     "cp-cli": "^2.0.0",
     "ipfs-core-types": "^0.10.2",
