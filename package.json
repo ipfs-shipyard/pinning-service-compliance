@@ -141,7 +141,7 @@
     "typescript": "^4.6.2"
   },
   "dependencies": {
-    "@hapi/joi": "^14.5.0",
+    "@hapi/joi": "^17.1.1",
     "@ipfs-shipyard/pinning-service-client": "^1.0.1",
     "fetch-ponyfill": "^7.1.0",
     "go-ipfs": "^0.12.1",
