@@ -12,9 +12,8 @@ import { logger } from './utils/logs.js'
 import { globalReport } from './utils/report.js'
 
 const validatePinningService = async (pair: ServiceAndTokenPair) => {
-  let complianceCheckFunctions = [checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteNewPin, getAllPins, replacePin, matchPin, testPagination, deleteAllPins]
-  complianceCheckFunctions = complianceCheckFunctions.slice(2)
-  // complianceCheckFunctions = [testPagination]
+  const complianceCheckFunctions = [checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteNewPin, getAllPins, replacePin, matchPin, testPagination, deleteAllPins]
+
   for await (const complianceCheckFn of complianceCheckFunctions) {
     logger.debug(`Starting compliance check '${complianceCheckFn.name}'`)
     try {

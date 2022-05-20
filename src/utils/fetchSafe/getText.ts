@@ -7,25 +7,16 @@ import { sleep } from '../sleep.js'
 //   logger.error('Could not get text from response', { error })
 //   return ''
 // }
-const TIMEOUT_SECONDS = 15
+const TIMEOUT_SECONDS = 5
 const handleLargeRequests = () => sleep(TIMEOUT_SECONDS * 1000).then(() => {throw new Error(`Attempted to get text from response but it wasn't available within ${TIMEOUT_SECONDS} seconds.`)})
 
 const getText = async <T>(response: ApiCall<T>['response']): Promise<string> => {
     logger.debug('fn:getText START')
-    debugger
-  process.on('unhandledRejection', (error) => {
-    logger.debug('fn:getText unhandledRejection')
-    logger.error('UnhandledRejection', {error})
-  })
-    process.on('uncaughtException', (error) => {
-    logger.debug('fn:getText uncaughtException')
-    logger.error('uncaughtException', {error})
-  })
 
   // await sleep(50000)
 
   const actualTextPromise = new Promise((resolve, reject) => {
-    response.text().then((result) => {
+    response.clone().text().then((result) => {
       logger.debug('fn:getText:newPromise THEN')
       resolve(result)
     }, (error) => {
@@ -41,7 +32,7 @@ const getText = async <T>(response: ApiCall<T>['response']): Promise<string> => 
   }, (error) => {
     logger.debug('fn:getText:Promise.race CATCH')
     logger.debug(error)
-    return ''
+    throw error
   })
 
   // let result = ''

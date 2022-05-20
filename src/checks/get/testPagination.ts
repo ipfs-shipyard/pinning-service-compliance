@@ -15,7 +15,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
 
   const getPinsApiCall = new ApiCall({
     pair,
-    title: 'Get all pins',
+    title: 'Pagination',
     fn: async (client) => {
       try {
         const result = await client.pinsGet({ status: allPinStatuses })
@@ -63,13 +63,13 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
       .expect(responseOk())
       .expect(resultNotNull())
 
-    await creation.runExpectations()
+    await creation.runExpectations(getPinsApiCall)
     pinsNeededToBeCreated--
   }
 
   const firstPageOfPins = new ApiCall({
     pair,
-    title: 'First page of pins',
+    title: 'Pagination: First page of pins',
     fn: async (client) => await client.pinsGet({ status: allPinStatuses })
   })
     .expect(responseOk())
@@ -88,7 +88,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
     })
 
   try {
-    await firstPageOfPins.runExpectations()
+    await firstPageOfPins.runExpectations(getPinsApiCall)
   } catch (err) {
     console.error('THIS SHOULD NOT HAPPEN')
     console.error('err', err)
@@ -113,7 +113,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
 
   const secondPage = new ApiCall({
     pair,
-    title: 'Retrieve the next page of pins',
+    title: 'Pagination: Retrieve the next page of pins',
     fn: async (client) => await client.pinsGet({ status: allPinStatuses, before })
   })
     .expect(responseOk())
@@ -136,7 +136,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
       }
     })
 
-  await secondPage.runExpectations()
+  await secondPage.runExpectations(getPinsApiCall)
 }
 
 export { testPagination }
