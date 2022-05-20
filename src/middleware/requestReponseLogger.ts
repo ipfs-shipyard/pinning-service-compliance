@@ -1,9 +1,9 @@
 import type { Middleware, RequestContext, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
 
-import { responseHasContent } from '../utils/responseHasContent'
-import { waitForDate } from '../utils/waitForDate'
-import type { ComplianceCheckDetailsCallbackArg } from '../types'
-import { logger } from '../utils/logs'
+import { responseHasContent } from '../utils/responseHasContent.js'
+import { waitForDate } from '../utils/waitForDate.js'
+import type { ComplianceCheckDetailsCallbackArg } from '../types.js'
+import { logger } from '../utils/logs.js'
 
 interface RequestResponseLoggerOptions {
   finalCb?: (details: ComplianceCheckDetailsCallbackArg) => void | Promise<void>

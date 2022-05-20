@@ -4,13 +4,13 @@ import type { Logger } from 'winston'
 
 import type { RemotePinningServiceClient, RequestContext, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
 
-import { getQueue } from './utils/getQueue'
-import { clientFromServiceAndTokenPair } from './clientFromServiceAndTokenPair'
-import type { ComplianceCheckDetailsCallbackArg, ExpectationResult, ServiceAndTokenPair } from './types'
-import { addApiCallToReport } from './output/reporting'
-import { getServiceLogger, logger as consoleLogger } from './utils/logs'
-import { getSuccessIcon } from './output/getSuccessIcon'
-import { Icons } from './utils/constants'
+import { getQueue } from './utils/getQueue.js'
+import { clientFromServiceAndTokenPair } from './clientFromServiceAndTokenPair.js'
+import type { ComplianceCheckDetailsCallbackArg, ExpectationResult, ServiceAndTokenPair } from './types.js'
+import { addApiCallToReport } from './output/reporting.js'
+import { getServiceLogger, logger as consoleLogger } from './utils/logs.js'
+import { getSuccessIcon } from './output/getSuccessIcon.js'
+import { Icons } from './utils/constants.js'
 
 const { Request } = fetchPonyfill()
 
@@ -40,7 +40,7 @@ interface ApiCallExpectation<T> {
   title: string
 }
 class ApiCall<T> {
-  result: T | null
+  result: T | null = null
   request: Promise<T|null>
   details!: ComplianceCheckDetailsCallbackArg
   requestContext!: RequestContext

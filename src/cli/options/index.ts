@@ -1,3 +1,3 @@
-export * from './serviceAndToken'
-export * from './verbose'
-export * from './debug'
+export * from './serviceAndToken.js'
+export * from './verbose.js'
+export * from './debug.js'

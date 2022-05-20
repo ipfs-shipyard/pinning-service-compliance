@@ -1,9 +1,9 @@
 import type { PinStatus } from '@ipfs-shipyard/pinning-service-client'
 
-import { ApiCall } from '../../ApiCall'
-import type { ServiceAndTokenPair } from '../../types'
-import { getInlineCid } from '../../utils/getInlineCid'
-import { getRequestid } from '../../utils/getRequestid'
+import { ApiCall } from '../../ApiCall.js'
+import type { ServiceAndTokenPair } from '../../types.js'
+import { getInlineCid } from '../../utils/getInlineCid.js'
+import { getRequestid } from '../../utils/getRequestid.js'
 
 /**
  * https://github.com/ipfs-shipyard/pinning-service-compliance/issues/8

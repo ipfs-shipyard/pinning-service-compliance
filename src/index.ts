@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 import { writeSync } from 'fs'
 
-import { getAllPins, checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteAllPins, testPagination, deleteNewPin, replacePin, matchPin } from './checks'
-import { cli } from './cli'
-import { serviceAndToken } from './cli/options'
-import { writeHeaders } from './output/reporting'
-import type { ServiceAndTokenPair } from './types'
-import { logger } from './utils/logs'
+import { getAllPins, checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteAllPins, testPagination, deleteNewPin, replacePin, matchPin } from './checks/index.js'
+import { cli } from './cli/index.js'
+import { serviceAndToken } from './cli/options/index.js'
+import { writeHeaders } from './output/reporting.js'
+import type { ServiceAndTokenPair } from './types.js'
+import { logger } from './utils/logs.js'
 
 const validatePinningService = async (pair: ServiceAndTokenPair) => {
   const complianceCheckFunctions = [checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteNewPin, getAllPins, replacePin, matchPin, testPagination, deleteAllPins]

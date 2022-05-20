@@ -1,7 +1,7 @@
 import { identity } from 'multiformats/hashes/identity'
 import { bytes, CID } from 'multiformats'
 
-import { logger } from './logs'
+import { logger } from './logs.js'
 
 const { fromString } = bytes
 const getInlineCid = async (value: string = Date.now().toString()): Promise<string> => {

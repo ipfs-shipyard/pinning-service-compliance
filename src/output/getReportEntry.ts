@@ -1,11 +1,11 @@
 
 import { inspect } from 'util'
 
-import type { ComplianceCheckDetails } from '../types'
-import { Icons } from '../utils/constants'
-import { stringifyHeaders } from '../utils/stringifyHeaders'
-import { getExpectationsMarkdown } from './getExpectationsMarkdown'
-import { joiValidationAsMarkdown } from './joiValidationAsMarkdown'
+import type { ComplianceCheckDetails } from '../types.js'
+import { Icons } from '../utils/constants.js'
+import { stringifyHeaders } from '../utils/stringifyHeaders.js'
+import { getExpectationsMarkdown } from './getExpectationsMarkdown.js'
+import { joiValidationAsMarkdown } from './joiValidationAsMarkdown.js'
 
 const getReportEntry = <T>(details: ComplianceCheckDetails<T>): string => {
   const { request, response, title, url, method, validationResult, result: clientParsedResult } = details

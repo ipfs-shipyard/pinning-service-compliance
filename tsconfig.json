@@ -1,32 +1,7 @@
 {
+  "extends": "aegir/src/config/tsconfig.aegir.json",
   "compilerOptions": {
-    "module": "commonjs",
-    "moduleResolution": "Node",
-    "outDir": "dist",
-    "composite": false,
-    "skipLibCheck": true,
-    "target": "ES2020",
-    "lib": [
-      "es2020",
-      "es2020.promise",
-      "es2020.string",
-      "es2020.bigint",
-      "dom",
-      "dom.iterable"
-    ],
-    "types": ["node"],
-    "allowSyntheticDefaultImports": true,
-
-        "esModuleInterop": true,
-        "noImplicitReturns": false,
-        "noFallthroughCasesInSwitch": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": false,
-        "importsNotUsedAsValues": "error",
-        "forceConsistentCasingInFileNames": true,
-        "stripInternal": true,
-        "resolveJsonModule": true,
-        "strictNullChecks": true
+    "outDir": "dist"
   },
   "include": [
     "test", // remove this line if you don't want to type-check tests
@@ -37,6 +12,7 @@
     "node_modules"
   ],
   "ts-node": {
+    "extends": "aegir/src/config/tsconfig.aegir.json",
       "transpileOnly": true,
       "compilerOptions": {
       }

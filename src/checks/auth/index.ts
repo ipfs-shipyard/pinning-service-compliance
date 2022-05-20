@@ -1,2 +1,2 @@
-export * from './checkEmptyBearerToken'
-export * from './checkInvalidBearerToken'
+export * from './checkEmptyBearerToken.js'
+export * from './checkInvalidBearerToken.js'

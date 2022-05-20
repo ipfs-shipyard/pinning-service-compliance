@@ -5,7 +5,7 @@ const verbose = {
   nargs: 0,
   requiresArg: false,
   default: false,
-  coerce: (verbosity) => {
+  coerce: (verbosity: boolean) => {
     if (verbosity != null) {
       return Boolean(verbosity)
     }

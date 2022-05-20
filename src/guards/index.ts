@@ -1,2 +1,2 @@
-export * from './isResponse'
-export * from './isError'
+export * from './isResponse.js'
+export * from './isError.js'

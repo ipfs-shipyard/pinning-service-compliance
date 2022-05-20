@@ -1,4 +1,4 @@
-import type { ComplianceCheckDetails } from '../types'
+import type { ComplianceCheckDetails } from '../types.js'
 
 const getExpectationsMarkdown = <T>(details: ComplianceCheckDetails<T>): string => {
   let checks = 0

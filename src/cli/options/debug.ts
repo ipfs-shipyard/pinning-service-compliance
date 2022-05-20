@@ -5,7 +5,7 @@ const debug = {
   nargs: 0,
   requiresArg: false,
   default: false,
-  coerce: (debug) => {
+  coerce: (debug: boolean) => {
     if (debug != null) {
       return Boolean(debug)
     }

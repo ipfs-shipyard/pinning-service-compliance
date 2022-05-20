@@ -1,4 +1,4 @@
-import type { ComplianceCheckDetails } from '../types'
+import type { ComplianceCheckDetails } from '../types.js'
 
 type RequiredHeaderProps<T> = Pick<ComplianceCheckDetails<T>, 'title' | 'successful' | 'pair'>
 

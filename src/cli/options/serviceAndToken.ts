@@ -1,11 +1,11 @@
-import type { ServiceAndTokenPair } from '../../types'
+import type { ServiceAndTokenPair } from '../../types.js'
 
 const serviceAndToken = {
   alias: 's',
   description: 'An ipfs pinning service endpoint and the secret token for that endpoint',
   nargs: 2,
   requiresArg: true,
-  coerce: (pinningServicePairs): ServiceAndTokenPair[] => {
+  coerce: (pinningServicePairs: string[]): ServiceAndTokenPair[] => {
     const coercedPairs: ServiceAndTokenPair[] = []
     if (pinningServicePairs == null) {
       return coercedPairs

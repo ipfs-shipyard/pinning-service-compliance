@@ -1,11 +1,11 @@
 import type { PinResults } from '@ipfs-shipyard/pinning-service-client'
 
-import { ApiCall } from '../../ApiCall'
-import { expectNonNullResult, expectOkResponse } from '../../expectations'
-import type { ServiceAndTokenPair } from '../../types'
-import { allPinStatuses } from '../../utils/constants'
-import { getInlineCid } from '../../utils/getInlineCid'
-import { getOldestPinCreateDate } from '../../utils/getOldestPinCreateDate'
+import { ApiCall } from '../../ApiCall.js'
+import { expectNonNullResult, expectOkResponse } from '../../expectations/index.js'
+import type { ServiceAndTokenPair } from '../../types.js'
+import { allPinStatuses } from '../../utils/constants.js'
+import { getInlineCid } from '../../utils/getInlineCid.js'
+import { getOldestPinCreateDate } from '../../utils/getOldestPinCreateDate.js'
 
 /**
  * https://github.com/ipfs-shipyard/pinning-service-compliance/issues/6
