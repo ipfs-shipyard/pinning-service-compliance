@@ -14,32 +14,31 @@ import { getSuccessIcon } from './output/getSuccessIcon.js'
 import { Icons } from './utils/constants.js'
 import { globalReport } from './utils/report.js'
 import { isError } from './guards/isError.js'
-// import { responseHasContent } from './utils/responseHasContent.js'
-// import { getJson } from './utils/fetchSafe/getJson.js'
-// import { getText } from './utils/fetchSafe/getText.js'
 import { getTextAndJson } from './utils/fetchSafe/getTextAndJson.js'
 
 interface ApiCallOptions<T> {
   pair: ServiceAndTokenPair
   fn: (client: RemotePinningServiceClient) => Promise<T>
   schema?: Schema
-
   title: string
-
 }
+
 interface ExpectationError {
   error: Error
   title: string
 }
+
 interface ExpectationCallbackArg<T> {
   responseContext: ResponseContext
   details: ComplianceCheckDetailsCallbackArg
   apiCall: ApiCall<T>
   result: T | null
 }
+
 interface ExpectationFn<T> {
   (arg: ExpectationCallbackArg<T>): boolean | Promise<boolean>
 }
+
 interface ApiCallExpectation<T> {
   fn: ExpectationFn<T>
   title: string
@@ -63,7 +62,6 @@ class ApiCall<T> {
   validationResult: ValidationResult | null = null
   successful: boolean = true
   json: T | null = null
-  // body: ReadableStream<Uint8Array> | null
   text: string | null = null
   logger: Logger
 
@@ -71,7 +69,6 @@ class ApiCall<T> {
     globalReport.incrementApiCallsCount()
     this.logger = getServiceLogger(pair[0])
     this.logger.debug(`Creating new ApiCall: ${title}`)
-    // consoleLogger.info(`ApiCall Count is '${globalReport.apiCallCount}'`)
     this.saveRequest = this.saveRequest.bind(this)
     this.saveResponse = this.saveResponse.bind(this)
     this.saveDetails = this.saveDetails.bind(this)
@@ -80,15 +77,13 @@ class ApiCall<T> {
 
     this.client = clientFromServiceAndTokenPair(pair, {
       preCb: this.saveRequest,
-      postCb: this.saveResponse,
-      // finalCb: this.saveDetails
+      postCb: this.saveResponse
     })
     if (schema != null) {
       this.addSchema(schema)
     }
 
     this.request = getQueue(pair[0]).add(async () => {
-      consoleLogger.debug('Running primary fn')
       try {
         return await fn(this.client)
       } catch (err) {
@@ -111,7 +106,7 @@ class ApiCall<T> {
   }
 
   get httpResponse () {
-    return this.response //.clone()
+    return this.response
   }
 
   get httpRequest () {
@@ -130,7 +125,6 @@ class ApiCall<T> {
     if (parent == null) {
       globalReport.incrementRunExpectationsCallCount()
     }
-    // consoleLogger.info(`runExpectations call Count is '${++runExpectationsCount}'`)
     try {
       await this.request
     } catch (err) {
@@ -140,7 +134,6 @@ class ApiCall<T> {
     const result = this.result
     for await (const expectation of this.expectations) {
       globalReport.incrementTotalExpectationsCount()
-      // consoleLogger.info(`Total Expectation Count is '${++totalExpectationsCount}'`)
       const { fn, title } = expectation
       try {
         const success = await fn({
@@ -151,7 +144,6 @@ class ApiCall<T> {
         })
         consoleLogger.info(`${getSuccessIcon(success)} ${title}`, { nested: true })
         this.successful = this.successful && success
-        // consoleLogger.info(`${title} - `)
 
         this.expectationResults.push({
           success,
@@ -199,7 +191,7 @@ class ApiCall<T> {
   addSchema (schema: Schema) {
     this.expect({
       title: 'Response object matches api spec schema',
-      fn: async ({ apiCall }): Promise<boolean> => {
+      fn: async (): Promise<boolean> => {
         const result = await this.request
         if (result != null || this.failureReason != null) {
           this.validationResult = schema.validate(this.json ?? this.failureReason, { abortEarly: false, convert: true })
@@ -212,7 +204,6 @@ class ApiCall<T> {
           }
         } else {
           consoleLogger.info('Result or failureReason is null')
-          // console.log(result, this.failureReason, this.response)
           this.errors.push({ error: new Error('Could not compare against joi Schema'), title: 'Result and failureReason are both, unexpectedly, null' })
           return false
         }
@@ -226,57 +217,25 @@ class ApiCall<T> {
   }
 
   private async saveResponse (context: ResponseContext) {
-    // this.logger.debug()
     consoleLogger.debug(`${this.title}: Saving response context for '${context.url}'`)
-    // this.response = context.response.clone() as unknown as Response
     this.response = context.response as unknown as ApiCall<T>['response']
-    consoleLogger.debug('ApiCall.saveResponse: after setting this.response')
     this.responseContext = context
-    consoleLogger.debug('ApiCall.saveResponse: after setting this.responseContext')
-    // const hasContent = await responseHasContent(this.response)
-    // consoleLogger.debug(`ApiCall.saveResponse: checked if content exists. (${hasContent ? 'Yes' : 'No'})`)
-    // if (hasContent) {
     try {
-      const {text, json, errors} = await getTextAndJson(this.response)
+      const { text, json, errors } = await getTextAndJson(this.response)
       this.text = text
       this.json = json as T
-      this.addExpectationErrors(errors.map((err) => ({error: err, title: 'Problem when attempting to get response text and json'})))
+      this.addExpectationErrors(errors.map((err) => ({ error: err, title: 'Problem when attempting to get response text and json' })))
     } catch (err) {
       this.errors.push(err as ExpectationError)
     }
-    // const processedResponse: ProcessedResponse = {
-    //   ...this.response,
-    //   json: this.json,
-    //   // body,
-    //   text: this.text
-    //   // headers: response.headers,
-    //   // status: response.status,
-    //   // statusText: response.statusText,
-    //   // ok: response.ok
-    // }
-    const normalizedResult: ComplianceCheckDetailsCallbackArg = {
+    this.saveDetails({
       ...context,
       url: context.url,
       init: context.init,
       fetch: context.fetch,
       errors: [],
       response: this.response
-    }
-
-    this.details = normalizedResult
-      // try {
-      //   this.text = await getText(this.response)
-      // // consoleLogger.debug('ApiCall.saveResponse: after setting this.text')
-      // } catch (error) {
-      //   consoleLogger.debug('Error getting response text', { error })
-      // }
-      // try {
-      //   // this.json = (await this.response.clone().json()) as T
-      //   this.json = this.text == null ? null : JSON.parse(this.text)
-      // } catch (error) {
-      //   consoleLogger.debug('Error getting response json', { error })
-      // }
-    // }
+    })
   }
 
   /**

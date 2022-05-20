@@ -8,6 +8,8 @@ import type {
 
 /**
  * This should move to the pinning-service-client package.
+ *
+ * @see https://github.com/ipfs-shipyard/js-pinning-service-http-client/issues/17
  */
 declare module '@ipfs-shipyard/pinning-service-client' {
   // eslint-disable-next-line @typescript-eslint/no-namespace

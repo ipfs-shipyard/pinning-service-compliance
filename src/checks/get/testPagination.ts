@@ -4,7 +4,6 @@ import type { ServiceAndTokenPair } from '../../types.js'
 import { allPinStatuses } from '../../utils/constants.js'
 import { getInlineCid } from '../../utils/getInlineCid.js'
 import { getOldestPinCreateDate } from '../../utils/getOldestPinCreateDate.js'
-import { logger } from '../../utils/logs.js'
 
 /**
  * https://github.com/ipfs-shipyard/pinning-service-compliance/issues/6
@@ -13,38 +12,34 @@ import { logger } from '../../utils/logs.js'
 const testPagination = async (pair: ServiceAndTokenPair) => {
   const pinsNeededToTestPagination = 15
 
-  const getPinsApiCall = new ApiCall({
+  const mainPaginationApiCall = new ApiCall({
     pair,
-    title: 'Pagination',
-    fn: async (client) => {
-      try {
-        const result = await client.pinsGet({ status: allPinStatuses })
-        return result
-      } catch (error) {
-        logger.debug('error trying to get all pins for testing pagination', { error })
-      }
-    }
+    title: 'Pagination: Get all pins, create new pins (optional), get first and second pages',
+    fn: async (client) => await client.pinsGet({ status: allPinStatuses })
   })
     .expect(responseOk())
     .expect(resultNotNull())
 
-  await getPinsApiCall.runExpectations()
+  await mainPaginationApiCall.runExpectations()
 
   let pinsNeededToBeCreated = pinsNeededToTestPagination
 
   try {
-    const pins = await getPinsApiCall.request
+    const pins = await mainPaginationApiCall.request
     try {
+      /**
+       * Catching pins == null with try catch so we can get an error object instead of creating one.
+       */
       // @ts-expect-error
       pinsNeededToBeCreated = pinsNeededToTestPagination - pins.count
     } catch (error) {
-      getPinsApiCall.errors.push({
+      mainPaginationApiCall.addExpectationErrors([{
         title: `Could not determine efficient number of pins to create. Creating required minimum of ${pinsNeededToTestPagination} new pins`,
         error: error as Error
-      })
+      }])
     }
   } catch (error) {
-    getPinsApiCall.errors.push({
+    mainPaginationApiCall.errors.push({
       title: 'Unexpected error when waiting for pinsGet request to complete',
       error: error as Error
     })
@@ -52,7 +47,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
 
   while (pinsNeededToBeCreated > 0) {
     const cid = await getInlineCid()
-    // add more pins
+    // add more pins so we have enough to paginate
     const creation = new ApiCall({
       pair,
       title: `Can create new pin for testing pagination cid='${cid}'`,
@@ -63,7 +58,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
       .expect(responseOk())
       .expect(resultNotNull())
 
-    await creation.runExpectations(getPinsApiCall)
+    await creation.runExpectations(mainPaginationApiCall)
     pinsNeededToBeCreated--
   }
 
@@ -87,22 +82,17 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
       fn: ({ result }) => result?.results.size === 10
     })
 
-  try {
-    await firstPageOfPins.runExpectations(getPinsApiCall)
-  } catch (err) {
-    console.error('THIS SHOULD NOT HAPPEN')
-    console.error('err', err)
-  }
+  await firstPageOfPins.runExpectations(mainPaginationApiCall)
 
   const cids: Set<string> = new Set()
   const firstPageResult = await firstPageOfPins.request
   let before = new Date()
   let firstPageSize = 0
   if (firstPageResult == null) {
-    firstPageOfPins.errors.push({
+    firstPageOfPins.addExpectationErrors([{
       title: 'Result is null, cannot get oldest pin create date in order to paginate',
       error: new Error('First page result is null')
-    })
+    }])
   } else {
     before = getOldestPinCreateDate(firstPageResult.results)
     firstPageResult.results.forEach((pin) => {
@@ -136,7 +126,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
       }
     })
 
-  await secondPage.runExpectations(getPinsApiCall)
+  await secondPage.runExpectations(mainPaginationApiCall)
 }
 
 export { testPagination }

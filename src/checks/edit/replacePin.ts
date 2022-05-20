@@ -36,7 +36,8 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
    * If we run too fast, the timestamp returned ends up generating the same CID
    */
   while (cid === newCid) {
-    await sleep(delay*=.75)
+    await sleep(delay)
+    delay *= 0.75
     newCid = await getInlineCid()
   }
 

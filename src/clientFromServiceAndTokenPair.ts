@@ -1,5 +1,5 @@
 import fetch from 'node-fetch'
-import type {RequestInfo, RequestInit} from 'node-fetch'
+import type { RequestInfo, RequestInit } from 'node-fetch'
 
 import { RemotePinningServiceClient, Configuration, NodeFetch } from '@ipfs-shipyard/pinning-service-client'
 
@@ -12,20 +12,18 @@ function clientFromServiceAndTokenPair ([endpointUrl, accessToken]: ServiceAndTo
     endpointUrl,
     accessToken,
     fetchApi: async (url: RequestInfo, init?: RequestInit) => {
-      // try {
-        return await fetch(url, {
-          ...init,
-          highWaterMark: 1024 * 1024 * 2,
-        }).then((result) => {
-          logger.debug('fn:clientFromServiceAndTokenPair:fetch:then')
-          return result
-        }, (reason) => {
-          logger.debug('fn:clientFromServiceAndTokenPair:fetch:catch')
-          throw reason
-        }).finally(() => {
-          logger.debug('fn:clientFromServiceAndTokenPair:fetch:finally')
-        })
-      // }
+      return await fetch(url, {
+        ...init,
+        highWaterMark: 1024 * 1024 * 2
+      }).then((result) => {
+        logger.debug('fn:clientFromServiceAndTokenPair:fetch:then')
+        return result
+      }, (reason) => {
+        logger.debug('fn:clientFromServiceAndTokenPair:fetch:catch')
+        throw reason
+      }).finally(() => {
+        logger.debug('fn:clientFromServiceAndTokenPair:fetch:finally')
+      })
     },
     middleware: [
       requestResponseLogger(middleWareOptions)

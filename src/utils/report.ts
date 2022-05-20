@@ -1,11 +1,10 @@
+/**
+ * Eventually, this will house all the logic that is currently scattered throughout src/output/*.ts
+ */
 class Report {
   apiCallCount = 0
   totalExpectationsCount = 0
   runExpectationsCallCount = 0
-
-  // constructor () {
-
-  // }
 
   incrementApiCallsCount () {
     this.apiCallCount++
@@ -28,6 +27,9 @@ class Report {
   }
 }
 
+/**
+ * Singleton report per run.
+ */
 const globalReport = new Report()
 
 export { Report, globalReport }

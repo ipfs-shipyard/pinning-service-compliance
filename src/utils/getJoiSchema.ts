@@ -67,6 +67,9 @@ const modifySchema = (schemaName: keyof PinningSpecJoiSchema, schema: JoiSchema)
   }
 }
 
+/**
+ * Cached schema object so we don't have to keep calling to the spec
+ */
 let schema: PinningSpecJoiSchema | null = null
 const getJoiSchema = async <T extends keyof PinningSpecJoiSchema>(schemaName: T): Promise<PinningSpecJoiSchema[T] | undefined> => {
   if (schema == null) {

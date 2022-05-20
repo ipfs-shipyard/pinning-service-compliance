@@ -5,7 +5,6 @@ import process from 'node:process'
 import { getAllPins, checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteAllPins, testPagination, deleteNewPin, replacePin, matchPin } from './checks/index.js'
 import { cli } from './cli/index.js'
 import { serviceAndToken } from './cli/options/index.js'
-import { isError } from './guards/isError.js'
 import { writeHeaders } from './output/reporting.js'
 import type { ServiceAndTokenPair } from './types.js'
 import { logger } from './utils/logs.js'
@@ -19,12 +18,7 @@ const validatePinningService = async (pair: ServiceAndTokenPair) => {
     try {
       await complianceCheckFn(pair)
     } catch (error) {
-      const msg = `Problem running compliance check: '${complianceCheckFn.name}'`
-      if (isError(error)) {
-        logger.debug(msg, { error })
-      } else {
-        logger.error(msg, error)
-      }
+      logger.error(`Problem running compliance check: '${complianceCheckFn.name}'`, { error })
     } finally {
       logger.debug(`Completed compliance check '${complianceCheckFn.name}'`)
     }
@@ -52,8 +46,7 @@ const main = async () => {
 }
 
 const getUncaughtListener = (type: 'unhandledRejection' | 'uncaughtException' | 'uncaughtExceptionMonitor'): NodeJS.UncaughtExceptionListener => (err, origin) => {
-  console.log('getUncaughtListener: ', getUncaughtListener)
-  logger.info(type, err)
+  logger.error(type, { error: err })
   writeSync(
     process.stderr.fd,
     `Caught exception: ${JSON.stringify(err, null, 2)}\n`
@@ -70,7 +63,7 @@ process.on('uncaughtException', getUncaughtListener('uncaughtException'))
 main().catch((err) => {
   logger.error(err)
   logger.error('Exiting process due to unexpected error')
-  // process.exit(1)
+  process.exit(1)
 }).finally(() => {
   logger.debug(globalReport)
 })

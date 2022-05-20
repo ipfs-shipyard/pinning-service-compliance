@@ -13,7 +13,6 @@ import { getReportEntry } from './getReportEntry.js'
 import { getHeader, RequiredHeaderProps } from './getHeader.js'
 import type { ComplianceCheckDetails } from '../types.js'
 import { logger } from '../utils/logs.js'
-// import { getText } from '../utils/fetchSafe/getText.js'
 
 const successFormatter = getFormatter({
   paragraph: chalk.reset,
@@ -29,6 +28,7 @@ const getReportFilePath = (hostname: string) => {
   const filename = `${hostname}.md`
   return join(docsDir, filename)
 }
+
 // Need summary at the top for each service: # pass/fail
 const addToReport = async <T>(details: ComplianceCheckDetails<T>) => {
   const reportEntryMarkdown = getReportEntry(details)
@@ -64,10 +64,11 @@ const addToReport = async <T>(details: ComplianceCheckDetails<T>) => {
 const reportSummaryInfo: Map<string, Array<RequiredHeaderProps<any>>> = new Map()
 
 const addApiCallToReport = async <T>(apiCall: ApiCall<T>) => {
-  const { pair, errors, title, httpRequest, result, response, expectationResults, successful } = apiCall
+  const { pair, errors, title, httpRequest, result, response, expectationResults, successful, text } = apiCall
   const { url, headers: requestHeaders } = httpRequest
   const method = httpRequest.method ?? 'Unknown'
-  const requestBody = apiCall.text ?? ''
+  const requestBody = await httpRequest.text()
+  const responseBody = text ?? ''
   const hostname = getHostnameFromUrl(url)
 
   const headerProps: RequiredHeaderProps<T> = { pair, title, successful }
@@ -85,7 +86,7 @@ const addApiCallToReport = async <T>(apiCall: ApiCall<T>) => {
     },
     response: {
       json: apiCall.json,
-      body: apiCall.text ?? '',
+      body: responseBody,
       headers: response.headers,
       status: response.status,
       statusText: response.statusText
