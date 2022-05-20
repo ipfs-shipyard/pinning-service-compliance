@@ -148,7 +148,7 @@
     "ipfs": "^0.62.1",
     "ipfs-core": "^0.14.1",
     "ipfs-http-client": "^56.0.1",
-    "ipfsd-ctl": "^10.0.6",
+    "ipfsd-ctl": "^11.0.0",
     "marked": "^4.0.12",
     "marked-terminal": "^5.1.1",
     "multiformats": "^9.6.4",
