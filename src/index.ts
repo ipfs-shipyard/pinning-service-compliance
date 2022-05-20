@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env ts-node-esm
 import { writeSync } from 'fs'
 import process from 'node:process'
 
@@ -21,19 +21,11 @@ const validatePinningService = async (pair: ServiceAndTokenPair) => {
     } catch (error) {
       const msg = `Problem running compliance check: '${complianceCheckFn.name}'`
       if (isError(error)) {
-        // nothing
         logger.debug(msg, { error })
       } else {
-        logger.error(msg)
+        logger.error(msg, error)
       }
-      // throw error
-      // if (typeof error === 'string') {
-      //   logger.error(`${msg}: ${error}`)
-      // } else {
-      //   logger.error(msg, error)
-      // }
     } finally {
-      // console.log('wut')
       logger.debug(`Completed compliance check '${complianceCheckFn.name}'`)
     }
   }
@@ -76,10 +68,9 @@ process.on('unhandledRejection', getUncaughtListener('unhandledRejection'))
 process.on('uncaughtException', getUncaughtListener('uncaughtException'))
 
 main().catch((err) => {
-  console.error('Main process error caught', err)
   logger.error(err)
-  logger.debug('Exiting process due to unexpected error')
+  logger.error('Exiting process due to unexpected error')
   // process.exit(1)
 }).finally(() => {
-  logger.info(globalReport)
+  logger.debug(globalReport)
 })
