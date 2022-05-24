@@ -37,10 +37,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install dependencies
-        run: npm install
-
-      - name: Run setup script
-        run: npm run setup
+        run: npm ci
 
       # Migrate reports to use npx
       - name: Generate reports
