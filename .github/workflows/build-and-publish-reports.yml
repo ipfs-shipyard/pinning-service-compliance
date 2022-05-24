@@ -11,10 +11,24 @@ on:
     branches: [ main ]
 jobs:
   build-and-publish:
+    if: secrets.PINATA_API_ENDPOINT != null && secrets.PINATA_API_TOKEN != null && secrets.ESTUARY_API_ENDPOINT != null && secrets.ESTUARY_API_TOKEN != null && secrets.NFT_API_ENDPOINT != null && secrets.NFT_API_TOKEN != null && secrets.WEB3_API_ENDPOINT != null && secrets.PINATA_API_TOKEN != null
     strategy:
       fail-fast: false
       matrix:
-        args: ["${{ secrets.PINATA_API_ENDPOINT }} ${{ secrets.PINATA_API_TOKEN }}", "${{ secrets.ESTUARY_API_ENDPOINT }} ${{ secrets.ESTUARY_API_TOKEN }}", "${{ secrets.NFT_API_ENDPOINT }} ${{ secrets.NFT_API_TOKEN }}", "${{ secrets.WEB3_API_ENDPOINT }} ${{ secrets.WEB3_API_TOKEN }}"]
+        service: [pinata, estuary, nft, web3]
+        include:
+          - service: pinata
+            endpoint: ${{ secrets.PINATA_API_ENDPOINT }}
+            token: ${{secrets.PINATA_API_TOKEN}}
+          - service: estuary
+            endpoint: ${{ secrets.ESTUARY_API_ENDPOINT }}
+            token: ${{secrets.ESTUARY_API_TOKEN}}
+          - service: nft
+            endpoint: ${{ secrets.NFT_API_ENDPOINT }}
+            token: ${{secrets.NFT_API_TOKEN}}
+          - service: web3
+            endpoint: ${{ secrets.WEB3_API_ENDPOINT }}
+            token: ${{secrets.WEB3_API_TOKEN}}
 
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
@@ -28,8 +42,10 @@ jobs:
       - name: Run setup script
         run: npm run setup
 
+      # Migrate reports to use npx
       - name: Generate reports
-        run: node -r ts-node/register src/index.ts -s ${{ matrix.args }}
+        run: npm dev-start -- -s ${{ secrets[matrix.endpoint] }} ${{ secrets[matrix.token] }}
+
       # Deploy to gh pages branch
       - name: Deploy
         uses: s0/git-publish-subdir-action@399aab378450f99b7de6767f62b0d1dbfcb58b53
