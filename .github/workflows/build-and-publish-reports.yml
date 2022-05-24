@@ -44,10 +44,23 @@ jobs:
         run: npm dev-start -- -s ${{ secrets[matrix.endpoint] }} ${{ secrets[matrix.token] }}
 
       # Deploy to gh pages branch
-      - name: Deploy
+
+      ## Cron jobs
+      - name: Scheduled deployment
+        if: success() && (github.event.schedule != null || github.event.pusher != null)
         uses: s0/git-publish-subdir-action@399aab378450f99b7de6767f62b0d1dbfcb58b53
         env:
           REPO: self
           BRANCH: gh-pages
+          FOLDER: docs
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      ## PRs should push to branch other than primary `gh-pages` branch
+      - name: Deployment for PR
+        if: success() && github.event.pull_request != null
+        uses: s0/git-publish-subdir-action@399aab378450f99b7de6767f62b0d1dbfcb58b53
+        env:
+          REPO: self
+          BRANCH: gh-pages-${github.sha}
           FOLDER: docs
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
