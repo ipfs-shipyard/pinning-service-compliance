@@ -122,7 +122,7 @@
     "build": "aegir build",
     "start": "node dist/src/index.js",
     "dev-start": "NODE_OPTIONS='--unhandled-rejections=strict --trace-atomics-wait --trace-deprecation --trace-exit --trace-sigint --trace-uncaught --trace-warnings' ts-node-esm --esm -T --preferTsExts --logError src/index.ts",
-    "release": "npm run build && aegir release --test false --docs false",
+    "release": "npm run build && aegir release",
     "rebuild": "npm run clean && npm install && npm run build"
   },
   "devDependencies": {
