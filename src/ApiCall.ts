@@ -2,12 +2,13 @@ import type { Schema, ValidationError, ValidationResult } from '@hapi/joi'
 import { Request } from 'node-fetch'
 import type { RequestInit, Response } from 'node-fetch'
 import type { Logger } from 'winston'
+import pDefer from 'p-defer'
 
 import type { RemotePinningServiceClient, RequestContext, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
 
 import { getQueue } from './utils/getQueue.js'
 import { clientFromServiceAndTokenPair } from './clientFromServiceAndTokenPair.js'
-import type { ComplianceCheckDetailsCallbackArg, ExpectationResult, ServiceAndTokenPair } from './types.js'
+import type { ComplianceCheckDetailsCallbackArg, ExpectationResult, PinsApiResponseTypes, ServiceAndTokenPair } from './types.js'
 import { addApiCallToReport } from './output/reporting.js'
 import { getServiceLogger, logger as consoleLogger } from './utils/logs.js'
 import { getSuccessIcon } from './output/getSuccessIcon.js'
@@ -16,11 +17,12 @@ import { globalReport } from './utils/report.js'
 import { isError } from './guards/isError.js'
 import { getTextAndJson } from './utils/fetchSafe/getTextAndJson.js'
 
-interface ApiCallOptions<T> {
+interface ApiCallOptions<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes> {
   pair: ServiceAndTokenPair
   fn: (client: RemotePinningServiceClient) => Promise<T>
   schema?: Schema
   title: string
+  parent?: ApiCall<P> | undefined
 }
 
 interface ExpectationError {
@@ -28,52 +30,68 @@ interface ExpectationError {
   title: string
 }
 
-interface ExpectationCallbackArg<T> {
+interface ExpectationCallbackArg<T extends PinsApiResponseTypes> {
   responseContext: ResponseContext
   details: ComplianceCheckDetailsCallbackArg
   apiCall: ApiCall<T>
   result: T | null
 }
 
-interface ExpectationFn<T> {
+interface ExpectationFn<T extends PinsApiResponseTypes> {
   (arg: ExpectationCallbackArg<T>): boolean | Promise<boolean>
 }
 
-interface ApiCallExpectation<T> {
+interface ApiCallExpectation<T extends PinsApiResponseTypes> {
+  context?: ApiCall<T>
   fn: ExpectationFn<T>
   title: string
 }
 
-class ApiCall<T> {
-  result: T | null = null
+class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = never> {
   request: Promise<T|null>
-  details!: ComplianceCheckDetailsCallbackArg
-  requestContext!: RequestContext
-  responseContext!: ResponseContext
-  failureReason: Error | unknown
   expectations: Array<ApiCallExpectation<T>> = []
-  response!: Response
   errors: ExpectationError[] = []
   title: string
-  expectationResults: ExpectationResult[] = []
   pair: ServiceAndTokenPair
   client: RemotePinningServiceClient
-  validationErrors: ValidationError | undefined
-  validationResult: ValidationResult | null = null
   successful: boolean = true
   json: T | null = null
   text: string | null = null
   logger: Logger
 
-  constructor ({ pair, fn, schema, title }: ApiCallOptions<T>) {
+  /**
+   * A deferred promise that is only resolved after expectations have ran via `runExpectations`.
+   *
+   * Used to handle parent/child expectation ordering
+   */
+  readonly afterExpectations = pDefer()
+  parent: ApiCall<P> | null
+  children: Array<ApiCall<PinsApiResponseTypes, T>> = []
+
+  /**
+   * These properties are only available after the request completes, and are private to prevent access prior to setting them.
+   */
+
+  private details!: ComplianceCheckDetailsCallbackArg
+  private result!: T | null
+  private responseContext!: ResponseContext
+  private failureReason: Error | unknown
+  private requestContext!: RequestContext
+  private response!: Response
+  private readonly expectationResults: ExpectationResult[] = []
+  private validationErrors: ValidationError | undefined
+  private validationResult!: ValidationResult | null
+
+  constructor ({ pair, fn, schema, title, parent }: ApiCallOptions<T, P>) {
     globalReport.incrementApiCallsCount()
     this.logger = getServiceLogger(pair[0])
-    this.logger.debug(`Creating new ApiCall: ${title}`)
+    consoleLogger.debug(`Creating new ApiCall: ${title}`)
     this.saveRequest = this.saveRequest.bind(this)
     this.saveResponse = this.saveResponse.bind(this)
     this.saveDetails = this.saveDetails.bind(this)
     this.title = title
     this.pair = pair
+    this.parent = parent ?? null
 
     this.client = clientFromServiceAndTokenPair(pair, {
       preCb: this.saveRequest,
@@ -82,9 +100,19 @@ class ApiCall<T> {
     if (schema != null) {
       this.addSchema(schema)
     }
+    if (parent != null) {
+      parent.addChild(this)
+    }
 
     this.request = getQueue(pair[0]).add(async () => {
       try {
+        if (parent != null) {
+          consoleLogger.debug(`ApiCall '${title}' has parent, waiting for it to finish`)
+          // parent API call must finish before we send subsequent requests
+          await parent.request
+          consoleLogger.debug(`ApiCall '${title}' parent has finished`)
+        }
+        // eslint-disable-next-line @typescript-eslint/return-await
         return await fn(this.client)
       } catch (err) {
         const error = isError(err) ? err : new Error(err as string)
@@ -120,18 +148,27 @@ class ApiCall<T> {
     return this
   }
 
-  async runExpectations <T>(parent?: ApiCall<T>) {
-    consoleLogger.info(`${this.title}`, { messageOnly: true })
-    if (parent == null) {
+  async runExpectations (fromParent = false) {
+    const hasParent = this.parent != null
+    let padding = ''
+    if (hasParent) {
+      if (!fromParent) {
+        consoleLogger.debug(`Ignoring runExpectations call for '${this.title}'. It will be called by the parent.`)
+        return this
+      }
+      padding = '\t'
+    } else {
       globalReport.incrementRunExpectationsCallCount()
     }
+    consoleLogger.info(`${padding}${this.title}`, { messageOnly: true })
+
     try {
       await this.request
     } catch (err) {
       consoleLogger.error('Error occurred while waiting for request to conclude', err)
     }
 
-    const result = this.result
+    const result = this.result as T
     for await (const expectation of this.expectations) {
       globalReport.incrementTotalExpectationsCount()
       const { fn, title } = expectation
@@ -142,7 +179,7 @@ class ApiCall<T> {
           apiCall: this,
           result
         })
-        consoleLogger.info(`${getSuccessIcon(success)} ${title}`, { nested: true })
+        consoleLogger.info(`${padding}${getSuccessIcon(success)} ${title}`, { nested: true })
         this.successful = this.successful && success
 
         this.expectationResults.push({
@@ -150,7 +187,7 @@ class ApiCall<T> {
           title
         })
       } catch (error) {
-        consoleLogger.info(`${Icons.ERROR} ${title}`, { nested: true })
+        consoleLogger.info(`${padding}${Icons.ERROR} ${title}`, { nested: true })
         consoleLogger.error('Unexpected error occurred while running expectation function', error)
         this.successful = false
         this.expectationResults.push({
@@ -162,15 +199,19 @@ class ApiCall<T> {
       }
     }
 
-    if (parent == null) {
-      try {
-        await addApiCallToReport(this)
-      } catch (err) {
-        consoleLogger.error(`Could not add details of ApiCall '${this.title}' to report`, err)
-      }
-    } else {
-      this.addExpectationResults(this.expectationResults)
-      this.addExpectationErrors(this.errors)
+    this.afterExpectations.resolve()
+    for await (const child of this.children) {
+      await child.runExpectations(true)
+      this.successful = this.successful && child.successful
+      const { expectationResults, errors } = await child.reportData()
+      this.addExpectationResults(expectationResults)
+      this.addExpectationErrors(errors)
+    }
+
+    try {
+      await addApiCallToReport(this)
+    } catch (err) {
+      consoleLogger.error(`Could not add details of ApiCall '${this.title}' to report`, err)
     }
 
     return this
@@ -203,7 +244,7 @@ class ApiCall<T> {
             return true
           }
         } else {
-          consoleLogger.info('Result or failureReason is null')
+          consoleLogger.debug('Result and failureReason are null')
           this.errors.push({ error: new Error('Could not compare against joi Schema'), title: 'Result and failureReason are both, unexpectedly, null' })
           return false
         }
@@ -211,8 +252,19 @@ class ApiCall<T> {
     })
   }
 
+  async reportData () {
+    await this.request
+    const { pair, errors, title, httpRequest, result, response, expectationResults, successful, text, validationErrors, validationResult } = this
+
+    return { pair, errors, title, httpRequest, result, response, expectationResults, successful, text, validationErrors, validationResult }
+  }
+
+  addChild (child: ApiCall<any, any>) {
+    this.children.push(child)
+  }
+
   private saveRequest (context: RequestContext) {
-    this.logger.debug(`${this.title}: Saving request context for '${context.url}'`)
+    consoleLogger.debug(`${this.title}: Saving request context for '${context.url}'`)
     this.requestContext = context
   }
 
@@ -224,7 +276,7 @@ class ApiCall<T> {
       const { text, json, errors } = await getTextAndJson(this.response)
       this.text = text
       this.json = json as T
-      this.addExpectationErrors(errors.map((err) => ({ error: err, title: 'Problem when attempting to get response text and json' })))
+      await this.addExpectationErrors(errors.map((err) => ({ error: err, title: 'Problem when attempting to get response text and json' })))
     } catch (err) {
       this.errors.push(err as ExpectationError)
     }

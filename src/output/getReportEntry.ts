@@ -1,13 +1,13 @@
 
 import { inspect } from 'util'
 
-import type { ComplianceCheckDetails } from '../types.js'
+import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 import { Icons } from '../utils/constants.js'
 import { stringifyHeaders } from '../utils/stringifyHeaders.js'
 import { getExpectationsMarkdown } from './getExpectationsMarkdown.js'
 import { joiValidationAsMarkdown } from './joiValidationAsMarkdown.js'
 
-const getReportEntry = <T>(details: ComplianceCheckDetails<T>): string => {
+const getReportEntry = <T extends PinsApiResponseTypes>(details: ComplianceCheckDetails<T>): string => {
   const { request, response, title, url, method, validationResult, result: clientParsedResult } = details
 
   const reportEntry = `## ${title} - ${details.successful ? `${Icons.SUCCESS} SUCCESS` : `${Icons.FAILURE} FAILED`}
@@ -59,7 +59,8 @@ ${stringifyHeaders(response.headers)}
 ##### Body
 \`\`\`json
 ${response.body}
-\`\`\``
+\`\`\`
+`
 
   return reportEntry
 }

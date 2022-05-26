@@ -3,7 +3,8 @@ import type fetch from 'node-fetch'
 import type {
   NodeFetch,
   ConfigurationParameters as ConfigurationParameters_og,
-  Configuration as Configuration_og
+  Configuration as Configuration_og,
+  RemotePinningServiceClient
 } from '@ipfs-shipyard/pinning-service-client'
 
 /**
@@ -71,9 +72,9 @@ interface ExpectationResult {
 
 type ServiceAndTokenPair = [endpointUrl: string, authToken: string | undefined]
 
-type PinsApiType = import('@ipfs-shipyard/pinning-service-client').PinsApi
-type ImplementableMethods = keyof Omit<PinsApiType, 'withMiddleware' | 'withPreMiddleware' | 'withPostMiddleware'>
-type PinsApiMethod<T extends ImplementableMethods = ImplementableMethods> = PinsApiType[T] extends never ? never : T
+type ImplementableMethods = keyof Omit<RemotePinningServiceClient, 'withMiddleware' | 'withPreMiddleware' | 'withPostMiddleware'>
+type PinsApiMethod<T extends ImplementableMethods = ImplementableMethods> = RemotePinningServiceClient[T] extends never ? never : T
+type PinsApiResponseTypes<T extends ImplementableMethods = ImplementableMethods> = Awaited<ReturnType<RemotePinningServiceClient[T]>>
 type SchemaNames = 'Delegates' | 'Failure' | 'Origins' | 'Pin' | 'PinMeta' | 'PinResults' | 'PinStatus' | 'StatusInfo' | 'Status' | 'TextMatchingStrategy'
 type PinningSpecJoiSchema = Record<SchemaNames, import('@hapi/joi').Schema>
 
@@ -85,15 +86,15 @@ interface ComplianceCheckRequest {
   headers: Headers | string[][] | Record<string, string>
   body: string
 }
-interface ComplianceCheckResponse {
+interface ComplianceCheckResponse<T extends PinsApiResponseTypes> {
   headers: Headers | string[][] | Record<string, string>
   status: number
   statusText: string
-  json: Record<string, any> | null
+  json: T | Record<string, any> | null
   body: string
 }
 
-interface ComplianceCheckDetails<T> {
+interface ComplianceCheckDetails<T extends PinsApiResponseTypes> {
   pair: ServiceAndTokenPair
   errors: Error[]
   url: string
@@ -102,7 +103,7 @@ interface ComplianceCheckDetails<T> {
   successful: boolean
   validationResult: import('@hapi/joi').ValidationResult | null
   request: ComplianceCheckRequest
-  response: ComplianceCheckResponse
+  response: ComplianceCheckResponse<T>
   result: T | null
   expectationResults: ExpectationResult[]
 
@@ -124,5 +125,7 @@ export type {
   ComplianceCheckDetailsCallback,
   ComplianceCheckDetailsCallbackArg,
   PinningSpecJoiSchema,
-  ServiceAndTokenPair
+  ServiceAndTokenPair,
+  ImplementableMethods,
+  PinsApiResponseTypes
 }

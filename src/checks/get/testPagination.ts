@@ -20,8 +20,6 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
     .expect(responseOk())
     .expect(resultNotNull())
 
-  await mainPaginationApiCall.runExpectations()
-
   let pinsNeededToBeCreated = pinsNeededToTestPagination
 
   try {
@@ -45,24 +43,23 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
     })
   }
 
+  // add more pins so we have enough to paginate
   while (pinsNeededToBeCreated > 0) {
     const cid = await getInlineCid()
-    // add more pins so we have enough to paginate
-    const creation = new ApiCall({
+    new ApiCall({
+      parent: mainPaginationApiCall,
       pair,
       title: `Can create new pin for testing pagination cid='${cid}'`,
-      fn: async (client) => {
-        return await client.pinsPost({ pin: { cid } })
-      }
+      fn: async (client) => await client.pinsPost({ pin: { cid } })
     })
       .expect(responseOk())
       .expect(resultNotNull())
 
-    await creation.runExpectations(mainPaginationApiCall)
     pinsNeededToBeCreated--
   }
 
   const firstPageOfPins = new ApiCall({
+    parent: mainPaginationApiCall,
     pair,
     title: 'Pagination: First page of pins',
     fn: async (client) => await client.pinsGet({ status: allPinStatuses })
@@ -82,8 +79,6 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
       fn: ({ result }) => result?.results.size === 10
     })
 
-  await firstPageOfPins.runExpectations(mainPaginationApiCall)
-
   const cids: Set<string> = new Set()
   const firstPageResult = await firstPageOfPins.request
   let before = new Date()
@@ -101,7 +96,8 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
     firstPageSize = firstPageResult.results.size
   }
 
-  const secondPage = new ApiCall({
+  new ApiCall({
+    parent: mainPaginationApiCall,
     pair,
     title: 'Pagination: Retrieve the next page of pins',
     fn: async (client) => await client.pinsGet({ status: allPinStatuses, before })
@@ -113,7 +109,6 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
       fn: ({ result }) => {
         if (result != null) {
           const secondPageResult = (result)
-          // const firstPageSize = firstPageResult.results.size
           const secondPageSize = secondPageResult.results.size
 
           secondPageResult.results.forEach((pin) => {
@@ -126,7 +121,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
       }
     })
 
-  await secondPage.runExpectations(mainPaginationApiCall)
+  await mainPaginationApiCall.runExpectations()
 }
 
 export { testPagination }

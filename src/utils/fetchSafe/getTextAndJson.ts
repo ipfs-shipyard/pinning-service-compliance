@@ -1,7 +1,8 @@
 import type { ApiCall } from '../../ApiCall.js'
+import type { PinsApiResponseTypes } from '../../types.js'
 import { getText } from './getText.js'
 
-const getTextAndJson = async <T>(response: ApiCall<T>['response']): Promise<{ text: string | null, json: T | null, errors: Error[] }> => {
+const getTextAndJson = async <T extends PinsApiResponseTypes>(response: ApiCall<T>['response']): Promise<{ text: string | null, json: T | null, errors: Error[] }> => {
   const errors: Error[] = []
   let text: string | null = null
   let json: T | null = null

@@ -11,7 +11,7 @@ import { getHostnameFromUrl } from '../utils/getHostnameFromUrl.js'
 import { getFormatter } from './formatter.js'
 import { getReportEntry } from './getReportEntry.js'
 import { getHeader, RequiredHeaderProps } from './getHeader.js'
-import type { ComplianceCheckDetails } from '../types.js'
+import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 import { logger } from '../utils/logs.js'
 
 const successFormatter = getFormatter({
@@ -30,7 +30,7 @@ const getReportFilePath = (hostname: string) => {
 }
 
 // Need summary at the top for each service: # pass/fail
-const addToReport = async <T>(details: ComplianceCheckDetails<T>) => {
+const addToReport = async <T extends PinsApiResponseTypes>(details: ComplianceCheckDetails<T>) => {
   const reportEntryMarkdown = getReportEntry(details)
   const formatter = details.successful ? successFormatter : failureFormatter
 
@@ -63,48 +63,53 @@ const addToReport = async <T>(details: ComplianceCheckDetails<T>) => {
 
 const reportSummaryInfo: Map<string, Array<RequiredHeaderProps<any>>> = new Map()
 
-const addApiCallToReport = async <T>(apiCall: ApiCall<T>) => {
-  const { pair, errors, title, httpRequest, result, response, expectationResults, successful, text } = apiCall
-  const { url, headers: requestHeaders } = httpRequest
-  const method = httpRequest.method ?? 'Unknown'
-  const requestBody = await httpRequest.text()
-  const responseBody = text ?? ''
-  const hostname = getHostnameFromUrl(url)
+const addApiCallToReport = async <T extends PinsApiResponseTypes>(apiCall: ApiCall<T>) => {
+  try {
+    const { pair, errors, title, httpRequest, result, response, expectationResults, successful, text, validationResult } = await apiCall.reportData()
+    const { url, headers: requestHeaders } = httpRequest
+    const method = httpRequest.method ?? 'Unknown'
+    const requestBody = await httpRequest.text()
+    const responseBody = text ?? ''
+    const hostname = getHostnameFromUrl(url)
 
-  const headerProps: RequiredHeaderProps<T> = { pair, title, successful }
-  const complianceCheckDetails: ComplianceCheckDetails<T> = {
-    ...headerProps,
-    errors: errors.map((expectationError) => expectationError.error),
-    expectationResults,
-    url,
-    method,
-    validationResult: apiCall.validationResult,
-    result: await result,
-    request: {
-      body: requestBody,
-      headers: requestHeaders ?? {}
-    },
-    response: {
-      json: apiCall.json,
-      body: responseBody,
-      headers: response.headers,
-      status: response.status,
-      statusText: response.statusText
+    const headerProps: RequiredHeaderProps<T> = { pair, title, successful }
+    const complianceCheckDetails: ComplianceCheckDetails<T> = {
+      ...headerProps,
+      errors: errors.map((expectationError) => expectationError.error),
+      expectationResults,
+      url,
+      method,
+      validationResult,
+      result: await result,
+      request: {
+        body: requestBody,
+        headers: requestHeaders ?? {}
+      },
+      response: {
+        json: apiCall.json,
+        body: responseBody,
+        headers: response.headers,
+        status: response.status,
+        statusText: response.statusText
+      }
     }
+    if (apiCall.parent == null) {
+      if (reportSummaryInfo.has(hostname)) {
+        const hostReport = reportSummaryInfo.get(hostname) as Array<RequiredHeaderProps<any>>
+        hostReport.push(headerProps)
+      } else {
+        reportSummaryInfo.set(hostname, [headerProps])
+        // clear out the file
+        await writeFile(getReportFilePath(hostname), '')
+      }
+    }
+    await addToReport(complianceCheckDetails)
+  } catch (err) {
+    logger.error(`Unexpected error while adding details of ApiCall '${apiCall.title}' to report`, err)
   }
-
-  if (reportSummaryInfo.has(hostname)) {
-    const hostReport = reportSummaryInfo.get(hostname) as Array<RequiredHeaderProps<any>>
-    hostReport.push(headerProps)
-  } else {
-    reportSummaryInfo.set(hostname, [headerProps])
-    // clear out the file
-    await writeFile(getReportFilePath(hostname), '')
-  }
-  await addToReport(complianceCheckDetails)
 }
 
-const createReport = async <T>(hostname: string, details: Array<RequiredHeaderProps<T>>) => {
+const createReport = async <T extends PinsApiResponseTypes>(hostname: string, details: Array<RequiredHeaderProps<T>>) => {
   const reportFilePath = getReportFilePath(hostname)
 
   const header = getHeader(details)

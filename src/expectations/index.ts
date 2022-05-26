@@ -1,18 +1,21 @@
 import type { ApiCallExpectation } from '../ApiCall.js'
+import type { PinsApiResponseTypes } from '../types.js'
 
-const responseOk = <T>(): ApiCallExpectation<T> => ({
-  title: 'Response is ok',
-  fn: ({ apiCall }) => apiCall.response.ok
+const addMsg = (msg?: string) => `${msg != null ? `: ${msg}` : ''}`
+
+const responseOk = <T extends PinsApiResponseTypes>(msg?: string): ApiCallExpectation<T> => ({
+  title: `Response is ok${addMsg(msg)}`,
+  fn: ({ responseContext }) => responseContext.response.ok
 })
 
-const resultNotNull = <T>(): ApiCallExpectation<T> => ({
-  title: 'Result is not null',
+const resultNotNull = <T extends PinsApiResponseTypes>(msg?: string): ApiCallExpectation<T> => ({
+  title: `Result is not null${addMsg(msg)}`,
   fn: ({ result }) => result != null
 })
 
-const responseCode = <T>(code: number): ApiCallExpectation<T> => ({
-  title: `Response code is ${code}`,
-  fn: ({ apiCall }) => apiCall.response.status === code
+const responseCode = <T extends PinsApiResponseTypes>(code: number, msg?: string): ApiCallExpectation<T> => ({
+  title: `Response code is ${code}${addMsg(msg)}`,
+  fn: ({ responseContext }) => responseContext.response.status === code
 })
 
 export {
