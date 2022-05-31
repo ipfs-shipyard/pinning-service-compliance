@@ -1,6 +1,6 @@
-import type { ComplianceCheckDetails } from '../types.js'
+import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 
-const getExpectationsMarkdown = <T>(details: ComplianceCheckDetails<T>): string => {
+const getExpectationsMarkdown = <T extends PinsApiResponseTypes>(details: ComplianceCheckDetails<T>): string => {
   let checks = 0
   let successes = 0
   const lineItems = details.expectationResults.map(({ title, success, error }) => {

@@ -1,8 +1,8 @@
-import type { ComplianceCheckDetails } from '../types.js'
+import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 
-type RequiredHeaderProps<T> = Pick<ComplianceCheckDetails<T>, 'title' | 'successful' | 'pair'>
+type RequiredHeaderProps<T extends PinsApiResponseTypes> = Pick<ComplianceCheckDetails<T>, 'title' | 'successful' | 'pair'>
 
-const getHeader = <T>(details: Array<RequiredHeaderProps<T>>) => {
+const getHeader = <T extends PinsApiResponseTypes>(details: Array<RequiredHeaderProps<T>>) => {
   const endpointUrl = details[0].pair[0]
   let checks = 0
   let successes = 0

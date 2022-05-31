@@ -1,18 +1,18 @@
-import type { Middleware, RequestContext, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
+import type { NodeFetch } from '@ipfs-shipyard/pinning-service-client'
+import type { Response } from 'node-fetch'
 
-import { responseHasContent } from '../utils/responseHasContent.js'
 import { waitForDate } from '../utils/waitForDate.js'
 import type { ComplianceCheckDetailsCallbackArg } from '../types.js'
 import { logger } from '../utils/logs.js'
 
 interface RequestResponseLoggerOptions {
   finalCb?: (details: ComplianceCheckDetailsCallbackArg) => void | Promise<void>
-  preCb?: (context: RequestContext) => void | Promise<void>
-  postCb?: (context: ResponseContext) => void | Promise<void>
+  preCb?: (context: NodeFetch.RequestContext) => void | Promise<void>
+  postCb?: (context: NodeFetch.ResponseContext) => void | Promise<void>
 }
 
 type RateLimitKey = string
-const getRateLimitKeyFromContext = (context: ResponseContext | RequestContext): RateLimitKey => {
+const getRateLimitKeyFromContext = (context: NodeFetch.ResponseContext | NodeFetch.RequestContext): RateLimitKey => {
   const { init, url } = context
   const { method } = init
   const urlWithoutQuery = url.split('?')[0]
@@ -25,19 +25,28 @@ const getRateLimitKeyFromContext = (context: ResponseContext | RequestContext): 
   }
   return key
 }
+
 const rateLimitHandlers: Map<RateLimitKey, Array<Promise<void>>> = new Map()
-const requestResponseLogger: (opts: RequestResponseLoggerOptions) => Middleware = ({ preCb, postCb, finalCb }) => {
+const requestResponseLogger: (opts: RequestResponseLoggerOptions) => NodeFetch.Middleware = ({ preCb, postCb, finalCb }) => {
   return ({
     pre: async (context) => {
-      if (preCb != null) await preCb(context)
+      logger.debug('In middleware.pre')
+      try {
+        if (preCb != null) await preCb(context)
+      } catch (err) {
+        logger.error(err)
+      }
 
       const rateLimitKey = getRateLimitKeyFromContext(context)
 
       if (rateLimitHandlers.has(rateLimitKey)) {
-        // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
         const promises = rateLimitHandlers.get(rateLimitKey) as Array<Promise<void>>
         if (promises.length > 0) {
-          await Promise.all(promises)
+          try {
+            await Promise.all(promises)
+          } catch (err) {
+            logger.error(err)
+          }
           rateLimitHandlers.set(rateLimitKey, [])
         }
       } else {
@@ -48,29 +57,16 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => Middleware 
     },
 
     post: async (context) => {
-      if (postCb != null) await postCb(context)
-      const { response } = context
-      const errors: Error[] = []
-
-      const hasContent = await responseHasContent(response)
-
-      let text: string | null = null
-      try {
-        text = await response.clone().text()
-      } catch (err) {
-        errors.push(err as Error)
-      }
-      let json: any = null
-      try {
-        if (hasContent) {
-          json = await response.clone().json()
+      logger.debug('In middleware.post')
+      if (postCb != null) {
+        try {
+          await postCb(context)
+        } catch (err) {
+          logger.error('In middleware.post after failed postCb', err)
         }
-      } catch (err) {
-        errors.push(err as Error)
       }
+      const response = context.response as Response
 
-      // const hostname = getHostnameFromUrl(context.url)
-      // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
       if (response.headers.has('x-ratelimit-reset') && response.headers.has('x-ratelimit-remaining')) {
         const rateLimitKey = getRateLimitKeyFromContext(context)
         const rateLimitReset = Number(response.headers.get('x-ratelimit-reset'))
@@ -80,33 +76,9 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => Middleware 
         logger.debug(`${rateLimitKey}: Rate limit is ${rateLimit} and we have ${rateRemaining} tokens remaining.`)
         if (rateRemaining === 0) {
           logger.debug(`${rateLimitKey}: No rate tokens remaining, we need to wait until ${dateOfReset.toString()}`)
-          // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
           const promises = rateLimitHandlers.get(rateLimitKey) as Array<Promise<void>>
           promises.push(waitForDate(dateOfReset))
         }
-      }
-      try {
-        const normalizedResult: ComplianceCheckDetailsCallbackArg = {
-          ...context,
-          url: context.url,
-          init: context.init,
-          fetch: context.fetch,
-          errors,
-          response: {
-            ...response,
-            json,
-            // body,
-            text
-            // headers: response.headers,
-            // status: response.status,
-            // statusText: response.statusText,
-            // ok: response.ok
-          }
-        }
-        if (finalCb != null) await finalCb(normalizedResult)
-      } catch (err) {
-        logger.error('error in callback provided to the middleware')
-        logger.error(err)
       }
       return response
     }

@@ -23,6 +23,14 @@ npm start -- -s $API_ENDPOINT $ACCESS_TOKEN
 npm start -- -s $API_ENDPOINT1 $ACCESS_TOKEN1 -s $API_ENDPOINT2 $ACCESS_TOKEN2
 ```
 
+### Debugging
+
+To debug problems, you should use the `-d` flag, and the `dev-start` script:
+
+```bash
+npm run dev-start -- -s $API_ENDPOINT $ACCESS_TOKEN
+```
+
 ## FAQ
 
 ### What is a Compliance Check?
@@ -33,7 +41,7 @@ A compliance check consists of:
 3. An expected response
 4. A summary
 
-### How to avoid typing secrets by  hand?
+### How to avoid typing secrets by hand?
 
 To avoid setting secrets by hand:
 
