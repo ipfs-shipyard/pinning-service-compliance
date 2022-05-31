@@ -10,44 +10,71 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
-  build-and-publish:
-    if: secrets.PINATA_API_ENDPOINT != null && secrets.PINATA_API_TOKEN != null && secrets.ESTUARY_API_ENDPOINT != null && secrets.ESTUARY_API_TOKEN != null && secrets.NFT_API_ENDPOINT != null && secrets.NFT_API_TOKEN != null && secrets.WEB3_API_ENDPOINT != null && secrets.PINATA_API_TOKEN != null
-    strategy:
-      fail-fast: false
-      matrix:
-        service: [pinata, estuary, nft, web3]
-        include:
-          - service: pinata
-            endpoint: ${{ secrets.PINATA_API_ENDPOINT }}
-            token: ${{secrets.PINATA_API_TOKEN}}
-          - service: estuary
-            endpoint: ${{ secrets.ESTUARY_API_ENDPOINT }}
-            token: ${{secrets.ESTUARY_API_TOKEN}}
-          - service: nft
-            endpoint: ${{ secrets.NFT_API_ENDPOINT }}
-            token: ${{secrets.NFT_API_TOKEN}}
-          - service: web3
-            endpoint: ${{ secrets.WEB3_API_ENDPOINT }}
-            token: ${{secrets.WEB3_API_TOKEN}}
-
-    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+  checkout:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: npm ci
+  run-compliance-checks:
+    runs-on: ubuntu-latest
+    # if: secrets.PINATA_API_ENDPOINT != null && secrets.PINATA_API_TOKEN != null && secrets.ESTUARY_API_ENDPOINT != null && secrets.ESTUARY_API_TOKEN != null && secrets.NFT_API_ENDPOINT != null && secrets.NFT_API_TOKEN != null && secrets.WEB3_API_ENDPOINT != null && secrets.PINATA_API_TOKEN != null
+    strategy:
+      fail-fast: false
+      matrix:
+        service: [pinata, estuary, nft, web3]
+        # include:
+        #   - service: pinata
+        #     endpoint: ${{ secrets.PINATA_API_ENDPOINT }}
+        #     token: ${{secrets.PINATA_API_TOKEN}}
+        #   - service: estuary
+        #     endpoint: ${{ secrets.ESTUARY_API_ENDPOINT }}
+        #     token: ${{secrets.ESTUARY_API_TOKEN}}
+        #   - service: nft
+        #     endpoint: ${{ secrets.NFT_API_ENDPOINT }}
+        #     token: ${{secrets.NFT_API_TOKEN}}
+        #   - service: web3
+        #     endpoint: ${{ secrets.WEB3_API_ENDPOINT }}
+        #     token: ${{secrets.WEB3_API_TOKEN}}
 
-      # Migrate reports to use npx
-      - name: Generate reports
-        run: npm dev-start -- -s ${{ secrets[matrix.endpoint] }} ${{ secrets[matrix.token] }}
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
 
-      # Deploy to gh pages branch
+      # TODO: Migrate reports to use npx
+      - name: Generate report (Pinata)
+        if: ${{ matrix.service === 'pinata' }}
+        uses: ipfs/aegir/actions/cache-node-modules@master
+        run: npm dev-start -- -s ${{ secrets.PINATA_API_ENDPOINT }} ${{secrets.PINATA_API_TOKEN}}
 
+      # TODO: Migrate reports to use npx
+      - name: Generate report (Estuary)
+        if: ${{ matrix.service === 'estuary' }}
+        uses: ipfs/aegir/actions/cache-node-modules@master
+        run: npm dev-start -- -s ${{ secrets.ESTUARY_API_ENDPOINT }} ${{secrets.ESTUARY_API_TOKEN}}
+
+      # TODO: Migrate reports to use npx
+      - name: Generate report (NFT.storage)
+        if: ${{ matrix.service === 'nft' }}
+        uses: ipfs/aegir/actions/cache-node-modules@master
+        run: npm dev-start -- -s ${{ secrets.NFT_API_ENDPOINT }} ${{secrets.NFT_API_TOKEN}}
+
+      # TODO: Migrate reports to use npx
+      - name: Generate report (web3.storage)
+        if: ${{ matrix.service === 'web3' }}
+        uses: ipfs/aegir/actions/cache-node-modules@master
+        run: npm dev-start -- -s ${{ secrets.WEB3_API_ENDPOINT }} ${{secrets.WEB3_API_TOKEN}}
+
+  # Deploy to gh pages branch
+  deploy:
+    if: success()
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    runs-on: ubuntu-latest
+    steps:
       ## Cron jobs
       - name: Scheduled deployment
-        if: success() && (github.event.schedule != null || github.event.pusher != null)
+        if: github.event.schedule != null || github.event.pusher != null
         uses: s0/git-publish-subdir-action@399aab378450f99b7de6767f62b0d1dbfcb58b53
         env:
           REPO: self
@@ -57,7 +84,7 @@ jobs:
 
       ## PRs should push to branch other than primary `gh-pages` branch
       - name: Deployment for PR
-        if: success() && github.event.pull_request != null
+        if: github.event.pull_request != null
         uses: s0/git-publish-subdir-action@399aab378450f99b7de6767f62b0d1dbfcb58b53
         env:
           REPO: self
