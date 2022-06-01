@@ -10,44 +10,90 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
-  build-and-publish:
-    if: secrets.PINATA_API_ENDPOINT != null && secrets.PINATA_API_TOKEN != null && secrets.ESTUARY_API_ENDPOINT != null && secrets.ESTUARY_API_TOKEN != null && secrets.NFT_API_ENDPOINT != null && secrets.NFT_API_TOKEN != null && secrets.WEB3_API_ENDPOINT != null && secrets.PINATA_API_TOKEN != null
-    strategy:
-      fail-fast: false
-      matrix:
-        service: [pinata, estuary, nft, web3]
-        include:
-          - service: pinata
-            endpoint: ${{ secrets.PINATA_API_ENDPOINT }}
-            token: ${{secrets.PINATA_API_TOKEN}}
-          - service: estuary
-            endpoint: ${{ secrets.ESTUARY_API_ENDPOINT }}
-            token: ${{secrets.ESTUARY_API_TOKEN}}
-          - service: nft
-            endpoint: ${{ secrets.NFT_API_ENDPOINT }}
-            token: ${{secrets.NFT_API_TOKEN}}
-          - service: web3
-            endpoint: ${{ secrets.WEB3_API_ENDPOINT }}
-            token: ${{secrets.WEB3_API_TOKEN}}
-
-    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+  checkout:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
+      - uses: ipfs/aegir/actions/cache-node-modules@master
+  pinata-compliance-checks:
+    runs-on: ubuntu-latest
+    needs: [checkout]
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - uses: ipfs/aegir/actions/cache-node-modules@master
+      - run: npm run dev-start -- -s ${{ secrets.PINATA_API_ENDPOINT }} ${{secrets.PINATA_API_TOKEN}}
+      - uses: actions/upload-artifact@v2
+        with:
+          name: pinata-logs
+          path: docs/api.pinata.cloud
+      - uses: actions/upload-artifact@v2
+        with:
+          name: pinata-report
+          path: docs/api.pinata.cloud.md
 
-      - name: Install dependencies
-        run: npm ci
+  estuary-compliance-checks:
+    runs-on: ubuntu-latest
+    needs: [checkout]
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - uses: ipfs/aegir/actions/cache-node-modules@master
+      - run: npm run dev-start -- -s ${{ secrets.ESTUARY_API_ENDPOINT }} ${{secrets.ESTUARY_API_TOKEN}}
+      - uses: actions/upload-artifact@v2
+        with:
+          name: estuary-logs
+          path: docs/api.estuary.tech
+      - uses: actions/upload-artifact@v2
+        with:
+          name: estuary-report
+          path: docs/api.estuary.tech.md
 
-      # Migrate reports to use npx
-      - name: Generate reports
-        run: npm dev-start -- -s ${{ secrets[matrix.endpoint] }} ${{ secrets[matrix.token] }}
+  nft-compliance-checks:
+    runs-on: ubuntu-latest
+    needs: [checkout]
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - uses: ipfs/aegir/actions/cache-node-modules@master
+      - run: npm run dev-start -- -s ${{ secrets.NFT_API_ENDPOINT }} ${{secrets.NFT_API_TOKEN}}
+      - uses: actions/upload-artifact@v2
+        with:
+          name: nft-logs
+          path: docs/nft.storage
+      - uses: actions/upload-artifact@v2
+        with:
+          name: nft-report
+          path: docs/nft.storage.md
 
-      # Deploy to gh pages branch
+  web3-compliance-checks:
+    runs-on: ubuntu-latest
+    needs: [checkout]
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - uses: ipfs/aegir/actions/cache-node-modules@master
+      - run: npm run dev-start -- -s ${{ secrets.WEB3_API_ENDPOINT }} ${{secrets.WEB3_API_TOKEN}}
+      - uses: actions/upload-artifact@v2
+        with:
+          name: web3-logs
+          path: docs/api.web3.storage
+      - uses: actions/upload-artifact@v2
+        with:
+          name: web3-report
+          path: docs/api.web3.storage.md
 
-      ## Cron jobs
+  # Deploy to gh pages branch
+
+  ## Cron jobs
+  deploy-from-schedule:
+    if: success() && (github.event.schedule != null || github.event.pusher != null)
+    runs-on: ubuntu-latest
+    needs: [pinata-compliance-checks, estuary-compliance-checks, nft-compliance-checks, web3-compliance-checks]
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    steps:
       - name: Scheduled deployment
-        if: success() && (github.event.schedule != null || github.event.pusher != null)
         uses: s0/git-publish-subdir-action@399aab378450f99b7de6767f62b0d1dbfcb58b53
         env:
           REPO: self
@@ -55,12 +101,48 @@ jobs:
           FOLDER: docs
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      ## PRs should push to branch other than primary `gh-pages` branch
+  ## PRs should push to branch other than primary `gh-pages` branch
+  deploy-from-PR:
+    if: success() && github.event.pull_request != null
+    runs-on: ubuntu-latest
+    needs: [pinata-compliance-checks, estuary-compliance-checks, nft-compliance-checks, web3-compliance-checks]
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    steps:
+      - name: Create branch for PR
+        uses: peterjgrainger/action-create-branch@v2.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: gh-pages-${{ github.event.pull_request.head.sha }}
+          # sha: '${{ github.event.pull_request.head.sha }}'
+      - uses: actions/download-artifact@v2
+        with:
+          name: pinata-logs
+      - uses: actions/download-artifact@v2
+        with:
+          name: pinata-report
+      - uses: actions/download-artifact@v2
+        with:
+          name: estuary-logs
+      - uses: actions/download-artifact@v2
+        with:
+          name: estuary-report
+      - uses: actions/download-artifact@v2
+        with:
+          name: nft-logs
+      - uses: actions/download-artifact@v2
+        with:
+          name: nft-report
+      - uses: actions/download-artifact@v2
+        with:
+          name: web3-logs
+      - uses: actions/download-artifact@v2
+        with:
+          name: web3-report
       - name: Deployment for PR
-        if: success() && github.event.pull_request != null
         uses: s0/git-publish-subdir-action@399aab378450f99b7de6767f62b0d1dbfcb58b53
         env:
           REPO: self
-          BRANCH: gh-pages-${github.sha}
+          BRANCH: gh-pages-${{ github.event.pull_request.head.sha }}
           FOLDER: docs
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
