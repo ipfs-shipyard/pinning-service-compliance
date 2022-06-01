@@ -45,22 +45,22 @@ jobs:
       - uses: ipfs/aegir/actions/cache-node-modules@master
       # TODO: Migrate reports to use npx
       - name: Generate report (Pinata)
-        if: ${{ matrix.service === 'pinata' }}
+        if: ${{ matrix.service == 'pinata' }}
         run: npm dev-start -- -s ${{ secrets.PINATA_API_ENDPOINT }} ${{secrets.PINATA_API_TOKEN}}
 
       # TODO: Migrate reports to use npx
       - name: Generate report (Estuary)
-        if: ${{ matrix.service === 'estuary' }}
+        if: ${{ matrix.service == 'estuary' }}
         run: npm dev-start -- -s ${{ secrets.ESTUARY_API_ENDPOINT }} ${{secrets.ESTUARY_API_TOKEN}}
 
       # TODO: Migrate reports to use npx
       - name: Generate report (NFT.storage)
-        if: ${{ matrix.service === 'nft' }}
+        if: ${{ matrix.service == 'nft' }}
         run: npm dev-start -- -s ${{ secrets.NFT_API_ENDPOINT }} ${{secrets.NFT_API_TOKEN}}
 
       # TODO: Migrate reports to use npx
       - name: Generate report (web3.storage)
-        if: ${{ matrix.service === 'web3' }}
+        if: ${{ matrix.service == 'web3' }}
         run: npm dev-start -- -s ${{ secrets.WEB3_API_ENDPOINT }} ${{secrets.WEB3_API_TOKEN}}
 
   # Deploy to gh pages branch
