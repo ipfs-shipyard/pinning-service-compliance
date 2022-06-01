@@ -28,7 +28,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: docs
-          key: ${{ github.event.pull_request.head.sha }}
+          key: ${{ github.sha }}-pinata
       - run: npm run dev-start -- -s ${{ secrets.PINATA_API_ENDPOINT }} ${{secrets.PINATA_API_TOKEN}}
       - uses: actions/upload-artifact@v2
         with:
@@ -50,7 +50,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: docs
-          key: ${{ github.event.pull_request.head.sha }}
+          key: ${{ github.sha }}-estuary
       - run: npm run dev-start -- -s ${{ secrets.ESTUARY_API_ENDPOINT }} ${{secrets.ESTUARY_API_TOKEN}}
       - uses: actions/upload-artifact@v2
         with:
@@ -72,7 +72,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: docs
-          key: ${{ github.event.pull_request.head.sha }}
+          key: ${{ github.sha }}-nft
       - run: npm run dev-start -- -s ${{ secrets.NFT_API_ENDPOINT }} ${{secrets.NFT_API_TOKEN}}
       - uses: actions/upload-artifact@v2
         with:
@@ -94,7 +94,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: docs
-          key: ${{ github.event.pull_request.head.sha }}
+          key: ${{ github.sha }}-web3
       - run: npm run dev-start -- -s ${{ secrets.WEB3_API_ENDPOINT }} ${{secrets.WEB3_API_TOKEN}}
       - uses: actions/upload-artifact@v2
         with:
@@ -118,7 +118,22 @@ jobs:
         uses: actions/cache@v3
         with:
           path: docs
-          key: ${{ github.event.pull_request.head.sha }}
+          key: ${{ github.sha }}-pinata
+      - name: Reports Cache
+        uses: actions/cache@v3
+        with:
+          path: docs
+          key: ${{ github.sha }}-estuary
+      - name: Reports Cache
+        uses: actions/cache@v3
+        with:
+          path: docs
+          key: ${{ github.sha }}-nft
+      - name: Reports Cache
+        uses: actions/cache@v3
+        with:
+          path: docs
+          key: ${{ github.sha }}-web3
       - name: Scheduled deployment
         uses: s0/git-publish-subdir-action@399aab378450f99b7de6767f62b0d1dbfcb58b53
         env:
@@ -138,42 +153,33 @@ jobs:
         uses: actions/cache@v3
         with:
           path: docs
-          key: ${{ github.event.pull_request.head.sha }}
+          key: ${{ github.sha }}-pinata
+      - name: Reports Cache
+        uses: actions/cache@v3
+        with:
+          path: docs
+          key: ${{ github.sha }}-estuary
+      - name: Reports Cache
+        uses: actions/cache@v3
+        with:
+          path: docs
+          key: ${{ github.sha }}-nft
+      - name: Reports Cache
+        uses: actions/cache@v3
+        with:
+          path: docs
+          key: ${{ github.sha }}-web3
       - name: Create branch for PR
         uses: peterjgrainger/action-create-branch@v2.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          branch: gh-pages-${{ github.event.pull_request.head.sha }}
-          # sha: '${{ github.event.pull_request.head.sha }}'
-      - uses: actions/download-artifact@v2
-        with:
-          name: pinata-logs
-      - uses: actions/download-artifact@v2
-        with:
-          name: pinata-report
-      - uses: actions/download-artifact@v2
-        with:
-          name: estuary-logs
-      - uses: actions/download-artifact@v2
-        with:
-          name: estuary-report
-      - uses: actions/download-artifact@v2
-        with:
-          name: nft-logs
-      - uses: actions/download-artifact@v2
-        with:
-          name: nft-report
-      - uses: actions/download-artifact@v2
-        with:
-          name: web3-logs
-      - uses: actions/download-artifact@v2
-        with:
-          name: web3-report
+          branch: gh-pages-${{ github.sha }}
+          # sha: '${{ github.sha }}'
       - name: Deployment for PR
         uses: s0/git-publish-subdir-action@399aab378450f99b7de6767f62b0d1dbfcb58b53
         env:
           REPO: self
-          BRANCH: gh-pages-${{ github.event.pull_request.head.sha }}
+          BRANCH: gh-pages-${{ github.sha }}
           FOLDER: docs
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
