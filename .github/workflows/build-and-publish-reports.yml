@@ -42,28 +42,25 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
+      - uses: ipfs/aegir/actions/cache-node-modules@master
       # TODO: Migrate reports to use npx
       - name: Generate report (Pinata)
         if: ${{ matrix.service === 'pinata' }}
-        uses: ipfs/aegir/actions/cache-node-modules@master
         run: npm dev-start -- -s ${{ secrets.PINATA_API_ENDPOINT }} ${{secrets.PINATA_API_TOKEN}}
 
       # TODO: Migrate reports to use npx
       - name: Generate report (Estuary)
         if: ${{ matrix.service === 'estuary' }}
-        uses: ipfs/aegir/actions/cache-node-modules@master
         run: npm dev-start -- -s ${{ secrets.ESTUARY_API_ENDPOINT }} ${{secrets.ESTUARY_API_TOKEN}}
 
       # TODO: Migrate reports to use npx
       - name: Generate report (NFT.storage)
         if: ${{ matrix.service === 'nft' }}
-        uses: ipfs/aegir/actions/cache-node-modules@master
         run: npm dev-start -- -s ${{ secrets.NFT_API_ENDPOINT }} ${{secrets.NFT_API_TOKEN}}
 
       # TODO: Migrate reports to use npx
       - name: Generate report (web3.storage)
         if: ${{ matrix.service === 'web3' }}
-        uses: ipfs/aegir/actions/cache-node-modules@master
         run: npm dev-start -- -s ${{ secrets.WEB3_API_ENDPOINT }} ${{secrets.WEB3_API_TOKEN}}
 
   # Deploy to gh pages branch
