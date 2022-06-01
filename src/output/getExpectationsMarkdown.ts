@@ -14,7 +14,7 @@ const getExpectationsMarkdown = <T extends PinsApiResponseTypes>(details: Compli
 
   return `### Expectations (${successes}/${checks} successful)
 
-  ${lineItems.join('\n  ')}
+  ${lineItems.join('\n\n  ')}
 `
 }
 

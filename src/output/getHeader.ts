@@ -21,7 +21,7 @@ const getHeader = <T extends PinsApiResponseTypes>(details: Array<RequiredHeader
 
 ## Summary (${successes}/${checks} successful)
 
-  ${titles.join('\n  ')}
+  ${titles.join('\n\n  ')}
 
 `
 }
