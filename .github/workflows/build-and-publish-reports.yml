@@ -28,6 +28,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: docs
+          key: ${{ github.event.pull_request.head.sha }}
       - run: npm run dev-start -- -s ${{ secrets.PINATA_API_ENDPOINT }} ${{secrets.PINATA_API_TOKEN}}
       - uses: actions/upload-artifact@v2
         with:
@@ -49,6 +50,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: docs
+          key: ${{ github.event.pull_request.head.sha }}
       - run: npm run dev-start -- -s ${{ secrets.ESTUARY_API_ENDPOINT }} ${{secrets.ESTUARY_API_TOKEN}}
       - uses: actions/upload-artifact@v2
         with:
@@ -70,6 +72,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: docs
+          key: ${{ github.event.pull_request.head.sha }}
       - run: npm run dev-start -- -s ${{ secrets.NFT_API_ENDPOINT }} ${{secrets.NFT_API_TOKEN}}
       - uses: actions/upload-artifact@v2
         with:
@@ -91,6 +94,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: docs
+          key: ${{ github.event.pull_request.head.sha }}
       - run: npm run dev-start -- -s ${{ secrets.WEB3_API_ENDPOINT }} ${{secrets.WEB3_API_TOKEN}}
       - uses: actions/upload-artifact@v2
         with:
@@ -114,6 +118,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: docs
+          key: ${{ github.event.pull_request.head.sha }}
       - name: Scheduled deployment
         uses: s0/git-publish-subdir-action@399aab378450f99b7de6767f62b0d1dbfcb58b53
         env:
@@ -133,6 +138,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: docs
+          key: ${{ github.event.pull_request.head.sha }}
       - name: Create branch for PR
         uses: peterjgrainger/action-create-branch@v2.0.1
         env:
@@ -164,4 +170,10 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: web3-report
-
+      - name: Deployment for PR
+        uses: s0/git-publish-subdir-action@399aab378450f99b7de6767f62b0d1dbfcb58b53
+        env:
+          REPO: self
+          BRANCH: gh-pages-${{ github.event.pull_request.head.sha }}
+          FOLDER: docs
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
