@@ -72,6 +72,6 @@ jobs:
         uses: s0/git-publish-subdir-action@399aab378450f99b7de6767f62b0d1dbfcb58b53
         env:
           REPO: self
-          BRANCH: gh-pages-${github.sha}
+          BRANCH: gh-pages-${{github.sha}}
           FOLDER: docs
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
