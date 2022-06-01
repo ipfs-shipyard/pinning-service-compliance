@@ -10,33 +10,41 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
-  checkout:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
+  # checkout:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout 🛎️
+  #       uses: actions/checkout@v3
   pinata-compliance-checks:
     runs-on: ubuntu-latest
     needs: [checkout]
     steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
       - uses: ipfs/aegir/actions/cache-node-modules@master
       - run: npm run dev-start -- -s ${{ secrets.PINATA_API_ENDPOINT }} ${{secrets.PINATA_API_TOKEN}}
   estuary-compliance-checks:
     runs-on: ubuntu-latest
     needs: [checkout]
     steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
       - uses: ipfs/aegir/actions/cache-node-modules@master
       - run: npm run dev-start -- -s ${{ secrets.ESTUARY_API_ENDPOINT }} ${{secrets.ESTUARY_API_TOKEN}}
   nft-compliance-checks:
     runs-on: ubuntu-latest
     needs: [checkout]
     steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
       - uses: ipfs/aegir/actions/cache-node-modules@master
       - run: npm run dev-start -- -s ${{ secrets.NFT_API_ENDPOINT }} ${{secrets.NFT_API_TOKEN}}
   web3-compliance-checks:
     runs-on: ubuntu-latest
     needs: [checkout]
     steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
       - uses: ipfs/aegir/actions/cache-node-modules@master
       - run: npm run dev-start -- -s ${{ secrets.WEB3_API_ENDPOINT }} ${{secrets.WEB3_API_TOKEN}}
 
