@@ -151,3 +151,4 @@ jobs:
           BRANCH: gh-pages
           FOLDER: docs
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SQUASH_HISTORY: false
