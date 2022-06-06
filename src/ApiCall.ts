@@ -16,6 +16,7 @@ import { Icons } from './utils/constants.js'
 import { globalReport } from './utils/report.js'
 import { isError } from './guards/isError.js'
 import { getTextAndJson } from './utils/fetchSafe/getTextAndJson.js'
+import { gitHash } from './utils/gitHash.js'
 
 interface ApiCallOptions<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes> {
   pair: ServiceAndTokenPair
@@ -255,8 +256,10 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
   async reportData () {
     await this.request
     const { pair, errors, title, httpRequest, result, response, expectationResults, successful, text, validationErrors, validationResult } = this
+    const date = new Date()
+    const revision = await gitHash()
 
-    return { pair, errors, title, httpRequest, result, response, expectationResults, successful, text, validationErrors, validationResult }
+    return { date, revision, pair, errors, title, httpRequest, result, response, expectationResults, successful, text, validationErrors, validationResult }
   }
 
   addChild (child: ApiCall<any, any>) {

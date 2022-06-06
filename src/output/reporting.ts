@@ -65,14 +65,14 @@ const reportSummaryInfo: Map<string, Array<RequiredHeaderProps<any>>> = new Map(
 
 const addApiCallToReport = async <T extends PinsApiResponseTypes>(apiCall: ApiCall<T>) => {
   try {
-    const { pair, errors, title, httpRequest, result, response, expectationResults, successful, text, validationResult } = await apiCall.reportData()
+    const { date, revision, pair, errors, title, httpRequest, result, response, expectationResults, successful, text, validationResult } = await apiCall.reportData()
     const { url, headers: requestHeaders } = httpRequest
     const method = httpRequest.method ?? 'Unknown'
     const requestBody = await httpRequest.text()
     const responseBody = text ?? ''
     const hostname = getHostnameFromUrl(url)
 
-    const headerProps: RequiredHeaderProps<T> = { pair, title, successful }
+    const headerProps: RequiredHeaderProps<T> = { pair, title, successful, date, revision }
     const complianceCheckDetails: ComplianceCheckDetails<T> = {
       ...headerProps,
       errors: errors.map((expectationError) => expectationError.error),
