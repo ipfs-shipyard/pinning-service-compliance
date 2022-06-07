@@ -23,7 +23,6 @@ const getHeader = async <T extends PinsApiResponseTypes>(details: Array<Required
 
   const dateString = (new Date()).toISOString()
   let revisionString: string | null = null
-  let previousRevisionString: string | null = null
 
   try {
     const currentRevision = await gitHash()
@@ -33,12 +32,6 @@ const getHeader = async <T extends PinsApiResponseTypes>(details: Array<Required
     logger.error('Could not obtain latest git hash', err)
     logger.info('No git repository, using npm version')
     revisionString = useMarkdownLinks ? linkToNpm() : process.env.npm_package_version as string
-  }
-  try {
-    const prevRevision = await gitHash(1)
-    previousRevisionString = useMarkdownLinks ? linkToCommit(prevRevision) : prevRevision
-  } catch (err) {
-    logger.error('Could not obtain previous git hash', err)
   }
 
   const titles = details.map(({ title, successful }) => {
@@ -59,8 +52,6 @@ const getHeader = async <T extends PinsApiResponseTypes>(details: Array<Required
 Execution Date: ${dateString ?? '(Error getting date)'}
 
 Revision: ${revisionString ?? '(Error getting revision)'}
-
-Previous Revision: ${previousRevisionString ?? '(Error getting previous revision)'}
 
 ${useMarkdownLinks ? reportHistory : markdownLinkToTextLabel(reportHistory)}
 
