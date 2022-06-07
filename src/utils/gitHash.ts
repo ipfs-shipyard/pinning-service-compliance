@@ -20,7 +20,11 @@ const gitHash = async (fromHead = 0): Promise<Revision> => {
       } else {
       // @see https://www.npmjs.com/package/git-rev#logfunction-array---
         git.log((log) => {
-          resolve(log[fromHead][0].slice(0, 7))
+          try {
+            resolve(log[fromHead][0].slice(0, 7))
+          } catch (err) {
+            reject(err)
+          }
         })
       }
     } catch (err) {

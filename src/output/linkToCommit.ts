@@ -1,3 +1,5 @@
-const linkToCommit = (revision: string) => `[${revision}](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/${revision})`
+import { sourceRepoUrl } from '../utils/constants.js'
+
+const linkToCommit = (revision: string) => `[${revision}](${sourceRepoUrl}/commit/${revision})`
 
 export { linkToCommit }

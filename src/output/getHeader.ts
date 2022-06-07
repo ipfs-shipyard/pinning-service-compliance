@@ -1,7 +1,11 @@
 import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
+import { getHostnameFromUrl } from '../utils/getHostnameFromUrl.js'
 import { gitHash } from '../utils/gitHash.js'
+import { logger } from '../utils/logs.js'
+import { markdownLinkToTextLabel } from '../utils/markdownLinkToTextLabel.js'
 import { complianceCheckHeader } from './complianceCheckHeader.js'
 import { linkToCommit } from './linkToCommit.js'
+import { linkToGithubRepo } from './linkToGithubRepo.js'
 import { linkToHeading } from './linkToHeading.js'
 import { linkToNpm } from './linkToNpm.js'
 
@@ -12,9 +16,10 @@ interface HeaderOptions {
 }
 const getHeader = async <T extends PinsApiResponseTypes>(details: Array<RequiredHeaderProps<T>>, options: HeaderOptions = { markdownLinks: true }) => {
   const endpointUrl = details[0].pair[0]
+  const useMarkdownLinks = options.markdownLinks
+  const hostname = getHostnameFromUrl(endpointUrl)
   let checks = 0
   let successes = 0
-  const useMarkdownLinks = options.markdownLinks
 
   const dateString = (new Date()).toISOString()
   let revisionString: string | null = null
@@ -22,12 +27,18 @@ const getHeader = async <T extends PinsApiResponseTypes>(details: Array<Required
 
   try {
     const currentRevision = await gitHash()
-    const prevRevision = await gitHash(1)
 
     revisionString = useMarkdownLinks ? linkToCommit(currentRevision) : currentRevision
-    previousRevisionString = useMarkdownLinks ? linkToCommit(prevRevision) : prevRevision
-  } catch {
+  } catch (err) {
+    logger.error('Could not obtain latest git hash', err)
+    logger.info('No git repository, using npm version')
     revisionString = useMarkdownLinks ? linkToNpm() : process.env.npm_package_version as string
+  }
+  try {
+    const prevRevision = await gitHash(1)
+    previousRevisionString = useMarkdownLinks ? linkToCommit(prevRevision) : prevRevision
+  } catch (err) {
+    logger.error('Could not obtain previous git hash', err)
   }
 
   const titles = details.map(({ title, successful }) => {
@@ -40,6 +51,8 @@ const getHeader = async <T extends PinsApiResponseTypes>(details: Array<Required
     return `✘ ${titleLink}`
   })
 
+  const reportHistory = linkToGithubRepo('Report History', `commits/gh-pages/${hostname}.md`)
+
   return `
 # ${endpointUrl} compliance:
 
@@ -48,6 +61,8 @@ Execution Date: ${dateString ?? '(Error getting date)'}
 Revision: ${revisionString ?? '(Error getting revision)'}
 
 Previous Revision: ${previousRevisionString ?? '(Error getting previous revision)'}
+
+${useMarkdownLinks ? reportHistory : markdownLinkToTextLabel(reportHistory)}
 
 ## Summary (${successes}/${checks} successful)
 
