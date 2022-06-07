@@ -1,33 +1,53 @@
-import type { ComplianceCheckDetails, PinsApiResponseTypes, Revision } from '../types.js'
+import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
+import { gitHash } from '../utils/gitHash.js'
+import { complianceCheckHeader } from './complianceCheckHeader.js'
+import { linkToCommit } from './linkToCommit.js'
+import { linkToHeading } from './linkToHeading.js'
+import { linkToNpm } from './linkToNpm.js'
 
-type RequiredHeaderProps<T extends PinsApiResponseTypes> = Pick<ComplianceCheckDetails<T>, 'title' | 'successful' | 'pair' | 'date' | 'revision'>
+type RequiredHeaderProps<T extends PinsApiResponseTypes> = Pick<ComplianceCheckDetails<T>, 'title' | 'successful' | 'pair'>
 
-const getHeader = <T extends PinsApiResponseTypes>(details: Array<RequiredHeaderProps<T>>) => {
+interface HeaderOptions {
+  markdownLinks: boolean
+}
+const getHeader = async <T extends PinsApiResponseTypes>(details: Array<RequiredHeaderProps<T>>, options: HeaderOptions = { markdownLinks: true }) => {
   const endpointUrl = details[0].pair[0]
   let checks = 0
   let successes = 0
+  const useMarkdownLinks = options.markdownLinks
 
-  let dateString: string | null = null
-  let revisionString: Revision | null = null
-  const titles = details.map(({ title, successful, date, revision }) => {
+  const dateString = (new Date()).toISOString()
+  let revisionString: string | null = null
+  let previousRevisionString: string | null = null
+
+  try {
+    const currentRevision = await gitHash()
+    const prevRevision = await gitHash(1)
+
+    revisionString = useMarkdownLinks ? linkToCommit(currentRevision) : currentRevision
+    previousRevisionString = useMarkdownLinks ? linkToCommit(prevRevision) : prevRevision
+  } catch {
+    revisionString = useMarkdownLinks ? linkToNpm() : process.env.npm_package_version as string
+  }
+
+  const titles = details.map(({ title, successful }) => {
     checks++
-    dateString = dateString ?? date.toISOString()
-    if (revisionString == null) {
-      revisionString = `Revision: [${revision}](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/${revision})`
-    }
+    const titleLink = useMarkdownLinks ? linkToHeading(title, complianceCheckHeader({ title, successful })) : title
     if (successful) {
       successes++
-      return `✓ ${title}`
+      return `✓ ${titleLink}`
     }
-    return `✘ ${title}`
+    return `✘ ${titleLink}`
   })
 
   return `
 # ${endpointUrl} compliance:
 
-Date: ${dateString ?? '(Error getting date)'}
+Execution Date: ${dateString ?? '(Error getting date)'}
 
 Revision: ${revisionString ?? '(Error getting revision)'}
+
+Previous Revision: ${previousRevisionString ?? '(Error getting previous revision)'}
 
 ## Summary (${successes}/${checks} successful)
 

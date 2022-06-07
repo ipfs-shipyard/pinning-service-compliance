@@ -2,15 +2,15 @@
 import { inspect } from 'util'
 
 import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
-import { Icons } from '../utils/constants.js'
 import { stringifyHeaders } from '../utils/stringifyHeaders.js'
+import { complianceCheckHeader } from './complianceCheckHeader.js'
 import { getExpectationsMarkdown } from './getExpectationsMarkdown.js'
 import { joiValidationAsMarkdown } from './joiValidationAsMarkdown.js'
 
 const getReportEntry = <T extends PinsApiResponseTypes>(details: ComplianceCheckDetails<T>): string => {
-  const { request, response, title, url, method, validationResult, result: clientParsedResult } = details
+  const { request, response, title, url, method, validationResult, result: clientParsedResult, successful } = details
 
-  const reportEntry = `## ${title} - ${details.successful ? `${Icons.SUCCESS} SUCCESS` : `${Icons.FAILURE} FAILED`}
+  const reportEntry = `## ${complianceCheckHeader({ title, successful })}
 
 ${getExpectationsMarkdown(details)}
 

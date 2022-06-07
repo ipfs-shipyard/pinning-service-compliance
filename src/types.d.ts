@@ -108,8 +108,6 @@ interface ComplianceCheckDetails<T extends PinsApiResponseTypes> {
   response: ComplianceCheckResponse<T>
   result: T | null
   expectationResults: ExpectationResult[]
-  date: Date
-  revision: Revision
 
 }
 // eslint-disable-next-line @typescript-eslint/dot-notation
