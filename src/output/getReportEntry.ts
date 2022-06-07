@@ -9,7 +9,7 @@ import { joiValidationAsMarkdown } from './joiValidationAsMarkdown.js'
 
 const getReportEntry = <T extends PinsApiResponseTypes>(details: ComplianceCheckDetails<T>): string => {
   const { request, response, title, url, method, validationResult, result: clientParsedResult, successful } = details
-
+  const joiValidationMarkdown = joiValidationAsMarkdown(validationResult)
   const reportEntry = `## ${complianceCheckHeader({ title, successful })}
 
 ${getExpectationsMarkdown(details)}
@@ -28,9 +28,13 @@ ${details.errors.map((error) => {
   return errorOutput
 }).join('\n')}
 
-#### Joi validation failures
-${joiValidationAsMarkdown(validationResult)}
-
+${
+  joiValidationMarkdown !== 'No failures'
+  ? `#### Response object doesn't match expected schema:
+${joiValidationMarkdown}
+  `
+  : ''
+}
 ### Details
 
 #### Request - ${method}: ${url}
