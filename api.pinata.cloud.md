@@ -49,7 +49,7 @@ null
   "connection": "close",
   "content-length": "117",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:29:14 GMT",
+  "date": "Tue, 07 Jun 2022 00:39:45 GMT",
   "etag": "W/\"75-8hWiVluTmqi8Bp2+E+MmsFL38tY\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -118,7 +118,7 @@ null
   "connection": "close",
   "content-length": "82",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:29:19 GMT",
+  "date": "Tue, 07 Jun 2022 00:39:50 GMT",
   "etag": "W/\"52-hDmJB39hiWxMgXnl95p1Dk5Zk6Q\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -134,7 +134,7 @@ null
   }
 }
 ```
-## Pins post of CID 'baeaaadbwgqwdsmbrhe3doobygu' - ✓ SUCCESS
+## Pins post of CID 'baeaaadjrge3cymjrgm2tkmjqgqya' - ✓ SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -161,17 +161,17 @@ No failures
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbwgqwdsmbrhe3doobygu"}
+{"cid":"baeaaadjrge3cymjrgm2tkmjqgqya"}
 ```
 #### Response data from https://api.pinata.cloud/psa/pins
 ```
 {
-  requestid: '64d9b5dc-2bdc-42dc-a00e-01b8de4d1643',
-  created: '2022-06-07T00:29:24.588Z',
+  requestid: '0244285f-16ce-431c-90aa-c2243818f99e',
+  created: '2022-06-07T00:39:55.459Z',
   delegates: [
     '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
   ],
-  pin: { cid: 'baeaaadbwgqwdsmbrhe3doobygu', origins: [], meta: {} },
+  pin: { cid: 'baeaaadjrge3cymjrgm2tkmjqgqya', origins: [], meta: {} },
   info: { pinata_pinjob_status: 'prechecking' },
   status: 'queued'
 }
@@ -179,11 +179,11 @@ No failures
 #### Response data after being parsed by RemotePinningServiceClient
 ```
 {
-  requestid: '64d9b5dc-2bdc-42dc-a00e-01b8de4d1643',
+  requestid: '0244285f-16ce-431c-90aa-c2243818f99e',
   status: 'queued',
-  created: 2022-06-07T00:29:24.588Z,
+  created: 2022-06-07T00:39:55.459Z,
   pin: {
-    cid: 'baeaaadbwgqwdsmbrhe3doobygu',
+    cid: 'baeaaadjrge3cymjrgm2tkmjqgqya',
     name: undefined,
     origins: [],
     meta: {}
@@ -200,10 +200,10 @@ No failures
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "315",
+  "content-length": "317",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:29:24 GMT",
-  "etag": "W/\"13b-jIOwVd6BFd7/wUtXE56x1vWsb2s\"",
+  "date": "Tue, 07 Jun 2022 00:39:55 GMT",
+  "etag": "W/\"13d-7iQrMNcS10dZPBAGwYB62wIWyGU\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express"
@@ -212,13 +212,13 @@ No failures
 ##### Body
 ```json
 {
-  "requestid": "64d9b5dc-2bdc-42dc-a00e-01b8de4d1643",
-  "created": "2022-06-07T00:29:24.588Z",
+  "requestid": "0244285f-16ce-431c-90aa-c2243818f99e",
+  "created": "2022-06-07T00:39:55.459Z",
   "delegates": [
     "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
   ],
   "pin": {
-    "cid": "baeaaadbwgqwdsmbrhe3doobygu",
+    "cid": "baeaaadjrge3cymjrgm2tkmjqgqya",
     "origins": [],
     "meta": {}
   },
@@ -255,7 +255,7 @@ No failures
 
 ### Details
 
-#### Request - DELETE: https://api.pinata.cloud/psa/pins/fba7dc8b-d5e7-4aae-837b-338ec9b8bdfd
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/66513a37-0ae4-444d-9c11-f0c1998b421d
 
 ##### Headers
 ```json
@@ -267,7 +267,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/fba7dc8b-d5e7-4aae-837b-338ec9b8bdfd
+#### Response data from https://api.pinata.cloud/psa/pins/66513a37-0ae4-444d-9c11-f0c1998b421d
 ```
 null
 ```
@@ -283,7 +283,7 @@ undefined
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:29:34 GMT",
+  "date": "Tue, 07 Jun 2022 00:40:05 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -336,17 +336,17 @@ No failures
 ```
 ##### Body
 ```json
-{"cid":"baeaaaczxgawdonrygeydqnrw"}
+{"cid":"baeaaadjrgiysymzrgqydinrtgi3q"}
 ```
 #### Response data from https://api.pinata.cloud/psa/pins
 ```
 {
-  requestid: 'fba7dc8b-d5e7-4aae-837b-338ec9b8bdfd',
-  created: '2022-06-07T00:29:29.590Z',
+  requestid: '66513a37-0ae4-444d-9c11-f0c1998b421d',
+  created: '2022-06-07T00:40:00.434Z',
   delegates: [
     '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
   ],
-  pin: { cid: 'baeaaaczxgawdonrygeydqnrw', origins: [], meta: {} },
+  pin: { cid: 'baeaaadjrgiysymzrgqydinrtgi3q', origins: [], meta: {} },
   info: { pinata_pinjob_status: 'prechecking' },
   status: 'queued'
 }
@@ -354,11 +354,11 @@ No failures
 #### Response data after being parsed by RemotePinningServiceClient
 ```
 {
-  requestid: 'fba7dc8b-d5e7-4aae-837b-338ec9b8bdfd',
+  requestid: '66513a37-0ae4-444d-9c11-f0c1998b421d',
   status: 'queued',
-  created: 2022-06-07T00:29:29.590Z,
+  created: 2022-06-07T00:40:00.434Z,
   pin: {
-    cid: 'baeaaaczxgawdonrygeydqnrw',
+    cid: 'baeaaadjrgiysymzrgqydinrtgi3q',
     name: undefined,
     origins: [],
     meta: {}
@@ -375,10 +375,10 @@ No failures
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "313",
+  "content-length": "317",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:29:29 GMT",
-  "etag": "W/\"139-2PKVyqaEixKPQRhyIhNsp9bWgQg\"",
+  "date": "Tue, 07 Jun 2022 00:40:00 GMT",
+  "etag": "W/\"13d-w9ixiqDoazVbbznOaS7jUwXHmfQ\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express"
@@ -387,13 +387,13 @@ No failures
 ##### Body
 ```json
 {
-  "requestid": "fba7dc8b-d5e7-4aae-837b-338ec9b8bdfd",
-  "created": "2022-06-07T00:29:29.590Z",
+  "requestid": "66513a37-0ae4-444d-9c11-f0c1998b421d",
+  "created": "2022-06-07T00:40:00.434Z",
   "delegates": [
     "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
   ],
   "pin": {
-    "cid": "baeaaaczxgawdonrygeydqnrw",
+    "cid": "baeaaadjrgiysymzrgqydinrtgi3q",
     "origins": [],
     "meta": {}
   },
@@ -436,115 +436,15 @@ No failures
 #### Response data from https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 ```
 {
-  count: 10,
+  count: 1,
   results: [
     {
-      requestid: 'f8a53232-8f22-4c71-9d24-1f7dead29a21',
-      created: '2022-06-06T16:18:32.922Z',
+      requestid: '0244285f-16ce-431c-90aa-c2243818f99e',
+      created: '2022-06-07T00:39:55.459Z',
       delegates: [
         '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
       ],
-      pin: {
-        cid: 'baeaaadjshazcynjxheydonrtg4ya',
-        origins: [],
-        meta: {},
-        name: '7303e2cd-4f7d-4f1e-933d-7f97391058b4'
-      },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: '691804b1-c8b8-411e-b04c-011e24ebc682',
-      created: '2022-06-06T16:18:58.292Z',
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      pin: { cid: 'baeaaadjtgazsymrsgu2tembsgezq', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'c2dcb6cb-5b86-4b3a-8936-85d6871ccccf',
-      created: '2022-06-06T16:19:08.266Z',
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      pin: { cid: 'baeaaadjtgazsymrsg44dcnzvgaya', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: '6ff24fbb-61fc-4f02-84c7-b75fd220f217',
-      created: '2022-06-06T16:19:13.260Z',
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      pin: { cid: 'baeaaadjtgazsymrsha2dkmjyguza', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'eb139c2d-8c39-400d-8bf6-5bc118e8cb1e',
-      created: '2022-06-06T16:19:23.273Z',
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      pin: { cid: 'baeaaadjtgazsymrshe4tmmzqg42q', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'fca2d731-62bf-40bc-9237-93f9deada697',
-      created: '2022-06-07T00:28:36.709Z',
-      delegates: [
-        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
-      ],
-      pin: { cid: 'baeaaadbvhawdeobrha4tgmjvg4', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'd64cfa4b-c2d9-4f89-9c8a-f578b3120c60',
-      created: '2022-06-07T00:28:56.862Z',
-      delegates: [
-        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
-      ],
-      pin: { cid: 'baeaaadbxhawdmnjvgmzdcnrqg4', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: '90944ea8-03da-4d4e-ba0c-d0f9b4abb2df',
-      created: '2022-06-07T00:29:06.979Z',
-      delegates: [
-        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
-      ],
-      pin: {
-        cid: 'baeaaadbzgmwdiojuhaztsmbvgi',
-        origins: [],
-        meta: {},
-        name: 'c2a69836-e062-4a9a-b964-8274a6f52199'
-      },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: '64d9b5dc-2bdc-42dc-a00e-01b8de4d1643',
-      created: '2022-06-07T00:29:24.588Z',
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      pin: { cid: 'baeaaadbwgqwdsmbrhe3doobygu', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'a4a9009b-02d4-49e7-825f-f49d8c633b88',
-      created: '2022-06-07T00:29:32.086Z',
-      delegates: [
-        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
-      ],
-      pin: { cid: 'baeaaadjrgezsynzsgiztknbqgi3a', origins: [], meta: {} },
+      pin: { cid: 'baeaaadjrge3cymjrgm2tkmjqgqya', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     }
@@ -554,155 +454,20 @@ No failures
 #### Response data after being parsed by RemotePinningServiceClient
 ```
 {
-  count: 10,
-  results: Set(10) {
+  count: 1,
+  results: Set(1) {
     {
-      requestid: 'f8a53232-8f22-4c71-9d24-1f7dead29a21',
+      requestid: '0244285f-16ce-431c-90aa-c2243818f99e',
       status: 'failed',
-      created: 2022-06-06T16:18:32.922Z,
+      created: 2022-06-07T00:39:55.459Z,
       pin: {
-        cid: 'baeaaadjshazcynjxheydonrtg4ya',
-        name: '7303e2cd-4f7d-4f1e-933d-7f97391058b4',
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: '691804b1-c8b8-411e-b04c-011e24ebc682',
-      status: 'failed',
-      created: 2022-06-06T16:18:58.292Z,
-      pin: {
-        cid: 'baeaaadjtgazsymrsgu2tembsgezq',
+        cid: 'baeaaadjrge3cymjrgm2tkmjqgqya',
         name: undefined,
         origins: [],
         meta: {}
       },
       delegates: [
         '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'c2dcb6cb-5b86-4b3a-8936-85d6871ccccf',
-      status: 'failed',
-      created: 2022-06-06T16:19:08.266Z,
-      pin: {
-        cid: 'baeaaadjtgazsymrsg44dcnzvgaya',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: '6ff24fbb-61fc-4f02-84c7-b75fd220f217',
-      status: 'failed',
-      created: 2022-06-06T16:19:13.260Z,
-      pin: {
-        cid: 'baeaaadjtgazsymrsha2dkmjyguza',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'eb139c2d-8c39-400d-8bf6-5bc118e8cb1e',
-      status: 'failed',
-      created: 2022-06-06T16:19:23.273Z,
-      pin: {
-        cid: 'baeaaadjtgazsymrshe4tmmzqg42q',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'fca2d731-62bf-40bc-9237-93f9deada697',
-      status: 'failed',
-      created: 2022-06-07T00:28:36.709Z,
-      pin: {
-        cid: 'baeaaadbvhawdeobrha4tgmjvg4',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'd64cfa4b-c2d9-4f89-9c8a-f578b3120c60',
-      status: 'failed',
-      created: 2022-06-07T00:28:56.862Z,
-      pin: {
-        cid: 'baeaaadbxhawdmnjvgmzdcnrqg4',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: '90944ea8-03da-4d4e-ba0c-d0f9b4abb2df',
-      status: 'failed',
-      created: 2022-06-07T00:29:06.979Z,
-      pin: {
-        cid: 'baeaaadbzgmwdiojuhaztsmbvgi',
-        name: 'c2a69836-e062-4a9a-b964-8274a6f52199',
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: '64d9b5dc-2bdc-42dc-a00e-01b8de4d1643',
-      status: 'failed',
-      created: 2022-06-07T00:29:24.588Z,
-      pin: {
-        cid: 'baeaaadbwgqwdsmbrhe3doobygu',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'a4a9009b-02d4-49e7-825f-f49d8c633b88',
-      status: 'failed',
-      created: 2022-06-07T00:29:32.086Z,
-      pin: {
-        cid: 'baeaaadjrgezsynzsgiztknbqgi3a',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
       ],
       info: { pinata_pinjob_status: 'invalid_object' }
     }
@@ -715,10 +480,10 @@ No failures
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "3319",
+  "content-length": "344",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:29:34 GMT",
-  "etag": "W/\"cf7-P8NEii4gNNyHS1Fo98cZNSP2irQ\"",
+  "date": "Tue, 07 Jun 2022 00:40:05 GMT",
+  "etag": "W/\"158-TF+dDAFnZdsnnP+XCBsIbg7khME\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express"
@@ -727,162 +492,16 @@ No failures
 ##### Body
 ```json
 {
-  "count": 10,
+  "count": 1,
   "results": [
     {
-      "requestid": "f8a53232-8f22-4c71-9d24-1f7dead29a21",
-      "created": "2022-06-06T16:18:32.922Z",
+      "requestid": "0244285f-16ce-431c-90aa-c2243818f99e",
+      "created": "2022-06-07T00:39:55.459Z",
       "delegates": [
         "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
       ],
       "pin": {
-        "cid": "baeaaadjshazcynjxheydonrtg4ya",
-        "origins": [],
-        "meta": {},
-        "name": "7303e2cd-4f7d-4f1e-933d-7f97391058b4"
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "691804b1-c8b8-411e-b04c-011e24ebc682",
-      "created": "2022-06-06T16:18:58.292Z",
-      "delegates": [
-        "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
-      ],
-      "pin": {
-        "cid": "baeaaadjtgazsymrsgu2tembsgezq",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "c2dcb6cb-5b86-4b3a-8936-85d6871ccccf",
-      "created": "2022-06-06T16:19:08.266Z",
-      "delegates": [
-        "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
-      ],
-      "pin": {
-        "cid": "baeaaadjtgazsymrsg44dcnzvgaya",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "6ff24fbb-61fc-4f02-84c7-b75fd220f217",
-      "created": "2022-06-06T16:19:13.260Z",
-      "delegates": [
-        "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
-      ],
-      "pin": {
-        "cid": "baeaaadjtgazsymrsha2dkmjyguza",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "eb139c2d-8c39-400d-8bf6-5bc118e8cb1e",
-      "created": "2022-06-06T16:19:23.273Z",
-      "delegates": [
-        "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
-      ],
-      "pin": {
-        "cid": "baeaaadjtgazsymrshe4tmmzqg42q",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "fca2d731-62bf-40bc-9237-93f9deada697",
-      "created": "2022-06-07T00:28:36.709Z",
-      "delegates": [
-        "/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5"
-      ],
-      "pin": {
-        "cid": "baeaaadbvhawdeobrha4tgmjvg4",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "d64cfa4b-c2d9-4f89-9c8a-f578b3120c60",
-      "created": "2022-06-07T00:28:56.862Z",
-      "delegates": [
-        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
-      ],
-      "pin": {
-        "cid": "baeaaadbxhawdmnjvgmzdcnrqg4",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "90944ea8-03da-4d4e-ba0c-d0f9b4abb2df",
-      "created": "2022-06-07T00:29:06.979Z",
-      "delegates": [
-        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
-      ],
-      "pin": {
-        "cid": "baeaaadbzgmwdiojuhaztsmbvgi",
-        "origins": [],
-        "meta": {},
-        "name": "c2a69836-e062-4a9a-b964-8274a6f52199"
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "64d9b5dc-2bdc-42dc-a00e-01b8de4d1643",
-      "created": "2022-06-07T00:29:24.588Z",
-      "delegates": [
-        "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
-      ],
-      "pin": {
-        "cid": "baeaaadbwgqwdsmbrhe3doobygu",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "a4a9009b-02d4-49e7-825f-f49d8c633b88",
-      "created": "2022-06-07T00:29:32.086Z",
-      "delegates": [
-        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgezsynzsgiztknbqgi3a",
+        "cid": "baeaaadjrge3cymjrgm2tkmjqgqya",
         "origins": [],
         "meta": {}
       },
@@ -912,7 +531,7 @@ No failures
 
 ### Details
 
-#### Request - GET: https://api.pinata.cloud/psa/pins/dcbc9917-1595-49da-a254-7c4f7cf4cb5b
+#### Request - GET: https://api.pinata.cloud/psa/pins/1431eff4-dd56-4aee-a545-7936f65ee740
 
 ##### Headers
 ```json
@@ -924,7 +543,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/dcbc9917-1595-49da-a254-7c4f7cf4cb5b
+#### Response data from https://api.pinata.cloud/psa/pins/1431eff4-dd56-4aee-a545-7936f65ee740
 ```
 {
   error: {
@@ -945,7 +564,7 @@ null
   "connection": "close",
   "content-length": "123",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:29:49 GMT",
+  "date": "Tue, 07 Jun 2022 00:40:20 GMT",
   "etag": "W/\"7b-03qFhbIaF85nNkdBlgUb6TE8+WU\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -975,7 +594,7 @@ No failures
 
 ### Details
 
-#### Request - GET: https://api.pinata.cloud/psa/pins/194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca
+#### Request - GET: https://api.pinata.cloud/psa/pins/4ccb3b59-e3a8-4016-9c76-d4b83623f69d
 
 ##### Headers
 ```json
@@ -987,15 +606,15 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca
+#### Response data from https://api.pinata.cloud/psa/pins/4ccb3b59-e3a8-4016-9c76-d4b83623f69d
 ```
 {
-  requestid: '194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca',
-  created: '2022-06-07T00:29:44.957Z',
+  requestid: '4ccb3b59-e3a8-4016-9c76-d4b83623f69d',
+  created: '2022-06-07T00:40:15.583Z',
   delegates: [
     '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
   ],
-  pin: { cid: 'baeaaadbyguwdimjvgm4dmnzzgm', origins: [], meta: {} },
+  pin: { cid: 'baeaaadjrgm3cynbtgyytsobsguza', origins: [], meta: {} },
   info: { pinata_pinjob_status: 'invalid_object' },
   status: 'failed'
 }
@@ -1003,11 +622,11 @@ No failures
 #### Response data after being parsed by RemotePinningServiceClient
 ```
 {
-  requestid: '194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca',
+  requestid: '4ccb3b59-e3a8-4016-9c76-d4b83623f69d',
   status: 'failed',
-  created: 2022-06-07T00:29:44.957Z,
+  created: 2022-06-07T00:40:15.583Z,
   pin: {
-    cid: 'baeaaadbyguwdimjvgm4dmnzzgm',
+    cid: 'baeaaadjrgm3cynbtgyytsobsguza',
     name: undefined,
     origins: [],
     meta: {}
@@ -1024,10 +643,10 @@ No failures
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "318",
+  "content-length": "320",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:29:54 GMT",
-  "etag": "W/\"13e-qXaBGCpzX4fKmbpCHY08Lnd7eoA\"",
+  "date": "Tue, 07 Jun 2022 00:40:25 GMT",
+  "etag": "W/\"140-GZdxlpBsolzKDr+tdIIdvGF8C8U\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express"
@@ -1036,13 +655,13 @@ No failures
 ##### Body
 ```json
 {
-  "requestid": "194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca",
-  "created": "2022-06-07T00:29:44.957Z",
+  "requestid": "4ccb3b59-e3a8-4016-9c76-d4b83623f69d",
+  "created": "2022-06-07T00:40:15.583Z",
   "delegates": [
     "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
   ],
   "pin": {
-    "cid": "baeaaadbyguwdimjvgm4dmnzzgm",
+    "cid": "baeaaadjrgm3cynbtgyytsobsguza",
     "origins": [],
     "meta": {}
   },
@@ -1052,7 +671,7 @@ No failures
   "status": "failed"
 }
 ```
-## Pin's with requestid 'dcbc9917-1595-49da-a254-7c4f7cf4cb5b' can have cid 'baeaaadbygawdgmrqgezdemjugy' replaced with 'baeaaadbyguwdimjvgm4dmnzzgm' - ✓ SUCCESS
+## Pin's with requestid '1431eff4-dd56-4aee-a545-7936f65ee740' can have cid 'baeaaadjrgmysymzrgy3tombuga2a' replaced with 'baeaaadjrgm3cynbtgyytsobsguza' - ✓ SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1072,7 +691,7 @@ No failures
 
 ### Details
 
-#### Request - POST: https://api.pinata.cloud/psa/pins/dcbc9917-1595-49da-a254-7c4f7cf4cb5b
+#### Request - POST: https://api.pinata.cloud/psa/pins/1431eff4-dd56-4aee-a545-7936f65ee740
 
 ##### Headers
 ```json
@@ -1083,17 +702,17 @@ No failures
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbyguwdimjvgm4dmnzzgm"}
+{"cid":"baeaaadjrgm3cynbtgyytsobsguza"}
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/dcbc9917-1595-49da-a254-7c4f7cf4cb5b
+#### Response data from https://api.pinata.cloud/psa/pins/1431eff4-dd56-4aee-a545-7936f65ee740
 ```
 {
-  requestid: '194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca',
-  created: '2022-06-07T00:29:44.957Z',
+  requestid: '4ccb3b59-e3a8-4016-9c76-d4b83623f69d',
+  created: '2022-06-07T00:40:15.583Z',
   delegates: [
     '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
   ],
-  pin: { cid: 'baeaaadbyguwdimjvgm4dmnzzgm', origins: [], meta: {} },
+  pin: { cid: 'baeaaadjrgm3cynbtgyytsobsguza', origins: [], meta: {} },
   info: { pinata_pinjob_status: 'prechecking' },
   status: 'queued'
 }
@@ -1101,11 +720,11 @@ No failures
 #### Response data after being parsed by RemotePinningServiceClient
 ```
 {
-  requestid: '194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca',
+  requestid: '4ccb3b59-e3a8-4016-9c76-d4b83623f69d',
   status: 'queued',
-  created: 2022-06-07T00:29:44.957Z,
+  created: 2022-06-07T00:40:15.583Z,
   pin: {
-    cid: 'baeaaadbyguwdimjvgm4dmnzzgm',
+    cid: 'baeaaadjrgm3cynbtgyytsobsguza',
     name: undefined,
     origins: [],
     meta: {}
@@ -1122,10 +741,10 @@ No failures
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "315",
+  "content-length": "317",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:29:45 GMT",
-  "etag": "W/\"13b-0RqfQAmBh6dAYEqSZ4wkedlcBAY\"",
+  "date": "Tue, 07 Jun 2022 00:40:15 GMT",
+  "etag": "W/\"13d-J11WV4LJhFMA5gR4fQk4l8sWB2s\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express"
@@ -1134,13 +753,13 @@ No failures
 ##### Body
 ```json
 {
-  "requestid": "194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca",
-  "created": "2022-06-07T00:29:44.957Z",
+  "requestid": "4ccb3b59-e3a8-4016-9c76-d4b83623f69d",
+  "created": "2022-06-07T00:40:15.583Z",
   "delegates": [
     "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
   ],
   "pin": {
-    "cid": "baeaaadbyguwdimjvgm4dmnzzgm",
+    "cid": "baeaaadjrgm3cynbtgyytsobsguza",
     "origins": [],
     "meta": {}
   },
@@ -1156,7 +775,7 @@ No failures
 
   ✓ Pin exists (success)
 
-  ✓ Could obtain requestid from new pin (dcbc9917-1595-49da-a254-7c4f7cf4cb5b) (success)
+  ✓ Could obtain requestid from new pin (1431eff4-dd56-4aee-a545-7936f65ee740) (success)
 
   ✓ Response is ok (success)
 
@@ -1191,17 +810,17 @@ No failures
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbygawdgmrqgezdemjugy"}
+{"cid":"baeaaadjrgmysymzrgy3tombuga2a"}
 ```
 #### Response data from https://api.pinata.cloud/psa/pins
 ```
 {
-  requestid: 'dcbc9917-1595-49da-a254-7c4f7cf4cb5b',
-  created: '2022-06-07T00:29:39.933Z',
+  requestid: '1431eff4-dd56-4aee-a545-7936f65ee740',
+  created: '2022-06-07T00:40:10.584Z',
   delegates: [
     '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
   ],
-  pin: { cid: 'baeaaadbygawdgmrqgezdemjugy', origins: [], meta: {} },
+  pin: { cid: 'baeaaadjrgmysymzrgy3tombuga2a', origins: [], meta: {} },
   info: { pinata_pinjob_status: 'prechecking' },
   status: 'queued'
 }
@@ -1209,11 +828,11 @@ No failures
 #### Response data after being parsed by RemotePinningServiceClient
 ```
 {
-  requestid: 'dcbc9917-1595-49da-a254-7c4f7cf4cb5b',
+  requestid: '1431eff4-dd56-4aee-a545-7936f65ee740',
   status: 'queued',
-  created: 2022-06-07T00:29:39.933Z,
+  created: 2022-06-07T00:40:10.584Z,
   pin: {
-    cid: 'baeaaadbygawdgmrqgezdemjugy',
+    cid: 'baeaaadjrgmysymzrgy3tombuga2a',
     name: undefined,
     origins: [],
     meta: {}
@@ -1230,10 +849,10 @@ No failures
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "315",
+  "content-length": "317",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:29:39 GMT",
-  "etag": "W/\"13b-MNR7KoMgYDeJXb3RdBdTxEuyU30\"",
+  "date": "Tue, 07 Jun 2022 00:40:10 GMT",
+  "etag": "W/\"13d-lQsTFscnY9xDbAwv6TzGxLaL0Kg\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express"
@@ -1242,13 +861,13 @@ No failures
 ##### Body
 ```json
 {
-  "requestid": "dcbc9917-1595-49da-a254-7c4f7cf4cb5b",
-  "created": "2022-06-07T00:29:39.933Z",
+  "requestid": "1431eff4-dd56-4aee-a545-7936f65ee740",
+  "created": "2022-06-07T00:40:10.584Z",
   "delegates": [
     "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
   ],
   "pin": {
-    "cid": "baeaaadbygawdgmrqgezdemjugy",
+    "cid": "baeaaadjrgmysymzrgy3tombuga2a",
     "origins": [],
     "meta": {}
   },
@@ -1258,7 +877,7 @@ No failures
   "status": "queued"
 }
 ```
-## Can retrieve pin with name 'd673978d-bced-4da1-bfd5-a952754b1ce1' via the 'exact' TextMatchingStrategy - ✓ SUCCESS
+## Can retrieve pin with name '8e627057-6cd3-418d-9e5f-8e5cd564bd60' via the 'exact' TextMatchingStrategy - ✓ SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1274,7 +893,7 @@ No failures
 
 ### Details
 
-#### Request - GET: https://api.pinata.cloud/psa/pins?name=d673978d-bced-4da1-bfd5-a952754b1ce1&match=exact
+#### Request - GET: https://api.pinata.cloud/psa/pins?name=8e627057-6cd3-418d-9e5f-8e5cd564bd60&match=exact
 
 ##### Headers
 ```json
@@ -1286,7 +905,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins?name=d673978d-bced-4da1-bfd5-a952754b1ce1&match=exact
+#### Response data from https://api.pinata.cloud/psa/pins?name=8e627057-6cd3-418d-9e5f-8e5cd564bd60&match=exact
 ```
 { count: 0, results: [] }
 ```
@@ -1302,7 +921,7 @@ No failures
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:30:00 GMT",
+  "date": "Tue, 07 Jun 2022 00:40:30 GMT",
   "etag": "W/\"18-sS5FLbfK694W6H4gsKxYsIoy1Pk\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -1316,7 +935,7 @@ No failures
   "results": []
 }
 ```
-## Can retrieve pin with name 'D673978D-BCED-4DA1-BFD5-A952754B1CE1' via the 'iexact' TextMatchingStrategy - ✓ SUCCESS
+## Can retrieve pin with name '8E627057-6CD3-418D-9E5F-8E5CD564BD60' via the 'iexact' TextMatchingStrategy - ✓ SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1332,7 +951,7 @@ No failures
 
 ### Details
 
-#### Request - GET: https://api.pinata.cloud/psa/pins?name=D673978D-BCED-4DA1-BFD5-A952754B1CE1&match=iexact
+#### Request - GET: https://api.pinata.cloud/psa/pins?name=8E627057-6CD3-418D-9E5F-8E5CD564BD60&match=iexact
 
 ##### Headers
 ```json
@@ -1344,7 +963,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins?name=D673978D-BCED-4DA1-BFD5-A952754B1CE1&match=iexact
+#### Response data from https://api.pinata.cloud/psa/pins?name=8E627057-6CD3-418D-9E5F-8E5CD564BD60&match=iexact
 ```
 { count: 0, results: [] }
 ```
@@ -1360,7 +979,7 @@ No failures
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:30:05 GMT",
+  "date": "Tue, 07 Jun 2022 00:40:35 GMT",
   "etag": "W/\"18-sS5FLbfK694W6H4gsKxYsIoy1Pk\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -1374,7 +993,7 @@ No failures
   "results": []
 }
 ```
-## Can retrieve pin with name 'bced-4da1-bfd5-a95' via the 'partial' TextMatchingStrategy - ✓ SUCCESS
+## Can retrieve pin with name '6cd3-418d-9e5f-8e5' via the 'partial' TextMatchingStrategy - ✓ SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1390,7 +1009,7 @@ No failures
 
 ### Details
 
-#### Request - GET: https://api.pinata.cloud/psa/pins?name=bced-4da1-bfd5-a95&match=partial
+#### Request - GET: https://api.pinata.cloud/psa/pins?name=6cd3-418d-9e5f-8e5&match=partial
 
 ##### Headers
 ```json
@@ -1402,7 +1021,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins?name=bced-4da1-bfd5-a95&match=partial
+#### Response data from https://api.pinata.cloud/psa/pins?name=6cd3-418d-9e5f-8e5&match=partial
 ```
 { count: 0, results: [] }
 ```
@@ -1418,7 +1037,7 @@ No failures
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:30:10 GMT",
+  "date": "Tue, 07 Jun 2022 00:40:40 GMT",
   "etag": "W/\"18-sS5FLbfK694W6H4gsKxYsIoy1Pk\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -1432,7 +1051,7 @@ No failures
   "results": []
 }
 ```
-## Can retrieve pin with name 'BCED-4DA1-BFD5-A95' via the 'ipartial' TextMatchingStrategy - ✓ SUCCESS
+## Can retrieve pin with name '6CD3-418D-9E5F-8E5' via the 'ipartial' TextMatchingStrategy - ✓ SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1448,7 +1067,7 @@ No failures
 
 ### Details
 
-#### Request - GET: https://api.pinata.cloud/psa/pins?name=BCED-4DA1-BFD5-A95&match=ipartial
+#### Request - GET: https://api.pinata.cloud/psa/pins?name=6CD3-418D-9E5F-8E5&match=ipartial
 
 ##### Headers
 ```json
@@ -1460,7 +1079,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins?name=BCED-4DA1-BFD5-A95&match=ipartial
+#### Response data from https://api.pinata.cloud/psa/pins?name=6CD3-418D-9E5F-8E5&match=ipartial
 ```
 { count: 0, results: [] }
 ```
@@ -1476,7 +1095,7 @@ No failures
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:30:15 GMT",
+  "date": "Tue, 07 Jun 2022 00:40:45 GMT",
   "etag": "W/\"18-sS5FLbfK694W6H4gsKxYsIoy1Pk\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -1490,7 +1109,7 @@ No failures
   "results": []
 }
 ```
-## Can create a pin with name='d673978d-bced-4da1-bfd5-a952754b1ce1' - ✓ SUCCESS
+## Can create a pin with name='8e627057-6cd3-418d-9e5f-8e5cd564bd60' - ✓ SUCCESS
 
 ### Expectations (11/11 successful)
 
@@ -1535,21 +1154,21 @@ No failures
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjrgaycymzsgu4doojvga2a","name":"d673978d-bced-4da1-bfd5-a952754b1ce1"}
+{"cid":"baeaaadjrguysymzwgeydsobygmya","name":"8e627057-6cd3-418d-9e5f-8e5cd564bd60"}
 ```
 #### Response data from https://api.pinata.cloud/psa/pins
 ```
 {
-  requestid: '6176d72a-ae34-4f20-89f6-ec48f809ee3f',
-  created: '2022-06-07T00:29:55.320Z',
+  requestid: 'cde274e0-5eaa-4221-9710-8c8c73ba7863',
+  created: '2022-06-07T00:40:25.757Z',
   delegates: [
-    '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+    '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
   ],
   pin: {
-    cid: 'baeaaadjrgaycymzsgu4doojvga2a',
+    cid: 'baeaaadjrguysymzwgeydsobygmya',
     origins: [],
     meta: {},
-    name: 'd673978d-bced-4da1-bfd5-a952754b1ce1'
+    name: '8e627057-6cd3-418d-9e5f-8e5cd564bd60'
   },
   info: { pinata_pinjob_status: 'prechecking' },
   status: 'queued'
@@ -1558,12 +1177,201 @@ No failures
 #### Response data after being parsed by RemotePinningServiceClient
 ```
 {
-  requestid: '6176d72a-ae34-4f20-89f6-ec48f809ee3f',
+  requestid: 'cde274e0-5eaa-4221-9710-8c8c73ba7863',
   status: 'queued',
-  created: 2022-06-07T00:29:55.320Z,
+  created: 2022-06-07T00:40:25.757Z,
   pin: {
-    cid: 'baeaaadjrgaycymzsgu4doojvga2a',
-    name: 'd673978d-bced-4da1-bfd5-a952754b1ce1',
+    cid: 'baeaaadjrguysymzwgeydsobygmya',
+    name: '8e627057-6cd3-418d-9e5f-8e5cd564bd60',
+    origins: [],
+    meta: {}
+  },
+  delegates: [
+    '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
+  ],
+  info: { pinata_pinjob_status: 'prechecking' }
+}
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "363",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:40:25 GMT",
+  "etag": "W/\"16b-nRUy0ILlnZ9JVybH9tIlvEARcM4\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+{
+  "requestid": "cde274e0-5eaa-4221-9710-8c8c73ba7863",
+  "created": "2022-06-07T00:40:25.757Z",
+  "delegates": [
+    "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
+  ],
+  "pin": {
+    "cid": "baeaaadjrguysymzwgeydsobygmya",
+    "origins": [],
+    "meta": {},
+    "name": "8e627057-6cd3-418d-9e5f-8e5cd564bd60"
+  },
+  "info": {
+    "pinata_pinjob_status": "prechecking"
+  },
+  "status": "queued"
+}
+```
+## Can create new pin for testing pagination cid='baeaaadjrg4ysynjzgaydcmbsgizq' - ✓ SUCCESS
+
+### Expectations (2/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+
+
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - POST: https://api.pinata.cloud/psa/pins
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"baeaaadjrg4ysynjzgaydcmbsgizq"}
+```
+#### Response data from https://api.pinata.cloud/psa/pins
+```
+{
+  requestid: '06192ef5-9060-4683-b8bd-2a1a591bd639',
+  created: '2022-06-07T00:40:50.860Z',
+  delegates: [
+    '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+  ],
+  pin: { cid: 'baeaaadjrg4ysynjzgaydcmbsgizq', origins: [], meta: {} },
+  info: { pinata_pinjob_status: 'prechecking' },
+  status: 'queued'
+}
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+{
+  requestid: '06192ef5-9060-4683-b8bd-2a1a591bd639',
+  status: 'queued',
+  created: 2022-06-07T00:40:50.860Z,
+  pin: {
+    cid: 'baeaaadjrg4ysynjzgaydcmbsgizq',
+    name: undefined,
+    origins: [],
+    meta: {}
+  },
+  delegates: [
+    '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+  ],
+  info: { pinata_pinjob_status: 'prechecking' }
+}
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "316",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:40:50 GMT",
+  "etag": "W/\"13c-9ZMi8Yicqi0ATXHva9e+8z1spbY\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+{
+  "requestid": "06192ef5-9060-4683-b8bd-2a1a591bd639",
+  "created": "2022-06-07T00:40:50.860Z",
+  "delegates": [
+    "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
+  ],
+  "pin": {
+    "cid": "baeaaadjrg4ysynjzgaydcmbsgizq",
+    "origins": [],
+    "meta": {}
+  },
+  "info": {
+    "pinata_pinjob_status": "prechecking"
+  },
+  "status": "queued"
+}
+```
+## Can create new pin for testing pagination cid='baeaaadjrg4ysynjzgeydanrvgqya' - ✓ SUCCESS
+
+### Expectations (2/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+
+
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - POST: https://api.pinata.cloud/psa/pins
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"baeaaadjrg4ysynjzgeydanrvgqya"}
+```
+#### Response data from https://api.pinata.cloud/psa/pins
+```
+{
+  requestid: 'b0678c51-52d5-414d-bc6e-a0aa5bffda13',
+  created: '2022-06-07T00:40:55.853Z',
+  delegates: [
+    '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+  ],
+  pin: { cid: 'baeaaadjrg4ysynjzgeydanrvgqya', origins: [], meta: {} },
+  info: { pinata_pinjob_status: 'prechecking' },
+  status: 'queued'
+}
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+{
+  requestid: 'b0678c51-52d5-414d-bc6e-a0aa5bffda13',
+  status: 'queued',
+  created: 2022-06-07T00:40:55.853Z,
+  pin: {
+    cid: 'baeaaadjrg4ysynjzgeydanrvgqya',
+    name: undefined,
     origins: [],
     meta: {}
   },
@@ -1579,10 +1387,10 @@ No failures
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "364",
+  "content-length": "318",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:29:55 GMT",
-  "etag": "W/\"16c-mku0bzoSHaiyjmN8/fdjMOatsl4\"",
+  "date": "Tue, 07 Jun 2022 00:40:55 GMT",
+  "etag": "W/\"13e-t3eZELpL4hz1QzajZJBA0MukFKw\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express"
@@ -1591,16 +1399,673 @@ No failures
 ##### Body
 ```json
 {
-  "requestid": "6176d72a-ae34-4f20-89f6-ec48f809ee3f",
-  "created": "2022-06-07T00:29:55.320Z",
+  "requestid": "b0678c51-52d5-414d-bc6e-a0aa5bffda13",
+  "created": "2022-06-07T00:40:55.853Z",
   "delegates": [
     "/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5"
   ],
   "pin": {
-    "cid": "baeaaadjrgaycymzsgu4doojvga2a",
+    "cid": "baeaaadjrg4ysynjzgeydanrvgqya",
     "origins": [],
-    "meta": {},
-    "name": "d673978d-bced-4da1-bfd5-a952754b1ce1"
+    "meta": {}
+  },
+  "info": {
+    "pinata_pinjob_status": "prechecking"
+  },
+  "status": "queued"
+}
+```
+## Can create new pin for testing pagination cid='baeaaadjrg4ysynjzgi2dsmbwgy2q' - ✓ SUCCESS
+
+### Expectations (2/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+
+
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - POST: https://api.pinata.cloud/psa/pins
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"baeaaadjrg4ysynjzgi2dsmbwgy2q"}
+```
+#### Response data from https://api.pinata.cloud/psa/pins
+```
+{
+  requestid: '9a0e581a-1b57-4cf1-8538-0abf7d482a1b',
+  created: '2022-06-07T00:41:00.851Z',
+  delegates: [
+    '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+  ],
+  pin: { cid: 'baeaaadjrg4ysynjzgi2dsmbwgy2q', origins: [], meta: {} },
+  info: { pinata_pinjob_status: 'prechecking' },
+  status: 'queued'
+}
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+{
+  requestid: '9a0e581a-1b57-4cf1-8538-0abf7d482a1b',
+  status: 'queued',
+  created: 2022-06-07T00:41:00.851Z,
+  pin: {
+    cid: 'baeaaadjrg4ysynjzgi2dsmbwgy2q',
+    name: undefined,
+    origins: [],
+    meta: {}
+  },
+  delegates: [
+    '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+  ],
+  info: { pinata_pinjob_status: 'prechecking' }
+}
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "316",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:41:00 GMT",
+  "etag": "W/\"13c-FcXO0X/QIjoO0P2GIzjvWWp9baE\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+{
+  "requestid": "9a0e581a-1b57-4cf1-8538-0abf7d482a1b",
+  "created": "2022-06-07T00:41:00.851Z",
+  "delegates": [
+    "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
+  ],
+  "pin": {
+    "cid": "baeaaadjrg4ysynjzgi2dsmbwgy2q",
+    "origins": [],
+    "meta": {}
+  },
+  "info": {
+    "pinata_pinjob_status": "prechecking"
+  },
+  "status": "queued"
+}
+```
+## Can create new pin for testing pagination cid='baeaaadjrg4ysynjzgmydgnbrg42q' - ✓ SUCCESS
+
+### Expectations (2/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+
+
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - POST: https://api.pinata.cloud/psa/pins
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"baeaaadjrg4ysynjzgmydgnbrg42q"}
+```
+#### Response data from https://api.pinata.cloud/psa/pins
+```
+{
+  requestid: 'a059d020-9520-4245-ba8f-29aed0ecfe89',
+  created: '2022-06-07T00:41:05.878Z',
+  delegates: [
+    '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+  ],
+  pin: { cid: 'baeaaadjrg4ysynjzgmydgnbrg42q', origins: [], meta: {} },
+  info: { pinata_pinjob_status: 'prechecking' },
+  status: 'queued'
+}
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+{
+  requestid: 'a059d020-9520-4245-ba8f-29aed0ecfe89',
+  status: 'queued',
+  created: 2022-06-07T00:41:05.878Z,
+  pin: {
+    cid: 'baeaaadjrg4ysynjzgmydgnbrg42q',
+    name: undefined,
+    origins: [],
+    meta: {}
+  },
+  delegates: [
+    '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+  ],
+  info: { pinata_pinjob_status: 'prechecking' }
+}
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "318",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:41:05 GMT",
+  "etag": "W/\"13e-22G7CCDkkqY4ZXgx5AsMdrn0oro\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+{
+  "requestid": "a059d020-9520-4245-ba8f-29aed0ecfe89",
+  "created": "2022-06-07T00:41:05.878Z",
+  "delegates": [
+    "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+  ],
+  "pin": {
+    "cid": "baeaaadjrg4ysynjzgmydgnbrg42q",
+    "origins": [],
+    "meta": {}
+  },
+  "info": {
+    "pinata_pinjob_status": "prechecking"
+  },
+  "status": "queued"
+}
+```
+## Can create new pin for testing pagination cid='baeaaadjrg4ysynjzgm3tsnbyha4a' - ✓ SUCCESS
+
+### Expectations (2/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+
+
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - POST: https://api.pinata.cloud/psa/pins
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"baeaaadjrg4ysynjzgm3tsnbyha4a"}
+```
+#### Response data from https://api.pinata.cloud/psa/pins
+```
+{
+  requestid: 'f6c7a3d1-d930-4ea8-b662-bdead756ce30',
+  created: '2022-06-07T00:41:10.892Z',
+  delegates: [
+    '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
+  ],
+  pin: { cid: 'baeaaadjrg4ysynjzgm3tsnbyha4a', origins: [], meta: {} },
+  info: { pinata_pinjob_status: 'prechecking' },
+  status: 'queued'
+}
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+{
+  requestid: 'f6c7a3d1-d930-4ea8-b662-bdead756ce30',
+  status: 'queued',
+  created: 2022-06-07T00:41:10.892Z,
+  pin: {
+    cid: 'baeaaadjrg4ysynjzgm3tsnbyha4a',
+    name: undefined,
+    origins: [],
+    meta: {}
+  },
+  delegates: [
+    '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
+  ],
+  info: { pinata_pinjob_status: 'prechecking' }
+}
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "317",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:41:10 GMT",
+  "etag": "W/\"13d-L9Q3lUGUxlfSTkixH9576vj4BrY\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+{
+  "requestid": "f6c7a3d1-d930-4ea8-b662-bdead756ce30",
+  "created": "2022-06-07T00:41:10.892Z",
+  "delegates": [
+    "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
+  ],
+  "pin": {
+    "cid": "baeaaadjrg4ysynjzgm3tsnbyha4a",
+    "origins": [],
+    "meta": {}
+  },
+  "info": {
+    "pinata_pinjob_status": "prechecking"
+  },
+  "status": "queued"
+}
+```
+## Can create new pin for testing pagination cid='baeaaadjrg4ysynjzgqztkmjthe4a' - ✓ SUCCESS
+
+### Expectations (2/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+
+
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - POST: https://api.pinata.cloud/psa/pins
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"baeaaadjrg4ysynjzgqztkmjthe4a"}
+```
+#### Response data from https://api.pinata.cloud/psa/pins
+```
+{
+  requestid: '22f3d40e-89f2-4a84-b77b-73774e33a18f',
+  created: '2022-06-07T00:41:15.875Z',
+  delegates: [
+    '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+  ],
+  pin: { cid: 'baeaaadjrg4ysynjzgqztkmjthe4a', origins: [], meta: {} },
+  info: { pinata_pinjob_status: 'prechecking' },
+  status: 'queued'
+}
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+{
+  requestid: '22f3d40e-89f2-4a84-b77b-73774e33a18f',
+  status: 'queued',
+  created: 2022-06-07T00:41:15.875Z,
+  pin: {
+    cid: 'baeaaadjrg4ysynjzgqztkmjthe4a',
+    name: undefined,
+    origins: [],
+    meta: {}
+  },
+  delegates: [
+    '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+  ],
+  info: { pinata_pinjob_status: 'prechecking' }
+}
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "318",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:41:15 GMT",
+  "etag": "W/\"13e-XaYUZJufuJ/Ewd1syW6HhB7R90E\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+{
+  "requestid": "22f3d40e-89f2-4a84-b77b-73774e33a18f",
+  "created": "2022-06-07T00:41:15.875Z",
+  "delegates": [
+    "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+  ],
+  "pin": {
+    "cid": "baeaaadjrg4ysynjzgqztkmjthe4a",
+    "origins": [],
+    "meta": {}
+  },
+  "info": {
+    "pinata_pinjob_status": "prechecking"
+  },
+  "status": "queued"
+}
+```
+## Can create new pin for testing pagination cid='baeaaadjrg4ysynjzgq4dknjsga3a' - ✓ SUCCESS
+
+### Expectations (2/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+
+
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - POST: https://api.pinata.cloud/psa/pins
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"baeaaadjrg4ysynjzgq4dknjsga3a"}
+```
+#### Response data from https://api.pinata.cloud/psa/pins
+```
+{
+  requestid: 'aae3f5c4-a683-4424-970e-bc9d9609e7b0',
+  created: '2022-06-07T00:41:20.888Z',
+  delegates: [
+    '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+  ],
+  pin: { cid: 'baeaaadjrg4ysynjzgq4dknjsga3a', origins: [], meta: {} },
+  info: { pinata_pinjob_status: 'prechecking' },
+  status: 'queued'
+}
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+{
+  requestid: 'aae3f5c4-a683-4424-970e-bc9d9609e7b0',
+  status: 'queued',
+  created: 2022-06-07T00:41:20.888Z,
+  pin: {
+    cid: 'baeaaadjrg4ysynjzgq4dknjsga3a',
+    name: undefined,
+    origins: [],
+    meta: {}
+  },
+  delegates: [
+    '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+  ],
+  info: { pinata_pinjob_status: 'prechecking' }
+}
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "318",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:41:20 GMT",
+  "etag": "W/\"13e-Y1BwjGElewV8UUDkE37VlGmTYIY\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+{
+  "requestid": "aae3f5c4-a683-4424-970e-bc9d9609e7b0",
+  "created": "2022-06-07T00:41:20.888Z",
+  "delegates": [
+    "/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5"
+  ],
+  "pin": {
+    "cid": "baeaaadjrg4ysynjzgq4dknjsga3a",
+    "origins": [],
+    "meta": {}
+  },
+  "info": {
+    "pinata_pinjob_status": "prechecking"
+  },
+  "status": "queued"
+}
+```
+## Can create new pin for testing pagination cid='baeaaadjrg4ysynjzgu2damrqge3a' - ✓ SUCCESS
+
+### Expectations (2/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+
+
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - POST: https://api.pinata.cloud/psa/pins
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"baeaaadjrg4ysynjzgu2damrqge3a"}
+```
+#### Response data from https://api.pinata.cloud/psa/pins
+```
+{
+  requestid: '29cef023-7fe2-4496-8a49-e258d84c4e8f',
+  created: '2022-06-07T00:41:25.884Z',
+  delegates: [
+    '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+  ],
+  pin: { cid: 'baeaaadjrg4ysynjzgu2damrqge3a', origins: [], meta: {} },
+  info: { pinata_pinjob_status: 'prechecking' },
+  status: 'queued'
+}
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+{
+  requestid: '29cef023-7fe2-4496-8a49-e258d84c4e8f',
+  status: 'queued',
+  created: 2022-06-07T00:41:25.884Z,
+  pin: {
+    cid: 'baeaaadjrg4ysynjzgu2damrqge3a',
+    name: undefined,
+    origins: [],
+    meta: {}
+  },
+  delegates: [
+    '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+  ],
+  info: { pinata_pinjob_status: 'prechecking' }
+}
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "318",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:41:25 GMT",
+  "etag": "W/\"13e-dBryYyndSz0EaV2HVU4KC6qMYNM\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+{
+  "requestid": "29cef023-7fe2-4496-8a49-e258d84c4e8f",
+  "created": "2022-06-07T00:41:25.884Z",
+  "delegates": [
+    "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+  ],
+  "pin": {
+    "cid": "baeaaadjrg4ysynjzgu2damrqge3a",
+    "origins": [],
+    "meta": {}
+  },
+  "info": {
+    "pinata_pinjob_status": "prechecking"
+  },
+  "status": "queued"
+}
+```
+## Can create new pin for testing pagination cid='baeaaadjrg4ysynjzgyydemrugi3a' - ✓ SUCCESS
+
+### Expectations (2/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+
+
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - POST: https://api.pinata.cloud/psa/pins
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"baeaaadjrg4ysynjzgyydemrugi3a"}
+```
+#### Response data from https://api.pinata.cloud/psa/pins
+```
+{
+  requestid: '70131fac-e6f2-4d5d-bf0c-ee3d235995fe',
+  created: '2022-06-07T00:41:30.886Z',
+  delegates: [
+    '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
+  ],
+  pin: { cid: 'baeaaadjrg4ysynjzgyydemrugi3a', origins: [], meta: {} },
+  info: { pinata_pinjob_status: 'prechecking' },
+  status: 'queued'
+}
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+{
+  requestid: '70131fac-e6f2-4d5d-bf0c-ee3d235995fe',
+  status: 'queued',
+  created: 2022-06-07T00:41:30.886Z,
+  pin: {
+    cid: 'baeaaadjrg4ysynjzgyydemrugi3a',
+    name: undefined,
+    origins: [],
+    meta: {}
+  },
+  delegates: [
+    '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
+  ],
+  info: { pinata_pinjob_status: 'prechecking' }
+}
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "317",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:41:30 GMT",
+  "etag": "W/\"13d-7ion/4ji2tgIn86msjYcQexrwyo\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+{
+  "requestid": "70131fac-e6f2-4d5d-bf0c-ee3d235995fe",
+  "created": "2022-06-07T00:41:30.886Z",
+  "delegates": [
+    "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
+  ],
+  "pin": {
+    "cid": "baeaaadjrg4ysynjzgyydemrugi3a",
+    "origins": [],
+    "meta": {}
   },
   "info": {
     "pinata_pinjob_status": "prechecking"
@@ -1645,167 +2110,237 @@ No failures
 #### Response data from https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 ```
 {
-  count: 15,
+  count: 22,
   results: [
     {
-      requestid: 'c2dcb6cb-5b86-4b3a-8936-85d6871ccccf',
-      created: '2022-06-06T16:19:08.266Z',
+      requestid: '0244285f-16ce-431c-90aa-c2243818f99e',
+      created: '2022-06-07T00:39:55.459Z',
       delegates: [
         '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
       ],
-      pin: { cid: 'baeaaadjtgazsymrsg44dcnzvgaya', origins: [], meta: {} },
+      pin: { cid: 'baeaaadjrge3cymjrgm2tkmjqgqya', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: '6ff24fbb-61fc-4f02-84c7-b75fd220f217',
-      created: '2022-06-06T16:19:13.260Z',
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      pin: { cid: 'baeaaadjtgazsymrsha2dkmjyguza', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'eb139c2d-8c39-400d-8bf6-5bc118e8cb1e',
-      created: '2022-06-06T16:19:23.273Z',
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      pin: { cid: 'baeaaadjtgazsymrshe4tmmzqg42q', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'fca2d731-62bf-40bc-9237-93f9deada697',
-      created: '2022-06-07T00:28:36.709Z',
+      requestid: '437750f5-d81f-4eae-8bab-2aee2319d3d4',
+      created: '2022-06-07T00:40:06.497Z',
       delegates: [
         '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
       ],
-      pin: { cid: 'baeaaadbvhawdeobrha4tgmjvg4', origins: [], meta: {} },
+      pin: { cid: 'baeaaadbtgyycynrrgu4tmojxgq', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: 'd64cfa4b-c2d9-4f89-9c8a-f578b3120c60',
-      created: '2022-06-07T00:28:56.862Z',
+      requestid: '4ccb3b59-e3a8-4016-9c76-d4b83623f69d',
+      created: '2022-06-07T00:40:15.583Z',
       delegates: [
         '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
       ],
-      pin: { cid: 'baeaaadbxhawdmnjvgmzdcnrqg4', origins: [], meta: {} },
+      pin: { cid: 'baeaaadjrgm3cynbtgyytsobsguza', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: '90944ea8-03da-4d4e-ba0c-d0f9b4abb2df',
-      created: '2022-06-07T00:29:06.979Z',
+      requestid: 'cde274e0-5eaa-4221-9710-8c8c73ba7863',
+      created: '2022-06-07T00:40:25.757Z',
       delegates: [
         '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
       ],
       pin: {
-        cid: 'baeaaadbzgmwdiojuhaztsmbvgi',
+        cid: 'baeaaadjrguysymzwgeydsobygmya',
         origins: [],
         meta: {},
-        name: 'c2a69836-e062-4a9a-b964-8274a6f52199'
+        name: '8e627057-6cd3-418d-9e5f-8e5cd564bd60'
       },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: '64d9b5dc-2bdc-42dc-a00e-01b8de4d1643',
-      created: '2022-06-07T00:29:24.588Z',
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      pin: { cid: 'baeaaadbwgqwdsmbrhe3doobygu', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'a4a9009b-02d4-49e7-825f-f49d8c633b88',
-      created: '2022-06-07T00:29:32.086Z',
-      delegates: [
-        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
-      ],
-      pin: { cid: 'baeaaadjrgezsynzsgiztknbqgi3a', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'c9abd787-129e-4092-9d86-2690c067cfea',
-      created: '2022-06-07T00:29:37.087Z',
+      requestid: '936573af-eb88-4e7c-bdc2-65147dc6c519',
+      created: '2022-06-07T00:40:26.721Z',
       delegates: [
         '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
       ],
-      pin: { cid: 'baeaaadjrgezsynzsgm2dmmrugiya', origins: [], meta: {} },
+      pin: { cid: 'baeaaadjthaycynbtguzdqnjugi4a', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: '15bdb5cb-4316-47cb-abfb-8b880cc5cb5f',
-      created: '2022-06-07T00:29:42.114Z',
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      pin: { cid: 'baeaaadjrgezsynzsguytinjrga4q', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: '194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca',
-      created: '2022-06-07T00:29:44.957Z',
+      requestid: '8c87440f-48f1-4a86-a607-a24c831c5348',
+      created: '2022-06-07T00:40:36.924Z',
       delegates: [
         '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
       ],
-      pin: { cid: 'baeaaadbyguwdimjvgm4dmnzzgm', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'ef3c66a8-00f3-4025-a8a3-ace4aede5927',
-      created: '2022-06-07T00:29:47.121Z',
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      pin: { cid: 'baeaaadjrgezsynzsgu4danbvga2q', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: '9726ae9a-ddb1-47ab-a9d9-d5be4af5bfcd',
-      created: '2022-06-07T00:29:52.091Z',
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      pin: { cid: 'baeaaadjrgezsynzsgy2tkmjygayq', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: '6176d72a-ae34-4f20-89f6-ec48f809ee3f',
-      created: '2022-06-07T00:29:55.320Z',
-      delegates: [
-        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
-      ],
       pin: {
-        cid: 'baeaaadjrgaycymzsgu4doojvga2a',
+        cid: 'baeaaadjthe2symzrgm4tgmzug4ya',
         origins: [],
         meta: {},
-        name: 'd673978d-bced-4da1-bfd5-a952754b1ce1'
+        name: 'e399f357-a7a1-431d-b35e-65afa35d31fe'
       },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: '0a503ac1-7182-4303-82ca-3e2085358828',
-      created: '2022-06-07T00:29:57.131Z',
+      requestid: '06192ef5-9060-4683-b8bd-2a1a591bd639',
+      created: '2022-06-07T00:40:50.860Z',
+      delegates: [
+        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgaydcmbsgizq', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: 'b0678c51-52d5-414d-bc6e-a0aa5bffda13',
+      created: '2022-06-07T00:40:55.853Z',
+      delegates: [
+        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgeydanrvgqya', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: '9a0e581a-1b57-4cf1-8538-0abf7d482a1b',
+      created: '2022-06-07T00:41:00.851Z',
+      delegates: [
+        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgi2dsmbwgy2q', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: 'e176b133-43f8-481f-860b-45c02a003736',
+      created: '2022-06-07T00:41:02.123Z',
       delegates: [
         '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
       ],
-      pin: { cid: 'baeaaadjrgezsynzsg4ytinzqhe3q', origins: [], meta: {} },
+      pin: { cid: 'baeaaadjuge2synzrgy4tenjuguya', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
+    },
+    {
+      requestid: 'a059d020-9520-4245-ba8f-29aed0ecfe89',
+      created: '2022-06-07T00:41:05.878Z',
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgmydgnbrg42q', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: '6c1fda6d-bf66-4436-986d-ee89aecfdd67',
+      created: '2022-06-07T00:41:07.143Z',
+      delegates: [
+        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+      ],
+      pin: { cid: 'baeaaadjuge2synzrha2dmobqgq4q', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: 'f6c7a3d1-d930-4ea8-b662-bdead756ce30',
+      created: '2022-06-07T00:41:10.892Z',
+      delegates: [
+        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgm3tsnbyha4a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: 'b7d0596c-2049-410d-9644-7cf7ff5dc0e9',
+      created: '2022-06-07T00:41:12.174Z',
+      delegates: [
+        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+      ],
+      pin: { cid: 'baeaaadjuge2synzsgaytaobsgq4q', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: '22f3d40e-89f2-4a84-b77b-73774e33a18f',
+      created: '2022-06-07T00:41:15.875Z',
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgqztkmjthe4a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: 'f97ca855-3c76-4dfa-89eb-8915869271d6',
+      created: '2022-06-07T00:41:17.146Z',
+      delegates: [
+        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
+      ],
+      pin: { cid: 'baeaaadjuge2synzsga3tonbwgq4q', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'prechecking' },
+      status: 'queued'
+    },
+    {
+      requestid: 'aae3f5c4-a683-4424-970e-bc9d9609e7b0',
+      created: '2022-06-07T00:41:20.888Z',
+      delegates: [
+        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgq4dknjsga3a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'prechecking' },
+      status: 'queued'
+    },
+    {
+      requestid: '6e70d05d-8341-4386-8bc4-03a15603d70e',
+      created: '2022-06-07T00:41:22.159Z',
+      delegates: [
+        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+      ],
+      pin: { cid: 'baeaaadjuge2synzsge3temjzgq4a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'prechecking' },
+      status: 'queued'
+    },
+    {
+      requestid: '29cef023-7fe2-4496-8a49-e258d84c4e8f',
+      created: '2022-06-07T00:41:25.884Z',
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgu2damrqge3a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: 'd482f6c0-60ca-4989-b7ac-b09c08880e9c',
+      created: '2022-06-07T00:41:27.158Z',
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      pin: { cid: 'baeaaadjuge2synzsgi2temrygq4a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: '70131fac-e6f2-4d5d-bf0c-ee3d235995fe',
+      created: '2022-06-07T00:41:30.886Z',
+      delegates: [
+        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgyydemrugi3a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'prechecking' },
+      status: 'queued'
+    },
+    {
+      requestid: '860de59a-edac-490a-9465-7aca9e37de2a',
+      created: '2022-06-07T00:41:32.159Z',
+      delegates: [
+        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+      ],
+      pin: { cid: 'baeaaadjuge2synzsgmydqmjrgq4a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'prechecking' },
+      status: 'queued'
     }
   ]
 }
@@ -1813,14 +2348,14 @@ No failures
 #### Response data after being parsed by RemotePinningServiceClient
 ```
 {
-  count: 15,
-  results: Set(15) {
+  count: 22,
+  results: Set(22) {
     {
-      requestid: 'c2dcb6cb-5b86-4b3a-8936-85d6871ccccf',
+      requestid: '0244285f-16ce-431c-90aa-c2243818f99e',
       status: 'failed',
-      created: 2022-06-06T16:19:08.266Z,
+      created: 2022-06-07T00:39:55.459Z,
       pin: {
-        cid: 'baeaaadjtgazsymrsg44dcnzvgaya',
+        cid: 'baeaaadjrge3cymjrgm2tkmjqgqya',
         name: undefined,
         origins: [],
         meta: {}
@@ -1831,41 +2366,11 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: '6ff24fbb-61fc-4f02-84c7-b75fd220f217',
+      requestid: '437750f5-d81f-4eae-8bab-2aee2319d3d4',
       status: 'failed',
-      created: 2022-06-06T16:19:13.260Z,
+      created: 2022-06-07T00:40:06.497Z,
       pin: {
-        cid: 'baeaaadjtgazsymrsha2dkmjyguza',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'eb139c2d-8c39-400d-8bf6-5bc118e8cb1e',
-      status: 'failed',
-      created: 2022-06-06T16:19:23.273Z,
-      pin: {
-        cid: 'baeaaadjtgazsymrshe4tmmzqg42q',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'fca2d731-62bf-40bc-9237-93f9deada697',
-      status: 'failed',
-      created: 2022-06-07T00:28:36.709Z,
-      pin: {
-        cid: 'baeaaadbvhawdeobrha4tgmjvg4',
+        cid: 'baeaaadbtgyycynrrgu4tmojxgq',
         name: undefined,
         origins: [],
         meta: {}
@@ -1876,11 +2381,11 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: 'd64cfa4b-c2d9-4f89-9c8a-f578b3120c60',
+      requestid: '4ccb3b59-e3a8-4016-9c76-d4b83623f69d',
       status: 'failed',
-      created: 2022-06-07T00:28:56.862Z,
+      created: 2022-06-07T00:40:15.583Z,
       pin: {
-        cid: 'baeaaadbxhawdmnjvgmzdcnrqg4',
+        cid: 'baeaaadjrgm3cynbtgyytsobsguza',
         name: undefined,
         origins: [],
         meta: {}
@@ -1891,12 +2396,12 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: '90944ea8-03da-4d4e-ba0c-d0f9b4abb2df',
+      requestid: 'cde274e0-5eaa-4221-9710-8c8c73ba7863',
       status: 'failed',
-      created: 2022-06-07T00:29:06.979Z,
+      created: 2022-06-07T00:40:25.757Z,
       pin: {
-        cid: 'baeaaadbzgmwdiojuhaztsmbvgi',
-        name: 'c2a69836-e062-4a9a-b964-8274a6f52199',
+        cid: 'baeaaadjrguysymzwgeydsobygmya',
+        name: '8e627057-6cd3-418d-9e5f-8e5cd564bd60',
         origins: [],
         meta: {}
       },
@@ -1906,41 +2411,11 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: '64d9b5dc-2bdc-42dc-a00e-01b8de4d1643',
+      requestid: '936573af-eb88-4e7c-bdc2-65147dc6c519',
       status: 'failed',
-      created: 2022-06-07T00:29:24.588Z,
+      created: 2022-06-07T00:40:26.721Z,
       pin: {
-        cid: 'baeaaadbwgqwdsmbrhe3doobygu',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'a4a9009b-02d4-49e7-825f-f49d8c633b88',
-      status: 'failed',
-      created: 2022-06-07T00:29:32.086Z,
-      pin: {
-        cid: 'baeaaadjrgezsynzsgiztknbqgi3a',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'c9abd787-129e-4092-9d86-2690c067cfea',
-      status: 'failed',
-      created: 2022-06-07T00:29:37.087Z,
-      pin: {
-        cid: 'baeaaadjrgezsynzsgm2dmmrugiya',
+        cid: 'baeaaadjthaycynbtguzdqnjugi4a',
         name: undefined,
         origins: [],
         meta: {}
@@ -1951,27 +2426,12 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: '15bdb5cb-4316-47cb-abfb-8b880cc5cb5f',
+      requestid: '8c87440f-48f1-4a86-a607-a24c831c5348',
       status: 'failed',
-      created: 2022-06-07T00:29:42.114Z,
+      created: 2022-06-07T00:40:36.924Z,
       pin: {
-        cid: 'baeaaadjrgezsynzsguytinjrga4q',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: '194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca',
-      status: 'failed',
-      created: 2022-06-07T00:29:44.957Z,
-      pin: {
-        cid: 'baeaaadbyguwdimjvgm4dmnzzgm',
-        name: undefined,
+        cid: 'baeaaadjthe2symzrgm4tgmzug4ya',
+        name: 'e399f357-a7a1-431d-b35e-65afa35d31fe',
         origins: [],
         meta: {}
       },
@@ -1981,11 +2441,11 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: 'ef3c66a8-00f3-4025-a8a3-ace4aede5927',
+      requestid: '06192ef5-9060-4683-b8bd-2a1a591bd639',
       status: 'failed',
-      created: 2022-06-07T00:29:47.121Z,
+      created: 2022-06-07T00:40:50.860Z,
       pin: {
-        cid: 'baeaaadjrgezsynzsgu4danbvga2q',
+        cid: 'baeaaadjrg4ysynjzgaydcmbsgizq',
         name: undefined,
         origins: [],
         meta: {}
@@ -1996,27 +2456,12 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: '9726ae9a-ddb1-47ab-a9d9-d5be4af5bfcd',
+      requestid: 'b0678c51-52d5-414d-bc6e-a0aa5bffda13',
       status: 'failed',
-      created: 2022-06-07T00:29:52.091Z,
+      created: 2022-06-07T00:40:55.853Z,
       pin: {
-        cid: 'baeaaadjrgezsynzsgy2tkmjygayq',
+        cid: 'baeaaadjrg4ysynjzgeydanrvgqya',
         name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: '6176d72a-ae34-4f20-89f6-ec48f809ee3f',
-      status: 'failed',
-      created: 2022-06-07T00:29:55.320Z,
-      pin: {
-        cid: 'baeaaadjrgaycymzsgu4doojvga2a',
-        name: 'd673978d-bced-4da1-bfd5-a952754b1ce1',
         origins: [],
         meta: {}
       },
@@ -2026,11 +2471,26 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: '0a503ac1-7182-4303-82ca-3e2085358828',
+      requestid: '9a0e581a-1b57-4cf1-8538-0abf7d482a1b',
       status: 'failed',
-      created: 2022-06-07T00:29:57.131Z,
+      created: 2022-06-07T00:41:00.851Z,
       pin: {
-        cid: 'baeaaadjrgezsynzsg4ytinzqhe3q',
+        cid: 'baeaaadjrg4ysynjzgi2dsmbwgy2q',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: 'e176b133-43f8-481f-860b-45c02a003736',
+      status: 'failed',
+      created: 2022-06-07T00:41:02.123Z,
+      pin: {
+        cid: 'baeaaadjuge2synzrgy4tenjuguya',
         name: undefined,
         origins: [],
         meta: {}
@@ -2039,6 +2499,186 @@ No failures
         '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
       ],
       info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: 'a059d020-9520-4245-ba8f-29aed0ecfe89',
+      status: 'failed',
+      created: 2022-06-07T00:41:05.878Z,
+      pin: {
+        cid: 'baeaaadjrg4ysynjzgmydgnbrg42q',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: '6c1fda6d-bf66-4436-986d-ee89aecfdd67',
+      status: 'failed',
+      created: 2022-06-07T00:41:07.143Z,
+      pin: {
+        cid: 'baeaaadjuge2synzrha2dmobqgq4q',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: 'f6c7a3d1-d930-4ea8-b662-bdead756ce30',
+      status: 'failed',
+      created: 2022-06-07T00:41:10.892Z,
+      pin: {
+        cid: 'baeaaadjrg4ysynjzgm3tsnbyha4a',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: 'b7d0596c-2049-410d-9644-7cf7ff5dc0e9',
+      status: 'failed',
+      created: 2022-06-07T00:41:12.174Z,
+      pin: {
+        cid: 'baeaaadjuge2synzsgaytaobsgq4q',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: '22f3d40e-89f2-4a84-b77b-73774e33a18f',
+      status: 'failed',
+      created: 2022-06-07T00:41:15.875Z,
+      pin: {
+        cid: 'baeaaadjrg4ysynjzgqztkmjthe4a',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: 'f97ca855-3c76-4dfa-89eb-8915869271d6',
+      status: 'queued',
+      created: 2022-06-07T00:41:17.146Z,
+      pin: {
+        cid: 'baeaaadjuge2synzsga3tonbwgq4q',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
+      ],
+      info: { pinata_pinjob_status: 'prechecking' }
+    },
+    {
+      requestid: 'aae3f5c4-a683-4424-970e-bc9d9609e7b0',
+      status: 'queued',
+      created: 2022-06-07T00:41:20.888Z,
+      pin: {
+        cid: 'baeaaadjrg4ysynjzgq4dknjsga3a',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+      ],
+      info: { pinata_pinjob_status: 'prechecking' }
+    },
+    {
+      requestid: '6e70d05d-8341-4386-8bc4-03a15603d70e',
+      status: 'queued',
+      created: 2022-06-07T00:41:22.159Z,
+      pin: {
+        cid: 'baeaaadjuge2synzsge3temjzgq4a',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+      ],
+      info: { pinata_pinjob_status: 'prechecking' }
+    },
+    {
+      requestid: '29cef023-7fe2-4496-8a49-e258d84c4e8f',
+      status: 'failed',
+      created: 2022-06-07T00:41:25.884Z,
+      pin: {
+        cid: 'baeaaadjrg4ysynjzgu2damrqge3a',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: 'd482f6c0-60ca-4989-b7ac-b09c08880e9c',
+      status: 'failed',
+      created: 2022-06-07T00:41:27.158Z,
+      pin: {
+        cid: 'baeaaadjuge2synzsgi2temrygq4a',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: '70131fac-e6f2-4d5d-bf0c-ee3d235995fe',
+      status: 'queued',
+      created: 2022-06-07T00:41:30.886Z,
+      pin: {
+        cid: 'baeaaadjrg4ysynjzgyydemrugi3a',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
+      ],
+      info: { pinata_pinjob_status: 'prechecking' }
+    },
+    {
+      requestid: '860de59a-edac-490a-9465-7aca9e37de2a',
+      status: 'queued',
+      created: 2022-06-07T00:41:32.159Z,
+      pin: {
+        cid: 'baeaaadjuge2synzsgmydqmjrgq4a',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+      ],
+      info: { pinata_pinjob_status: 'prechecking' }
     }
   }
 }
@@ -2049,10 +2689,10 @@ No failures
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "4922",
+  "content-length": "7168",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:30:20 GMT",
-  "etag": "W/\"133a-wZ0WsR8fNXBEle2Xg+FplNiSdNw\"",
+  "date": "Tue, 07 Jun 2022 00:41:35 GMT",
+  "etag": "W/\"1c00-MYmBZmJkIFpvotL8RgXn9WIKWZc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express"
@@ -2061,16 +2701,16 @@ No failures
 ##### Body
 ```json
 {
-  "count": 15,
+  "count": 22,
   "results": [
     {
-      "requestid": "c2dcb6cb-5b86-4b3a-8936-85d6871ccccf",
-      "created": "2022-06-06T16:19:08.266Z",
+      "requestid": "0244285f-16ce-431c-90aa-c2243818f99e",
+      "created": "2022-06-07T00:39:55.459Z",
       "delegates": [
         "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
       ],
       "pin": {
-        "cid": "baeaaadjtgazsymrsg44dcnzvgaya",
+        "cid": "baeaaadjrge3cymjrgm2tkmjqgqya",
         "origins": [],
         "meta": {}
       },
@@ -2080,45 +2720,13 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "6ff24fbb-61fc-4f02-84c7-b75fd220f217",
-      "created": "2022-06-06T16:19:13.260Z",
-      "delegates": [
-        "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
-      ],
-      "pin": {
-        "cid": "baeaaadjtgazsymrsha2dkmjyguza",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "eb139c2d-8c39-400d-8bf6-5bc118e8cb1e",
-      "created": "2022-06-06T16:19:23.273Z",
-      "delegates": [
-        "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
-      ],
-      "pin": {
-        "cid": "baeaaadjtgazsymrshe4tmmzqg42q",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "fca2d731-62bf-40bc-9237-93f9deada697",
-      "created": "2022-06-07T00:28:36.709Z",
+      "requestid": "437750f5-d81f-4eae-8bab-2aee2319d3d4",
+      "created": "2022-06-07T00:40:06.497Z",
       "delegates": [
         "/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5"
       ],
       "pin": {
-        "cid": "baeaaadbvhawdeobrha4tgmjvg4",
+        "cid": "baeaaadbtgyycynrrgu4tmojxgq",
         "origins": [],
         "meta": {}
       },
@@ -2128,13 +2736,13 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "d64cfa4b-c2d9-4f89-9c8a-f578b3120c60",
-      "created": "2022-06-07T00:28:56.862Z",
+      "requestid": "4ccb3b59-e3a8-4016-9c76-d4b83623f69d",
+      "created": "2022-06-07T00:40:15.583Z",
       "delegates": [
         "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
       ],
       "pin": {
-        "cid": "baeaaadbxhawdmnjvgmzdcnrqg4",
+        "cid": "baeaaadjrgm3cynbtgyytsobsguza",
         "origins": [],
         "meta": {}
       },
@@ -2144,16 +2752,16 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "90944ea8-03da-4d4e-ba0c-d0f9b4abb2df",
-      "created": "2022-06-07T00:29:06.979Z",
+      "requestid": "cde274e0-5eaa-4221-9710-8c8c73ba7863",
+      "created": "2022-06-07T00:40:25.757Z",
       "delegates": [
         "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
       ],
       "pin": {
-        "cid": "baeaaadbzgmwdiojuhaztsmbvgi",
+        "cid": "baeaaadjrguysymzwgeydsobygmya",
         "origins": [],
         "meta": {},
-        "name": "c2a69836-e062-4a9a-b964-8274a6f52199"
+        "name": "8e627057-6cd3-418d-9e5f-8e5cd564bd60"
       },
       "info": {
         "pinata_pinjob_status": "invalid_object"
@@ -2161,45 +2769,13 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "64d9b5dc-2bdc-42dc-a00e-01b8de4d1643",
-      "created": "2022-06-07T00:29:24.588Z",
-      "delegates": [
-        "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
-      ],
-      "pin": {
-        "cid": "baeaaadbwgqwdsmbrhe3doobygu",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "a4a9009b-02d4-49e7-825f-f49d8c633b88",
-      "created": "2022-06-07T00:29:32.086Z",
-      "delegates": [
-        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgezsynzsgiztknbqgi3a",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "c9abd787-129e-4092-9d86-2690c067cfea",
-      "created": "2022-06-07T00:29:37.087Z",
+      "requestid": "936573af-eb88-4e7c-bdc2-65147dc6c519",
+      "created": "2022-06-07T00:40:26.721Z",
       "delegates": [
         "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
       ],
       "pin": {
-        "cid": "baeaaadjrgezsynzsgm2dmmrugiya",
+        "cid": "baeaaadjthaycynbtguzdqnjugi4a",
         "origins": [],
         "meta": {}
       },
@@ -2209,31 +2785,16 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "15bdb5cb-4316-47cb-abfb-8b880cc5cb5f",
-      "created": "2022-06-07T00:29:42.114Z",
-      "delegates": [
-        "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgezsynzsguytinjrga4q",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca",
-      "created": "2022-06-07T00:29:44.957Z",
+      "requestid": "8c87440f-48f1-4a86-a607-a24c831c5348",
+      "created": "2022-06-07T00:40:36.924Z",
       "delegates": [
         "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
       ],
       "pin": {
-        "cid": "baeaaadbyguwdimjvgm4dmnzzgm",
+        "cid": "baeaaadjthe2symzrgm4tgmzug4ya",
         "origins": [],
-        "meta": {}
+        "meta": {},
+        "name": "e399f357-a7a1-431d-b35e-65afa35d31fe"
       },
       "info": {
         "pinata_pinjob_status": "invalid_object"
@@ -2241,13 +2802,13 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "ef3c66a8-00f3-4025-a8a3-ace4aede5927",
-      "created": "2022-06-07T00:29:47.121Z",
+      "requestid": "06192ef5-9060-4683-b8bd-2a1a591bd639",
+      "created": "2022-06-07T00:40:50.860Z",
       "delegates": [
         "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
       ],
       "pin": {
-        "cid": "baeaaadjrgezsynzsgu4danbvga2q",
+        "cid": "baeaaadjrg4ysynjzgaydcmbsgizq",
         "origins": [],
         "meta": {}
       },
@@ -2257,46 +2818,13 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "9726ae9a-ddb1-47ab-a9d9-d5be4af5bfcd",
-      "created": "2022-06-07T00:29:52.091Z",
-      "delegates": [
-        "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgezsynzsgy2tkmjygayq",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "6176d72a-ae34-4f20-89f6-ec48f809ee3f",
-      "created": "2022-06-07T00:29:55.320Z",
+      "requestid": "b0678c51-52d5-414d-bc6e-a0aa5bffda13",
+      "created": "2022-06-07T00:40:55.853Z",
       "delegates": [
         "/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5"
       ],
       "pin": {
-        "cid": "baeaaadjrgaycymzsgu4doojvga2a",
-        "origins": [],
-        "meta": {},
-        "name": "d673978d-bced-4da1-bfd5-a952754b1ce1"
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "0a503ac1-7182-4303-82ca-3e2085358828",
-      "created": "2022-06-07T00:29:57.131Z",
-      "delegates": [
-        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgezsynzsg4ytinzqhe3q",
+        "cid": "baeaaadjrg4ysynjzgeydanrvgqya",
         "origins": [],
         "meta": {}
       },
@@ -2304,6 +2832,230 @@ No failures
         "pinata_pinjob_status": "invalid_object"
       },
       "status": "failed"
+    },
+    {
+      "requestid": "9a0e581a-1b57-4cf1-8538-0abf7d482a1b",
+      "created": "2022-06-07T00:41:00.851Z",
+      "delegates": [
+        "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
+      ],
+      "pin": {
+        "cid": "baeaaadjrg4ysynjzgi2dsmbwgy2q",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "e176b133-43f8-481f-860b-45c02a003736",
+      "created": "2022-06-07T00:41:02.123Z",
+      "delegates": [
+        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+      ],
+      "pin": {
+        "cid": "baeaaadjuge2synzrgy4tenjuguya",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "a059d020-9520-4245-ba8f-29aed0ecfe89",
+      "created": "2022-06-07T00:41:05.878Z",
+      "delegates": [
+        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+      ],
+      "pin": {
+        "cid": "baeaaadjrg4ysynjzgmydgnbrg42q",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "6c1fda6d-bf66-4436-986d-ee89aecfdd67",
+      "created": "2022-06-07T00:41:07.143Z",
+      "delegates": [
+        "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
+      ],
+      "pin": {
+        "cid": "baeaaadjuge2synzrha2dmobqgq4q",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "f6c7a3d1-d930-4ea8-b662-bdead756ce30",
+      "created": "2022-06-07T00:41:10.892Z",
+      "delegates": [
+        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
+      ],
+      "pin": {
+        "cid": "baeaaadjrg4ysynjzgm3tsnbyha4a",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "b7d0596c-2049-410d-9644-7cf7ff5dc0e9",
+      "created": "2022-06-07T00:41:12.174Z",
+      "delegates": [
+        "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
+      ],
+      "pin": {
+        "cid": "baeaaadjuge2synzsgaytaobsgq4q",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "22f3d40e-89f2-4a84-b77b-73774e33a18f",
+      "created": "2022-06-07T00:41:15.875Z",
+      "delegates": [
+        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+      ],
+      "pin": {
+        "cid": "baeaaadjrg4ysynjzgqztkmjthe4a",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "f97ca855-3c76-4dfa-89eb-8915869271d6",
+      "created": "2022-06-07T00:41:17.146Z",
+      "delegates": [
+        "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
+      ],
+      "pin": {
+        "cid": "baeaaadjuge2synzsga3tonbwgq4q",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "prechecking"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "aae3f5c4-a683-4424-970e-bc9d9609e7b0",
+      "created": "2022-06-07T00:41:20.888Z",
+      "delegates": [
+        "/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5"
+      ],
+      "pin": {
+        "cid": "baeaaadjrg4ysynjzgq4dknjsga3a",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "prechecking"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "6e70d05d-8341-4386-8bc4-03a15603d70e",
+      "created": "2022-06-07T00:41:22.159Z",
+      "delegates": [
+        "/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5"
+      ],
+      "pin": {
+        "cid": "baeaaadjuge2synzsge3temjzgq4a",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "prechecking"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "29cef023-7fe2-4496-8a49-e258d84c4e8f",
+      "created": "2022-06-07T00:41:25.884Z",
+      "delegates": [
+        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+      ],
+      "pin": {
+        "cid": "baeaaadjrg4ysynjzgu2damrqge3a",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "d482f6c0-60ca-4989-b7ac-b09c08880e9c",
+      "created": "2022-06-07T00:41:27.158Z",
+      "delegates": [
+        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+      ],
+      "pin": {
+        "cid": "baeaaadjuge2synzsgi2temrygq4a",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "70131fac-e6f2-4d5d-bf0c-ee3d235995fe",
+      "created": "2022-06-07T00:41:30.886Z",
+      "delegates": [
+        "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
+      ],
+      "pin": {
+        "cid": "baeaaadjrg4ysynjzgyydemrugi3a",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "prechecking"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "860de59a-edac-490a-9465-7aca9e37de2a",
+      "created": "2022-06-07T00:41:32.159Z",
+      "delegates": [
+        "/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5"
+      ],
+      "pin": {
+        "cid": "baeaaadjuge2synzsgmydqmjrgq4a",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "prechecking"
+      },
+      "status": "queued"
     }
   ]
 }
@@ -2326,7 +3078,7 @@ No failures
 
 ### Details
 
-#### Request - GET: https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-06-06T16%3A19%3A08.266Z
+#### Request - GET: https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-06-07T00%3A39%3A55.459Z
 
 ##### Headers
 ```json
@@ -2338,7 +3090,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-06-06T16%3A19%3A08.266Z
+#### Response data from https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-06-07T00%3A39%3A55.459Z
 ```
 { count: 0, results: [] }
 ```
@@ -2354,7 +3106,7 @@ No failures
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:30:25 GMT",
+  "date": "Tue, 07 Jun 2022 00:41:35 GMT",
   "etag": "W/\"18-sS5FLbfK694W6H4gsKxYsIoy1Pk\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -2370,7 +3122,43 @@ No failures
 ```
 ## Pagination: Get all pins, create new pins (optional), get first and second pages - ✘ FAILED
 
-### Expectations (8/10 successful)
+### Expectations (26/28 successful)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
+
+  ✓ Response is ok (success)
+
+  ✓ Result is not null (success)
 
   ✓ Response is ok (success)
 
@@ -2415,175 +3203,75 @@ No failures
 #### Response data from https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 ```
 {
-  count: 16,
+  count: 6,
   results: [
     {
-      requestid: '691804b1-c8b8-411e-b04c-011e24ebc682',
-      created: '2022-06-06T16:18:58.292Z',
+      requestid: '0244285f-16ce-431c-90aa-c2243818f99e',
+      created: '2022-06-07T00:39:55.459Z',
       delegates: [
         '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
       ],
-      pin: { cid: 'baeaaadjtgazsymrsgu2tembsgezq', origins: [], meta: {} },
+      pin: { cid: 'baeaaadjrge3cymjrgm2tkmjqgqya', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: 'c2dcb6cb-5b86-4b3a-8936-85d6871ccccf',
-      created: '2022-06-06T16:19:08.266Z',
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      pin: { cid: 'baeaaadjtgazsymrsg44dcnzvgaya', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: '6ff24fbb-61fc-4f02-84c7-b75fd220f217',
-      created: '2022-06-06T16:19:13.260Z',
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      pin: { cid: 'baeaaadjtgazsymrsha2dkmjyguza', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'eb139c2d-8c39-400d-8bf6-5bc118e8cb1e',
-      created: '2022-06-06T16:19:23.273Z',
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      pin: { cid: 'baeaaadjtgazsymrshe4tmmzqg42q', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'fca2d731-62bf-40bc-9237-93f9deada697',
-      created: '2022-06-07T00:28:36.709Z',
+      requestid: '437750f5-d81f-4eae-8bab-2aee2319d3d4',
+      created: '2022-06-07T00:40:06.497Z',
       delegates: [
         '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
       ],
-      pin: { cid: 'baeaaadbvhawdeobrha4tgmjvg4', origins: [], meta: {} },
+      pin: { cid: 'baeaaadbtgyycynrrgu4tmojxgq', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: 'd64cfa4b-c2d9-4f89-9c8a-f578b3120c60',
-      created: '2022-06-07T00:28:56.862Z',
+      requestid: '4ccb3b59-e3a8-4016-9c76-d4b83623f69d',
+      created: '2022-06-07T00:40:15.583Z',
       delegates: [
         '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
       ],
-      pin: { cid: 'baeaaadbxhawdmnjvgmzdcnrqg4', origins: [], meta: {} },
+      pin: { cid: 'baeaaadjrgm3cynbtgyytsobsguza', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: '90944ea8-03da-4d4e-ba0c-d0f9b4abb2df',
-      created: '2022-06-07T00:29:06.979Z',
+      requestid: 'cde274e0-5eaa-4221-9710-8c8c73ba7863',
+      created: '2022-06-07T00:40:25.757Z',
       delegates: [
         '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
       ],
       pin: {
-        cid: 'baeaaadbzgmwdiojuhaztsmbvgi',
+        cid: 'baeaaadjrguysymzwgeydsobygmya',
         origins: [],
         meta: {},
-        name: 'c2a69836-e062-4a9a-b964-8274a6f52199'
+        name: '8e627057-6cd3-418d-9e5f-8e5cd564bd60'
       },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: '64d9b5dc-2bdc-42dc-a00e-01b8de4d1643',
-      created: '2022-06-07T00:29:24.588Z',
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      pin: { cid: 'baeaaadbwgqwdsmbrhe3doobygu', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'a4a9009b-02d4-49e7-825f-f49d8c633b88',
-      created: '2022-06-07T00:29:32.086Z',
-      delegates: [
-        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
-      ],
-      pin: { cid: 'baeaaadjrgezsynzsgiztknbqgi3a', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'c9abd787-129e-4092-9d86-2690c067cfea',
-      created: '2022-06-07T00:29:37.087Z',
+      requestid: '936573af-eb88-4e7c-bdc2-65147dc6c519',
+      created: '2022-06-07T00:40:26.721Z',
       delegates: [
         '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
       ],
-      pin: { cid: 'baeaaadjrgezsynzsgm2dmmrugiya', origins: [], meta: {} },
+      pin: { cid: 'baeaaadjthaycynbtguzdqnjugi4a', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: '15bdb5cb-4316-47cb-abfb-8b880cc5cb5f',
-      created: '2022-06-07T00:29:42.114Z',
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      pin: { cid: 'baeaaadjrgezsynzsguytinjrga4q', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: '194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca',
-      created: '2022-06-07T00:29:44.957Z',
+      requestid: '8c87440f-48f1-4a86-a607-a24c831c5348',
+      created: '2022-06-07T00:40:36.924Z',
       delegates: [
         '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
-      ],
-      pin: { cid: 'baeaaadbyguwdimjvgm4dmnzzgm', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'ef3c66a8-00f3-4025-a8a3-ace4aede5927',
-      created: '2022-06-07T00:29:47.121Z',
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      pin: { cid: 'baeaaadjrgezsynzsgu4danbvga2q', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: '9726ae9a-ddb1-47ab-a9d9-d5be4af5bfcd',
-      created: '2022-06-07T00:29:52.091Z',
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      pin: { cid: 'baeaaadjrgezsynzsgy2tkmjygayq', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: '6176d72a-ae34-4f20-89f6-ec48f809ee3f',
-      created: '2022-06-07T00:29:55.320Z',
-      delegates: [
-        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
       ],
       pin: {
-        cid: 'baeaaadjrgaycymzsgu4doojvga2a',
+        cid: 'baeaaadjthe2symzrgm4tgmzug4ya',
         origins: [],
         meta: {},
-        name: 'd673978d-bced-4da1-bfd5-a952754b1ce1'
+        name: 'e399f357-a7a1-431d-b35e-65afa35d31fe'
       },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: '0a503ac1-7182-4303-82ca-3e2085358828',
-      created: '2022-06-07T00:29:57.131Z',
-      delegates: [
-        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
-      ],
-      pin: { cid: 'baeaaadjrgezsynzsg4ytinzqhe3q', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     }
@@ -2593,14 +3281,14 @@ No failures
 #### Response data after being parsed by RemotePinningServiceClient
 ```
 {
-  count: 16,
-  results: Set(16) {
+  count: 6,
+  results: Set(6) {
     {
-      requestid: '691804b1-c8b8-411e-b04c-011e24ebc682',
+      requestid: '0244285f-16ce-431c-90aa-c2243818f99e',
       status: 'failed',
-      created: 2022-06-06T16:18:58.292Z,
+      created: 2022-06-07T00:39:55.459Z,
       pin: {
-        cid: 'baeaaadjtgazsymrsgu2tembsgezq',
+        cid: 'baeaaadjrge3cymjrgm2tkmjqgqya',
         name: undefined,
         origins: [],
         meta: {}
@@ -2611,56 +3299,11 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: 'c2dcb6cb-5b86-4b3a-8936-85d6871ccccf',
+      requestid: '437750f5-d81f-4eae-8bab-2aee2319d3d4',
       status: 'failed',
-      created: 2022-06-06T16:19:08.266Z,
+      created: 2022-06-07T00:40:06.497Z,
       pin: {
-        cid: 'baeaaadjtgazsymrsg44dcnzvgaya',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: '6ff24fbb-61fc-4f02-84c7-b75fd220f217',
-      status: 'failed',
-      created: 2022-06-06T16:19:13.260Z,
-      pin: {
-        cid: 'baeaaadjtgazsymrsha2dkmjyguza',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'eb139c2d-8c39-400d-8bf6-5bc118e8cb1e',
-      status: 'failed',
-      created: 2022-06-06T16:19:23.273Z,
-      pin: {
-        cid: 'baeaaadjtgazsymrshe4tmmzqg42q',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'fca2d731-62bf-40bc-9237-93f9deada697',
-      status: 'failed',
-      created: 2022-06-07T00:28:36.709Z,
-      pin: {
-        cid: 'baeaaadbvhawdeobrha4tgmjvg4',
+        cid: 'baeaaadbtgyycynrrgu4tmojxgq',
         name: undefined,
         origins: [],
         meta: {}
@@ -2671,11 +3314,11 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: 'd64cfa4b-c2d9-4f89-9c8a-f578b3120c60',
+      requestid: '4ccb3b59-e3a8-4016-9c76-d4b83623f69d',
       status: 'failed',
-      created: 2022-06-07T00:28:56.862Z,
+      created: 2022-06-07T00:40:15.583Z,
       pin: {
-        cid: 'baeaaadbxhawdmnjvgmzdcnrqg4',
+        cid: 'baeaaadjrgm3cynbtgyytsobsguza',
         name: undefined,
         origins: [],
         meta: {}
@@ -2686,12 +3329,12 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: '90944ea8-03da-4d4e-ba0c-d0f9b4abb2df',
+      requestid: 'cde274e0-5eaa-4221-9710-8c8c73ba7863',
       status: 'failed',
-      created: 2022-06-07T00:29:06.979Z,
+      created: 2022-06-07T00:40:25.757Z,
       pin: {
-        cid: 'baeaaadbzgmwdiojuhaztsmbvgi',
-        name: 'c2a69836-e062-4a9a-b964-8274a6f52199',
+        cid: 'baeaaadjrguysymzwgeydsobygmya',
+        name: '8e627057-6cd3-418d-9e5f-8e5cd564bd60',
         origins: [],
         meta: {}
       },
@@ -2701,41 +3344,11 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: '64d9b5dc-2bdc-42dc-a00e-01b8de4d1643',
+      requestid: '936573af-eb88-4e7c-bdc2-65147dc6c519',
       status: 'failed',
-      created: 2022-06-07T00:29:24.588Z,
+      created: 2022-06-07T00:40:26.721Z,
       pin: {
-        cid: 'baeaaadbwgqwdsmbrhe3doobygu',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'a4a9009b-02d4-49e7-825f-f49d8c633b88',
-      status: 'failed',
-      created: 2022-06-07T00:29:32.086Z,
-      pin: {
-        cid: 'baeaaadjrgezsynzsgiztknbqgi3a',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'c9abd787-129e-4092-9d86-2690c067cfea',
-      status: 'failed',
-      created: 2022-06-07T00:29:37.087Z,
-      pin: {
-        cid: 'baeaaadjrgezsynzsgm2dmmrugiya',
+        cid: 'baeaaadjthaycynbtguzdqnjugi4a',
         name: undefined,
         origins: [],
         meta: {}
@@ -2746,92 +3359,17 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: '15bdb5cb-4316-47cb-abfb-8b880cc5cb5f',
+      requestid: '8c87440f-48f1-4a86-a607-a24c831c5348',
       status: 'failed',
-      created: 2022-06-07T00:29:42.114Z,
+      created: 2022-06-07T00:40:36.924Z,
       pin: {
-        cid: 'baeaaadjrgezsynzsguytinjrga4q',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: '194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca',
-      status: 'failed',
-      created: 2022-06-07T00:29:44.957Z,
-      pin: {
-        cid: 'baeaaadbyguwdimjvgm4dmnzzgm',
-        name: undefined,
+        cid: 'baeaaadjthe2symzrgm4tgmzug4ya',
+        name: 'e399f357-a7a1-431d-b35e-65afa35d31fe',
         origins: [],
         meta: {}
       },
       delegates: [
         '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'ef3c66a8-00f3-4025-a8a3-ace4aede5927',
-      status: 'failed',
-      created: 2022-06-07T00:29:47.121Z,
-      pin: {
-        cid: 'baeaaadjrgezsynzsgu4danbvga2q',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: '9726ae9a-ddb1-47ab-a9d9-d5be4af5bfcd',
-      status: 'failed',
-      created: 2022-06-07T00:29:52.091Z,
-      pin: {
-        cid: 'baeaaadjrgezsynzsgy2tkmjygayq',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: '6176d72a-ae34-4f20-89f6-ec48f809ee3f',
-      status: 'failed',
-      created: 2022-06-07T00:29:55.320Z,
-      pin: {
-        cid: 'baeaaadjrgaycymzsgu4doojvga2a',
-        name: 'd673978d-bced-4da1-bfd5-a952754b1ce1',
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: '0a503ac1-7182-4303-82ca-3e2085358828',
-      status: 'failed',
-      created: 2022-06-07T00:29:57.131Z,
-      pin: {
-        cid: 'baeaaadjrgezsynzsg4ytinzqhe3q',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
       ],
       info: { pinata_pinjob_status: 'invalid_object' }
     }
@@ -2844,10 +3382,10 @@ No failures
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "5243",
+  "content-length": "2041",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:30:15 GMT",
-  "etag": "W/\"147b-fGLPnP4rFLCoEirmMEy8mXv6wro\"",
+  "date": "Tue, 07 Jun 2022 00:40:45 GMT",
+  "etag": "W/\"7f9-t8ryMoHmt8UKf71VSWoX6pthGa4\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express"
@@ -2856,16 +3394,16 @@ No failures
 ##### Body
 ```json
 {
-  "count": 16,
+  "count": 6,
   "results": [
     {
-      "requestid": "691804b1-c8b8-411e-b04c-011e24ebc682",
-      "created": "2022-06-06T16:18:58.292Z",
+      "requestid": "0244285f-16ce-431c-90aa-c2243818f99e",
+      "created": "2022-06-07T00:39:55.459Z",
       "delegates": [
         "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
       ],
       "pin": {
-        "cid": "baeaaadjtgazsymrsgu2tembsgezq",
+        "cid": "baeaaadjrge3cymjrgm2tkmjqgqya",
         "origins": [],
         "meta": {}
       },
@@ -2875,61 +3413,13 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "c2dcb6cb-5b86-4b3a-8936-85d6871ccccf",
-      "created": "2022-06-06T16:19:08.266Z",
-      "delegates": [
-        "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
-      ],
-      "pin": {
-        "cid": "baeaaadjtgazsymrsg44dcnzvgaya",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "6ff24fbb-61fc-4f02-84c7-b75fd220f217",
-      "created": "2022-06-06T16:19:13.260Z",
-      "delegates": [
-        "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
-      ],
-      "pin": {
-        "cid": "baeaaadjtgazsymrsha2dkmjyguza",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "eb139c2d-8c39-400d-8bf6-5bc118e8cb1e",
-      "created": "2022-06-06T16:19:23.273Z",
-      "delegates": [
-        "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
-      ],
-      "pin": {
-        "cid": "baeaaadjtgazsymrshe4tmmzqg42q",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "fca2d731-62bf-40bc-9237-93f9deada697",
-      "created": "2022-06-07T00:28:36.709Z",
+      "requestid": "437750f5-d81f-4eae-8bab-2aee2319d3d4",
+      "created": "2022-06-07T00:40:06.497Z",
       "delegates": [
         "/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5"
       ],
       "pin": {
-        "cid": "baeaaadbvhawdeobrha4tgmjvg4",
+        "cid": "baeaaadbtgyycynrrgu4tmojxgq",
         "origins": [],
         "meta": {}
       },
@@ -2939,13 +3429,13 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "d64cfa4b-c2d9-4f89-9c8a-f578b3120c60",
-      "created": "2022-06-07T00:28:56.862Z",
+      "requestid": "4ccb3b59-e3a8-4016-9c76-d4b83623f69d",
+      "created": "2022-06-07T00:40:15.583Z",
       "delegates": [
         "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
       ],
       "pin": {
-        "cid": "baeaaadbxhawdmnjvgmzdcnrqg4",
+        "cid": "baeaaadjrgm3cynbtgyytsobsguza",
         "origins": [],
         "meta": {}
       },
@@ -2955,16 +3445,16 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "90944ea8-03da-4d4e-ba0c-d0f9b4abb2df",
-      "created": "2022-06-07T00:29:06.979Z",
+      "requestid": "cde274e0-5eaa-4221-9710-8c8c73ba7863",
+      "created": "2022-06-07T00:40:25.757Z",
       "delegates": [
         "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
       ],
       "pin": {
-        "cid": "baeaaadbzgmwdiojuhaztsmbvgi",
+        "cid": "baeaaadjrguysymzwgeydsobygmya",
         "origins": [],
         "meta": {},
-        "name": "c2a69836-e062-4a9a-b964-8274a6f52199"
+        "name": "8e627057-6cd3-418d-9e5f-8e5cd564bd60"
       },
       "info": {
         "pinata_pinjob_status": "invalid_object"
@@ -2972,45 +3462,13 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "64d9b5dc-2bdc-42dc-a00e-01b8de4d1643",
-      "created": "2022-06-07T00:29:24.588Z",
-      "delegates": [
-        "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
-      ],
-      "pin": {
-        "cid": "baeaaadbwgqwdsmbrhe3doobygu",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "a4a9009b-02d4-49e7-825f-f49d8c633b88",
-      "created": "2022-06-07T00:29:32.086Z",
-      "delegates": [
-        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgezsynzsgiztknbqgi3a",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "c9abd787-129e-4092-9d86-2690c067cfea",
-      "created": "2022-06-07T00:29:37.087Z",
+      "requestid": "936573af-eb88-4e7c-bdc2-65147dc6c519",
+      "created": "2022-06-07T00:40:26.721Z",
       "delegates": [
         "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
       ],
       "pin": {
-        "cid": "baeaaadjrgezsynzsgm2dmmrugiya",
+        "cid": "baeaaadjthaycynbtguzdqnjugi4a",
         "origins": [],
         "meta": {}
       },
@@ -3020,96 +3478,16 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "15bdb5cb-4316-47cb-abfb-8b880cc5cb5f",
-      "created": "2022-06-07T00:29:42.114Z",
-      "delegates": [
-        "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgezsynzsguytinjrga4q",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca",
-      "created": "2022-06-07T00:29:44.957Z",
+      "requestid": "8c87440f-48f1-4a86-a607-a24c831c5348",
+      "created": "2022-06-07T00:40:36.924Z",
       "delegates": [
         "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
       ],
       "pin": {
-        "cid": "baeaaadbyguwdimjvgm4dmnzzgm",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "ef3c66a8-00f3-4025-a8a3-ace4aede5927",
-      "created": "2022-06-07T00:29:47.121Z",
-      "delegates": [
-        "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgezsynzsgu4danbvga2q",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "9726ae9a-ddb1-47ab-a9d9-d5be4af5bfcd",
-      "created": "2022-06-07T00:29:52.091Z",
-      "delegates": [
-        "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgezsynzsgy2tkmjygayq",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "6176d72a-ae34-4f20-89f6-ec48f809ee3f",
-      "created": "2022-06-07T00:29:55.320Z",
-      "delegates": [
-        "/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgaycymzsgu4doojvga2a",
+        "cid": "baeaaadjthe2symzrgm4tgmzug4ya",
         "origins": [],
         "meta": {},
-        "name": "d673978d-bced-4da1-bfd5-a952754b1ce1"
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "0a503ac1-7182-4303-82ca-3e2085358828",
-      "created": "2022-06-07T00:29:57.131Z",
-      "delegates": [
-        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgezsynzsg4ytinzqhe3q",
-        "origins": [],
-        "meta": {}
+        "name": "e399f357-a7a1-431d-b35e-65afa35d31fe"
       },
       "info": {
         "pinata_pinjob_status": "invalid_object"
@@ -3119,7 +3497,7 @@ No failures
   ]
 }
 ```
-## Can delete pin with requestid 'eb139c2d-8c39-400d-8bf6-5bc118e8cb1e' - ✘ FAILED
+## Can delete pin with requestid '0244285f-16ce-431c-90aa-c2243818f99e' - ✘ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -3146,7 +3524,7 @@ No failures
 
 ### Details
 
-#### Request - DELETE: https://api.pinata.cloud/psa/pins/eb139c2d-8c39-400d-8bf6-5bc118e8cb1e
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/0244285f-16ce-431c-90aa-c2243818f99e
 
 ##### Headers
 ```json
@@ -3158,7 +3536,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/eb139c2d-8c39-400d-8bf6-5bc118e8cb1e
+#### Response data from https://api.pinata.cloud/psa/pins/0244285f-16ce-431c-90aa-c2243818f99e
 ```
 null
 ```
@@ -3174,7 +3552,7 @@ undefined
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:30:35 GMT",
+  "date": "Tue, 07 Jun 2022 00:41:45 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -3185,7 +3563,7 @@ undefined
 ```json
 OK
 ```
-## Can delete pin with requestid 'fca2d731-62bf-40bc-9237-93f9deada697' - ✘ FAILED
+## Can delete pin with requestid '437750f5-d81f-4eae-8bab-2aee2319d3d4' - ✘ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -3212,7 +3590,7 @@ No failures
 
 ### Details
 
-#### Request - DELETE: https://api.pinata.cloud/psa/pins/fca2d731-62bf-40bc-9237-93f9deada697
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/437750f5-d81f-4eae-8bab-2aee2319d3d4
 
 ##### Headers
 ```json
@@ -3224,7 +3602,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/fca2d731-62bf-40bc-9237-93f9deada697
+#### Response data from https://api.pinata.cloud/psa/pins/437750f5-d81f-4eae-8bab-2aee2319d3d4
 ```
 null
 ```
@@ -3240,7 +3618,7 @@ undefined
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:30:40 GMT",
+  "date": "Tue, 07 Jun 2022 00:41:50 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -3251,7 +3629,7 @@ undefined
 ```json
 OK
 ```
-## Can delete pin with requestid 'd64cfa4b-c2d9-4f89-9c8a-f578b3120c60' - ✘ FAILED
+## Can delete pin with requestid '4ccb3b59-e3a8-4016-9c76-d4b83623f69d' - ✘ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -3278,7 +3656,7 @@ No failures
 
 ### Details
 
-#### Request - DELETE: https://api.pinata.cloud/psa/pins/d64cfa4b-c2d9-4f89-9c8a-f578b3120c60
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/4ccb3b59-e3a8-4016-9c76-d4b83623f69d
 
 ##### Headers
 ```json
@@ -3290,7 +3668,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/d64cfa4b-c2d9-4f89-9c8a-f578b3120c60
+#### Response data from https://api.pinata.cloud/psa/pins/4ccb3b59-e3a8-4016-9c76-d4b83623f69d
 ```
 null
 ```
@@ -3306,7 +3684,7 @@ undefined
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:30:45 GMT",
+  "date": "Tue, 07 Jun 2022 00:41:56 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -3317,7 +3695,7 @@ undefined
 ```json
 OK
 ```
-## Can delete pin with requestid '90944ea8-03da-4d4e-ba0c-d0f9b4abb2df' - ✘ FAILED
+## Can delete pin with requestid 'cde274e0-5eaa-4221-9710-8c8c73ba7863' - ✘ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -3344,7 +3722,7 @@ No failures
 
 ### Details
 
-#### Request - DELETE: https://api.pinata.cloud/psa/pins/90944ea8-03da-4d4e-ba0c-d0f9b4abb2df
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/cde274e0-5eaa-4221-9710-8c8c73ba7863
 
 ##### Headers
 ```json
@@ -3356,7 +3734,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/90944ea8-03da-4d4e-ba0c-d0f9b4abb2df
+#### Response data from https://api.pinata.cloud/psa/pins/cde274e0-5eaa-4221-9710-8c8c73ba7863
 ```
 null
 ```
@@ -3372,7 +3750,7 @@ undefined
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:30:50 GMT",
+  "date": "Tue, 07 Jun 2022 00:42:00 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -3383,7 +3761,7 @@ undefined
 ```json
 OK
 ```
-## Can delete pin with requestid '64d9b5dc-2bdc-42dc-a00e-01b8de4d1643' - ✘ FAILED
+## Can delete pin with requestid '936573af-eb88-4e7c-bdc2-65147dc6c519' - ✘ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -3410,7 +3788,7 @@ No failures
 
 ### Details
 
-#### Request - DELETE: https://api.pinata.cloud/psa/pins/64d9b5dc-2bdc-42dc-a00e-01b8de4d1643
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/936573af-eb88-4e7c-bdc2-65147dc6c519
 
 ##### Headers
 ```json
@@ -3422,7 +3800,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/64d9b5dc-2bdc-42dc-a00e-01b8de4d1643
+#### Response data from https://api.pinata.cloud/psa/pins/936573af-eb88-4e7c-bdc2-65147dc6c519
 ```
 null
 ```
@@ -3438,7 +3816,7 @@ undefined
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:30:55 GMT",
+  "date": "Tue, 07 Jun 2022 00:42:05 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -3449,7 +3827,7 @@ undefined
 ```json
 OK
 ```
-## Can delete pin with requestid 'a4a9009b-02d4-49e7-825f-f49d8c633b88' - ✘ FAILED
+## Can delete pin with requestid '8c87440f-48f1-4a86-a607-a24c831c5348' - ✘ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -3462,6 +3840,7 @@ OK
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -3469,14 +3848,13 @@ OK
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
 #### Joi validation failures
 No failures
 
 ### Details
 
-#### Request - DELETE: https://api.pinata.cloud/psa/pins/a4a9009b-02d4-49e7-825f-f49d8c633b88
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/8c87440f-48f1-4a86-a607-a24c831c5348
 
 ##### Headers
 ```json
@@ -3488,7 +3866,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/a4a9009b-02d4-49e7-825f-f49d8c633b88
+#### Response data from https://api.pinata.cloud/psa/pins/8c87440f-48f1-4a86-a607-a24c831c5348
 ```
 null
 ```
@@ -3504,7 +3882,7 @@ undefined
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:31:00 GMT",
+  "date": "Tue, 07 Jun 2022 00:42:10 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -3515,7 +3893,7 @@ undefined
 ```json
 OK
 ```
-## Can delete pin with requestid 'c9abd787-129e-4092-9d86-2690c067cfea' - ✘ FAILED
+## Can delete pin with requestid '06192ef5-9060-4683-b8bd-2a1a591bd639' - ✘ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -3528,6 +3906,7 @@ OK
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -3535,14 +3914,13 @@ OK
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
 #### Joi validation failures
 No failures
 
 ### Details
 
-#### Request - DELETE: https://api.pinata.cloud/psa/pins/c9abd787-129e-4092-9d86-2690c067cfea
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/06192ef5-9060-4683-b8bd-2a1a591bd639
 
 ##### Headers
 ```json
@@ -3554,7 +3932,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/c9abd787-129e-4092-9d86-2690c067cfea
+#### Response data from https://api.pinata.cloud/psa/pins/06192ef5-9060-4683-b8bd-2a1a591bd639
 ```
 null
 ```
@@ -3570,7 +3948,7 @@ undefined
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:31:05 GMT",
+  "date": "Tue, 07 Jun 2022 00:42:15 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -3581,7 +3959,7 @@ undefined
 ```json
 OK
 ```
-## Can delete pin with requestid '15bdb5cb-4316-47cb-abfb-8b880cc5cb5f' - ✘ FAILED
+## Can delete pin with requestid 'b0678c51-52d5-414d-bc6e-a0aa5bffda13' - ✘ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -3594,6 +3972,7 @@ OK
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -3601,14 +3980,13 @@ OK
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
 #### Joi validation failures
 No failures
 
 ### Details
 
-#### Request - DELETE: https://api.pinata.cloud/psa/pins/15bdb5cb-4316-47cb-abfb-8b880cc5cb5f
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/b0678c51-52d5-414d-bc6e-a0aa5bffda13
 
 ##### Headers
 ```json
@@ -3620,7 +3998,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/15bdb5cb-4316-47cb-abfb-8b880cc5cb5f
+#### Response data from https://api.pinata.cloud/psa/pins/b0678c51-52d5-414d-bc6e-a0aa5bffda13
 ```
 null
 ```
@@ -3636,7 +4014,7 @@ undefined
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:31:10 GMT",
+  "date": "Tue, 07 Jun 2022 00:42:21 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -3647,7 +4025,7 @@ undefined
 ```json
 OK
 ```
-## Can delete pin with requestid '194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca' - ✘ FAILED
+## Can delete pin with requestid '9a0e581a-1b57-4cf1-8538-0abf7d482a1b' - ✘ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -3660,6 +4038,7 @@ OK
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -3667,14 +4046,13 @@ OK
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
 #### Joi validation failures
 No failures
 
 ### Details
 
-#### Request - DELETE: https://api.pinata.cloud/psa/pins/194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/9a0e581a-1b57-4cf1-8538-0abf7d482a1b
 
 ##### Headers
 ```json
@@ -3686,7 +4064,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca
+#### Response data from https://api.pinata.cloud/psa/pins/9a0e581a-1b57-4cf1-8538-0abf7d482a1b
 ```
 null
 ```
@@ -3702,7 +4080,7 @@ undefined
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:31:15 GMT",
+  "date": "Tue, 07 Jun 2022 00:42:26 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -3713,7 +4091,7 @@ undefined
 ```json
 OK
 ```
-## Can delete pin with requestid 'ef3c66a8-00f3-4025-a8a3-ace4aede5927' - ✘ FAILED
+## Can delete pin with requestid 'e176b133-43f8-481f-860b-45c02a003736' - ✘ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -3726,6 +4104,7 @@ OK
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -3733,14 +4112,13 @@ OK
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
 #### Joi validation failures
 No failures
 
 ### Details
 
-#### Request - DELETE: https://api.pinata.cloud/psa/pins/ef3c66a8-00f3-4025-a8a3-ace4aede5927
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/e176b133-43f8-481f-860b-45c02a003736
 
 ##### Headers
 ```json
@@ -3752,7 +4130,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/ef3c66a8-00f3-4025-a8a3-ace4aede5927
+#### Response data from https://api.pinata.cloud/psa/pins/e176b133-43f8-481f-860b-45c02a003736
 ```
 null
 ```
@@ -3768,7 +4146,7 @@ undefined
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:31:20 GMT",
+  "date": "Tue, 07 Jun 2022 00:42:30 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -3779,7 +4157,7 @@ undefined
 ```json
 OK
 ```
-## Can delete pin with requestid '9726ae9a-ddb1-47ab-a9d9-d5be4af5bfcd' - ✘ FAILED
+## Can delete pin with requestid 'a059d020-9520-4245-ba8f-29aed0ecfe89' - ✘ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -3792,6 +4170,7 @@ OK
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -3799,14 +4178,13 @@ OK
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
 #### Joi validation failures
 No failures
 
 ### Details
 
-#### Request - DELETE: https://api.pinata.cloud/psa/pins/9726ae9a-ddb1-47ab-a9d9-d5be4af5bfcd
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/a059d020-9520-4245-ba8f-29aed0ecfe89
 
 ##### Headers
 ```json
@@ -3818,7 +4196,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/9726ae9a-ddb1-47ab-a9d9-d5be4af5bfcd
+#### Response data from https://api.pinata.cloud/psa/pins/a059d020-9520-4245-ba8f-29aed0ecfe89
 ```
 null
 ```
@@ -3834,7 +4212,7 @@ undefined
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:31:26 GMT",
+  "date": "Tue, 07 Jun 2022 00:42:35 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -3845,7 +4223,7 @@ undefined
 ```json
 OK
 ```
-## Can delete pin with requestid '6176d72a-ae34-4f20-89f6-ec48f809ee3f' - ✘ FAILED
+## Can delete pin with requestid '6c1fda6d-bf66-4436-986d-ee89aecfdd67' - ✘ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -3858,6 +4236,7 @@ OK
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -3865,14 +4244,13 @@ OK
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
 #### Joi validation failures
 No failures
 
 ### Details
 
-#### Request - DELETE: https://api.pinata.cloud/psa/pins/6176d72a-ae34-4f20-89f6-ec48f809ee3f
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/6c1fda6d-bf66-4436-986d-ee89aecfdd67
 
 ##### Headers
 ```json
@@ -3884,7 +4262,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/6176d72a-ae34-4f20-89f6-ec48f809ee3f
+#### Response data from https://api.pinata.cloud/psa/pins/6c1fda6d-bf66-4436-986d-ee89aecfdd67
 ```
 null
 ```
@@ -3900,7 +4278,7 @@ undefined
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:31:30 GMT",
+  "date": "Tue, 07 Jun 2022 00:42:41 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -3911,7 +4289,7 @@ undefined
 ```json
 OK
 ```
-## Can delete pin with requestid '0a503ac1-7182-4303-82ca-3e2085358828' - ✘ FAILED
+## Can delete pin with requestid 'f6c7a3d1-d930-4ea8-b662-bdead756ce30' - ✘ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -3924,6 +4302,7 @@ OK
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -3931,14 +4310,13 @@ OK
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
 #### Joi validation failures
 No failures
 
 ### Details
 
-#### Request - DELETE: https://api.pinata.cloud/psa/pins/0a503ac1-7182-4303-82ca-3e2085358828
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/f6c7a3d1-d930-4ea8-b662-bdead756ce30
 
 ##### Headers
 ```json
@@ -3950,7 +4328,7 @@ No failures
 ```json
 
 ```
-#### Response data from https://api.pinata.cloud/psa/pins/0a503ac1-7182-4303-82ca-3e2085358828
+#### Response data from https://api.pinata.cloud/psa/pins/f6c7a3d1-d930-4ea8-b662-bdead756ce30
 ```
 null
 ```
@@ -3966,7 +4344,601 @@ undefined
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:31:35 GMT",
+  "date": "Tue, 07 Jun 2022 00:42:46 GMT",
+  "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+OK
+```
+## Can delete pin with requestid 'b7d0596c-2049-410d-9644-7cf7ff5dc0e9' - ✘ FAILED
+
+### Expectations (1/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/b7d0596c-2049-410d-9644-7cf7ff5dc0e9
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+#### Response data from https://api.pinata.cloud/psa/pins/b7d0596c-2049-410d-9644-7cf7ff5dc0e9
+```
+null
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+undefined
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "2",
+  "content-type": "text/plain; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:42:51 GMT",
+  "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+OK
+```
+## Can delete pin with requestid '22f3d40e-89f2-4a84-b77b-73774e33a18f' - ✘ FAILED
+
+### Expectations (1/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/22f3d40e-89f2-4a84-b77b-73774e33a18f
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+#### Response data from https://api.pinata.cloud/psa/pins/22f3d40e-89f2-4a84-b77b-73774e33a18f
+```
+null
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+undefined
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "2",
+  "content-type": "text/plain; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:42:56 GMT",
+  "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+OK
+```
+## Can delete pin with requestid 'f97ca855-3c76-4dfa-89eb-8915869271d6' - ✘ FAILED
+
+### Expectations (1/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/f97ca855-3c76-4dfa-89eb-8915869271d6
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+#### Response data from https://api.pinata.cloud/psa/pins/f97ca855-3c76-4dfa-89eb-8915869271d6
+```
+null
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+undefined
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "2",
+  "content-type": "text/plain; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:43:01 GMT",
+  "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+OK
+```
+## Can delete pin with requestid 'aae3f5c4-a683-4424-970e-bc9d9609e7b0' - ✘ FAILED
+
+### Expectations (1/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/aae3f5c4-a683-4424-970e-bc9d9609e7b0
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+#### Response data from https://api.pinata.cloud/psa/pins/aae3f5c4-a683-4424-970e-bc9d9609e7b0
+```
+null
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+undefined
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "2",
+  "content-type": "text/plain; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:43:06 GMT",
+  "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+OK
+```
+## Can delete pin with requestid '6e70d05d-8341-4386-8bc4-03a15603d70e' - ✘ FAILED
+
+### Expectations (1/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/6e70d05d-8341-4386-8bc4-03a15603d70e
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+#### Response data from https://api.pinata.cloud/psa/pins/6e70d05d-8341-4386-8bc4-03a15603d70e
+```
+null
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+undefined
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "2",
+  "content-type": "text/plain; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:43:11 GMT",
+  "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+OK
+```
+## Can delete pin with requestid '29cef023-7fe2-4496-8a49-e258d84c4e8f' - ✘ FAILED
+
+### Expectations (1/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/29cef023-7fe2-4496-8a49-e258d84c4e8f
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+#### Response data from https://api.pinata.cloud/psa/pins/29cef023-7fe2-4496-8a49-e258d84c4e8f
+```
+null
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+undefined
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "2",
+  "content-type": "text/plain; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:43:16 GMT",
+  "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+OK
+```
+## Can delete pin with requestid 'd482f6c0-60ca-4989-b7ac-b09c08880e9c' - ✘ FAILED
+
+### Expectations (1/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/d482f6c0-60ca-4989-b7ac-b09c08880e9c
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+#### Response data from https://api.pinata.cloud/psa/pins/d482f6c0-60ca-4989-b7ac-b09c08880e9c
+```
+null
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+undefined
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "2",
+  "content-type": "text/plain; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:43:21 GMT",
+  "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+OK
+```
+## Can delete pin with requestid '70131fac-e6f2-4d5d-bf0c-ee3d235995fe' - ✘ FAILED
+
+### Expectations (1/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/70131fac-e6f2-4d5d-bf0c-ee3d235995fe
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+#### Response data from https://api.pinata.cloud/psa/pins/70131fac-e6f2-4d5d-bf0c-ee3d235995fe
+```
+null
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+undefined
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "2",
+  "content-type": "text/plain; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:43:26 GMT",
+  "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
+  "strict-transport-security": "max-age=15724800; includeSubDomains",
+  "vary": "Origin",
+  "x-powered-by": "Express"
+}
+```
+##### Body
+```json
+OK
+```
+## Can delete pin with requestid '860de59a-edac-490a-9465-7aca9e37de2a' - ✘ FAILED
+
+### Expectations (1/2 successful)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+
+#### Joi validation failures
+No failures
+
+### Details
+
+#### Request - DELETE: https://api.pinata.cloud/psa/pins/860de59a-edac-490a-9465-7aca9e37de2a
+
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+#### Response data from https://api.pinata.cloud/psa/pins/860de59a-edac-490a-9465-7aca9e37de2a
+```
+null
+```
+#### Response data after being parsed by RemotePinningServiceClient
+```
+undefined
+```
+#### Response - OK (200)
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "connection": "close",
+  "content-length": "2",
+  "content-type": "text/plain; charset=utf-8",
+  "date": "Tue, 07 Jun 2022 00:43:31 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -4019,7 +4991,7 @@ No failures
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:31:40 GMT",
+  "date": "Tue, 07 Jun 2022 00:43:36 GMT",
   "etag": "W/\"18-sS5FLbfK694W6H4gsKxYsIoy1Pk\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
@@ -4035,7 +5007,43 @@ No failures
 ```
 ## Can delete all pins - ✘ FAILED
 
-### Expectations (14/27 successful)
+### Expectations (23/45 successful)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
+
+  ✓ Response is ok (success)
+
+  ✘ Response code is 202 (failure)
 
   ✓ Response is ok (success)
 
@@ -4156,6 +5164,7 @@ No failures
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -4163,11 +5172,11 @@ No failures
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 * SyntaxError - Unexpected token O in JSON at position 0
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -4175,11 +5184,11 @@ No failures
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 * SyntaxError - Unexpected token O in JSON at position 0
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -4187,11 +5196,11 @@ No failures
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 * SyntaxError - Unexpected token O in JSON at position 0
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -4199,11 +5208,11 @@ No failures
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 * SyntaxError - Unexpected token O in JSON at position 0
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -4211,11 +5220,11 @@ No failures
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 * SyntaxError - Unexpected token O in JSON at position 0
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -4223,11 +5232,11 @@ No failures
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 * SyntaxError - Unexpected token O in JSON at position 0
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -4235,11 +5244,11 @@ No failures
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 * SyntaxError - Unexpected token O in JSON at position 0
   * SyntaxError: Unexpected token O in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
@@ -4247,7 +5256,114 @@ No failures
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
     at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
     at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
+* SyntaxError - Unexpected token O in JSON at position 0
+  * SyntaxError: Unexpected token O in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:276:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/generated/fetch/src/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/generated/fetch/src/apis/PinsApi.ts:315:9)
 
 #### Joi validation failures
 No failures
@@ -4269,147 +5385,237 @@ No failures
 #### Response data from https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 ```
 {
-  count: 13,
+  count: 22,
   results: [
     {
-      requestid: 'eb139c2d-8c39-400d-8bf6-5bc118e8cb1e',
-      created: '2022-06-06T16:19:23.273Z',
+      requestid: '0244285f-16ce-431c-90aa-c2243818f99e',
+      created: '2022-06-07T00:39:55.459Z',
       delegates: [
         '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
       ],
-      pin: { cid: 'baeaaadjtgazsymrshe4tmmzqg42q', origins: [], meta: {} },
+      pin: { cid: 'baeaaadjrge3cymjrgm2tkmjqgqya', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: 'fca2d731-62bf-40bc-9237-93f9deada697',
-      created: '2022-06-07T00:28:36.709Z',
+      requestid: '437750f5-d81f-4eae-8bab-2aee2319d3d4',
+      created: '2022-06-07T00:40:06.497Z',
       delegates: [
         '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
       ],
-      pin: { cid: 'baeaaadbvhawdeobrha4tgmjvg4', origins: [], meta: {} },
+      pin: { cid: 'baeaaadbtgyycynrrgu4tmojxgq', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: 'd64cfa4b-c2d9-4f89-9c8a-f578b3120c60',
-      created: '2022-06-07T00:28:56.862Z',
+      requestid: '4ccb3b59-e3a8-4016-9c76-d4b83623f69d',
+      created: '2022-06-07T00:40:15.583Z',
       delegates: [
         '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
       ],
-      pin: { cid: 'baeaaadbxhawdmnjvgmzdcnrqg4', origins: [], meta: {} },
+      pin: { cid: 'baeaaadjrgm3cynbtgyytsobsguza', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: '90944ea8-03da-4d4e-ba0c-d0f9b4abb2df',
-      created: '2022-06-07T00:29:06.979Z',
+      requestid: 'cde274e0-5eaa-4221-9710-8c8c73ba7863',
+      created: '2022-06-07T00:40:25.757Z',
       delegates: [
         '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
       ],
       pin: {
-        cid: 'baeaaadbzgmwdiojuhaztsmbvgi',
+        cid: 'baeaaadjrguysymzwgeydsobygmya',
         origins: [],
         meta: {},
-        name: 'c2a69836-e062-4a9a-b964-8274a6f52199'
+        name: '8e627057-6cd3-418d-9e5f-8e5cd564bd60'
       },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: '64d9b5dc-2bdc-42dc-a00e-01b8de4d1643',
-      created: '2022-06-07T00:29:24.588Z',
-      delegates: [
-        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
-      ],
-      pin: { cid: 'baeaaadbwgqwdsmbrhe3doobygu', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'a4a9009b-02d4-49e7-825f-f49d8c633b88',
-      created: '2022-06-07T00:29:32.086Z',
-      delegates: [
-        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
-      ],
-      pin: { cid: 'baeaaadjrgezsynzsgiztknbqgi3a', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'c9abd787-129e-4092-9d86-2690c067cfea',
-      created: '2022-06-07T00:29:37.087Z',
+      requestid: '936573af-eb88-4e7c-bdc2-65147dc6c519',
+      created: '2022-06-07T00:40:26.721Z',
       delegates: [
         '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
       ],
-      pin: { cid: 'baeaaadjrgezsynzsgm2dmmrugiya', origins: [], meta: {} },
+      pin: { cid: 'baeaaadjthaycynbtguzdqnjugi4a', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: '15bdb5cb-4316-47cb-abfb-8b880cc5cb5f',
-      created: '2022-06-07T00:29:42.114Z',
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      pin: { cid: 'baeaaadjrgezsynzsguytinjrga4q', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: '194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca',
-      created: '2022-06-07T00:29:44.957Z',
+      requestid: '8c87440f-48f1-4a86-a607-a24c831c5348',
+      created: '2022-06-07T00:40:36.924Z',
       delegates: [
         '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
       ],
-      pin: { cid: 'baeaaadbyguwdimjvgm4dmnzzgm', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: 'ef3c66a8-00f3-4025-a8a3-ace4aede5927',
-      created: '2022-06-07T00:29:47.121Z',
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      pin: { cid: 'baeaaadjrgezsynzsgu4danbvga2q', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: '9726ae9a-ddb1-47ab-a9d9-d5be4af5bfcd',
-      created: '2022-06-07T00:29:52.091Z',
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      pin: { cid: 'baeaaadjrgezsynzsgy2tkmjygayq', origins: [], meta: {} },
-      info: { pinata_pinjob_status: 'invalid_object' },
-      status: 'failed'
-    },
-    {
-      requestid: '6176d72a-ae34-4f20-89f6-ec48f809ee3f',
-      created: '2022-06-07T00:29:55.320Z',
-      delegates: [
-        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
-      ],
       pin: {
-        cid: 'baeaaadjrgaycymzsgu4doojvga2a',
+        cid: 'baeaaadjthe2symzrgm4tgmzug4ya',
         origins: [],
         meta: {},
-        name: 'd673978d-bced-4da1-bfd5-a952754b1ce1'
+        name: 'e399f357-a7a1-431d-b35e-65afa35d31fe'
       },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
     },
     {
-      requestid: '0a503ac1-7182-4303-82ca-3e2085358828',
-      created: '2022-06-07T00:29:57.131Z',
+      requestid: '06192ef5-9060-4683-b8bd-2a1a591bd639',
+      created: '2022-06-07T00:40:50.860Z',
+      delegates: [
+        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgaydcmbsgizq', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: 'b0678c51-52d5-414d-bc6e-a0aa5bffda13',
+      created: '2022-06-07T00:40:55.853Z',
+      delegates: [
+        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgeydanrvgqya', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: '9a0e581a-1b57-4cf1-8538-0abf7d482a1b',
+      created: '2022-06-07T00:41:00.851Z',
+      delegates: [
+        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgi2dsmbwgy2q', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: 'e176b133-43f8-481f-860b-45c02a003736',
+      created: '2022-06-07T00:41:02.123Z',
       delegates: [
         '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
       ],
-      pin: { cid: 'baeaaadjrgezsynzsg4ytinzqhe3q', origins: [], meta: {} },
+      pin: { cid: 'baeaaadjuge2synzrgy4tenjuguya', origins: [], meta: {} },
       info: { pinata_pinjob_status: 'invalid_object' },
       status: 'failed'
+    },
+    {
+      requestid: 'a059d020-9520-4245-ba8f-29aed0ecfe89',
+      created: '2022-06-07T00:41:05.878Z',
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgmydgnbrg42q', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: '6c1fda6d-bf66-4436-986d-ee89aecfdd67',
+      created: '2022-06-07T00:41:07.143Z',
+      delegates: [
+        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+      ],
+      pin: { cid: 'baeaaadjuge2synzrha2dmobqgq4q', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: 'f6c7a3d1-d930-4ea8-b662-bdead756ce30',
+      created: '2022-06-07T00:41:10.892Z',
+      delegates: [
+        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgm3tsnbyha4a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: 'b7d0596c-2049-410d-9644-7cf7ff5dc0e9',
+      created: '2022-06-07T00:41:12.174Z',
+      delegates: [
+        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+      ],
+      pin: { cid: 'baeaaadjuge2synzsgaytaobsgq4q', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: '22f3d40e-89f2-4a84-b77b-73774e33a18f',
+      created: '2022-06-07T00:41:15.875Z',
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgqztkmjthe4a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: 'f97ca855-3c76-4dfa-89eb-8915869271d6',
+      created: '2022-06-07T00:41:17.146Z',
+      delegates: [
+        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
+      ],
+      pin: { cid: 'baeaaadjuge2synzsga3tonbwgq4q', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: 'aae3f5c4-a683-4424-970e-bc9d9609e7b0',
+      created: '2022-06-07T00:41:20.888Z',
+      delegates: [
+        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgq4dknjsga3a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'prechecking' },
+      status: 'queued'
+    },
+    {
+      requestid: '6e70d05d-8341-4386-8bc4-03a15603d70e',
+      created: '2022-06-07T00:41:22.159Z',
+      delegates: [
+        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+      ],
+      pin: { cid: 'baeaaadjuge2synzsge3temjzgq4a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'prechecking' },
+      status: 'queued'
+    },
+    {
+      requestid: '29cef023-7fe2-4496-8a49-e258d84c4e8f',
+      created: '2022-06-07T00:41:25.884Z',
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgu2damrqge3a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: 'd482f6c0-60ca-4989-b7ac-b09c08880e9c',
+      created: '2022-06-07T00:41:27.158Z',
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      pin: { cid: 'baeaaadjuge2synzsgi2temrygq4a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: '70131fac-e6f2-4d5d-bf0c-ee3d235995fe',
+      created: '2022-06-07T00:41:30.886Z',
+      delegates: [
+        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
+      ],
+      pin: { cid: 'baeaaadjrg4ysynjzgyydemrugi3a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'invalid_object' },
+      status: 'failed'
+    },
+    {
+      requestid: '860de59a-edac-490a-9465-7aca9e37de2a',
+      created: '2022-06-07T00:41:32.159Z',
+      delegates: [
+        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+      ],
+      pin: { cid: 'baeaaadjuge2synzsgmydqmjrgq4a', origins: [], meta: {} },
+      info: { pinata_pinjob_status: 'prechecking' },
+      status: 'queued'
     }
   ]
 }
@@ -4417,14 +5623,14 @@ No failures
 #### Response data after being parsed by RemotePinningServiceClient
 ```
 {
-  count: 13,
-  results: Set(13) {
+  count: 22,
+  results: Set(22) {
     {
-      requestid: 'eb139c2d-8c39-400d-8bf6-5bc118e8cb1e',
+      requestid: '0244285f-16ce-431c-90aa-c2243818f99e',
       status: 'failed',
-      created: 2022-06-06T16:19:23.273Z,
+      created: 2022-06-07T00:39:55.459Z,
       pin: {
-        cid: 'baeaaadjtgazsymrshe4tmmzqg42q',
+        cid: 'baeaaadjrge3cymjrgm2tkmjqgqya',
         name: undefined,
         origins: [],
         meta: {}
@@ -4435,11 +5641,11 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: 'fca2d731-62bf-40bc-9237-93f9deada697',
+      requestid: '437750f5-d81f-4eae-8bab-2aee2319d3d4',
       status: 'failed',
-      created: 2022-06-07T00:28:36.709Z,
+      created: 2022-06-07T00:40:06.497Z,
       pin: {
-        cid: 'baeaaadbvhawdeobrha4tgmjvg4',
+        cid: 'baeaaadbtgyycynrrgu4tmojxgq',
         name: undefined,
         origins: [],
         meta: {}
@@ -4450,11 +5656,11 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: 'd64cfa4b-c2d9-4f89-9c8a-f578b3120c60',
+      requestid: '4ccb3b59-e3a8-4016-9c76-d4b83623f69d',
       status: 'failed',
-      created: 2022-06-07T00:28:56.862Z,
+      created: 2022-06-07T00:40:15.583Z,
       pin: {
-        cid: 'baeaaadbxhawdmnjvgmzdcnrqg4',
+        cid: 'baeaaadjrgm3cynbtgyytsobsguza',
         name: undefined,
         origins: [],
         meta: {}
@@ -4465,12 +5671,12 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: '90944ea8-03da-4d4e-ba0c-d0f9b4abb2df',
+      requestid: 'cde274e0-5eaa-4221-9710-8c8c73ba7863',
       status: 'failed',
-      created: 2022-06-07T00:29:06.979Z,
+      created: 2022-06-07T00:40:25.757Z,
       pin: {
-        cid: 'baeaaadbzgmwdiojuhaztsmbvgi',
-        name: 'c2a69836-e062-4a9a-b964-8274a6f52199',
+        cid: 'baeaaadjrguysymzwgeydsobygmya',
+        name: '8e627057-6cd3-418d-9e5f-8e5cd564bd60',
         origins: [],
         meta: {}
       },
@@ -4480,11 +5686,176 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: '64d9b5dc-2bdc-42dc-a00e-01b8de4d1643',
+      requestid: '936573af-eb88-4e7c-bdc2-65147dc6c519',
       status: 'failed',
-      created: 2022-06-07T00:29:24.588Z,
+      created: 2022-06-07T00:40:26.721Z,
       pin: {
-        cid: 'baeaaadbwgqwdsmbrhe3doobygu',
+        cid: 'baeaaadjthaycynbtguzdqnjugi4a',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: '8c87440f-48f1-4a86-a607-a24c831c5348',
+      status: 'failed',
+      created: 2022-06-07T00:40:36.924Z,
+      pin: {
+        cid: 'baeaaadjthe2symzrgm4tgmzug4ya',
+        name: 'e399f357-a7a1-431d-b35e-65afa35d31fe',
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: '06192ef5-9060-4683-b8bd-2a1a591bd639',
+      status: 'failed',
+      created: 2022-06-07T00:40:50.860Z,
+      pin: {
+        cid: 'baeaaadjrg4ysynjzgaydcmbsgizq',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: 'b0678c51-52d5-414d-bc6e-a0aa5bffda13',
+      status: 'failed',
+      created: 2022-06-07T00:40:55.853Z,
+      pin: {
+        cid: 'baeaaadjrg4ysynjzgeydanrvgqya',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: '9a0e581a-1b57-4cf1-8538-0abf7d482a1b',
+      status: 'failed',
+      created: 2022-06-07T00:41:00.851Z,
+      pin: {
+        cid: 'baeaaadjrg4ysynjzgi2dsmbwgy2q',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: 'e176b133-43f8-481f-860b-45c02a003736',
+      status: 'failed',
+      created: 2022-06-07T00:41:02.123Z,
+      pin: {
+        cid: 'baeaaadjuge2synzrgy4tenjuguya',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: 'a059d020-9520-4245-ba8f-29aed0ecfe89',
+      status: 'failed',
+      created: 2022-06-07T00:41:05.878Z,
+      pin: {
+        cid: 'baeaaadjrg4ysynjzgmydgnbrg42q',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: '6c1fda6d-bf66-4436-986d-ee89aecfdd67',
+      status: 'failed',
+      created: 2022-06-07T00:41:07.143Z,
+      pin: {
+        cid: 'baeaaadjuge2synzrha2dmobqgq4q',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: 'f6c7a3d1-d930-4ea8-b662-bdead756ce30',
+      status: 'failed',
+      created: 2022-06-07T00:41:10.892Z,
+      pin: {
+        cid: 'baeaaadjrg4ysynjzgm3tsnbyha4a',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: 'b7d0596c-2049-410d-9644-7cf7ff5dc0e9',
+      status: 'failed',
+      created: 2022-06-07T00:41:12.174Z,
+      pin: {
+        cid: 'baeaaadjuge2synzsgaytaobsgq4q',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: '22f3d40e-89f2-4a84-b77b-73774e33a18f',
+      status: 'failed',
+      created: 2022-06-07T00:41:15.875Z,
+      pin: {
+        cid: 'baeaaadjrg4ysynjzgqztkmjthe4a',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: 'f97ca855-3c76-4dfa-89eb-8915869271d6',
+      status: 'failed',
+      created: 2022-06-07T00:41:17.146Z,
+      pin: {
+        cid: 'baeaaadjuge2synzsga3tonbwgq4q',
         name: undefined,
         origins: [],
         meta: {}
@@ -4495,116 +5866,41 @@ No failures
       info: { pinata_pinjob_status: 'invalid_object' }
     },
     {
-      requestid: 'a4a9009b-02d4-49e7-825f-f49d8c633b88',
-      status: 'failed',
-      created: 2022-06-07T00:29:32.086Z,
+      requestid: 'aae3f5c4-a683-4424-970e-bc9d9609e7b0',
+      status: 'queued',
+      created: 2022-06-07T00:41:20.888Z,
       pin: {
-        cid: 'baeaaadjrgezsynzsgiztknbqgi3a',
+        cid: 'baeaaadjrg4ysynjzgq4dknjsga3a',
         name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'c9abd787-129e-4092-9d86-2690c067cfea',
-      status: 'failed',
-      created: 2022-06-07T00:29:37.087Z,
-      pin: {
-        cid: 'baeaaadjrgezsynzsgm2dmmrugiya',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: '15bdb5cb-4316-47cb-abfb-8b880cc5cb5f',
-      status: 'failed',
-      created: 2022-06-07T00:29:42.114Z,
-      pin: {
-        cid: 'baeaaadjrgezsynzsguytinjrga4q',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: '194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca',
-      status: 'failed',
-      created: 2022-06-07T00:29:44.957Z,
-      pin: {
-        cid: 'baeaaadbyguwdimjvgm4dmnzzgm',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: 'ef3c66a8-00f3-4025-a8a3-ace4aede5927',
-      status: 'failed',
-      created: 2022-06-07T00:29:47.121Z,
-      pin: {
-        cid: 'baeaaadjrgezsynzsgu4danbvga2q',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: '9726ae9a-ddb1-47ab-a9d9-d5be4af5bfcd',
-      status: 'failed',
-      created: 2022-06-07T00:29:52.091Z,
-      pin: {
-        cid: 'baeaaadjrgezsynzsgy2tkmjygayq',
-        name: undefined,
-        origins: [],
-        meta: {}
-      },
-      delegates: [
-        '/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX'
-      ],
-      info: { pinata_pinjob_status: 'invalid_object' }
-    },
-    {
-      requestid: '6176d72a-ae34-4f20-89f6-ec48f809ee3f',
-      status: 'failed',
-      created: 2022-06-07T00:29:55.320Z,
-      pin: {
-        cid: 'baeaaadjrgaycymzsgu4doojvga2a',
-        name: 'd673978d-bced-4da1-bfd5-a952754b1ce1',
         origins: [],
         meta: {}
       },
       delegates: [
         '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
       ],
-      info: { pinata_pinjob_status: 'invalid_object' }
+      info: { pinata_pinjob_status: 'prechecking' }
     },
     {
-      requestid: '0a503ac1-7182-4303-82ca-3e2085358828',
-      status: 'failed',
-      created: 2022-06-07T00:29:57.131Z,
+      requestid: '6e70d05d-8341-4386-8bc4-03a15603d70e',
+      status: 'queued',
+      created: 2022-06-07T00:41:22.159Z,
       pin: {
-        cid: 'baeaaadjrgezsynzsg4ytinzqhe3q',
+        cid: 'baeaaadjuge2synzsge3temjzgq4a',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+      ],
+      info: { pinata_pinjob_status: 'prechecking' }
+    },
+    {
+      requestid: '29cef023-7fe2-4496-8a49-e258d84c4e8f',
+      status: 'failed',
+      created: 2022-06-07T00:41:25.884Z,
+      pin: {
+        cid: 'baeaaadjrg4ysynjzgu2damrqge3a',
         name: undefined,
         origins: [],
         meta: {}
@@ -4613,6 +5909,51 @@ No failures
         '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
       ],
       info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: 'd482f6c0-60ca-4989-b7ac-b09c08880e9c',
+      status: 'failed',
+      created: 2022-06-07T00:41:27.158Z,
+      pin: {
+        cid: 'baeaaadjuge2synzsgi2temrygq4a',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: '70131fac-e6f2-4d5d-bf0c-ee3d235995fe',
+      status: 'failed',
+      created: 2022-06-07T00:41:30.886Z,
+      pin: {
+        cid: 'baeaaadjrg4ysynjzgyydemrugi3a',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf'
+      ],
+      info: { pinata_pinjob_status: 'invalid_object' }
+    },
+    {
+      requestid: '860de59a-edac-490a-9465-7aca9e37de2a',
+      status: 'queued',
+      created: 2022-06-07T00:41:32.159Z,
+      pin: {
+        cid: 'baeaaadjuge2synzsgmydqmjrgq4a',
+        name: undefined,
+        origins: [],
+        meta: {}
+      },
+      delegates: [
+        '/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5'
+      ],
+      info: { pinata_pinjob_status: 'prechecking' }
     }
   }
 }
@@ -4623,10 +5964,10 @@ No failures
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "4280",
+  "content-length": "7174",
   "content-type": "application/json; charset=utf-8",
-  "date": "Tue, 07 Jun 2022 00:30:30 GMT",
-  "etag": "W/\"10b8-pF7cUl5xx9IqmgTrDibgw33b77s\"",
+  "date": "Tue, 07 Jun 2022 00:41:40 GMT",
+  "etag": "W/\"1c06-DREbDNmbs7mA3B4RwmK1ZmuCUT0\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express"
@@ -4635,16 +5976,16 @@ No failures
 ##### Body
 ```json
 {
-  "count": 13,
+  "count": 22,
   "results": [
     {
-      "requestid": "eb139c2d-8c39-400d-8bf6-5bc118e8cb1e",
-      "created": "2022-06-06T16:19:23.273Z",
+      "requestid": "0244285f-16ce-431c-90aa-c2243818f99e",
+      "created": "2022-06-07T00:39:55.459Z",
       "delegates": [
         "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
       ],
       "pin": {
-        "cid": "baeaaadjtgazsymrshe4tmmzqg42q",
+        "cid": "baeaaadjrge3cymjrgm2tkmjqgqya",
         "origins": [],
         "meta": {}
       },
@@ -4654,13 +5995,13 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "fca2d731-62bf-40bc-9237-93f9deada697",
-      "created": "2022-06-07T00:28:36.709Z",
+      "requestid": "437750f5-d81f-4eae-8bab-2aee2319d3d4",
+      "created": "2022-06-07T00:40:06.497Z",
       "delegates": [
         "/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5"
       ],
       "pin": {
-        "cid": "baeaaadbvhawdeobrha4tgmjvg4",
+        "cid": "baeaaadbtgyycynrrgu4tmojxgq",
         "origins": [],
         "meta": {}
       },
@@ -4670,13 +6011,13 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "d64cfa4b-c2d9-4f89-9c8a-f578b3120c60",
-      "created": "2022-06-07T00:28:56.862Z",
+      "requestid": "4ccb3b59-e3a8-4016-9c76-d4b83623f69d",
+      "created": "2022-06-07T00:40:15.583Z",
       "delegates": [
         "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
       ],
       "pin": {
-        "cid": "baeaaadbxhawdmnjvgmzdcnrqg4",
+        "cid": "baeaaadjrgm3cynbtgyytsobsguza",
         "origins": [],
         "meta": {}
       },
@@ -4686,16 +6027,16 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "90944ea8-03da-4d4e-ba0c-d0f9b4abb2df",
-      "created": "2022-06-07T00:29:06.979Z",
+      "requestid": "cde274e0-5eaa-4221-9710-8c8c73ba7863",
+      "created": "2022-06-07T00:40:25.757Z",
       "delegates": [
         "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
       ],
       "pin": {
-        "cid": "baeaaadbzgmwdiojuhaztsmbvgi",
+        "cid": "baeaaadjrguysymzwgeydsobygmya",
         "origins": [],
         "meta": {},
-        "name": "c2a69836-e062-4a9a-b964-8274a6f52199"
+        "name": "8e627057-6cd3-418d-9e5f-8e5cd564bd60"
       },
       "info": {
         "pinata_pinjob_status": "invalid_object"
@@ -4703,13 +6044,190 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "64d9b5dc-2bdc-42dc-a00e-01b8de4d1643",
-      "created": "2022-06-07T00:29:24.588Z",
+      "requestid": "936573af-eb88-4e7c-bdc2-65147dc6c519",
+      "created": "2022-06-07T00:40:26.721Z",
+      "delegates": [
+        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+      ],
+      "pin": {
+        "cid": "baeaaadjthaycynbtguzdqnjugi4a",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "8c87440f-48f1-4a86-a607-a24c831c5348",
+      "created": "2022-06-07T00:40:36.924Z",
+      "delegates": [
+        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
+      ],
+      "pin": {
+        "cid": "baeaaadjthe2symzrgm4tgmzug4ya",
+        "origins": [],
+        "meta": {},
+        "name": "e399f357-a7a1-431d-b35e-65afa35d31fe"
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "06192ef5-9060-4683-b8bd-2a1a591bd639",
+      "created": "2022-06-07T00:40:50.860Z",
+      "delegates": [
+        "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
+      ],
+      "pin": {
+        "cid": "baeaaadjrg4ysynjzgaydcmbsgizq",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "b0678c51-52d5-414d-bc6e-a0aa5bffda13",
+      "created": "2022-06-07T00:40:55.853Z",
+      "delegates": [
+        "/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5"
+      ],
+      "pin": {
+        "cid": "baeaaadjrg4ysynjzgeydanrvgqya",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "9a0e581a-1b57-4cf1-8538-0abf7d482a1b",
+      "created": "2022-06-07T00:41:00.851Z",
+      "delegates": [
+        "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
+      ],
+      "pin": {
+        "cid": "baeaaadjrg4ysynjzgi2dsmbwgy2q",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "e176b133-43f8-481f-860b-45c02a003736",
+      "created": "2022-06-07T00:41:02.123Z",
+      "delegates": [
+        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+      ],
+      "pin": {
+        "cid": "baeaaadjuge2synzrgy4tenjuguya",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "a059d020-9520-4245-ba8f-29aed0ecfe89",
+      "created": "2022-06-07T00:41:05.878Z",
+      "delegates": [
+        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+      ],
+      "pin": {
+        "cid": "baeaaadjrg4ysynjzgmydgnbrg42q",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "6c1fda6d-bf66-4436-986d-ee89aecfdd67",
+      "created": "2022-06-07T00:41:07.143Z",
+      "delegates": [
+        "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
+      ],
+      "pin": {
+        "cid": "baeaaadjuge2synzrha2dmobqgq4q",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "f6c7a3d1-d930-4ea8-b662-bdead756ce30",
+      "created": "2022-06-07T00:41:10.892Z",
+      "delegates": [
+        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
+      ],
+      "pin": {
+        "cid": "baeaaadjrg4ysynjzgm3tsnbyha4a",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "b7d0596c-2049-410d-9644-7cf7ff5dc0e9",
+      "created": "2022-06-07T00:41:12.174Z",
+      "delegates": [
+        "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
+      ],
+      "pin": {
+        "cid": "baeaaadjuge2synzsgaytaobsgq4q",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "22f3d40e-89f2-4a84-b77b-73774e33a18f",
+      "created": "2022-06-07T00:41:15.875Z",
+      "delegates": [
+        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+      ],
+      "pin": {
+        "cid": "baeaaadjrg4ysynjzgqztkmjthe4a",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "f97ca855-3c76-4dfa-89eb-8915869271d6",
+      "created": "2022-06-07T00:41:17.146Z",
       "delegates": [
         "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
       ],
       "pin": {
-        "cid": "baeaaadbwgqwdsmbrhe3doobygu",
+        "cid": "baeaaadjuge2synzsga3tonbwgq4q",
         "origins": [],
         "meta": {}
       },
@@ -4719,126 +6237,45 @@ No failures
       "status": "failed"
     },
     {
-      "requestid": "a4a9009b-02d4-49e7-825f-f49d8c633b88",
-      "created": "2022-06-07T00:29:32.086Z",
-      "delegates": [
-        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgezsynzsgiztknbqgi3a",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "c9abd787-129e-4092-9d86-2690c067cfea",
-      "created": "2022-06-07T00:29:37.087Z",
-      "delegates": [
-        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgezsynzsgm2dmmrugiya",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "15bdb5cb-4316-47cb-abfb-8b880cc5cb5f",
-      "created": "2022-06-07T00:29:42.114Z",
-      "delegates": [
-        "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgezsynzsguytinjrga4q",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "194e5ed3-1cb3-4c57-923b-e8d3ac8b2aca",
-      "created": "2022-06-07T00:29:44.957Z",
-      "delegates": [
-        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
-      ],
-      "pin": {
-        "cid": "baeaaadbyguwdimjvgm4dmnzzgm",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "ef3c66a8-00f3-4025-a8a3-ace4aede5927",
-      "created": "2022-06-07T00:29:47.121Z",
-      "delegates": [
-        "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgezsynzsgu4danbvga2q",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "9726ae9a-ddb1-47ab-a9d9-d5be4af5bfcd",
-      "created": "2022-06-07T00:29:52.091Z",
-      "delegates": [
-        "/ip4/64.227.1.134/tcp/4001/p2p/Qme6vMrQ2itiRjGiLeMK7yZbbSABw1eWaTo4aMhrCeYwPX"
-      ],
-      "pin": {
-        "cid": "baeaaadjrgezsynzsgy2tkmjygayq",
-        "origins": [],
-        "meta": {}
-      },
-      "info": {
-        "pinata_pinjob_status": "invalid_object"
-      },
-      "status": "failed"
-    },
-    {
-      "requestid": "6176d72a-ae34-4f20-89f6-ec48f809ee3f",
-      "created": "2022-06-07T00:29:55.320Z",
+      "requestid": "aae3f5c4-a683-4424-970e-bc9d9609e7b0",
+      "created": "2022-06-07T00:41:20.888Z",
       "delegates": [
         "/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5"
       ],
       "pin": {
-        "cid": "baeaaadjrgaycymzsgu4doojvga2a",
+        "cid": "baeaaadjrg4ysynjzgq4dknjsga3a",
         "origins": [],
-        "meta": {},
-        "name": "d673978d-bced-4da1-bfd5-a952754b1ce1"
+        "meta": {}
       },
       "info": {
-        "pinata_pinjob_status": "invalid_object"
+        "pinata_pinjob_status": "prechecking"
       },
-      "status": "failed"
+      "status": "queued"
     },
     {
-      "requestid": "0a503ac1-7182-4303-82ca-3e2085358828",
-      "created": "2022-06-07T00:29:57.131Z",
+      "requestid": "6e70d05d-8341-4386-8bc4-03a15603d70e",
+      "created": "2022-06-07T00:41:22.159Z",
+      "delegates": [
+        "/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5"
+      ],
+      "pin": {
+        "cid": "baeaaadjuge2synzsge3temjzgq4a",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "prechecking"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "29cef023-7fe2-4496-8a49-e258d84c4e8f",
+      "created": "2022-06-07T00:41:25.884Z",
       "delegates": [
         "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
       ],
       "pin": {
-        "cid": "baeaaadjrgezsynzsg4ytinzqhe3q",
+        "cid": "baeaaadjrg4ysynjzgu2damrqge3a",
         "origins": [],
         "meta": {}
       },
@@ -4846,6 +6283,54 @@ No failures
         "pinata_pinjob_status": "invalid_object"
       },
       "status": "failed"
+    },
+    {
+      "requestid": "d482f6c0-60ca-4989-b7ac-b09c08880e9c",
+      "created": "2022-06-07T00:41:27.158Z",
+      "delegates": [
+        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+      ],
+      "pin": {
+        "cid": "baeaaadjuge2synzsgi2temrygq4a",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "70131fac-e6f2-4d5d-bf0c-ee3d235995fe",
+      "created": "2022-06-07T00:41:30.886Z",
+      "delegates": [
+        "/ip4/137.184.96.13/tcp/4001/p2p/Qmc2461Xg9cRQVEXL9kPpK7P5e6vhiyz1HQz2nfdsfftPf"
+      ],
+      "pin": {
+        "cid": "baeaaadjrg4ysynjzgyydemrugi3a",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "invalid_object"
+      },
+      "status": "failed"
+    },
+    {
+      "requestid": "860de59a-edac-490a-9465-7aca9e37de2a",
+      "created": "2022-06-07T00:41:32.159Z",
+      "delegates": [
+        "/ip4/142.93.121.202/tcp/4001/p2p/QmSe5Prj4zF2qfd2yQUXGgRcN7LUrxfRZd7AeKJ58kZvb5"
+      ],
+      "pin": {
+        "cid": "baeaaadjuge2synzsgmydqmjrgq4a",
+        "origins": [],
+        "meta": {}
+      },
+      "info": {
+        "pinata_pinjob_status": "prechecking"
+      },
+      "status": "queued"
     }
   ]
 }
