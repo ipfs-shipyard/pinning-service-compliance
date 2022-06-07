@@ -153,3 +153,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: false
           MESSAGE: "Update published reports with changes from {sha} with message:\n{msg}"
+          SKIP_EMPTY_COMMITS: false
