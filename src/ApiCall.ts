@@ -16,6 +16,7 @@ import { Icons } from './utils/constants.js'
 import { globalReport } from './utils/report.js'
 import { isError } from './guards/isError.js'
 import { getTextAndJson } from './utils/fetchSafe/getTextAndJson.js'
+import { isResponse } from './guards/isResponse.js'
 
 interface ApiCallOptions<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes> {
   pair: ServiceAndTokenPair
@@ -115,12 +116,19 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
         // eslint-disable-next-line @typescript-eslint/return-await
         return await fn(this.client)
       } catch (err) {
-        const error = isError(err) ? err : new Error(err as string)
+        let error: Error
+        if (isResponse(err)) {
+          error = new Error('Invalid response caused unexpected error in pinning-service-client')
+        } else if (isError(err)) {
+          error = err
+        } else {
+          error = new Error(err as string)
+        }
         this.errors.push({
           title: 'Error running primary ApiCall fn',
           error
         })
-        throw err
+        throw error
       }
     }).then((result) => {
       this.result = result
