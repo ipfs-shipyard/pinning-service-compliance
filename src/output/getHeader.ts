@@ -1,4 +1,5 @@
 import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
+import { Icons } from '../utils/constants.js'
 import { getHostnameFromUrl } from '../utils/getHostnameFromUrl.js'
 import { gitHash } from '../utils/gitHash.js'
 import { logger } from '../utils/logs.js'
@@ -39,9 +40,9 @@ const getHeader = async <T extends PinsApiResponseTypes>(details: Array<Required
     const titleLink = useMarkdownLinks ? linkToHeading(title, complianceCheckHeader({ title, successful })) : title
     if (successful) {
       successes++
-      return `✓ ${titleLink}`
+      return `${Icons.SUCCESS} ${titleLink}`
     }
-    return `✘ ${titleLink}`
+    return `${Icons.FAILURE} ${titleLink}`
   })
 
   const reportHistory = linkToGithubRepo('Report History', `commits/gh-pages/${hostname}.md`)

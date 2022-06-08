@@ -13,7 +13,9 @@
  */
 const linkToHeading = (text: string, headerText = text) => {
   const link = headerText
-    .replace(/['=()/\\:,✓✘]/g, '') // remove invalid characters first
+    .replace(/['=()/\\:,]/g, '') // remove invalid characters first
+    .replace(/[🟢]/gu, '') // remove invalid characters first
+    .replace(/[❌]/gu, '') // remove invalid characters first
     .replace(/[^a-zA-Z0-9]/g, '-') // replace any remaining non-alphanumeric characters with hyphens
     .toLowerCase()
 

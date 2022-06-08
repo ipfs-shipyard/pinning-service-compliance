@@ -20,9 +20,9 @@ const publishedReportsUrl = 'https://ipfs-shipyard.github.io/pinning-service-com
 const sourceRepoUrl = 'https://github.com/ipfs-shipyard/pinning-service-compliance'
 
 enum Icons {
-  SUCCESS = '✓',
-  FAILURE = '✘',
-  ERROR = '⚠'
+  SUCCESS = '🟢',
+  FAILURE = '❌',
+  ERROR = '⚠️'
 }
 
 export {
