@@ -48,11 +48,11 @@ ${stringifyHeaders(request.headers)}
 ${request.body}
 \`\`\`
 #### Response data from ${url}
-\`\`\`
+\`\`\`json
 ${inspect(response.json, { depth: 4 })}
 \`\`\`
 #### Response data after being parsed by RemotePinningServiceClient
-\`\`\`
+\`\`\`json
 ${inspect(clientParsedResult, { depth: 4 })}
 \`\`\`
 #### Response - ${response.statusText} (${response.status})
