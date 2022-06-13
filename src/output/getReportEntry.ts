@@ -1,6 +1,3 @@
-
-import { inspect } from 'util'
-
 import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 import { stringifyHeaders } from '../utils/stringifyHeaders.js'
 import { complianceCheckHeader } from './complianceCheckHeader.js'
@@ -43,11 +40,11 @@ ${request.body}
 \`\`\`
 #### Response data from ${url}
 \`\`\`json
-${inspect(response.json, { depth: 4 })}
+${JSON.stringify(response.json, null, 2)}
 \`\`\`
 #### Response data after being parsed by RemotePinningServiceClient
 \`\`\`json
-${inspect(clientParsedResult, { depth: 4 })}
+${JSON.stringify(clientParsedResult, null, 2)}
 \`\`\`
 #### Response - ${response.statusText} (${response.status})
 ##### Headers
