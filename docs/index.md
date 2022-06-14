@@ -1,20 +1,33 @@
-# Pinning Service Compliance
+# Pinning Service Compliance Reports
 
-## What is Pinning Service Compliance?
+## Latest repots
 
-It’s a test suite to help our pinning service providers, and ipfs implementers who use those providers, see which services are correctly implementing the pinning services spec. Our primary goal is to ensure that all of the pinning service providers are consistent, so that implementers can depend on the functionality they expect.
-
-The Pinning Service Compliance project originated from https://github.com/ipfs/pinning-services-api-spec/issues/64, so you can read more details and discussion there.
-
-## Latest static reports
+Periodically tested:
 
 * [Estuary](./api.estuary.tech.md)
 * [Pinata](./api.pinata.cloud.md)
 * [web3.storage](./api.web3.storage.md)
 * [nft.storage](./nft.storage.md)
 
-## Run the compliance checker against a different service
+Want to add your service to the list? [Open an issue](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/new).
+
+
+## About 
+
+### What is Pinning Service Compliance?
+
+It’s a test suite to help our pinning service providers, and IPFS implementers who use those providers, see which services are correctly implementing the [IPFS Pinning Service API Spec](https://ipfs.github.io/pinning-services-api-spec/).  Our primary goal is to ensure that all of the pinning service providers are consistent, and users can depend on the functionality they expect.
+
+The Pinning Service Compliance project originated from [pinning-services-api-spec/issues/64](https://github.com/ipfs/pinning-services-api-spec/issues/64).
+
+### How to run the compliance checker against my own pinning service?
+
+[pinning-service-compliance](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-compliance) package is available on NPM:
 
 ```bash
 npx -p @ipfs-shipyard/pinning-service-compliance -- pinning-service-compliance -s <pinning_service_endpoint> <auth_token>
 ```
+
+### Bugs? Suggestions?
+
+Sources and issues: [ipfs-shipyard/pinning-service-compliance](https://github.com/ipfs-shipyard/pinning-service-compliance)
