@@ -1,3 +1,44 @@
+## 1.0.0 (2022-06-14)
+
+
+### Features
+
+* add npm bin to devcontainer PATH ([365c142](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/365c142216d3ead0c60cfb8c286c733ebc8cdc6e))
+* auto-update github actions with dependabot ([#43](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/43)) ([87f7926](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/87f7926244e260da9c5ed052ab70e8768871f1f9))
+* compliance check infrastructure ([7aa5663](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/7aa566376616e4a3a1c423ac8cc7ab8cac31502d))
+* Export esm module ([#41](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/41)) ([acaeac6](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/acaeac655eea7267fbec216d59d1d161e5d41b7c))
+* implement all compliance checks ([#17](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/17)) ([1223831](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/1223831e366a8e357d3cad424b523694d770fe1a)), closes [#5](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/5) [#4](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/4) [#6](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/6) [#7](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/7) [#8](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/8) [#28](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/28) [#25](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/25)
+* lplaceholder checks run via listr ([bbb1f81](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/bbb1f81009b6952b76c4719299fa878bd5a8acbb))
+* Publish static reports via github pages ([#68](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/68)) ([5a6a7f5](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/5a6a7f58bc83c849076f015dbed1878afb42c0d8)), closes [#78](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/78) [#76](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/76) [#77](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/77) [#77](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/77)
+
+
+### Bug Fixes
+
+* CI release succeeds ([#90](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/90)) ([810d4a2](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/810d4a28e99e608989d0cd43dda8e9622ea92714))
+* Compliance check sum is consistent for all services ([#54](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/54)) ([ace2b57](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/ace2b5771e86fe76ee44119011b202ddd2a8dc91)), closes [#55](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/55)
+* devcontainer sees pinning-service-client ([c7a6dbb](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/c7a6dbb78a0c0edfb4600bebf895643cc7abec20))
+
+
+### Trivial Changes
+
+* **deps-dev:** bump @types/node from 17.0.25 to 17.0.34 ([#49](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/49)) ([a2a5d13](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/a2a5d136f34ac20ea0f43a49d2a7f37dcd7939f1))
+* **deps-dev:** bump @types/node from 17.0.35 to 17.0.41 ([#79](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/79)) ([db8a6f7](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/db8a6f7962f63109ed3cbe24a95e145a89c360c2))
+* **deps-dev:** bump aegir from 37.0.15 to 37.2.0 ([#86](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/86)) ([df4035f](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/df4035f30732fba6eee4cf8a12a6f7c9a5e31dcc))
+* **deps-dev:** bump ipfs-core-types from 0.10.3 to 0.11.0 ([#64](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/64)) ([e623ad3](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/e623ad3bb986e649f7796b5e828b35d487cf5dfb))
+* **deps-dev:** bump ts-node from 10.7.0 to 10.8.1 ([#75](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/75)) ([ff48f3b](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/ff48f3b4b2d77d6fd95590b87e692b1095e689cd))
+* **deps:** bump actions/checkout from 2 to 3 ([#46](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/46)) ([8fbbcd8](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/8fbbcd8da415daf532618817df9a4f7f239e9edb))
+* **deps:** bump actions/setup-node from 2 to 3 ([#48](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/48)) ([ee57c59](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/ee57c59e63b2b78f45ceb3a94cdd455c8ac13d4c))
+* **deps:** bump github/codeql-action from 1 to 2 ([#47](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/47)) ([1dd488d](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/1dd488db040ff8c91dba42ae4ab82f4fcf9227d0))
+* **deps:** bump go-ipfs from 0.12.2 to 0.13.0 ([#80](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/80)) ([baaaa8c](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/baaaa8c3a579b719a5fe2c714d735bbe67e0ba80))
+* **deps:** bump ipfsd-ctl from 10.0.6 to 11.0.1 ([#58](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/58)) ([45771db](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/45771dbcdd216bce91b4f4175180087f16ff3bf7))
+* **deps:** bump lewagon/wait-on-check-action from 0.2 to 1.1.1 ([#44](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/44)) ([9c8f5c0](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/9c8f5c05f3ba5a1abd4e68e1eccdf6ea400ac640))
+* **deps:** bump node-fetch from 3.2.4 to 3.2.6 ([#81](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/81)) ([5bcb760](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/5bcb76009fa699f4f7f577700be0e750466421c3))
+* **deps:** bump pascalgn/automerge-action from 0.13.1 to 0.15.3 ([#45](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/45)) ([65c19dc](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/65c19dce16057bb83cdae82623e3bbe8329d39aa))
+* getting started instructions ([b7ff148](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/b7ff148475301e61551416eacad30fccf9516260))
+* ignore .envrc ([54e5aae](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/54e5aaea5a6ef3564bb7fa3e8a3b6e5e5df59618))
+* static report landing page provides context ([#87](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/87)) ([12fc841](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/12fc8415ffec9d4f7d047df31f556e8bd963dd6d))
+* use gitignore.io ([e81ebd9](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/e81ebd94a0364912d4b128f339ff294783485984))
+
 ## [0.0.3](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v0.0.2...v0.0.3) (2022-04-25)
 
 
@@ -36,6 +77,3 @@
 * lplaceholder checks run via listr ([bbb1f81](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/bbb1f81009b6952b76c4719299fa878bd5a8acbb))
 * output reports to markdown files ([a0343c1](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/a0343c1eb6c53bf10cb7fe6305b6db9a965645c0))
 * page publish action uses matrix strategy ([e4ad6c8](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/e4ad6c8825d924a8930ea92fffa4b0c8bf34c040))
-
-
-
