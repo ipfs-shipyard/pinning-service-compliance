@@ -9,7 +9,13 @@ const handleLargeRequests = async () => await sleep(TIMEOUT_SECONDS * 1000).then
 const getText = async <T extends PinsApiResponseTypes>(response: ApiCall<T>['response']): Promise<string> => {
   const actualTextPromise = new Promise((resolve, reject) => {
     response.clone().text().then((result) => {
-      resolve(result)
+      try {
+        const obj = JSON.parse(result)
+        const text = JSON.stringify(obj, null, 2)
+        resolve(text)
+      } catch {
+        resolve(result)
+      }
     }, (error) => {
       reject(error)
     })

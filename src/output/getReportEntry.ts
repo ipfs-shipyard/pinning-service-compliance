@@ -1,40 +1,37 @@
-
-import { inspect } from 'util'
-
 import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
-import { Icons } from '../utils/constants.js'
 import { stringifyHeaders } from '../utils/stringifyHeaders.js'
+import { complianceCheckHeader } from './complianceCheckHeader.js'
+import { getErrorsMarkdown } from './getErrorsMarkdown.js'
 import { getExpectationsMarkdown } from './getExpectationsMarkdown.js'
 import { joiValidationAsMarkdown } from './joiValidationAsMarkdown.js'
 
 const getReportEntry = <T extends PinsApiResponseTypes>(details: ComplianceCheckDetails<T>): string => {
-  const { request, response, title, url, method, validationResult, result: clientParsedResult } = details
-
-  const reportEntry = `## ${title} - ${details.successful ? `${Icons.SUCCESS} SUCCESS` : `${Icons.FAILURE} FAILED`}
+  const { request, response, title, url, method, validationResult, result: clientParsedResult, successful, errors } = details
+  const joiValidationMarkdown = joiValidationAsMarkdown(validationResult)
+  const reportEntry = `## ${complianceCheckHeader({ title, successful })}
 
 ${getExpectationsMarkdown(details)}
 
-${details.errors.map((error) => {
-  let errorOutput = ''
-  if (error.name != null && error.message != null) {
-    errorOutput = `* ${error.name} - ${error.message}`
-    if (error.stack != null) {
-      errorOutput += `
-  * ${error.stack}`
-    }
-  } else {
-    errorOutput = `* ${inspect(error)}`
-  }
-  return errorOutput
-}).join('\n')}
+${
+  errors.length > 0
+  ? `### Errors during run
+${getErrorsMarkdown(errors)}`
+  : ''
+}
 
-#### Joi validation failures
-${joiValidationAsMarkdown(validationResult)}
-
+${
+  joiValidationMarkdown !== 'No failures'
+  ? `#### Response object doesn't match expected schema:
+${joiValidationMarkdown}
+  `
+  : ''
+}
 ### Details
 
-#### Request - ${method}: ${url}
-
+#### Request
+\`\`\`
+${method} ${url}
+\`\`\`
 ##### Headers
 \`\`\`json
 ${stringifyHeaders(request.headers)}
@@ -43,15 +40,11 @@ ${stringifyHeaders(request.headers)}
 \`\`\`json
 ${request.body}
 \`\`\`
-#### Response data from ${url}
+
+#### Response
 \`\`\`
-${inspect(response.json, { depth: 4 })}
+${response.status} ${response.statusText}
 \`\`\`
-#### Response data after being parsed by RemotePinningServiceClient
-\`\`\`
-${inspect(clientParsedResult, { depth: 4 })}
-\`\`\`
-#### Response - ${response.statusText} (${response.status})
 ##### Headers
 \`\`\`json
 ${stringifyHeaders(response.headers)}
@@ -59,6 +52,15 @@ ${stringifyHeaders(response.headers)}
 ##### Body
 \`\`\`json
 ${response.body}
+\`\`\`
+
+##### Body (as JSON)
+\`\`\`json
+${JSON.stringify(response.json, null, 2)}
+\`\`\`
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+\`\`\`json
+${JSON.stringify(clientParsedResult, null, 2)}
 \`\`\`
 `
 

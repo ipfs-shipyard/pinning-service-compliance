@@ -112,11 +112,15 @@ const addApiCallToReport = async <T extends PinsApiResponseTypes>(apiCall: ApiCa
 const createReport = async <T extends PinsApiResponseTypes>(hostname: string, details: Array<RequiredHeaderProps<T>>) => {
   const reportFilePath = getReportFilePath(hostname)
 
-  const header = getHeader(details)
+  // Write console output first
+  const noMarkdownLinksHeader = await getHeader(details, { markdownLinks: false }) // Don't give npx users cluttered output.
+  const consoleHeader = `${noMarkdownLinksHeader.replace(/#+ /gm, '')}\nSee the full report at ${reportFilePath}`
+  logger.info(consoleHeader, { messageOnly: true })
+
+  // write file content
+  const header = await getHeader(details)
   const fileContents = await readFile(reportFilePath, 'utf8')
   await writeFile(reportFilePath, header + fileContents)
-  const consoleHeader = `${header.replace(/#+ /gm, '')}\nSee the full report at ${reportFilePath}`
-  logger.info(consoleHeader, { messageOnly: true })
 }
 
 const writeHeaders = async () => {

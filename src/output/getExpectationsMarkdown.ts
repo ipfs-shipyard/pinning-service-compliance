@@ -1,4 +1,5 @@
 import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
+import { Icons } from '../utils/constants.js'
 
 const getExpectationsMarkdown = <T extends PinsApiResponseTypes>(details: ComplianceCheckDetails<T>): string => {
   let checks = 0
@@ -7,14 +8,14 @@ const getExpectationsMarkdown = <T extends PinsApiResponseTypes>(details: Compli
     checks++
     if (success) {
       successes++
-      return `✓ ${title} (success)`
+      return `${Icons.SUCCESS} ${title} (success)`
     }
-    return `✘ ${title} (failure)`
+    return `${Icons.FAILURE} ${title} (failure)`
   })
 
   return `### Expectations (${successes}/${checks} successful)
 
-  ${lineItems.join('\n  ')}
+  ${lineItems.join('\n\n  ')}
 `
 }
 
