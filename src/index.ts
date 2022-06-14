@@ -46,14 +46,10 @@ const main = async () => {
 }
 
 const getUncaughtListener = (type: 'unhandledRejection' | 'uncaughtException' | 'uncaughtExceptionMonitor'): NodeJS.UncaughtExceptionListener => (err, origin) => {
-  logger.error(type, { error: err })
+  logger.error(type, err, origin)
   writeSync(
     process.stderr.fd,
-    `Caught exception: ${JSON.stringify(err, null, 2)}\n`
-  )
-  writeSync(
-    process.stdout.fd,
-    `Caught exception: ${JSON.stringify(err, null, 2)}\n`
+    `Caught exception: ${JSON.stringify({ err, origin }, null, 2)}\n`
   )
 }
 process.on('uncaughtExceptionMonitor', getUncaughtListener('uncaughtExceptionMonitor'))

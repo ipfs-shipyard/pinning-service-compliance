@@ -16,10 +16,13 @@ const downloadDir = resolve(_dirname, '..', '..', 'downloaded')
 const generatedDir = resolve(_dirname, '..', '..', 'generated')
 const docsDir = resolve(_dirname, '..', '..', 'docs')
 
+const publishedReportsUrl = 'https://ipfs-shipyard.github.io/pinning-service-compliance'
+const sourceRepoUrl = 'https://github.com/ipfs-shipyard/pinning-service-compliance'
+
 enum Icons {
-  SUCCESS = '✓',
-  FAILURE = '✘',
-  ERROR = '⚠'
+  SUCCESS = '🟢',
+  FAILURE = '❌',
+  ERROR = '⚠️'
 }
 
 export {
@@ -30,5 +33,7 @@ export {
   specFile,
   specLocation,
   specVersion,
-  Icons
+  Icons,
+  publishedReportsUrl,
+  sourceRepoUrl
 }

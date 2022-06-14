@@ -94,6 +94,8 @@ interface ComplianceCheckResponse<T extends PinsApiResponseTypes> {
   body: string
 }
 
+type Revision = string
+
 interface ComplianceCheckDetails<T extends PinsApiResponseTypes> {
   pair: ServiceAndTokenPair
   errors: Error[]
@@ -127,5 +129,6 @@ export type {
   PinningSpecJoiSchema,
   ServiceAndTokenPair,
   ImplementableMethods,
-  PinsApiResponseTypes
+  PinsApiResponseTypes,
+  Revision
 }
