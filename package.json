@@ -117,13 +117,13 @@
     ]
   },
   "scripts": {
-    "clean": "rimraf downloaded/*.yaml generated dist node_modules",
+    "clean": "rimraf downloaded/*.yaml generated dist",
     "test": "aegir lint",
     "build": "aegir build",
     "start": "node dist/src/index.js",
     "dev-start": "NODE_OPTIONS='--unhandled-rejections=strict --trace-atomics-wait --trace-deprecation --trace-exit --trace-sigint --trace-uncaught --trace-warnings' ts-node-esm --esm -T --preferTsExts --logError src/index.ts",
-    "release": "npm run build && aegir release",
-    "rebuild": "npm run clean && npm install && npm run build"
+    "release": "aegir release",
+    "rebuild": "npm run clean && rimraf node_modules && npm install && npm run build"
   },
   "devDependencies": {
     "@types/git-rev": "^0.2.0",
