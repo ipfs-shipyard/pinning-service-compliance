@@ -28,8 +28,10 @@ ${joiValidationMarkdown}
 }
 ### Details
 
-#### Request - ${method}: ${url}
-
+#### Request
+\`\`\`
+${method} ${url}
+\`\`\`
 ##### Headers
 \`\`\`json
 ${stringifyHeaders(request.headers)}
@@ -38,15 +40,11 @@ ${stringifyHeaders(request.headers)}
 \`\`\`json
 ${request.body}
 \`\`\`
-#### Response data from ${url}
-\`\`\`json
-${JSON.stringify(response.json, null, 2)}
+
+#### Response
 \`\`\`
-#### Response data after being parsed by RemotePinningServiceClient
-\`\`\`json
-${JSON.stringify(clientParsedResult, null, 2)}
+${response.status} ${response.statusText}
 \`\`\`
-#### Response - ${response.statusText} (${response.status})
 ##### Headers
 \`\`\`json
 ${stringifyHeaders(response.headers)}
@@ -54,6 +52,15 @@ ${stringifyHeaders(response.headers)}
 ##### Body
 \`\`\`json
 ${response.body}
+\`\`\`
+
+##### Body (as JSON)
+\`\`\`json
+${JSON.stringify(response.json, null, 2)}
+\`\`\`
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+\`\`\`json
+${JSON.stringify(clientParsedResult, null, 2)}
 \`\`\`
 `
 
