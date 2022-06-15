@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.5...v1.0.6) (2022-06-15)
+
+
+### Bug Fixes
+
+* npx usage succeeds ([#92](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/92)) ([23984c6](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/23984c62e7b26b115cc271fe2bd21f1739a27024))
+
 ## [1.0.5](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.4...v1.0.5) (2022-06-15)
 
 
