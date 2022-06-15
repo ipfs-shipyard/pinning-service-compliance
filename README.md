@@ -7,7 +7,7 @@
 ### Run the compliance checker against a service:
 
 ```bash
-npx -p @ipfs-shipyard/pinning-service-compliance -- pinning-service-compliance -s <pinning_service_endpoint> <auth_token>
+npx @ipfs-shipyard/pinning-service-compliance -s <pinning_service_endpoint> <auth_token>
 ```
 
 ## Development

@@ -28,9 +28,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "bin": {
-    "@ipfs-shipyard/pinning-service-compliance": "./dist/src/index.js"
-  },
+  "bin": "./dist/src/index.js",
   "type": "module",
   "eslintConfig": {
     "extends": "ipfs"

@@ -12,7 +12,7 @@ Periodically tested:
 Want to add your service to the list? [Open an issue](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/new).
 
 
-## About 
+## About
 
 ### What is Pinning Service Compliance?
 
@@ -25,7 +25,7 @@ The Pinning Service Compliance project originated from [pinning-services-api-spe
 [pinning-service-compliance](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-compliance) package is available on NPM:
 
 ```bash
-npx -p @ipfs-shipyard/pinning-service-compliance -- pinning-service-compliance -s <pinning_service_endpoint> <auth_token>
+npx @ipfs-shipyard/pinning-service-compliance -s <pinning_service_endpoint> <auth_token>
 ```
 
 ### Bugs? Suggestions?
