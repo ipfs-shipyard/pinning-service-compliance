@@ -1,9 +1,9 @@
 
 # https://api.estuary.tech/pinning compliance:
 
-Execution Date: 2022-06-15T18:38:48.360Z
+Execution Date: 2022-06-15T18:38:48.916Z
 
-Revision: [634ea64](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/634ea64)
+Revision: [4bcc5c6](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/4bcc5c6)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/api.estuary.tech.md)
 
@@ -13,7 +13,7 @@ Revision: [634ea64](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   🟢 [Request with invalid token](#request-with-invalid-token----success)
 
-  ❌ [Pins post of CID 'baeaaadjsgq4syojyhaztcmjsgm4a'](#pins-post-of-cid-baeaaadjsgq4syojyhaztcmjsgm4a----failed)
+  ❌ [Pins post of CID 'baeaaadbugawdcnjsgyytknzvg4'](#pins-post-of-cid-baeaaadbugawdcnjsgyytknzvg4----failed)
 
   ❌ [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----failed)
 
@@ -21,7 +21,7 @@ Revision: [634ea64](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   ❌ [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----failed)
 
-  🟢 [Can create a pin with name='21dcbee4-895f-4f92-94c0-599e7e0b8406'](#can-create-a-pin-with-name21dcbee4-895f-4f92-94c0-599e7e0b8406----success)
+  🟢 [Can create a pin with name='1b732f6a-f978-493f-a1d1-621f03ff92cd'](#can-create-a-pin-with-name1b732f6a-f978-493f-a1d1-621f03ff92cd----success)
 
   ❌ [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----failed)
 
@@ -69,7 +69,7 @@ GET https://api.estuary.tech/pinning/pins
   "connection": "close",
   "content-length": "40",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:05 GMT",
+  "date": "Wed, 15 Jun 2022 18:38:07 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
 }
@@ -139,7 +139,7 @@ GET https://api.estuary.tech/pinning/pins
   "connection": "close",
   "content-length": "41",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:06 GMT",
+  "date": "Wed, 15 Jun 2022 18:38:08 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
 }
@@ -165,7 +165,7 @@ GET https://api.estuary.tech/pinning/pins
 ```json
 null
 ```
-## Pins post of CID 'baeaaadjsgq4syojyhaztcmjsgm4a' - ❌ FAILED
+## Pins post of CID 'baeaaadbugawdcnjsgyytknzvg4' - ❌ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -200,7 +200,7 @@ POST https://api.estuary.tech/pinning/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgq4syojyhaztcmjsgm4a"}
+{"cid":"baeaaadbugawdcnjsgyytknzvg4"}
 ```
 
 #### Response
@@ -211,9 +211,9 @@ POST https://api.estuary.tech/pinning/pins
 ```json
 {
   "connection": "close",
-  "content-length": "282",
+  "content-length": "280",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:07 GMT",
+  "date": "Wed, 15 Jun 2022 18:38:09 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
 }
@@ -221,11 +221,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body
 ```json
 {
-  "requestid": "31402356",
+  "requestid": "31402358",
   "status": "queued",
-  "created": "2022-06-15T18:38:07.580720198Z",
+  "created": "2022-06-15T18:38:09.164424418Z",
   "pin": {
-    "cid": "baeaaadjsgq4syojyhaztcmjsgm4a",
+    "cid": "baeaaadbugawdcnjsgyytknzvg4",
     "name": "",
     "origins": null,
     "meta": null
@@ -240,11 +240,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "31402356",
+  "requestid": "31402358",
   "status": "queued",
-  "created": "2022-06-15T18:38:07.580720198Z",
+  "created": "2022-06-15T18:38:09.164424418Z",
   "pin": {
-    "cid": "baeaaadjsgq4syojyhaztcmjsgm4a",
+    "cid": "baeaaadbugawdcnjsgyytknzvg4",
     "name": "",
     "origins": null,
     "meta": null
@@ -258,11 +258,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "31402356",
+  "requestid": "31402358",
   "status": "queued",
-  "created": "2022-06-15T18:38:07.580Z",
+  "created": "2022-06-15T18:38:09.164Z",
   "pin": {
-    "cid": "baeaaadjsgq4syojyhaztcmjsgm4a",
+    "cid": "baeaaadbugawdcnjsgyytknzvg4",
     "name": ""
   },
   "delegates": [
@@ -298,7 +298,7 @@ POST https://api.estuary.tech/pinning/pins
 
 #### Request
 ```
-DELETE https://api.estuary.tech/pinning/pins/31402357
+DELETE https://api.estuary.tech/pinning/pins/31402359
 ```
 ##### Headers
 ```json
@@ -320,7 +320,7 @@ DELETE https://api.estuary.tech/pinning/pins/31402357
 {
   "connection": "close",
   "content-length": "0",
-  "date": "Wed, 15 Jun 2022 18:38:09 GMT",
+  "date": "Wed, 15 Jun 2022 18:38:11 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
 }
@@ -381,7 +381,7 @@ POST https://api.estuary.tech/pinning/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbsguysymrtha2tsnbrgu"}
+{"cid":"baeaaadbugewdcobrgaztkmrrgm"}
 ```
 
 #### Response
@@ -392,9 +392,9 @@ POST https://api.estuary.tech/pinning/pins
 ```json
 {
   "connection": "close",
-  "content-length": "279",
+  "content-length": "280",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:08 GMT",
+  "date": "Wed, 15 Jun 2022 18:38:10 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
 }
@@ -402,11 +402,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body
 ```json
 {
-  "requestid": "31402357",
+  "requestid": "31402359",
   "status": "queued",
-  "created": "2022-06-15T18:38:08.58002483Z",
+  "created": "2022-06-15T18:38:10.126568277Z",
   "pin": {
-    "cid": "baeaaadbsguysymrtha2tsnbrgu",
+    "cid": "baeaaadbugewdcobrgaztkmrrgm",
     "name": "",
     "origins": null,
     "meta": null
@@ -421,11 +421,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "31402357",
+  "requestid": "31402359",
   "status": "queued",
-  "created": "2022-06-15T18:38:08.58002483Z",
+  "created": "2022-06-15T18:38:10.126568277Z",
   "pin": {
-    "cid": "baeaaadbsguysymrtha2tsnbrgu",
+    "cid": "baeaaadbugewdcobrgaztkmrrgm",
     "name": "",
     "origins": null,
     "meta": null
@@ -439,11 +439,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "31402357",
+  "requestid": "31402359",
   "status": "queued",
-  "created": "2022-06-15T18:38:08.580Z",
+  "created": "2022-06-15T18:38:10.126Z",
   "pin": {
-    "cid": "baeaaadbsguysymrtha2tsnbrgu",
+    "cid": "baeaaadbugewdcobrgaztkmrrgm",
     "name": ""
   },
   "delegates": [
@@ -465,6 +465,14 @@ POST https://api.estuary.tech/pinning/pins
 
 
 #### Response object doesn't match expected schema:
+
+* "name" is not allowed to be empty
+
+* "origins" must be an array
+
+* "meta" must be an object
+
+* "info" must be an object
 
 * "name" is not allowed to be empty
 
@@ -508,9 +516,9 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 ```json
 {
   "connection": "close",
-  "content-length": "586",
+  "content-length": "868",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:10 GMT",
+  "date": "Wed, 15 Jun 2022 18:38:11 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
 }
@@ -518,8 +526,23 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 ##### Body
 ```json
 {
-  "count": 2,
+  "count": 3,
   "results": [
+    {
+      "requestid": "31402360",
+      "status": "failed",
+      "created": "2022-06-15T18:38:10.814294963Z",
+      "pin": {
+        "cid": "baeaaadjsguzsynbzgmydimjsgy4q",
+        "name": "",
+        "origins": null,
+        "meta": null
+      },
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": null
+    },
     {
       "requestid": "31402358",
       "status": "failed",
@@ -557,8 +580,23 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 ##### Body (as JSON)
 ```json
 {
-  "count": 2,
+  "count": 3,
   "results": [
+    {
+      "requestid": "31402360",
+      "status": "failed",
+      "created": "2022-06-15T18:38:10.814294963Z",
+      "pin": {
+        "cid": "baeaaadjsguzsynbzgmydimjsgy4q",
+        "name": "",
+        "origins": null,
+        "meta": null
+      },
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": null
+    },
     {
       "requestid": "31402358",
       "status": "failed",
@@ -595,7 +633,7 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "count": 2,
+  "count": 3,
   "results": {}
 }
 ```
@@ -613,7 +651,7 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 
 #### Request
 ```
-GET https://api.estuary.tech/pinning/pins/31402360
+GET https://api.estuary.tech/pinning/pins/31402362
 ```
 ##### Headers
 ```json
@@ -634,9 +672,9 @@ GET https://api.estuary.tech/pinning/pins/31402360
 ```json
 {
   "connection": "close",
-  "content-length": "282",
+  "content-length": "280",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:12 GMT",
+  "date": "Wed, 15 Jun 2022 18:38:14 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
 }
@@ -644,11 +682,11 @@ GET https://api.estuary.tech/pinning/pins/31402360
 ##### Body
 ```json
 {
-  "requestid": "31402360",
+  "requestid": "31402362",
   "status": "failed",
-  "created": "2022-06-15T18:38:10.814294963Z",
+  "created": "2022-06-15T18:38:12.388394186Z",
   "pin": {
-    "cid": "baeaaadjsguzsynbzgmydimjsgy4q",
+    "cid": "baeaaadbugmwdimbrhe2dsmzygi",
     "name": "",
     "origins": null,
     "meta": null
@@ -663,11 +701,11 @@ GET https://api.estuary.tech/pinning/pins/31402360
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "31402360",
+  "requestid": "31402362",
   "status": "failed",
-  "created": "2022-06-15T18:38:10.814294963Z",
+  "created": "2022-06-15T18:38:12.388394186Z",
   "pin": {
-    "cid": "baeaaadjsguzsynbzgmydimjsgy4q",
+    "cid": "baeaaadbugmwdimbrhe2dsmzygi",
     "name": "",
     "origins": null,
     "meta": null
@@ -681,11 +719,11 @@ GET https://api.estuary.tech/pinning/pins/31402360
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "31402360",
+  "requestid": "31402362",
   "status": "failed",
-  "created": "2022-06-15T18:38:10.814Z",
+  "created": "2022-06-15T18:38:12.388Z",
   "pin": {
-    "cid": "baeaaadjsguzsynbzgmydimjsgy4q",
+    "cid": "baeaaadbugmwdimbrhe2dsmzygi",
     "name": ""
   },
   "delegates": [
@@ -707,7 +745,7 @@ GET https://api.estuary.tech/pinning/pins/31402360
 
 #### Request
 ```
-GET https://api.estuary.tech/pinning/pins/31402361
+GET https://api.estuary.tech/pinning/pins/31402365
 ```
 ##### Headers
 ```json
@@ -728,9 +766,9 @@ GET https://api.estuary.tech/pinning/pins/31402361
 ```json
 {
   "connection": "close",
-  "content-length": "282",
+  "content-length": "280",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:13 GMT",
+  "date": "Wed, 15 Jun 2022 18:38:14 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
 }
@@ -738,11 +776,11 @@ GET https://api.estuary.tech/pinning/pins/31402361
 ##### Body
 ```json
 {
-  "requestid": "31402361",
+  "requestid": "31402365",
   "status": "failed",
-  "created": "2022-06-15T18:38:11.811183377Z",
+  "created": "2022-06-15T18:38:13.428691711Z",
   "pin": {
-    "cid": "baeaaadjsgu2cymruguytonbtgy2a",
+    "cid": "baeaaadbugqwdgojsheztomrsha",
     "name": "",
     "origins": null,
     "meta": null
@@ -757,11 +795,11 @@ GET https://api.estuary.tech/pinning/pins/31402361
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "31402361",
+  "requestid": "31402365",
   "status": "failed",
-  "created": "2022-06-15T18:38:11.811183377Z",
+  "created": "2022-06-15T18:38:13.428691711Z",
   "pin": {
-    "cid": "baeaaadjsgu2cymruguytonbtgy2a",
+    "cid": "baeaaadbugqwdgojsheztomrsha",
     "name": "",
     "origins": null,
     "meta": null
@@ -775,11 +813,11 @@ GET https://api.estuary.tech/pinning/pins/31402361
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "31402361",
+  "requestid": "31402365",
   "status": "failed",
-  "created": "2022-06-15T18:38:11.811Z",
+  "created": "2022-06-15T18:38:13.428Z",
   "pin": {
-    "cid": "baeaaadjsgu2cymruguytonbtgy2a",
+    "cid": "baeaaadbugqwdgojsheztomrsha",
     "name": ""
   },
   "delegates": [
@@ -787,7 +825,7 @@ GET https://api.estuary.tech/pinning/pins/31402361
   ]
 }
 ```
-## Pin's with requestid '31402360' can have cid 'baeaaadjsguzsynbzgmydimjsgy4q' replaced with 'baeaaadjsgu2cymruguytonbtgy2a' - ❌ FAILED
+## Pin's with requestid '31402362' can have cid 'baeaaadbugmwdimbrhe2dsmzygi' replaced with 'baeaaadbugqwdgojsheztomrsha' - ❌ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -803,7 +841,7 @@ GET https://api.estuary.tech/pinning/pins/31402361
 
 #### Request
 ```
-POST https://api.estuary.tech/pinning/pins/31402360
+POST https://api.estuary.tech/pinning/pins/31402362
 ```
 ##### Headers
 ```json
@@ -814,7 +852,7 @@ POST https://api.estuary.tech/pinning/pins/31402360
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgu2cymruguytonbtgy2a"}
+{"cid":"baeaaadbugqwdgojsheztomrsha"}
 ```
 
 #### Response
@@ -825,9 +863,9 @@ POST https://api.estuary.tech/pinning/pins/31402360
 ```json
 {
   "connection": "close",
-  "content-length": "282",
+  "content-length": "280",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:11 GMT",
+  "date": "Wed, 15 Jun 2022 18:38:13 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
 }
@@ -835,11 +873,11 @@ POST https://api.estuary.tech/pinning/pins/31402360
 ##### Body
 ```json
 {
-  "requestid": "31402361",
+  "requestid": "31402365",
   "status": "queued",
-  "created": "2022-06-15T18:38:11.811183377Z",
+  "created": "2022-06-15T18:38:13.428691711Z",
   "pin": {
-    "cid": "baeaaadjsgu2cymruguytonbtgy2a",
+    "cid": "baeaaadbugqwdgojsheztomrsha",
     "name": "",
     "origins": null,
     "meta": null
@@ -854,11 +892,11 @@ POST https://api.estuary.tech/pinning/pins/31402360
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "31402361",
+  "requestid": "31402365",
   "status": "queued",
-  "created": "2022-06-15T18:38:11.811183377Z",
+  "created": "2022-06-15T18:38:13.428691711Z",
   "pin": {
-    "cid": "baeaaadjsgu2cymruguytonbtgy2a",
+    "cid": "baeaaadbugqwdgojsheztomrsha",
     "name": "",
     "origins": null,
     "meta": null
@@ -872,11 +910,11 @@ POST https://api.estuary.tech/pinning/pins/31402360
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "31402361",
+  "requestid": "31402365",
   "status": "queued",
-  "created": "2022-06-15T18:38:11.811Z",
+  "created": "2022-06-15T18:38:13.428Z",
   "pin": {
-    "cid": "baeaaadjsgu2cymruguytonbtgy2a",
+    "cid": "baeaaadbugqwdgojsheztomrsha",
     "name": ""
   },
   "delegates": [
@@ -890,7 +928,7 @@ POST https://api.estuary.tech/pinning/pins/31402360
 
   🟢 Pin exists (success)
 
-  🟢 Could obtain requestid from new pin (31402360) (success)
+  🟢 Could obtain requestid from new pin (31402362) (success)
 
   🟢 Response is ok (success)
 
@@ -921,7 +959,7 @@ POST https://api.estuary.tech/pinning/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsguzsynbzgmydimjsgy4q"}
+{"cid":"baeaaadbugmwdimbrhe2dsmzygi"}
 ```
 
 #### Response
@@ -932,9 +970,9 @@ POST https://api.estuary.tech/pinning/pins
 ```json
 {
   "connection": "close",
-  "content-length": "282",
+  "content-length": "280",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:10 GMT",
+  "date": "Wed, 15 Jun 2022 18:38:12 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
 }
@@ -942,11 +980,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body
 ```json
 {
-  "requestid": "31402360",
+  "requestid": "31402362",
   "status": "queued",
-  "created": "2022-06-15T18:38:10.814294963Z",
+  "created": "2022-06-15T18:38:12.388394186Z",
   "pin": {
-    "cid": "baeaaadjsguzsynbzgmydimjsgy4q",
+    "cid": "baeaaadbugmwdimbrhe2dsmzygi",
     "name": "",
     "origins": null,
     "meta": null
@@ -961,11 +999,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "31402360",
+  "requestid": "31402362",
   "status": "queued",
-  "created": "2022-06-15T18:38:10.814294963Z",
+  "created": "2022-06-15T18:38:12.388394186Z",
   "pin": {
-    "cid": "baeaaadjsguzsynbzgmydimjsgy4q",
+    "cid": "baeaaadbugmwdimbrhe2dsmzygi",
     "name": "",
     "origins": null,
     "meta": null
@@ -979,11 +1017,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "31402360",
+  "requestid": "31402362",
   "status": "queued",
-  "created": "2022-06-15T18:38:10.814Z",
+  "created": "2022-06-15T18:38:12.388Z",
   "pin": {
-    "cid": "baeaaadjsguzsynbzgmydimjsgy4q",
+    "cid": "baeaaadbugmwdimbrhe2dsmzygi",
     "name": ""
   },
   "delegates": [
@@ -991,7 +1029,7 @@ POST https://api.estuary.tech/pinning/pins
   ]
 }
 ```
-## Can retrieve pin with name '21dcbee4-895f-4f92-94c0-599e7e0b8406' via the 'exact' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '1b732f6a-f978-493f-a1d1-621f03ff92cd' via the 'exact' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1007,7 +1045,7 @@ POST https://api.estuary.tech/pinning/pins
 
 #### Request
 ```
-GET https://api.estuary.tech/pinning/pins?name=21dcbee4-895f-4f92-94c0-599e7e0b8406&match=exact
+GET https://api.estuary.tech/pinning/pins?name=1b732f6a-f978-493f-a1d1-621f03ff92cd&match=exact
 ```
 ##### Headers
 ```json
@@ -1028,171 +1066,7 @@ GET https://api.estuary.tech/pinning/pins?name=21dcbee4-895f-4f92-94c0-599e7e0b8
 ```json
 {
   "connection": "close",
-  "content-length": "342",
-  "content-type": "application/json; charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:14 GMT",
-  "server": "nginx/1.18.0 (Ubuntu)",
-  "vary": "Origin"
-}
-```
-##### Body
-```json
-{
-  "count": 1,
-  "results": [
-    {
-      "requestid": "31402366",
-      "status": "failed",
-      "created": "2022-06-15T18:38:13.798339406Z",
-      "pin": {
-        "cid": "baeaaadjsgu3cynbxg4ztgobvgi4a",
-        "name": "21dcbee4-895f-4f92-94c0-599e7e0b8406",
-        "origins": null,
-        "meta": null
-      },
-      "delegates": [
-        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
-      ],
-      "info": null
-    }
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 1,
-  "results": [
-    {
-      "requestid": "31402366",
-      "status": "failed",
-      "created": "2022-06-15T18:38:13.798339406Z",
-      "pin": {
-        "cid": "baeaaadjsgu3cynbxg4ztgobvgi4a",
-        "name": "21dcbee4-895f-4f92-94c0-599e7e0b8406",
-        "origins": null,
-        "meta": null
-      },
-      "delegates": [
-        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
-      ],
-      "info": null
-    }
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 1,
-  "results": {}
-}
-```
-## Can retrieve pin with name '21DCBEE4-895F-4F92-94C0-599E7E0B8406' via the 'iexact' TextMatchingStrategy - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://api.estuary.tech/pinning/pins?name=21DCBEE4-895F-4F92-94C0-599E7E0B8406&match=iexact
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "connection": "close",
-  "content-length": "25",
-  "content-type": "application/json; charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:14 GMT",
-  "server": "nginx/1.18.0 (Ubuntu)",
-  "vary": "Origin"
-}
-```
-##### Body
-```json
-{
-  "count": 0,
-  "results": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 0,
-  "results": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 0,
-  "results": {}
-}
-```
-## Can retrieve pin with name '895f-4f92-94c0-599' via the 'partial' TextMatchingStrategy - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://api.estuary.tech/pinning/pins?name=895f-4f92-94c0-599&match=partial
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "connection": "close",
-  "content-length": "25",
+  "content-length": "340",
   "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:15 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
@@ -1202,26 +1076,58 @@ GET https://api.estuary.tech/pinning/pins?name=895f-4f92-94c0-599&match=partial
 ##### Body
 ```json
 {
-  "count": 0,
-  "results": []
+  "count": 1,
+  "results": [
+    {
+      "requestid": "31402370",
+      "status": "failed",
+      "created": "2022-06-15T18:38:15.389113873Z",
+      "pin": {
+        "cid": "baeaaadbugywdmmzzgq4dqmbzge",
+        "name": "1b732f6a-f978-493f-a1d1-621f03ff92cd",
+        "origins": null,
+        "meta": null
+      },
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": null
+    }
+  ]
 }
 ```
 
 ##### Body (as JSON)
 ```json
 {
-  "count": 0,
-  "results": []
+  "count": 1,
+  "results": [
+    {
+      "requestid": "31402370",
+      "status": "failed",
+      "created": "2022-06-15T18:38:15.389113873Z",
+      "pin": {
+        "cid": "baeaaadbugywdmmzzgq4dqmbzge",
+        "name": "1b732f6a-f978-493f-a1d1-621f03ff92cd",
+        "origins": null,
+        "meta": null
+      },
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": null
+    }
+  ]
 }
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "count": 0,
+  "count": 1,
   "results": {}
 }
 ```
-## Can retrieve pin with name '895F-4F92-94C0-599' via the 'ipartial' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '1B732F6A-F978-493F-A1D1-621F03FF92CD' via the 'iexact' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1237,7 +1143,7 @@ GET https://api.estuary.tech/pinning/pins?name=895f-4f92-94c0-599&match=partial
 
 #### Request
 ```
-GET https://api.estuary.tech/pinning/pins?name=895F-4F92-94C0-599&match=ipartial
+GET https://api.estuary.tech/pinning/pins?name=1B732F6A-F978-493F-A1D1-621F03FF92CD&match=iexact
 ```
 ##### Headers
 ```json
@@ -1287,7 +1193,139 @@ GET https://api.estuary.tech/pinning/pins?name=895F-4F92-94C0-599&match=ipartial
   "results": {}
 }
 ```
-## Can create a pin with name='21dcbee4-895f-4f92-94c0-599e7e0b8406' - 🟢 SUCCESS
+## Can retrieve pin with name 'f978-493f-a1d1-621' via the 'partial' TextMatchingStrategy - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+
+
+
+
+### Details
+
+#### Request
+```
+GET https://api.estuary.tech/pinning/pins?name=f978-493f-a1d1-621&match=partial
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "connection": "close",
+  "content-length": "25",
+  "content-type": "application/json; charset=UTF-8",
+  "date": "Wed, 15 Jun 2022 18:38:17 GMT",
+  "server": "nginx/1.18.0 (Ubuntu)",
+  "vary": "Origin"
+}
+```
+##### Body
+```json
+{
+  "count": 0,
+  "results": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "count": 0,
+  "results": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "count": 0,
+  "results": {}
+}
+```
+## Can retrieve pin with name 'F978-493F-A1D1-621' via the 'ipartial' TextMatchingStrategy - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+
+
+
+
+### Details
+
+#### Request
+```
+GET https://api.estuary.tech/pinning/pins?name=F978-493F-A1D1-621&match=ipartial
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "connection": "close",
+  "content-length": "25",
+  "content-type": "application/json; charset=UTF-8",
+  "date": "Wed, 15 Jun 2022 18:38:18 GMT",
+  "server": "nginx/1.18.0 (Ubuntu)",
+  "vary": "Origin"
+}
+```
+##### Body
+```json
+{
+  "count": 0,
+  "results": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "count": 0,
+  "results": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "count": 0,
+  "results": {}
+}
+```
+## Can create a pin with name='1b732f6a-f978-493f-a1d1-621f03ff92cd' - 🟢 SUCCESS
 
 ### Expectations (11/11 successful)
 
@@ -1332,7 +1370,7 @@ POST https://api.estuary.tech/pinning/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgu3cynbxg4ztgobvgi4a","name":"21dcbee4-895f-4f92-94c0-599e7e0b8406"}
+{"cid":"baeaaadbugywdmmzzgq4dqmbzge","name":"1b732f6a-f978-493f-a1d1-621f03ff92cd"}
 ```
 
 #### Response
@@ -1343,9 +1381,9 @@ POST https://api.estuary.tech/pinning/pins
 ```json
 {
   "connection": "close",
-  "content-length": "318",
+  "content-length": "316",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:13 GMT",
+  "date": "Wed, 15 Jun 2022 18:38:15 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
 }
@@ -1353,12 +1391,12 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body
 ```json
 {
-  "requestid": "31402366",
+  "requestid": "31402370",
   "status": "queued",
-  "created": "2022-06-15T18:38:13.798339406Z",
+  "created": "2022-06-15T18:38:15.389113873Z",
   "pin": {
-    "cid": "baeaaadjsgu3cynbxg4ztgobvgi4a",
-    "name": "21dcbee4-895f-4f92-94c0-599e7e0b8406",
+    "cid": "baeaaadbugywdmmzzgq4dqmbzge",
+    "name": "1b732f6a-f978-493f-a1d1-621f03ff92cd",
     "origins": null,
     "meta": null
   },
@@ -1372,12 +1410,12 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "31402366",
+  "requestid": "31402370",
   "status": "queued",
-  "created": "2022-06-15T18:38:13.798339406Z",
+  "created": "2022-06-15T18:38:15.389113873Z",
   "pin": {
-    "cid": "baeaaadjsgu3cynbxg4ztgobvgi4a",
-    "name": "21dcbee4-895f-4f92-94c0-599e7e0b8406",
+    "cid": "baeaaadbugywdmmzzgq4dqmbzge",
+    "name": "1b732f6a-f978-493f-a1d1-621f03ff92cd",
     "origins": null,
     "meta": null
   },
@@ -1390,19 +1428,19 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "31402366",
+  "requestid": "31402370",
   "status": "queued",
-  "created": "2022-06-15T18:38:13.798Z",
+  "created": "2022-06-15T18:38:15.389Z",
   "pin": {
-    "cid": "baeaaadjsgu3cynbxg4ztgobvgi4a",
-    "name": "21dcbee4-895f-4f92-94c0-599e7e0b8406"
+    "cid": "baeaaadbugywdmmzzgq4dqmbzge",
+    "name": "1b732f6a-f978-493f-a1d1-621f03ff92cd"
   },
   "delegates": [
     "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
   ]
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadjsgyycynbwhe3dqnbxgy4q' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadbvgawdmmjzhe4tcmjygy' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1429,7 +1467,7 @@ POST https://api.estuary.tech/pinning/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgyycynbwhe3dqnbxgy4q"}
+{"cid":"baeaaadbvgawdmmjzhe4tcmjygy"}
 ```
 
 #### Response
@@ -1440,104 +1478,7 @@ POST https://api.estuary.tech/pinning/pins
 ```json
 {
   "connection": "close",
-  "content-length": "282",
-  "content-type": "application/json; charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:18 GMT",
-  "server": "nginx/1.18.0 (Ubuntu)",
-  "vary": "Origin"
-}
-```
-##### Body
-```json
-{
-  "requestid": "31402371",
-  "status": "queued",
-  "created": "2022-06-15T18:38:18.027910559Z",
-  "pin": {
-    "cid": "baeaaadjsgyycynbwhe3dqnbxgy4q",
-    "name": "",
-    "origins": null,
-    "meta": null
-  },
-  "delegates": [
-    "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
-  ],
-  "info": null
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "31402371",
-  "status": "queued",
-  "created": "2022-06-15T18:38:18.027910559Z",
-  "pin": {
-    "cid": "baeaaadjsgyycynbwhe3dqnbxgy4q",
-    "name": "",
-    "origins": null,
-    "meta": null
-  },
-  "delegates": [
-    "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
-  ],
-  "info": null
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "31402371",
-  "status": "queued",
-  "created": "2022-06-15T18:38:18.027Z",
-  "pin": {
-    "cid": "baeaaadjsgyycynbwhe3dqnbxgy4q",
-    "name": ""
-  },
-  "delegates": [
-    "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
-  ]
-}
-```
-## Can create new pin for testing pagination cid='baeaaadjsgyycynbxga2dkmrwg44q' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://api.estuary.tech/pinning/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaadjsgyycynbxga2dkmrwg44q"}
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "connection": "close",
-  "content-length": "281",
+  "content-length": "280",
   "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:19 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
@@ -1547,11 +1488,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body
 ```json
 {
-  "requestid": "31402372",
+  "requestid": "31402373",
   "status": "queued",
-  "created": "2022-06-15T18:38:19.05649154Z",
+  "created": "2022-06-15T18:38:19.620658634Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxga2dkmrwg44q",
+    "cid": "baeaaadbvgawdmmjzhe4tcmjygy",
     "name": "",
     "origins": null,
     "meta": null
@@ -1566,11 +1507,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "31402372",
+  "requestid": "31402373",
   "status": "queued",
-  "created": "2022-06-15T18:38:19.05649154Z",
+  "created": "2022-06-15T18:38:19.620658634Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxga2dkmrwg44q",
+    "cid": "baeaaadbvgawdmmjzhe4tcmjygy",
     "name": "",
     "origins": null,
     "meta": null
@@ -1584,11 +1525,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "31402372",
+  "requestid": "31402373",
   "status": "queued",
-  "created": "2022-06-15T18:38:19.056Z",
+  "created": "2022-06-15T18:38:19.620Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxga2dkmrwg44q",
+    "cid": "baeaaadbvgawdmmjzhe4tcmjygy",
     "name": ""
   },
   "delegates": [
@@ -1596,7 +1537,7 @@ POST https://api.estuary.tech/pinning/pins
   ]
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadjsgyycynbxgeydimbsha3q' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadbvgawdmmrqg4ztgmzqge' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1623,7 +1564,7 @@ POST https://api.estuary.tech/pinning/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgyycynbxgeydimbsha3q"}
+{"cid":"baeaaadbvgawdmmrqg4ztgmzqge"}
 ```
 
 #### Response
@@ -1634,7 +1575,7 @@ POST https://api.estuary.tech/pinning/pins
 ```json
 {
   "connection": "close",
-  "content-length": "282",
+  "content-length": "280",
   "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:20 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
@@ -1644,11 +1585,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body
 ```json
 {
-  "requestid": "31402377",
+  "requestid": "31402379",
   "status": "queued",
-  "created": "2022-06-15T18:38:20.019529422Z",
+  "created": "2022-06-15T18:38:20.610062982Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxgeydimbsha3q",
+    "cid": "baeaaadbvgawdmmrqg4ztgmzqge",
     "name": "",
     "origins": null,
     "meta": null
@@ -1663,11 +1604,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "31402377",
+  "requestid": "31402379",
   "status": "queued",
-  "created": "2022-06-15T18:38:20.019529422Z",
+  "created": "2022-06-15T18:38:20.610062982Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxgeydimbsha3q",
+    "cid": "baeaaadbvgawdmmrqg4ztgmzqge",
     "name": "",
     "origins": null,
     "meta": null
@@ -1681,11 +1622,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "31402377",
+  "requestid": "31402379",
   "status": "queued",
-  "created": "2022-06-15T18:38:20.019Z",
+  "created": "2022-06-15T18:38:20.610Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxgeydimbsha3q",
+    "cid": "baeaaadbvgawdmmrqg4ztgmzqge",
     "name": ""
   },
   "delegates": [
@@ -1693,7 +1634,7 @@ POST https://api.estuary.tech/pinning/pins
   ]
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadjsgyycynbxge3diojqhe2q' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadbvgawdmmrrgi2dsobrge' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1720,7 +1661,7 @@ POST https://api.estuary.tech/pinning/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgyycynbxge3diojqhe2q"}
+{"cid":"baeaaadbvgawdmmrrgi2dsobrge"}
 ```
 
 #### Response
@@ -1731,7 +1672,7 @@ POST https://api.estuary.tech/pinning/pins
 ```json
 {
   "connection": "close",
-  "content-length": "282",
+  "content-length": "279",
   "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:21 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
@@ -1741,11 +1682,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body
 ```json
 {
-  "requestid": "31402380",
+  "requestid": "31402382",
   "status": "queued",
-  "created": "2022-06-15T18:38:21.016038304Z",
+  "created": "2022-06-15T18:38:21.60664447Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxge3diojqhe2q",
+    "cid": "baeaaadbvgawdmmrrgi2dsobrge",
     "name": "",
     "origins": null,
     "meta": null
@@ -1760,11 +1701,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "31402380",
+  "requestid": "31402382",
   "status": "queued",
-  "created": "2022-06-15T18:38:21.016038304Z",
+  "created": "2022-06-15T18:38:21.60664447Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxge3diojqhe2q",
+    "cid": "baeaaadbvgawdmmrrgi2dsobrge",
     "name": "",
     "origins": null,
     "meta": null
@@ -1778,11 +1719,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "31402380",
+  "requestid": "31402382",
   "status": "queued",
-  "created": "2022-06-15T18:38:21.016Z",
+  "created": "2022-06-15T18:38:21.606Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxge3diojqhe2q",
+    "cid": "baeaaadbvgawdmmrrgi2dsobrge",
     "name": ""
   },
   "delegates": [
@@ -1790,7 +1731,7 @@ POST https://api.estuary.tech/pinning/pins
   ]
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadjsgyycynbxgi2dknbzga2q' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadbvgawdmmrrg4zdembsge' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1817,7 +1758,7 @@ POST https://api.estuary.tech/pinning/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgyycynbxgi2dknbzga2q"}
+{"cid":"baeaaadbvgawdmmrrg4zdembsge"}
 ```
 
 #### Response
@@ -1828,7 +1769,7 @@ POST https://api.estuary.tech/pinning/pins
 ```json
 {
   "connection": "close",
-  "content-length": "282",
+  "content-length": "280",
   "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:22 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
@@ -1838,11 +1779,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body
 ```json
 {
-  "requestid": "31402383",
+  "requestid": "31402386",
   "status": "queued",
-  "created": "2022-06-15T18:38:22.031132451Z",
+  "created": "2022-06-15T18:38:22.618459761Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxgi2dknbzga2q",
+    "cid": "baeaaadbvgawdmmrrg4zdembsge",
     "name": "",
     "origins": null,
     "meta": null
@@ -1857,11 +1798,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "31402383",
+  "requestid": "31402386",
   "status": "queued",
-  "created": "2022-06-15T18:38:22.031132451Z",
+  "created": "2022-06-15T18:38:22.618459761Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxgi2dknbzga2q",
+    "cid": "baeaaadbvgawdmmrrg4zdembsge",
     "name": "",
     "origins": null,
     "meta": null
@@ -1875,11 +1816,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "31402383",
+  "requestid": "31402386",
   "status": "queued",
-  "created": "2022-06-15T18:38:22.031Z",
+  "created": "2022-06-15T18:38:22.618Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxgi2dknbzga2q",
+    "cid": "baeaaadbvgawdmmrrg4zdembsge",
     "name": ""
   },
   "delegates": [
@@ -1887,7 +1828,7 @@ POST https://api.estuary.tech/pinning/pins
   ]
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadjsgyycynbxgmzdenzvge3a' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadbvgawdmmrsgm3tenztgu' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1914,7 +1855,7 @@ POST https://api.estuary.tech/pinning/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgyycynbxgmzdenzvge3a"}
+{"cid":"baeaaadbvgawdmmrsgm3tenztgu"}
 ```
 
 #### Response
@@ -1925,7 +1866,7 @@ POST https://api.estuary.tech/pinning/pins
 ```json
 {
   "connection": "close",
-  "content-length": "282",
+  "content-length": "280",
   "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:23 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
@@ -1935,11 +1876,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body
 ```json
 {
-  "requestid": "31402387",
+  "requestid": "31402389",
   "status": "queued",
-  "created": "2022-06-15T18:38:23.019589715Z",
+  "created": "2022-06-15T18:38:23.629882513Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxgmzdenzvge3a",
+    "cid": "baeaaadbvgawdmmrsgm3tenztgu",
     "name": "",
     "origins": null,
     "meta": null
@@ -1954,11 +1895,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "31402387",
+  "requestid": "31402389",
   "status": "queued",
-  "created": "2022-06-15T18:38:23.019589715Z",
+  "created": "2022-06-15T18:38:23.629882513Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxgmzdenzvge3a",
+    "cid": "baeaaadbvgawdmmrsgm3tenztgu",
     "name": "",
     "origins": null,
     "meta": null
@@ -1972,11 +1913,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "31402387",
+  "requestid": "31402389",
   "status": "queued",
-  "created": "2022-06-15T18:38:23.019Z",
+  "created": "2022-06-15T18:38:23.629Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxgmzdenzvge3a",
+    "cid": "baeaaadbvgawdmmrsgm3tenztgu",
     "name": ""
   },
   "delegates": [
@@ -1984,7 +1925,7 @@ POST https://api.estuary.tech/pinning/pins
   ]
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadjsgyycynbxgm4donjrgi2a' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadbvgawdmmrsha2tmmbugq' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -2011,7 +1952,7 @@ POST https://api.estuary.tech/pinning/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgyycynbxgm4donjrgi2a"}
+{"cid":"baeaaadbvgawdmmrsha2tmmbugq"}
 ```
 
 #### Response
@@ -2022,7 +1963,7 @@ POST https://api.estuary.tech/pinning/pins
 ```json
 {
   "connection": "close",
-  "content-length": "282",
+  "content-length": "280",
   "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:24 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
@@ -2032,11 +1973,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body
 ```json
 {
-  "requestid": "31402390",
+  "requestid": "31402391",
   "status": "queued",
-  "created": "2022-06-15T18:38:24.040314542Z",
+  "created": "2022-06-15T18:38:24.599379187Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxgm4donjrgi2a",
+    "cid": "baeaaadbvgawdmmrsha2tmmbugq",
     "name": "",
     "origins": null,
     "meta": null
@@ -2051,11 +1992,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "31402390",
+  "requestid": "31402391",
   "status": "queued",
-  "created": "2022-06-15T18:38:24.040314542Z",
+  "created": "2022-06-15T18:38:24.599379187Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxgm4donjrgi2a",
+    "cid": "baeaaadbvgawdmmrsha2tmmbugq",
     "name": "",
     "origins": null,
     "meta": null
@@ -2069,11 +2010,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "31402390",
+  "requestid": "31402391",
   "status": "queued",
-  "created": "2022-06-15T18:38:24.040Z",
+  "created": "2022-06-15T18:38:24.599Z",
   "pin": {
-    "cid": "baeaaadjsgyycynbxgm4donjrgi2a",
+    "cid": "baeaaadbvgawdmmrsha2tmmbugq",
     "name": ""
   },
   "delegates": [
@@ -2855,11 +2796,7 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 ```
 ## Pagination: Get all pins, create new pins (optional), get first and second pages - ❌ FAILED
 
-### Expectations (22/24 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
+### Expectations (20/22 successful)
 
   🟢 Response is ok (success)
 
@@ -2935,7 +2872,7 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 {
   "connection": "close",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:17 GMT",
+  "date": "Wed, 15 Jun 2022 18:38:18 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "transfer-encoding": "chunked",
   "vary": "Origin"
@@ -2944,8 +2881,23 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 ##### Body
 ```json
 {
-  "count": 8,
+  "count": 9,
   "results": [
+    {
+      "requestid": "31402371",
+      "status": "failed",
+      "created": "2022-06-15T18:38:18.027910559Z",
+      "pin": {
+        "cid": "baeaaadjsgyycynbwhe3dqnbxgy4q",
+        "name": "",
+        "origins": null,
+        "meta": null
+      },
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": null
+    },
     {
       "requestid": "31402370",
       "status": "failed",
@@ -3073,8 +3025,23 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 ##### Body (as JSON)
 ```json
 {
-  "count": 8,
+  "count": 9,
   "results": [
+    {
+      "requestid": "31402371",
+      "status": "failed",
+      "created": "2022-06-15T18:38:18.027910559Z",
+      "pin": {
+        "cid": "baeaaadjsgyycynbwhe3dqnbxgy4q",
+        "name": "",
+        "origins": null,
+        "meta": null
+      },
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": null
+    },
     {
       "requestid": "31402370",
       "status": "failed",
@@ -3201,32 +3168,25 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "count": 8,
+  "count": 9,
   "results": {}
 }
 ```
 ## Can delete pin with requestid '31402391' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -3248,13 +3208,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402391
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:27 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -3262,39 +3223,40 @@ DELETE https://api.estuary.tech/pinning/pins/31402391
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402390' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -3316,13 +3278,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402390
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:28 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -3330,39 +3293,40 @@ DELETE https://api.estuary.tech/pinning/pins/31402390
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402389' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -3384,13 +3348,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402389
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:29 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -3398,39 +3363,40 @@ DELETE https://api.estuary.tech/pinning/pins/31402389
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402387' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -3452,13 +3418,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402387
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:30 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -3466,39 +3433,40 @@ DELETE https://api.estuary.tech/pinning/pins/31402387
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402386' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -3520,13 +3488,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402386
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:31 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -3534,39 +3503,40 @@ DELETE https://api.estuary.tech/pinning/pins/31402386
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402383' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -3588,13 +3558,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402383
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:32 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -3602,39 +3573,40 @@ DELETE https://api.estuary.tech/pinning/pins/31402383
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402382' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -3656,13 +3628,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402382
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:33 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -3670,39 +3643,40 @@ DELETE https://api.estuary.tech/pinning/pins/31402382
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402380' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -3724,13 +3698,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402380
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:34 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -3738,39 +3713,40 @@ DELETE https://api.estuary.tech/pinning/pins/31402380
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402379' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -3792,13 +3768,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402379
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:35 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -3806,39 +3783,40 @@ DELETE https://api.estuary.tech/pinning/pins/31402379
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402377' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -3860,13 +3838,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402377
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:36 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -3874,39 +3853,40 @@ DELETE https://api.estuary.tech/pinning/pins/31402377
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402373' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -3928,13 +3908,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402373
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:37 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -3942,39 +3923,41 @@ DELETE https://api.estuary.tech/pinning/pins/31402373
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402372' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -3996,13 +3979,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402372
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:38 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -4010,39 +3994,41 @@ DELETE https://api.estuary.tech/pinning/pins/31402372
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402371' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -4064,13 +4050,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402371
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:39 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -4078,39 +4065,41 @@ DELETE https://api.estuary.tech/pinning/pins/31402371
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402370' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -4132,13 +4121,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402370
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:40 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -4146,39 +4136,41 @@ DELETE https://api.estuary.tech/pinning/pins/31402370
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402366' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -4200,13 +4192,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402366
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:41 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -4214,39 +4207,41 @@ DELETE https://api.estuary.tech/pinning/pins/31402366
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402365' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -4268,13 +4263,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402365
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:42 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -4282,39 +4278,41 @@ DELETE https://api.estuary.tech/pinning/pins/31402365
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402362' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -4336,13 +4334,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402362
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:43 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -4350,39 +4349,41 @@ DELETE https://api.estuary.tech/pinning/pins/31402362
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402361' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -4404,13 +4405,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402361
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:44 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -4418,39 +4420,41 @@ DELETE https://api.estuary.tech/pinning/pins/31402361
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402360' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -4472,13 +4476,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402360
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:45 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -4486,39 +4491,41 @@ DELETE https://api.estuary.tech/pinning/pins/31402360
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402358' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -4540,13 +4547,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402358
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:46 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -4554,39 +4562,41 @@ DELETE https://api.estuary.tech/pinning/pins/31402358
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Can delete pin with requestid '31402356' - ❌ FAILED
 
-### Expectations (1/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
@@ -4608,13 +4618,14 @@ DELETE https://api.estuary.tech/pinning/pins/31402356
 
 #### Response
 ```
-200 OK
+500 Internal Server Error
 ```
 ##### Headers
 ```json
 {
   "connection": "close",
-  "content-length": "0",
+  "content-length": "40",
+  "content-type": "application/json; charset=UTF-8",
   "date": "Wed, 15 Jun 2022 18:38:47 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin"
@@ -4622,16 +4633,24 @@ DELETE https://api.estuary.tech/pinning/pins/31402356
 ```
 ##### Body
 ```json
-
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 
 ##### Body (as JSON)
 ```json
-null
+{
+  "error": {
+    "reason": "record not found"
+  }
+}
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-undefined
+null
 ```
 ## Call pinsGet after deletions - 🟢 SUCCESS
 
@@ -4699,89 +4718,89 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 ```
 ## Can delete all pins - ❌ FAILED
 
-### Expectations (22/43 successful)
+### Expectations (1/43 successful)
 
-  🟢 Response is ok (success)
-
-  ❌ Response code is 202 (failure)
-
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
+
+  ❌ Response code is 202 (failure)
+
+  ❌ Response is ok (failure)
 
   ❌ Response code is 202 (failure)
 
@@ -4790,257 +4809,120 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
 
 
 ### Details
