@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.4...v1.0.5) (2022-06-15)
+
+
+### Trivial Changes
+
+* **deps:** bump ipfs-http-client from 56.0.3 to 57.0.1 ([#72](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/72)) ([fe54f62](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/fe54f6245815b7b89708a13b9c90ad11d3e228c7))
+
 ## [1.0.4](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.3...v1.0.4) (2022-06-15)
 
 
