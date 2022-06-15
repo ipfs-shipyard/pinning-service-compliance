@@ -1,9 +1,9 @@
 
 # https://nft.storage/api compliance:
 
-Execution Date: 2022-06-15T18:38:45.919Z
+Execution Date: 2022-06-15T18:51:49.190Z
 
-Revision: [4bcc5c6](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/4bcc5c6)
+Revision: [fe54f62](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/fe54f62)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/nft.storage.md)
 
@@ -13,7 +13,7 @@ Revision: [4bcc5c6](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   ❌ [Request with invalid token](#request-with-invalid-token----failed)
 
-  ❌ [Pins post of CID 'baeaaadjsgm4synrqgm4teojrgi3a'](#pins-post-of-cid-baeaaadjsgm4synrqgm4teojrgi3a----failed)
+  ❌ [Pins post of CID 'baeaaadjrg43symjwgy2dqmjqgm4a'](#pins-post-of-cid-baeaaadjrg43symjwgy2dqmjqgm4a----failed)
 
   🟢 [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----success)
 
@@ -21,7 +21,7 @@ Revision: [4bcc5c6](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   🟢 [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----success)
 
-  🟢 [Can create a pin with name='1abe266b-9f74-46ae-82f5-fc456903347b'](#can-create-a-pin-with-name1abe266b-9f74-46ae-82f5-fc456903347b----success)
+  🟢 [Can create a pin with name='860ce637-b37e-4bc8-aec6-68603a4a3809'](#can-create-a-pin-with-name860ce637-b37e-4bc8-aec6-68603a4a3809----success)
 
   ❌ [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----failed)
 
@@ -78,11 +78,11 @@ GET https://nft.storage/api/pins
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6bbc38ac5c04-IAD",
+  "cf-ray": "71bd7d12fdde57b2-IAD",
   "connection": "close",
   "content-length": "179",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:07 GMT",
+  "date": "Wed, 15 Jun 2022 18:49:57 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -166,11 +166,11 @@ GET https://nft.storage/api/pins
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6bc21eff81bb-IAD",
+  "cf-ray": "71bd7d1919839c78-IAD",
   "connection": "close",
   "content-length": "106",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:07 GMT",
+  "date": "Wed, 15 Jun 2022 18:49:58 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -201,7 +201,7 @@ GET https://nft.storage/api/pins
 ```json
 null
 ```
-## Pins post of CID 'baeaaadjsgm4synrqgm4teojrgi3a' - ❌ FAILED
+## Pins post of CID 'baeaaadjrg43symjwgy2dqmjqgm4a' - ❌ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -236,7 +236,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgm4synrqgm4teojrgi3a"}
+{"cid":"baeaaadjrg43symjwgy2dqmjqgm4a"}
 ```
 
 #### Response
@@ -248,11 +248,11 @@ POST https://nft.storage/api/pins
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6bc86cf0818f-IAD",
+  "cf-ray": "71bd7d1f5cd67fb5-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:10 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:01 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -262,11 +262,11 @@ POST https://nft.storage/api/pins
 ##### Body
 ```json
 {
-  "requestid": "baeaaadjsgm4synrqgm4teojrgi3a",
+  "requestid": "baeaaadjrg43symjwgy2dqmjqgm4a",
   "status": "queued",
-  "created": "2022-06-15T18:38:09.097+00:00",
+  "created": "2022-06-15T18:49:59.646+00:00",
   "pin": {
-    "cid": "baeaaadjsgm4synrqgm4teojrgi3a",
+    "cid": "baeaaadjrg43symjwgy2dqmjqgm4a",
     "meta": null,
     "name": null,
     "origins": null
@@ -278,11 +278,11 @@ POST https://nft.storage/api/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "baeaaadjsgm4synrqgm4teojrgi3a",
+  "requestid": "baeaaadjrg43symjwgy2dqmjqgm4a",
   "status": "queued",
-  "created": "2022-06-15T18:38:09.097+00:00",
+  "created": "2022-06-15T18:49:59.646+00:00",
   "pin": {
-    "cid": "baeaaadjsgm4synrqgm4teojrgi3a",
+    "cid": "baeaaadjrg43symjwgy2dqmjqgm4a",
     "meta": null,
     "name": null,
     "origins": null
@@ -293,11 +293,11 @@ POST https://nft.storage/api/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "baeaaadjsgm4synrqgm4teojrgi3a",
+  "requestid": "baeaaadjrg43symjwgy2dqmjqgm4a",
   "status": "queued",
-  "created": "2022-06-15T18:38:09.097Z",
+  "created": "2022-06-15T18:49:59.646Z",
   "pin": {
-    "cid": "baeaaadjsgm4synrqgm4teojrgi3a"
+    "cid": "baeaaadjrg43symjwgy2dqmjqgm4a"
   },
   "delegates": []
 }
@@ -330,7 +330,7 @@ POST https://nft.storage/api/pins
 
 #### Request
 ```
-DELETE https://nft.storage/api/pins/baeaaadjsgqysyojugiytaobwhe2q
+DELETE https://nft.storage/api/pins/baeaaadjrhaycymjygaytsnrrgy2q
 ```
 ##### Headers
 ```json
@@ -352,11 +352,11 @@ DELETE https://nft.storage/api/pins/baeaaadjsgqysyojugiytaobwhe2q
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6bd94a995dc8-IAD",
+  "cf-ray": "71bd7d42c96f5ae1-IAD",
   "connection": "close",
   "content-length": "0",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:11 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:05 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -418,7 +418,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgqysyojugiytaobwhe2q"}
+{"cid":"baeaaadjrhaycymjygaytsnrrgy2q"}
 ```
 
 #### Response
@@ -430,11 +430,11 @@ POST https://nft.storage/api/pins
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6bd29c119c3a-IAD",
+  "cf-ray": "71bd7d2ddb3b81c7-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:11 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:04 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -444,11 +444,11 @@ POST https://nft.storage/api/pins
 ##### Body
 ```json
 {
-  "requestid": "baeaaadjsgqysyojugiytaobwhe2q",
+  "requestid": "baeaaadjrhaycymjygaytsnrrgy2q",
   "status": "queued",
-  "created": "2022-06-15T18:38:10.591+00:00",
+  "created": "2022-06-15T18:50:02.046+00:00",
   "pin": {
-    "cid": "baeaaadjsgqysyojugiytaobwhe2q",
+    "cid": "baeaaadjrhaycymjygaytsnrrgy2q",
     "meta": null,
     "name": null,
     "origins": null
@@ -460,11 +460,11 @@ POST https://nft.storage/api/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "baeaaadjsgqysyojugiytaobwhe2q",
+  "requestid": "baeaaadjrhaycymjygaytsnrrgy2q",
   "status": "queued",
-  "created": "2022-06-15T18:38:10.591+00:00",
+  "created": "2022-06-15T18:50:02.046+00:00",
   "pin": {
-    "cid": "baeaaadjsgqysyojugiytaobwhe2q",
+    "cid": "baeaaadjrhaycymjygaytsnrrgy2q",
     "meta": null,
     "name": null,
     "origins": null
@@ -475,11 +475,11 @@ POST https://nft.storage/api/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "baeaaadjsgqysyojugiytaobwhe2q",
+  "requestid": "baeaaadjrhaycymjygaytsnrrgy2q",
   "status": "queued",
-  "created": "2022-06-15T18:38:10.591Z",
+  "created": "2022-06-15T18:50:02.046Z",
   "pin": {
-    "cid": "baeaaadjsgqysyojugiytaobwhe2q"
+    "cid": "baeaaadjrhaycymjygaytsnrrgy2q"
   },
   "delegates": []
 }
@@ -523,25 +523,25 @@ POST https://nft.storage/api/pins
 
 * "delegates" must contain at least 1 items
 
+* "origins" must be an array
+
+* "meta" must be an object
+
+* "delegates" must contain at least 1 items
+
+* "origins" must be an array
+
+* "meta" must be an object
+
+* "delegates" must contain at least 1 items
+
+* "origins" must be an array
+
+* "meta" must be an object
+
+* "delegates" must contain at least 1 items
+
 * "name" must be a string
-
-* "origins" must be an array
-
-* "meta" must be an object
-
-* "delegates" must contain at least 1 items
-
-* "origins" must be an array
-
-* "meta" must be an object
-
-* "delegates" must contain at least 1 items
-
-* "origins" must be an array
-
-* "meta" must be an object
-
-* "delegates" must contain at least 1 items
 
 * "origins" must be an array
 
@@ -600,11 +600,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6bdc2af481d0-IAD",
+  "cf-ray": "71bd7d45cd578227-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:12 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:06 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -617,23 +617,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 10,
   "results": [
     {
-      "requestid": "baeaaaczvgawdeojrgyzdeojt",
+      "requestid": "baeaaadjrg43symjwgy2dqmjqgm4a",
       "status": "queued",
-      "created": "2022-06-15T18:38:11.625+00:00",
+      "created": "2022-06-15T18:49:59.646+00:00",
       "pin": {
-        "cid": "baeaaaczvgawdeojrgyzdeojt",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbuhawdcmjzgu4dgnbugm",
-      "status": "queued",
-      "created": "2022-06-15T18:38:09.406+00:00",
-      "pin": {
-        "cid": "baeaaadbuhawdcmjzgu4dgnbugm",
+        "cid": "baeaaadjrg43symjwgy2dqmjqgm4a",
         "meta": null,
         "name": null,
         "origins": null
@@ -642,7 +630,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
     },
     {
       "requestid": "baeaaadjsgm4synrqgm4teojrgi3a",
-      "status": "queued",
+      "status": "pinning",
       "created": "2022-06-15T18:38:09.097+00:00",
       "pin": {
         "cid": "baeaaadjsgm4synrqgm4teojrgi3a",
@@ -654,7 +642,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
     },
     {
       "requestid": "baeaaaczugmwdenzrgu3tmmbx",
-      "status": "queued",
+      "status": "pinning",
       "created": "2022-06-15T18:38:04.668+00:00",
       "pin": {
         "cid": "baeaaaczugmwdenzrgu3tmmbx",
@@ -730,6 +718,18 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "created": "2022-04-06T22:56:21.131+00:00",
       "pin": {
         "cid": "bafkqadjrgy2dsmrygu3tmobwgeza",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmrygu3tgmzug44q",
+      "status": "pinned",
+      "created": "2022-04-06T22:55:43.181+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmrygu3tgmzug44q",
         "meta": null,
         "name": null,
         "origins": null
@@ -746,23 +746,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 10,
   "results": [
     {
-      "requestid": "baeaaaczvgawdeojrgyzdeojt",
+      "requestid": "baeaaadjrg43symjwgy2dqmjqgm4a",
       "status": "queued",
-      "created": "2022-06-15T18:38:11.625+00:00",
+      "created": "2022-06-15T18:49:59.646+00:00",
       "pin": {
-        "cid": "baeaaaczvgawdeojrgyzdeojt",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbuhawdcmjzgu4dgnbugm",
-      "status": "queued",
-      "created": "2022-06-15T18:38:09.406+00:00",
-      "pin": {
-        "cid": "baeaaadbuhawdcmjzgu4dgnbugm",
+        "cid": "baeaaadjrg43symjwgy2dqmjqgm4a",
         "meta": null,
         "name": null,
         "origins": null
@@ -771,7 +759,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
     },
     {
       "requestid": "baeaaadjsgm4synrqgm4teojrgi3a",
-      "status": "queued",
+      "status": "pinning",
       "created": "2022-06-15T18:38:09.097+00:00",
       "pin": {
         "cid": "baeaaadjsgm4synrqgm4teojrgi3a",
@@ -783,7 +771,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
     },
     {
       "requestid": "baeaaaczugmwdenzrgu3tmmbx",
-      "status": "queued",
+      "status": "pinning",
       "created": "2022-06-15T18:38:04.668+00:00",
       "pin": {
         "cid": "baeaaaczugmwdenzrgu3tmmbx",
@@ -859,6 +847,18 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "created": "2022-04-06T22:56:21.131+00:00",
       "pin": {
         "cid": "bafkqadjrgy2dsmrygu3tmobwgeza",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmrygu3tgmzug44q",
+      "status": "pinned",
+      "created": "2022-04-06T22:55:43.181+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmrygu3tgmzug44q",
         "meta": null,
         "name": null,
         "origins": null
@@ -894,7 +894,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 
 #### Request
 ```
-GET https://nft.storage/api/pins/baeaaadjsgq2cynjwgmzdmmbsgy4a
+GET https://nft.storage/api/pins/baeaaadjrha2synzvhaytgnrzha2a
 ```
 ##### Headers
 ```json
@@ -916,11 +916,11 @@ GET https://nft.storage/api/pins/baeaaadjsgq2cynjwgmzdmmbsgy4a
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6bf68e418286-IAD",
+  "cf-ray": "71bd7e30eb165ae1-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:16 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:43 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -964,7 +964,7 @@ null
 
 #### Request
 ```
-GET https://nft.storage/api/pins/baeaaadjsgq2synzwge4dinzqheza
+GET https://nft.storage/api/pins/baeaaadjrha3symjrgaydsmbrgeya
 ```
 ##### Headers
 ```json
@@ -986,11 +986,11 @@ GET https://nft.storage/api/pins/baeaaadjsgq2synzwge4dinzqheza
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6bfcbc299c3a-IAD",
+  "cf-ray": "71bd7e370a3d7f56-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:17 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:44 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -1000,11 +1000,11 @@ GET https://nft.storage/api/pins/baeaaadjsgq2synzwge4dinzqheza
 ##### Body
 ```json
 {
-  "requestid": "baeaaadjsgq2synzwge4dinzqheza",
+  "requestid": "baeaaadjrha3symjrgaydsmbrgeya",
   "status": "queued",
-  "created": "2022-06-15T18:38:14.925+00:00",
+  "created": "2022-06-15T18:50:41.297+00:00",
   "pin": {
-    "cid": "baeaaadjsgq2synzwge4dinzqheza",
+    "cid": "baeaaadjrha3symjrgaydsmbrgeya",
     "meta": null,
     "name": null,
     "origins": null
@@ -1016,11 +1016,11 @@ GET https://nft.storage/api/pins/baeaaadjsgq2synzwge4dinzqheza
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "baeaaadjsgq2synzwge4dinzqheza",
+  "requestid": "baeaaadjrha3symjrgaydsmbrgeya",
   "status": "queued",
-  "created": "2022-06-15T18:38:14.925+00:00",
+  "created": "2022-06-15T18:50:41.297+00:00",
   "pin": {
-    "cid": "baeaaadjsgq2synzwge4dinzqheza",
+    "cid": "baeaaadjrha3symjrgaydsmbrgeya",
     "meta": null,
     "name": null,
     "origins": null
@@ -1031,16 +1031,16 @@ GET https://nft.storage/api/pins/baeaaadjsgq2synzwge4dinzqheza
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "baeaaadjsgq2synzwge4dinzqheza",
+  "requestid": "baeaaadjrha3symjrgaydsmbrgeya",
   "status": "queued",
-  "created": "2022-06-15T18:38:14.925Z",
+  "created": "2022-06-15T18:50:41.297Z",
   "pin": {
-    "cid": "baeaaadjsgq2synzwge4dinzqheza"
+    "cid": "baeaaadjrha3symjrgaydsmbrgeya"
   },
   "delegates": []
 }
 ```
-## Pin's with requestid 'baeaaadjsgq2cynjwgmzdmmbsgy4a' can have cid 'baeaaadjsgq2cynjwgmzdmmbsgy4a' replaced with 'baeaaadjsgq2synzwge4dinzqheza' - 🟢 SUCCESS
+## Pin's with requestid 'baeaaadjrha2synzvhaytgnrzha2a' can have cid 'baeaaadjrha2synzvhaytgnrzha2a' replaced with 'baeaaadjrha3symjrgaydsmbrgeya' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1061,7 +1061,7 @@ GET https://nft.storage/api/pins/baeaaadjsgq2synzwge4dinzqheza
 
 #### Request
 ```
-POST https://nft.storage/api/pins/baeaaadjsgq2cynjwgmzdmmbsgy4a
+POST https://nft.storage/api/pins/baeaaadjrha2synzvhaytgnrzha2a
 ```
 ##### Headers
 ```json
@@ -1072,7 +1072,7 @@ POST https://nft.storage/api/pins/baeaaadjsgq2cynjwgmzdmmbsgy4a
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgq2synzwge4dinzqheza"}
+{"cid":"baeaaadjrha3symjrgaydsmbrgeya"}
 ```
 
 #### Response
@@ -1084,11 +1084,11 @@ POST https://nft.storage/api/pins/baeaaadjsgq2cynjwgmzdmmbsgy4a
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6bea7e535b0a-IAD",
+  "cf-ray": "71bd7d5928783806-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:16 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:42 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -1098,11 +1098,11 @@ POST https://nft.storage/api/pins/baeaaadjsgq2cynjwgmzdmmbsgy4a
 ##### Body
 ```json
 {
-  "requestid": "baeaaadjsgq2synzwge4dinzqheza",
+  "requestid": "baeaaadjrha3symjrgaydsmbrgeya",
   "status": "queued",
-  "created": "2022-06-15T18:38:14.925+00:00",
+  "created": "2022-06-15T18:50:41.297+00:00",
   "pin": {
-    "cid": "baeaaadjsgq2synzwge4dinzqheza",
+    "cid": "baeaaadjrha3symjrgaydsmbrgeya",
     "meta": null,
     "name": null,
     "origins": null
@@ -1114,11 +1114,11 @@ POST https://nft.storage/api/pins/baeaaadjsgq2cynjwgmzdmmbsgy4a
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "baeaaadjsgq2synzwge4dinzqheza",
+  "requestid": "baeaaadjrha3symjrgaydsmbrgeya",
   "status": "queued",
-  "created": "2022-06-15T18:38:14.925+00:00",
+  "created": "2022-06-15T18:50:41.297+00:00",
   "pin": {
-    "cid": "baeaaadjsgq2synzwge4dinzqheza",
+    "cid": "baeaaadjrha3symjrgaydsmbrgeya",
     "meta": null,
     "name": null,
     "origins": null
@@ -1129,11 +1129,11 @@ POST https://nft.storage/api/pins/baeaaadjsgq2cynjwgmzdmmbsgy4a
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "baeaaadjsgq2synzwge4dinzqheza",
+  "requestid": "baeaaadjrha3symjrgaydsmbrgeya",
   "status": "queued",
-  "created": "2022-06-15T18:38:14.925Z",
+  "created": "2022-06-15T18:50:41.297Z",
   "pin": {
-    "cid": "baeaaadjsgq2synzwge4dinzqheza"
+    "cid": "baeaaadjrha3symjrgaydsmbrgeya"
   },
   "delegates": []
 }
@@ -1144,7 +1144,7 @@ POST https://nft.storage/api/pins/baeaaadjsgq2cynjwgmzdmmbsgy4a
 
   🟢 Pin exists (success)
 
-  🟢 Could obtain requestid from new pin (baeaaadjsgq2cynjwgmzdmmbsgy4a) (success)
+  🟢 Could obtain requestid from new pin (baeaaadjrha2synzvhaytgnrzha2a) (success)
 
   🟢 Response is ok (success)
 
@@ -1180,7 +1180,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgq2cynjwgmzdmmbsgy4a"}
+{"cid":"baeaaadjrha2synzvhaytgnrzha2a"}
 ```
 
 #### Response
@@ -1192,11 +1192,11 @@ POST https://nft.storage/api/pins
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6be2faeb8024-IAD",
+  "cf-ray": "71bd7d50b83a82db-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:14 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:08 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -1206,11 +1206,11 @@ POST https://nft.storage/api/pins
 ##### Body
 ```json
 {
-  "requestid": "baeaaadjsgq2cynjwgmzdmmbsgy4a",
+  "requestid": "baeaaadjrha2synzvhaytgnrzha2a",
   "status": "queued",
-  "created": "2022-06-15T18:38:13.353+00:00",
+  "created": "2022-06-15T18:50:07.356+00:00",
   "pin": {
-    "cid": "baeaaadjsgq2cynjwgmzdmmbsgy4a",
+    "cid": "baeaaadjrha2synzvhaytgnrzha2a",
     "meta": null,
     "name": null,
     "origins": null
@@ -1222,11 +1222,11 @@ POST https://nft.storage/api/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "baeaaadjsgq2cynjwgmzdmmbsgy4a",
+  "requestid": "baeaaadjrha2synzvhaytgnrzha2a",
   "status": "queued",
-  "created": "2022-06-15T18:38:13.353+00:00",
+  "created": "2022-06-15T18:50:07.356+00:00",
   "pin": {
-    "cid": "baeaaadjsgq2cynjwgmzdmmbsgy4a",
+    "cid": "baeaaadjrha2synzvhaytgnrzha2a",
     "meta": null,
     "name": null,
     "origins": null
@@ -1237,16 +1237,16 @@ POST https://nft.storage/api/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "baeaaadjsgq2cynjwgmzdmmbsgy4a",
+  "requestid": "baeaaadjrha2synzvhaytgnrzha2a",
   "status": "queued",
-  "created": "2022-06-15T18:38:13.353Z",
+  "created": "2022-06-15T18:50:07.356Z",
   "pin": {
-    "cid": "baeaaadjsgq2cynjwgmzdmmbsgy4a"
+    "cid": "baeaaadjrha2synzvhaytgnrzha2a"
   },
   "delegates": []
 }
 ```
-## Can retrieve pin with name '1abe266b-9f74-46ae-82f5-fc456903347b' via the 'exact' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '860ce637-b37e-4bc8-aec6-68603a4a3809' via the 'exact' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1262,7 +1262,7 @@ POST https://nft.storage/api/pins
 
 #### Request
 ```
-GET https://nft.storage/api/pins?name=1abe266b-9f74-46ae-82f5-fc456903347b&match=exact
+GET https://nft.storage/api/pins?name=860ce637-b37e-4bc8-aec6-68603a4a3809&match=exact
 ```
 ##### Headers
 ```json
@@ -1284,11 +1284,11 @@ GET https://nft.storage/api/pins?name=1abe266b-9f74-46ae-82f5-fc456903347b&match
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c0a186c56da-IAD",
+  "cf-ray": "71bd7e4eab0b7fed-IAD",
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:20 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:49 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -1316,7 +1316,7 @@ GET https://nft.storage/api/pins?name=1abe266b-9f74-46ae-82f5-fc456903347b&match
   "results": {}
 }
 ```
-## Can retrieve pin with name '1ABE266B-9F74-46AE-82F5-FC456903347B' via the 'iexact' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '860CE637-B37E-4BC8-AEC6-68603A4A3809' via the 'iexact' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1332,7 +1332,7 @@ GET https://nft.storage/api/pins?name=1abe266b-9f74-46ae-82f5-fc456903347b&match
 
 #### Request
 ```
-GET https://nft.storage/api/pins?name=1ABE266B-9F74-46AE-82F5-FC456903347B&match=iexact
+GET https://nft.storage/api/pins?name=860CE637-B37E-4BC8-AEC6-68603A4A3809&match=iexact
 ```
 ##### Headers
 ```json
@@ -1354,11 +1354,11 @@ GET https://nft.storage/api/pins?name=1ABE266B-9F74-46AE-82F5-FC456903347B&match
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c102a2158a2-IAD",
+  "cf-ray": "71bd7e5919955ae1-IAD",
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:21 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:51 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -1386,7 +1386,7 @@ GET https://nft.storage/api/pins?name=1ABE266B-9F74-46AE-82F5-FC456903347B&match
   "results": {}
 }
 ```
-## Can retrieve pin with name '9f74-46ae-82f5-fc4' via the 'partial' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name 'b37e-4bc8-aec6-686' via the 'partial' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1402,7 +1402,7 @@ GET https://nft.storage/api/pins?name=1ABE266B-9F74-46AE-82F5-FC456903347B&match
 
 #### Request
 ```
-GET https://nft.storage/api/pins?name=9f74-46ae-82f5-fc4&match=partial
+GET https://nft.storage/api/pins?name=b37e-4bc8-aec6-686&match=partial
 ```
 ##### Headers
 ```json
@@ -1424,11 +1424,11 @@ GET https://nft.storage/api/pins?name=9f74-46ae-82f5-fc4&match=partial
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c18d8575b0a-IAD",
+  "cf-ray": "71bd7e683d225cb3-IAD",
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:22 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:52 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -1456,7 +1456,7 @@ GET https://nft.storage/api/pins?name=9f74-46ae-82f5-fc4&match=partial
   "results": {}
 }
 ```
-## Can retrieve pin with name '9F74-46AE-82F5-FC4' via the 'ipartial' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name 'B37E-4BC8-AEC6-686' via the 'ipartial' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1472,7 +1472,7 @@ GET https://nft.storage/api/pins?name=9f74-46ae-82f5-fc4&match=partial
 
 #### Request
 ```
-GET https://nft.storage/api/pins?name=9F74-46AE-82F5-FC4&match=ipartial
+GET https://nft.storage/api/pins?name=B37E-4BC8-AEC6-686&match=ipartial
 ```
 ##### Headers
 ```json
@@ -1494,11 +1494,11 @@ GET https://nft.storage/api/pins?name=9F74-46AE-82F5-FC4&match=ipartial
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c1fddf75961-IAD",
+  "cf-ray": "71bd7e6e1ad15c7d-IAD",
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:23 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:53 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -1526,7 +1526,7 @@ GET https://nft.storage/api/pins?name=9F74-46AE-82F5-FC4&match=ipartial
   "results": {}
 }
 ```
-## Can create a pin with name='1abe266b-9f74-46ae-82f5-fc456903347b' - 🟢 SUCCESS
+## Can create a pin with name='860ce637-b37e-4bc8-aec6-68603a4a3809' - 🟢 SUCCESS
 
 ### Expectations (11/11 successful)
 
@@ -1571,7 +1571,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgq4synbzgi2dkmbzgq3a","name":"1abe266b-9f74-46ae-82f5-fc456903347b"}
+{"cid":"baeaaadjsgizsynrrg42deojyg44q","name":"860ce637-b37e-4bc8-aec6-68603a4a3809"}
 ```
 
 #### Response
@@ -1583,11 +1583,11 @@ POST https://nft.storage/api/pins
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c01bbd17ff4-IAD",
+  "cf-ray": "71bd7e3d5dc25af2-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:19 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:47 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -1597,13 +1597,13 @@ POST https://nft.storage/api/pins
 ##### Body
 ```json
 {
-  "requestid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
+  "requestid": "baeaaadjsgizsynrrg42deojyg44q",
   "status": "queued",
-  "created": "2022-06-15T18:38:18.1+00:00",
+  "created": "2022-06-15T18:50:45.298+00:00",
   "pin": {
-    "cid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
+    "cid": "baeaaadjsgizsynrrg42deojyg44q",
     "meta": null,
-    "name": "1abe266b-9f74-46ae-82f5-fc456903347b",
+    "name": "860ce637-b37e-4bc8-aec6-68603a4a3809",
     "origins": null
   },
   "delegates": []
@@ -1613,13 +1613,13 @@ POST https://nft.storage/api/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
+  "requestid": "baeaaadjsgizsynrrg42deojyg44q",
   "status": "queued",
-  "created": "2022-06-15T18:38:18.1+00:00",
+  "created": "2022-06-15T18:50:45.298+00:00",
   "pin": {
-    "cid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
+    "cid": "baeaaadjsgizsynrrg42deojyg44q",
     "meta": null,
-    "name": "1abe266b-9f74-46ae-82f5-fc456903347b",
+    "name": "860ce637-b37e-4bc8-aec6-68603a4a3809",
     "origins": null
   },
   "delegates": []
@@ -1628,17 +1628,17 @@ POST https://nft.storage/api/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
+  "requestid": "baeaaadjsgizsynrrg42deojyg44q",
   "status": "queued",
-  "created": "2022-06-15T18:38:18.100Z",
+  "created": "2022-06-15T18:50:45.298Z",
   "pin": {
-    "cid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
-    "name": "1abe266b-9f74-46ae-82f5-fc456903347b"
+    "cid": "baeaaadjsgizsynrrg42deojyg44q",
+    "name": "860ce637-b37e-4bc8-aec6-68603a4a3809"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadjsgu3cynbugq4tenjxga3q' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjsgmzsynjtgu3tkobzgiza' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1665,7 +1665,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgu3cynbugq4tenjxga3q"}
+{"cid":"baeaaadjsgmzsynjtgu3tkobzgiza"}
 ```
 
 #### Response
@@ -1677,11 +1677,11 @@ POST https://nft.storage/api/pins
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c2d38035818-IAD",
+  "cf-ray": "71bd7e7c0b6f5961-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:26 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:57 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -1691,11 +1691,11 @@ POST https://nft.storage/api/pins
 ##### Body
 ```json
 {
-  "requestid": "baeaaadjsgu3cynbugq4tenjxga3q",
+  "requestid": "baeaaadjsgmzsynjtgu3tkobzgiza",
   "status": "queued",
-  "created": "2022-06-15T18:38:25.411+00:00",
+  "created": "2022-06-15T18:50:56.124+00:00",
   "pin": {
-    "cid": "baeaaadjsgu3cynbugq4tenjxga3q",
+    "cid": "baeaaadjsgmzsynjtgu3tkobzgiza",
     "meta": null,
     "name": null,
     "origins": null
@@ -1707,11 +1707,11 @@ POST https://nft.storage/api/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "baeaaadjsgu3cynbugq4tenjxga3q",
+  "requestid": "baeaaadjsgmzsynjtgu3tkobzgiza",
   "status": "queued",
-  "created": "2022-06-15T18:38:25.411+00:00",
+  "created": "2022-06-15T18:50:56.124+00:00",
   "pin": {
-    "cid": "baeaaadjsgu3cynbugq4tenjxga3q",
+    "cid": "baeaaadjsgmzsynjtgu3tkobzgiza",
     "meta": null,
     "name": null,
     "origins": null
@@ -1722,16 +1722,16 @@ POST https://nft.storage/api/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "baeaaadjsgu3cynbugq4tenjxga3q",
+  "requestid": "baeaaadjsgmzsynjtgu3tkobzgiza",
   "status": "queued",
-  "created": "2022-06-15T18:38:25.411Z",
+  "created": "2022-06-15T18:50:56.124Z",
   "pin": {
-    "cid": "baeaaadjsgu3cynbugq4tenjxga3q"
+    "cid": "baeaaadjsgmzsynjtgu3tkobzgiza"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadjsgu3cynbugu4danzzge4q' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjsgmzsynjtgy2tmmjqgmza' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1758,7 +1758,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgu3cynbugu4danzzge4q"}
+{"cid":"baeaaadjsgmzsynjtgy2tmmjqgmza"}
 ```
 
 #### Response
@@ -1770,11 +1770,11 @@ POST https://nft.storage/api/pins
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c35ce1156da-IAD",
+  "cf-ray": "71bd7e8e293e5ae1-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:27 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:58 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -1784,11 +1784,11 @@ POST https://nft.storage/api/pins
 ##### Body
 ```json
 {
-  "requestid": "baeaaadjsgu3cynbugu4danzzge4q",
+  "requestid": "baeaaadjsgmzsynjtgy2tmmjqgmza",
   "status": "queued",
-  "created": "2022-06-15T18:38:26.657+00:00",
+  "created": "2022-06-15T18:50:58.008+00:00",
   "pin": {
-    "cid": "baeaaadjsgu3cynbugu4danzzge4q",
+    "cid": "baeaaadjsgmzsynjtgy2tmmjqgmza",
     "meta": null,
     "name": null,
     "origins": null
@@ -1800,11 +1800,11 @@ POST https://nft.storage/api/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "baeaaadjsgu3cynbugu4danzzge4q",
+  "requestid": "baeaaadjsgmzsynjtgy2tmmjqgmza",
   "status": "queued",
-  "created": "2022-06-15T18:38:26.657+00:00",
+  "created": "2022-06-15T18:50:58.008+00:00",
   "pin": {
-    "cid": "baeaaadjsgu3cynbugu4danzzge4q",
+    "cid": "baeaaadjsgmzsynjtgy2tmmjqgmza",
     "meta": null,
     "name": null,
     "origins": null
@@ -1815,16 +1815,16 @@ POST https://nft.storage/api/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "baeaaadjsgu3cynbugu4danzzge4q",
+  "requestid": "baeaaadjsgmzsynjtgy2tmmjqgmza",
   "status": "queued",
-  "created": "2022-06-15T18:38:26.657Z",
+  "created": "2022-06-15T18:50:58.008Z",
   "pin": {
-    "cid": "baeaaadjsgu3cynbugu4danzzge4q"
+    "cid": "baeaaadjsgmzsynjtgy2tmmjqgmza"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadjsgu3cynbugy2dsnbzgi4a' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjsgmzsynjtg4ytgnbvgm4q' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1851,7 +1851,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgu3cynbugy2dsnbzgi4a"}
+{"cid":"baeaaadjsgmzsynjtg4ytgnbvgm4q"}
 ```
 
 #### Response
@@ -1863,11 +1863,11 @@ POST https://nft.storage/api/pins
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c3d1d835de1-IAD",
+  "cf-ray": "71bd7e95ba705cb3-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:28 GMT",
+  "date": "Wed, 15 Jun 2022 18:51:02 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -1877,11 +1877,11 @@ POST https://nft.storage/api/pins
 ##### Body
 ```json
 {
-  "requestid": "baeaaadjsgu3cynbugy2dsnbzgi4a",
+  "requestid": "baeaaadjsgmzsynjtg4ytgnbvgm4q",
   "status": "queued",
-  "created": "2022-06-15T18:38:27.725+00:00",
+  "created": "2022-06-15T18:51:01.012+00:00",
   "pin": {
-    "cid": "baeaaadjsgu3cynbugy2dsnbzgi4a",
+    "cid": "baeaaadjsgmzsynjtg4ytgnbvgm4q",
     "meta": null,
     "name": null,
     "origins": null
@@ -1893,11 +1893,11 @@ POST https://nft.storage/api/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "baeaaadjsgu3cynbugy2dsnbzgi4a",
+  "requestid": "baeaaadjsgmzsynjtg4ytgnbvgm4q",
   "status": "queued",
-  "created": "2022-06-15T18:38:27.725+00:00",
+  "created": "2022-06-15T18:51:01.012+00:00",
   "pin": {
-    "cid": "baeaaadjsgu3cynbugy2dsnbzgi4a",
+    "cid": "baeaaadjsgmzsynjtg4ytgnbvgm4q",
     "meta": null,
     "name": null,
     "origins": null
@@ -1908,16 +1908,16 @@ POST https://nft.storage/api/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "baeaaadjsgu3cynbugy2dsnbzgi4a",
+  "requestid": "baeaaadjsgmzsynjtg4ytgnbvgm4q",
   "status": "queued",
-  "created": "2022-06-15T18:38:27.725Z",
+  "created": "2022-06-15T18:51:01.012Z",
   "pin": {
-    "cid": "baeaaadjsgu3cynbugy2dsnbzgi4a"
+    "cid": "baeaaadjsgmzsynjtg4ytgnbvgm4q"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadjsgu3cynbuhaydinrrgq4q' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjsgmzsynjtg43dombsgq2q' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1944,7 +1944,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgu3cynbuhaydinrrgq4q"}
+{"cid":"baeaaadjsgmzsynjtg43dombsgq2q"}
 ```
 
 #### Response
@@ -1956,11 +1956,11 @@ POST https://nft.storage/api/pins
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c448a068006-IAD",
+  "cf-ray": "71bd7eaa3ccce112-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:29 GMT",
+  "date": "Wed, 15 Jun 2022 18:51:04 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -1970,11 +1970,11 @@ POST https://nft.storage/api/pins
 ##### Body
 ```json
 {
-  "requestid": "baeaaadjsgu3cynbuhaydinrrgq4q",
+  "requestid": "baeaaadjsgmzsynjtg43dombsgq2q",
   "status": "queued",
-  "created": "2022-06-15T18:38:29.094+00:00",
+  "created": "2022-06-15T18:51:03.09+00:00",
   "pin": {
-    "cid": "baeaaadjsgu3cynbuhaydinrrgq4q",
+    "cid": "baeaaadjsgmzsynjtg43dombsgq2q",
     "meta": null,
     "name": null,
     "origins": null
@@ -1986,11 +1986,11 @@ POST https://nft.storage/api/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "baeaaadjsgu3cynbuhaydinrrgq4q",
+  "requestid": "baeaaadjsgmzsynjtg43dombsgq2q",
   "status": "queued",
-  "created": "2022-06-15T18:38:29.094+00:00",
+  "created": "2022-06-15T18:51:03.09+00:00",
   "pin": {
-    "cid": "baeaaadjsgu3cynbuhaydinrrgq4q",
+    "cid": "baeaaadjsgmzsynjtg43dombsgq2q",
     "meta": null,
     "name": null,
     "origins": null
@@ -2001,16 +2001,16 @@ POST https://nft.storage/api/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "baeaaadjsgu3cynbuhaydinrrgq4q",
+  "requestid": "baeaaadjsgmzsynjtg43dombsgq2q",
   "status": "queued",
-  "created": "2022-06-15T18:38:29.094Z",
+  "created": "2022-06-15T18:51:03.090Z",
   "pin": {
-    "cid": "baeaaadjsgu3cynbuhaydinrrgq4q"
+    "cid": "baeaaadjsgmzsynjtg43dombsgq2q"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadjsgu3cynbuha2tomztgu3a' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjsgmzsynjthaztgojsgu2a' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -2037,7 +2037,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjsgu3cynbuha2tomztgu3a"}
+{"cid":"baeaaadjsgmzsynjthaztgojsgu2a"}
 ```
 
 #### Response
@@ -2049,11 +2049,11 @@ POST https://nft.storage/api/pins
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c4d0a375961-IAD",
+  "cf-ray": "71bd7eb859155961-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:30 GMT",
+  "date": "Wed, 15 Jun 2022 18:51:33 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -2063,11 +2063,11 @@ POST https://nft.storage/api/pins
 ##### Body
 ```json
 {
-  "requestid": "baeaaadjsgu3cynbuha2tomztgu3a",
+  "requestid": "baeaaadjsgmzsynjthaztgojsgu2a",
   "status": "queued",
-  "created": "2022-06-15T18:38:30.308+00:00",
+  "created": "2022-06-15T18:51:32.082+00:00",
   "pin": {
-    "cid": "baeaaadjsgu3cynbuha2tomztgu3a",
+    "cid": "baeaaadjsgmzsynjthaztgojsgu2a",
     "meta": null,
     "name": null,
     "origins": null
@@ -2079,11 +2079,11 @@ POST https://nft.storage/api/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "baeaaadjsgu3cynbuha2tomztgu3a",
+  "requestid": "baeaaadjsgmzsynjthaztgojsgu2a",
   "status": "queued",
-  "created": "2022-06-15T18:38:30.308+00:00",
+  "created": "2022-06-15T18:51:32.082+00:00",
   "pin": {
-    "cid": "baeaaadjsgu3cynbuha2tomztgu3a",
+    "cid": "baeaaadjsgmzsynjthaztgojsgu2a",
     "meta": null,
     "name": null,
     "origins": null
@@ -2094,11 +2094,11 @@ POST https://nft.storage/api/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "baeaaadjsgu3cynbuha2tomztgu3a",
+  "requestid": "baeaaadjsgmzsynjthaztgojsgu2a",
   "status": "queued",
-  "created": "2022-06-15T18:38:30.308Z",
+  "created": "2022-06-15T18:51:32.082Z",
   "pin": {
-    "cid": "baeaaadjsgu3cynbuha2tomztgu3a"
+    "cid": "baeaaadjsgmzsynjthaztgojsgu2a"
   },
   "delegates": []
 }
@@ -2147,11 +2147,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c53dc78827e-IAD",
+  "cf-ray": "71bd7f6ccfcc7f82-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:32 GMT",
+  "date": "Wed, 15 Jun 2022 18:51:34 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -2164,11 +2164,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 10,
   "results": [
     {
-      "requestid": "baeaaadjsgu3cynbuha2tomztgu3a",
+      "requestid": "baeaaadjsgmzsynjthaztgojsgu2a",
       "status": "queued",
-      "created": "2022-06-15T18:38:30.308+00:00",
+      "created": "2022-06-15T18:51:32.082+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbuha2tomztgu3a",
+        "cid": "baeaaadjsgmzsynjthaztgojsgu2a",
         "meta": null,
         "name": null,
         "origins": null
@@ -2176,11 +2176,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgu3cynbuhaydinrrgq4q",
+      "requestid": "baeaaadjsgmzsynjtg43dombsgq2q",
       "status": "queued",
-      "created": "2022-06-15T18:38:29.094+00:00",
+      "created": "2022-06-15T18:51:03.09+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbuhaydinrrgq4q",
+        "cid": "baeaaadjsgmzsynjtg43dombsgq2q",
         "meta": null,
         "name": null,
         "origins": null
@@ -2188,11 +2188,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomztgu4tamrzgm",
+      "requestid": "baeaaadjsgmzsynjtg4ytgnbvgm4q",
       "status": "queued",
-      "created": "2022-06-15T18:38:27.876+00:00",
+      "created": "2022-06-15T18:51:01.012+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomztgu4tamrzgm",
+        "cid": "baeaaadjsgmzsynjtg4ytgnbvgm4q",
         "meta": null,
         "name": null,
         "origins": null
@@ -2200,11 +2200,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgu3cynbugy2dsnbzgi4a",
+      "requestid": "baeaaadjsgmzsynjtgy2tmmjqgmza",
       "status": "queued",
-      "created": "2022-06-15T18:38:27.725+00:00",
+      "created": "2022-06-15T18:50:58.008+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbugy2dsnbzgi4a",
+        "cid": "baeaaadjsgmzsynjtgy2tmmjqgmza",
         "meta": null,
         "name": null,
         "origins": null
@@ -2212,11 +2212,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgu3cynbugu4danzzge4q",
+      "requestid": "baeaaadjsgmzsynjtgu3tkobzgiza",
       "status": "queued",
-      "created": "2022-06-15T18:38:26.657+00:00",
+      "created": "2022-06-15T18:50:56.124+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbugu4danzzge4q",
+        "cid": "baeaaadjsgmzsynjtgu3tkobzgiza",
         "meta": null,
         "name": null,
         "origins": null
@@ -2224,11 +2224,23 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomztgaytsmzygu",
+      "requestid": "baeaaadjsgizsynrrg42deojyg44q",
       "status": "queued",
-      "created": "2022-06-15T18:38:26.651+00:00",
+      "created": "2022-06-15T18:50:45.298+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomztgaytsmzygu",
+        "cid": "baeaaadjsgizsynrrg42deojyg44q",
+        "meta": null,
+        "name": "860ce637-b37e-4bc8-aec6-68603a4a3809",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadjrha3symjrgaydsmbrgeya",
+      "status": "queued",
+      "created": "2022-06-15T18:50:41.297+00:00",
+      "pin": {
+        "cid": "baeaaadjrha3symjrgaydsmbrgeya",
         "meta": null,
         "name": null,
         "origins": null
@@ -2236,11 +2248,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgu3cynbugq4tenjxga3q",
+      "requestid": "baeaaadjrg43symjwgy2dqmjqgm4a",
       "status": "queued",
-      "created": "2022-06-15T18:38:25.411+00:00",
+      "created": "2022-06-15T18:49:59.646+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbugq4tenjxga3q",
+        "cid": "baeaaadjrg43symjwgy2dqmjqgm4a",
         "meta": null,
         "name": null,
         "origins": null
@@ -2248,11 +2260,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomzrge4tqnbwge",
-      "status": "queued",
-      "created": "2022-06-15T18:38:24.963+00:00",
+      "requestid": "baeaaadjsgm4synrqgm4teojrgi3a",
+      "status": "pinning",
+      "created": "2022-06-15T18:38:09.097+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomzrge4tqnbwge",
+        "cid": "baeaaadjsgm4synrqgm4teojrgi3a",
         "meta": null,
         "name": null,
         "origins": null
@@ -2260,23 +2272,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomzqgq4danzvge",
-      "status": "queued",
-      "created": "2022-06-15T18:38:23.557+00:00",
+      "requestid": "baeaaaczugmwdenzrgu3tmmbx",
+      "status": "pinning",
+      "created": "2022-06-15T18:38:04.668+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomzqgq4danzvge",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbwgewdomrzg43tenjugi",
-      "status": "queued",
-      "created": "2022-06-15T18:38:22.491+00:00",
-      "pin": {
-        "cid": "baeaaadbwgewdomrzg43tenjugi",
+        "cid": "baeaaaczugmwdenzrgu3tmmbx",
         "meta": null,
         "name": null,
         "origins": null
@@ -2293,11 +2293,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 10,
   "results": [
     {
-      "requestid": "baeaaadjsgu3cynbuha2tomztgu3a",
+      "requestid": "baeaaadjsgmzsynjthaztgojsgu2a",
       "status": "queued",
-      "created": "2022-06-15T18:38:30.308+00:00",
+      "created": "2022-06-15T18:51:32.082+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbuha2tomztgu3a",
+        "cid": "baeaaadjsgmzsynjthaztgojsgu2a",
         "meta": null,
         "name": null,
         "origins": null
@@ -2305,11 +2305,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgu3cynbuhaydinrrgq4q",
+      "requestid": "baeaaadjsgmzsynjtg43dombsgq2q",
       "status": "queued",
-      "created": "2022-06-15T18:38:29.094+00:00",
+      "created": "2022-06-15T18:51:03.09+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbuhaydinrrgq4q",
+        "cid": "baeaaadjsgmzsynjtg43dombsgq2q",
         "meta": null,
         "name": null,
         "origins": null
@@ -2317,11 +2317,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomztgu4tamrzgm",
+      "requestid": "baeaaadjsgmzsynjtg4ytgnbvgm4q",
       "status": "queued",
-      "created": "2022-06-15T18:38:27.876+00:00",
+      "created": "2022-06-15T18:51:01.012+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomztgu4tamrzgm",
+        "cid": "baeaaadjsgmzsynjtg4ytgnbvgm4q",
         "meta": null,
         "name": null,
         "origins": null
@@ -2329,11 +2329,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgu3cynbugy2dsnbzgi4a",
+      "requestid": "baeaaadjsgmzsynjtgy2tmmjqgmza",
       "status": "queued",
-      "created": "2022-06-15T18:38:27.725+00:00",
+      "created": "2022-06-15T18:50:58.008+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbugy2dsnbzgi4a",
+        "cid": "baeaaadjsgmzsynjtgy2tmmjqgmza",
         "meta": null,
         "name": null,
         "origins": null
@@ -2341,11 +2341,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgu3cynbugu4danzzge4q",
+      "requestid": "baeaaadjsgmzsynjtgu3tkobzgiza",
       "status": "queued",
-      "created": "2022-06-15T18:38:26.657+00:00",
+      "created": "2022-06-15T18:50:56.124+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbugu4danzzge4q",
+        "cid": "baeaaadjsgmzsynjtgu3tkobzgiza",
         "meta": null,
         "name": null,
         "origins": null
@@ -2353,11 +2353,23 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomztgaytsmzygu",
+      "requestid": "baeaaadjsgizsynrrg42deojyg44q",
       "status": "queued",
-      "created": "2022-06-15T18:38:26.651+00:00",
+      "created": "2022-06-15T18:50:45.298+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomztgaytsmzygu",
+        "cid": "baeaaadjsgizsynrrg42deojyg44q",
+        "meta": null,
+        "name": "860ce637-b37e-4bc8-aec6-68603a4a3809",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadjrha3symjrgaydsmbrgeya",
+      "status": "queued",
+      "created": "2022-06-15T18:50:41.297+00:00",
+      "pin": {
+        "cid": "baeaaadjrha3symjrgaydsmbrgeya",
         "meta": null,
         "name": null,
         "origins": null
@@ -2365,11 +2377,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgu3cynbugq4tenjxga3q",
+      "requestid": "baeaaadjrg43symjwgy2dqmjqgm4a",
       "status": "queued",
-      "created": "2022-06-15T18:38:25.411+00:00",
+      "created": "2022-06-15T18:49:59.646+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbugq4tenjxga3q",
+        "cid": "baeaaadjrg43symjwgy2dqmjqgm4a",
         "meta": null,
         "name": null,
         "origins": null
@@ -2377,11 +2389,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomzrge4tqnbwge",
-      "status": "queued",
-      "created": "2022-06-15T18:38:24.963+00:00",
+      "requestid": "baeaaadjsgm4synrqgm4teojrgi3a",
+      "status": "pinning",
+      "created": "2022-06-15T18:38:09.097+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomzrge4tqnbwge",
+        "cid": "baeaaadjsgm4synrqgm4teojrgi3a",
         "meta": null,
         "name": null,
         "origins": null
@@ -2389,23 +2401,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomzqgq4danzvge",
-      "status": "queued",
-      "created": "2022-06-15T18:38:23.557+00:00",
+      "requestid": "baeaaaczugmwdenzrgu3tmmbx",
+      "status": "pinning",
+      "created": "2022-06-15T18:38:04.668+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomzqgq4danzvge",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbwgewdomrzg43tenjugi",
-      "status": "queued",
-      "created": "2022-06-15T18:38:22.491+00:00",
-      "pin": {
-        "cid": "baeaaadbwgewdomrzg43tenjugi",
+        "cid": "baeaaaczugmwdenzrgu3tmmbx",
         "meta": null,
         "name": null,
         "origins": null
@@ -2440,7 +2440,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 
 #### Request
 ```
-GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-06-15T18%3A38%3A22.491Z
+GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-06-15T18%3A38%3A04.668Z
 ```
 ##### Headers
 ```json
@@ -2462,11 +2462,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befor
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c5d5fde5818-IAD",
+  "cf-ray": "71bd7f736e3b5788-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:33 GMT",
+  "date": "Wed, 15 Jun 2022 18:51:36 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -2479,80 +2479,8 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befor
   "count": 10,
   "results": [
     {
-      "requestid": "baeaaadbwgewdomrzg43tenjugi",
-      "status": "queued",
-      "created": "2022-06-15T18:38:22.491+00:00",
-      "pin": {
-        "cid": "baeaaadbwgewdomrzg43tenjugi",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
-      "status": "queued",
-      "created": "2022-06-15T18:38:18.1+00:00",
-      "pin": {
-        "cid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
-        "meta": null,
-        "name": "1abe266b-9f74-46ae-82f5-fc456903347b",
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbvguwdinzyg4ytsmjzgi",
-      "status": "queued",
-      "created": "2022-06-15T18:38:16.36+00:00",
-      "pin": {
-        "cid": "baeaaadbvguwdinzyg4ytsmjzgi",
-        "meta": null,
-        "name": "25a7442f-ddc4-4e81-8f09-07f40a07d630",
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadjsgq2synzwge4dinzqheza",
-      "status": "queued",
-      "created": "2022-06-15T18:38:14.925+00:00",
-      "pin": {
-        "cid": "baeaaadjsgq2synzwge4dinzqheza",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaaczvgawdeojrgyzdeojt",
-      "status": "queued",
-      "created": "2022-06-15T18:38:11.625+00:00",
-      "pin": {
-        "cid": "baeaaaczvgawdeojrgyzdeojt",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadjsgm4synrqgm4teojrgi3a",
-      "status": "queued",
-      "created": "2022-06-15T18:38:09.097+00:00",
-      "pin": {
-        "cid": "baeaaadjsgm4synrqgm4teojrgi3a",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
       "requestid": "baeaaaczugmwdenzrgu3tmmbx",
-      "status": "queued",
+      "status": "pinning",
       "created": "2022-06-15T18:38:04.668+00:00",
       "pin": {
         "cid": "baeaaaczugmwdenzrgu3tmmbx",
@@ -2594,6 +2522,78 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befor
         "cid": "bafkqadjrgy2dsmzvgu3tmmbwgiya",
         "meta": null,
         "name": "8b9f1506-32c9-44eb-aae6-8cafc8b5f281",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmzvgmydgobwgmzq",
+      "status": "pinned",
+      "created": "2022-04-07T17:37:28.743+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmzvgmydgobwgmzq",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmzvgmydamjzgiza",
+      "status": "pinned",
+      "created": "2022-04-07T17:36:51.656+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmzvgmydamjzgiza",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmrygu3tmobwgeza",
+      "status": "pinned",
+      "created": "2022-04-06T22:56:21.131+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmrygu3tmobwgeza",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmrygu3tgmzug44q",
+      "status": "pinned",
+      "created": "2022-04-06T22:55:43.181+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmrygu3tgmzug44q",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmrygu2dimzrgyza",
+      "status": "pinned",
+      "created": "2022-04-06T22:50:52.824+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmrygu2dimzrgyza",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmryguztgmbvgy4a",
+      "status": "pinned",
+      "created": "2022-04-06T22:48:59.879+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmryguztgmbvgy4a",
+        "meta": null,
+        "name": null,
         "origins": null
       },
       "delegates": []
@@ -2608,80 +2608,8 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befor
   "count": 10,
   "results": [
     {
-      "requestid": "baeaaadbwgewdomrzg43tenjugi",
-      "status": "queued",
-      "created": "2022-06-15T18:38:22.491+00:00",
-      "pin": {
-        "cid": "baeaaadbwgewdomrzg43tenjugi",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
-      "status": "queued",
-      "created": "2022-06-15T18:38:18.1+00:00",
-      "pin": {
-        "cid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
-        "meta": null,
-        "name": "1abe266b-9f74-46ae-82f5-fc456903347b",
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbvguwdinzyg4ytsmjzgi",
-      "status": "queued",
-      "created": "2022-06-15T18:38:16.36+00:00",
-      "pin": {
-        "cid": "baeaaadbvguwdinzyg4ytsmjzgi",
-        "meta": null,
-        "name": "25a7442f-ddc4-4e81-8f09-07f40a07d630",
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadjsgq2synzwge4dinzqheza",
-      "status": "queued",
-      "created": "2022-06-15T18:38:14.925+00:00",
-      "pin": {
-        "cid": "baeaaadjsgq2synzwge4dinzqheza",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaaczvgawdeojrgyzdeojt",
-      "status": "queued",
-      "created": "2022-06-15T18:38:11.625+00:00",
-      "pin": {
-        "cid": "baeaaaczvgawdeojrgyzdeojt",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadjsgm4synrqgm4teojrgi3a",
-      "status": "queued",
-      "created": "2022-06-15T18:38:09.097+00:00",
-      "pin": {
-        "cid": "baeaaadjsgm4synrqgm4teojrgi3a",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
       "requestid": "baeaaaczugmwdenzrgu3tmmbx",
-      "status": "queued",
+      "status": "pinning",
       "created": "2022-06-15T18:38:04.668+00:00",
       "pin": {
         "cid": "baeaaaczugmwdenzrgu3tmmbx",
@@ -2723,6 +2651,78 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befor
         "cid": "bafkqadjrgy2dsmzvgu3tmmbwgiya",
         "meta": null,
         "name": "8b9f1506-32c9-44eb-aae6-8cafc8b5f281",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmzvgmydgobwgmzq",
+      "status": "pinned",
+      "created": "2022-04-07T17:37:28.743+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmzvgmydgobwgmzq",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmzvgmydamjzgiza",
+      "status": "pinned",
+      "created": "2022-04-07T17:36:51.656+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmzvgmydamjzgiza",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmrygu3tmobwgeza",
+      "status": "pinned",
+      "created": "2022-04-06T22:56:21.131+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmrygu3tmobwgeza",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmrygu3tgmzug44q",
+      "status": "pinned",
+      "created": "2022-04-06T22:55:43.181+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmrygu3tgmzug44q",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmrygu2dimzrgyza",
+      "status": "pinned",
+      "created": "2022-04-06T22:50:52.824+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmrygu2dimzrgyza",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmryguztgmbvgy4a",
+      "status": "pinned",
+      "created": "2022-04-06T22:48:59.879+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmryguztgmbvgy4a",
+        "meta": null,
+        "name": null,
         "origins": null
       },
       "delegates": []
@@ -2811,11 +2811,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c2698489c52-IAD",
+  "cf-ray": "71bd7e75da7f5af2-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:24 GMT",
+  "date": "Wed, 15 Jun 2022 18:50:54 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -2828,11 +2828,23 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 10,
   "results": [
     {
-      "requestid": "baeaaadbwgewdomzqgq4danzvge",
+      "requestid": "baeaaadjsgizsynrrg42deojyg44q",
       "status": "queued",
-      "created": "2022-06-15T18:38:23.557+00:00",
+      "created": "2022-06-15T18:50:45.298+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomzqgq4danzvge",
+        "cid": "baeaaadjsgizsynrrg42deojyg44q",
+        "meta": null,
+        "name": "860ce637-b37e-4bc8-aec6-68603a4a3809",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadjrha3symjrgaydsmbrgeya",
+      "status": "queued",
+      "created": "2022-06-15T18:50:41.297+00:00",
+      "pin": {
+        "cid": "baeaaadjrha3symjrgaydsmbrgeya",
         "meta": null,
         "name": null,
         "origins": null
@@ -2840,59 +2852,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomrzg43tenjugi",
+      "requestid": "baeaaadjrg43symjwgy2dqmjqgm4a",
       "status": "queued",
-      "created": "2022-06-15T18:38:22.491+00:00",
+      "created": "2022-06-15T18:49:59.646+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomrzg43tenjugi",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
-      "status": "queued",
-      "created": "2022-06-15T18:38:18.1+00:00",
-      "pin": {
-        "cid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
-        "meta": null,
-        "name": "1abe266b-9f74-46ae-82f5-fc456903347b",
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbvguwdinzyg4ytsmjzgi",
-      "status": "queued",
-      "created": "2022-06-15T18:38:16.36+00:00",
-      "pin": {
-        "cid": "baeaaadbvguwdinzyg4ytsmjzgi",
-        "meta": null,
-        "name": "25a7442f-ddc4-4e81-8f09-07f40a07d630",
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadjsgq2synzwge4dinzqheza",
-      "status": "queued",
-      "created": "2022-06-15T18:38:14.925+00:00",
-      "pin": {
-        "cid": "baeaaadjsgq2synzwge4dinzqheza",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaaczvgawdeojrgyzdeojt",
-      "status": "queued",
-      "created": "2022-06-15T18:38:11.625+00:00",
-      "pin": {
-        "cid": "baeaaaczvgawdeojrgyzdeojt",
+        "cid": "baeaaadjrg43symjwgy2dqmjqgm4a",
         "meta": null,
         "name": null,
         "origins": null
@@ -2901,7 +2865,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
     },
     {
       "requestid": "baeaaadjsgm4synrqgm4teojrgi3a",
-      "status": "queued",
+      "status": "pinning",
       "created": "2022-06-15T18:38:09.097+00:00",
       "pin": {
         "cid": "baeaaadjsgm4synrqgm4teojrgi3a",
@@ -2913,7 +2877,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
     },
     {
       "requestid": "baeaaaczugmwdenzrgu3tmmbx",
-      "status": "queued",
+      "status": "pinning",
       "created": "2022-06-15T18:38:04.668+00:00",
       "pin": {
         "cid": "baeaaaczugmwdenzrgu3tmmbx",
@@ -2943,6 +2907,42 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
         "cid": "bafkqadjrgy2dsmzwga4tknrwgy3q",
         "meta": null,
         "name": "bd805770-e453-433b-9f4c-db29a52f6097",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmzvgu3tmmbwgiya",
+      "status": "pinned",
+      "created": "2022-04-07T18:22:46.814+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmzvgu3tmmbwgiya",
+        "meta": null,
+        "name": "8b9f1506-32c9-44eb-aae6-8cafc8b5f281",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmzvgmydgobwgmzq",
+      "status": "pinned",
+      "created": "2022-04-07T17:37:28.743+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmzvgmydgobwgmzq",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmzvgmydamjzgiza",
+      "status": "pinned",
+      "created": "2022-04-07T17:36:51.656+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmzvgmydamjzgiza",
+        "meta": null,
+        "name": null,
         "origins": null
       },
       "delegates": []
@@ -2957,11 +2957,23 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 10,
   "results": [
     {
-      "requestid": "baeaaadbwgewdomzqgq4danzvge",
+      "requestid": "baeaaadjsgizsynrrg42deojyg44q",
       "status": "queued",
-      "created": "2022-06-15T18:38:23.557+00:00",
+      "created": "2022-06-15T18:50:45.298+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomzqgq4danzvge",
+        "cid": "baeaaadjsgizsynrrg42deojyg44q",
+        "meta": null,
+        "name": "860ce637-b37e-4bc8-aec6-68603a4a3809",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadjrha3symjrgaydsmbrgeya",
+      "status": "queued",
+      "created": "2022-06-15T18:50:41.297+00:00",
+      "pin": {
+        "cid": "baeaaadjrha3symjrgaydsmbrgeya",
         "meta": null,
         "name": null,
         "origins": null
@@ -2969,59 +2981,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomrzg43tenjugi",
+      "requestid": "baeaaadjrg43symjwgy2dqmjqgm4a",
       "status": "queued",
-      "created": "2022-06-15T18:38:22.491+00:00",
+      "created": "2022-06-15T18:49:59.646+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomrzg43tenjugi",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
-      "status": "queued",
-      "created": "2022-06-15T18:38:18.1+00:00",
-      "pin": {
-        "cid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
-        "meta": null,
-        "name": "1abe266b-9f74-46ae-82f5-fc456903347b",
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbvguwdinzyg4ytsmjzgi",
-      "status": "queued",
-      "created": "2022-06-15T18:38:16.36+00:00",
-      "pin": {
-        "cid": "baeaaadbvguwdinzyg4ytsmjzgi",
-        "meta": null,
-        "name": "25a7442f-ddc4-4e81-8f09-07f40a07d630",
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadjsgq2synzwge4dinzqheza",
-      "status": "queued",
-      "created": "2022-06-15T18:38:14.925+00:00",
-      "pin": {
-        "cid": "baeaaadjsgq2synzwge4dinzqheza",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaaczvgawdeojrgyzdeojt",
-      "status": "queued",
-      "created": "2022-06-15T18:38:11.625+00:00",
-      "pin": {
-        "cid": "baeaaaczvgawdeojrgyzdeojt",
+        "cid": "baeaaadjrg43symjwgy2dqmjqgm4a",
         "meta": null,
         "name": null,
         "origins": null
@@ -3030,7 +2994,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
     },
     {
       "requestid": "baeaaadjsgm4synrqgm4teojrgi3a",
-      "status": "queued",
+      "status": "pinning",
       "created": "2022-06-15T18:38:09.097+00:00",
       "pin": {
         "cid": "baeaaadjsgm4synrqgm4teojrgi3a",
@@ -3042,7 +3006,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
     },
     {
       "requestid": "baeaaaczugmwdenzrgu3tmmbx",
-      "status": "queued",
+      "status": "pinning",
       "created": "2022-06-15T18:38:04.668+00:00",
       "pin": {
         "cid": "baeaaaczugmwdenzrgu3tmmbx",
@@ -3072,6 +3036,42 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
         "cid": "bafkqadjrgy2dsmzwga4tknrwgy3q",
         "meta": null,
         "name": "bd805770-e453-433b-9f4c-db29a52f6097",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmzvgu3tmmbwgiya",
+      "status": "pinned",
+      "created": "2022-04-07T18:22:46.814+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmzvgu3tmmbwgiya",
+        "meta": null,
+        "name": "8b9f1506-32c9-44eb-aae6-8cafc8b5f281",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmzvgmydgobwgmzq",
+      "status": "pinned",
+      "created": "2022-04-07T17:37:28.743+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmzvgmydgobwgmzq",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmzvgmydamjzgiza",
+      "status": "pinned",
+      "created": "2022-04-07T17:36:51.656+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmzvgmydamjzgiza",
+        "meta": null,
+        "name": null,
         "origins": null
       },
       "delegates": []
@@ -3086,607 +3086,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "results": {}
 }
 ```
-## Can delete pin with requestid 'baeaaadbwgewdomztgu4tamrzgm' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Response code is 202 (failure)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
-
-
-### Details
-
-#### Request
-```
-DELETE https://nft.storage/api/pins/baeaaadbwgewdomztgu4tamrzgm
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-404 Not Found
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c69cee95de1-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:34 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can delete pin with requestid 'baeaaadjsgu3cynbugy2dsnbzgi4a' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Response code is 202 (failure)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
-
-
-### Details
-
-#### Request
-```
-DELETE https://nft.storage/api/pins/baeaaadjsgu3cynbugy2dsnbzgi4a
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-404 Not Found
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c6ff8188006-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:35 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can delete pin with requestid 'baeaaadjsgu3cynbugu4danzzge4q' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Response code is 202 (failure)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
-
-
-### Details
-
-#### Request
-```
-DELETE https://nft.storage/api/pins/baeaaadjsgu3cynbugu4danzzge4q
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-404 Not Found
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c764bfbc17a-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:37 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can delete pin with requestid 'baeaaadbwgewdomztgaytsmzygu' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Response code is 202 (failure)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
-
-
-### Details
-
-#### Request
-```
-DELETE https://nft.storage/api/pins/baeaaadbwgewdomztgaytsmzygu
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-404 Not Found
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c7c7c485b95-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:38 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can delete pin with requestid 'baeaaadjsgu3cynbugq4tenjxga3q' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Response code is 202 (failure)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
-
-
-### Details
-
-#### Request
-```
-DELETE https://nft.storage/api/pins/baeaaadjsgu3cynbugq4tenjxga3q
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-404 Not Found
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c82bf297fd5-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:38 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can delete pin with requestid 'baeaaadbwgewdomzrge4tqnbwge' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Response code is 202 (failure)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
-
-
-### Details
-
-#### Request
-```
-DELETE https://nft.storage/api/pins/baeaaadbwgewdomzrge4tqnbwge
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-404 Not Found
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c88ff419c84-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:39 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can delete pin with requestid 'baeaaadbwgewdomzqgq4danzvge' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Response code is 202 (failure)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
-
-
-### Details
-
-#### Request
-```
-DELETE https://nft.storage/api/pins/baeaaadbwgewdomzqgq4danzvge
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-404 Not Found
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c8f59eb56da-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:40 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can delete pin with requestid 'baeaaadbwgewdomrzg43tenjugi' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Response code is 202 (failure)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
-
-
-### Details
-
-#### Request
-```
-DELETE https://nft.storage/api/pins/baeaaadbwgewdomrzg43tenjugi
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-404 Not Found
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c957a0d8006-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:41 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "error": {
-    "reason": "The specified resource was not found"
-  }
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can delete pin with requestid 'baeaaadjsgq4synbzgi2dkmbzgq3a' - 🟢 SUCCESS
+## Can delete pin with requestid 'baeaaadjsgmzsynjthaztgojsgu2a' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -3714,7 +3114,7 @@ null
 
 #### Request
 ```
-DELETE https://nft.storage/api/pins/baeaaadjsgq4synbzgi2dkmbzgq3a
+DELETE https://nft.storage/api/pins/baeaaadjsgmzsynjthaztgojsgu2a
 ```
 ##### Headers
 ```json
@@ -3736,11 +3136,11 @@ DELETE https://nft.storage/api/pins/baeaaadjsgq4synbzgi2dkmbzgq3a
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c9bccd19c36-IAD",
+  "cf-ray": "71bd7f8acc549c8e-IAD",
   "connection": "close",
   "content-length": "0",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:42 GMT",
+  "date": "Wed, 15 Jun 2022 18:51:38 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -3759,7 +3159,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'baeaaadbvguwdinzyg4ytsmjzgi' - 🟢 SUCCESS
+## Can delete pin with requestid 'baeaaadjsgmzsynjtg43dombsgq2q' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -3787,7 +3187,7 @@ undefined
 
 #### Request
 ```
-DELETE https://nft.storage/api/pins/baeaaadbvguwdinzyg4ytsmjzgi
+DELETE https://nft.storage/api/pins/baeaaadjsgmzsynjtg43dombsgq2q
 ```
 ##### Headers
 ```json
@@ -3809,11 +3209,595 @@ DELETE https://nft.storage/api/pins/baeaaadbvguwdinzyg4ytsmjzgi
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6ca20f1f5b95-IAD",
+  "cf-ray": "71bd7f90fc647004-IAD",
   "connection": "close",
   "content-length": "0",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:43 GMT",
+  "date": "Wed, 15 Jun 2022 18:51:39 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+undefined
+```
+## Can delete pin with requestid 'baeaaadjsgmzsynjtg4ytgnbvgm4q' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Response code is 202 (success)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+
+
+### Details
+
+#### Request
+```
+DELETE https://nft.storage/api/pins/baeaaadjsgmzsynjtg4ytgnbvgm4q
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+202 Accepted
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71bd7f974af582b7-IAD",
+  "connection": "close",
+  "content-length": "0",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Wed, 15 Jun 2022 18:51:40 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+undefined
+```
+## Can delete pin with requestid 'baeaaadjsgmzsynjtgy2tmmjqgmza' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Response code is 202 (success)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+
+
+### Details
+
+#### Request
+```
+DELETE https://nft.storage/api/pins/baeaaadjsgmzsynjtgy2tmmjqgmza
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+202 Accepted
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71bd7f9d8b4e59da-IAD",
+  "connection": "close",
+  "content-length": "0",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Wed, 15 Jun 2022 18:51:41 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+undefined
+```
+## Can delete pin with requestid 'baeaaadjsgmzsynjtgu3tkobzgiza' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Response code is 202 (success)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+
+
+### Details
+
+#### Request
+```
+DELETE https://nft.storage/api/pins/baeaaadjsgmzsynjtgu3tkobzgiza
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+202 Accepted
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71bd7fa3bc985a33-IAD",
+  "connection": "close",
+  "content-length": "0",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Wed, 15 Jun 2022 18:51:42 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+undefined
+```
+## Can delete pin with requestid 'baeaaadjsgizsynrrg42deojyg44q' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Response code is 202 (success)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+
+
+### Details
+
+#### Request
+```
+DELETE https://nft.storage/api/pins/baeaaadjsgizsynrrg42deojyg44q
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+202 Accepted
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71bd7fa9fca45788-IAD",
+  "connection": "close",
+  "content-length": "0",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Wed, 15 Jun 2022 18:51:43 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+undefined
+```
+## Can delete pin with requestid 'baeaaadjrha3symjrgaydsmbrgeya' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Response code is 202 (success)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+
+
+### Details
+
+#### Request
+```
+DELETE https://nft.storage/api/pins/baeaaadjrha3symjrgaydsmbrgeya
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+202 Accepted
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71bd7fb03cb9584e-IAD",
+  "connection": "close",
+  "content-length": "0",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Wed, 15 Jun 2022 18:51:44 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+undefined
+```
+## Can delete pin with requestid 'baeaaadjrg43symjwgy2dqmjqgm4a' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Response code is 202 (success)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+
+
+### Details
+
+#### Request
+```
+DELETE https://nft.storage/api/pins/baeaaadjrg43symjwgy2dqmjqgm4a
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+202 Accepted
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71bd7fb6791e9c8e-IAD",
+  "connection": "close",
+  "content-length": "0",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Wed, 15 Jun 2022 18:51:45 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+undefined
+```
+## Can delete pin with requestid 'baeaaadjsgm4synrqgm4teojrgi3a' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Response code is 202 (success)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+
+
+### Details
+
+#### Request
+```
+DELETE https://nft.storage/api/pins/baeaaadjsgm4synrqgm4teojrgi3a
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+202 Accepted
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71bd7fbcd9fd7f9e-IAD",
+  "connection": "close",
+  "content-length": "0",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Wed, 15 Jun 2022 18:51:46 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+undefined
+```
+## Can delete pin with requestid 'baeaaaczugmwdenzrgu3tmmbx' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Response code is 202 (success)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
+
+
+### Details
+
+#### Request
+```
+DELETE https://nft.storage/api/pins/baeaaaczugmwdenzrgu3tmmbx
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+202 Accepted
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71bd7fc30abd81c4-IAD",
+  "connection": "close",
+  "content-length": "0",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Wed, 15 Jun 2022 18:51:47 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -3868,11 +3852,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6ca84a00829e-IAD",
+  "cf-ray": "71bd7fc9481b826c-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:45 GMT",
+  "date": "Wed, 15 Jun 2022 18:51:49 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -3884,54 +3868,6 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "count": 10,
   "results": [
-    {
-      "requestid": "baeaaadjsgq2synzwge4dinzqheza",
-      "status": "queued",
-      "created": "2022-06-15T18:38:14.925+00:00",
-      "pin": {
-        "cid": "baeaaadjsgq2synzwge4dinzqheza",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaaczvgawdeojrgyzdeojt",
-      "status": "queued",
-      "created": "2022-06-15T18:38:11.625+00:00",
-      "pin": {
-        "cid": "baeaaaczvgawdeojrgyzdeojt",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadjsgm4synrqgm4teojrgi3a",
-      "status": "queued",
-      "created": "2022-06-15T18:38:09.097+00:00",
-      "pin": {
-        "cid": "baeaaadjsgm4synrqgm4teojrgi3a",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaaczugmwdenzrgu3tmmbx",
-      "status": "queued",
-      "created": "2022-06-15T18:38:04.668+00:00",
-      "pin": {
-        "cid": "baeaaaczugmwdenzrgu3tmmbx",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
     {
       "requestid": "bafkqadjrgy2dsmzwgezdknzxgm3a",
       "status": "pinned",
@@ -3998,6 +3934,54 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "created": "2022-04-06T22:56:21.131+00:00",
       "pin": {
         "cid": "bafkqadjrgy2dsmrygu3tmobwgeza",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmrygu3tgmzug44q",
+      "status": "pinned",
+      "created": "2022-04-06T22:55:43.181+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmrygu3tgmzug44q",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmrygu2dimzrgyza",
+      "status": "pinned",
+      "created": "2022-04-06T22:50:52.824+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmrygu2dimzrgyza",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmryguztgmbvgy4a",
+      "status": "pinned",
+      "created": "2022-04-06T22:48:59.879+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmryguztgmbvgy4a",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmryguzdinzzhazq",
+      "status": "pinned",
+      "created": "2022-04-06T22:47:37.255+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmryguzdinzzhazq",
         "meta": null,
         "name": null,
         "origins": null
@@ -4014,54 +3998,6 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 10,
   "results": [
     {
-      "requestid": "baeaaadjsgq2synzwge4dinzqheza",
-      "status": "queued",
-      "created": "2022-06-15T18:38:14.925+00:00",
-      "pin": {
-        "cid": "baeaaadjsgq2synzwge4dinzqheza",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaaczvgawdeojrgyzdeojt",
-      "status": "queued",
-      "created": "2022-06-15T18:38:11.625+00:00",
-      "pin": {
-        "cid": "baeaaaczvgawdeojrgyzdeojt",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadjsgm4synrqgm4teojrgi3a",
-      "status": "queued",
-      "created": "2022-06-15T18:38:09.097+00:00",
-      "pin": {
-        "cid": "baeaaadjsgm4synrqgm4teojrgi3a",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaaczugmwdenzrgu3tmmbx",
-      "status": "queued",
-      "created": "2022-06-15T18:38:04.668+00:00",
-      "pin": {
-        "cid": "baeaaaczugmwdenzrgu3tmmbx",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
       "requestid": "bafkqadjrgy2dsmzwgezdknzxgm3a",
       "status": "pinned",
       "created": "2022-04-07T19:54:23.769+00:00",
@@ -4127,6 +4063,54 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "created": "2022-04-06T22:56:21.131+00:00",
       "pin": {
         "cid": "bafkqadjrgy2dsmrygu3tmobwgeza",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmrygu3tgmzug44q",
+      "status": "pinned",
+      "created": "2022-04-06T22:55:43.181+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmrygu3tgmzug44q",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmrygu2dimzrgyza",
+      "status": "pinned",
+      "created": "2022-04-06T22:50:52.824+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmrygu2dimzrgyza",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmryguztgmbvgy4a",
+      "status": "pinned",
+      "created": "2022-04-06T22:48:59.879+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmryguztgmbvgy4a",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkqadjrgy2dsmryguzdinzzhazq",
+      "status": "pinned",
+      "created": "2022-04-06T22:47:37.255+00:00",
+      "pin": {
+        "cid": "bafkqadjrgy2dsmryguzdinzzhazq",
         "meta": null,
         "name": null,
         "origins": null
@@ -4145,39 +4129,39 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 ```
 ## Can delete all pins - ❌ FAILED
 
-### Expectations (4/21 successful)
+### Expectations (20/21 successful)
 
-  ❌ Response is ok (failure)
+  🟢 Response is ok (success)
 
-  ❌ Response code is 202 (failure)
+  🟢 Response code is 202 (success)
 
-  ❌ Response is ok (failure)
+  🟢 Response is ok (success)
 
-  ❌ Response code is 202 (failure)
+  🟢 Response code is 202 (success)
 
-  ❌ Response is ok (failure)
+  🟢 Response is ok (success)
 
-  ❌ Response code is 202 (failure)
+  🟢 Response code is 202 (success)
 
-  ❌ Response is ok (failure)
+  🟢 Response is ok (success)
 
-  ❌ Response code is 202 (failure)
+  🟢 Response code is 202 (success)
 
-  ❌ Response is ok (failure)
+  🟢 Response is ok (success)
 
-  ❌ Response code is 202 (failure)
+  🟢 Response code is 202 (success)
 
-  ❌ Response is ok (failure)
+  🟢 Response is ok (success)
 
-  ❌ Response code is 202 (failure)
+  🟢 Response code is 202 (success)
 
-  ❌ Response is ok (failure)
+  🟢 Response is ok (success)
 
-  ❌ Response code is 202 (failure)
+  🟢 Response code is 202 (success)
 
-  ❌ Response is ok (failure)
+  🟢 Response is ok (success)
 
-  ❌ Response code is 202 (failure)
+  🟢 Response code is 202 (success)
 
   🟢 Response is ok (success)
 
@@ -4192,45 +4176,101 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 
 ### Errors during run
 
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:63:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
+    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:26:31)
 
   ⚠️ SyntaxError: Unexpected end of JSON input
     at JSON.parse (<anonymous>)
@@ -4283,11 +4323,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71bd6c637ced56da-IAD",
+  "cf-ray": "71bd7f83f9a5584e-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Wed, 15 Jun 2022 18:38:34 GMT",
+  "date": "Wed, 15 Jun 2022 18:51:38 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -4300,11 +4340,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 10,
   "results": [
     {
-      "requestid": "baeaaadbwgewdomztgu4tamrzgm",
+      "requestid": "baeaaadjsgmzsynjthaztgojsgu2a",
       "status": "queued",
-      "created": "2022-06-15T18:38:27.876+00:00",
+      "created": "2022-06-15T18:51:32.082+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomztgu4tamrzgm",
+        "cid": "baeaaadjsgmzsynjthaztgojsgu2a",
         "meta": null,
         "name": null,
         "origins": null
@@ -4312,11 +4352,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgu3cynbugy2dsnbzgi4a",
+      "requestid": "baeaaadjsgmzsynjtg43dombsgq2q",
       "status": "queued",
-      "created": "2022-06-15T18:38:27.725+00:00",
+      "created": "2022-06-15T18:51:03.09+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbugy2dsnbzgi4a",
+        "cid": "baeaaadjsgmzsynjtg43dombsgq2q",
         "meta": null,
         "name": null,
         "origins": null
@@ -4324,11 +4364,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgu3cynbugu4danzzge4q",
+      "requestid": "baeaaadjsgmzsynjtg4ytgnbvgm4q",
       "status": "queued",
-      "created": "2022-06-15T18:38:26.657+00:00",
+      "created": "2022-06-15T18:51:01.012+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbugu4danzzge4q",
+        "cid": "baeaaadjsgmzsynjtg4ytgnbvgm4q",
         "meta": null,
         "name": null,
         "origins": null
@@ -4336,11 +4376,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomztgaytsmzygu",
+      "requestid": "baeaaadjsgmzsynjtgy2tmmjqgmza",
       "status": "queued",
-      "created": "2022-06-15T18:38:26.651+00:00",
+      "created": "2022-06-15T18:50:58.008+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomztgaytsmzygu",
+        "cid": "baeaaadjsgmzsynjtgy2tmmjqgmza",
         "meta": null,
         "name": null,
         "origins": null
@@ -4348,11 +4388,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgu3cynbugq4tenjxga3q",
+      "requestid": "baeaaadjsgmzsynjtgu3tkobzgiza",
       "status": "queued",
-      "created": "2022-06-15T18:38:25.411+00:00",
+      "created": "2022-06-15T18:50:56.124+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbugq4tenjxga3q",
+        "cid": "baeaaadjsgmzsynjtgu3tkobzgiza",
         "meta": null,
         "name": null,
         "origins": null
@@ -4360,11 +4400,23 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomzrge4tqnbwge",
+      "requestid": "baeaaadjsgizsynrrg42deojyg44q",
       "status": "queued",
-      "created": "2022-06-15T18:38:24.963+00:00",
+      "created": "2022-06-15T18:50:45.298+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomzrge4tqnbwge",
+        "cid": "baeaaadjsgizsynrrg42deojyg44q",
+        "meta": null,
+        "name": "860ce637-b37e-4bc8-aec6-68603a4a3809",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadjrha3symjrgaydsmbrgeya",
+      "status": "queued",
+      "created": "2022-06-15T18:50:41.297+00:00",
+      "pin": {
+        "cid": "baeaaadjrha3symjrgaydsmbrgeya",
         "meta": null,
         "name": null,
         "origins": null
@@ -4372,11 +4424,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomzqgq4danzvge",
+      "requestid": "baeaaadjrg43symjwgy2dqmjqgm4a",
       "status": "queued",
-      "created": "2022-06-15T18:38:23.557+00:00",
+      "created": "2022-06-15T18:49:59.646+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomzqgq4danzvge",
+        "cid": "baeaaadjrg43symjwgy2dqmjqgm4a",
         "meta": null,
         "name": null,
         "origins": null
@@ -4384,11 +4436,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomrzg43tenjugi",
-      "status": "queued",
-      "created": "2022-06-15T18:38:22.491+00:00",
+      "requestid": "baeaaadjsgm4synrqgm4teojrgi3a",
+      "status": "pinning",
+      "created": "2022-06-15T18:38:09.097+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomrzg43tenjugi",
+        "cid": "baeaaadjsgm4synrqgm4teojrgi3a",
         "meta": null,
         "name": null,
         "origins": null
@@ -4396,25 +4448,13 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
-      "status": "queued",
-      "created": "2022-06-15T18:38:18.1+00:00",
+      "requestid": "baeaaaczugmwdenzrgu3tmmbx",
+      "status": "pinning",
+      "created": "2022-06-15T18:38:04.668+00:00",
       "pin": {
-        "cid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
+        "cid": "baeaaaczugmwdenzrgu3tmmbx",
         "meta": null,
-        "name": "1abe266b-9f74-46ae-82f5-fc456903347b",
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbvguwdinzyg4ytsmjzgi",
-      "status": "queued",
-      "created": "2022-06-15T18:38:16.36+00:00",
-      "pin": {
-        "cid": "baeaaadbvguwdinzyg4ytsmjzgi",
-        "meta": null,
-        "name": "25a7442f-ddc4-4e81-8f09-07f40a07d630",
+        "name": null,
         "origins": null
       },
       "delegates": []
@@ -4429,11 +4469,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 10,
   "results": [
     {
-      "requestid": "baeaaadbwgewdomztgu4tamrzgm",
+      "requestid": "baeaaadjsgmzsynjthaztgojsgu2a",
       "status": "queued",
-      "created": "2022-06-15T18:38:27.876+00:00",
+      "created": "2022-06-15T18:51:32.082+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomztgu4tamrzgm",
+        "cid": "baeaaadjsgmzsynjthaztgojsgu2a",
         "meta": null,
         "name": null,
         "origins": null
@@ -4441,11 +4481,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgu3cynbugy2dsnbzgi4a",
+      "requestid": "baeaaadjsgmzsynjtg43dombsgq2q",
       "status": "queued",
-      "created": "2022-06-15T18:38:27.725+00:00",
+      "created": "2022-06-15T18:51:03.09+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbugy2dsnbzgi4a",
+        "cid": "baeaaadjsgmzsynjtg43dombsgq2q",
         "meta": null,
         "name": null,
         "origins": null
@@ -4453,11 +4493,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgu3cynbugu4danzzge4q",
+      "requestid": "baeaaadjsgmzsynjtg4ytgnbvgm4q",
       "status": "queued",
-      "created": "2022-06-15T18:38:26.657+00:00",
+      "created": "2022-06-15T18:51:01.012+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbugu4danzzge4q",
+        "cid": "baeaaadjsgmzsynjtg4ytgnbvgm4q",
         "meta": null,
         "name": null,
         "origins": null
@@ -4465,11 +4505,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomztgaytsmzygu",
+      "requestid": "baeaaadjsgmzsynjtgy2tmmjqgmza",
       "status": "queued",
-      "created": "2022-06-15T18:38:26.651+00:00",
+      "created": "2022-06-15T18:50:58.008+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomztgaytsmzygu",
+        "cid": "baeaaadjsgmzsynjtgy2tmmjqgmza",
         "meta": null,
         "name": null,
         "origins": null
@@ -4477,11 +4517,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgu3cynbugq4tenjxga3q",
+      "requestid": "baeaaadjsgmzsynjtgu3tkobzgiza",
       "status": "queued",
-      "created": "2022-06-15T18:38:25.411+00:00",
+      "created": "2022-06-15T18:50:56.124+00:00",
       "pin": {
-        "cid": "baeaaadjsgu3cynbugq4tenjxga3q",
+        "cid": "baeaaadjsgmzsynjtgu3tkobzgiza",
         "meta": null,
         "name": null,
         "origins": null
@@ -4489,11 +4529,23 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomzrge4tqnbwge",
+      "requestid": "baeaaadjsgizsynrrg42deojyg44q",
       "status": "queued",
-      "created": "2022-06-15T18:38:24.963+00:00",
+      "created": "2022-06-15T18:50:45.298+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomzrge4tqnbwge",
+        "cid": "baeaaadjsgizsynrrg42deojyg44q",
+        "meta": null,
+        "name": "860ce637-b37e-4bc8-aec6-68603a4a3809",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadjrha3symjrgaydsmbrgeya",
+      "status": "queued",
+      "created": "2022-06-15T18:50:41.297+00:00",
+      "pin": {
+        "cid": "baeaaadjrha3symjrgaydsmbrgeya",
         "meta": null,
         "name": null,
         "origins": null
@@ -4501,11 +4553,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomzqgq4danzvge",
+      "requestid": "baeaaadjrg43symjwgy2dqmjqgm4a",
       "status": "queued",
-      "created": "2022-06-15T18:38:23.557+00:00",
+      "created": "2022-06-15T18:49:59.646+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomzqgq4danzvge",
+        "cid": "baeaaadjrg43symjwgy2dqmjqgm4a",
         "meta": null,
         "name": null,
         "origins": null
@@ -4513,11 +4565,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbwgewdomrzg43tenjugi",
-      "status": "queued",
-      "created": "2022-06-15T18:38:22.491+00:00",
+      "requestid": "baeaaadjsgm4synrqgm4teojrgi3a",
+      "status": "pinning",
+      "created": "2022-06-15T18:38:09.097+00:00",
       "pin": {
-        "cid": "baeaaadbwgewdomrzg43tenjugi",
+        "cid": "baeaaadjsgm4synrqgm4teojrgi3a",
         "meta": null,
         "name": null,
         "origins": null
@@ -4525,25 +4577,13 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
-      "status": "queued",
-      "created": "2022-06-15T18:38:18.1+00:00",
+      "requestid": "baeaaaczugmwdenzrgu3tmmbx",
+      "status": "pinning",
+      "created": "2022-06-15T18:38:04.668+00:00",
       "pin": {
-        "cid": "baeaaadjsgq4synbzgi2dkmbzgq3a",
+        "cid": "baeaaaczugmwdenzrgu3tmmbx",
         "meta": null,
-        "name": "1abe266b-9f74-46ae-82f5-fc456903347b",
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbvguwdinzyg4ytsmjzgi",
-      "status": "queued",
-      "created": "2022-06-15T18:38:16.36+00:00",
-      "pin": {
-        "cid": "baeaaadbvguwdinzyg4ytsmjzgi",
-        "meta": null,
-        "name": "25a7442f-ddc4-4e81-8f09-07f40a07d630",
+        "name": null,
         "origins": null
       },
       "delegates": []
