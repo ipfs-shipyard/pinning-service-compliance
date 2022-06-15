@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.2...v1.0.3) (2022-06-15)
+
+
+### Trivial Changes
+
+* **deps-dev:** bump typescript from 4.6.4 to 4.7.3 ([#73](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/73)) ([2423a26](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/2423a26b362ad060560c726fb75ee86012f9139d))
+
 ## [1.0.2](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.1...v1.0.2) (2022-06-15)
 
 
