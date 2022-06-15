@@ -1,8 +1,8 @@
 import { join } from 'path'
 
-import Ctl from 'ipfsd-ctl'
+import { createController } from 'ipfsd-ctl'
 import * as ipfsHttpClient from 'ipfs-http-client'
-import type { HTTPClientExtraOptions } from 'ipfs-http-client/types/src/types'
+import type { HTTPClientExtraOptions } from 'ipfs-http-client'
 import type { API } from 'ipfs-core-types/src/root'
 
 import { logger } from './logs.js'
@@ -19,7 +19,7 @@ interface GetIpfsClientResponse {
 const getIpfsClient = async (): Promise<GetIpfsClientResponse> => {
   try {
     logger.debug('Attempting to use ipfsd-ctl to create a client')
-    const ipfsd = await Ctl.createController({
+    const ipfsd = await createController({
       ipfsHttpModule: ipfsHttpClient,
       ipfsBin: join('node_modules', '.bin', 'ipfs'),
       test: true,
