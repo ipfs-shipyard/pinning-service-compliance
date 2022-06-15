@@ -150,7 +150,7 @@
     "git-rev": "^0.2.1",
     "go-ipfs": "^0.13.0",
     "ipfs": "^0.63.3",
-    "ipfs-core": "^0.14.3",
+    "ipfs-core": "^0.15.2",
     "ipfs-http-client": "^56.0.3",
     "ipfsd-ctl": "^11.0.0",
     "marked": "^4.0.16",
