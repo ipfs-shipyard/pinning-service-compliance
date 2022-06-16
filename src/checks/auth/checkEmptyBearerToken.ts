@@ -1,6 +1,7 @@
 import { getJoiSchema } from '../../utils/getJoiSchema.js'
 import { ApiCall } from '../../ApiCall.js'
 import type { ServiceAndTokenPair } from '../../types.js'
+import { responseCode } from '../../expectations/index.js'
 
 const checkEmptyBearerToken = async (pair: ServiceAndTokenPair) => {
   const schema = await getJoiSchema('Failure')
@@ -12,10 +13,7 @@ const checkEmptyBearerToken = async (pair: ServiceAndTokenPair) => {
     title: 'Request with no authentication token'
   })
 
-  apiCall.expect({
-    title: 'Returns a 401',
-    fn: async ({ details }) => details.response.status === 401
-  })
+  apiCall.expect(responseCode(401))
 
   await apiCall.runExpectations()
 }
