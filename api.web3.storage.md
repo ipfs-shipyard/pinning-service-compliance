@@ -1,9 +1,9 @@
 
 # https://api.web3.storage compliance:
 
-Execution Date: 2022-06-16T18:20:44.143Z
+Execution Date: 2022-06-16T19:30:44.813Z
 
-Revision: [4f45693](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/4f45693)
+Revision: [413d68a](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/413d68a)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/api.web3.storage.md)
 
@@ -13,7 +13,7 @@ Revision: [4f45693](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   ❌ [Request with invalid token](#request-with-invalid-token----failed)
 
-  ❌ [Pins post of CID 'baeaaadjrg43cymrugm3dgnjqgi4q'](#pins-post-of-cid-baeaaadjrg43cymrugm3dgnjqgi4q----failed)
+  ❌ [Pins post of CID 'baeaaadjug4ycynryguytemrygaya'](#pins-post-of-cid-baeaaadjug4ycynryguytemrygaya----failed)
 
   ❌ [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----failed)
 
@@ -21,7 +21,7 @@ Revision: [4f45693](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   🟢 [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----success)
 
-  ❌ [Can create a pin with name='1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e'](#can-create-a-pin-with-name1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e----failed)
+  ❌ [Can create a pin with name='8426b2e2-adda-4653-9cd4-9d234274c67d'](#can-create-a-pin-with-name8426b2e2-adda-4653-9cd4-9d234274c67d----failed)
 
   ❌ [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----failed)
 
@@ -76,11 +76,11 @@ GET https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58e6d5827643b-SJC",
+  "cf-ray": "71c5f515add781be-IAD",
   "connection": "close",
   "content-length": "87",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:19:54 GMT",
+  "date": "Thu, 16 Jun 2022 19:29:59 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -156,11 +156,11 @@ GET https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58e719e3b969b-SJC",
+  "cf-ray": "71c5f51af81a8000-IAD",
   "connection": "close",
   "content-length": "82",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:19:54 GMT",
+  "date": "Thu, 16 Jun 2022 19:29:59 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -185,7 +185,7 @@ GET https://api.web3.storage/pins
 ```json
 null
 ```
-## Pins post of CID 'baeaaadjrg43cymrugm3dgnjqgi4q' - ❌ FAILED
+## Pins post of CID 'baeaaadjug4ycynryguytemrygaya' - ❌ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -236,7 +236,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjrg43cymrugm3dgnjqgi4q"}
+{"cid":"baeaaadjug4ycynryguytemrygaya"}
 ```
 
 #### Response
@@ -248,11 +248,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58e77e93e982b-SJC",
+  "cf-ray": "71c5f521485c5a70-IAD",
   "connection": "close",
   "content-length": "3797",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:19:57 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:01 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -261,151 +261,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
+  "requestid": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
   "status": "queued",
-  "created": "2022-06-16T18:19:56.712+00:00",
+  "created": "2022-06-16T19:30:01.494+00:00",
   "pin": {
-    "cid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-    "_id": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
-    "sourceCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-    "contentCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
+    "cid": "baeaaadjug4ycynryguytemrygaya",
+    "_id": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
+    "sourceCid": "baeaaadjug4ycynryguytemrygaya",
+    "contentCid": "baeaaadjug4ycynryguytemrygaya",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:19:56.712+00:00",
-    "updated": "2022-06-16T18:19:56.712+00:00",
+    "created": "2022-06-16T19:30:01.494+00:00",
+    "updated": "2022-06-16T19:30:01.494+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -419,151 +419,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
+  "requestid": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
   "status": "queued",
-  "created": "2022-06-16T18:19:56.712+00:00",
+  "created": "2022-06-16T19:30:01.494+00:00",
   "pin": {
-    "cid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-    "_id": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
-    "sourceCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-    "contentCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
+    "cid": "baeaaadjug4ycynryguytemrygaya",
+    "_id": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
+    "sourceCid": "baeaaadjug4ycynryguytemrygaya",
+    "contentCid": "baeaaadjug4ycynryguytemrygaya",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:19:56.712+00:00",
-    "updated": "2022-06-16T18:19:56.712+00:00",
+    "created": "2022-06-16T19:30:01.494+00:00",
+    "updated": "2022-06-16T19:30:01.494+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -576,11 +576,11 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
+  "requestid": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
   "status": "queued",
-  "created": "2022-06-16T18:19:56.712Z",
+  "created": "2022-06-16T19:30:01.494Z",
   "pin": {
-    "cid": "baeaaadjrg43cymrugm3dgnjqgi4q"
+    "cid": "baeaaadjug4ycynryguytemrygaya"
   },
   "delegates": []
 }
@@ -601,7 +601,7 @@ POST https://api.web3.storage/pins
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/9ec71c68-64fd-496e-9ca6-32110e9de091
+DELETE https://api.web3.storage/pins/b159f452-90a0-4e08-8d07-4222ca8d2dd0
 ```
 ##### Headers
 ```json
@@ -623,11 +623,11 @@ DELETE https://api.web3.storage/pins/9ec71c68-64fd-496e-9ca6-32110e9de091
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58e8c0de06459-SJC",
+  "cf-ray": "71c5f5318de2ceb8-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:19:59 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:03 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -677,7 +677,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjrg44cynjugi4tambugu3a"}
+{"cid":"baeaaadjug4zcynjyg44doobxgeya"}
 ```
 
 #### Response
@@ -689,11 +689,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58e824a6e97c9-SJC",
+  "cf-ray": "71c5f5292c6f5b65-IAD",
   "connection": "close",
   "content-length": "3797",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:19:58 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:03 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -702,151 +702,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "9ec71c68-64fd-496e-9ca6-32110e9de091",
+  "requestid": "b159f452-90a0-4e08-8d07-4222ca8d2dd0",
   "status": "queued",
-  "created": "2022-06-16T18:19:58.176+00:00",
+  "created": "2022-06-16T19:30:03.005+00:00",
   "pin": {
-    "cid": "baeaaadjrg44cynjugi4tambugu3a",
-    "_id": "9ec71c68-64fd-496e-9ca6-32110e9de091",
-    "sourceCid": "baeaaadjrg44cynjugi4tambugu3a",
-    "contentCid": "baeaaadjrg44cynjugi4tambugu3a",
+    "cid": "baeaaadjug4zcynjyg44doobxgeya",
+    "_id": "b159f452-90a0-4e08-8d07-4222ca8d2dd0",
+    "sourceCid": "baeaaadjug4zcynjyg44doobxgeya",
+    "contentCid": "baeaaadjug4zcynjyg44doobxgeya",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:19:58.176+00:00",
-    "updated": "2022-06-16T18:19:58.176+00:00",
+    "created": "2022-06-16T19:30:03.005+00:00",
+    "updated": "2022-06-16T19:30:03.005+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -860,151 +860,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "9ec71c68-64fd-496e-9ca6-32110e9de091",
+  "requestid": "b159f452-90a0-4e08-8d07-4222ca8d2dd0",
   "status": "queued",
-  "created": "2022-06-16T18:19:58.176+00:00",
+  "created": "2022-06-16T19:30:03.005+00:00",
   "pin": {
-    "cid": "baeaaadjrg44cynjugi4tambugu3a",
-    "_id": "9ec71c68-64fd-496e-9ca6-32110e9de091",
-    "sourceCid": "baeaaadjrg44cynjugi4tambugu3a",
-    "contentCid": "baeaaadjrg44cynjugi4tambugu3a",
+    "cid": "baeaaadjug4zcynjyg44doobxgeya",
+    "_id": "b159f452-90a0-4e08-8d07-4222ca8d2dd0",
+    "sourceCid": "baeaaadjug4zcynjyg44doobxgeya",
+    "contentCid": "baeaaadjug4zcynjyg44doobxgeya",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:19:58.176+00:00",
-    "updated": "2022-06-16T18:19:58.176+00:00",
+    "created": "2022-06-16T19:30:03.005+00:00",
+    "updated": "2022-06-16T19:30:03.005+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:19:58.176+00:00",
+        "updated": "2022-06-16T19:30:03.005+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -1017,11 +1017,11 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "9ec71c68-64fd-496e-9ca6-32110e9de091",
+  "requestid": "b159f452-90a0-4e08-8d07-4222ca8d2dd0",
   "status": "queued",
-  "created": "2022-06-16T18:19:58.176Z",
+  "created": "2022-06-16T19:30:03.005Z",
   "pin": {
-    "cid": "baeaaadjrg44cynjugi4tambugu3a"
+    "cid": "baeaaadjug4zcynjyg44doobxgeya"
   },
   "delegates": []
 }
@@ -1090,11 +1090,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58e928e6b966a-SJC",
+  "cf-ray": "71c5f5363bbf574c-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:00 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:04 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -1107,150 +1107,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 1,
   "results": [
     {
-      "requestid": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
+      "requestid": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
       "status": "queued",
-      "created": "2022-06-16T18:19:56.712+00:00",
+      "created": "2022-06-16T19:30:01.494+00:00",
       "pin": {
-        "cid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "_id": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
-        "sourceCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "contentCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
+        "cid": "baeaaadjug4ycynryguytemrygaya",
+        "_id": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
+        "sourceCid": "baeaaadjug4ycynryguytemrygaya",
+        "contentCid": "baeaaadjug4ycynryguytemrygaya",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:19:56.712+00:00",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "created": "2022-06-16T19:30:01.494+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -1269,150 +1269,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 1,
   "results": [
     {
-      "requestid": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
+      "requestid": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
       "status": "queued",
-      "created": "2022-06-16T18:19:56.712+00:00",
+      "created": "2022-06-16T19:30:01.494+00:00",
       "pin": {
-        "cid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "_id": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
-        "sourceCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "contentCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
+        "cid": "baeaaadjug4ycynryguytemrygaya",
+        "_id": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
+        "sourceCid": "baeaaadjug4ycynryguytemrygaya",
+        "contentCid": "baeaaadjug4ycynryguytemrygaya",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:19:56.712+00:00",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "created": "2022-06-16T19:30:01.494+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -1450,7 +1450,7 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 
 #### Request
 ```
-GET https://api.web3.storage/pins/3f74141d-8464-46d6-a473-5146344a2e10
+GET https://api.web3.storage/pins/c35d6920-95aa-448d-9c45-a5c7982c5e54
 ```
 ##### Headers
 ```json
@@ -1472,11 +1472,11 @@ GET https://api.web3.storage/pins/3f74141d-8464-46d6-a473-5146344a2e10
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58eb24d7d97c9-SJC",
+  "cf-ray": "71c5f54aacf05974-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:05 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:07 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -1516,7 +1516,7 @@ null
 
 #### Request
 ```
-GET https://api.web3.storage/pins/602f6c5b-307c-4e21-b6d0-89db499adbab
+GET https://api.web3.storage/pins/78dc05ea-d318-4d73-8e3b-483ae1d49dc5
 ```
 ##### Headers
 ```json
@@ -1538,11 +1538,11 @@ GET https://api.web3.storage/pins/602f6c5b-307c-4e21-b6d0-89db499adbab
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58eb869016441-SJC",
+  "cf-ray": "71c5f551093c5a70-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:06 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:08 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -1552,151 +1552,151 @@ GET https://api.web3.storage/pins/602f6c5b-307c-4e21-b6d0-89db499adbab
 ##### Body
 ```json
 {
-  "requestid": "602f6c5b-307c-4e21-b6d0-89db499adbab",
+  "requestid": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
   "status": "queued",
-  "created": "2022-06-16T18:20:04.243+00:00",
+  "created": "2022-06-16T19:30:06.941+00:00",
   "pin": {
-    "cid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-    "_id": "602f6c5b-307c-4e21-b6d0-89db499adbab",
-    "sourceCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-    "contentCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
+    "cid": "baeaaadjug43cyojuheytmmryge2a",
+    "_id": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
+    "sourceCid": "baeaaadjug43cyojuheytmmryge2a",
+    "contentCid": "baeaaadjug43cyojuheytmmryge2a",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:04.243+00:00",
-    "updated": "2022-06-16T18:20:04.243+00:00",
+    "created": "2022-06-16T19:30:06.941+00:00",
+    "updated": "2022-06-16T19:30:06.941+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -1710,151 +1710,151 @@ GET https://api.web3.storage/pins/602f6c5b-307c-4e21-b6d0-89db499adbab
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "602f6c5b-307c-4e21-b6d0-89db499adbab",
+  "requestid": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
   "status": "queued",
-  "created": "2022-06-16T18:20:04.243+00:00",
+  "created": "2022-06-16T19:30:06.941+00:00",
   "pin": {
-    "cid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-    "_id": "602f6c5b-307c-4e21-b6d0-89db499adbab",
-    "sourceCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-    "contentCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
+    "cid": "baeaaadjug43cyojuheytmmryge2a",
+    "_id": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
+    "sourceCid": "baeaaadjug43cyojuheytmmryge2a",
+    "contentCid": "baeaaadjug43cyojuheytmmryge2a",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:04.243+00:00",
-    "updated": "2022-06-16T18:20:04.243+00:00",
+    "created": "2022-06-16T19:30:06.941+00:00",
+    "updated": "2022-06-16T19:30:06.941+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -1867,16 +1867,16 @@ GET https://api.web3.storage/pins/602f6c5b-307c-4e21-b6d0-89db499adbab
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "602f6c5b-307c-4e21-b6d0-89db499adbab",
+  "requestid": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
   "status": "queued",
-  "created": "2022-06-16T18:20:04.243Z",
+  "created": "2022-06-16T19:30:06.941Z",
   "pin": {
-    "cid": "baeaaadjrhazsyobsgezdqnzvgu2a"
+    "cid": "baeaaadjug43cyojuheytmmryge2a"
   },
   "delegates": []
 }
 ```
-## Pin's with requestid '3f74141d-8464-46d6-a473-5146344a2e10' can have cid 'baeaaadjrhaysyojrguztcnjrgq3q' replaced with 'baeaaadjrhazsyobsgezdqnzvgu2a' - 🟢 SUCCESS
+## Pin's with requestid 'c35d6920-95aa-448d-9c45-a5c7982c5e54' can have cid 'baeaaadjug42symrwgaytgmjwgi3q' replaced with 'baeaaadjug43cyojuheytmmryge2a' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1897,7 +1897,7 @@ GET https://api.web3.storage/pins/602f6c5b-307c-4e21-b6d0-89db499adbab
 
 #### Request
 ```
-POST https://api.web3.storage/pins/3f74141d-8464-46d6-a473-5146344a2e10
+POST https://api.web3.storage/pins/c35d6920-95aa-448d-9c45-a5c7982c5e54
 ```
 ##### Headers
 ```json
@@ -1908,7 +1908,7 @@ POST https://api.web3.storage/pins/3f74141d-8464-46d6-a473-5146344a2e10
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjrhazsyobsgezdqnzvgu2a"}
+{"cid":"baeaaadjug43cyojuheytmmryge2a"}
 ```
 
 #### Response
@@ -1920,11 +1920,11 @@ POST https://api.web3.storage/pins/3f74141d-8464-46d6-a473-5146344a2e10
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58ea34be8943e-SJC",
+  "cf-ray": "71c5f5446c6f0612-IAD",
   "connection": "close",
   "content-length": "3797",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:04 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:07 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -1933,151 +1933,151 @@ POST https://api.web3.storage/pins/3f74141d-8464-46d6-a473-5146344a2e10
 ##### Body
 ```json
 {
-  "requestid": "602f6c5b-307c-4e21-b6d0-89db499adbab",
+  "requestid": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
   "status": "queued",
-  "created": "2022-06-16T18:20:04.243+00:00",
+  "created": "2022-06-16T19:30:06.941+00:00",
   "pin": {
-    "cid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-    "_id": "602f6c5b-307c-4e21-b6d0-89db499adbab",
-    "sourceCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-    "contentCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
+    "cid": "baeaaadjug43cyojuheytmmryge2a",
+    "_id": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
+    "sourceCid": "baeaaadjug43cyojuheytmmryge2a",
+    "contentCid": "baeaaadjug43cyojuheytmmryge2a",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:04.243+00:00",
-    "updated": "2022-06-16T18:20:04.243+00:00",
+    "created": "2022-06-16T19:30:06.941+00:00",
+    "updated": "2022-06-16T19:30:06.941+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -2091,151 +2091,151 @@ POST https://api.web3.storage/pins/3f74141d-8464-46d6-a473-5146344a2e10
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "602f6c5b-307c-4e21-b6d0-89db499adbab",
+  "requestid": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
   "status": "queued",
-  "created": "2022-06-16T18:20:04.243+00:00",
+  "created": "2022-06-16T19:30:06.941+00:00",
   "pin": {
-    "cid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-    "_id": "602f6c5b-307c-4e21-b6d0-89db499adbab",
-    "sourceCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-    "contentCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
+    "cid": "baeaaadjug43cyojuheytmmryge2a",
+    "_id": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
+    "sourceCid": "baeaaadjug43cyojuheytmmryge2a",
+    "contentCid": "baeaaadjug43cyojuheytmmryge2a",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:04.243+00:00",
-    "updated": "2022-06-16T18:20:04.243+00:00",
+    "created": "2022-06-16T19:30:06.941+00:00",
+    "updated": "2022-06-16T19:30:06.941+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -2248,11 +2248,11 @@ POST https://api.web3.storage/pins/3f74141d-8464-46d6-a473-5146344a2e10
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "602f6c5b-307c-4e21-b6d0-89db499adbab",
+  "requestid": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
   "status": "queued",
-  "created": "2022-06-16T18:20:04.243Z",
+  "created": "2022-06-16T19:30:06.941Z",
   "pin": {
-    "cid": "baeaaadjrhazsyobsgezdqnzvgu2a"
+    "cid": "baeaaadjug43cyojuheytmmryge2a"
   },
   "delegates": []
 }
@@ -2263,7 +2263,7 @@ POST https://api.web3.storage/pins/3f74141d-8464-46d6-a473-5146344a2e10
 
   🟢 Pin exists (success)
 
-  🟢 Could obtain requestid from new pin (3f74141d-8464-46d6-a473-5146344a2e10) (success)
+  🟢 Could obtain requestid from new pin (c35d6920-95aa-448d-9c45-a5c7982c5e54) (success)
 
   🟢 Response is ok (success)
 
@@ -2299,7 +2299,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjrhaysyojrguztcnjrgq3q"}
+{"cid":"baeaaadjug42symrwgaytgmjwgi3q"}
 ```
 
 #### Response
@@ -2311,11 +2311,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58e98cb29969b-SJC",
+  "cf-ray": "71c5f53c7c4705d6-IAD",
   "connection": "close",
   "content-length": "3797",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:02 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:06 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -2324,151 +2324,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "3f74141d-8464-46d6-a473-5146344a2e10",
+  "requestid": "c35d6920-95aa-448d-9c45-a5c7982c5e54",
   "status": "queued",
-  "created": "2022-06-16T18:20:01.703+00:00",
+  "created": "2022-06-16T19:30:06.004+00:00",
   "pin": {
-    "cid": "baeaaadjrhaysyojrguztcnjrgq3q",
-    "_id": "3f74141d-8464-46d6-a473-5146344a2e10",
-    "sourceCid": "baeaaadjrhaysyojrguztcnjrgq3q",
-    "contentCid": "baeaaadjrhaysyojrguztcnjrgq3q",
+    "cid": "baeaaadjug42symrwgaytgmjwgi3q",
+    "_id": "c35d6920-95aa-448d-9c45-a5c7982c5e54",
+    "sourceCid": "baeaaadjug42symrwgaytgmjwgi3q",
+    "contentCid": "baeaaadjug42symrwgaytgmjwgi3q",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:01.703+00:00",
-    "updated": "2022-06-16T18:20:01.703+00:00",
+    "created": "2022-06-16T19:30:06.004+00:00",
+    "updated": "2022-06-16T19:30:06.004+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -2482,151 +2482,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "3f74141d-8464-46d6-a473-5146344a2e10",
+  "requestid": "c35d6920-95aa-448d-9c45-a5c7982c5e54",
   "status": "queued",
-  "created": "2022-06-16T18:20:01.703+00:00",
+  "created": "2022-06-16T19:30:06.004+00:00",
   "pin": {
-    "cid": "baeaaadjrhaysyojrguztcnjrgq3q",
-    "_id": "3f74141d-8464-46d6-a473-5146344a2e10",
-    "sourceCid": "baeaaadjrhaysyojrguztcnjrgq3q",
-    "contentCid": "baeaaadjrhaysyojrguztcnjrgq3q",
+    "cid": "baeaaadjug42symrwgaytgmjwgi3q",
+    "_id": "c35d6920-95aa-448d-9c45-a5c7982c5e54",
+    "sourceCid": "baeaaadjug42symrwgaytgmjwgi3q",
+    "contentCid": "baeaaadjug42symrwgaytgmjwgi3q",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:01.703+00:00",
-    "updated": "2022-06-16T18:20:01.703+00:00",
+    "created": "2022-06-16T19:30:06.004+00:00",
+    "updated": "2022-06-16T19:30:06.004+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:01.703+00:00",
+        "updated": "2022-06-16T19:30:06.004+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -2639,22 +2639,26 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "3f74141d-8464-46d6-a473-5146344a2e10",
+  "requestid": "c35d6920-95aa-448d-9c45-a5c7982c5e54",
   "status": "queued",
-  "created": "2022-06-16T18:20:01.703Z",
+  "created": "2022-06-16T19:30:06.004Z",
   "pin": {
-    "cid": "baeaaadjrhaysyojrguztcnjrgq3q"
+    "cid": "baeaaadjug42symrwgaytgmjwgi3q"
   },
   "delegates": []
 }
 ```
-## Can retrieve pin with name '1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e' via the 'exact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '8426b2e2-adda-4653-9cd4-9d234274c67d' via the 'exact' TextMatchingStrategy - ❌ FAILED
 
-### Expectations (0/2 successful)
+### Expectations (0/4 successful)
 
   ❌ Response is ok (failure)
 
   ❌ Result is not null (failure)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
 
 
 ### Errors during run
@@ -2669,7 +2673,7 @@ POST https://api.web3.storage/pins
 
 #### Request
 ```
-GET https://api.web3.storage/pins?name=1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e&match=exact
+GET https://api.web3.storage/pins?name=8426b2e2-adda-4653-9cd4-9d234274c67d&match=exact
 ```
 ##### Headers
 ```json
@@ -2691,11 +2695,11 @@ GET https://api.web3.storage/pins?name=1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e&matc
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58ec6ce4b969b-SJC",
+  "cf-ray": "71c5f55939895b65-IAD",
   "connection": "close",
   "content-length": "95",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:08 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:09 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -2720,13 +2724,17 @@ GET https://api.web3.storage/pins?name=1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e&matc
 ```json
 null
 ```
-## Can retrieve pin with name '1924C0CB-0F99-4F91-BD4E-93C9CDD1E61E' via the 'iexact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '8426B2E2-ADDA-4653-9CD4-9D234274C67D' via the 'iexact' TextMatchingStrategy - ❌ FAILED
 
-### Expectations (0/2 successful)
+### Expectations (0/4 successful)
 
   ❌ Response is ok (failure)
 
   ❌ Result is not null (failure)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
 
 
 ### Errors during run
@@ -2741,7 +2749,7 @@ null
 
 #### Request
 ```
-GET https://api.web3.storage/pins?name=1924C0CB-0F99-4F91-BD4E-93C9CDD1E61E&match=iexact
+GET https://api.web3.storage/pins?name=8426B2E2-ADDA-4653-9CD4-9D234274C67D&match=iexact
 ```
 ##### Headers
 ```json
@@ -2763,11 +2771,11 @@ GET https://api.web3.storage/pins?name=1924C0CB-0F99-4F91-BD4E-93C9CDD1E61E&matc
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58ecb6bde2572-SJC",
+  "cf-ray": "71c5f55e6943ceb8-IAD",
   "connection": "close",
   "content-length": "95",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:09 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:10 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -2792,13 +2800,17 @@ GET https://api.web3.storage/pins?name=1924C0CB-0F99-4F91-BD4E-93C9CDD1E61E&matc
 ```json
 null
 ```
-## Can retrieve pin with name '0f99-4f91-bd4e-93c' via the 'partial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name 'adda-4653-9cd4-9d2' via the 'partial' TextMatchingStrategy - ❌ FAILED
 
-### Expectations (0/2 successful)
+### Expectations (0/4 successful)
 
   ❌ Response is ok (failure)
 
   ❌ Result is not null (failure)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
 
 
 ### Errors during run
@@ -2813,7 +2825,7 @@ null
 
 #### Request
 ```
-GET https://api.web3.storage/pins?name=0f99-4f91-bd4e-93c&match=partial
+GET https://api.web3.storage/pins?name=adda-4653-9cd4-9d2&match=partial
 ```
 ##### Headers
 ```json
@@ -2835,11 +2847,11 @@ GET https://api.web3.storage/pins?name=0f99-4f91-bd4e-93c&match=partial
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58ed23def6428-SJC",
+  "cf-ray": "71c5f5648b425968-IAD",
   "connection": "close",
   "content-length": "95",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:10 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:11 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -2864,13 +2876,17 @@ GET https://api.web3.storage/pins?name=0f99-4f91-bd4e-93c&match=partial
 ```json
 null
 ```
-## Can retrieve pin with name '0F99-4F91-BD4E-93C' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name 'ADDA-4653-9CD4-9D2' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
 
-### Expectations (0/2 successful)
+### Expectations (0/4 successful)
 
   ❌ Response is ok (failure)
 
   ❌ Result is not null (failure)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
 
 
 ### Errors during run
@@ -2885,7 +2901,7 @@ null
 
 #### Request
 ```
-GET https://api.web3.storage/pins?name=0F99-4F91-BD4E-93C&match=ipartial
+GET https://api.web3.storage/pins?name=ADDA-4653-9CD4-9D2&match=ipartial
 ```
 ##### Headers
 ```json
@@ -2907,11 +2923,11 @@ GET https://api.web3.storage/pins?name=0F99-4F91-BD4E-93C&match=ipartial
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58ed7bc3d943e-SJC",
+  "cf-ray": "71c5f56acd569c28-IAD",
   "connection": "close",
   "content-length": "95",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:11 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:12 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -2936,9 +2952,9 @@ GET https://api.web3.storage/pins?name=0F99-4F91-BD4E-93C&match=ipartial
 ```json
 null
 ```
-## Can create a pin with name='1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e' - ❌ FAILED
+## Can create a pin with name='8426b2e2-adda-4653-9cd4-9d234274c67d' - ❌ FAILED
 
-### Expectations (3/11 successful)
+### Expectations (3/19 successful)
 
   🟢 Response is ok (success)
 
@@ -2950,17 +2966,33 @@ null
 
   ❌ Result is not null (failure)
 
-  ❌ Response is ok (failure)
+  ❌ Count is equal to 1 (failure)
 
-  ❌ Result is not null (failure)
-
-  ❌ Response is ok (failure)
-
-  ❌ Result is not null (failure)
+  ❌ Name matches name provided during creation (failure)
 
   ❌ Response is ok (failure)
 
   ❌ Result is not null (failure)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
 
 
 ### Errors during run
@@ -3001,7 +3033,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadjrha4cymjsgm3tsmbuguza","name":"1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e"}
+{"cid":"baeaaadbug44syobugq3tomjyha","name":"8426b2e2-adda-4653-9cd4-9d234274c67d"}
 ```
 
 #### Response
@@ -3013,11 +3045,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58ebe3ab69e76-SJC",
+  "cf-ray": "71c5f551cf8581a0-IAD",
   "connection": "close",
-  "content-length": "3831",
+  "content-length": "3825",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:08 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:09 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -3026,151 +3058,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
+  "requestid": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
   "status": "queued",
-  "created": "2022-06-16T18:20:07.869+00:00",
+  "created": "2022-06-16T19:30:09.336+00:00",
   "pin": {
-    "cid": "baeaaadjrha4cymjsgm3tsmbuguza",
-    "_id": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
-    "sourceCid": "baeaaadjrha4cymjsgm3tsmbuguza",
-    "contentCid": "baeaaadjrha4cymjsgm3tsmbuguza",
+    "cid": "baeaaadbug44syobugq3tomjyha",
+    "_id": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
+    "sourceCid": "baeaaadbug44syobugq3tomjyha",
+    "contentCid": "baeaaadbug44syobugq3tomjyha",
     "authKey": "315318824629964106",
-    "name": "1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e",
+    "name": "8426b2e2-adda-4653-9cd4-9d234274c67d",
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:07.869+00:00",
-    "updated": "2022-06-16T18:20:07.869+00:00",
+    "created": "2022-06-16T19:30:09.336+00:00",
+    "updated": "2022-06-16T19:30:09.336+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -3184,151 +3216,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
+  "requestid": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
   "status": "queued",
-  "created": "2022-06-16T18:20:07.869+00:00",
+  "created": "2022-06-16T19:30:09.336+00:00",
   "pin": {
-    "cid": "baeaaadjrha4cymjsgm3tsmbuguza",
-    "_id": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
-    "sourceCid": "baeaaadjrha4cymjsgm3tsmbuguza",
-    "contentCid": "baeaaadjrha4cymjsgm3tsmbuguza",
+    "cid": "baeaaadbug44syobugq3tomjyha",
+    "_id": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
+    "sourceCid": "baeaaadbug44syobugq3tomjyha",
+    "contentCid": "baeaaadbug44syobugq3tomjyha",
     "authKey": "315318824629964106",
-    "name": "1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e",
+    "name": "8426b2e2-adda-4653-9cd4-9d234274c67d",
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:07.869+00:00",
-    "updated": "2022-06-16T18:20:07.869+00:00",
+    "created": "2022-06-16T19:30:09.336+00:00",
+    "updated": "2022-06-16T19:30:09.336+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -3341,17 +3373,17 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
+  "requestid": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
   "status": "queued",
-  "created": "2022-06-16T18:20:07.869Z",
+  "created": "2022-06-16T19:30:09.336Z",
   "pin": {
-    "cid": "baeaaadjrha4cymjsgm3tsmbuguza",
-    "name": "1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e"
+    "cid": "baeaaadbug44syobugq3tomjyha",
+    "name": "8426b2e2-adda-4653-9cd4-9d234274c67d"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadbrhezsynjvgm4toobtgi' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjuha2cymjtgi2tmobtgmzq' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -3378,7 +3410,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbrhezsynjvgm4toobtgi"}
+{"cid":"baeaaadjuha2cymjtgi2tmobtgmzq"}
 ```
 
 #### Response
@@ -3390,11 +3422,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58edfde3a96ea-SJC",
+  "cf-ray": "71c5f57449ab580c-IAD",
   "connection": "close",
-  "content-length": "3791",
+  "content-length": "3797",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:13 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:15 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -3403,151 +3435,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "19b40201-d355-4693-b9b3-7890fdf54926",
+  "requestid": "a038810c-cfd9-4afb-90c9-4fe8f39a53e1",
   "status": "queued",
-  "created": "2022-06-16T18:20:12.974+00:00",
+  "created": "2022-06-16T19:30:15.097+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynjvgm4toobtgi",
-    "_id": "19b40201-d355-4693-b9b3-7890fdf54926",
-    "sourceCid": "baeaaadbrhezsynjvgm4toobtgi",
-    "contentCid": "baeaaadbrhezsynjvgm4toobtgi",
+    "cid": "baeaaadjuha2cymjtgi2tmobtgmzq",
+    "_id": "a038810c-cfd9-4afb-90c9-4fe8f39a53e1",
+    "sourceCid": "baeaaadjuha2cymjtgi2tmobtgmzq",
+    "contentCid": "baeaaadjuha2cymjtgi2tmobtgmzq",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:12.974+00:00",
-    "updated": "2022-06-16T18:20:12.974+00:00",
+    "created": "2022-06-16T19:30:15.097+00:00",
+    "updated": "2022-06-16T19:30:15.097+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -3561,151 +3593,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "19b40201-d355-4693-b9b3-7890fdf54926",
+  "requestid": "a038810c-cfd9-4afb-90c9-4fe8f39a53e1",
   "status": "queued",
-  "created": "2022-06-16T18:20:12.974+00:00",
+  "created": "2022-06-16T19:30:15.097+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynjvgm4toobtgi",
-    "_id": "19b40201-d355-4693-b9b3-7890fdf54926",
-    "sourceCid": "baeaaadbrhezsynjvgm4toobtgi",
-    "contentCid": "baeaaadbrhezsynjvgm4toobtgi",
+    "cid": "baeaaadjuha2cymjtgi2tmobtgmzq",
+    "_id": "a038810c-cfd9-4afb-90c9-4fe8f39a53e1",
+    "sourceCid": "baeaaadjuha2cymjtgi2tmobtgmzq",
+    "contentCid": "baeaaadjuha2cymjtgi2tmobtgmzq",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:12.974+00:00",
-    "updated": "2022-06-16T18:20:12.974+00:00",
+    "created": "2022-06-16T19:30:15.097+00:00",
+    "updated": "2022-06-16T19:30:15.097+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -3718,16 +3750,16 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "19b40201-d355-4693-b9b3-7890fdf54926",
+  "requestid": "a038810c-cfd9-4afb-90c9-4fe8f39a53e1",
   "status": "queued",
-  "created": "2022-06-16T18:20:12.974Z",
+  "created": "2022-06-16T19:30:15.097Z",
   "pin": {
-    "cid": "baeaaadbrhezsynjvgm4toobtgi"
+    "cid": "baeaaadjuha2cymjtgi2tmobtgmzq"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadbrhezsynjwgu2domzzgm' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjuha2cymjtgm2tinbzguzq' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -3754,7 +3786,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbrhezsynjwgu2domzzgm"}
+{"cid":"baeaaadjuha2cymjtgm2tinbzguzq"}
 ```
 
 #### Response
@@ -3766,11 +3798,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58ee6fec997b7-SJC",
+  "cf-ray": "71c5f57d1f415974-IAD",
   "connection": "close",
-  "content-length": "3791",
+  "content-length": "3797",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:14 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:16 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -3779,151 +3811,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "7f2ba4c1-04d0-4dc4-a8e6-405f99493efb",
+  "requestid": "b4a21a7d-1994-47bd-9773-0cd671ba8bb0",
   "status": "queued",
-  "created": "2022-06-16T18:20:13.849+00:00",
+  "created": "2022-06-16T19:30:16.165+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynjwgu2domzzgm",
-    "_id": "7f2ba4c1-04d0-4dc4-a8e6-405f99493efb",
-    "sourceCid": "baeaaadbrhezsynjwgu2domzzgm",
-    "contentCid": "baeaaadbrhezsynjwgu2domzzgm",
+    "cid": "baeaaadjuha2cymjtgm2tinbzguzq",
+    "_id": "b4a21a7d-1994-47bd-9773-0cd671ba8bb0",
+    "sourceCid": "baeaaadjuha2cymjtgm2tinbzguzq",
+    "contentCid": "baeaaadjuha2cymjtgm2tinbzguzq",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:13.849+00:00",
-    "updated": "2022-06-16T18:20:13.849+00:00",
+    "created": "2022-06-16T19:30:16.165+00:00",
+    "updated": "2022-06-16T19:30:16.165+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -3937,151 +3969,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "7f2ba4c1-04d0-4dc4-a8e6-405f99493efb",
+  "requestid": "b4a21a7d-1994-47bd-9773-0cd671ba8bb0",
   "status": "queued",
-  "created": "2022-06-16T18:20:13.849+00:00",
+  "created": "2022-06-16T19:30:16.165+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynjwgu2domzzgm",
-    "_id": "7f2ba4c1-04d0-4dc4-a8e6-405f99493efb",
-    "sourceCid": "baeaaadbrhezsynjwgu2domzzgm",
-    "contentCid": "baeaaadbrhezsynjwgu2domzzgm",
+    "cid": "baeaaadjuha2cymjtgm2tinbzguzq",
+    "_id": "b4a21a7d-1994-47bd-9773-0cd671ba8bb0",
+    "sourceCid": "baeaaadjuha2cymjtgm2tinbzguzq",
+    "contentCid": "baeaaadjuha2cymjtgm2tinbzguzq",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:13.849+00:00",
-    "updated": "2022-06-16T18:20:13.849+00:00",
+    "created": "2022-06-16T19:30:16.165+00:00",
+    "updated": "2022-06-16T19:30:16.165+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -4094,16 +4126,16 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "7f2ba4c1-04d0-4dc4-a8e6-405f99493efb",
+  "requestid": "b4a21a7d-1994-47bd-9773-0cd671ba8bb0",
   "status": "queued",
-  "created": "2022-06-16T18:20:13.849Z",
+  "created": "2022-06-16T19:30:16.165Z",
   "pin": {
-    "cid": "baeaaadbrhezsynjwgu2domzzgm"
+    "cid": "baeaaadjuha2cymjtgm2tinbzguzq"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadbrhezsynjxgmytsnbtgm' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjuha2cymjtgqzdcobvgy3q' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -4130,7 +4162,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbrhezsynjxgmytsnbtgm"}
+{"cid":"baeaaadjuha2cymjtgqzdcobvgy3q"}
 ```
 
 #### Response
@@ -4142,11 +4174,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58eec6cdf9e76-SJC",
+  "cf-ray": "71c5f58438395b65-IAD",
   "connection": "close",
-  "content-length": "3791",
+  "content-length": "3797",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:14 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:16 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -4155,151 +4187,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
+  "requestid": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
   "status": "queued",
-  "created": "2022-06-16T18:20:14.435+00:00",
+  "created": "2022-06-16T19:30:16.565+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynjxgmytsnbtgm",
-    "_id": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
-    "sourceCid": "baeaaadbrhezsynjxgmytsnbtgm",
-    "contentCid": "baeaaadbrhezsynjxgmytsnbtgm",
+    "cid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+    "_id": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
+    "sourceCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+    "contentCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:14.435+00:00",
-    "updated": "2022-06-16T18:20:14.435+00:00",
+    "created": "2022-06-16T19:30:16.565+00:00",
+    "updated": "2022-06-16T19:30:16.565+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -4313,151 +4345,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
+  "requestid": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
   "status": "queued",
-  "created": "2022-06-16T18:20:14.435+00:00",
+  "created": "2022-06-16T19:30:16.565+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynjxgmytsnbtgm",
-    "_id": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
-    "sourceCid": "baeaaadbrhezsynjxgmytsnbtgm",
-    "contentCid": "baeaaadbrhezsynjxgmytsnbtgm",
+    "cid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+    "_id": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
+    "sourceCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+    "contentCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:14.435+00:00",
-    "updated": "2022-06-16T18:20:14.435+00:00",
+    "created": "2022-06-16T19:30:16.565+00:00",
+    "updated": "2022-06-16T19:30:16.565+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -4470,16 +4502,16 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
+  "requestid": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
   "status": "queued",
-  "created": "2022-06-16T18:20:14.435Z",
+  "created": "2022-06-16T19:30:16.565Z",
   "pin": {
-    "cid": "baeaaadbrhezsynjxgmytsnbtgm"
+    "cid": "baeaaadjuha2cymjtgqzdcobvgy3q"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadbrhezsynjygaztsnbxge' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjuha2cymjtgq3tkmrxg44a' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -4506,7 +4538,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbrhezsynjygaztsnbxge"}
+{"cid":"baeaaadjuha2cymjtgq3tkmrxg44a"}
 ```
 
 #### Response
@@ -4518,11 +4550,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58ef28c49967c-SJC",
+  "cf-ray": "71c5f5872a2aceb8-IAD",
   "connection": "close",
-  "content-length": "3791",
+  "content-length": "3797",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:16 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:17 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -4531,151 +4563,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "d5dc9c63-616d-4b95-a703-37044565f952",
+  "requestid": "db65165d-9881-451d-9d62-fb216e176845",
   "status": "queued",
-  "created": "2022-06-16T18:20:15.973+00:00",
+  "created": "2022-06-16T19:30:17.675+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynjygaztsnbxge",
-    "_id": "d5dc9c63-616d-4b95-a703-37044565f952",
-    "sourceCid": "baeaaadbrhezsynjygaztsnbxge",
-    "contentCid": "baeaaadbrhezsynjygaztsnbxge",
+    "cid": "baeaaadjuha2cymjtgq3tkmrxg44a",
+    "_id": "db65165d-9881-451d-9d62-fb216e176845",
+    "sourceCid": "baeaaadjuha2cymjtgq3tkmrxg44a",
+    "contentCid": "baeaaadjuha2cymjtgq3tkmrxg44a",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:15.973+00:00",
-    "updated": "2022-06-16T18:20:15.973+00:00",
+    "created": "2022-06-16T19:30:17.675+00:00",
+    "updated": "2022-06-16T19:30:17.675+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -4689,151 +4721,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "d5dc9c63-616d-4b95-a703-37044565f952",
+  "requestid": "db65165d-9881-451d-9d62-fb216e176845",
   "status": "queued",
-  "created": "2022-06-16T18:20:15.973+00:00",
+  "created": "2022-06-16T19:30:17.675+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynjygaztsnbxge",
-    "_id": "d5dc9c63-616d-4b95-a703-37044565f952",
-    "sourceCid": "baeaaadbrhezsynjygaztsnbxge",
-    "contentCid": "baeaaadbrhezsynjygaztsnbxge",
+    "cid": "baeaaadjuha2cymjtgq3tkmrxg44a",
+    "_id": "db65165d-9881-451d-9d62-fb216e176845",
+    "sourceCid": "baeaaadjuha2cymjtgq3tkmrxg44a",
+    "contentCid": "baeaaadjuha2cymjtgq3tkmrxg44a",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:15.973+00:00",
-    "updated": "2022-06-16T18:20:15.973+00:00",
+    "created": "2022-06-16T19:30:17.675+00:00",
+    "updated": "2022-06-16T19:30:17.675+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -4846,16 +4878,16 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "d5dc9c63-616d-4b95-a703-37044565f952",
+  "requestid": "db65165d-9881-451d-9d62-fb216e176845",
   "status": "queued",
-  "created": "2022-06-16T18:20:15.973Z",
+  "created": "2022-06-16T19:30:17.675Z",
   "pin": {
-    "cid": "baeaaadbrhezsynjygaztsnbxge"
+    "cid": "baeaaadjuha2cymjtgq3tkmrxg44a"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadbrhezsynjyheytembrg4' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjuha2cymjtguztonzzheya' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -4882,7 +4914,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbrhezsynjyheytembrg4"}
+{"cid":"baeaaadjuha2cymjtguztonzzheya"}
 ```
 
 #### Response
@@ -4894,11 +4926,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58ef97c312572-SJC",
+  "cf-ray": "71c5f58d597081a0-IAD",
   "connection": "close",
-  "content-length": "3791",
+  "content-length": "3797",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:17 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:18 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -4907,151 +4939,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "fea52d82-7368-43ff-b81f-30f002b76532",
+  "requestid": "761a3f19-0f48-43a7-aae5-b653aae9cc4b",
   "status": "queued",
-  "created": "2022-06-16T18:20:17.573+00:00",
+  "created": "2022-06-16T19:30:18.239+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynjyheytembrg4",
-    "_id": "fea52d82-7368-43ff-b81f-30f002b76532",
-    "sourceCid": "baeaaadbrhezsynjyheytembrg4",
-    "contentCid": "baeaaadbrhezsynjyheytembrg4",
+    "cid": "baeaaadjuha2cymjtguztonzzheya",
+    "_id": "761a3f19-0f48-43a7-aae5-b653aae9cc4b",
+    "sourceCid": "baeaaadjuha2cymjtguztonzzheya",
+    "contentCid": "baeaaadjuha2cymjtguztonzzheya",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:17.573+00:00",
-    "updated": "2022-06-16T18:20:17.573+00:00",
+    "created": "2022-06-16T19:30:18.239+00:00",
+    "updated": "2022-06-16T19:30:18.239+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -5065,151 +5097,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "fea52d82-7368-43ff-b81f-30f002b76532",
+  "requestid": "761a3f19-0f48-43a7-aae5-b653aae9cc4b",
   "status": "queued",
-  "created": "2022-06-16T18:20:17.573+00:00",
+  "created": "2022-06-16T19:30:18.239+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynjyheytembrg4",
-    "_id": "fea52d82-7368-43ff-b81f-30f002b76532",
-    "sourceCid": "baeaaadbrhezsynjyheytembrg4",
-    "contentCid": "baeaaadbrhezsynjyheytembrg4",
+    "cid": "baeaaadjuha2cymjtguztonzzheya",
+    "_id": "761a3f19-0f48-43a7-aae5-b653aae9cc4b",
+    "sourceCid": "baeaaadjuha2cymjtguztonzzheya",
+    "contentCid": "baeaaadjuha2cymjtguztonzzheya",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:17.573+00:00",
-    "updated": "2022-06-16T18:20:17.573+00:00",
+    "created": "2022-06-16T19:30:18.239+00:00",
+    "updated": "2022-06-16T19:30:18.239+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -5222,16 +5254,16 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "fea52d82-7368-43ff-b81f-30f002b76532",
+  "requestid": "761a3f19-0f48-43a7-aae5-b653aae9cc4b",
   "status": "queued",
-  "created": "2022-06-16T18:20:17.573Z",
+  "created": "2022-06-16T19:30:18.239Z",
   "pin": {
-    "cid": "baeaaadbrhezsynjyheytembrg4"
+    "cid": "baeaaadjuha2cymjtguztonzzheya"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadbrhezsynrqgeydcojxhe' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjuha2cymjtgu4tcnjxgayq' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -5258,7 +5290,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbrhezsynrqgeydcojxhe"}
+{"cid":"baeaaadjuha2cymjtgu4tcnjxgayq"}
 ```
 
 #### Response
@@ -5270,11 +5302,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f037d0897c9-SJC",
+  "cf-ray": "71c5f593adb65968-IAD",
   "connection": "close",
-  "content-length": "3791",
+  "content-length": "3753",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:18 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:19 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -5283,151 +5315,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "48a1dd0e-f527-449c-ae42-1268050a9000",
+  "requestid": "1bc46c1c-5bc2-44a4-a07f-b1491ce7b362",
   "status": "queued",
-  "created": "2022-06-16T18:20:18.426+00:00",
+  "created": "2022-06-16T19:30:19.4+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynrqgeydcojxhe",
-    "_id": "48a1dd0e-f527-449c-ae42-1268050a9000",
-    "sourceCid": "baeaaadbrhezsynrqgeydcojxhe",
-    "contentCid": "baeaaadbrhezsynrqgeydcojxhe",
+    "cid": "baeaaadjuha2cymjtgu4tcnjxgayq",
+    "_id": "1bc46c1c-5bc2-44a4-a07f-b1491ce7b362",
+    "sourceCid": "baeaaadjuha2cymjtgu4tcnjxgayq",
+    "contentCid": "baeaaadjuha2cymjtgu4tcnjxgayq",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:18.426+00:00",
-    "updated": "2022-06-16T18:20:18.426+00:00",
+    "created": "2022-06-16T19:30:19.4+00:00",
+    "updated": "2022-06-16T19:30:19.4+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -5441,151 +5473,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "48a1dd0e-f527-449c-ae42-1268050a9000",
+  "requestid": "1bc46c1c-5bc2-44a4-a07f-b1491ce7b362",
   "status": "queued",
-  "created": "2022-06-16T18:20:18.426+00:00",
+  "created": "2022-06-16T19:30:19.4+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynrqgeydcojxhe",
-    "_id": "48a1dd0e-f527-449c-ae42-1268050a9000",
-    "sourceCid": "baeaaadbrhezsynrqgeydcojxhe",
-    "contentCid": "baeaaadbrhezsynrqgeydcojxhe",
+    "cid": "baeaaadjuha2cymjtgu4tcnjxgayq",
+    "_id": "1bc46c1c-5bc2-44a4-a07f-b1491ce7b362",
+    "sourceCid": "baeaaadjuha2cymjtgu4tcnjxgayq",
+    "contentCid": "baeaaadjuha2cymjtgu4tcnjxgayq",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:18.426+00:00",
-    "updated": "2022-06-16T18:20:18.426+00:00",
+    "created": "2022-06-16T19:30:19.4+00:00",
+    "updated": "2022-06-16T19:30:19.4+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -5598,16 +5630,16 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "48a1dd0e-f527-449c-ae42-1268050a9000",
+  "requestid": "1bc46c1c-5bc2-44a4-a07f-b1491ce7b362",
   "status": "queued",
-  "created": "2022-06-16T18:20:18.426Z",
+  "created": "2022-06-16T19:30:19.400Z",
   "pin": {
-    "cid": "baeaaadbrhezsynrqgeydcojxhe"
+    "cid": "baeaaadjuha2cymjtgu4tcnjxgayq"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadbrhezsynrqhaztemzrha' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjuha2cymjtgy2donrygezq' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -5634,7 +5666,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbrhezsynrqhaztemzrha"}
+{"cid":"baeaaadjuha2cymjtgy2donrygezq"}
 ```
 
 #### Response
@@ -5646,11 +5678,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f093c5f96ba-SJC",
+  "cf-ray": "71c5f599c99d059c-IAD",
   "connection": "close",
-  "content-length": "3791",
+  "content-length": "3797",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:19 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:20 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -5659,151 +5691,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "12b19372-bfc5-41b0-a5c8-18a3409e3d2c",
+  "requestid": "6abbdea7-eb69-4ed2-a04d-51b3170e504e",
   "status": "queued",
-  "created": "2022-06-16T18:20:19.476+00:00",
+  "created": "2022-06-16T19:30:20.324+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynrqhaztemzrha",
-    "_id": "12b19372-bfc5-41b0-a5c8-18a3409e3d2c",
-    "sourceCid": "baeaaadbrhezsynrqhaztemzrha",
-    "contentCid": "baeaaadbrhezsynrqhaztemzrha",
+    "cid": "baeaaadjuha2cymjtgy2donrygezq",
+    "_id": "6abbdea7-eb69-4ed2-a04d-51b3170e504e",
+    "sourceCid": "baeaaadjuha2cymjtgy2donrygezq",
+    "contentCid": "baeaaadjuha2cymjtgy2donrygezq",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:19.476+00:00",
-    "updated": "2022-06-16T18:20:19.476+00:00",
+    "created": "2022-06-16T19:30:20.324+00:00",
+    "updated": "2022-06-16T19:30:20.324+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -5817,151 +5849,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "12b19372-bfc5-41b0-a5c8-18a3409e3d2c",
+  "requestid": "6abbdea7-eb69-4ed2-a04d-51b3170e504e",
   "status": "queued",
-  "created": "2022-06-16T18:20:19.476+00:00",
+  "created": "2022-06-16T19:30:20.324+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynrqhaztemzrha",
-    "_id": "12b19372-bfc5-41b0-a5c8-18a3409e3d2c",
-    "sourceCid": "baeaaadbrhezsynrqhaztemzrha",
-    "contentCid": "baeaaadbrhezsynrqhaztemzrha",
+    "cid": "baeaaadjuha2cymjtgy2donrygezq",
+    "_id": "6abbdea7-eb69-4ed2-a04d-51b3170e504e",
+    "sourceCid": "baeaaadjuha2cymjtgy2donrygezq",
+    "contentCid": "baeaaadjuha2cymjtgy2donrygezq",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:19.476+00:00",
-    "updated": "2022-06-16T18:20:19.476+00:00",
+    "created": "2022-06-16T19:30:20.324+00:00",
+    "updated": "2022-06-16T19:30:20.324+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -5974,16 +6006,16 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "12b19372-bfc5-41b0-a5c8-18a3409e3d2c",
+  "requestid": "6abbdea7-eb69-4ed2-a04d-51b3170e504e",
   "status": "queued",
-  "created": "2022-06-16T18:20:19.476Z",
+  "created": "2022-06-16T19:30:20.324Z",
   "pin": {
-    "cid": "baeaaadbrhezsynrqhaztemzrha"
+    "cid": "baeaaadjuha2cymjtgy2donrygezq"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadbrhezsynrrgy3dmmrwge' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjuha2cymjtg4ydknztgi2q' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -6010,7 +6042,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbrhezsynrrgy3dmmrwge"}
+{"cid":"baeaaadjuha2cymjtg4ydknztgi2q"}
 ```
 
 #### Response
@@ -6022,11 +6054,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f100a3996ea-SJC",
+  "cf-ray": "71c5f5a00f9c05f3-IAD",
   "connection": "close",
-  "content-length": "3791",
+  "content-length": "3797",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:20 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:21 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -6035,151 +6067,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "7743ab9a-e319-4842-a45e-8e6a62ad663a",
+  "requestid": "c332e189-bb29-46fb-a50d-9f3886b82d59",
   "status": "queued",
-  "created": "2022-06-16T18:20:20.778+00:00",
+  "created": "2022-06-16T19:30:21.591+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynrrgy3dmmrwge",
-    "_id": "7743ab9a-e319-4842-a45e-8e6a62ad663a",
-    "sourceCid": "baeaaadbrhezsynrrgy3dmmrwge",
-    "contentCid": "baeaaadbrhezsynrrgy3dmmrwge",
+    "cid": "baeaaadjuha2cymjtg4ydknztgi2q",
+    "_id": "c332e189-bb29-46fb-a50d-9f3886b82d59",
+    "sourceCid": "baeaaadjuha2cymjtg4ydknztgi2q",
+    "contentCid": "baeaaadjuha2cymjtg4ydknztgi2q",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:20.778+00:00",
-    "updated": "2022-06-16T18:20:20.778+00:00",
+    "created": "2022-06-16T19:30:21.591+00:00",
+    "updated": "2022-06-16T19:30:21.591+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -6193,151 +6225,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "7743ab9a-e319-4842-a45e-8e6a62ad663a",
+  "requestid": "c332e189-bb29-46fb-a50d-9f3886b82d59",
   "status": "queued",
-  "created": "2022-06-16T18:20:20.778+00:00",
+  "created": "2022-06-16T19:30:21.591+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynrrgy3dmmrwge",
-    "_id": "7743ab9a-e319-4842-a45e-8e6a62ad663a",
-    "sourceCid": "baeaaadbrhezsynrrgy3dmmrwge",
-    "contentCid": "baeaaadbrhezsynrrgy3dmmrwge",
+    "cid": "baeaaadjuha2cymjtg4ydknztgi2q",
+    "_id": "c332e189-bb29-46fb-a50d-9f3886b82d59",
+    "sourceCid": "baeaaadjuha2cymjtg4ydknztgi2q",
+    "contentCid": "baeaaadjuha2cymjtg4ydknztgi2q",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:20.778+00:00",
-    "updated": "2022-06-16T18:20:20.778+00:00",
+    "created": "2022-06-16T19:30:21.591+00:00",
+    "updated": "2022-06-16T19:30:21.591+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -6350,16 +6382,16 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "7743ab9a-e319-4842-a45e-8e6a62ad663a",
+  "requestid": "c332e189-bb29-46fb-a50d-9f3886b82d59",
   "status": "queued",
-  "created": "2022-06-16T18:20:20.778Z",
+  "created": "2022-06-16T19:30:21.591Z",
   "pin": {
-    "cid": "baeaaadbrhezsynrrgy3dmmrwge"
+    "cid": "baeaaadjuha2cymjtg4ydknztgi2q"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadbrhezsynrshaydkmrsge' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjuha2cymjtg42tenbrgm2a' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -6386,7 +6418,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbrhezsynrshaydkmrsge"}
+{"cid":"baeaaadjuha2cymjtg42tenbrgm2a"}
 ```
 
 #### Response
@@ -6398,11 +6430,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f1748cd9698-SJC",
+  "cf-ray": "71c5f5a65fa99c2b-IAD",
   "connection": "close",
-  "content-length": "3791",
+  "content-length": "3797",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:22 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:24 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -6411,151 +6443,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97",
+  "requestid": "c2d35006-a942-4965-b840-09a8e4f6e9d9",
   "status": "queued",
-  "created": "2022-06-16T18:20:21.967+00:00",
+  "created": "2022-06-16T19:30:24.185+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynrshaydkmrsge",
-    "_id": "d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97",
-    "sourceCid": "baeaaadbrhezsynrshaydkmrsge",
-    "contentCid": "baeaaadbrhezsynrshaydkmrsge",
+    "cid": "baeaaadjuha2cymjtg42tenbrgm2a",
+    "_id": "c2d35006-a942-4965-b840-09a8e4f6e9d9",
+    "sourceCid": "baeaaadjuha2cymjtg42tenbrgm2a",
+    "contentCid": "baeaaadjuha2cymjtg42tenbrgm2a",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:21.967+00:00",
-    "updated": "2022-06-16T18:20:21.967+00:00",
+    "created": "2022-06-16T19:30:24.185+00:00",
+    "updated": "2022-06-16T19:30:24.185+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -6569,151 +6601,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97",
+  "requestid": "c2d35006-a942-4965-b840-09a8e4f6e9d9",
   "status": "queued",
-  "created": "2022-06-16T18:20:21.967+00:00",
+  "created": "2022-06-16T19:30:24.185+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynrshaydkmrsge",
-    "_id": "d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97",
-    "sourceCid": "baeaaadbrhezsynrshaydkmrsge",
-    "contentCid": "baeaaadbrhezsynrshaydkmrsge",
+    "cid": "baeaaadjuha2cymjtg42tenbrgm2a",
+    "_id": "c2d35006-a942-4965-b840-09a8e4f6e9d9",
+    "sourceCid": "baeaaadjuha2cymjtg42tenbrgm2a",
+    "contentCid": "baeaaadjuha2cymjtg42tenbrgm2a",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:21.967+00:00",
-    "updated": "2022-06-16T18:20:21.967+00:00",
+    "created": "2022-06-16T19:30:24.185+00:00",
+    "updated": "2022-06-16T19:30:24.185+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -6726,16 +6758,16 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97",
+  "requestid": "c2d35006-a942-4965-b840-09a8e4f6e9d9",
   "status": "queued",
-  "created": "2022-06-16T18:20:21.967Z",
+  "created": "2022-06-16T19:30:24.185Z",
   "pin": {
-    "cid": "baeaaadbrhezsynrshaydkmrsge"
+    "cid": "baeaaadjuha2cymjtg42tenbrgm2a"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadbrhezsynrtguydembvha' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjuha2cymjtg44tqmrsgqzq' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -6762,7 +6794,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbrhezsynrtguydembvha"}
+{"cid":"baeaaadjuha2cymjtg44tqmrsgqzq"}
 ```
 
 #### Response
@@ -6774,11 +6806,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f1ed970967c-SJC",
+  "cf-ray": "71c5f5b68fac5b65-IAD",
   "connection": "close",
-  "content-length": "3791",
+  "content-length": "3775",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:22 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:24 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -6787,151 +6819,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "71a458c4-ef69-4970-b466-bf47466479c7",
+  "requestid": "a28bf536-537e-4ade-bd53-52b7af104f73",
   "status": "queued",
-  "created": "2022-06-16T18:20:22.527+00:00",
+  "created": "2022-06-16T19:30:24.76+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynrtguydembvha",
-    "_id": "71a458c4-ef69-4970-b466-bf47466479c7",
-    "sourceCid": "baeaaadbrhezsynrtguydembvha",
-    "contentCid": "baeaaadbrhezsynrtguydembvha",
+    "cid": "baeaaadjuha2cymjtg44tqmrsgqzq",
+    "_id": "a28bf536-537e-4ade-bd53-52b7af104f73",
+    "sourceCid": "baeaaadjuha2cymjtg44tqmrsgqzq",
+    "contentCid": "baeaaadjuha2cymjtg44tqmrsgqzq",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:22.527+00:00",
-    "updated": "2022-06-16T18:20:22.527+00:00",
+    "created": "2022-06-16T19:30:24.76+00:00",
+    "updated": "2022-06-16T19:30:24.76+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -6945,151 +6977,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "71a458c4-ef69-4970-b466-bf47466479c7",
+  "requestid": "a28bf536-537e-4ade-bd53-52b7af104f73",
   "status": "queued",
-  "created": "2022-06-16T18:20:22.527+00:00",
+  "created": "2022-06-16T19:30:24.76+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynrtguydembvha",
-    "_id": "71a458c4-ef69-4970-b466-bf47466479c7",
-    "sourceCid": "baeaaadbrhezsynrtguydembvha",
-    "contentCid": "baeaaadbrhezsynrtguydembvha",
+    "cid": "baeaaadjuha2cymjtg44tqmrsgqzq",
+    "_id": "a28bf536-537e-4ade-bd53-52b7af104f73",
+    "sourceCid": "baeaaadjuha2cymjtg44tqmrsgqzq",
+    "contentCid": "baeaaadjuha2cymjtg44tqmrsgqzq",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:22.527+00:00",
-    "updated": "2022-06-16T18:20:22.527+00:00",
+    "created": "2022-06-16T19:30:24.76+00:00",
+    "updated": "2022-06-16T19:30:24.76+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -7102,16 +7134,16 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "71a458c4-ef69-4970-b466-bf47466479c7",
+  "requestid": "a28bf536-537e-4ade-bd53-52b7af104f73",
   "status": "queued",
-  "created": "2022-06-16T18:20:22.527Z",
+  "created": "2022-06-16T19:30:24.760Z",
   "pin": {
-    "cid": "baeaaadbrhezsynrtguydembvha"
+    "cid": "baeaaadjuha2cymjtg44tqmrsgqzq"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadbrhezsynrugmydcmzqga' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjuha2cymjtha2dgnzsguzq' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -7138,7 +7170,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbrhezsynrugmydcmzqga"}
+{"cid":"baeaaadjuha2cymjtha2dgnzsguzq"}
 ```
 
 #### Response
@@ -7150,11 +7182,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f249c2e9846-SJC",
+  "cf-ray": "71c5f5ba1ed65974-IAD",
   "connection": "close",
-  "content-length": "3791",
+  "content-length": "3753",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:23 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:25 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -7163,151 +7195,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "fd91fbe6-a21f-440b-a26b-7b0601989337",
+  "requestid": "2033b21c-d6ef-4ed5-984f-0077d3fcd16a",
   "status": "queued",
-  "created": "2022-06-16T18:20:23.516+00:00",
+  "created": "2022-06-16T19:30:25.6+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynrugmydcmzqga",
-    "_id": "fd91fbe6-a21f-440b-a26b-7b0601989337",
-    "sourceCid": "baeaaadbrhezsynrugmydcmzqga",
-    "contentCid": "baeaaadbrhezsynrugmydcmzqga",
+    "cid": "baeaaadjuha2cymjtha2dgnzsguzq",
+    "_id": "2033b21c-d6ef-4ed5-984f-0077d3fcd16a",
+    "sourceCid": "baeaaadjuha2cymjtha2dgnzsguzq",
+    "contentCid": "baeaaadjuha2cymjtha2dgnzsguzq",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:23.516+00:00",
-    "updated": "2022-06-16T18:20:23.516+00:00",
+    "created": "2022-06-16T19:30:25.6+00:00",
+    "updated": "2022-06-16T19:30:25.6+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -7321,151 +7353,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "fd91fbe6-a21f-440b-a26b-7b0601989337",
+  "requestid": "2033b21c-d6ef-4ed5-984f-0077d3fcd16a",
   "status": "queued",
-  "created": "2022-06-16T18:20:23.516+00:00",
+  "created": "2022-06-16T19:30:25.6+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynrugmydcmzqga",
-    "_id": "fd91fbe6-a21f-440b-a26b-7b0601989337",
-    "sourceCid": "baeaaadbrhezsynrugmydcmzqga",
-    "contentCid": "baeaaadbrhezsynrugmydcmzqga",
+    "cid": "baeaaadjuha2cymjtha2dgnzsguzq",
+    "_id": "2033b21c-d6ef-4ed5-984f-0077d3fcd16a",
+    "sourceCid": "baeaaadjuha2cymjtha2dgnzsguzq",
+    "contentCid": "baeaaadjuha2cymjtha2dgnzsguzq",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:23.516+00:00",
-    "updated": "2022-06-16T18:20:23.516+00:00",
+    "created": "2022-06-16T19:30:25.6+00:00",
+    "updated": "2022-06-16T19:30:25.6+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -7478,16 +7510,16 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "fd91fbe6-a21f-440b-a26b-7b0601989337",
+  "requestid": "2033b21c-d6ef-4ed5-984f-0077d3fcd16a",
   "status": "queued",
-  "created": "2022-06-16T18:20:23.516Z",
+  "created": "2022-06-16T19:30:25.600Z",
   "pin": {
-    "cid": "baeaaadbrhezsynrugmydcmzqga"
+    "cid": "baeaaadjuha2cymjtha2dgnzsguzq"
   },
   "delegates": []
 }
 ```
-## Can create new pin for testing pagination cid='baeaaadbrhezsynruhe3tmobtgu' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='baeaaadjuha2cymjtha4dqnbqgyza' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -7514,7 +7546,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbrhezsynruhe3tmobtgu"}
+{"cid":"baeaaadjuha2cymjtha4dqnbqgyza"}
 ```
 
 #### Response
@@ -7526,11 +7558,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f2b0f882572-SJC",
+  "cf-ray": "71c5f5bfbf3e8005-IAD",
   "connection": "close",
-  "content-length": "3791",
+  "content-length": "3797",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:24 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:26 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -7539,151 +7571,151 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "68d197cf-9353-4e13-b001-e82984a5b446",
+  "requestid": "b6fdf243-fa8e-4676-a826-65e27c075350",
   "status": "queued",
-  "created": "2022-06-16T18:20:24.665+00:00",
+  "created": "2022-06-16T19:30:26.631+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynruhe3tmobtgu",
-    "_id": "68d197cf-9353-4e13-b001-e82984a5b446",
-    "sourceCid": "baeaaadbrhezsynruhe3tmobtgu",
-    "contentCid": "baeaaadbrhezsynruhe3tmobtgu",
+    "cid": "baeaaadjuha2cymjtha4dqnbqgyza",
+    "_id": "b6fdf243-fa8e-4676-a826-65e27c075350",
+    "sourceCid": "baeaaadjuha2cymjtha4dqnbqgyza",
+    "contentCid": "baeaaadjuha2cymjtha4dqnbqgyza",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:24.665+00:00",
-    "updated": "2022-06-16T18:20:24.665+00:00",
+    "created": "2022-06-16T19:30:26.631+00:00",
+    "updated": "2022-06-16T19:30:26.631+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -7697,151 +7729,151 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "68d197cf-9353-4e13-b001-e82984a5b446",
+  "requestid": "b6fdf243-fa8e-4676-a826-65e27c075350",
   "status": "queued",
-  "created": "2022-06-16T18:20:24.665+00:00",
+  "created": "2022-06-16T19:30:26.631+00:00",
   "pin": {
-    "cid": "baeaaadbrhezsynruhe3tmobtgu",
-    "_id": "68d197cf-9353-4e13-b001-e82984a5b446",
-    "sourceCid": "baeaaadbrhezsynruhe3tmobtgu",
-    "contentCid": "baeaaadbrhezsynruhe3tmobtgu",
+    "cid": "baeaaadjuha2cymjtha4dqnbqgyza",
+    "_id": "b6fdf243-fa8e-4676-a826-65e27c075350",
+    "sourceCid": "baeaaadjuha2cymjtha4dqnbqgyza",
+    "contentCid": "baeaaadjuha2cymjtha4dqnbqgyza",
     "authKey": "315318824629964106",
     "name": null,
     "origins": null,
     "meta": null,
     "deleted": null,
-    "created": "2022-06-16T18:20:24.665+00:00",
-    "updated": "2022-06-16T18:20:24.665+00:00",
+    "created": "2022-06-16T19:30:26.631+00:00",
+    "updated": "2022-06-16T19:30:26.631+00:00",
     "pins": [
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
         "peerName": "web3-storage-sv15",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
         "peerName": "web3-storage-dc13",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
         "peerName": "web3-storage-am6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
         "peerName": "web3-storage-sv15-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
         "peerName": "web3-storage-am6-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
         "peerName": "web3-storage-dc13-2",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
         "peerName": "web3-storage-dc13-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
         "peerName": "web3-storage-sv15-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
         "peerName": "web3-storage-am6-3",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
         "peerName": "web3-storage-am6-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
         "peerName": "web3-storage-am6-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
         "peerName": "web3-storage-dc13-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
         "peerName": "web3-storage-dc13-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
         "peerName": "web3-storage-sv15-5",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
         "peerName": "web3-storage-sv15-4",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
         "peerName": "web3-storage-am6-6",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
         "peerName": "web3-storage-am6-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
         "peerName": "web3-storage-dc13-8",
         "region": null
       },
       {
         "status": "Unpinned",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
         "peerName": "web3-storage-sv15-8",
         "region": null
@@ -7854,11 +7886,11 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "68d197cf-9353-4e13-b001-e82984a5b446",
+  "requestid": "b6fdf243-fa8e-4676-a826-65e27c075350",
   "status": "queued",
-  "created": "2022-06-16T18:20:24.665Z",
+  "created": "2022-06-16T19:30:26.631Z",
   "pin": {
-    "cid": "baeaaadbrhezsynruhe3tmobtgu"
+    "cid": "baeaaadjuha2cymjtha4dqnbqgyza"
   },
   "delegates": []
 }
@@ -7907,11 +7939,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f312cb5645f-SJC",
+  "cf-ray": "71c5f5c5ae535767-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:26 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:27 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -7924,150 +7956,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 15,
   "results": [
     {
-      "requestid": "68d197cf-9353-4e13-b001-e82984a5b446",
+      "requestid": "b6fdf243-fa8e-4676-a826-65e27c075350",
       "status": "queued",
-      "created": "2022-06-16T18:20:24.665+00:00",
+      "created": "2022-06-16T19:30:26.631+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynruhe3tmobtgu",
-        "_id": "68d197cf-9353-4e13-b001-e82984a5b446",
-        "sourceCid": "baeaaadbrhezsynruhe3tmobtgu",
-        "contentCid": "baeaaadbrhezsynruhe3tmobtgu",
+        "cid": "baeaaadjuha2cymjtha4dqnbqgyza",
+        "_id": "b6fdf243-fa8e-4676-a826-65e27c075350",
+        "sourceCid": "baeaaadjuha2cymjtha4dqnbqgyza",
+        "contentCid": "baeaaadjuha2cymjtha4dqnbqgyza",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:24.665+00:00",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "created": "2022-06-16T19:30:26.631+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -8077,150 +8109,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "fd91fbe6-a21f-440b-a26b-7b0601989337",
+      "requestid": "2033b21c-d6ef-4ed5-984f-0077d3fcd16a",
       "status": "queued",
-      "created": "2022-06-16T18:20:23.516+00:00",
+      "created": "2022-06-16T19:30:25.6+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrugmydcmzqga",
-        "_id": "fd91fbe6-a21f-440b-a26b-7b0601989337",
-        "sourceCid": "baeaaadbrhezsynrugmydcmzqga",
-        "contentCid": "baeaaadbrhezsynrugmydcmzqga",
+        "cid": "baeaaadjuha2cymjtha2dgnzsguzq",
+        "_id": "2033b21c-d6ef-4ed5-984f-0077d3fcd16a",
+        "sourceCid": "baeaaadjuha2cymjtha2dgnzsguzq",
+        "contentCid": "baeaaadjuha2cymjtha2dgnzsguzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:23.516+00:00",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "created": "2022-06-16T19:30:25.6+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -8230,150 +8262,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "71a458c4-ef69-4970-b466-bf47466479c7",
+      "requestid": "a28bf536-537e-4ade-bd53-52b7af104f73",
       "status": "queued",
-      "created": "2022-06-16T18:20:22.527+00:00",
+      "created": "2022-06-16T19:30:24.76+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrtguydembvha",
-        "_id": "71a458c4-ef69-4970-b466-bf47466479c7",
-        "sourceCid": "baeaaadbrhezsynrtguydembvha",
-        "contentCid": "baeaaadbrhezsynrtguydembvha",
+        "cid": "baeaaadjuha2cymjtg44tqmrsgqzq",
+        "_id": "a28bf536-537e-4ade-bd53-52b7af104f73",
+        "sourceCid": "baeaaadjuha2cymjtg44tqmrsgqzq",
+        "contentCid": "baeaaadjuha2cymjtg44tqmrsgqzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:22.527+00:00",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "created": "2022-06-16T19:30:24.76+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -8383,150 +8415,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97",
+      "requestid": "c2d35006-a942-4965-b840-09a8e4f6e9d9",
       "status": "queued",
-      "created": "2022-06-16T18:20:21.967+00:00",
+      "created": "2022-06-16T19:30:24.185+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrshaydkmrsge",
-        "_id": "d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97",
-        "sourceCid": "baeaaadbrhezsynrshaydkmrsge",
-        "contentCid": "baeaaadbrhezsynrshaydkmrsge",
+        "cid": "baeaaadjuha2cymjtg42tenbrgm2a",
+        "_id": "c2d35006-a942-4965-b840-09a8e4f6e9d9",
+        "sourceCid": "baeaaadjuha2cymjtg42tenbrgm2a",
+        "contentCid": "baeaaadjuha2cymjtg42tenbrgm2a",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:21.967+00:00",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "created": "2022-06-16T19:30:24.185+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -8536,150 +8568,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "7743ab9a-e319-4842-a45e-8e6a62ad663a",
+      "requestid": "c332e189-bb29-46fb-a50d-9f3886b82d59",
       "status": "queued",
-      "created": "2022-06-16T18:20:20.778+00:00",
+      "created": "2022-06-16T19:30:21.591+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrrgy3dmmrwge",
-        "_id": "7743ab9a-e319-4842-a45e-8e6a62ad663a",
-        "sourceCid": "baeaaadbrhezsynrrgy3dmmrwge",
-        "contentCid": "baeaaadbrhezsynrrgy3dmmrwge",
+        "cid": "baeaaadjuha2cymjtg4ydknztgi2q",
+        "_id": "c332e189-bb29-46fb-a50d-9f3886b82d59",
+        "sourceCid": "baeaaadjuha2cymjtg4ydknztgi2q",
+        "contentCid": "baeaaadjuha2cymjtg4ydknztgi2q",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:20.778+00:00",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "created": "2022-06-16T19:30:21.591+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -8689,150 +8721,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "12b19372-bfc5-41b0-a5c8-18a3409e3d2c",
+      "requestid": "6abbdea7-eb69-4ed2-a04d-51b3170e504e",
       "status": "queued",
-      "created": "2022-06-16T18:20:19.476+00:00",
+      "created": "2022-06-16T19:30:20.324+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrqhaztemzrha",
-        "_id": "12b19372-bfc5-41b0-a5c8-18a3409e3d2c",
-        "sourceCid": "baeaaadbrhezsynrqhaztemzrha",
-        "contentCid": "baeaaadbrhezsynrqhaztemzrha",
+        "cid": "baeaaadjuha2cymjtgy2donrygezq",
+        "_id": "6abbdea7-eb69-4ed2-a04d-51b3170e504e",
+        "sourceCid": "baeaaadjuha2cymjtgy2donrygezq",
+        "contentCid": "baeaaadjuha2cymjtgy2donrygezq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:19.476+00:00",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "created": "2022-06-16T19:30:20.324+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -8842,150 +8874,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "48a1dd0e-f527-449c-ae42-1268050a9000",
+      "requestid": "1bc46c1c-5bc2-44a4-a07f-b1491ce7b362",
       "status": "queued",
-      "created": "2022-06-16T18:20:18.426+00:00",
+      "created": "2022-06-16T19:30:19.4+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrqgeydcojxhe",
-        "_id": "48a1dd0e-f527-449c-ae42-1268050a9000",
-        "sourceCid": "baeaaadbrhezsynrqgeydcojxhe",
-        "contentCid": "baeaaadbrhezsynrqgeydcojxhe",
+        "cid": "baeaaadjuha2cymjtgu4tcnjxgayq",
+        "_id": "1bc46c1c-5bc2-44a4-a07f-b1491ce7b362",
+        "sourceCid": "baeaaadjuha2cymjtgu4tcnjxgayq",
+        "contentCid": "baeaaadjuha2cymjtgu4tcnjxgayq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:18.426+00:00",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "created": "2022-06-16T19:30:19.4+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -8995,150 +9027,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "fea52d82-7368-43ff-b81f-30f002b76532",
+      "requestid": "761a3f19-0f48-43a7-aae5-b653aae9cc4b",
       "status": "queued",
-      "created": "2022-06-16T18:20:17.573+00:00",
+      "created": "2022-06-16T19:30:18.239+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjyheytembrg4",
-        "_id": "fea52d82-7368-43ff-b81f-30f002b76532",
-        "sourceCid": "baeaaadbrhezsynjyheytembrg4",
-        "contentCid": "baeaaadbrhezsynjyheytembrg4",
+        "cid": "baeaaadjuha2cymjtguztonzzheya",
+        "_id": "761a3f19-0f48-43a7-aae5-b653aae9cc4b",
+        "sourceCid": "baeaaadjuha2cymjtguztonzzheya",
+        "contentCid": "baeaaadjuha2cymjtguztonzzheya",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:17.573+00:00",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "created": "2022-06-16T19:30:18.239+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -9148,150 +9180,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "d5dc9c63-616d-4b95-a703-37044565f952",
+      "requestid": "db65165d-9881-451d-9d62-fb216e176845",
       "status": "queued",
-      "created": "2022-06-16T18:20:15.973+00:00",
+      "created": "2022-06-16T19:30:17.675+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjygaztsnbxge",
-        "_id": "d5dc9c63-616d-4b95-a703-37044565f952",
-        "sourceCid": "baeaaadbrhezsynjygaztsnbxge",
-        "contentCid": "baeaaadbrhezsynjygaztsnbxge",
+        "cid": "baeaaadjuha2cymjtgq3tkmrxg44a",
+        "_id": "db65165d-9881-451d-9d62-fb216e176845",
+        "sourceCid": "baeaaadjuha2cymjtgq3tkmrxg44a",
+        "contentCid": "baeaaadjuha2cymjtgq3tkmrxg44a",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:15.973+00:00",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "created": "2022-06-16T19:30:17.675+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -9301,150 +9333,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
+      "requestid": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
       "status": "queued",
-      "created": "2022-06-16T18:20:14.435+00:00",
+      "created": "2022-06-16T19:30:16.565+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjxgmytsnbtgm",
-        "_id": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
-        "sourceCid": "baeaaadbrhezsynjxgmytsnbtgm",
-        "contentCid": "baeaaadbrhezsynjxgmytsnbtgm",
+        "cid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+        "_id": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
+        "sourceCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+        "contentCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:14.435+00:00",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "created": "2022-06-16T19:30:16.565+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -9463,150 +9495,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 15,
   "results": [
     {
-      "requestid": "68d197cf-9353-4e13-b001-e82984a5b446",
+      "requestid": "b6fdf243-fa8e-4676-a826-65e27c075350",
       "status": "queued",
-      "created": "2022-06-16T18:20:24.665+00:00",
+      "created": "2022-06-16T19:30:26.631+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynruhe3tmobtgu",
-        "_id": "68d197cf-9353-4e13-b001-e82984a5b446",
-        "sourceCid": "baeaaadbrhezsynruhe3tmobtgu",
-        "contentCid": "baeaaadbrhezsynruhe3tmobtgu",
+        "cid": "baeaaadjuha2cymjtha4dqnbqgyza",
+        "_id": "b6fdf243-fa8e-4676-a826-65e27c075350",
+        "sourceCid": "baeaaadjuha2cymjtha4dqnbqgyza",
+        "contentCid": "baeaaadjuha2cymjtha4dqnbqgyza",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:24.665+00:00",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "created": "2022-06-16T19:30:26.631+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -9616,150 +9648,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "fd91fbe6-a21f-440b-a26b-7b0601989337",
+      "requestid": "2033b21c-d6ef-4ed5-984f-0077d3fcd16a",
       "status": "queued",
-      "created": "2022-06-16T18:20:23.516+00:00",
+      "created": "2022-06-16T19:30:25.6+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrugmydcmzqga",
-        "_id": "fd91fbe6-a21f-440b-a26b-7b0601989337",
-        "sourceCid": "baeaaadbrhezsynrugmydcmzqga",
-        "contentCid": "baeaaadbrhezsynrugmydcmzqga",
+        "cid": "baeaaadjuha2cymjtha2dgnzsguzq",
+        "_id": "2033b21c-d6ef-4ed5-984f-0077d3fcd16a",
+        "sourceCid": "baeaaadjuha2cymjtha2dgnzsguzq",
+        "contentCid": "baeaaadjuha2cymjtha2dgnzsguzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:23.516+00:00",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "created": "2022-06-16T19:30:25.6+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -9769,150 +9801,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "71a458c4-ef69-4970-b466-bf47466479c7",
+      "requestid": "a28bf536-537e-4ade-bd53-52b7af104f73",
       "status": "queued",
-      "created": "2022-06-16T18:20:22.527+00:00",
+      "created": "2022-06-16T19:30:24.76+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrtguydembvha",
-        "_id": "71a458c4-ef69-4970-b466-bf47466479c7",
-        "sourceCid": "baeaaadbrhezsynrtguydembvha",
-        "contentCid": "baeaaadbrhezsynrtguydembvha",
+        "cid": "baeaaadjuha2cymjtg44tqmrsgqzq",
+        "_id": "a28bf536-537e-4ade-bd53-52b7af104f73",
+        "sourceCid": "baeaaadjuha2cymjtg44tqmrsgqzq",
+        "contentCid": "baeaaadjuha2cymjtg44tqmrsgqzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:22.527+00:00",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "created": "2022-06-16T19:30:24.76+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -9922,150 +9954,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97",
+      "requestid": "c2d35006-a942-4965-b840-09a8e4f6e9d9",
       "status": "queued",
-      "created": "2022-06-16T18:20:21.967+00:00",
+      "created": "2022-06-16T19:30:24.185+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrshaydkmrsge",
-        "_id": "d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97",
-        "sourceCid": "baeaaadbrhezsynrshaydkmrsge",
-        "contentCid": "baeaaadbrhezsynrshaydkmrsge",
+        "cid": "baeaaadjuha2cymjtg42tenbrgm2a",
+        "_id": "c2d35006-a942-4965-b840-09a8e4f6e9d9",
+        "sourceCid": "baeaaadjuha2cymjtg42tenbrgm2a",
+        "contentCid": "baeaaadjuha2cymjtg42tenbrgm2a",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:21.967+00:00",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "created": "2022-06-16T19:30:24.185+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -10075,150 +10107,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "7743ab9a-e319-4842-a45e-8e6a62ad663a",
+      "requestid": "c332e189-bb29-46fb-a50d-9f3886b82d59",
       "status": "queued",
-      "created": "2022-06-16T18:20:20.778+00:00",
+      "created": "2022-06-16T19:30:21.591+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrrgy3dmmrwge",
-        "_id": "7743ab9a-e319-4842-a45e-8e6a62ad663a",
-        "sourceCid": "baeaaadbrhezsynrrgy3dmmrwge",
-        "contentCid": "baeaaadbrhezsynrrgy3dmmrwge",
+        "cid": "baeaaadjuha2cymjtg4ydknztgi2q",
+        "_id": "c332e189-bb29-46fb-a50d-9f3886b82d59",
+        "sourceCid": "baeaaadjuha2cymjtg4ydknztgi2q",
+        "contentCid": "baeaaadjuha2cymjtg4ydknztgi2q",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:20.778+00:00",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "created": "2022-06-16T19:30:21.591+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -10228,150 +10260,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "12b19372-bfc5-41b0-a5c8-18a3409e3d2c",
+      "requestid": "6abbdea7-eb69-4ed2-a04d-51b3170e504e",
       "status": "queued",
-      "created": "2022-06-16T18:20:19.476+00:00",
+      "created": "2022-06-16T19:30:20.324+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrqhaztemzrha",
-        "_id": "12b19372-bfc5-41b0-a5c8-18a3409e3d2c",
-        "sourceCid": "baeaaadbrhezsynrqhaztemzrha",
-        "contentCid": "baeaaadbrhezsynrqhaztemzrha",
+        "cid": "baeaaadjuha2cymjtgy2donrygezq",
+        "_id": "6abbdea7-eb69-4ed2-a04d-51b3170e504e",
+        "sourceCid": "baeaaadjuha2cymjtgy2donrygezq",
+        "contentCid": "baeaaadjuha2cymjtgy2donrygezq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:19.476+00:00",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "created": "2022-06-16T19:30:20.324+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -10381,150 +10413,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "48a1dd0e-f527-449c-ae42-1268050a9000",
+      "requestid": "1bc46c1c-5bc2-44a4-a07f-b1491ce7b362",
       "status": "queued",
-      "created": "2022-06-16T18:20:18.426+00:00",
+      "created": "2022-06-16T19:30:19.4+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrqgeydcojxhe",
-        "_id": "48a1dd0e-f527-449c-ae42-1268050a9000",
-        "sourceCid": "baeaaadbrhezsynrqgeydcojxhe",
-        "contentCid": "baeaaadbrhezsynrqgeydcojxhe",
+        "cid": "baeaaadjuha2cymjtgu4tcnjxgayq",
+        "_id": "1bc46c1c-5bc2-44a4-a07f-b1491ce7b362",
+        "sourceCid": "baeaaadjuha2cymjtgu4tcnjxgayq",
+        "contentCid": "baeaaadjuha2cymjtgu4tcnjxgayq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:18.426+00:00",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "created": "2022-06-16T19:30:19.4+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -10534,150 +10566,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "fea52d82-7368-43ff-b81f-30f002b76532",
+      "requestid": "761a3f19-0f48-43a7-aae5-b653aae9cc4b",
       "status": "queued",
-      "created": "2022-06-16T18:20:17.573+00:00",
+      "created": "2022-06-16T19:30:18.239+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjyheytembrg4",
-        "_id": "fea52d82-7368-43ff-b81f-30f002b76532",
-        "sourceCid": "baeaaadbrhezsynjyheytembrg4",
-        "contentCid": "baeaaadbrhezsynjyheytembrg4",
+        "cid": "baeaaadjuha2cymjtguztonzzheya",
+        "_id": "761a3f19-0f48-43a7-aae5-b653aae9cc4b",
+        "sourceCid": "baeaaadjuha2cymjtguztonzzheya",
+        "contentCid": "baeaaadjuha2cymjtguztonzzheya",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:17.573+00:00",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "created": "2022-06-16T19:30:18.239+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -10687,150 +10719,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "d5dc9c63-616d-4b95-a703-37044565f952",
+      "requestid": "db65165d-9881-451d-9d62-fb216e176845",
       "status": "queued",
-      "created": "2022-06-16T18:20:15.973+00:00",
+      "created": "2022-06-16T19:30:17.675+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjygaztsnbxge",
-        "_id": "d5dc9c63-616d-4b95-a703-37044565f952",
-        "sourceCid": "baeaaadbrhezsynjygaztsnbxge",
-        "contentCid": "baeaaadbrhezsynjygaztsnbxge",
+        "cid": "baeaaadjuha2cymjtgq3tkmrxg44a",
+        "_id": "db65165d-9881-451d-9d62-fb216e176845",
+        "sourceCid": "baeaaadjuha2cymjtgq3tkmrxg44a",
+        "contentCid": "baeaaadjuha2cymjtgq3tkmrxg44a",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:15.973+00:00",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "created": "2022-06-16T19:30:17.675+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -10840,150 +10872,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
+      "requestid": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
       "status": "queued",
-      "created": "2022-06-16T18:20:14.435+00:00",
+      "created": "2022-06-16T19:30:16.565+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjxgmytsnbtgm",
-        "_id": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
-        "sourceCid": "baeaaadbrhezsynjxgmytsnbtgm",
-        "contentCid": "baeaaadbrhezsynjxgmytsnbtgm",
+        "cid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+        "_id": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
+        "sourceCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+        "contentCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:14.435+00:00",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "created": "2022-06-16T19:30:16.565+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -11020,7 +11052,7 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 
 #### Request
 ```
-GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-06-16T18%3A20%3A14.435Z
+GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-06-16T19%3A30%3A16.565Z
 ```
 ##### Headers
 ```json
@@ -11042,11 +11074,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f381c4596ba-SJC",
+  "cf-ray": "71c5f5c94e4d5b64-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:26 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:27 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -11059,150 +11091,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
   "count": 6,
   "results": [
     {
-      "requestid": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
+      "requestid": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
       "status": "queued",
-      "created": "2022-06-16T18:20:14.435+00:00",
+      "created": "2022-06-16T19:30:16.565+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjxgmytsnbtgm",
-        "_id": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
-        "sourceCid": "baeaaadbrhezsynjxgmytsnbtgm",
-        "contentCid": "baeaaadbrhezsynjxgmytsnbtgm",
+        "cid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+        "_id": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
+        "sourceCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+        "contentCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:14.435+00:00",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "created": "2022-06-16T19:30:16.565+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -11212,150 +11244,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "7f2ba4c1-04d0-4dc4-a8e6-405f99493efb",
+      "requestid": "b4a21a7d-1994-47bd-9773-0cd671ba8bb0",
       "status": "queued",
-      "created": "2022-06-16T18:20:13.849+00:00",
+      "created": "2022-06-16T19:30:16.165+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjwgu2domzzgm",
-        "_id": "7f2ba4c1-04d0-4dc4-a8e6-405f99493efb",
-        "sourceCid": "baeaaadbrhezsynjwgu2domzzgm",
-        "contentCid": "baeaaadbrhezsynjwgu2domzzgm",
+        "cid": "baeaaadjuha2cymjtgm2tinbzguzq",
+        "_id": "b4a21a7d-1994-47bd-9773-0cd671ba8bb0",
+        "sourceCid": "baeaaadjuha2cymjtgm2tinbzguzq",
+        "contentCid": "baeaaadjuha2cymjtgm2tinbzguzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:13.849+00:00",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "created": "2022-06-16T19:30:16.165+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -11365,150 +11397,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "19b40201-d355-4693-b9b3-7890fdf54926",
+      "requestid": "a038810c-cfd9-4afb-90c9-4fe8f39a53e1",
       "status": "queued",
-      "created": "2022-06-16T18:20:12.974+00:00",
+      "created": "2022-06-16T19:30:15.097+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjvgm4toobtgi",
-        "_id": "19b40201-d355-4693-b9b3-7890fdf54926",
-        "sourceCid": "baeaaadbrhezsynjvgm4toobtgi",
-        "contentCid": "baeaaadbrhezsynjvgm4toobtgi",
+        "cid": "baeaaadjuha2cymjtgi2tmobtgmzq",
+        "_id": "a038810c-cfd9-4afb-90c9-4fe8f39a53e1",
+        "sourceCid": "baeaaadjuha2cymjtgi2tmobtgmzq",
+        "contentCid": "baeaaadjuha2cymjtgi2tmobtgmzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:12.974+00:00",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "created": "2022-06-16T19:30:15.097+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -11518,150 +11550,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
+      "requestid": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
       "status": "queued",
-      "created": "2022-06-16T18:20:07.869+00:00",
+      "created": "2022-06-16T19:30:09.336+00:00",
       "pin": {
-        "cid": "baeaaadjrha4cymjsgm3tsmbuguza",
-        "_id": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
-        "sourceCid": "baeaaadjrha4cymjsgm3tsmbuguza",
-        "contentCid": "baeaaadjrha4cymjsgm3tsmbuguza",
+        "cid": "baeaaadbug44syobugq3tomjyha",
+        "_id": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
+        "sourceCid": "baeaaadbug44syobugq3tomjyha",
+        "contentCid": "baeaaadbug44syobugq3tomjyha",
         "authKey": 315318824629964100,
-        "name": "1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e",
+        "name": "8426b2e2-adda-4653-9cd4-9d234274c67d",
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:07.869+00:00",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "created": "2022-06-16T19:30:09.336+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -11671,150 +11703,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "602f6c5b-307c-4e21-b6d0-89db499adbab",
+      "requestid": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
       "status": "queued",
-      "created": "2022-06-16T18:20:04.243+00:00",
+      "created": "2022-06-16T19:30:06.941+00:00",
       "pin": {
-        "cid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-        "_id": "602f6c5b-307c-4e21-b6d0-89db499adbab",
-        "sourceCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-        "contentCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
+        "cid": "baeaaadjug43cyojuheytmmryge2a",
+        "_id": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
+        "sourceCid": "baeaaadjug43cyojuheytmmryge2a",
+        "contentCid": "baeaaadjug43cyojuheytmmryge2a",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:04.243+00:00",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "created": "2022-06-16T19:30:06.941+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -11824,150 +11856,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
+      "requestid": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
       "status": "queued",
-      "created": "2022-06-16T18:19:56.712+00:00",
+      "created": "2022-06-16T19:30:01.494+00:00",
       "pin": {
-        "cid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "_id": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
-        "sourceCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "contentCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
+        "cid": "baeaaadjug4ycynryguytemrygaya",
+        "_id": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
+        "sourceCid": "baeaaadjug4ycynryguytemrygaya",
+        "contentCid": "baeaaadjug4ycynryguytemrygaya",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:19:56.712+00:00",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "created": "2022-06-16T19:30:01.494+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -11986,150 +12018,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
   "count": 6,
   "results": [
     {
-      "requestid": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
+      "requestid": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
       "status": "queued",
-      "created": "2022-06-16T18:20:14.435+00:00",
+      "created": "2022-06-16T19:30:16.565+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjxgmytsnbtgm",
-        "_id": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
-        "sourceCid": "baeaaadbrhezsynjxgmytsnbtgm",
-        "contentCid": "baeaaadbrhezsynjxgmytsnbtgm",
+        "cid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+        "_id": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
+        "sourceCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+        "contentCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:14.435+00:00",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "created": "2022-06-16T19:30:16.565+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -12139,150 +12171,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "7f2ba4c1-04d0-4dc4-a8e6-405f99493efb",
+      "requestid": "b4a21a7d-1994-47bd-9773-0cd671ba8bb0",
       "status": "queued",
-      "created": "2022-06-16T18:20:13.849+00:00",
+      "created": "2022-06-16T19:30:16.165+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjwgu2domzzgm",
-        "_id": "7f2ba4c1-04d0-4dc4-a8e6-405f99493efb",
-        "sourceCid": "baeaaadbrhezsynjwgu2domzzgm",
-        "contentCid": "baeaaadbrhezsynjwgu2domzzgm",
+        "cid": "baeaaadjuha2cymjtgm2tinbzguzq",
+        "_id": "b4a21a7d-1994-47bd-9773-0cd671ba8bb0",
+        "sourceCid": "baeaaadjuha2cymjtgm2tinbzguzq",
+        "contentCid": "baeaaadjuha2cymjtgm2tinbzguzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:13.849+00:00",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "created": "2022-06-16T19:30:16.165+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -12292,150 +12324,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "19b40201-d355-4693-b9b3-7890fdf54926",
+      "requestid": "a038810c-cfd9-4afb-90c9-4fe8f39a53e1",
       "status": "queued",
-      "created": "2022-06-16T18:20:12.974+00:00",
+      "created": "2022-06-16T19:30:15.097+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjvgm4toobtgi",
-        "_id": "19b40201-d355-4693-b9b3-7890fdf54926",
-        "sourceCid": "baeaaadbrhezsynjvgm4toobtgi",
-        "contentCid": "baeaaadbrhezsynjvgm4toobtgi",
+        "cid": "baeaaadjuha2cymjtgi2tmobtgmzq",
+        "_id": "a038810c-cfd9-4afb-90c9-4fe8f39a53e1",
+        "sourceCid": "baeaaadjuha2cymjtgi2tmobtgmzq",
+        "contentCid": "baeaaadjuha2cymjtgi2tmobtgmzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:12.974+00:00",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "created": "2022-06-16T19:30:15.097+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -12445,150 +12477,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
+      "requestid": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
       "status": "queued",
-      "created": "2022-06-16T18:20:07.869+00:00",
+      "created": "2022-06-16T19:30:09.336+00:00",
       "pin": {
-        "cid": "baeaaadjrha4cymjsgm3tsmbuguza",
-        "_id": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
-        "sourceCid": "baeaaadjrha4cymjsgm3tsmbuguza",
-        "contentCid": "baeaaadjrha4cymjsgm3tsmbuguza",
+        "cid": "baeaaadbug44syobugq3tomjyha",
+        "_id": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
+        "sourceCid": "baeaaadbug44syobugq3tomjyha",
+        "contentCid": "baeaaadbug44syobugq3tomjyha",
         "authKey": 315318824629964100,
-        "name": "1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e",
+        "name": "8426b2e2-adda-4653-9cd4-9d234274c67d",
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:07.869+00:00",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "created": "2022-06-16T19:30:09.336+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -12598,150 +12630,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "602f6c5b-307c-4e21-b6d0-89db499adbab",
+      "requestid": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
       "status": "queued",
-      "created": "2022-06-16T18:20:04.243+00:00",
+      "created": "2022-06-16T19:30:06.941+00:00",
       "pin": {
-        "cid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-        "_id": "602f6c5b-307c-4e21-b6d0-89db499adbab",
-        "sourceCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-        "contentCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
+        "cid": "baeaaadjug43cyojuheytmmryge2a",
+        "_id": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
+        "sourceCid": "baeaaadjug43cyojuheytmmryge2a",
+        "contentCid": "baeaaadjug43cyojuheytmmryge2a",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:04.243+00:00",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "created": "2022-06-16T19:30:06.941+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -12751,150 +12783,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
+      "requestid": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
       "status": "queued",
-      "created": "2022-06-16T18:19:56.712+00:00",
+      "created": "2022-06-16T19:30:01.494+00:00",
       "pin": {
-        "cid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "_id": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
-        "sourceCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "contentCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
+        "cid": "baeaaadjug4ycynryguytemrygaya",
+        "_id": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
+        "sourceCid": "baeaaadjug4ycynryguytemrygaya",
+        "contentCid": "baeaaadjug4ycynryguytemrygaya",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:19:56.712+00:00",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "created": "2022-06-16T19:30:01.494+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -13015,11 +13047,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58ed9abeb97c9-SJC",
+  "cf-ray": "71c5f56e0bf2059c-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:11 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:13 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -13032,150 +13064,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 3,
   "results": [
     {
-      "requestid": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
+      "requestid": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
       "status": "queued",
-      "created": "2022-06-16T18:20:07.869+00:00",
+      "created": "2022-06-16T19:30:09.336+00:00",
       "pin": {
-        "cid": "baeaaadjrha4cymjsgm3tsmbuguza",
-        "_id": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
-        "sourceCid": "baeaaadjrha4cymjsgm3tsmbuguza",
-        "contentCid": "baeaaadjrha4cymjsgm3tsmbuguza",
+        "cid": "baeaaadbug44syobugq3tomjyha",
+        "_id": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
+        "sourceCid": "baeaaadbug44syobugq3tomjyha",
+        "contentCid": "baeaaadbug44syobugq3tomjyha",
         "authKey": 315318824629964100,
-        "name": "1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e",
+        "name": "8426b2e2-adda-4653-9cd4-9d234274c67d",
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:07.869+00:00",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "created": "2022-06-16T19:30:09.336+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -13185,150 +13217,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "602f6c5b-307c-4e21-b6d0-89db499adbab",
+      "requestid": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
       "status": "queued",
-      "created": "2022-06-16T18:20:04.243+00:00",
+      "created": "2022-06-16T19:30:06.941+00:00",
       "pin": {
-        "cid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-        "_id": "602f6c5b-307c-4e21-b6d0-89db499adbab",
-        "sourceCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-        "contentCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
+        "cid": "baeaaadjug43cyojuheytmmryge2a",
+        "_id": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
+        "sourceCid": "baeaaadjug43cyojuheytmmryge2a",
+        "contentCid": "baeaaadjug43cyojuheytmmryge2a",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:04.243+00:00",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "created": "2022-06-16T19:30:06.941+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -13338,150 +13370,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
+      "requestid": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
       "status": "queued",
-      "created": "2022-06-16T18:19:56.712+00:00",
+      "created": "2022-06-16T19:30:01.494+00:00",
       "pin": {
-        "cid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "_id": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
-        "sourceCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "contentCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
+        "cid": "baeaaadjug4ycynryguytemrygaya",
+        "_id": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
+        "sourceCid": "baeaaadjug4ycynryguytemrygaya",
+        "contentCid": "baeaaadjug4ycynryguytemrygaya",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:19:56.712+00:00",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "created": "2022-06-16T19:30:01.494+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -13500,150 +13532,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 3,
   "results": [
     {
-      "requestid": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
+      "requestid": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
       "status": "queued",
-      "created": "2022-06-16T18:20:07.869+00:00",
+      "created": "2022-06-16T19:30:09.336+00:00",
       "pin": {
-        "cid": "baeaaadjrha4cymjsgm3tsmbuguza",
-        "_id": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
-        "sourceCid": "baeaaadjrha4cymjsgm3tsmbuguza",
-        "contentCid": "baeaaadjrha4cymjsgm3tsmbuguza",
+        "cid": "baeaaadbug44syobugq3tomjyha",
+        "_id": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
+        "sourceCid": "baeaaadbug44syobugq3tomjyha",
+        "contentCid": "baeaaadbug44syobugq3tomjyha",
         "authKey": 315318824629964100,
-        "name": "1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e",
+        "name": "8426b2e2-adda-4653-9cd4-9d234274c67d",
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:07.869+00:00",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "created": "2022-06-16T19:30:09.336+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -13653,150 +13685,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "602f6c5b-307c-4e21-b6d0-89db499adbab",
+      "requestid": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
       "status": "queued",
-      "created": "2022-06-16T18:20:04.243+00:00",
+      "created": "2022-06-16T19:30:06.941+00:00",
       "pin": {
-        "cid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-        "_id": "602f6c5b-307c-4e21-b6d0-89db499adbab",
-        "sourceCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-        "contentCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
+        "cid": "baeaaadjug43cyojuheytmmryge2a",
+        "_id": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
+        "sourceCid": "baeaaadjug43cyojuheytmmryge2a",
+        "contentCid": "baeaaadjug43cyojuheytmmryge2a",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:04.243+00:00",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "created": "2022-06-16T19:30:06.941+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -13806,150 +13838,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
+      "requestid": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
       "status": "queued",
-      "created": "2022-06-16T18:19:56.712+00:00",
+      "created": "2022-06-16T19:30:01.494+00:00",
       "pin": {
-        "cid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "_id": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
-        "sourceCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "contentCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
+        "cid": "baeaaadjug4ycynryguytemrygaya",
+        "_id": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
+        "sourceCid": "baeaaadjug4ycynryguytemrygaya",
+        "contentCid": "baeaaadjug4ycynryguytemrygaya",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:19:56.712+00:00",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "created": "2022-06-16T19:30:01.494+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -13968,7 +14000,7 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "results": {}
 }
 ```
-## Can delete pin with requestid '68d197cf-9353-4e13-b001-e82984a5b446' - 🟢 SUCCESS
+## Can delete pin with requestid 'b6fdf243-fa8e-4676-a826-65e27c075350' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -13984,7 +14016,7 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/68d197cf-9353-4e13-b001-e82984a5b446
+DELETE https://api.web3.storage/pins/b6fdf243-fa8e-4676-a826-65e27c075350
 ```
 ##### Headers
 ```json
@@ -14006,11 +14038,11 @@ DELETE https://api.web3.storage/pins/68d197cf-9353-4e13-b001-e82984a5b446
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f447ebe9698-SJC",
+  "cf-ray": "71c5f5d5dff65ae1-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:28 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:29 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -14029,7 +14061,7 @@ DELETE https://api.web3.storage/pins/68d197cf-9353-4e13-b001-e82984a5b446
 ```json
 undefined
 ```
-## Can delete pin with requestid 'fd91fbe6-a21f-440b-a26b-7b0601989337' - 🟢 SUCCESS
+## Can delete pin with requestid '2033b21c-d6ef-4ed5-984f-0077d3fcd16a' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -14045,7 +14077,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/fd91fbe6-a21f-440b-a26b-7b0601989337
+DELETE https://api.web3.storage/pins/2033b21c-d6ef-4ed5-984f-0077d3fcd16a
 ```
 ##### Headers
 ```json
@@ -14067,11 +14099,11 @@ DELETE https://api.web3.storage/pins/fd91fbe6-a21f-440b-a26b-7b0601989337
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f4aab68641d-SJC",
+  "cf-ray": "71c5f5dc087059e0-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:29 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:30 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -14090,7 +14122,7 @@ DELETE https://api.web3.storage/pins/fd91fbe6-a21f-440b-a26b-7b0601989337
 ```json
 undefined
 ```
-## Can delete pin with requestid '71a458c4-ef69-4970-b466-bf47466479c7' - 🟢 SUCCESS
+## Can delete pin with requestid 'a28bf536-537e-4ade-bd53-52b7af104f73' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -14106,7 +14138,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/71a458c4-ef69-4970-b466-bf47466479c7
+DELETE https://api.web3.storage/pins/a28bf536-537e-4ade-bd53-52b7af104f73
 ```
 ##### Headers
 ```json
@@ -14128,11 +14160,11 @@ DELETE https://api.web3.storage/pins/71a458c4-ef69-4970-b466-bf47466479c7
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f50ee679846-SJC",
+  "cf-ray": "71c5f5e24fcd5b65-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:30 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:31 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -14151,7 +14183,7 @@ DELETE https://api.web3.storage/pins/71a458c4-ef69-4970-b466-bf47466479c7
 ```json
 undefined
 ```
-## Can delete pin with requestid 'd2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97' - 🟢 SUCCESS
+## Can delete pin with requestid 'c2d35006-a942-4965-b840-09a8e4f6e9d9' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -14167,7 +14199,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97
+DELETE https://api.web3.storage/pins/c2d35006-a942-4965-b840-09a8e4f6e9d9
 ```
 ##### Headers
 ```json
@@ -14189,11 +14221,11 @@ DELETE https://api.web3.storage/pins/d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f572a722572-SJC",
+  "cf-ray": "71c5f5e89b165974-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:32 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:32 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -14212,7 +14244,7 @@ DELETE https://api.web3.storage/pins/d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97
 ```json
 undefined
 ```
-## Can delete pin with requestid '7743ab9a-e319-4842-a45e-8e6a62ad663a' - 🟢 SUCCESS
+## Can delete pin with requestid 'c332e189-bb29-46fb-a50d-9f3886b82d59' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -14228,7 +14260,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/7743ab9a-e319-4842-a45e-8e6a62ad663a
+DELETE https://api.web3.storage/pins/c332e189-bb29-46fb-a50d-9f3886b82d59
 ```
 ##### Headers
 ```json
@@ -14250,11 +14282,11 @@ DELETE https://api.web3.storage/pins/7743ab9a-e319-4842-a45e-8e6a62ad663a
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f5d7cb8986d-SJC",
+  "cf-ray": "71c5f5eed8d9cec4-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:32 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:34 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -14273,7 +14305,7 @@ DELETE https://api.web3.storage/pins/7743ab9a-e319-4842-a45e-8e6a62ad663a
 ```json
 undefined
 ```
-## Can delete pin with requestid '12b19372-bfc5-41b0-a5c8-18a3409e3d2c' - 🟢 SUCCESS
+## Can delete pin with requestid '6abbdea7-eb69-4ed2-a04d-51b3170e504e' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -14289,7 +14321,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/12b19372-bfc5-41b0-a5c8-18a3409e3d2c
+DELETE https://api.web3.storage/pins/6abbdea7-eb69-4ed2-a04d-51b3170e504e
 ```
 ##### Headers
 ```json
@@ -14311,11 +14343,11 @@ DELETE https://api.web3.storage/pins/12b19372-bfc5-41b0-a5c8-18a3409e3d2c
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f63bb66983a-SJC",
+  "cf-ray": "71c5f5f51f5f5767-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:33 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:34 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -14334,7 +14366,7 @@ DELETE https://api.web3.storage/pins/12b19372-bfc5-41b0-a5c8-18a3409e3d2c
 ```json
 undefined
 ```
-## Can delete pin with requestid '48a1dd0e-f527-449c-ae42-1268050a9000' - 🟢 SUCCESS
+## Can delete pin with requestid '1bc46c1c-5bc2-44a4-a07f-b1491ce7b362' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -14350,7 +14382,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/48a1dd0e-f527-449c-ae42-1268050a9000
+DELETE https://api.web3.storage/pins/1bc46c1c-5bc2-44a4-a07f-b1491ce7b362
 ```
 ##### Headers
 ```json
@@ -14372,11 +14404,11 @@ DELETE https://api.web3.storage/pins/48a1dd0e-f527-449c-ae42-1268050a9000
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f69f9ccaaaf-SJC",
+  "cf-ray": "71c5f5fb5cce59fd-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:35 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:35 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -14395,7 +14427,7 @@ DELETE https://api.web3.storage/pins/48a1dd0e-f527-449c-ae42-1268050a9000
 ```json
 undefined
 ```
-## Can delete pin with requestid 'fea52d82-7368-43ff-b81f-30f002b76532' - 🟢 SUCCESS
+## Can delete pin with requestid '761a3f19-0f48-43a7-aae5-b653aae9cc4b' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -14411,7 +14443,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/fea52d82-7368-43ff-b81f-30f002b76532
+DELETE https://api.web3.storage/pins/761a3f19-0f48-43a7-aae5-b653aae9cc4b
 ```
 ##### Headers
 ```json
@@ -14433,11 +14465,11 @@ DELETE https://api.web3.storage/pins/fea52d82-7368-43ff-b81f-30f002b76532
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f703c3d9879-SJC",
+  "cf-ray": "71c5f6019af47f9a-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:35 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:36 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -14456,7 +14488,7 @@ DELETE https://api.web3.storage/pins/fea52d82-7368-43ff-b81f-30f002b76532
 ```json
 undefined
 ```
-## Can delete pin with requestid 'd5dc9c63-616d-4b95-a703-37044565f952' - 🟢 SUCCESS
+## Can delete pin with requestid 'db65165d-9881-451d-9d62-fb216e176845' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -14472,7 +14504,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/d5dc9c63-616d-4b95-a703-37044565f952
+DELETE https://api.web3.storage/pins/db65165d-9881-451d-9d62-fb216e176845
 ```
 ##### Headers
 ```json
@@ -14494,11 +14526,11 @@ DELETE https://api.web3.storage/pins/d5dc9c63-616d-4b95-a703-37044565f952
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f767c589846-SJC",
+  "cf-ray": "71c5f607cd3a59e0-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:36 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:37 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -14517,7 +14549,7 @@ DELETE https://api.web3.storage/pins/d5dc9c63-616d-4b95-a703-37044565f952
 ```json
 undefined
 ```
-## Can delete pin with requestid '60e5856c-c384-44de-ab38-1e8c59fee5cc' - 🟢 SUCCESS
+## Can delete pin with requestid '2c5ab075-69b4-47b9-aed2-1da16ebff48a' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -14533,7 +14565,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/60e5856c-c384-44de-ab38-1e8c59fee5cc
+DELETE https://api.web3.storage/pins/2c5ab075-69b4-47b9-aed2-1da16ebff48a
 ```
 ##### Headers
 ```json
@@ -14555,11 +14587,11 @@ DELETE https://api.web3.storage/pins/60e5856c-c384-44de-ab38-1e8c59fee5cc
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f7cbc8d968f-SJC",
+  "cf-ray": "71c5f60e1ebb9c48-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:37 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:38 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -14578,7 +14610,7 @@ DELETE https://api.web3.storage/pins/60e5856c-c384-44de-ab38-1e8c59fee5cc
 ```json
 undefined
 ```
-## Can delete pin with requestid '7f2ba4c1-04d0-4dc4-a8e6-405f99493efb' - 🟢 SUCCESS
+## Can delete pin with requestid 'b4a21a7d-1994-47bd-9773-0cd671ba8bb0' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -14594,7 +14626,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/7f2ba4c1-04d0-4dc4-a8e6-405f99493efb
+DELETE https://api.web3.storage/pins/b4a21a7d-1994-47bd-9773-0cd671ba8bb0
 ```
 ##### Headers
 ```json
@@ -14616,11 +14648,11 @@ DELETE https://api.web3.storage/pins/7f2ba4c1-04d0-4dc4-a8e6-405f99493efb
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f863a33986d-SJC",
+  "cf-ray": "71c5f6162c435a93-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:39 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:40 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -14639,7 +14671,7 @@ DELETE https://api.web3.storage/pins/7f2ba4c1-04d0-4dc4-a8e6-405f99493efb
 ```json
 undefined
 ```
-## Can delete pin with requestid '19b40201-d355-4693-b9b3-7890fdf54926' - 🟢 SUCCESS
+## Can delete pin with requestid 'a038810c-cfd9-4afb-90c9-4fe8f39a53e1' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -14655,7 +14687,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/19b40201-d355-4693-b9b3-7890fdf54926
+DELETE https://api.web3.storage/pins/a038810c-cfd9-4afb-90c9-4fe8f39a53e1
 ```
 ##### Headers
 ```json
@@ -14677,11 +14709,11 @@ DELETE https://api.web3.storage/pins/19b40201-d355-4693-b9b3-7890fdf54926
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f8c78ca9e64-SJC",
+  "cf-ray": "71c5f61c1bee0607-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:40 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:41 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -14700,7 +14732,7 @@ DELETE https://api.web3.storage/pins/19b40201-d355-4693-b9b3-7890fdf54926
 ```json
 undefined
 ```
-## Can delete pin with requestid 'ebd07ec8-3513-4091-9b79-15621c40b0a2' - 🟢 SUCCESS
+## Can delete pin with requestid 'e8aa18ea-74dc-4589-9098-f3491c78c00c' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -14716,7 +14748,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/ebd07ec8-3513-4091-9b79-15621c40b0a2
+DELETE https://api.web3.storage/pins/e8aa18ea-74dc-4589-9098-f3491c78c00c
 ```
 ##### Headers
 ```json
@@ -14738,11 +14770,11 @@ DELETE https://api.web3.storage/pins/ebd07ec8-3513-4091-9b79-15621c40b0a2
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f92dd3f9864-SJC",
+  "cf-ray": "71c5f6229b535752-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:41 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:42 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -14761,7 +14793,7 @@ DELETE https://api.web3.storage/pins/ebd07ec8-3513-4091-9b79-15621c40b0a2
 ```json
 undefined
 ```
-## Can delete pin with requestid '602f6c5b-307c-4e21-b6d0-89db499adbab' - 🟢 SUCCESS
+## Can delete pin with requestid '78dc05ea-d318-4d73-8e3b-483ae1d49dc5' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -14777,7 +14809,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/602f6c5b-307c-4e21-b6d0-89db499adbab
+DELETE https://api.web3.storage/pins/78dc05ea-d318-4d73-8e3b-483ae1d49dc5
 ```
 ##### Headers
 ```json
@@ -14799,11 +14831,11 @@ DELETE https://api.web3.storage/pins/602f6c5b-307c-4e21-b6d0-89db499adbab
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f98fe359879-SJC",
+  "cf-ray": "71c5f628aafa59fd-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:42 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:42 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -14822,7 +14854,7 @@ DELETE https://api.web3.storage/pins/602f6c5b-307c-4e21-b6d0-89db499adbab
 ```json
 undefined
 ```
-## Can delete pin with requestid '7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3' - 🟢 SUCCESS
+## Can delete pin with requestid '0a569e9c-7ff6-44ce-a695-8c1ce6785970' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -14838,7 +14870,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3
+DELETE https://api.web3.storage/pins/0a569e9c-7ff6-44ce-a695-8c1ce6785970
 ```
 ##### Headers
 ```json
@@ -14860,11 +14892,11 @@ DELETE https://api.web3.storage/pins/7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f9f382f9846-SJC",
+  "cf-ray": "71c5f62ecf679c36-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:43 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:44 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -14883,7 +14915,7 @@ DELETE https://api.web3.storage/pins/7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3
 ```json
 undefined
 ```
-## Get all Pins created before 'Thu Jun 16 2022 18:20:14 GMT+0000 (Coordinated Universal Time)' - 🟢 SUCCESS
+## Get all Pins created before 'Thu Jun 16 2022 19:30:16 GMT+0000 (Coordinated Universal Time)' - 🟢 SUCCESS
 
 ### Expectations (10/10 successful)
 
@@ -14915,7 +14947,7 @@ undefined
 
 #### Request
 ```
-GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-06-16T18%3A20%3A14.435Z
+GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-06-16T19%3A30%3A16.565Z
 ```
 ##### Headers
 ```json
@@ -14937,11 +14969,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f82f9a22572-SJC",
+  "cf-ray": "71c5f614684a5974-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:38 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:39 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -14954,150 +14986,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
   "count": 5,
   "results": [
     {
-      "requestid": "7f2ba4c1-04d0-4dc4-a8e6-405f99493efb",
+      "requestid": "b4a21a7d-1994-47bd-9773-0cd671ba8bb0",
       "status": "queued",
-      "created": "2022-06-16T18:20:13.849+00:00",
+      "created": "2022-06-16T19:30:16.165+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjwgu2domzzgm",
-        "_id": "7f2ba4c1-04d0-4dc4-a8e6-405f99493efb",
-        "sourceCid": "baeaaadbrhezsynjwgu2domzzgm",
-        "contentCid": "baeaaadbrhezsynjwgu2domzzgm",
+        "cid": "baeaaadjuha2cymjtgm2tinbzguzq",
+        "_id": "b4a21a7d-1994-47bd-9773-0cd671ba8bb0",
+        "sourceCid": "baeaaadjuha2cymjtgm2tinbzguzq",
+        "contentCid": "baeaaadjuha2cymjtgm2tinbzguzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:13.849+00:00",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "created": "2022-06-16T19:30:16.165+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -15107,150 +15139,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "19b40201-d355-4693-b9b3-7890fdf54926",
+      "requestid": "a038810c-cfd9-4afb-90c9-4fe8f39a53e1",
       "status": "queued",
-      "created": "2022-06-16T18:20:12.974+00:00",
+      "created": "2022-06-16T19:30:15.097+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjvgm4toobtgi",
-        "_id": "19b40201-d355-4693-b9b3-7890fdf54926",
-        "sourceCid": "baeaaadbrhezsynjvgm4toobtgi",
-        "contentCid": "baeaaadbrhezsynjvgm4toobtgi",
+        "cid": "baeaaadjuha2cymjtgi2tmobtgmzq",
+        "_id": "a038810c-cfd9-4afb-90c9-4fe8f39a53e1",
+        "sourceCid": "baeaaadjuha2cymjtgi2tmobtgmzq",
+        "contentCid": "baeaaadjuha2cymjtgi2tmobtgmzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:12.974+00:00",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "created": "2022-06-16T19:30:15.097+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -15260,150 +15292,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
+      "requestid": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
       "status": "queued",
-      "created": "2022-06-16T18:20:07.869+00:00",
+      "created": "2022-06-16T19:30:09.336+00:00",
       "pin": {
-        "cid": "baeaaadjrha4cymjsgm3tsmbuguza",
-        "_id": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
-        "sourceCid": "baeaaadjrha4cymjsgm3tsmbuguza",
-        "contentCid": "baeaaadjrha4cymjsgm3tsmbuguza",
+        "cid": "baeaaadbug44syobugq3tomjyha",
+        "_id": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
+        "sourceCid": "baeaaadbug44syobugq3tomjyha",
+        "contentCid": "baeaaadbug44syobugq3tomjyha",
         "authKey": 315318824629964100,
-        "name": "1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e",
+        "name": "8426b2e2-adda-4653-9cd4-9d234274c67d",
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:07.869+00:00",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "created": "2022-06-16T19:30:09.336+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -15413,150 +15445,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "602f6c5b-307c-4e21-b6d0-89db499adbab",
+      "requestid": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
       "status": "queued",
-      "created": "2022-06-16T18:20:04.243+00:00",
+      "created": "2022-06-16T19:30:06.941+00:00",
       "pin": {
-        "cid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-        "_id": "602f6c5b-307c-4e21-b6d0-89db499adbab",
-        "sourceCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-        "contentCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
+        "cid": "baeaaadjug43cyojuheytmmryge2a",
+        "_id": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
+        "sourceCid": "baeaaadjug43cyojuheytmmryge2a",
+        "contentCid": "baeaaadjug43cyojuheytmmryge2a",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:04.243+00:00",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "created": "2022-06-16T19:30:06.941+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -15566,150 +15598,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
+      "requestid": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
       "status": "queued",
-      "created": "2022-06-16T18:19:56.712+00:00",
+      "created": "2022-06-16T19:30:01.494+00:00",
       "pin": {
-        "cid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "_id": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
-        "sourceCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "contentCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
+        "cid": "baeaaadjug4ycynryguytemrygaya",
+        "_id": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
+        "sourceCid": "baeaaadjug4ycynryguytemrygaya",
+        "contentCid": "baeaaadjug4ycynryguytemrygaya",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:19:56.712+00:00",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "created": "2022-06-16T19:30:01.494+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -15728,150 +15760,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
   "count": 5,
   "results": [
     {
-      "requestid": "7f2ba4c1-04d0-4dc4-a8e6-405f99493efb",
+      "requestid": "b4a21a7d-1994-47bd-9773-0cd671ba8bb0",
       "status": "queued",
-      "created": "2022-06-16T18:20:13.849+00:00",
+      "created": "2022-06-16T19:30:16.165+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjwgu2domzzgm",
-        "_id": "7f2ba4c1-04d0-4dc4-a8e6-405f99493efb",
-        "sourceCid": "baeaaadbrhezsynjwgu2domzzgm",
-        "contentCid": "baeaaadbrhezsynjwgu2domzzgm",
+        "cid": "baeaaadjuha2cymjtgm2tinbzguzq",
+        "_id": "b4a21a7d-1994-47bd-9773-0cd671ba8bb0",
+        "sourceCid": "baeaaadjuha2cymjtgm2tinbzguzq",
+        "contentCid": "baeaaadjuha2cymjtgm2tinbzguzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:13.849+00:00",
-        "updated": "2022-06-16T18:20:13.849+00:00",
+        "created": "2022-06-16T19:30:16.165+00:00",
+        "updated": "2022-06-16T19:30:16.165+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:13.849+00:00",
+            "updated": "2022-06-16T19:30:16.165+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -15881,150 +15913,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "19b40201-d355-4693-b9b3-7890fdf54926",
+      "requestid": "a038810c-cfd9-4afb-90c9-4fe8f39a53e1",
       "status": "queued",
-      "created": "2022-06-16T18:20:12.974+00:00",
+      "created": "2022-06-16T19:30:15.097+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjvgm4toobtgi",
-        "_id": "19b40201-d355-4693-b9b3-7890fdf54926",
-        "sourceCid": "baeaaadbrhezsynjvgm4toobtgi",
-        "contentCid": "baeaaadbrhezsynjvgm4toobtgi",
+        "cid": "baeaaadjuha2cymjtgi2tmobtgmzq",
+        "_id": "a038810c-cfd9-4afb-90c9-4fe8f39a53e1",
+        "sourceCid": "baeaaadjuha2cymjtgi2tmobtgmzq",
+        "contentCid": "baeaaadjuha2cymjtgi2tmobtgmzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:12.974+00:00",
-        "updated": "2022-06-16T18:20:12.974+00:00",
+        "created": "2022-06-16T19:30:15.097+00:00",
+        "updated": "2022-06-16T19:30:15.097+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:12.974+00:00",
+            "updated": "2022-06-16T19:30:15.097+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -16034,150 +16066,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
+      "requestid": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
       "status": "queued",
-      "created": "2022-06-16T18:20:07.869+00:00",
+      "created": "2022-06-16T19:30:09.336+00:00",
       "pin": {
-        "cid": "baeaaadjrha4cymjsgm3tsmbuguza",
-        "_id": "ebd07ec8-3513-4091-9b79-15621c40b0a2",
-        "sourceCid": "baeaaadjrha4cymjsgm3tsmbuguza",
-        "contentCid": "baeaaadjrha4cymjsgm3tsmbuguza",
+        "cid": "baeaaadbug44syobugq3tomjyha",
+        "_id": "e8aa18ea-74dc-4589-9098-f3491c78c00c",
+        "sourceCid": "baeaaadbug44syobugq3tomjyha",
+        "contentCid": "baeaaadbug44syobugq3tomjyha",
         "authKey": 315318824629964100,
-        "name": "1924c0cb-0f99-4f91-bd4e-93c9cdd1e61e",
+        "name": "8426b2e2-adda-4653-9cd4-9d234274c67d",
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:07.869+00:00",
-        "updated": "2022-06-16T18:20:07.869+00:00",
+        "created": "2022-06-16T19:30:09.336+00:00",
+        "updated": "2022-06-16T19:30:09.336+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:07.869+00:00",
+            "updated": "2022-06-16T19:30:09.336+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -16187,150 +16219,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "602f6c5b-307c-4e21-b6d0-89db499adbab",
+      "requestid": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
       "status": "queued",
-      "created": "2022-06-16T18:20:04.243+00:00",
+      "created": "2022-06-16T19:30:06.941+00:00",
       "pin": {
-        "cid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-        "_id": "602f6c5b-307c-4e21-b6d0-89db499adbab",
-        "sourceCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
-        "contentCid": "baeaaadjrhazsyobsgezdqnzvgu2a",
+        "cid": "baeaaadjug43cyojuheytmmryge2a",
+        "_id": "78dc05ea-d318-4d73-8e3b-483ae1d49dc5",
+        "sourceCid": "baeaaadjug43cyojuheytmmryge2a",
+        "contentCid": "baeaaadjug43cyojuheytmmryge2a",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:04.243+00:00",
-        "updated": "2022-06-16T18:20:04.243+00:00",
+        "created": "2022-06-16T19:30:06.941+00:00",
+        "updated": "2022-06-16T19:30:06.941+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:04.243+00:00",
+            "updated": "2022-06-16T19:30:06.941+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -16340,150 +16372,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
       "delegates": []
     },
     {
-      "requestid": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
+      "requestid": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
       "status": "queued",
-      "created": "2022-06-16T18:19:56.712+00:00",
+      "created": "2022-06-16T19:30:01.494+00:00",
       "pin": {
-        "cid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "_id": "7b4c8bf7-8909-4b4f-9aa8-8cbb8988a4d3",
-        "sourceCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
-        "contentCid": "baeaaadjrg43cymrugm3dgnjqgi4q",
+        "cid": "baeaaadjug4ycynryguytemrygaya",
+        "_id": "0a569e9c-7ff6-44ce-a695-8c1ce6785970",
+        "sourceCid": "baeaaadjug4ycynryguytemrygaya",
+        "contentCid": "baeaaadjug4ycynryguytemrygaya",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:19:56.712+00:00",
-        "updated": "2022-06-16T18:19:56.712+00:00",
+        "created": "2022-06-16T19:30:01.494+00:00",
+        "updated": "2022-06-16T19:30:01.494+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:19:56.712+00:00",
+            "updated": "2022-06-16T19:30:01.494+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -16538,11 +16570,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58fa5880a968f-SJC",
+  "cf-ray": "71c5f63519f959e0-IAD",
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:44 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:44 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -16666,11 +16698,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link",
-  "cf-ray": "71c58f3e2b0696ea-SJC",
+  "cf-ray": "71c5f5cf8b56062b-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 16 Jun 2022 18:20:27 GMT",
+  "date": "Thu, 16 Jun 2022 19:30:29 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -16683,150 +16715,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 15,
   "results": [
     {
-      "requestid": "68d197cf-9353-4e13-b001-e82984a5b446",
+      "requestid": "b6fdf243-fa8e-4676-a826-65e27c075350",
       "status": "queued",
-      "created": "2022-06-16T18:20:24.665+00:00",
+      "created": "2022-06-16T19:30:26.631+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynruhe3tmobtgu",
-        "_id": "68d197cf-9353-4e13-b001-e82984a5b446",
-        "sourceCid": "baeaaadbrhezsynruhe3tmobtgu",
-        "contentCid": "baeaaadbrhezsynruhe3tmobtgu",
+        "cid": "baeaaadjuha2cymjtha4dqnbqgyza",
+        "_id": "b6fdf243-fa8e-4676-a826-65e27c075350",
+        "sourceCid": "baeaaadjuha2cymjtha4dqnbqgyza",
+        "contentCid": "baeaaadjuha2cymjtha4dqnbqgyza",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:24.665+00:00",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "created": "2022-06-16T19:30:26.631+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -16836,150 +16868,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "fd91fbe6-a21f-440b-a26b-7b0601989337",
+      "requestid": "2033b21c-d6ef-4ed5-984f-0077d3fcd16a",
       "status": "queued",
-      "created": "2022-06-16T18:20:23.516+00:00",
+      "created": "2022-06-16T19:30:25.6+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrugmydcmzqga",
-        "_id": "fd91fbe6-a21f-440b-a26b-7b0601989337",
-        "sourceCid": "baeaaadbrhezsynrugmydcmzqga",
-        "contentCid": "baeaaadbrhezsynrugmydcmzqga",
+        "cid": "baeaaadjuha2cymjtha2dgnzsguzq",
+        "_id": "2033b21c-d6ef-4ed5-984f-0077d3fcd16a",
+        "sourceCid": "baeaaadjuha2cymjtha2dgnzsguzq",
+        "contentCid": "baeaaadjuha2cymjtha2dgnzsguzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:23.516+00:00",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "created": "2022-06-16T19:30:25.6+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -16989,150 +17021,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "71a458c4-ef69-4970-b466-bf47466479c7",
+      "requestid": "a28bf536-537e-4ade-bd53-52b7af104f73",
       "status": "queued",
-      "created": "2022-06-16T18:20:22.527+00:00",
+      "created": "2022-06-16T19:30:24.76+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrtguydembvha",
-        "_id": "71a458c4-ef69-4970-b466-bf47466479c7",
-        "sourceCid": "baeaaadbrhezsynrtguydembvha",
-        "contentCid": "baeaaadbrhezsynrtguydembvha",
+        "cid": "baeaaadjuha2cymjtg44tqmrsgqzq",
+        "_id": "a28bf536-537e-4ade-bd53-52b7af104f73",
+        "sourceCid": "baeaaadjuha2cymjtg44tqmrsgqzq",
+        "contentCid": "baeaaadjuha2cymjtg44tqmrsgqzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:22.527+00:00",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "created": "2022-06-16T19:30:24.76+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -17142,150 +17174,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97",
+      "requestid": "c2d35006-a942-4965-b840-09a8e4f6e9d9",
       "status": "queued",
-      "created": "2022-06-16T18:20:21.967+00:00",
+      "created": "2022-06-16T19:30:24.185+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrshaydkmrsge",
-        "_id": "d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97",
-        "sourceCid": "baeaaadbrhezsynrshaydkmrsge",
-        "contentCid": "baeaaadbrhezsynrshaydkmrsge",
+        "cid": "baeaaadjuha2cymjtg42tenbrgm2a",
+        "_id": "c2d35006-a942-4965-b840-09a8e4f6e9d9",
+        "sourceCid": "baeaaadjuha2cymjtg42tenbrgm2a",
+        "contentCid": "baeaaadjuha2cymjtg42tenbrgm2a",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:21.967+00:00",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "created": "2022-06-16T19:30:24.185+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -17295,150 +17327,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "7743ab9a-e319-4842-a45e-8e6a62ad663a",
+      "requestid": "c332e189-bb29-46fb-a50d-9f3886b82d59",
       "status": "queued",
-      "created": "2022-06-16T18:20:20.778+00:00",
+      "created": "2022-06-16T19:30:21.591+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrrgy3dmmrwge",
-        "_id": "7743ab9a-e319-4842-a45e-8e6a62ad663a",
-        "sourceCid": "baeaaadbrhezsynrrgy3dmmrwge",
-        "contentCid": "baeaaadbrhezsynrrgy3dmmrwge",
+        "cid": "baeaaadjuha2cymjtg4ydknztgi2q",
+        "_id": "c332e189-bb29-46fb-a50d-9f3886b82d59",
+        "sourceCid": "baeaaadjuha2cymjtg4ydknztgi2q",
+        "contentCid": "baeaaadjuha2cymjtg4ydknztgi2q",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:20.778+00:00",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "created": "2022-06-16T19:30:21.591+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -17448,150 +17480,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "12b19372-bfc5-41b0-a5c8-18a3409e3d2c",
+      "requestid": "6abbdea7-eb69-4ed2-a04d-51b3170e504e",
       "status": "queued",
-      "created": "2022-06-16T18:20:19.476+00:00",
+      "created": "2022-06-16T19:30:20.324+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrqhaztemzrha",
-        "_id": "12b19372-bfc5-41b0-a5c8-18a3409e3d2c",
-        "sourceCid": "baeaaadbrhezsynrqhaztemzrha",
-        "contentCid": "baeaaadbrhezsynrqhaztemzrha",
+        "cid": "baeaaadjuha2cymjtgy2donrygezq",
+        "_id": "6abbdea7-eb69-4ed2-a04d-51b3170e504e",
+        "sourceCid": "baeaaadjuha2cymjtgy2donrygezq",
+        "contentCid": "baeaaadjuha2cymjtgy2donrygezq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:19.476+00:00",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "created": "2022-06-16T19:30:20.324+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -17601,150 +17633,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "48a1dd0e-f527-449c-ae42-1268050a9000",
+      "requestid": "1bc46c1c-5bc2-44a4-a07f-b1491ce7b362",
       "status": "queued",
-      "created": "2022-06-16T18:20:18.426+00:00",
+      "created": "2022-06-16T19:30:19.4+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrqgeydcojxhe",
-        "_id": "48a1dd0e-f527-449c-ae42-1268050a9000",
-        "sourceCid": "baeaaadbrhezsynrqgeydcojxhe",
-        "contentCid": "baeaaadbrhezsynrqgeydcojxhe",
+        "cid": "baeaaadjuha2cymjtgu4tcnjxgayq",
+        "_id": "1bc46c1c-5bc2-44a4-a07f-b1491ce7b362",
+        "sourceCid": "baeaaadjuha2cymjtgu4tcnjxgayq",
+        "contentCid": "baeaaadjuha2cymjtgu4tcnjxgayq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:18.426+00:00",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "created": "2022-06-16T19:30:19.4+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -17754,150 +17786,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "fea52d82-7368-43ff-b81f-30f002b76532",
+      "requestid": "761a3f19-0f48-43a7-aae5-b653aae9cc4b",
       "status": "queued",
-      "created": "2022-06-16T18:20:17.573+00:00",
+      "created": "2022-06-16T19:30:18.239+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjyheytembrg4",
-        "_id": "fea52d82-7368-43ff-b81f-30f002b76532",
-        "sourceCid": "baeaaadbrhezsynjyheytembrg4",
-        "contentCid": "baeaaadbrhezsynjyheytembrg4",
+        "cid": "baeaaadjuha2cymjtguztonzzheya",
+        "_id": "761a3f19-0f48-43a7-aae5-b653aae9cc4b",
+        "sourceCid": "baeaaadjuha2cymjtguztonzzheya",
+        "contentCid": "baeaaadjuha2cymjtguztonzzheya",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:17.573+00:00",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "created": "2022-06-16T19:30:18.239+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -17907,150 +17939,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "d5dc9c63-616d-4b95-a703-37044565f952",
+      "requestid": "db65165d-9881-451d-9d62-fb216e176845",
       "status": "queued",
-      "created": "2022-06-16T18:20:15.973+00:00",
+      "created": "2022-06-16T19:30:17.675+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjygaztsnbxge",
-        "_id": "d5dc9c63-616d-4b95-a703-37044565f952",
-        "sourceCid": "baeaaadbrhezsynjygaztsnbxge",
-        "contentCid": "baeaaadbrhezsynjygaztsnbxge",
+        "cid": "baeaaadjuha2cymjtgq3tkmrxg44a",
+        "_id": "db65165d-9881-451d-9d62-fb216e176845",
+        "sourceCid": "baeaaadjuha2cymjtgq3tkmrxg44a",
+        "contentCid": "baeaaadjuha2cymjtgq3tkmrxg44a",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:15.973+00:00",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "created": "2022-06-16T19:30:17.675+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -18060,150 +18092,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
+      "requestid": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
       "status": "queued",
-      "created": "2022-06-16T18:20:14.435+00:00",
+      "created": "2022-06-16T19:30:16.565+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjxgmytsnbtgm",
-        "_id": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
-        "sourceCid": "baeaaadbrhezsynjxgmytsnbtgm",
-        "contentCid": "baeaaadbrhezsynjxgmytsnbtgm",
+        "cid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+        "_id": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
+        "sourceCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+        "contentCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:14.435+00:00",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "created": "2022-06-16T19:30:16.565+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -18222,150 +18254,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 15,
   "results": [
     {
-      "requestid": "68d197cf-9353-4e13-b001-e82984a5b446",
+      "requestid": "b6fdf243-fa8e-4676-a826-65e27c075350",
       "status": "queued",
-      "created": "2022-06-16T18:20:24.665+00:00",
+      "created": "2022-06-16T19:30:26.631+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynruhe3tmobtgu",
-        "_id": "68d197cf-9353-4e13-b001-e82984a5b446",
-        "sourceCid": "baeaaadbrhezsynruhe3tmobtgu",
-        "contentCid": "baeaaadbrhezsynruhe3tmobtgu",
+        "cid": "baeaaadjuha2cymjtha4dqnbqgyza",
+        "_id": "b6fdf243-fa8e-4676-a826-65e27c075350",
+        "sourceCid": "baeaaadjuha2cymjtha4dqnbqgyza",
+        "contentCid": "baeaaadjuha2cymjtha4dqnbqgyza",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:24.665+00:00",
-        "updated": "2022-06-16T18:20:24.665+00:00",
+        "created": "2022-06-16T19:30:26.631+00:00",
+        "updated": "2022-06-16T19:30:26.631+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:24.665+00:00",
+            "updated": "2022-06-16T19:30:26.631+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -18375,150 +18407,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "fd91fbe6-a21f-440b-a26b-7b0601989337",
+      "requestid": "2033b21c-d6ef-4ed5-984f-0077d3fcd16a",
       "status": "queued",
-      "created": "2022-06-16T18:20:23.516+00:00",
+      "created": "2022-06-16T19:30:25.6+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrugmydcmzqga",
-        "_id": "fd91fbe6-a21f-440b-a26b-7b0601989337",
-        "sourceCid": "baeaaadbrhezsynrugmydcmzqga",
-        "contentCid": "baeaaadbrhezsynrugmydcmzqga",
+        "cid": "baeaaadjuha2cymjtha2dgnzsguzq",
+        "_id": "2033b21c-d6ef-4ed5-984f-0077d3fcd16a",
+        "sourceCid": "baeaaadjuha2cymjtha2dgnzsguzq",
+        "contentCid": "baeaaadjuha2cymjtha2dgnzsguzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:23.516+00:00",
-        "updated": "2022-06-16T18:20:23.516+00:00",
+        "created": "2022-06-16T19:30:25.6+00:00",
+        "updated": "2022-06-16T19:30:25.6+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:23.516+00:00",
+            "updated": "2022-06-16T19:30:25.6+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -18528,150 +18560,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "71a458c4-ef69-4970-b466-bf47466479c7",
+      "requestid": "a28bf536-537e-4ade-bd53-52b7af104f73",
       "status": "queued",
-      "created": "2022-06-16T18:20:22.527+00:00",
+      "created": "2022-06-16T19:30:24.76+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrtguydembvha",
-        "_id": "71a458c4-ef69-4970-b466-bf47466479c7",
-        "sourceCid": "baeaaadbrhezsynrtguydembvha",
-        "contentCid": "baeaaadbrhezsynrtguydembvha",
+        "cid": "baeaaadjuha2cymjtg44tqmrsgqzq",
+        "_id": "a28bf536-537e-4ade-bd53-52b7af104f73",
+        "sourceCid": "baeaaadjuha2cymjtg44tqmrsgqzq",
+        "contentCid": "baeaaadjuha2cymjtg44tqmrsgqzq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:22.527+00:00",
-        "updated": "2022-06-16T18:20:22.527+00:00",
+        "created": "2022-06-16T19:30:24.76+00:00",
+        "updated": "2022-06-16T19:30:24.76+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:22.527+00:00",
+            "updated": "2022-06-16T19:30:24.76+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -18681,150 +18713,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97",
+      "requestid": "c2d35006-a942-4965-b840-09a8e4f6e9d9",
       "status": "queued",
-      "created": "2022-06-16T18:20:21.967+00:00",
+      "created": "2022-06-16T19:30:24.185+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrshaydkmrsge",
-        "_id": "d2d2f8a9-b2e6-4aba-b83f-bda8dbbbdf97",
-        "sourceCid": "baeaaadbrhezsynrshaydkmrsge",
-        "contentCid": "baeaaadbrhezsynrshaydkmrsge",
+        "cid": "baeaaadjuha2cymjtg42tenbrgm2a",
+        "_id": "c2d35006-a942-4965-b840-09a8e4f6e9d9",
+        "sourceCid": "baeaaadjuha2cymjtg42tenbrgm2a",
+        "contentCid": "baeaaadjuha2cymjtg42tenbrgm2a",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:21.967+00:00",
-        "updated": "2022-06-16T18:20:21.967+00:00",
+        "created": "2022-06-16T19:30:24.185+00:00",
+        "updated": "2022-06-16T19:30:24.185+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:21.967+00:00",
+            "updated": "2022-06-16T19:30:24.185+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -18834,150 +18866,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "7743ab9a-e319-4842-a45e-8e6a62ad663a",
+      "requestid": "c332e189-bb29-46fb-a50d-9f3886b82d59",
       "status": "queued",
-      "created": "2022-06-16T18:20:20.778+00:00",
+      "created": "2022-06-16T19:30:21.591+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrrgy3dmmrwge",
-        "_id": "7743ab9a-e319-4842-a45e-8e6a62ad663a",
-        "sourceCid": "baeaaadbrhezsynrrgy3dmmrwge",
-        "contentCid": "baeaaadbrhezsynrrgy3dmmrwge",
+        "cid": "baeaaadjuha2cymjtg4ydknztgi2q",
+        "_id": "c332e189-bb29-46fb-a50d-9f3886b82d59",
+        "sourceCid": "baeaaadjuha2cymjtg4ydknztgi2q",
+        "contentCid": "baeaaadjuha2cymjtg4ydknztgi2q",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:20.778+00:00",
-        "updated": "2022-06-16T18:20:20.778+00:00",
+        "created": "2022-06-16T19:30:21.591+00:00",
+        "updated": "2022-06-16T19:30:21.591+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:20.778+00:00",
+            "updated": "2022-06-16T19:30:21.591+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -18987,150 +19019,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "12b19372-bfc5-41b0-a5c8-18a3409e3d2c",
+      "requestid": "6abbdea7-eb69-4ed2-a04d-51b3170e504e",
       "status": "queued",
-      "created": "2022-06-16T18:20:19.476+00:00",
+      "created": "2022-06-16T19:30:20.324+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrqhaztemzrha",
-        "_id": "12b19372-bfc5-41b0-a5c8-18a3409e3d2c",
-        "sourceCid": "baeaaadbrhezsynrqhaztemzrha",
-        "contentCid": "baeaaadbrhezsynrqhaztemzrha",
+        "cid": "baeaaadjuha2cymjtgy2donrygezq",
+        "_id": "6abbdea7-eb69-4ed2-a04d-51b3170e504e",
+        "sourceCid": "baeaaadjuha2cymjtgy2donrygezq",
+        "contentCid": "baeaaadjuha2cymjtgy2donrygezq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:19.476+00:00",
-        "updated": "2022-06-16T18:20:19.476+00:00",
+        "created": "2022-06-16T19:30:20.324+00:00",
+        "updated": "2022-06-16T19:30:20.324+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:19.476+00:00",
+            "updated": "2022-06-16T19:30:20.324+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -19140,150 +19172,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "48a1dd0e-f527-449c-ae42-1268050a9000",
+      "requestid": "1bc46c1c-5bc2-44a4-a07f-b1491ce7b362",
       "status": "queued",
-      "created": "2022-06-16T18:20:18.426+00:00",
+      "created": "2022-06-16T19:30:19.4+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynrqgeydcojxhe",
-        "_id": "48a1dd0e-f527-449c-ae42-1268050a9000",
-        "sourceCid": "baeaaadbrhezsynrqgeydcojxhe",
-        "contentCid": "baeaaadbrhezsynrqgeydcojxhe",
+        "cid": "baeaaadjuha2cymjtgu4tcnjxgayq",
+        "_id": "1bc46c1c-5bc2-44a4-a07f-b1491ce7b362",
+        "sourceCid": "baeaaadjuha2cymjtgu4tcnjxgayq",
+        "contentCid": "baeaaadjuha2cymjtgu4tcnjxgayq",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:18.426+00:00",
-        "updated": "2022-06-16T18:20:18.426+00:00",
+        "created": "2022-06-16T19:30:19.4+00:00",
+        "updated": "2022-06-16T19:30:19.4+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:18.426+00:00",
+            "updated": "2022-06-16T19:30:19.4+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -19293,150 +19325,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "fea52d82-7368-43ff-b81f-30f002b76532",
+      "requestid": "761a3f19-0f48-43a7-aae5-b653aae9cc4b",
       "status": "queued",
-      "created": "2022-06-16T18:20:17.573+00:00",
+      "created": "2022-06-16T19:30:18.239+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjyheytembrg4",
-        "_id": "fea52d82-7368-43ff-b81f-30f002b76532",
-        "sourceCid": "baeaaadbrhezsynjyheytembrg4",
-        "contentCid": "baeaaadbrhezsynjyheytembrg4",
+        "cid": "baeaaadjuha2cymjtguztonzzheya",
+        "_id": "761a3f19-0f48-43a7-aae5-b653aae9cc4b",
+        "sourceCid": "baeaaadjuha2cymjtguztonzzheya",
+        "contentCid": "baeaaadjuha2cymjtguztonzzheya",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:17.573+00:00",
-        "updated": "2022-06-16T18:20:17.573+00:00",
+        "created": "2022-06-16T19:30:18.239+00:00",
+        "updated": "2022-06-16T19:30:18.239+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:17.573+00:00",
+            "updated": "2022-06-16T19:30:18.239+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -19446,150 +19478,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "d5dc9c63-616d-4b95-a703-37044565f952",
+      "requestid": "db65165d-9881-451d-9d62-fb216e176845",
       "status": "queued",
-      "created": "2022-06-16T18:20:15.973+00:00",
+      "created": "2022-06-16T19:30:17.675+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjygaztsnbxge",
-        "_id": "d5dc9c63-616d-4b95-a703-37044565f952",
-        "sourceCid": "baeaaadbrhezsynjygaztsnbxge",
-        "contentCid": "baeaaadbrhezsynjygaztsnbxge",
+        "cid": "baeaaadjuha2cymjtgq3tkmrxg44a",
+        "_id": "db65165d-9881-451d-9d62-fb216e176845",
+        "sourceCid": "baeaaadjuha2cymjtgq3tkmrxg44a",
+        "contentCid": "baeaaadjuha2cymjtgq3tkmrxg44a",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:15.973+00:00",
-        "updated": "2022-06-16T18:20:15.973+00:00",
+        "created": "2022-06-16T19:30:17.675+00:00",
+        "updated": "2022-06-16T19:30:17.675+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:15.973+00:00",
+            "updated": "2022-06-16T19:30:17.675+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
@@ -19599,150 +19631,150 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
+      "requestid": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
       "status": "queued",
-      "created": "2022-06-16T18:20:14.435+00:00",
+      "created": "2022-06-16T19:30:16.565+00:00",
       "pin": {
-        "cid": "baeaaadbrhezsynjxgmytsnbtgm",
-        "_id": "60e5856c-c384-44de-ab38-1e8c59fee5cc",
-        "sourceCid": "baeaaadbrhezsynjxgmytsnbtgm",
-        "contentCid": "baeaaadbrhezsynjxgmytsnbtgm",
+        "cid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+        "_id": "2c5ab075-69b4-47b9-aed2-1da16ebff48a",
+        "sourceCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
+        "contentCid": "baeaaadjuha2cymjtgqzdcobvgy3q",
         "authKey": 315318824629964100,
         "name": null,
         "meta": null,
         "deleted": null,
-        "created": "2022-06-16T18:20:14.435+00:00",
-        "updated": "2022-06-16T18:20:14.435+00:00",
+        "created": "2022-06-16T19:30:16.565+00:00",
+        "updated": "2022-06-16T19:30:16.565+00:00",
         "pins": [
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1",
             "peerName": "web3-storage-sv15",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSnniGsyAF663gvHdqhyfJMCjWJv54cGSzcPiEMAfanvU",
             "peerName": "web3-storage-dc13",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWPySxxWQjBgX9Jp6uAHQfVmdq8HG1gVvS1fRawHNSrmqW",
             "peerName": "web3-storage-am6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWEDMw7oRqQkdCJbyeqS5mUmWGwTp8JJ2tjCzTkHboF6wK",
             "peerName": "web3-storage-sv15-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWNuoVEfVLJvU3jWY2zLYjGUaathsecwT19jhByjnbQvkj",
             "peerName": "web3-storage-am6-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWKytRAd2ujxhGzaLHKJuje8sVrHXvjGNvHXovpar5KaKQ",
             "peerName": "web3-storage-dc13-2",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP",
             "peerName": "web3-storage-dc13-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWRi18oHN1j8McxS9RMnuibcTwxu6VCTYHyLNH2R14qhTy",
             "peerName": "web3-storage-sv15-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWQYBPcvxFnnWzPGEx6JuBnrbF1FZq4jTahczuG2teEk1m",
             "peerName": "web3-storage-am6-3",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWDdzN3snjaMJEH9zuq3tjKUFpYHeSGNkiAreF6dQSbCiL",
             "peerName": "web3-storage-am6-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWEzCun34s9qpYEnKkG6epx2Ts9oVGRGnzCvM2s2edioLA",
             "peerName": "web3-storage-am6-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWHpE5KiQTkqbn8KbU88ZxwJxYJFaqP4mp9Z9bhNPhym9V",
             "peerName": "web3-storage-dc13-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWBHvsSSKHeragACma3HUodK5FcPUpXccLu2vHooNsDf9k",
             "peerName": "web3-storage-dc13-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWAdxvJCV5KXZ6zveTJmnYGrSzAKuLUKZYkZssLk7UKv4i",
             "peerName": "web3-storage-sv15-5",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWKhPb9tSnCqBswVfC5EPE7iSTXhbF4Ywwz2MKg5UCagbr",
             "peerName": "web3-storage-sv15-4",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWQE3CWA3MJ1YhrYNP8EE3JErGbrCtpKRkFrWgi45nYAMn",
             "peerName": "web3-storage-am6-6",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSafoW6yrSL7waghFAaiCqGy5mdjpQx4jn4CRNqbG7eqG",
             "peerName": "web3-storage-am6-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWDRak1XzURGh9MvGR4EWaP9kcbmdoagAcGMcNxBXXLzTF",
             "peerName": "web3-storage-dc13-8",
             "region": null
           },
           {
             "status": "Unpinned",
-            "updated": "2022-06-16T18:20:14.435+00:00",
+            "updated": "2022-06-16T19:30:16.565+00:00",
             "peerId": "12D3KooWSH5uLrYe7XSFpmnQj1NCsoiGeKSRCV7T5xijpX2Po2aT",
             "peerName": "web3-storage-sv15-8",
             "region": null
