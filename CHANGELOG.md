@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.6...v1.0.7) (2022-06-16)
+
+
+### Bug Fixes
+
+* expect 401 for unauthorized responses ([#107](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/107)) ([4f45693](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/4f45693a6368c80f641aaa7e426efa87e7755e15))
+
 ## [1.0.6](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.5...v1.0.6) (2022-06-15)
 
 
