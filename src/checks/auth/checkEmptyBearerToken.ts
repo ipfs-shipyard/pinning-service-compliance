@@ -13,8 +13,8 @@ const checkEmptyBearerToken = async (pair: ServiceAndTokenPair) => {
   })
 
   apiCall.expect({
-    title: 'Returns a 403',
-    fn: async ({ details }) => details.response.status === 403
+    title: 'Returns a 401',
+    fn: async ({ details }) => details.response.status === 401
   })
 
   await apiCall.runExpectations()

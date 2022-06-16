@@ -12,8 +12,8 @@ const checkInvalidBearerToken = async (pair: ServiceAndTokenPair) => {
     title: 'Request with invalid token'
   })
     .expect({
-      title: 'Returns a 403',
-      fn: async ({ details }) => details.response.status === 403
+      title: 'Returns a 401',
+      fn: async ({ details }) => details.response.status === 401
     })
     .runExpectations()
 }
