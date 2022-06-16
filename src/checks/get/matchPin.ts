@@ -7,7 +7,7 @@ import { ApiCall } from '../../ApiCall.js'
 import type { ServiceAndTokenPair } from '../../types.js'
 import { resultNotNull, responseOk } from '../../expectations/index.js'
 
-const matchApiCallExpectation = async (parent: ApiCall<PinStatus>, match: TextMatchingStrategy, name: string) => {
+const matchApiCallExpectation = async (parent: ApiCall<PinStatus>, match: TextMatchingStrategy, name: string, actualName: string) => {
   new ApiCall({
     parent,
     pair: parent.pair,
@@ -16,6 +16,14 @@ const matchApiCallExpectation = async (parent: ApiCall<PinStatus>, match: TextMa
   })
     .expect(responseOk())
     .expect(resultNotNull())
+    .expect({
+      title: 'Count is equal to 1',
+      fn: ({ result }) => result.count === 1
+    })
+    .expect({
+      title: 'Name matches name provided during creation',
+      fn: ({ result }) => result?.results[0]?.pin?.name === actualName
+    })
 }
 /**
  * https://github.com/ipfs-shipyard/pinning-service-compliance/issues/9
@@ -38,10 +46,10 @@ const matchPin = async (pair: ServiceAndTokenPair) => {
       fn: ({ result }) => result?.pin.name === name
     })
 
-  await matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Exact, name)
-  await matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Iexact, name.toUpperCase())
-  await matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Partial, partialName)
-  await matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Ipartial, partialName.toUpperCase())
+  await matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Exact, name, name)
+  await matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Iexact, name.toUpperCase(), name)
+  await matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Partial, partialName, name)
+  await matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Ipartial, partialName.toUpperCase(), name)
   await mainApiCall.runExpectations()
 }
 
