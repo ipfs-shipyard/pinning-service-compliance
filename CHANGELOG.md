@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.7...v1.0.8) (2022-06-16)
+
+
+### Bug Fixes
+
+* matchPin should confirm that a pin is in the response ([#116](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/116)) ([413d68a](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/413d68a408e8f6d43648323a24f45fbee041871d)), closes [#L1253-L1322](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/L1253-L1322)
+
 ## [1.0.7](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.6...v1.0.7) (2022-06-16)
 
 
