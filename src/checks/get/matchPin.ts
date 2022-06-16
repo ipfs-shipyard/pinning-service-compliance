@@ -18,11 +18,16 @@ const matchApiCallExpectation = async (parent: ApiCall<PinStatus>, match: TextMa
     .expect(resultNotNull())
     .expect({
       title: 'Count is equal to 1',
-      fn: ({ result }) => result.count === 1
+      fn: ({ result }) => result?.count === 1
     })
     .expect({
       title: 'Name matches name provided during creation',
-      fn: ({ result }) => result?.results[0]?.pin?.name === actualName
+      fn: ({ result }) => {
+        const pinResultsIter = result?.results.values()
+        const pinStatus: PinStatus | undefined = pinResultsIter?.next().value
+
+        return pinStatus?.pin?.name === actualName
+      }
     })
 }
 /**
