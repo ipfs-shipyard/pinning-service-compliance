@@ -1,6 +1,6 @@
 # Pinning Service Compliance Reports
 
-## Latest repots
+## Latest reports
 
 Periodically tested:
 
