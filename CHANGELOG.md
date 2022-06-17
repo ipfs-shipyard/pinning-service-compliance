@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.8...v1.0.9) (2022-06-17)
+
+
+### Trivial Changes
+
+* **deps-dev:** bump aegir from 37.2.0 to 37.3.0 ([#117](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/117)) ([f945ce3](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/f945ce32b1511b0914b7548845aa2e221cdfac0e))
+
 ## [1.0.8](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.7...v1.0.8) (2022-06-16)
 
 
