@@ -22,6 +22,8 @@ The Pinning Service Compliance project originated from [pinning-services-api-spe
 
 ### How to run the compliance checker against my own pinning service?
 
+***Disclaimer***: It is recommended to use an `auth_token` separate from your production/live services. You should ideally use an `auth_token`/account that is specifically for running compliance checks. The compliance checks will do their best not to corrupt any existing pins you have, but consistent tests without consistent data is challenging.
+
 [pinning-service-compliance](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-compliance) package is available on NPM:
 
 ```bash
