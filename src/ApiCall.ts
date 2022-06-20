@@ -42,11 +42,21 @@ interface ExpectationFn<T extends PinsApiResponseTypes> {
   (arg: ExpectationCallbackArg<T>): boolean | Promise<boolean>
 }
 
-interface ApiCallExpectation<T extends PinsApiResponseTypes> {
+interface ApiCallExpectationBase<T extends PinsApiResponseTypes> {
   context?: ApiCall<T>
-  fn: ExpectationFn<T>
   title: string
 }
+
+interface ApiCallExpectation_wPath<T extends PinsApiResponseTypes, V extends number | string | boolean> extends ApiCallExpectationBase<T> {
+  actual: (arg: ExpectationCallbackArg<T>) => V
+  expected: V
+}
+
+interface ApiCallExpectation_wFunction<T extends PinsApiResponseTypes> extends ApiCallExpectationBase<T> {
+  fn: ExpectationFn<T>
+}
+
+type ApiCallExpectation<T extends PinsApiResponseTypes, V extends number | string | boolean = never> = ApiCallExpectation_wPath<T, V> | ApiCallExpectation_wFunction<T>
 
 class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = never> {
   request: Promise<T|null>
