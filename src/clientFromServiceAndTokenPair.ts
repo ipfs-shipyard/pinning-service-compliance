@@ -6,7 +6,8 @@ import { RemotePinningServiceClient, Configuration, NodeFetch } from '@ipfs-ship
 import { requestResponseLogger, RequestResponseLoggerOptions } from './middleware/requestReponseLogger.js'
 import type { ServiceAndTokenPair } from './types.js'
 
-function clientFromServiceAndTokenPair ([endpointUrl, accessToken]: ServiceAndTokenPair, middleWareOptions: RequestResponseLoggerOptions): RemotePinningServiceClient {
+function clientFromServiceAndTokenPair ([endpointUrl, accessToken]: ServiceAndTokenPair, middleWareOptions?: Omit<RequestResponseLoggerOptions, 'pair'>): RemotePinningServiceClient {
+  const requestResponseLoggerOptions: RequestResponseLoggerOptions = { ...middleWareOptions, pair: [endpointUrl, accessToken] }
   const config = new (Configuration as typeof NodeFetch.Configuration)({
     endpointUrl,
     accessToken,
@@ -17,7 +18,7 @@ function clientFromServiceAndTokenPair ([endpointUrl, accessToken]: ServiceAndTo
       })
     },
     middleware: [
-      requestResponseLogger(middleWareOptions)
+      requestResponseLogger(requestResponseLoggerOptions)
     ]
   })
 
