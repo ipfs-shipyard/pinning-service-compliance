@@ -12,7 +12,7 @@ const deleteNewPin = async (pair: ServiceAndTokenPair) => {
     fn: async (client) => await client.pinsPost({ pin: { cid } })
   })
     .expect(resultNotNull())
-    .expect(responseCode(200))
+    .expect(responseCode(202))
 
   new ApiCall({
     parent: createNewPinApiCall,
