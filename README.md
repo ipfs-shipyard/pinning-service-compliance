@@ -6,7 +6,7 @@
 
 ### Run the compliance checker against a service:
 
-***Disclaimer***: It is recommended to use an `auth_token` separate from your production/live services. You should ideally use an `auth_token`/account that is specifically for running compliance checks. The compliance checks will do their best not to corrupt any existing pins you have, but consistent tests without consistent data is challenging. There is currently a bug where all of your existing pins will be deleted during compliance checks, so do not run the compliance checker with an account containing pins you wish to keep. See https://github.com/ipfs-shipyard/pinning-service-compliance/issues/118
+***Disclaimer***: It is recommended to use an `auth_token` separate from your production/live services. The compliance checks will do their best not to corrupt any existing pins you have, but consistent tests without consistent data is challenging. 
 
 ```bash
 npx @ipfs-shipyard/pinning-service-compliance -s <pinning_service_endpoint> <auth_token>
