@@ -1,3 +1,15 @@
+## [1.0.10](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.9...v1.0.10) (2022-06-21)
+
+
+### Bug Fixes
+
+* Only delete created pins ([#121](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/121)) ([2a2228a](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/2a2228a3879a4a1226cae6b0c22d9ef7356d2e75))
+
+
+### Trivial Changes
+
+* Add disclaimer regarding data integrity ([#120](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/120)) ([ea427ed](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/ea427ed0e8311d8050696a355efaf55de7fbe439))
+
 ## [1.0.9](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.8...v1.0.9) (2022-06-17)
 
 
