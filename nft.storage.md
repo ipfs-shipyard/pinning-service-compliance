@@ -1,9 +1,9 @@
 
 # https://nft.storage/api compliance:
 
-Execution Date: 2022-06-20T17:45:53.677Z
+Execution Date: 2022-06-21T20:22:46.173Z
 
-Revision: [ea427ed](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/ea427ed)
+Revision: [5704ec6](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/5704ec6)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/nft.storage.md)
 
@@ -13,15 +13,15 @@ Revision: [ea427ed](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   ❌ [Request with invalid token](#request-with-invalid-token----failed)
 
-  ❌ [Pins post of CID 'baeaaadbvgewdiojvg44donrxgu'](#pins-post-of-cid-baeaaadbvgewdiojvg44donrxgu----failed)
+  ❌ [Pins post of CID 'bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64'](#pins-post-of-cid-bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64----failed)
 
-  🟢 [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----success)
+  ❌ [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----failed)
 
-  ❌ [List pin objects (GET /pins) in all states](#list-pin-objects-get-pins-in-all-states----failed)
+  🟢 [List pin objects (GET /pins) in all states](#list-pin-objects-get-pins-in-all-states----success)
 
   🟢 [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----success)
 
-  ❌ [Can create a pin with name='f588fa05-3c5f-4236-95d4-81d20f2f7f83'](#can-create-a-pin-with-namef588fa05-3c5f-4236-95d4-81d20f2f7f83----failed)
+  ❌ [Can create a pin with name='bd0b9ea2-584c-4470-8637-d5b3e3c2b14f'](#can-create-a-pin-with-namebd0b9ea2-584c-4470-8637-d5b3e3c2b14f----failed)
 
   ❌ [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----failed)
 
@@ -78,11 +78,11 @@ GET https://nft.storage/api/pins
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e650d75df07fbe-IAD",
+  "cf-ray": "71ef74480f0b5c47-IAD",
   "connection": "close",
   "content-length": "179",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:01 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:05 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -166,11 +166,11 @@ GET https://nft.storage/api/pins
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e650dd0e3e5a94-IAD",
+  "cf-ray": "71ef744e3f915a8d-IAD",
   "connection": "close",
   "content-length": "106",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:02 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:06 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -201,7 +201,7 @@ GET https://nft.storage/api/pins
 ```json
 null
 ```
-## Pins post of CID 'baeaaadbvgewdiojvg44donrxgu' - ❌ FAILED
+## Pins post of CID 'bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64' - ❌ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -236,7 +236,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbvgewdiojvg44donrxgu"}
+{"cid":"bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64"}
 ```
 
 #### Response
@@ -248,11 +248,11 @@ POST https://nft.storage/api/pins
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e650e35a375854-IAD",
+  "cf-ray": "71ef74547c215a04-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:05 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:07 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -262,11 +262,11 @@ POST https://nft.storage/api/pins
 ##### Body
 ```json
 {
-  "requestid": "baeaaadbvgewdiojvg44donrxgu",
+  "requestid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
   "status": "queued",
-  "created": "2022-06-20T17:45:03.94+00:00",
+  "created": "2022-06-21T20:22:07.064+00:00",
   "pin": {
-    "cid": "baeaaadbvgewdiojvg44donrxgu",
+    "cid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
     "meta": null,
     "name": null,
     "origins": null
@@ -278,11 +278,11 @@ POST https://nft.storage/api/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "baeaaadbvgewdiojvg44donrxgu",
+  "requestid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
   "status": "queued",
-  "created": "2022-06-20T17:45:03.94+00:00",
+  "created": "2022-06-21T20:22:07.064+00:00",
   "pin": {
-    "cid": "baeaaadbvgewdiojvg44donrxgu",
+    "cid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
     "meta": null,
     "name": null,
     "origins": null
@@ -293,11 +293,11 @@ POST https://nft.storage/api/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "baeaaadbvgewdiojvg44donrxgu",
+  "requestid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
   "status": "queued",
-  "created": "2022-06-20T17:45:03.940Z",
+  "created": "2022-06-21T20:22:07.064Z",
   "pin": {
-    "cid": "baeaaadbvgewdiojvg44donrxgu"
+    "cid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64"
   },
   "delegates": []
 }
@@ -330,7 +330,7 @@ POST https://nft.storage/api/pins
 
 #### Request
 ```
-DELETE https://nft.storage/api/pins/baeaaadbvgqwdcobzgq3donryg4
+DELETE https://nft.storage/api/pins/bafkreihfyph4vwsfressrawgddx6qkg2tyigc774562oubtb7jyuy6xiva
 ```
 ##### Headers
 ```json
@@ -352,11 +352,11 @@ DELETE https://nft.storage/api/pins/baeaaadbvgqwdcobzgq3donryg4
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e650ff18af577c-IAD",
+  "cf-ray": "71ef74640fdd5cd6-IAD",
   "connection": "close",
   "content-length": "0",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:08 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:09 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -375,13 +375,13 @@ null
 ```json
 undefined
 ```
-## Can create and then delete a new pin - 🟢 SUCCESS
+## Can create and then delete a new pin - ❌ FAILED
 
-### Expectations (4/4 successful)
+### Expectations (3/4 successful)
 
   🟢 Result is not null (success)
 
-  🟢 Response code is 200 (success)
+  ❌ Response code is 202 (failure)
 
   🟢 Response is ok (success)
 
@@ -418,7 +418,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"baeaaadbvgqwdcobzgq3donryg4"}
+{"cid":"bafkreihfyph4vwsfressrawgddx6qkg2tyigc774562oubtb7jyuy6xiva"}
 ```
 
 #### Response
@@ -430,11 +430,11 @@ POST https://nft.storage/api/pins
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e650f03c6d82b7-IAD",
+  "cf-ray": "71ef745b197f580c-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:07 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:09 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -444,11 +444,11 @@ POST https://nft.storage/api/pins
 ##### Body
 ```json
 {
-  "requestid": "baeaaadbvgqwdcobzgq3donryg4",
+  "requestid": "bafkreihfyph4vwsfressrawgddx6qkg2tyigc774562oubtb7jyuy6xiva",
   "status": "queued",
-  "created": "2022-06-20T17:45:05.894+00:00",
+  "created": "2022-06-21T20:22:08.428+00:00",
   "pin": {
-    "cid": "baeaaadbvgqwdcobzgq3donryg4",
+    "cid": "bafkreihfyph4vwsfressrawgddx6qkg2tyigc774562oubtb7jyuy6xiva",
     "meta": null,
     "name": null,
     "origins": null
@@ -460,11 +460,11 @@ POST https://nft.storage/api/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "baeaaadbvgqwdcobzgq3donryg4",
+  "requestid": "bafkreihfyph4vwsfressrawgddx6qkg2tyigc774562oubtb7jyuy6xiva",
   "status": "queued",
-  "created": "2022-06-20T17:45:05.894+00:00",
+  "created": "2022-06-21T20:22:08.428+00:00",
   "pin": {
-    "cid": "baeaaadbvgqwdcobzgq3donryg4",
+    "cid": "bafkreihfyph4vwsfressrawgddx6qkg2tyigc774562oubtb7jyuy6xiva",
     "meta": null,
     "name": null,
     "origins": null
@@ -475,20 +475,18 @@ POST https://nft.storage/api/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "baeaaadbvgqwdcobzgq3donryg4",
+  "requestid": "bafkreihfyph4vwsfressrawgddx6qkg2tyigc774562oubtb7jyuy6xiva",
   "status": "queued",
-  "created": "2022-06-20T17:45:05.894Z",
+  "created": "2022-06-21T20:22:08.428Z",
   "pin": {
-    "cid": "baeaaadbvgqwdcobzgq3donryg4"
+    "cid": "bafkreihfyph4vwsfressrawgddx6qkg2tyigc774562oubtb7jyuy6xiva"
   },
   "delegates": []
 }
 ```
-## List pin objects (GET /pins) in all states - ❌ FAILED
+## List pin objects (GET /pins) in all states - 🟢 SUCCESS
 
-### Expectations (2/3 successful)
-
-  ❌ Response object matches api spec schema (failure)
+### Expectations (2/2 successful)
 
   🟢 Response is ok (success)
 
@@ -497,2030 +495,6 @@ POST https://nft.storage/api/pins
 
 
 
-#### Response object doesn't match expected schema:
-
-* "name" must be a string
-
-* "origins" must be an array
-
-* "meta" must be an object
-
-* "delegates" must contain at least 1 items
-
-  
-### Details
-
-#### Request
-```
-GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651018e4fe112-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:09 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "count": 1,
-  "results": [
-    {
-      "requestid": "baeaaadbvgewdiojvg44donrxgu",
-      "status": "queued",
-      "created": "2022-06-20T17:45:03.94+00:00",
-      "pin": {
-        "cid": "baeaaadbvgewdiojvg44donrxgu",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    }
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 1,
-  "results": [
-    {
-      "requestid": "baeaaadbvgewdiojvg44donrxgu",
-      "status": "queued",
-      "created": "2022-06-20T17:45:03.94+00:00",
-      "pin": {
-        "cid": "baeaaadbvgewdiojvg44donrxgu",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    }
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 1,
-  "results": {}
-}
-```
-## Get original pin via requestid - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response code is 404: Original Pin's requestid cannot be found (success)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
-
-
-### Details
-
-#### Request
-```
-GET https://nft.storage/api/pins/baeaaadbvhawdembugu3dmojuha
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-404 Not Found
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e6511ecfe282aa-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:13 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "error": {
-    "reason": "NOT_FOUND",
-    "details": "pin not found"
-  }
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "error": {
-    "reason": "NOT_FOUND",
-    "details": "pin not found"
-  }
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Get new pin via requestid - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response code is 200: New Pin's requestid can be found (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://nft.storage/api/pins/baeaaadbvhewdmmjrgqytkmjvge
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651250b84586c-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:15 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaadbvhewdmmjrgqytkmjvge",
-  "status": "queued",
-  "created": "2022-06-20T17:45:11.953+00:00",
-  "pin": {
-    "cid": "baeaaadbvhewdmmjrgqytkmjvge",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaadbvhewdmmjrgqytkmjvge",
-  "status": "queued",
-  "created": "2022-06-20T17:45:11.953+00:00",
-  "pin": {
-    "cid": "baeaaadbvhewdmmjrgqytkmjvge",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaadbvhewdmmjrgqytkmjvge",
-  "status": "queued",
-  "created": "2022-06-20T17:45:11.953Z",
-  "pin": {
-    "cid": "baeaaadbvhewdmmjrgqytkmjvge"
-  },
-  "delegates": []
-}
-```
-## Pin's with requestid 'baeaaadbvhawdembugu3dmojuha' can have cid 'baeaaadbvhawdembugu3dmojuha' replaced with 'baeaaadbvhewdmmjrgqytkmjvge' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response code is 404: Original Pin's requestid cannot be found (success)
-
-  🟢 Response code is 200: New Pin's requestid can be found (success)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins/baeaaadbvhawdembugu3dmojuha
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaadbvhewdmmjrgqytkmjvge"}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651122b509c37-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:12 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaadbvhewdmmjrgqytkmjvge",
-  "status": "queued",
-  "created": "2022-06-20T17:45:11.953+00:00",
-  "pin": {
-    "cid": "baeaaadbvhewdmmjrgqytkmjvge",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaadbvhewdmmjrgqytkmjvge",
-  "status": "queued",
-  "created": "2022-06-20T17:45:11.953+00:00",
-  "pin": {
-    "cid": "baeaaadbvhewdmmjrgqytkmjvge",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaadbvhewdmmjrgqytkmjvge",
-  "status": "queued",
-  "created": "2022-06-20T17:45:11.953Z",
-  "pin": {
-    "cid": "baeaaadbvhewdmmjrgqytkmjvge"
-  },
-  "delegates": []
-}
-```
-## Can create and replace a pin's CID - 🟢 SUCCESS
-
-### Expectations (7/7 successful)
-
-  🟢 Pin exists (success)
-
-  🟢 Could obtain requestid from new pin (baeaaadbvhawdembugu3dmojuha) (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Replaced pin has the new & expected CID (success)
-
-  🟢 Replaced pin has a different requestid (success)
-
-  🟢 Response code is 404: Original Pin's requestid cannot be found (success)
-
-  🟢 Response code is 200: New Pin's requestid can be found (success)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaadbvhawdembugu3dmojuha"}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e6510959db819d-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:10 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaadbvhawdembugu3dmojuha",
-  "status": "queued",
-  "created": "2022-06-20T17:45:09.945+00:00",
-  "pin": {
-    "cid": "baeaaadbvhawdembugu3dmojuha",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaadbvhawdembugu3dmojuha",
-  "status": "queued",
-  "created": "2022-06-20T17:45:09.945+00:00",
-  "pin": {
-    "cid": "baeaaadbvhawdembugu3dmojuha",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaadbvhawdembugu3dmojuha",
-  "status": "queued",
-  "created": "2022-06-20T17:45:09.945Z",
-  "pin": {
-    "cid": "baeaaadbvhawdembugu3dmojuha"
-  },
-  "delegates": []
-}
-```
-## Can retrieve pin with name 'f588fa05-3c5f-4236-95d4-81d20f2f7f83' via the 'exact' TextMatchingStrategy - ❌ FAILED
-
-### Expectations (2/4 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  ❌ Count is equal to 1 (failure)
-
-  ❌ Name matches name provided during creation (failure)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://nft.storage/api/pins?name=f588fa05-3c5f-4236-95d4-81d20f2f7f83&match=exact
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e65136291dcf34-IAD",
-  "connection": "close",
-  "content-length": "24",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:17 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "count": 0,
-  "results": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 0,
-  "results": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 0,
-  "results": {}
-}
-```
-## Can retrieve pin with name 'F588FA05-3C5F-4236-95D4-81D20F2F7F83' via the 'iexact' TextMatchingStrategy - ❌ FAILED
-
-### Expectations (2/4 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  ❌ Count is equal to 1 (failure)
-
-  ❌ Name matches name provided during creation (failure)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://nft.storage/api/pins?name=F588FA05-3C5F-4236-95D4-81D20F2F7F83&match=iexact
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e6513e6d587ff4-IAD",
-  "connection": "close",
-  "content-length": "24",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:18 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "count": 0,
-  "results": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 0,
-  "results": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 0,
-  "results": {}
-}
-```
-## Can retrieve pin with name '3c5f-4236-95d4-81d' via the 'partial' TextMatchingStrategy - ❌ FAILED
-
-### Expectations (2/4 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  ❌ Count is equal to 1 (failure)
-
-  ❌ Name matches name provided during creation (failure)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://nft.storage/api/pins?name=3c5f-4236-95d4-81d&match=partial
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e65144ecdb8f08-IAD",
-  "connection": "close",
-  "content-length": "24",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:19 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "count": 0,
-  "results": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 0,
-  "results": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 0,
-  "results": {}
-}
-```
-## Can retrieve pin with name '3C5F-4236-95D4-81D' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
-
-### Expectations (2/4 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  ❌ Count is equal to 1 (failure)
-
-  ❌ Name matches name provided during creation (failure)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://nft.storage/api/pins?name=3C5F-4236-95D4-81D&match=ipartial
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e65149bf59822d-IAD",
-  "connection": "close",
-  "content-length": "24",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:20 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "count": 0,
-  "results": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 0,
-  "results": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 0,
-  "results": {}
-}
-```
-## Can create a pin with name='f588fa05-3c5f-4236-95d4-81d20f2f7f83' - ❌ FAILED
-
-### Expectations (11/19 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Name matches name provided during creation (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  ❌ Count is equal to 1 (failure)
-
-  ❌ Name matches name provided during creation (failure)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  ❌ Count is equal to 1 (failure)
-
-  ❌ Name matches name provided during creation (failure)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  ❌ Count is equal to 1 (failure)
-
-  ❌ Name matches name provided during creation (failure)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  ❌ Count is equal to 1 (failure)
-
-  ❌ Name matches name provided during creation (failure)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaaczwgqwdcmrxgm3tqnbx","name":"f588fa05-3c5f-4236-95d4-81d20f2f7f83"}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e6512dab54e112-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:16 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaaczwgqwdcmrxgm3tqnbx",
-  "status": "queued",
-  "created": "2022-06-20T17:45:15.701+00:00",
-  "pin": {
-    "cid": "baeaaaczwgqwdcmrxgm3tqnbx",
-    "meta": null,
-    "name": "f588fa05-3c5f-4236-95d4-81d20f2f7f83",
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaaczwgqwdcmrxgm3tqnbx",
-  "status": "queued",
-  "created": "2022-06-20T17:45:15.701+00:00",
-  "pin": {
-    "cid": "baeaaaczwgqwdcmrxgm3tqnbx",
-    "meta": null,
-    "name": "f588fa05-3c5f-4236-95d4-81d20f2f7f83",
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaaczwgqwdcmrxgm3tqnbx",
-  "status": "queued",
-  "created": "2022-06-20T17:45:15.701Z",
-  "pin": {
-    "cid": "baeaaaczwgqwdcmrxgm3tqnbx",
-    "name": "f588fa05-3c5f-4236-95d4-81d20f2f7f83"
-  },
-  "delegates": []
-}
-```
-## Can create new pin for testing pagination cid='baeaaadbxgawdknrsgmydgnrtha' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaadbxgawdknrsgmydgnrtha"}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651569c8f7fbb-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:24 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaadbxgawdknrsgmydgnrtha",
-  "status": "queued",
-  "created": "2022-06-20T17:45:22.317+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrsgmydgnrtha",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaadbxgawdknrsgmydgnrtha",
-  "status": "queued",
-  "created": "2022-06-20T17:45:22.317+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrsgmydgnrtha",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaadbxgawdknrsgmydgnrtha",
-  "status": "queued",
-  "created": "2022-06-20T17:45:22.317Z",
-  "pin": {
-    "cid": "baeaaadbxgawdknrsgmydgnrtha"
-  },
-  "delegates": []
-}
-```
-## Can create new pin for testing pagination cid='baeaaadbxgawdknrtge3tiobugu' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaadbxgawdknrtge3tiobugu"}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e65167880d8268-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:25 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaadbxgawdknrtge3tiobugu",
-  "status": "queued",
-  "created": "2022-06-20T17:45:24.975+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrtge3tiobugu",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaadbxgawdknrtge3tiobugu",
-  "status": "queued",
-  "created": "2022-06-20T17:45:24.975+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrtge3tiobugu",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaadbxgawdknrtge3tiobugu",
-  "status": "queued",
-  "created": "2022-06-20T17:45:24.975Z",
-  "pin": {
-    "cid": "baeaaadbxgawdknrtge3tiobugu"
-  },
-  "delegates": []
-}
-```
-## Can create new pin for testing pagination cid='baeaaadbxgawdknrtheytonjvgi' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaadbxgawdknrtheytonjvgi"}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651713f498f08-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:26 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaadbxgawdknrtheytonjvgi",
-  "status": "queued",
-  "created": "2022-06-20T17:45:26.123+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrtheytonjvgi",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaadbxgawdknrtheytonjvgi",
-  "status": "queued",
-  "created": "2022-06-20T17:45:26.123+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrtheytonjvgi",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaadbxgawdknrtheytonjvgi",
-  "status": "queued",
-  "created": "2022-06-20T17:45:26.123Z",
-  "pin": {
-    "cid": "baeaaadbxgawdknrtheytonjvgi"
-  },
-  "delegates": []
-}
-```
-## Can create new pin for testing pagination cid='baeaaadbxgawdknrvg43tcmjwha' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaadbxgawdknrvg43tcmjwha"}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651769ab9c189-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:28 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaadbxgawdknrvg43tcmjwha",
-  "status": "queued",
-  "created": "2022-06-20T17:45:27.499+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrvg43tcmjwha",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaadbxgawdknrvg43tcmjwha",
-  "status": "queued",
-  "created": "2022-06-20T17:45:27.499+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrvg43tcmjwha",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaadbxgawdknrvg43tcmjwha",
-  "status": "queued",
-  "created": "2022-06-20T17:45:27.499Z",
-  "pin": {
-    "cid": "baeaaadbxgawdknrvg43tcmjwha"
-  },
-  "delegates": []
-}
-```
-## Can create new pin for testing pagination cid='baeaaadbxgawdknrwgm2tgnzxgm' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaadbxgawdknrwgm2tgnzxgm"}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e65180f9615872-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:29 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaadbxgawdknrwgm2tgnzxgm",
-  "status": "queued",
-  "created": "2022-06-20T17:45:29.09+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrwgm2tgnzxgm",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaadbxgawdknrwgm2tgnzxgm",
-  "status": "queued",
-  "created": "2022-06-20T17:45:29.09+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrwgm2tgnzxgm",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaadbxgawdknrwgm2tgnzxgm",
-  "status": "queued",
-  "created": "2022-06-20T17:45:29.090Z",
-  "pin": {
-    "cid": "baeaaadbxgawdknrwgm2tgnzxgm"
-  },
-  "delegates": []
-}
-```
-## Can create new pin for testing pagination cid='baeaaadbxgawdknrwha2daojxha' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaadbxgawdknrwha2daojxha"}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e6518a9ad45ce8-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:31 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaadbxgawdknrwha2daojxha",
-  "status": "queued",
-  "created": "2022-06-20T17:45:30.591+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrwha2daojxha",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaadbxgawdknrwha2daojxha",
-  "status": "queued",
-  "created": "2022-06-20T17:45:30.591+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrwha2daojxha",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaadbxgawdknrwha2daojxha",
-  "status": "queued",
-  "created": "2022-06-20T17:45:30.591Z",
-  "pin": {
-    "cid": "baeaaadbxgawdknrwha2daojxha"
-  },
-  "delegates": []
-}
-```
-## Can create new pin for testing pagination cid='baeaaadbxgawdknrxgi4tkobygi' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaadbxgawdknrxgi4tkobygi"}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e65193981f5b59-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:32 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaadbxgawdknrxgi4tkobygi",
-  "status": "queued",
-  "created": "2022-06-20T17:45:31.591+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrxgi4tkobygi",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaadbxgawdknrxgi4tkobygi",
-  "status": "queued",
-  "created": "2022-06-20T17:45:31.591+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrxgi4tkobygi",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaadbxgawdknrxgi4tkobygi",
-  "status": "queued",
-  "created": "2022-06-20T17:45:31.591Z",
-  "pin": {
-    "cid": "baeaaadbxgawdknrxgi4tkobygi"
-  },
-  "delegates": []
-}
-```
-## Can create new pin for testing pagination cid='baeaaadbxgawdknrxha3tqmjyg4' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaadbxgawdknrxha3tqmjyg4"}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651990c5d8f08-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:33 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaadbxgawdknrxha3tqmjyg4",
-  "status": "queued",
-  "created": "2022-06-20T17:45:32.385+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrxha3tqmjyg4",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaadbxgawdknrxha3tqmjyg4",
-  "status": "queued",
-  "created": "2022-06-20T17:45:32.385+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrxha3tqmjyg4",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaadbxgawdknrxha3tqmjyg4",
-  "status": "queued",
-  "created": "2022-06-20T17:45:32.385Z",
-  "pin": {
-    "cid": "baeaaadbxgawdknrxha3tqmjyg4"
-  },
-  "delegates": []
-}
-```
-## Can create new pin for testing pagination cid='baeaaadbxgawdknrygmztmnrzge' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaadbxgawdknrygmztmnrzge"}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e6519f3daa7fc3-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:34 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaadbxgawdknrygmztmnrzge",
-  "status": "queued",
-  "created": "2022-06-20T17:45:33.571+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrygmztmnrzge",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaadbxgawdknrygmztmnrzge",
-  "status": "queued",
-  "created": "2022-06-20T17:45:33.571+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrygmztmnrzge",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaadbxgawdknrygmztmnrzge",
-  "status": "queued",
-  "created": "2022-06-20T17:45:33.571Z",
-  "pin": {
-    "cid": "baeaaadbxgawdknrygmztmnrzge"
-  },
-  "delegates": []
-}
-```
-## Can create new pin for testing pagination cid='baeaaadbxgawdknryg44dqmzzgu' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaadbxgawdknryg44dqmzzgu"}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651a59e8a6fc5-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:35 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaadbxgawdknryg44dqmzzgu",
-  "status": "queued",
-  "created": "2022-06-20T17:45:34.87+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknryg44dqmzzgu",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaadbxgawdknryg44dqmzzgu",
-  "status": "queued",
-  "created": "2022-06-20T17:45:34.87+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknryg44dqmzzgu",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaadbxgawdknryg44dqmzzgu",
-  "status": "queued",
-  "created": "2022-06-20T17:45:34.870Z",
-  "pin": {
-    "cid": "baeaaadbxgawdknryg44dqmzzgu"
-  },
-  "delegates": []
-}
-```
-## Can create new pin for testing pagination cid='baeaaadbxgawdknrzgizdmojzhe' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaadbxgawdknrzgizdmojzhe"}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651adddae5b2f-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:36 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaadbxgawdknrzgizdmojzhe",
-  "status": "queued",
-  "created": "2022-06-20T17:45:35.916+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrzgizdmojzhe",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaadbxgawdknrzgizdmojzhe",
-  "status": "queued",
-  "created": "2022-06-20T17:45:35.916+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrzgizdmojzhe",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaadbxgawdknrzgizdmojzhe",
-  "status": "queued",
-  "created": "2022-06-20T17:45:35.916Z",
-  "pin": {
-    "cid": "baeaaadbxgawdknrzgizdmojzhe"
-  },
-  "delegates": []
-}
-```
-## Can create new pin for testing pagination cid='baeaaadbxgawdknrzgy2tsojqgi' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"baeaaadbxgawdknrzgy2tsojqgi"}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651b45c61582a-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:38 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "requestid": "baeaaadbxgawdknrzgy2tsojqgi",
-  "status": "queued",
-  "created": "2022-06-20T17:45:36.953+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrzgy2tsojqgi",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "baeaaadbxgawdknrzgy2tsojqgi",
-  "status": "queued",
-  "created": "2022-06-20T17:45:36.953+00:00",
-  "pin": {
-    "cid": "baeaaadbxgawdknrzgy2tsojqgi",
-    "meta": null,
-    "name": null,
-    "origins": null
-  },
-  "delegates": []
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "baeaaadbxgawdknrzgy2tsojqgi",
-  "status": "queued",
-  "created": "2022-06-20T17:45:36.953Z",
-  "pin": {
-    "cid": "baeaaadbxgawdknrzgy2tsojqgi"
-  },
-  "delegates": []
-}
-```
-## Pagination: First page of pins - ❌ FAILED
-
-### Expectations (3/5 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  ❌ Count is greater than or equal to 15 (failure)
-
-  ❌ Count is greater than the number of pins returned (failure)
-
-  🟢 Number of pins returned defaults to 10 (success)
-
-
-
-
 
 ### Details
 
@@ -2548,326 +522,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651c2ab2c6f98-IAD",
+  "cf-ray": "71ef74669a8c81af-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:39 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "server": "cloudflare",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-{
-  "count": 10,
-  "results": [
-    {
-      "requestid": "baeaaadbxgawdknrzgy2tsojqgi",
-      "status": "queued",
-      "created": "2022-06-20T17:45:36.953+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrzgy2tsojqgi",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrzgizdmojzhe",
-      "status": "queued",
-      "created": "2022-06-20T17:45:35.916+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrzgizdmojzhe",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknryg44dqmzzgu",
-      "status": "queued",
-      "created": "2022-06-20T17:45:34.87+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknryg44dqmzzgu",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrygmztmnrzge",
-      "status": "queued",
-      "created": "2022-06-20T17:45:33.571+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrygmztmnrzge",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrxha3tqmjyg4",
-      "status": "queued",
-      "created": "2022-06-20T17:45:32.385+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrxha3tqmjyg4",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrxgi4tkobygi",
-      "status": "queued",
-      "created": "2022-06-20T17:45:31.591+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrxgi4tkobygi",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrwha2daojxha",
-      "status": "queued",
-      "created": "2022-06-20T17:45:30.591+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrwha2daojxha",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrwgm2tgnzxgm",
-      "status": "queued",
-      "created": "2022-06-20T17:45:29.09+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrwgm2tgnzxgm",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrvg43tcmjwha",
-      "status": "queued",
-      "created": "2022-06-20T17:45:27.499+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrvg43tcmjwha",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrtheytonjvgi",
-      "status": "queued",
-      "created": "2022-06-20T17:45:26.123+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrtheytonjvgi",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    }
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 10,
-  "results": [
-    {
-      "requestid": "baeaaadbxgawdknrzgy2tsojqgi",
-      "status": "queued",
-      "created": "2022-06-20T17:45:36.953+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrzgy2tsojqgi",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrzgizdmojzhe",
-      "status": "queued",
-      "created": "2022-06-20T17:45:35.916+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrzgizdmojzhe",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknryg44dqmzzgu",
-      "status": "queued",
-      "created": "2022-06-20T17:45:34.87+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknryg44dqmzzgu",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrygmztmnrzge",
-      "status": "queued",
-      "created": "2022-06-20T17:45:33.571+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrygmztmnrzge",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrxha3tqmjyg4",
-      "status": "queued",
-      "created": "2022-06-20T17:45:32.385+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrxha3tqmjyg4",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrxgi4tkobygi",
-      "status": "queued",
-      "created": "2022-06-20T17:45:31.591+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrxgi4tkobygi",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrwha2daojxha",
-      "status": "queued",
-      "created": "2022-06-20T17:45:30.591+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrwha2daojxha",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrwgm2tgnzxgm",
-      "status": "queued",
-      "created": "2022-06-20T17:45:29.09+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrwgm2tgnzxgm",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrvg43tcmjwha",
-      "status": "queued",
-      "created": "2022-06-20T17:45:27.499+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrvg43tcmjwha",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrtheytonjvgi",
-      "status": "queued",
-      "created": "2022-06-20T17:45:26.123+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrtheytonjvgi",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    }
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 10,
-  "results": {}
-}
-```
-## Pagination: Retrieve the next page of pins - ❌ FAILED
-
-### Expectations (2/3 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  ❌ The next page of pins doesn't contain any of previous pages pins (failure)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-06-20T17%3A45%3A26.123Z
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651c8e81b81ff-IAD",
-  "connection": "close",
-  "content-encoding": "br",
-  "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:40 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:11 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -2880,11 +539,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befor
   "count": 6,
   "results": [
     {
-      "requestid": "baeaaadbxgawdknrtheytonjvgi",
+      "requestid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
       "status": "queued",
-      "created": "2022-06-20T17:45:26.123+00:00",
+      "created": "2022-06-21T20:22:07.064+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrtheytonjvgi",
+        "cid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
         "meta": null,
         "name": null,
         "origins": null
@@ -2961,11 +620,1995 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befor
   "count": 6,
   "results": [
     {
-      "requestid": "baeaaadbxgawdknrtheytonjvgi",
+      "requestid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
       "status": "queued",
-      "created": "2022-06-20T17:45:26.123+00:00",
+      "created": "2022-06-21T20:22:07.064+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrtheytonjvgi",
+        "cid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadbxgawdknrtge3tiobugu",
+      "status": "queued",
+      "created": "2022-06-20T17:45:24.975+00:00",
+      "pin": {
+        "cid": "baeaaadbxgawdknrtge3tiobugu",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadbxgawdknrsgmydgnrtha",
+      "status": "queued",
+      "created": "2022-06-20T17:45:22.317+00:00",
+      "pin": {
+        "cid": "baeaaadbxgawdknrsgmydgnrtha",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaaczwgqwdcmrxgm3tqnbx",
+      "status": "queued",
+      "created": "2022-06-20T17:45:15.701+00:00",
+      "pin": {
+        "cid": "baeaaaczwgqwdcmrxgm3tqnbx",
+        "meta": null,
+        "name": "f588fa05-3c5f-4236-95d4-81d20f2f7f83",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadbvhewdmmjrgqytkmjvge",
+      "status": "queued",
+      "created": "2022-06-20T17:45:11.953+00:00",
+      "pin": {
+        "cid": "baeaaadbvhewdmmjrgqytkmjvge",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadbvgewdiojvg44donrxgu",
+      "status": "queued",
+      "created": "2022-06-20T17:45:03.94+00:00",
+      "pin": {
+        "cid": "baeaaadbvgewdiojvg44donrxgu",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    }
+  ]
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "count": 6,
+  "results": {}
+}
+```
+## Get original pin via requestid - 🟢 SUCCESS
+
+### Expectations (1/1 successful)
+
+  🟢 Response code is 404: Original Pin's requestid cannot be found (success)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
+
+
+### Details
+
+#### Request
+```
+GET https://nft.storage/api/pins/bafkreifu32462ykrd2utze4wfs3zuiacbzkf2jpblgeo2mig5veccr2zs4
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+404 Not Found
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef7488b8255a04-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:15 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "NOT_FOUND",
+    "details": "pin not found"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "NOT_FOUND",
+    "details": "pin not found"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Get new pin via requestid - 🟢 SUCCESS
+
+### Expectations (1/1 successful)
+
+  🟢 Response code is 200: New Pin's requestid can be found (success)
+
+
+
+
+
+### Details
+
+#### Request
+```
+GET https://nft.storage/api/pins/bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef748f0b4f825c-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:17 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "requestid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+  "status": "queued",
+  "created": "2022-06-21T20:22:14.451+00:00",
+  "pin": {
+    "cid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "requestid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+  "status": "queued",
+  "created": "2022-06-21T20:22:14.451+00:00",
+  "pin": {
+    "cid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "requestid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+  "status": "queued",
+  "created": "2022-06-21T20:22:14.451Z",
+  "pin": {
+    "cid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e"
+  },
+  "delegates": []
+}
+```
+## Pin's with requestid 'bafkreifu32462ykrd2utze4wfs3zuiacbzkf2jpblgeo2mig5veccr2zs4' can have cid 'bafkreifu32462ykrd2utze4wfs3zuiacbzkf2jpblgeo2mig5veccr2zs4' replaced with 'bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response code is 404: Original Pin's requestid cannot be found (success)
+
+  🟢 Response code is 200: New Pin's requestid can be found (success)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins/bafkreifu32462ykrd2utze4wfs3zuiacbzkf2jpblgeo2mig5veccr2zs4
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e"}
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef747bdc215a8d-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:15 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "requestid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+  "status": "queued",
+  "created": "2022-06-21T20:22:14.451+00:00",
+  "pin": {
+    "cid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "requestid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+  "status": "queued",
+  "created": "2022-06-21T20:22:14.451+00:00",
+  "pin": {
+    "cid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "requestid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+  "status": "queued",
+  "created": "2022-06-21T20:22:14.451Z",
+  "pin": {
+    "cid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e"
+  },
+  "delegates": []
+}
+```
+## Can create and replace a pin's CID - 🟢 SUCCESS
+
+### Expectations (7/7 successful)
+
+  🟢 Pin exists (success)
+
+  🟢 Could obtain requestid from new pin (bafkreifu32462ykrd2utze4wfs3zuiacbzkf2jpblgeo2mig5veccr2zs4) (success)
+
+  🟢 Response is ok (success)
+
+  🟢 Replaced pin has the new & expected CID (success)
+
+  🟢 Replaced pin has a different requestid (success)
+
+  🟢 Response code is 404: Original Pin's requestid cannot be found (success)
+
+  🟢 Response code is 200: New Pin's requestid can be found (success)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:109:36)
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreifu32462ykrd2utze4wfs3zuiacbzkf2jpblgeo2mig5veccr2zs4"}
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef7470db207fdc-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:13 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "requestid": "bafkreifu32462ykrd2utze4wfs3zuiacbzkf2jpblgeo2mig5veccr2zs4",
+  "status": "queued",
+  "created": "2022-06-21T20:22:11.928+00:00",
+  "pin": {
+    "cid": "bafkreifu32462ykrd2utze4wfs3zuiacbzkf2jpblgeo2mig5veccr2zs4",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "requestid": "bafkreifu32462ykrd2utze4wfs3zuiacbzkf2jpblgeo2mig5veccr2zs4",
+  "status": "queued",
+  "created": "2022-06-21T20:22:11.928+00:00",
+  "pin": {
+    "cid": "bafkreifu32462ykrd2utze4wfs3zuiacbzkf2jpblgeo2mig5veccr2zs4",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "requestid": "bafkreifu32462ykrd2utze4wfs3zuiacbzkf2jpblgeo2mig5veccr2zs4",
+  "status": "queued",
+  "created": "2022-06-21T20:22:11.928Z",
+  "pin": {
+    "cid": "bafkreifu32462ykrd2utze4wfs3zuiacbzkf2jpblgeo2mig5veccr2zs4"
+  },
+  "delegates": []
+}
+```
+## Can retrieve pin with name 'bd0b9ea2-584c-4470-8637-d5b3e3c2b14f' via the 'exact' TextMatchingStrategy - ❌ FAILED
+
+### Expectations (2/4 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+
+
+
+
+### Details
+
+#### Request
+```
+GET https://nft.storage/api/pins?name=bd0b9ea2-584c-4470-8637-d5b3e3c2b14f&match=exact
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef749d4dee5c17-IAD",
+  "connection": "close",
+  "content-length": "24",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:19 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "count": 0,
+  "results": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "count": 0,
+  "results": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "count": 0,
+  "results": {}
+}
+```
+## Can retrieve pin with name 'BD0B9EA2-584C-4470-8637-D5B3E3C2B14F' via the 'iexact' TextMatchingStrategy - ❌ FAILED
+
+### Expectations (2/4 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+
+
+
+
+### Details
+
+#### Request
+```
+GET https://nft.storage/api/pins?name=BD0B9EA2-584C-4470-8637-D5B3E3C2B14F&match=iexact
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef74a468b85c41-IAD",
+  "connection": "close",
+  "content-length": "24",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:21 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "count": 0,
+  "results": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "count": 0,
+  "results": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "count": 0,
+  "results": {}
+}
+```
+## Can retrieve pin with name '584c-4470-8637-d5b' via the 'partial' TextMatchingStrategy - ❌ FAILED
+
+### Expectations (2/4 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+
+
+
+
+### Details
+
+#### Request
+```
+GET https://nft.storage/api/pins?name=584c-4470-8637-d5b&match=partial
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef74adbdaa5a8d-IAD",
+  "connection": "close",
+  "content-length": "24",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:21 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "count": 0,
+  "results": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "count": 0,
+  "results": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "count": 0,
+  "results": {}
+}
+```
+## Can retrieve pin with name '584C-4470-8637-D5B' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
+
+### Expectations (2/4 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+
+
+
+
+### Details
+
+#### Request
+```
+GET https://nft.storage/api/pins?name=584C-4470-8637-D5B&match=ipartial
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef74b27b2d5a04-IAD",
+  "connection": "close",
+  "content-length": "24",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:22 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "count": 0,
+  "results": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "count": 0,
+  "results": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "count": 0,
+  "results": {}
+}
+```
+## Can create a pin with name='bd0b9ea2-584c-4470-8637-d5b3e3c2b14f' - ❌ FAILED
+
+### Expectations (11/19 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+  🟢 Name matches name provided during creation (success)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+
+
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m","name":"bd0b9ea2-584c-4470-8637-d5b3e3c2b14f"}
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef74958dc38012-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:18 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "requestid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+  "status": "queued",
+  "created": "2022-06-21T20:22:17.52+00:00",
+  "pin": {
+    "cid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+    "meta": null,
+    "name": "bd0b9ea2-584c-4470-8637-d5b3e3c2b14f",
+    "origins": null
+  },
+  "delegates": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "requestid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+  "status": "queued",
+  "created": "2022-06-21T20:22:17.52+00:00",
+  "pin": {
+    "cid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+    "meta": null,
+    "name": "bd0b9ea2-584c-4470-8637-d5b3e3c2b14f",
+    "origins": null
+  },
+  "delegates": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "requestid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+  "status": "queued",
+  "created": "2022-06-21T20:22:17.520Z",
+  "pin": {
+    "cid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+    "name": "bd0b9ea2-584c-4470-8637-d5b3e3c2b14f"
+  },
+  "delegates": []
+}
+```
+## Can create new pin for testing pagination cid='bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+
+
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24"}
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef74bfdb025770-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:25 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "requestid": "bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24",
+  "status": "queued",
+  "created": "2022-06-21T20:22:24.301+00:00",
+  "pin": {
+    "cid": "bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "requestid": "bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24",
+  "status": "queued",
+  "created": "2022-06-21T20:22:24.301+00:00",
+  "pin": {
+    "cid": "bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "requestid": "bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24",
+  "status": "queued",
+  "created": "2022-06-21T20:22:24.301Z",
+  "pin": {
+    "cid": "bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24"
+  },
+  "delegates": []
+}
+```
+## Can create new pin for testing pagination cid='bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+
+
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4"}
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef74c71e6b5dce-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:26 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "requestid": "bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4",
+  "status": "queued",
+  "created": "2022-06-21T20:22:25.813+00:00",
+  "pin": {
+    "cid": "bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "requestid": "bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4",
+  "status": "queued",
+  "created": "2022-06-21T20:22:25.813+00:00",
+  "pin": {
+    "cid": "bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "requestid": "bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4",
+  "status": "queued",
+  "created": "2022-06-21T20:22:25.813Z",
+  "pin": {
+    "cid": "bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4"
+  },
+  "delegates": []
+}
+```
+## Can create new pin for testing pagination cid='bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+
+
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u"}
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef74d0ae9b5c5e-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:27 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "requestid": "bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u",
+  "status": "queued",
+  "created": "2022-06-21T20:22:26.943+00:00",
+  "pin": {
+    "cid": "bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "requestid": "bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u",
+  "status": "queued",
+  "created": "2022-06-21T20:22:26.943+00:00",
+  "pin": {
+    "cid": "bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "requestid": "bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u",
+  "status": "queued",
+  "created": "2022-06-21T20:22:26.943Z",
+  "pin": {
+    "cid": "bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u"
+  },
+  "delegates": []
+}
+```
+## Can create new pin for testing pagination cid='bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+
+
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim"}
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef74d80bd55a8d-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:28 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "requestid": "bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim",
+  "status": "queued",
+  "created": "2022-06-21T20:22:28.007+00:00",
+  "pin": {
+    "cid": "bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "requestid": "bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim",
+  "status": "queued",
+  "created": "2022-06-21T20:22:28.007+00:00",
+  "pin": {
+    "cid": "bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "requestid": "bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim",
+  "status": "queued",
+  "created": "2022-06-21T20:22:28.007Z",
+  "pin": {
+    "cid": "bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim"
+  },
+  "delegates": []
+}
+```
+## Can create new pin for testing pagination cid='bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+
+
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi"}
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef74ddc9178192-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:30 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "requestid": "bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi",
+  "status": "queued",
+  "created": "2022-06-21T20:22:29.095+00:00",
+  "pin": {
+    "cid": "bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "requestid": "bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi",
+  "status": "queued",
+  "created": "2022-06-21T20:22:29.095+00:00",
+  "pin": {
+    "cid": "bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "requestid": "bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi",
+  "status": "queued",
+  "created": "2022-06-21T20:22:29.095Z",
+  "pin": {
+    "cid": "bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi"
+  },
+  "delegates": []
+}
+```
+## Can create new pin for testing pagination cid='bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+
+
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4"}
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef74e66e605ae0-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:31 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "requestid": "bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4",
+  "status": "queued",
+  "created": "2022-06-21T20:22:30.366+00:00",
+  "pin": {
+    "cid": "bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "requestid": "bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4",
+  "status": "queued",
+  "created": "2022-06-21T20:22:30.366+00:00",
+  "pin": {
+    "cid": "bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "requestid": "bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4",
+  "status": "queued",
+  "created": "2022-06-21T20:22:30.366Z",
+  "pin": {
+    "cid": "bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4"
+  },
+  "delegates": []
+}
+```
+## Can create new pin for testing pagination cid='bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye' - 🟢 SUCCESS
+
+### Expectations (2/2 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+
+
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye"}
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef74ecff757fff-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:32 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "requestid": "bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye",
+  "status": "queued",
+  "created": "2022-06-21T20:22:31.505+00:00",
+  "pin": {
+    "cid": "bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "requestid": "bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye",
+  "status": "queued",
+  "created": "2022-06-21T20:22:31.505+00:00",
+  "pin": {
+    "cid": "bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye",
+    "meta": null,
+    "name": null,
+    "origins": null
+  },
+  "delegates": []
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "requestid": "bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye",
+  "status": "queued",
+  "created": "2022-06-21T20:22:31.505Z",
+  "pin": {
+    "cid": "bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye"
+  },
+  "delegates": []
+}
+```
+## Pagination: First page of pins - ❌ FAILED
+
+### Expectations (3/5 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+  ❌ Count is greater than or equal to 15 (failure)
+
+  ❌ Count is greater than the number of pins returned (failure)
+
+  🟢 Number of pins returned defaults to 10 (success)
+
+
+
+
+
+### Details
+
+#### Request
+```
+GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef74f3ca9f597f-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:33 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "count": 10,
+  "results": [
+    {
+      "requestid": "bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye",
+      "status": "queued",
+      "created": "2022-06-21T20:22:31.505+00:00",
+      "pin": {
+        "cid": "bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4",
+      "status": "queued",
+      "created": "2022-06-21T20:22:30.366+00:00",
+      "pin": {
+        "cid": "bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi",
+      "status": "queued",
+      "created": "2022-06-21T20:22:29.095+00:00",
+      "pin": {
+        "cid": "bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim",
+      "status": "queued",
+      "created": "2022-06-21T20:22:28.007+00:00",
+      "pin": {
+        "cid": "bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u",
+      "status": "queued",
+      "created": "2022-06-21T20:22:26.943+00:00",
+      "pin": {
+        "cid": "bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4",
+      "status": "queued",
+      "created": "2022-06-21T20:22:25.813+00:00",
+      "pin": {
+        "cid": "bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24",
+      "status": "queued",
+      "created": "2022-06-21T20:22:24.301+00:00",
+      "pin": {
+        "cid": "bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+      "status": "queued",
+      "created": "2022-06-21T20:22:17.52+00:00",
+      "pin": {
+        "cid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+        "meta": null,
+        "name": "bd0b9ea2-584c-4470-8637-d5b3e3c2b14f",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+      "status": "queued",
+      "created": "2022-06-21T20:22:14.451+00:00",
+      "pin": {
+        "cid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
+      "status": "queued",
+      "created": "2022-06-21T20:22:07.064+00:00",
+      "pin": {
+        "cid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    }
+  ]
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "count": 10,
+  "results": [
+    {
+      "requestid": "bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye",
+      "status": "queued",
+      "created": "2022-06-21T20:22:31.505+00:00",
+      "pin": {
+        "cid": "bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4",
+      "status": "queued",
+      "created": "2022-06-21T20:22:30.366+00:00",
+      "pin": {
+        "cid": "bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi",
+      "status": "queued",
+      "created": "2022-06-21T20:22:29.095+00:00",
+      "pin": {
+        "cid": "bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim",
+      "status": "queued",
+      "created": "2022-06-21T20:22:28.007+00:00",
+      "pin": {
+        "cid": "bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u",
+      "status": "queued",
+      "created": "2022-06-21T20:22:26.943+00:00",
+      "pin": {
+        "cid": "bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4",
+      "status": "queued",
+      "created": "2022-06-21T20:22:25.813+00:00",
+      "pin": {
+        "cid": "bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24",
+      "status": "queued",
+      "created": "2022-06-21T20:22:24.301+00:00",
+      "pin": {
+        "cid": "bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+      "status": "queued",
+      "created": "2022-06-21T20:22:17.52+00:00",
+      "pin": {
+        "cid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+        "meta": null,
+        "name": "bd0b9ea2-584c-4470-8637-d5b3e3c2b14f",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+      "status": "queued",
+      "created": "2022-06-21T20:22:14.451+00:00",
+      "pin": {
+        "cid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
+      "status": "queued",
+      "created": "2022-06-21T20:22:07.064+00:00",
+      "pin": {
+        "cid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    }
+  ]
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "count": 10,
+  "results": {}
+}
+```
+## Pagination: Retrieve the next page of pins - ❌ FAILED
+
+### Expectations (2/3 successful)
+
+  🟢 Response is ok (success)
+
+  🟢 Result is not null (success)
+
+  ❌ The next page of pins doesn't contain any of previous pages pins (failure)
+
+
+
+
+
+### Details
+
+#### Request
+```
+GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-06-21T20%3A22%3A07.064Z
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-ray": "71ef74f9f938597f-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json;charset=UTF-8",
+  "date": "Tue, 21 Jun 2022 20:22:34 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+{
+  "count": 6,
+  "results": [
+    {
+      "requestid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
+      "status": "queued",
+      "created": "2022-06-21T20:22:07.064+00:00",
+      "pin": {
+        "cid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadbxgawdknrtge3tiobugu",
+      "status": "queued",
+      "created": "2022-06-20T17:45:24.975+00:00",
+      "pin": {
+        "cid": "baeaaadbxgawdknrtge3tiobugu",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadbxgawdknrsgmydgnrtha",
+      "status": "queued",
+      "created": "2022-06-20T17:45:22.317+00:00",
+      "pin": {
+        "cid": "baeaaadbxgawdknrsgmydgnrtha",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaaczwgqwdcmrxgm3tqnbx",
+      "status": "queued",
+      "created": "2022-06-20T17:45:15.701+00:00",
+      "pin": {
+        "cid": "baeaaaczwgqwdcmrxgm3tqnbx",
+        "meta": null,
+        "name": "f588fa05-3c5f-4236-95d4-81d20f2f7f83",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadbvhewdmmjrgqytkmjvge",
+      "status": "queued",
+      "created": "2022-06-20T17:45:11.953+00:00",
+      "pin": {
+        "cid": "baeaaadbvhewdmmjrgqytkmjvge",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadbvgewdiojvg44donrxgu",
+      "status": "queued",
+      "created": "2022-06-20T17:45:03.94+00:00",
+      "pin": {
+        "cid": "baeaaadbvgewdiojvg44donrxgu",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    }
+  ]
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "count": 6,
+  "results": [
+    {
+      "requestid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
+      "status": "queued",
+      "created": "2022-06-21T20:22:07.064+00:00",
+      "pin": {
+        "cid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
         "meta": null,
         "name": null,
         "origins": null
@@ -3044,27 +2687,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befor
 ```
 ## Pagination: Get all pins, create new pins (optional), get first and second pages - ❌ FAILED
 
-### Expectations (31/34 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
+### Expectations (21/24 successful)
 
   🟢 Response is ok (success)
 
@@ -3144,11 +2767,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651502f9b5af2-IAD",
+  "cf-ray": "71ef74b70a195c2e-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:21 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:23 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -3158,8 +2781,68 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 ##### Body
 ```json
 {
-  "count": 3,
+  "count": 8,
   "results": [
+    {
+      "requestid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+      "status": "queued",
+      "created": "2022-06-21T20:22:17.52+00:00",
+      "pin": {
+        "cid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+        "meta": null,
+        "name": "bd0b9ea2-584c-4470-8637-d5b3e3c2b14f",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+      "status": "queued",
+      "created": "2022-06-21T20:22:14.451+00:00",
+      "pin": {
+        "cid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
+      "status": "queued",
+      "created": "2022-06-21T20:22:07.064+00:00",
+      "pin": {
+        "cid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadbxgawdknrtge3tiobugu",
+      "status": "queued",
+      "created": "2022-06-20T17:45:24.975+00:00",
+      "pin": {
+        "cid": "baeaaadbxgawdknrtge3tiobugu",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadbxgawdknrsgmydgnrtha",
+      "status": "queued",
+      "created": "2022-06-20T17:45:22.317+00:00",
+      "pin": {
+        "cid": "baeaaadbxgawdknrsgmydgnrtha",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
     {
       "requestid": "baeaaaczwgqwdcmrxgm3tqnbx",
       "status": "queued",
@@ -3203,8 +2886,68 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 ##### Body (as JSON)
 ```json
 {
-  "count": 3,
+  "count": 8,
   "results": [
+    {
+      "requestid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+      "status": "queued",
+      "created": "2022-06-21T20:22:17.52+00:00",
+      "pin": {
+        "cid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+        "meta": null,
+        "name": "bd0b9ea2-584c-4470-8637-d5b3e3c2b14f",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+      "status": "queued",
+      "created": "2022-06-21T20:22:14.451+00:00",
+      "pin": {
+        "cid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
+      "status": "queued",
+      "created": "2022-06-21T20:22:07.064+00:00",
+      "pin": {
+        "cid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadbxgawdknrtge3tiobugu",
+      "status": "queued",
+      "created": "2022-06-20T17:45:24.975+00:00",
+      "pin": {
+        "cid": "baeaaadbxgawdknrtge3tiobugu",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "baeaaadbxgawdknrsgmydgnrtha",
+      "status": "queued",
+      "created": "2022-06-20T17:45:22.317+00:00",
+      "pin": {
+        "cid": "baeaaadbxgawdknrsgmydgnrtha",
+        "meta": null,
+        "name": null,
+        "origins": null
+      },
+      "delegates": []
+    },
     {
       "requestid": "baeaaaczwgqwdcmrxgm3tqnbx",
       "status": "queued",
@@ -3247,11 +2990,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "count": 3,
+  "count": 8,
   "results": {}
 }
 ```
-## Can delete pin with requestid 'baeaaadbxgawdknrzgy2tsojqgi' - 🟢 SUCCESS
+## Can delete pin with requestid 'bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -3279,7 +3022,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 
 #### Request
 ```
-DELETE https://nft.storage/api/pins/baeaaadbxgawdknrzgy2tsojqgi
+DELETE https://nft.storage/api/pins/bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye
 ```
 ##### Headers
 ```json
@@ -3301,11 +3044,11 @@ DELETE https://nft.storage/api/pins/baeaaadbxgawdknrzgy2tsojqgi
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651d7f9665b4c-IAD",
+  "cf-ray": "71ef7506b8b46fef-IAD",
   "connection": "close",
   "content-length": "0",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:42 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:35 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -3324,7 +3067,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'baeaaadbxgawdknrzgizdmojzhe' - 🟢 SUCCESS
+## Can delete pin with requestid 'bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -3352,7 +3095,7 @@ undefined
 
 #### Request
 ```
-DELETE https://nft.storage/api/pins/baeaaadbxgawdknrzgizdmojzhe
+DELETE https://nft.storage/api/pins/bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4
 ```
 ##### Headers
 ```json
@@ -3374,11 +3117,11 @@ DELETE https://nft.storage/api/pins/baeaaadbxgawdknrzgizdmojzhe
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651de3a8657a9-IAD",
+  "cf-ray": "71ef750cff0b6fb6-IAD",
   "connection": "close",
   "content-length": "0",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:43 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:36 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -3397,7 +3140,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'baeaaadbxgawdknryg44dqmzzgu' - 🟢 SUCCESS
+## Can delete pin with requestid 'bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -3425,7 +3168,7 @@ undefined
 
 #### Request
 ```
-DELETE https://nft.storage/api/pins/baeaaadbxgawdknryg44dqmzzgu
+DELETE https://nft.storage/api/pins/bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi
 ```
 ##### Headers
 ```json
@@ -3447,11 +3190,11 @@ DELETE https://nft.storage/api/pins/baeaaadbxgawdknryg44dqmzzgu
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651e46ba4582a-IAD",
+  "cf-ray": "71ef751338b27004-IAD",
   "connection": "close",
   "content-length": "0",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:44 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:37 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -3470,7 +3213,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'baeaaadbxgawdknrygmztmnrzge' - 🟢 SUCCESS
+## Can delete pin with requestid 'bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -3498,7 +3241,7 @@ undefined
 
 #### Request
 ```
-DELETE https://nft.storage/api/pins/baeaaadbxgawdknrygmztmnrzge
+DELETE https://nft.storage/api/pins/bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim
 ```
 ##### Headers
 ```json
@@ -3520,11 +3263,11 @@ DELETE https://nft.storage/api/pins/baeaaadbxgawdknrygmztmnrzge
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651eaae166f98-IAD",
+  "cf-ray": "71ef75197bde5c22-IAD",
   "connection": "close",
   "content-length": "0",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:45 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:38 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -3543,7 +3286,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'baeaaadbxgawdknrxha3tqmjyg4' - 🟢 SUCCESS
+## Can delete pin with requestid 'bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -3571,7 +3314,7 @@ undefined
 
 #### Request
 ```
-DELETE https://nft.storage/api/pins/baeaaadbxgawdknrxha3tqmjyg4
+DELETE https://nft.storage/api/pins/bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u
 ```
 ##### Headers
 ```json
@@ -3593,11 +3336,11 @@ DELETE https://nft.storage/api/pins/baeaaadbxgawdknrxha3tqmjyg4
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651f0e94d7fbe-IAD",
+  "cf-ray": "71ef751fbd6c597f-IAD",
   "connection": "close",
   "content-length": "0",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:46 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:39 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -3616,7 +3359,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'baeaaadbxgawdknrxgi4tkobygi' - 🟢 SUCCESS
+## Can delete pin with requestid 'bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -3644,7 +3387,7 @@ undefined
 
 #### Request
 ```
-DELETE https://nft.storage/api/pins/baeaaadbxgawdknrxgi4tkobygi
+DELETE https://nft.storage/api/pins/bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4
 ```
 ##### Headers
 ```json
@@ -3666,11 +3409,11 @@ DELETE https://nft.storage/api/pins/baeaaadbxgawdknrxgi4tkobygi
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651f738c3cf08-IAD",
+  "cf-ray": "71ef75260d41597f-IAD",
   "connection": "close",
   "content-length": "0",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:48 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:40 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -3689,7 +3432,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'baeaaadbxgawdknrwha2daojxha' - 🟢 SUCCESS
+## Can delete pin with requestid 'bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -3717,7 +3460,7 @@ undefined
 
 #### Request
 ```
-DELETE https://nft.storage/api/pins/baeaaadbxgawdknrwha2daojxha
+DELETE https://nft.storage/api/pins/bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24
 ```
 ##### Headers
 ```json
@@ -3739,11 +3482,11 @@ DELETE https://nft.storage/api/pins/baeaaadbxgawdknrwha2daojxha
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651fd7e3d59ec-IAD",
+  "cf-ray": "71ef752c39e35a8d-IAD",
   "connection": "close",
   "content-length": "0",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:48 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:41 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -3762,7 +3505,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'baeaaadbxgawdknrwgm2tgnzxgm' - 🟢 SUCCESS
+## Can delete pin with requestid 'bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -3790,7 +3533,7 @@ undefined
 
 #### Request
 ```
-DELETE https://nft.storage/api/pins/baeaaadbxgawdknrwgm2tgnzxgm
+DELETE https://nft.storage/api/pins/bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m
 ```
 ##### Headers
 ```json
@@ -3812,11 +3555,11 @@ DELETE https://nft.storage/api/pins/baeaaadbxgawdknrwgm2tgnzxgm
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e65203cb9e5b4c-IAD",
+  "cf-ray": "71ef75327f4b6fef-IAD",
   "connection": "close",
   "content-length": "0",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:49 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:42 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -3835,7 +3578,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'baeaaadbxgawdknrvg43tcmjwha' - 🟢 SUCCESS
+## Can delete pin with requestid 'bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -3863,7 +3606,7 @@ undefined
 
 #### Request
 ```
-DELETE https://nft.storage/api/pins/baeaaadbxgawdknrvg43tcmjwha
+DELETE https://nft.storage/api/pins/bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e
 ```
 ##### Headers
 ```json
@@ -3885,11 +3628,11 @@ DELETE https://nft.storage/api/pins/baeaaadbxgawdknrvg43tcmjwha
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e6520a0e1e57a9-IAD",
+  "cf-ray": "71ef7538c9dd6fb6-IAD",
   "connection": "close",
   "content-length": "0",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:50 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:43 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -3908,7 +3651,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'baeaaadbxgawdknrtheytonjvgi' - 🟢 SUCCESS
+## Can delete pin with requestid 'bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -3936,7 +3679,7 @@ undefined
 
 #### Request
 ```
-DELETE https://nft.storage/api/pins/baeaaadbxgawdknrtheytonjvgi
+DELETE https://nft.storage/api/pins/bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64
 ```
 ##### Headers
 ```json
@@ -3958,11 +3701,11 @@ DELETE https://nft.storage/api/pins/baeaaadbxgawdknrtheytonjvgi
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e652104c916f98-IAD",
+  "cf-ray": "71ef753efad4822c-IAD",
   "connection": "close",
   "content-length": "0",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:51 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:44 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
@@ -4017,11 +3760,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e652167a2b802a-IAD",
+  "cf-ray": "71ef7545581b597f-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:53 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:46 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -4368,11 +4111,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-ray": "71e651cf3dd559ec-IAD",
+  "cf-ray": "71ef75008ec45a8d-IAD",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Mon, 20 Jun 2022 17:45:42 GMT",
+  "date": "Tue, 21 Jun 2022 20:22:35 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
@@ -4385,11 +4128,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 10,
   "results": [
     {
-      "requestid": "baeaaadbxgawdknrzgy2tsojqgi",
+      "requestid": "bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye",
       "status": "queued",
-      "created": "2022-06-20T17:45:36.953+00:00",
+      "created": "2022-06-21T20:22:31.505+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrzgy2tsojqgi",
+        "cid": "bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye",
         "meta": null,
         "name": null,
         "origins": null
@@ -4397,11 +4140,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknrzgizdmojzhe",
+      "requestid": "bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4",
       "status": "queued",
-      "created": "2022-06-20T17:45:35.916+00:00",
+      "created": "2022-06-21T20:22:30.366+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrzgizdmojzhe",
+        "cid": "bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4",
         "meta": null,
         "name": null,
         "origins": null
@@ -4409,11 +4152,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknryg44dqmzzgu",
+      "requestid": "bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi",
       "status": "queued",
-      "created": "2022-06-20T17:45:34.87+00:00",
+      "created": "2022-06-21T20:22:29.095+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknryg44dqmzzgu",
+        "cid": "bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi",
         "meta": null,
         "name": null,
         "origins": null
@@ -4421,11 +4164,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknrygmztmnrzge",
+      "requestid": "bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim",
       "status": "queued",
-      "created": "2022-06-20T17:45:33.571+00:00",
+      "created": "2022-06-21T20:22:28.007+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrygmztmnrzge",
+        "cid": "bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim",
         "meta": null,
         "name": null,
         "origins": null
@@ -4433,11 +4176,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknrxha3tqmjyg4",
+      "requestid": "bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u",
       "status": "queued",
-      "created": "2022-06-20T17:45:32.385+00:00",
+      "created": "2022-06-21T20:22:26.943+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrxha3tqmjyg4",
+        "cid": "bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u",
         "meta": null,
         "name": null,
         "origins": null
@@ -4445,11 +4188,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknrxgi4tkobygi",
+      "requestid": "bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4",
       "status": "queued",
-      "created": "2022-06-20T17:45:31.591+00:00",
+      "created": "2022-06-21T20:22:25.813+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrxgi4tkobygi",
+        "cid": "bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4",
         "meta": null,
         "name": null,
         "origins": null
@@ -4457,11 +4200,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknrwha2daojxha",
+      "requestid": "bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24",
       "status": "queued",
-      "created": "2022-06-20T17:45:30.591+00:00",
+      "created": "2022-06-21T20:22:24.301+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrwha2daojxha",
+        "cid": "bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24",
         "meta": null,
         "name": null,
         "origins": null
@@ -4469,11 +4212,23 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknrwgm2tgnzxgm",
+      "requestid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
       "status": "queued",
-      "created": "2022-06-20T17:45:29.09+00:00",
+      "created": "2022-06-21T20:22:17.52+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrwgm2tgnzxgm",
+        "cid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+        "meta": null,
+        "name": "bd0b9ea2-584c-4470-8637-d5b3e3c2b14f",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+      "status": "queued",
+      "created": "2022-06-21T20:22:14.451+00:00",
+      "pin": {
+        "cid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
         "meta": null,
         "name": null,
         "origins": null
@@ -4481,23 +4236,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknrvg43tcmjwha",
+      "requestid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
       "status": "queued",
-      "created": "2022-06-20T17:45:27.499+00:00",
+      "created": "2022-06-21T20:22:07.064+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrvg43tcmjwha",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrtheytonjvgi",
-      "status": "queued",
-      "created": "2022-06-20T17:45:26.123+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrtheytonjvgi",
+        "cid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
         "meta": null,
         "name": null,
         "origins": null
@@ -4514,11 +4257,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 10,
   "results": [
     {
-      "requestid": "baeaaadbxgawdknrzgy2tsojqgi",
+      "requestid": "bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye",
       "status": "queued",
-      "created": "2022-06-20T17:45:36.953+00:00",
+      "created": "2022-06-21T20:22:31.505+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrzgy2tsojqgi",
+        "cid": "bafkreif3mbh75b5uof7np7bs2grkex4luwwc3gay73ombi22ye7uqo22ye",
         "meta": null,
         "name": null,
         "origins": null
@@ -4526,11 +4269,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknrzgizdmojzhe",
+      "requestid": "bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4",
       "status": "queued",
-      "created": "2022-06-20T17:45:35.916+00:00",
+      "created": "2022-06-21T20:22:30.366+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrzgizdmojzhe",
+        "cid": "bafkreiegdc35rcy6utt3w33tvlni5sub7ubpcwn6xbypfkarws56hawqh4",
         "meta": null,
         "name": null,
         "origins": null
@@ -4538,11 +4281,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknryg44dqmzzgu",
+      "requestid": "bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi",
       "status": "queued",
-      "created": "2022-06-20T17:45:34.87+00:00",
+      "created": "2022-06-21T20:22:29.095+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknryg44dqmzzgu",
+        "cid": "bafkreiab5m6fz5tzgcfsicuj6gygvavvo4b3h4ft6bherqner5cjm5srvi",
         "meta": null,
         "name": null,
         "origins": null
@@ -4550,11 +4293,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknrygmztmnrzge",
+      "requestid": "bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim",
       "status": "queued",
-      "created": "2022-06-20T17:45:33.571+00:00",
+      "created": "2022-06-21T20:22:28.007+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrygmztmnrzge",
+        "cid": "bafkreiflkc6moqdvgne5ywgt6ki2chzoelbp3vl6vdjtns335ttsjgfuim",
         "meta": null,
         "name": null,
         "origins": null
@@ -4562,11 +4305,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknrxha3tqmjyg4",
+      "requestid": "bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u",
       "status": "queued",
-      "created": "2022-06-20T17:45:32.385+00:00",
+      "created": "2022-06-21T20:22:26.943+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrxha3tqmjyg4",
+        "cid": "bafkreic2mcbnbcs7luboql7b7ia34y2mlkgf4gg7xfr4rnfxkn4axph23u",
         "meta": null,
         "name": null,
         "origins": null
@@ -4574,11 +4317,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknrxgi4tkobygi",
+      "requestid": "bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4",
       "status": "queued",
-      "created": "2022-06-20T17:45:31.591+00:00",
+      "created": "2022-06-21T20:22:25.813+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrxgi4tkobygi",
+        "cid": "bafkreigfqdlxjjowngowjw5koi3sunn5fpey4w2w6qaa5tgkcvrb2xwbx4",
         "meta": null,
         "name": null,
         "origins": null
@@ -4586,11 +4329,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknrwha2daojxha",
+      "requestid": "bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24",
       "status": "queued",
-      "created": "2022-06-20T17:45:30.591+00:00",
+      "created": "2022-06-21T20:22:24.301+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrwha2daojxha",
+        "cid": "bafkreidzhda373prvd5xcikyqyueqx6moadt5xfg5m6uelzajjmforvt24",
         "meta": null,
         "name": null,
         "origins": null
@@ -4598,11 +4341,23 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknrwgm2tgnzxgm",
+      "requestid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
       "status": "queued",
-      "created": "2022-06-20T17:45:29.09+00:00",
+      "created": "2022-06-21T20:22:17.52+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrwgm2tgnzxgm",
+        "cid": "bafkreidwuvllrn3n475laos6xtfjtusemkvswdoi6e65ahgtnlnxhrtj6m",
+        "meta": null,
+        "name": "bd0b9ea2-584c-4470-8637-d5b3e3c2b14f",
+        "origins": null
+      },
+      "delegates": []
+    },
+    {
+      "requestid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
+      "status": "queued",
+      "created": "2022-06-21T20:22:14.451+00:00",
+      "pin": {
+        "cid": "bafkreigr6fqk5r4cwf7nqf25nc7e7xelo4yhltfcdlteo6vm7bmngxds7e",
         "meta": null,
         "name": null,
         "origins": null
@@ -4610,23 +4365,11 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "baeaaadbxgawdknrvg43tcmjwha",
+      "requestid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
       "status": "queued",
-      "created": "2022-06-20T17:45:27.499+00:00",
+      "created": "2022-06-21T20:22:07.064+00:00",
       "pin": {
-        "cid": "baeaaadbxgawdknrvg43tcmjwha",
-        "meta": null,
-        "name": null,
-        "origins": null
-      },
-      "delegates": []
-    },
-    {
-      "requestid": "baeaaadbxgawdknrtheytonjvgi",
-      "status": "queued",
-      "created": "2022-06-20T17:45:26.123+00:00",
-      "pin": {
-        "cid": "baeaaadbxgawdknrtheytonjvgi",
+        "cid": "bafkreie227cryya2d457udiefg4eey5tls5a2ishjns4ygqpf4gzfjat64",
         "meta": null,
         "name": null,
         "origins": null
