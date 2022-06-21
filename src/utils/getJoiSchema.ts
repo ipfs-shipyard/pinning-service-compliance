@@ -61,6 +61,13 @@ const modifySchema = (schemaName: keyof PinningSpecJoiSchema, schema: JoiSchema)
 
       break
     }
+    case 'PinResults': {
+      const namePath = ['results', 'pin', 'name']
+      const nameSchema = getInnerSchema(schema, namePath)
+      setInnerSchema(schema, namePath, nameSchema.allow(null))
+
+      break
+    }
     default: {
       break
     }
