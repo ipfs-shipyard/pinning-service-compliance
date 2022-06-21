@@ -35,8 +35,18 @@ jobs:
       - uses: ipfs/aegir/actions/cache-node-modules@master
       - run: npm run --if-present build
 
+  # see https://docs.github.com/en/actions/using-workflows/reusing-workflows
+  run_reports:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - uses: ./.github/workflows/build-and-publish-reports.yml
+        with:
+          secrets: inherit
+
   release:
-    needs: [check, build]
+    needs: [check, build, run_reports]
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main' # with #262 - 'refs/heads/${{{ github.default_branch }}}'
     steps:
