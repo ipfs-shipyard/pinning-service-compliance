@@ -1,14 +1,16 @@
-import type { NodeFetch } from '@ipfs-shipyard/pinning-service-client'
+import type { NodeFetch, Pin } from '@ipfs-shipyard/pinning-service-client'
 import type { Response } from 'node-fetch'
 
 import { waitForDate } from '../utils/waitForDate.js'
-import type { ComplianceCheckDetailsCallbackArg } from '../types.js'
+import type { ComplianceCheckDetailsCallbackArg, ServiceAndTokenPair } from '../types.js'
 import { logger } from '../utils/logs.js'
+import { getPinTracker } from '../utils/pinTracker.js'
 
 interface RequestResponseLoggerOptions {
   finalCb?: (details: ComplianceCheckDetailsCallbackArg) => void | Promise<void>
   preCb?: (context: NodeFetch.RequestContext) => void | Promise<void>
   postCb?: (context: NodeFetch.ResponseContext) => void | Promise<void>
+  pair: ServiceAndTokenPair
 }
 
 type RateLimitKey = string
@@ -26,8 +28,15 @@ const getRateLimitKeyFromContext = (context: NodeFetch.ResponseContext | NodeFet
   return key
 }
 
+const isPostMethod = (context: NodeFetch.RequestContext) => {
+  if (context.init.method === 'POST' || /^POST/.test(getRateLimitKeyFromContext(context))) {
+    return true
+  }
+  return false
+}
+
 const rateLimitHandlers: Map<RateLimitKey, Array<Promise<void>>> = new Map()
-const requestResponseLogger: (opts: RequestResponseLoggerOptions) => NodeFetch.Middleware = ({ preCb, postCb, finalCb }) => {
+const requestResponseLogger: (opts: RequestResponseLoggerOptions) => NodeFetch.Middleware = ({ preCb, postCb, finalCb, pair }) => {
   return ({
     pre: async (context) => {
       logger.debug('In middleware.pre')
@@ -38,6 +47,28 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => NodeFetch.M
       }
 
       const rateLimitKey = getRateLimitKeyFromContext(context)
+
+      if (isPostMethod(context)) {
+        if (context.init.body == null) {
+          throw new Error('POST contains empty body')
+        }
+        const pinTracker = await getPinTracker(pair)
+        try {
+          const createdPin: Pin = JSON.parse(String(context.init.body))
+          const { cid: createdPinCID } = createdPin
+          context.init.body = JSON.stringify({
+            ...createdPin,
+            meta: {
+              ...createdPin.meta,
+              createdBy: process.env.npm_package_name
+            }
+          })
+          pinTracker.add(createdPinCID)
+        } catch (err) {
+          logger.error('Could not parse body to obtain CID for created PIN')
+          throw err
+        }
+      }
 
       if (rateLimitHandlers.has(rateLimitKey)) {
         const promises = rateLimitHandlers.get(rateLimitKey) as Array<Promise<void>>

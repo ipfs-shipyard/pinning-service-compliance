@@ -8,6 +8,7 @@ import { serviceAndToken } from './cli/options/index.js'
 import { writeHeaders } from './output/reporting.js'
 import type { ServiceAndTokenPair } from './types.js'
 import { logger } from './utils/logs.js'
+import { getPinTracker } from './utils/pinTracker.js'
 import { globalReport } from './utils/report.js'
 
 const validatePinningService = async (pair: ServiceAndTokenPair) => {
@@ -29,10 +30,12 @@ const main = async () => {
   const argv = await cli.option('serviceAndToken', { require: true, ...serviceAndToken }).argv
 
   for await (const serviceAndToken of argv.serviceAndToken) {
-    const [service, key] = serviceAndToken
-
     try {
-      await validatePinningService([service, key])
+      /**
+       * Ensure the pinTracker can get the initial count of pins before we start
+       */
+      await getPinTracker(serviceAndToken)
+      await validatePinningService(serviceAndToken)
     } catch (err) {
       logger.error('could not validate pinning service')
       logger.error(err)
