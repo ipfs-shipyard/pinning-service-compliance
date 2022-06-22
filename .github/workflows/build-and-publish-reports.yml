@@ -1,7 +1,7 @@
 name: Build and publish compliance reports
 on:
   # This workflow should be required for 'test & maybe release' to succeed
-  # see https://docs.github.com/en/actions/using-workflows/reusing-workflows
+  # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow
   workflow_call:
 
   workflow_dispatch:
