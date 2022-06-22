@@ -3,7 +3,6 @@ on:
   # This workflow should be required for 'test & maybe release' to succeed
   # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow
   workflow_call:
-    secrets:
 
   workflow_dispatch:
     inputs:
