@@ -27,8 +27,6 @@ jobs:
 
   build:
     uses: ./.github/workflows/build-all-platforms.yml
-    with:
-      secrets: inherit
 
   check-pinata-compliance:
     runs-on: ubuntu-latest
