@@ -4,22 +4,6 @@ on:
   # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow
   workflow_call:
     secrets:
-      PINATA_API_ENDPOINT:
-        required: true
-      PINATA_API_TOKEN:
-        required: true
-      ESTUARY_API_ENDPOINT:
-        required: true
-      ESTUARY_API_TOKEN:
-        required: true
-      NFT_API_ENDPOINT:
-        required: true
-      NFT_API_TOKEN:
-        required: true
-      WEB3_API_ENDPOINT:
-        required: true
-      WEB3_API_TOKEN:
-        required: true
 
   workflow_dispatch:
     inputs:
