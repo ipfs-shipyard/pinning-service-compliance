@@ -17,11 +17,6 @@ on:
 
 jobs:
 
-  build-reports:
-    uses: ./.github/workflows/build-reports.yml
-    with:
-      secrets: inherit
-
   # Deploy to gh pages branch
   push-reports-to-gh-pages:
     runs-on: ubuntu-latest

@@ -15,19 +15,7 @@ on:
 
 jobs:
 
-  build:
-    uses: ./.github/workflows/build-all-platforms.yml
-
-  # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow
-  build_reports:
-    needs: [build]
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    uses: ./.github/workflows/build-reports.yml
-    with:
-      secrets: inherit
-
   release:
-    needs: [build, build_reports]
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main' # with #262 - 'refs/heads/${{{ github.default_branch }}}'
     steps:

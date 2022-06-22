@@ -12,15 +12,23 @@ jobs:
   build:
     uses: ./.github/workflows/build-all-platforms.yml
 
+  release:
+    needs: [build]
+    uses: ./.github/workflows/js-test-and-release.yml
+    with:
+      secrets: inherit
+
   # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow
   build_reports:
-    needs: [build]
+    name: Build Compliance Reports
     uses: ./.github/workflows/build-reports.yml
     with:
       secrets: inherit
 
-  release:
-    needs: [build, build_reports]
-    uses: ./.github/workflows/js-test-and-release.yml
+  publish_reports:
+    name: Publish Compliance Reports
+    needs: [build_reports]
+    uses: ./.github/workflows/publish-reports.yml
     with:
       secrets: inherit
+
