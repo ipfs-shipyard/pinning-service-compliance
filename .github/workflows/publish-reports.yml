@@ -3,6 +3,9 @@ on:
 
   # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow
   workflow_call:
+    secrets:
+      GITHUB_TOKEN:
+        required: true
   workflow_dispatch:
     inputs:
       type:
