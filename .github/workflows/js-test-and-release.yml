@@ -22,28 +22,17 @@ jobs:
 
   build:
     needs: check
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [windows-latest, ubuntu-latest, macos-latest]
-      fail-fast: false
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: lts/*
-      - uses: ipfs/aegir/actions/cache-node-modules@master
-      - run: npm run --if-present build
+    uses: ./.github/workflows/build-all-platforms.yml
+    with:
+      secrets: inherit
 
-  # see https://docs.github.com/en/actions/using-workflows/reusing-workflows
+  # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow
   run_reports:
     needs: build
-    runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    steps:
-      - uses: ./.github/workflows/build-and-publish-reports.yml
-        with:
-          secrets: inherit
+    uses: ./.github/workflows/build-and-publish-reports.yml
+    with:
+      secrets: inherit
 
   release:
     needs: [check, build, run_reports]
