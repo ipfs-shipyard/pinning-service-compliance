@@ -1,0 +1,19 @@
+# https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#changing-the-languages-that-are-analyzed
+name: On every Saturday
+
+on:
+  schedule:
+    - cron: "0 0 * * 6" # Run at 00:00 on every Saturday
+
+jobs:
+  # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow
+  build_reports:
+    name: Build Compliance Reports
+    uses: ./.github/workflows/build-reports.yml
+    secrets: inherit
+
+  publish_reports:
+    name: Publish Compliance Reports
+    needs: [build_reports]
+    uses: ./.github/workflows/publish-reports.yml
+    secrets: inherit

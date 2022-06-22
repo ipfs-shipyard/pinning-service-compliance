@@ -1,0 +1,31 @@
+name: On push to main branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  analyze:
+    uses: ./.github/workflows/codeql-analysis.yml
+
+  build:
+    uses: ./.github/workflows/build-all-platforms.yml
+
+  release:
+    needs: [build]
+    uses: ./.github/workflows/js-test-and-release.yml
+    secrets: inherit
+
+  # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow
+  build_reports:
+    name: Build Compliance Reports
+    uses: ./.github/workflows/build-reports.yml
+    secrets: inherit
+
+  publish_reports:
+    name: Publish Compliance Reports
+    needs: [build_reports]
+    uses: ./.github/workflows/publish-reports.yml
+    secrets: inherit
+

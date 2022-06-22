@@ -2,14 +2,18 @@
 name: "CodeQL"
 
 on:
+  workflow_call:
   workflow_dispatch:
-  push:
-    branches: [ main ]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ main ]
-  schedule:
-    - cron: '30 12 * * 2'
+    inputs:
+      type:
+        description: 'Emulate either schedule, push, or pull_request'
+        required: true
+        default: 'schedule'
+        type: choice
+        options:
+        - schedule
+        - push
+        - pull_request
 
 jobs:
   analyze:
