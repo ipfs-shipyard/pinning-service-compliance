@@ -1,0 +1,11 @@
+# https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#changing-the-languages-that-are-analyzed
+name: On every Tuesday
+
+on:
+  schedule:
+    - cron: '30 12 * * 2' # Run at 12:30 on every Tuesday
+
+jobs:
+  analyze:
+    name: Analyze
+    uses: ./.github/workflows/codeql-analysis.yml

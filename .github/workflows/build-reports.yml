@@ -1,4 +1,4 @@
-name: Build and publish compliance reports
+name: Build compliance reports
 on:
   # This workflow should be required for 'test & maybe release' to succeed
   # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow
@@ -15,14 +15,7 @@ on:
         - schedule
         - push
         - pull_request
-  schedule:
-    - cron: "0 0 * * 6" # Run at 00:00 on every saturday
-  push:
-    branches:
-      - master
-      - main
-  pull_request:
-    branches: [ main ]
+
 jobs:
 
   build:
@@ -115,43 +108,3 @@ jobs:
         with:
           name: web3-report
           path: docs/api.web3.storage.md
-
-  # Deploy to gh pages branch
-
-  ## Cron jobs
-  deploy-from-schedule:
-    if: success() && (github.event.schedule != null || github.event.pusher != null || github.event.inputs.type == 'schedule' || github.event.inputs.type == 'push')
-    runs-on: ubuntu-latest
-    needs: [check-pinata-compliance, check-estuary-compliance, check-nft-dot-storage-compliance, check-web3-dot-storage-compliance]
-    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
-    steps:
-      - name: Reports Cache
-        uses: actions/cache@v3
-        with:
-          path: docs
-          key: ${{ github.sha }}-pinata
-      - name: Reports Cache
-        uses: actions/cache@v3
-        with:
-          path: docs
-          key: ${{ github.sha }}-estuary
-      - name: Reports Cache
-        uses: actions/cache@v3
-        with:
-          path: docs
-          key: ${{ github.sha }}-nft
-      - name: Reports Cache
-        uses: actions/cache@v3
-        with:
-          path: docs
-          key: ${{ github.sha }}-web3
-      - name: Scheduled deployment
-        uses: s0/git-publish-subdir-action@399aab378450f99b7de6767f62b0d1dbfcb58b53
-        env:
-          REPO: self
-          BRANCH: gh-pages
-          FOLDER: docs
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SQUASH_HISTORY: false
-          MESSAGE: "Update published reports with changes from {sha} with message:\n{msg}"
-          SKIP_EMPTY_COMMITS: false

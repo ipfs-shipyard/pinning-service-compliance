@@ -1,0 +1,26 @@
+name: On PR to main branch
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+
+  analyze:
+    uses: ./.github/workflows/codeql-analysis.yml
+
+  build:
+    uses: ./.github/workflows/build-all-platforms.yml
+
+  # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow
+  build_reports:
+    needs: [build]
+    uses: ./.github/workflows/build-reports.yml
+    with:
+      secrets: inherit
+
+  automerge:
+    needs: [build_reports, build]
+    uses: ./.github/workflows/automerge.yml
+    with:
+      secrets: inherit

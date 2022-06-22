@@ -1,0 +1,13 @@
+# https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#changing-the-languages-that-are-analyzed
+name: On every Saturday
+
+on:
+  schedule:
+    - cron: "0 0 * * 6" # Run at 00:00 on every Saturday
+
+jobs:
+  publish_reports:
+    name: Publish Compliance Reports
+    uses: ./.github/workflows/publish-reports.yml
+    with:
+      secrets: inherit
