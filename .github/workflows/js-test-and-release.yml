@@ -2,8 +2,6 @@ name: test & maybe release
 on:
   workflow_call:
     secrets:
-      GITHUB_TOKEN:
-        required: true
       NPM_TOKEN:
         required: true
       DOCKER_TOKEN:
