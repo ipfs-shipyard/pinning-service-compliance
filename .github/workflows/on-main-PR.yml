@@ -16,11 +16,9 @@ jobs:
   build_reports:
     needs: [build]
     uses: ./.github/workflows/build-reports.yml
-    with:
-      secrets: inherit
+    secrets: inherit
 
   automerge:
     needs: [build_reports, build]
     uses: ./.github/workflows/automerge.yml
-    with:
-      secrets: inherit
+    secrets: inherit

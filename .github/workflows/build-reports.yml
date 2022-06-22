@@ -3,23 +3,6 @@ on:
   # This workflow should be required for 'test & maybe release' to succeed
   # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow
   workflow_call:
-    secrets:
-      PINATA_API_ENDPOINT:
-        required: false
-      PINATA_API_TOKEN:
-        required: false
-      ESTUARY_API_ENDPOINT:
-        required: false
-      ESTUARY_API_TOKEN:
-        required: false
-      NFT_API_ENDPOINT:
-        required: false
-      NFT_API_TOKEN:
-        required: false
-      WEB3_API_ENDPOINT:
-        required: false
-      WEB3_API_TOKEN:
-        required: false
 
   workflow_dispatch:
     inputs:

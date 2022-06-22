@@ -10,12 +10,10 @@ jobs:
   build_reports:
     name: Build Compliance Reports
     uses: ./.github/workflows/build-reports.yml
-    with:
-      secrets: inherit
+    secrets: inherit
 
   publish_reports:
     name: Publish Compliance Reports
     needs: [build_reports]
     uses: ./.github/workflows/publish-reports.yml
-    with:
-      secrets: inherit
+    secrets: inherit
