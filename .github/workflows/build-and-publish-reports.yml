@@ -26,7 +26,6 @@ on:
 jobs:
 
   build:
-    needs: check
     uses: ./.github/workflows/build-all-platforms.yml
     with:
       secrets: inherit
