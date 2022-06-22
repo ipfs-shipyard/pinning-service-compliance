@@ -1,4 +1,4 @@
-name: Build and publish compliance reports
+name: Build all platforms
 on:
   # This workflow should be required for 'test & maybe release' to succeed
   # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow
