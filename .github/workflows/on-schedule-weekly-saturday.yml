@@ -2,6 +2,7 @@
 name: On every Saturday
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * 6" # Run at 00:00 on every Saturday
 
