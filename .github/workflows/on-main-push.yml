@@ -40,5 +40,5 @@ jobs:
     uses: ./.github/workflows/publish-reports.yml
     secrets: inherit
     with:
-      type: ${{ github.event.inputs.type }}
+      type: ${{ github.event.inputs.type || github.event_name }}
 
