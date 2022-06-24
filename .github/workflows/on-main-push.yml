@@ -4,6 +4,17 @@ on:
     branches:
       - main
 
+  workflow_dispatch:
+    inputs:
+      type:
+        description: 'Emulate a push manually: Only do this if semantic-release fails!'
+        required: false
+        default: 'nothing'
+        type: choice
+        options:
+        - push
+        - nothing
+
 jobs:
 
   analyze:
@@ -28,4 +39,6 @@ jobs:
     needs: [build_reports]
     uses: ./.github/workflows/publish-reports.yml
     secrets: inherit
+    with:
+      type: ${{ github.event.inputs.type }}
 
