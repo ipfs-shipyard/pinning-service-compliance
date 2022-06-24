@@ -5,6 +5,8 @@ class Report {
   apiCallCount = 0
   totalExpectationsCount = 0
   runExpectationsCallCount = 0
+  failed = 0
+  passed = 0
 
   incrementApiCallsCount () {
     this.apiCallCount++
@@ -16,6 +18,14 @@ class Report {
 
   incrementRunExpectationsCallCount () {
     this.runExpectationsCallCount++
+  }
+
+  incrementFailedExpectationsCount () {
+    this.failed++
+  }
+
+  incrementPassedExpectationsCount () {
+    this.passed++
   }
 
   toString () {

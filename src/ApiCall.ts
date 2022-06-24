@@ -222,6 +222,14 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
       consoleLogger.error(`Could not add details of ApiCall '${this.title}' to report`, err)
     }
 
+    if (!hasParent) {
+      if (this.successful) {
+        globalReport.incrementPassedExpectationsCount()
+      } else {
+        globalReport.incrementFailedExpectationsCount()
+      }
+    }
+
     return this
   }
 
