@@ -2,7 +2,6 @@
 name: On every Tuesday
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: '30 12 * * 2' # Run at 12:30 on every Tuesday
 

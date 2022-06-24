@@ -3,13 +3,6 @@ on:
 
   # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow
   workflow_call:
-    inputs:
-      type:
-        description: 'Emulate a push manually: Only do this if semantic-release fails!'
-        required: false
-        default: 'nothing'
-        type: string
-
   workflow_dispatch:
     inputs:
       type:
