@@ -6,6 +6,7 @@ import { getAllPins, checkEmptyBearerToken, checkInvalidBearerToken, addPin, del
 import { cli } from './cli/index.js'
 import { serviceAndToken } from './cli/options/index.js'
 import { writeHeaders } from './output/reporting.js'
+import { writeJsonResults } from './output/writeJsonResults.js'
 import type { ServiceAndTokenPair } from './types.js'
 import { logger } from './utils/logs.js'
 import { getPinTracker } from './utils/pinTracker.js'
@@ -38,6 +39,11 @@ const main = async () => {
       await validatePinningService(serviceAndToken)
     } catch (err) {
       logger.error('could not validate pinning service')
+      logger.error(err)
+    }
+    try {
+      await writeJsonResults(serviceAndToken)
+    } catch (err) {
       logger.error(err)
     }
   }
