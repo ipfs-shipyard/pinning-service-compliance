@@ -1,9 +1,9 @@
 
 # https://api.pinata.cloud/psa compliance:
 
-Execution Date: 2022-06-25T01:55:55.931Z
+Execution Date: 2022-06-27T16:25:00.742Z
 
-Revision: [44f9034](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/44f9034)
+Revision: [ff47a19](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/ff47a19)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/api.pinata.cloud.md)
 
@@ -13,7 +13,7 @@ Revision: [44f9034](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   🟢 [Request with invalid token](#request-with-invalid-token----success)
 
-  🟢 [Pins post of CID 'bafkreieptutvadsy2s7cfz5dt3vwd3jpkyusjsalfciuua4fl2ah4hpbpi'](#pins-post-of-cid-bafkreieptutvadsy2s7cfz5dt3vwd3jpkyusjsalfciuua4fl2ah4hpbpi----success)
+  🟢 [Pins post of CID 'bafkreiazoav5yg5wdenl66bgdfrmpknoh762d43er4gylgntza6dhrll5q'](#pins-post-of-cid-bafkreiazoav5yg5wdenl66bgdfrmpknoh762d43er4gylgntza6dhrll5q----success)
 
   ❌ [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----failed)
 
@@ -21,7 +21,7 @@ Revision: [44f9034](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   🟢 [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----success)
 
-  ❌ [Can create a pin with name='f047bcc5-7223-463b-bcee-b75896c22fc6'](#can-create-a-pin-with-namef047bcc5-7223-463b-bcee-b75896c22fc6----failed)
+  ❌ [Can create a pin with name='9b038233-ff93-443c-9946-1fef9527e9ec'](#can-create-a-pin-with-name9b038233-ff93-443c-9946-1fef9527e9ec----failed)
 
   ❌ [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----failed)
 
@@ -70,12 +70,12 @@ GET https://api.pinata.cloud/psa/pins
   "connection": "close",
   "content-length": "117",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:53:50 GMT",
+  "date": "Mon, 27 Jun 2022 16:22:54 GMT",
   "etag": "W/\"75-8hWiVluTmqi8Bp2+E+MmsFL38tY\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
-  "x-request-id": "9482f0d08ae3b6b8d254487723e892fc"
+  "x-request-id": "3d0ca49e99ddc356f856e482f0733c16"
 }
 ```
 ##### Body
@@ -146,12 +146,12 @@ GET https://api.pinata.cloud/psa/pins
   "connection": "close",
   "content-length": "82",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:53:51 GMT",
+  "date": "Mon, 27 Jun 2022 16:22:55 GMT",
   "etag": "W/\"52-hDmJB39hiWxMgXnl95p1Dk5Zk6Q\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
-  "x-request-id": "f5b0b3e068c2618cac4fe9a27b799890"
+  "x-request-id": "0b9d7dd617ba533846683c9757cfbb48"
 }
 ```
 ##### Body
@@ -177,7 +177,7 @@ GET https://api.pinata.cloud/psa/pins
 ```json
 null
 ```
-## Pins post of CID 'bafkreieptutvadsy2s7cfz5dt3vwd3jpkyusjsalfciuua4fl2ah4hpbpi' - 🟢 SUCCESS
+## Pins post of CID 'bafkreiazoav5yg5wdenl66bgdfrmpknoh762d43er4gylgntza6dhrll5q' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -204,7 +204,7 @@ POST https://api.pinata.cloud/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreieptutvadsy2s7cfz5dt3vwd3jpkyusjsalfciuua4fl2ah4hpbpi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiazoav5yg5wdenl66bgdfrmpknoh762d43er4gylgntza6dhrll5q","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -216,26 +216,26 @@ POST https://api.pinata.cloud/psa/pins
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "402",
+  "content-length": "403",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:53:52 GMT",
-  "etag": "W/\"192-x/BsVKMlQFNMNclbyq1zl20dZCg\"",
+  "date": "Mon, 27 Jun 2022 16:22:56 GMT",
+  "etag": "W/\"193-5WG01R3jRvk/M1yToyIv9nbNCcQ\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
-  "x-request-id": "274bbc368606409a3bac1f26c59a4c63"
+  "x-request-id": "da1e4d50dbadebfcbccfe5769d457c25"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "e918f9f8-7922-4d57-8782-f48c20cfd0b5",
-  "created": "2022-06-25T01:53:52.374Z",
+  "requestid": "139c896a-5326-4ceb-b61c-527e7f6517d4",
+  "created": "2022-06-27T16:22:56.725Z",
   "delegates": [
-    "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
+    "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
   ],
   "pin": {
-    "cid": "bafkreieptutvadsy2s7cfz5dt3vwd3jpkyusjsalfciuua4fl2ah4hpbpi",
+    "cid": "bafkreiazoav5yg5wdenl66bgdfrmpknoh762d43er4gylgntza6dhrll5q",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -251,13 +251,13 @@ POST https://api.pinata.cloud/psa/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "e918f9f8-7922-4d57-8782-f48c20cfd0b5",
-  "created": "2022-06-25T01:53:52.374Z",
+  "requestid": "139c896a-5326-4ceb-b61c-527e7f6517d4",
+  "created": "2022-06-27T16:22:56.725Z",
   "delegates": [
-    "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
+    "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
   ],
   "pin": {
-    "cid": "bafkreieptutvadsy2s7cfz5dt3vwd3jpkyusjsalfciuua4fl2ah4hpbpi",
+    "cid": "bafkreiazoav5yg5wdenl66bgdfrmpknoh762d43er4gylgntza6dhrll5q",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -272,18 +272,18 @@ POST https://api.pinata.cloud/psa/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "e918f9f8-7922-4d57-8782-f48c20cfd0b5",
+  "requestid": "139c896a-5326-4ceb-b61c-527e7f6517d4",
   "status": "queued",
-  "created": "2022-06-25T01:53:52.374Z",
+  "created": "2022-06-27T16:22:56.725Z",
   "pin": {
-    "cid": "bafkreieptutvadsy2s7cfz5dt3vwd3jpkyusjsalfciuua4fl2ah4hpbpi",
+    "cid": "bafkreiazoav5yg5wdenl66bgdfrmpknoh762d43er4gylgntza6dhrll5q",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
   },
   "delegates": [
-    "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
+    "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
   ],
   "info": {
     "pinata_pinjob_status": "prechecking"
@@ -318,7 +318,7 @@ POST https://api.pinata.cloud/psa/pins
 
 #### Request
 ```
-DELETE https://api.pinata.cloud/psa/pins/07a112fc-cb68-4f05-8d54-0f85370e0a88
+DELETE https://api.pinata.cloud/psa/pins/775c06a8-d4d0-4d9b-9533-f7283d7a5c9a
 ```
 ##### Headers
 ```json
@@ -342,12 +342,12 @@ DELETE https://api.pinata.cloud/psa/pins/07a112fc-cb68-4f05-8d54-0f85370e0a88
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:53:54 GMT",
+  "date": "Mon, 27 Jun 2022 16:22:58 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
-  "x-request-id": "2f97e4ddacd87bbde44f0abb2380b81e"
+  "x-request-id": "c2366ead2b04fa2bee900392e9e605ca"
 }
 ```
 ##### Body
@@ -406,7 +406,7 @@ POST https://api.pinata.cloud/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiemzkoslg45ragc7ucv5cthy2k2cngpt2qu7eyl4qvg6waad6po4a","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreibjnwmjou34x5b4wkllrap4ae3kkv2ziezcld3zv6tgkngx33abwi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -418,26 +418,26 @@ POST https://api.pinata.cloud/psa/pins
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "404",
+  "content-length": "403",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:53:53 GMT",
-  "etag": "W/\"194-8gbSfSN9jcdxlzfvrpbPxjjFs9k\"",
+  "date": "Mon, 27 Jun 2022 16:22:57 GMT",
+  "etag": "W/\"193-6qJjEtwKkjwj0c5n4jUQC6rT1sc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
-  "x-request-id": "4f0443c682f9f9ace85186364cf1fe31"
+  "x-request-id": "de7ea226e3343f1e783052d96b60e6df"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "07a112fc-cb68-4f05-8d54-0f85370e0a88",
-  "created": "2022-06-25T01:53:53.359Z",
+  "requestid": "775c06a8-d4d0-4d9b-9533-f7283d7a5c9a",
+  "created": "2022-06-27T16:22:57.679Z",
   "delegates": [
-    "/ip4/162.243.164.106/tcp/4001/p2p/QmUCCZxDfGxcFpSxKSWe5ckgvAGx5cboFxHCfVRrBhGSkK"
+    "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
   ],
   "pin": {
-    "cid": "bafkreiemzkoslg45ragc7ucv5cthy2k2cngpt2qu7eyl4qvg6waad6po4a",
+    "cid": "bafkreibjnwmjou34x5b4wkllrap4ae3kkv2ziezcld3zv6tgkngx33abwi",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -453,13 +453,13 @@ POST https://api.pinata.cloud/psa/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "07a112fc-cb68-4f05-8d54-0f85370e0a88",
-  "created": "2022-06-25T01:53:53.359Z",
+  "requestid": "775c06a8-d4d0-4d9b-9533-f7283d7a5c9a",
+  "created": "2022-06-27T16:22:57.679Z",
   "delegates": [
-    "/ip4/162.243.164.106/tcp/4001/p2p/QmUCCZxDfGxcFpSxKSWe5ckgvAGx5cboFxHCfVRrBhGSkK"
+    "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
   ],
   "pin": {
-    "cid": "bafkreiemzkoslg45ragc7ucv5cthy2k2cngpt2qu7eyl4qvg6waad6po4a",
+    "cid": "bafkreibjnwmjou34x5b4wkllrap4ae3kkv2ziezcld3zv6tgkngx33abwi",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -474,18 +474,18 @@ POST https://api.pinata.cloud/psa/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "07a112fc-cb68-4f05-8d54-0f85370e0a88",
+  "requestid": "775c06a8-d4d0-4d9b-9533-f7283d7a5c9a",
   "status": "queued",
-  "created": "2022-06-25T01:53:53.359Z",
+  "created": "2022-06-27T16:22:57.679Z",
   "pin": {
-    "cid": "bafkreiemzkoslg45ragc7ucv5cthy2k2cngpt2qu7eyl4qvg6waad6po4a",
+    "cid": "bafkreibjnwmjou34x5b4wkllrap4ae3kkv2ziezcld3zv6tgkngx33abwi",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
   },
   "delegates": [
-    "/ip4/162.243.164.106/tcp/4001/p2p/QmUCCZxDfGxcFpSxKSWe5ckgvAGx5cboFxHCfVRrBhGSkK"
+    "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
   ],
   "info": {
     "pinata_pinjob_status": "prechecking"
@@ -530,17 +530,17 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "4862",
+  "content-length": "4863",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:53:54 GMT",
-  "etag": "W/\"12fe-OwyoyKMLwp8F4IDZP8NkDvdxi5w\"",
+  "date": "Mon, 27 Jun 2022 16:22:58 GMT",
+  "etag": "W/\"12ff-BsC/vtgh0eiZP0ZqRyos/O1lUyI\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
   "x-ratelimit-limit": "5",
   "x-ratelimit-remaining": "3",
-  "x-ratelimit-reset": "1656122090",
-  "x-request-id": "039fa1f32e6b3957404c3c16b7f54bec"
+  "x-ratelimit-reset": "1656347035",
+  "x-request-id": "90e0535e3141f1397915bc3bfed287f7"
 }
 ```
 ##### Body
@@ -748,13 +748,13 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "status": "failed"
     },
     {
-      "requestid": "e918f9f8-7922-4d57-8782-f48c20cfd0b5",
-      "created": "2022-06-25T01:53:52.374Z",
+      "requestid": "139c896a-5326-4ceb-b61c-527e7f6517d4",
+      "created": "2022-06-27T16:22:56.725Z",
       "delegates": [
-        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
+        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
       ],
       "pin": {
-        "cid": "bafkreieptutvadsy2s7cfz5dt3vwd3jpkyusjsalfciuua4fl2ah4hpbpi",
+        "cid": "bafkreiazoav5yg5wdenl66bgdfrmpknoh762d43er4gylgntza6dhrll5q",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -974,13 +974,13 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "status": "failed"
     },
     {
-      "requestid": "e918f9f8-7922-4d57-8782-f48c20cfd0b5",
-      "created": "2022-06-25T01:53:52.374Z",
+      "requestid": "139c896a-5326-4ceb-b61c-527e7f6517d4",
+      "created": "2022-06-27T16:22:56.725Z",
       "delegates": [
-        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
+        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
       ],
       "pin": {
-        "cid": "bafkreieptutvadsy2s7cfz5dt3vwd3jpkyusjsalfciuua4fl2ah4hpbpi",
+        "cid": "bafkreiazoav5yg5wdenl66bgdfrmpknoh762d43er4gylgntza6dhrll5q",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1020,7 +1020,7 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 
 #### Request
 ```
-GET https://api.pinata.cloud/psa/pins/86d818f1-6a2a-4707-90f5-cf5d9060eda6
+GET https://api.pinata.cloud/psa/pins/a051f74a-e4c7-4b6e-9146-838497e75063
 ```
 ##### Headers
 ```json
@@ -1044,12 +1044,12 @@ GET https://api.pinata.cloud/psa/pins/86d818f1-6a2a-4707-90f5-cf5d9060eda6
   "connection": "close",
   "content-length": "123",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:53:57 GMT",
+  "date": "Mon, 27 Jun 2022 16:23:01 GMT",
   "etag": "W/\"7b-03qFhbIaF85nNkdBlgUb6TE8+WU\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
-  "x-request-id": "4a51fe3a1c8bc2bcfd842c4fedccc573"
+  "x-request-id": "a3547d5ccbee4307da9c16b0c061542a"
 }
 ```
 ##### Body
@@ -1089,7 +1089,7 @@ null
 
 #### Request
 ```
-GET https://api.pinata.cloud/psa/pins/b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc
+GET https://api.pinata.cloud/psa/pins/c896cdb9-c48f-4786-af36-c23f5a1c4dcf
 ```
 ##### Headers
 ```json
@@ -1111,26 +1111,26 @@ GET https://api.pinata.cloud/psa/pins/b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "404",
+  "content-length": "402",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:53:59 GMT",
-  "etag": "W/\"194-zOcN09PaFLePEm+Z7cCzyEPk7Jg\"",
+  "date": "Mon, 27 Jun 2022 16:23:02 GMT",
+  "etag": "W/\"192-EAwA1RlAxAycTv3b2CXHTAScrH0\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
-  "x-request-id": "a0f756c27d90a382ae46942c5ec04fee"
+  "x-request-id": "0473b17a2973e60d6ac9d6645e5b2a71"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc",
-  "created": "2022-06-25T01:53:56.546Z",
+  "requestid": "c896cdb9-c48f-4786-af36-c23f5a1c4dcf",
+  "created": "2022-06-27T16:23:00.817Z",
   "delegates": [
-    "/ip4/198.211.112.207/tcp/4001/p2p/QmbWRoGEz6g32uZ9xFWpf2xsiikyE5KNXoj3QPAULpW8vN"
+    "/ip4/159.65.235.60/tcp/4001/p2p/QmWa1rmPs6KrhxMQK8hfGSDnJ3gNjSRMeqCa9Z77Ljj8nn"
   ],
   "pin": {
-    "cid": "bafkreiapglvngogjm3iyha567uqzrs34jejbb2ipo7xvvsapwup45owgzy",
+    "cid": "bafkreigo37mzxkji3f3o6sk3rvedfku5f5lvjj2yekrua3ngopkzozldwa",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1146,13 +1146,13 @@ GET https://api.pinata.cloud/psa/pins/b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc",
-  "created": "2022-06-25T01:53:56.546Z",
+  "requestid": "c896cdb9-c48f-4786-af36-c23f5a1c4dcf",
+  "created": "2022-06-27T16:23:00.817Z",
   "delegates": [
-    "/ip4/198.211.112.207/tcp/4001/p2p/QmbWRoGEz6g32uZ9xFWpf2xsiikyE5KNXoj3QPAULpW8vN"
+    "/ip4/159.65.235.60/tcp/4001/p2p/QmWa1rmPs6KrhxMQK8hfGSDnJ3gNjSRMeqCa9Z77Ljj8nn"
   ],
   "pin": {
-    "cid": "bafkreiapglvngogjm3iyha567uqzrs34jejbb2ipo7xvvsapwup45owgzy",
+    "cid": "bafkreigo37mzxkji3f3o6sk3rvedfku5f5lvjj2yekrua3ngopkzozldwa",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1167,25 +1167,25 @@ GET https://api.pinata.cloud/psa/pins/b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc",
+  "requestid": "c896cdb9-c48f-4786-af36-c23f5a1c4dcf",
   "status": "queued",
-  "created": "2022-06-25T01:53:56.546Z",
+  "created": "2022-06-27T16:23:00.817Z",
   "pin": {
-    "cid": "bafkreiapglvngogjm3iyha567uqzrs34jejbb2ipo7xvvsapwup45owgzy",
+    "cid": "bafkreigo37mzxkji3f3o6sk3rvedfku5f5lvjj2yekrua3ngopkzozldwa",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
   },
   "delegates": [
-    "/ip4/198.211.112.207/tcp/4001/p2p/QmbWRoGEz6g32uZ9xFWpf2xsiikyE5KNXoj3QPAULpW8vN"
+    "/ip4/159.65.235.60/tcp/4001/p2p/QmWa1rmPs6KrhxMQK8hfGSDnJ3gNjSRMeqCa9Z77Ljj8nn"
   ],
   "info": {
     "pinata_pinjob_status": "prechecking"
   }
 }
 ```
-## Pin's with requestid '86d818f1-6a2a-4707-90f5-cf5d9060eda6' can have cid 'bafkreicliwmv5df3bc536fyarovue2ge5jrohqomfsvcgko3rk5xpijnyi' replaced with 'bafkreiapglvngogjm3iyha567uqzrs34jejbb2ipo7xvvsapwup45owgzy' - 🟢 SUCCESS
+## Pin's with requestid 'a051f74a-e4c7-4b6e-9146-838497e75063' can have cid 'bafkreienuborv2fqxhreoxsaromoclyiwgziiqer3tsefa74d6bbl6r4um' replaced with 'bafkreigo37mzxkji3f3o6sk3rvedfku5f5lvjj2yekrua3ngopkzozldwa' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1206,7 +1206,7 @@ GET https://api.pinata.cloud/psa/pins/b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc
 
 #### Request
 ```
-POST https://api.pinata.cloud/psa/pins/86d818f1-6a2a-4707-90f5-cf5d9060eda6
+POST https://api.pinata.cloud/psa/pins/a051f74a-e4c7-4b6e-9146-838497e75063
 ```
 ##### Headers
 ```json
@@ -1217,7 +1217,7 @@ POST https://api.pinata.cloud/psa/pins/86d818f1-6a2a-4707-90f5-cf5d9060eda6
 ```
 ##### Body
 ```json
-{"cid":"bafkreiapglvngogjm3iyha567uqzrs34jejbb2ipo7xvvsapwup45owgzy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigo37mzxkji3f3o6sk3rvedfku5f5lvjj2yekrua3ngopkzozldwa","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1229,26 +1229,26 @@ POST https://api.pinata.cloud/psa/pins/86d818f1-6a2a-4707-90f5-cf5d9060eda6
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "404",
+  "content-length": "402",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:53:56 GMT",
-  "etag": "W/\"194-zOcN09PaFLePEm+Z7cCzyEPk7Jg\"",
+  "date": "Mon, 27 Jun 2022 16:23:00 GMT",
+  "etag": "W/\"192-EAwA1RlAxAycTv3b2CXHTAScrH0\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
-  "x-request-id": "75b82232cd948490c288126bdcb67915"
+  "x-request-id": "81ff3b066ed8e20854e85d19fc856cce"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc",
-  "created": "2022-06-25T01:53:56.546Z",
+  "requestid": "c896cdb9-c48f-4786-af36-c23f5a1c4dcf",
+  "created": "2022-06-27T16:23:00.817Z",
   "delegates": [
-    "/ip4/198.211.112.207/tcp/4001/p2p/QmbWRoGEz6g32uZ9xFWpf2xsiikyE5KNXoj3QPAULpW8vN"
+    "/ip4/159.65.235.60/tcp/4001/p2p/QmWa1rmPs6KrhxMQK8hfGSDnJ3gNjSRMeqCa9Z77Ljj8nn"
   ],
   "pin": {
-    "cid": "bafkreiapglvngogjm3iyha567uqzrs34jejbb2ipo7xvvsapwup45owgzy",
+    "cid": "bafkreigo37mzxkji3f3o6sk3rvedfku5f5lvjj2yekrua3ngopkzozldwa",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1264,13 +1264,13 @@ POST https://api.pinata.cloud/psa/pins/86d818f1-6a2a-4707-90f5-cf5d9060eda6
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc",
-  "created": "2022-06-25T01:53:56.546Z",
+  "requestid": "c896cdb9-c48f-4786-af36-c23f5a1c4dcf",
+  "created": "2022-06-27T16:23:00.817Z",
   "delegates": [
-    "/ip4/198.211.112.207/tcp/4001/p2p/QmbWRoGEz6g32uZ9xFWpf2xsiikyE5KNXoj3QPAULpW8vN"
+    "/ip4/159.65.235.60/tcp/4001/p2p/QmWa1rmPs6KrhxMQK8hfGSDnJ3gNjSRMeqCa9Z77Ljj8nn"
   ],
   "pin": {
-    "cid": "bafkreiapglvngogjm3iyha567uqzrs34jejbb2ipo7xvvsapwup45owgzy",
+    "cid": "bafkreigo37mzxkji3f3o6sk3rvedfku5f5lvjj2yekrua3ngopkzozldwa",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1285,18 +1285,18 @@ POST https://api.pinata.cloud/psa/pins/86d818f1-6a2a-4707-90f5-cf5d9060eda6
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc",
+  "requestid": "c896cdb9-c48f-4786-af36-c23f5a1c4dcf",
   "status": "queued",
-  "created": "2022-06-25T01:53:56.546Z",
+  "created": "2022-06-27T16:23:00.817Z",
   "pin": {
-    "cid": "bafkreiapglvngogjm3iyha567uqzrs34jejbb2ipo7xvvsapwup45owgzy",
+    "cid": "bafkreigo37mzxkji3f3o6sk3rvedfku5f5lvjj2yekrua3ngopkzozldwa",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
   },
   "delegates": [
-    "/ip4/198.211.112.207/tcp/4001/p2p/QmbWRoGEz6g32uZ9xFWpf2xsiikyE5KNXoj3QPAULpW8vN"
+    "/ip4/159.65.235.60/tcp/4001/p2p/QmWa1rmPs6KrhxMQK8hfGSDnJ3gNjSRMeqCa9Z77Ljj8nn"
   ],
   "info": {
     "pinata_pinjob_status": "prechecking"
@@ -1309,7 +1309,7 @@ POST https://api.pinata.cloud/psa/pins/86d818f1-6a2a-4707-90f5-cf5d9060eda6
 
   🟢 Pin exists (success)
 
-  🟢 Could obtain requestid from new pin (86d818f1-6a2a-4707-90f5-cf5d9060eda6) (success)
+  🟢 Could obtain requestid from new pin (a051f74a-e4c7-4b6e-9146-838497e75063) (success)
 
   🟢 Response is ok (success)
 
@@ -1345,7 +1345,7 @@ POST https://api.pinata.cloud/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreicliwmv5df3bc536fyarovue2ge5jrohqomfsvcgko3rk5xpijnyi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreienuborv2fqxhreoxsaromoclyiwgziiqer3tsefa74d6bbl6r4um","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1357,26 +1357,26 @@ POST https://api.pinata.cloud/psa/pins
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "404",
+  "content-length": "402",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:53:55 GMT",
-  "etag": "W/\"194-vnUMazylApfNVXRJdkQgPparw1Y\"",
+  "date": "Mon, 27 Jun 2022 16:22:59 GMT",
+  "etag": "W/\"192-G01oxhyKAL4dTlKGuctNxM8k1ts\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
-  "x-request-id": "82ee41a357d8ac6520f296171aa9013b"
+  "x-request-id": "e4e7432b7c52d0881a4892b26a62d01f"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "86d818f1-6a2a-4707-90f5-cf5d9060eda6",
-  "created": "2022-06-25T01:53:55.556Z",
+  "requestid": "a051f74a-e4c7-4b6e-9146-838497e75063",
+  "created": "2022-06-27T16:22:59.894Z",
   "delegates": [
-    "/ip4/198.211.112.207/tcp/4001/p2p/QmbWRoGEz6g32uZ9xFWpf2xsiikyE5KNXoj3QPAULpW8vN"
+    "/ip4/159.65.235.60/tcp/4001/p2p/QmWa1rmPs6KrhxMQK8hfGSDnJ3gNjSRMeqCa9Z77Ljj8nn"
   ],
   "pin": {
-    "cid": "bafkreicliwmv5df3bc536fyarovue2ge5jrohqomfsvcgko3rk5xpijnyi",
+    "cid": "bafkreienuborv2fqxhreoxsaromoclyiwgziiqer3tsefa74d6bbl6r4um",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1392,13 +1392,13 @@ POST https://api.pinata.cloud/psa/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "86d818f1-6a2a-4707-90f5-cf5d9060eda6",
-  "created": "2022-06-25T01:53:55.556Z",
+  "requestid": "a051f74a-e4c7-4b6e-9146-838497e75063",
+  "created": "2022-06-27T16:22:59.894Z",
   "delegates": [
-    "/ip4/198.211.112.207/tcp/4001/p2p/QmbWRoGEz6g32uZ9xFWpf2xsiikyE5KNXoj3QPAULpW8vN"
+    "/ip4/159.65.235.60/tcp/4001/p2p/QmWa1rmPs6KrhxMQK8hfGSDnJ3gNjSRMeqCa9Z77Ljj8nn"
   ],
   "pin": {
-    "cid": "bafkreicliwmv5df3bc536fyarovue2ge5jrohqomfsvcgko3rk5xpijnyi",
+    "cid": "bafkreienuborv2fqxhreoxsaromoclyiwgziiqer3tsefa74d6bbl6r4um",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1413,25 +1413,25 @@ POST https://api.pinata.cloud/psa/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "86d818f1-6a2a-4707-90f5-cf5d9060eda6",
+  "requestid": "a051f74a-e4c7-4b6e-9146-838497e75063",
   "status": "queued",
-  "created": "2022-06-25T01:53:55.556Z",
+  "created": "2022-06-27T16:22:59.894Z",
   "pin": {
-    "cid": "bafkreicliwmv5df3bc536fyarovue2ge5jrohqomfsvcgko3rk5xpijnyi",
+    "cid": "bafkreienuborv2fqxhreoxsaromoclyiwgziiqer3tsefa74d6bbl6r4um",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
   },
   "delegates": [
-    "/ip4/198.211.112.207/tcp/4001/p2p/QmbWRoGEz6g32uZ9xFWpf2xsiikyE5KNXoj3QPAULpW8vN"
+    "/ip4/159.65.235.60/tcp/4001/p2p/QmWa1rmPs6KrhxMQK8hfGSDnJ3gNjSRMeqCa9Z77Ljj8nn"
   ],
   "info": {
     "pinata_pinjob_status": "prechecking"
   }
 }
 ```
-## Can retrieve pin with name 'f047bcc5-7223-463b-bcee-b75896c22fc6' via the 'exact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '9b038233-ff93-443c-9946-1fef9527e9ec' via the 'exact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (2/4 successful)
 
@@ -1451,7 +1451,7 @@ POST https://api.pinata.cloud/psa/pins
 
 #### Request
 ```
-GET https://api.pinata.cloud/psa/pins?name=f047bcc5-7223-463b-bcee-b75896c22fc6&match=exact
+GET https://api.pinata.cloud/psa/pins?name=9b038233-ff93-443c-9946-1fef9527e9ec&match=exact
 ```
 ##### Headers
 ```json
@@ -1475,15 +1475,15 @@ GET https://api.pinata.cloud/psa/pins?name=f047bcc5-7223-463b-bcee-b75896c22fc6&
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:54:02 GMT",
+  "date": "Mon, 27 Jun 2022 16:23:03 GMT",
   "etag": "W/\"18-sS5FLbfK694W6H4gsKxYsIoy1Pk\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
   "x-ratelimit-limit": "5",
   "x-ratelimit-remaining": "2",
-  "x-ratelimit-reset": "1656122090",
-  "x-request-id": "db2476645c7a9054435d87d3b7b01c8d"
+  "x-ratelimit-reset": "1656347035",
+  "x-request-id": "bddb313f8dd2173aa0c74bdca4a3e628"
 }
 ```
 ##### Body
@@ -1508,7 +1508,7 @@ GET https://api.pinata.cloud/psa/pins?name=f047bcc5-7223-463b-bcee-b75896c22fc6&
   "results": {}
 }
 ```
-## Can retrieve pin with name 'F047BCC5-7223-463B-BCEE-B75896C22FC6' via the 'iexact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '9B038233-FF93-443C-9946-1FEF9527E9EC' via the 'iexact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (2/4 successful)
 
@@ -1528,7 +1528,7 @@ GET https://api.pinata.cloud/psa/pins?name=f047bcc5-7223-463b-bcee-b75896c22fc6&
 
 #### Request
 ```
-GET https://api.pinata.cloud/psa/pins?name=F047BCC5-7223-463B-BCEE-B75896C22FC6&match=iexact
+GET https://api.pinata.cloud/psa/pins?name=9B038233-FF93-443C-9946-1FEF9527E9EC&match=iexact
 ```
 ##### Headers
 ```json
@@ -1552,15 +1552,15 @@ GET https://api.pinata.cloud/psa/pins?name=F047BCC5-7223-463B-BCEE-B75896C22FC6&
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:54:02 GMT",
+  "date": "Mon, 27 Jun 2022 16:23:04 GMT",
   "etag": "W/\"18-sS5FLbfK694W6H4gsKxYsIoy1Pk\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
   "x-ratelimit-limit": "5",
   "x-ratelimit-remaining": "1",
-  "x-ratelimit-reset": "1656122090",
-  "x-request-id": "76041e4e5af5602edf37a927ec3dc8b3"
+  "x-ratelimit-reset": "1656347035",
+  "x-request-id": "5e1b82d19e02973e87e512dbe1516d83"
 }
 ```
 ##### Body
@@ -1585,7 +1585,7 @@ GET https://api.pinata.cloud/psa/pins?name=F047BCC5-7223-463B-BCEE-B75896C22FC6&
   "results": {}
 }
 ```
-## Can retrieve pin with name '7223-463b-bcee-b75' via the 'partial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name 'ff93-443c-9946-1fe' via the 'partial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (2/4 successful)
 
@@ -1605,7 +1605,7 @@ GET https://api.pinata.cloud/psa/pins?name=F047BCC5-7223-463B-BCEE-B75896C22FC6&
 
 #### Request
 ```
-GET https://api.pinata.cloud/psa/pins?name=7223-463b-bcee-b75&match=partial
+GET https://api.pinata.cloud/psa/pins?name=ff93-443c-9946-1fe&match=partial
 ```
 ##### Headers
 ```json
@@ -1629,15 +1629,15 @@ GET https://api.pinata.cloud/psa/pins?name=7223-463b-bcee-b75&match=partial
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:54:03 GMT",
+  "date": "Mon, 27 Jun 2022 16:23:05 GMT",
   "etag": "W/\"18-sS5FLbfK694W6H4gsKxYsIoy1Pk\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
   "x-ratelimit-limit": "5",
   "x-ratelimit-remaining": "0",
-  "x-ratelimit-reset": "1656122090",
-  "x-request-id": "4be4297ed7aea8149d4e1e09095b71ca"
+  "x-ratelimit-reset": "1656347035",
+  "x-request-id": "a457375844ad59d5a25aceb297df1f85"
 }
 ```
 ##### Body
@@ -1662,7 +1662,7 @@ GET https://api.pinata.cloud/psa/pins?name=7223-463b-bcee-b75&match=partial
   "results": {}
 }
 ```
-## Can retrieve pin with name '7223-463B-BCEE-B75' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name 'FF93-443C-9946-1FE' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (2/4 successful)
 
@@ -1682,7 +1682,7 @@ GET https://api.pinata.cloud/psa/pins?name=7223-463b-bcee-b75&match=partial
 
 #### Request
 ```
-GET https://api.pinata.cloud/psa/pins?name=7223-463B-BCEE-B75&match=ipartial
+GET https://api.pinata.cloud/psa/pins?name=FF93-443C-9946-1FE&match=ipartial
 ```
 ##### Headers
 ```json
@@ -1706,15 +1706,15 @@ GET https://api.pinata.cloud/psa/pins?name=7223-463B-BCEE-B75&match=ipartial
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:54:52 GMT",
+  "date": "Mon, 27 Jun 2022 16:23:57 GMT",
   "etag": "W/\"18-sS5FLbfK694W6H4gsKxYsIoy1Pk\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
   "x-ratelimit-limit": "5",
   "x-ratelimit-remaining": "4",
-  "x-ratelimit-reset": "1656122153",
-  "x-request-id": "bc7f064348e7fe36b9d8247e9a67b97b"
+  "x-ratelimit-reset": "1656347098",
+  "x-request-id": "ae9cd60c6359cdcd86ad7e28eb8d5c2c"
 }
 ```
 ##### Body
@@ -1739,7 +1739,7 @@ GET https://api.pinata.cloud/psa/pins?name=7223-463B-BCEE-B75&match=ipartial
   "results": {}
 }
 ```
-## Can create a pin with name='f047bcc5-7223-463b-bcee-b75896c22fc6' - ❌ FAILED
+## Can create a pin with name='9b038233-ff93-443c-9946-1fef9527e9ec' - ❌ FAILED
 
 ### Expectations (11/19 successful)
 
@@ -1800,7 +1800,7 @@ POST https://api.pinata.cloud/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreicgqydhvhl2w3c6aadsbgjylijbjophqvm2qjclrsyhg2spkycliu","name":"f047bcc5-7223-463b-bcee-b75896c22fc6","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreifazwupemr2s6a5lhlut42bl7tqj6f7mj7wz3onxumtxtyajldcg4","name":"9b038233-ff93-443c-9946-1fef9527e9ec","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1812,31 +1812,31 @@ POST https://api.pinata.cloud/psa/pins
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "446",
+  "content-length": "448",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:54:00 GMT",
-  "etag": "W/\"1be-6Ds02zSBMKclvIKp4y86yVIBDKw\"",
+  "date": "Mon, 27 Jun 2022 16:23:03 GMT",
+  "etag": "W/\"1c0-vRZb4HAyLSyCzudTCDZwZkt9kTs\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
-  "x-request-id": "30f0a6d7696ac0804523d14bb767aadf"
+  "x-request-id": "cd3eba09d80545d166e8b5137909c2cc"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "22f58874-b270-48be-94cd-b0973fd5fa53",
-  "created": "2022-06-25T01:54:00.605Z",
+  "requestid": "051d0bfa-8f06-4ddd-978a-98fe0b19eb41",
+  "created": "2022-06-27T16:23:02.980Z",
   "delegates": [
-    "/ip4/64.227.8.22/tcp/4001/p2p/QmQh4NeikAQnxFC8hxZW3B6aVTKCjzwud9ArQnS9ZFdSEz"
+    "/ip4/142.93.60.197/tcp/4001/p2p/QmNZwVaiibfFEJLSkoSmWeWCAak38hV89jPTtyWXRH5mQP"
   ],
   "pin": {
-    "cid": "bafkreicgqydhvhl2w3c6aadsbgjylijbjophqvm2qjclrsyhg2spkycliu",
+    "cid": "bafkreifazwupemr2s6a5lhlut42bl7tqj6f7mj7wz3onxumtxtyajldcg4",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     },
-    "name": "f047bcc5-7223-463b-bcee-b75896c22fc6"
+    "name": "9b038233-ff93-443c-9946-1fef9527e9ec"
   },
   "info": {
     "pinata_pinjob_status": "prechecking"
@@ -1848,18 +1848,18 @@ POST https://api.pinata.cloud/psa/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "22f58874-b270-48be-94cd-b0973fd5fa53",
-  "created": "2022-06-25T01:54:00.605Z",
+  "requestid": "051d0bfa-8f06-4ddd-978a-98fe0b19eb41",
+  "created": "2022-06-27T16:23:02.980Z",
   "delegates": [
-    "/ip4/64.227.8.22/tcp/4001/p2p/QmQh4NeikAQnxFC8hxZW3B6aVTKCjzwud9ArQnS9ZFdSEz"
+    "/ip4/142.93.60.197/tcp/4001/p2p/QmNZwVaiibfFEJLSkoSmWeWCAak38hV89jPTtyWXRH5mQP"
   ],
   "pin": {
-    "cid": "bafkreicgqydhvhl2w3c6aadsbgjylijbjophqvm2qjclrsyhg2spkycliu",
+    "cid": "bafkreifazwupemr2s6a5lhlut42bl7tqj6f7mj7wz3onxumtxtyajldcg4",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     },
-    "name": "f047bcc5-7223-463b-bcee-b75896c22fc6"
+    "name": "9b038233-ff93-443c-9946-1fef9527e9ec"
   },
   "info": {
     "pinata_pinjob_status": "prechecking"
@@ -1870,26 +1870,26 @@ POST https://api.pinata.cloud/psa/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "22f58874-b270-48be-94cd-b0973fd5fa53",
+  "requestid": "051d0bfa-8f06-4ddd-978a-98fe0b19eb41",
   "status": "queued",
-  "created": "2022-06-25T01:54:00.605Z",
+  "created": "2022-06-27T16:23:02.980Z",
   "pin": {
-    "cid": "bafkreicgqydhvhl2w3c6aadsbgjylijbjophqvm2qjclrsyhg2spkycliu",
-    "name": "f047bcc5-7223-463b-bcee-b75896c22fc6",
+    "cid": "bafkreifazwupemr2s6a5lhlut42bl7tqj6f7mj7wz3onxumtxtyajldcg4",
+    "name": "9b038233-ff93-443c-9946-1fef9527e9ec",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
   },
   "delegates": [
-    "/ip4/64.227.8.22/tcp/4001/p2p/QmQh4NeikAQnxFC8hxZW3B6aVTKCjzwud9ArQnS9ZFdSEz"
+    "/ip4/142.93.60.197/tcp/4001/p2p/QmNZwVaiibfFEJLSkoSmWeWCAak38hV89jPTtyWXRH5mQP"
   ],
   "info": {
     "pinata_pinjob_status": "prechecking"
   }
 }
 ```
-## Can create new pin for testing pagination cid='bafkreibr4os7ag6jnffpuaotl2abrednoiricn5fd777icoypar3bvd4pi' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='bafkreiaesldbgottowukwqogxlex35muz3ksc5w5am33y5dgihlzgsj6ja' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1916,7 +1916,7 @@ POST https://api.pinata.cloud/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreibr4os7ag6jnffpuaotl2abrednoiricn5fd777icoypar3bvd4pi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiaesldbgottowukwqogxlex35muz3ksc5w5am33y5dgihlzgsj6ja","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1928,26 +1928,26 @@ POST https://api.pinata.cloud/psa/pins
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "403",
+  "content-length": "404",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:54:53 GMT",
-  "etag": "W/\"193-RkJZBTzVHJARaP74Y2zLm+WyFXE\"",
+  "date": "Mon, 27 Jun 2022 16:23:58 GMT",
+  "etag": "W/\"194-3MaXQmMTOAFO3PcvXe4VS0FjGjk\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
-  "x-request-id": "191939b0862a2de5234c5b3a26be7b27"
+  "x-request-id": "f534cb1d2a5d1b308bf06456b00eba45"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "3e0fd1f8-9aea-4a7a-813d-62123d28d7bc",
-  "created": "2022-06-25T01:54:53.622Z",
+  "requestid": "f6d75768-de2c-48e2-8863-548a276bb549",
+  "created": "2022-06-27T16:23:58.512Z",
   "delegates": [
-    "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+    "/ip4/162.243.164.106/tcp/4001/p2p/QmUCCZxDfGxcFpSxKSWe5ckgvAGx5cboFxHCfVRrBhGSkK"
   ],
   "pin": {
-    "cid": "bafkreibr4os7ag6jnffpuaotl2abrednoiricn5fd777icoypar3bvd4pi",
+    "cid": "bafkreiaesldbgottowukwqogxlex35muz3ksc5w5am33y5dgihlzgsj6ja",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1963,13 +1963,13 @@ POST https://api.pinata.cloud/psa/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "3e0fd1f8-9aea-4a7a-813d-62123d28d7bc",
-  "created": "2022-06-25T01:54:53.622Z",
+  "requestid": "f6d75768-de2c-48e2-8863-548a276bb549",
+  "created": "2022-06-27T16:23:58.512Z",
   "delegates": [
-    "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+    "/ip4/162.243.164.106/tcp/4001/p2p/QmUCCZxDfGxcFpSxKSWe5ckgvAGx5cboFxHCfVRrBhGSkK"
   ],
   "pin": {
-    "cid": "bafkreibr4os7ag6jnffpuaotl2abrednoiricn5fd777icoypar3bvd4pi",
+    "cid": "bafkreiaesldbgottowukwqogxlex35muz3ksc5w5am33y5dgihlzgsj6ja",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1984,18 +1984,18 @@ POST https://api.pinata.cloud/psa/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "3e0fd1f8-9aea-4a7a-813d-62123d28d7bc",
+  "requestid": "f6d75768-de2c-48e2-8863-548a276bb549",
   "status": "queued",
-  "created": "2022-06-25T01:54:53.622Z",
+  "created": "2022-06-27T16:23:58.512Z",
   "pin": {
-    "cid": "bafkreibr4os7ag6jnffpuaotl2abrednoiricn5fd777icoypar3bvd4pi",
+    "cid": "bafkreiaesldbgottowukwqogxlex35muz3ksc5w5am33y5dgihlzgsj6ja",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
   },
   "delegates": [
-    "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
+    "/ip4/162.243.164.106/tcp/4001/p2p/QmUCCZxDfGxcFpSxKSWe5ckgvAGx5cboFxHCfVRrBhGSkK"
   ],
   "info": {
     "pinata_pinjob_status": "prechecking"
@@ -2046,17 +2046,17 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "6112",
+  "content-length": "6114",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:54:54 GMT",
-  "etag": "W/\"17e0-R+sGKDvwdW5f3GnMMoCMp564WbU\"",
+  "date": "Mon, 27 Jun 2022 16:23:59 GMT",
+  "etag": "W/\"17e2-U4JaeSVkuepxxYNn1jUhaB4Hr6M\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
   "x-ratelimit-limit": "5",
   "x-ratelimit-remaining": "2",
-  "x-ratelimit-reset": "1656122153",
-  "x-request-id": "ac7886b1ac9e128348e62f6fd677f1f3"
+  "x-ratelimit-reset": "1656347098",
+  "x-request-id": "a1f2433e83ccd5f56fbd49b3dc9cc00f"
 }
 ```
 ##### Body
@@ -2264,68 +2264,68 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "status": "failed"
     },
     {
-      "requestid": "e918f9f8-7922-4d57-8782-f48c20cfd0b5",
-      "created": "2022-06-25T01:53:52.374Z",
-      "delegates": [
-        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
-      ],
-      "pin": {
-        "cid": "bafkreieptutvadsy2s7cfz5dt3vwd3jpkyusjsalfciuua4fl2ah4hpbpi",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "pinata_pinjob_status": "searching"
-      },
-      "status": "queued"
-    },
-    {
-      "requestid": "b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc",
-      "created": "2022-06-25T01:53:56.546Z",
-      "delegates": [
-        "/ip4/198.211.112.207/tcp/4001/p2p/QmbWRoGEz6g32uZ9xFWpf2xsiikyE5KNXoj3QPAULpW8vN"
-      ],
-      "pin": {
-        "cid": "bafkreiapglvngogjm3iyha567uqzrs34jejbb2ipo7xvvsapwup45owgzy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "pinata_pinjob_status": "searching"
-      },
-      "status": "queued"
-    },
-    {
-      "requestid": "22f58874-b270-48be-94cd-b0973fd5fa53",
-      "created": "2022-06-25T01:54:00.605Z",
-      "delegates": [
-        "/ip4/64.227.8.22/tcp/4001/p2p/QmQh4NeikAQnxFC8hxZW3B6aVTKCjzwud9ArQnS9ZFdSEz"
-      ],
-      "pin": {
-        "cid": "bafkreicgqydhvhl2w3c6aadsbgjylijbjophqvm2qjclrsyhg2spkycliu",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        },
-        "name": "f047bcc5-7223-463b-bcee-b75896c22fc6"
-      },
-      "info": {
-        "pinata_pinjob_status": "searching"
-      },
-      "status": "queued"
-    },
-    {
-      "requestid": "3e0fd1f8-9aea-4a7a-813d-62123d28d7bc",
-      "created": "2022-06-25T01:54:53.622Z",
+      "requestid": "139c896a-5326-4ceb-b61c-527e7f6517d4",
+      "created": "2022-06-27T16:22:56.725Z",
       "delegates": [
         "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
       ],
       "pin": {
-        "cid": "bafkreibr4os7ag6jnffpuaotl2abrednoiricn5fd777icoypar3bvd4pi",
+        "cid": "bafkreiazoav5yg5wdenl66bgdfrmpknoh762d43er4gylgntza6dhrll5q",
+        "origins": [],
+        "meta": {
+          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
+        }
+      },
+      "info": {
+        "pinata_pinjob_status": "searching"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "c896cdb9-c48f-4786-af36-c23f5a1c4dcf",
+      "created": "2022-06-27T16:23:00.817Z",
+      "delegates": [
+        "/ip4/159.65.235.60/tcp/4001/p2p/QmWa1rmPs6KrhxMQK8hfGSDnJ3gNjSRMeqCa9Z77Ljj8nn"
+      ],
+      "pin": {
+        "cid": "bafkreigo37mzxkji3f3o6sk3rvedfku5f5lvjj2yekrua3ngopkzozldwa",
+        "origins": [],
+        "meta": {
+          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
+        }
+      },
+      "info": {
+        "pinata_pinjob_status": "searching"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "051d0bfa-8f06-4ddd-978a-98fe0b19eb41",
+      "created": "2022-06-27T16:23:02.980Z",
+      "delegates": [
+        "/ip4/142.93.60.197/tcp/4001/p2p/QmNZwVaiibfFEJLSkoSmWeWCAak38hV89jPTtyWXRH5mQP"
+      ],
+      "pin": {
+        "cid": "bafkreifazwupemr2s6a5lhlut42bl7tqj6f7mj7wz3onxumtxtyajldcg4",
+        "origins": [],
+        "meta": {
+          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
+        },
+        "name": "9b038233-ff93-443c-9946-1fef9527e9ec"
+      },
+      "info": {
+        "pinata_pinjob_status": "searching"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "f6d75768-de2c-48e2-8863-548a276bb549",
+      "created": "2022-06-27T16:23:58.512Z",
+      "delegates": [
+        "/ip4/162.243.164.106/tcp/4001/p2p/QmUCCZxDfGxcFpSxKSWe5ckgvAGx5cboFxHCfVRrBhGSkK"
+      ],
+      "pin": {
+        "cid": "bafkreiaesldbgottowukwqogxlex35muz3ksc5w5am33y5dgihlzgsj6ja",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2545,68 +2545,68 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "status": "failed"
     },
     {
-      "requestid": "e918f9f8-7922-4d57-8782-f48c20cfd0b5",
-      "created": "2022-06-25T01:53:52.374Z",
-      "delegates": [
-        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
-      ],
-      "pin": {
-        "cid": "bafkreieptutvadsy2s7cfz5dt3vwd3jpkyusjsalfciuua4fl2ah4hpbpi",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "pinata_pinjob_status": "searching"
-      },
-      "status": "queued"
-    },
-    {
-      "requestid": "b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc",
-      "created": "2022-06-25T01:53:56.546Z",
-      "delegates": [
-        "/ip4/198.211.112.207/tcp/4001/p2p/QmbWRoGEz6g32uZ9xFWpf2xsiikyE5KNXoj3QPAULpW8vN"
-      ],
-      "pin": {
-        "cid": "bafkreiapglvngogjm3iyha567uqzrs34jejbb2ipo7xvvsapwup45owgzy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "pinata_pinjob_status": "searching"
-      },
-      "status": "queued"
-    },
-    {
-      "requestid": "22f58874-b270-48be-94cd-b0973fd5fa53",
-      "created": "2022-06-25T01:54:00.605Z",
-      "delegates": [
-        "/ip4/64.227.8.22/tcp/4001/p2p/QmQh4NeikAQnxFC8hxZW3B6aVTKCjzwud9ArQnS9ZFdSEz"
-      ],
-      "pin": {
-        "cid": "bafkreicgqydhvhl2w3c6aadsbgjylijbjophqvm2qjclrsyhg2spkycliu",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        },
-        "name": "f047bcc5-7223-463b-bcee-b75896c22fc6"
-      },
-      "info": {
-        "pinata_pinjob_status": "searching"
-      },
-      "status": "queued"
-    },
-    {
-      "requestid": "3e0fd1f8-9aea-4a7a-813d-62123d28d7bc",
-      "created": "2022-06-25T01:54:53.622Z",
+      "requestid": "139c896a-5326-4ceb-b61c-527e7f6517d4",
+      "created": "2022-06-27T16:22:56.725Z",
       "delegates": [
         "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
       ],
       "pin": {
-        "cid": "bafkreibr4os7ag6jnffpuaotl2abrednoiricn5fd777icoypar3bvd4pi",
+        "cid": "bafkreiazoav5yg5wdenl66bgdfrmpknoh762d43er4gylgntza6dhrll5q",
+        "origins": [],
+        "meta": {
+          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
+        }
+      },
+      "info": {
+        "pinata_pinjob_status": "searching"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "c896cdb9-c48f-4786-af36-c23f5a1c4dcf",
+      "created": "2022-06-27T16:23:00.817Z",
+      "delegates": [
+        "/ip4/159.65.235.60/tcp/4001/p2p/QmWa1rmPs6KrhxMQK8hfGSDnJ3gNjSRMeqCa9Z77Ljj8nn"
+      ],
+      "pin": {
+        "cid": "bafkreigo37mzxkji3f3o6sk3rvedfku5f5lvjj2yekrua3ngopkzozldwa",
+        "origins": [],
+        "meta": {
+          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
+        }
+      },
+      "info": {
+        "pinata_pinjob_status": "searching"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "051d0bfa-8f06-4ddd-978a-98fe0b19eb41",
+      "created": "2022-06-27T16:23:02.980Z",
+      "delegates": [
+        "/ip4/142.93.60.197/tcp/4001/p2p/QmNZwVaiibfFEJLSkoSmWeWCAak38hV89jPTtyWXRH5mQP"
+      ],
+      "pin": {
+        "cid": "bafkreifazwupemr2s6a5lhlut42bl7tqj6f7mj7wz3onxumtxtyajldcg4",
+        "origins": [],
+        "meta": {
+          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
+        },
+        "name": "9b038233-ff93-443c-9946-1fef9527e9ec"
+      },
+      "info": {
+        "pinata_pinjob_status": "searching"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "f6d75768-de2c-48e2-8863-548a276bb549",
+      "created": "2022-06-27T16:23:58.512Z",
+      "delegates": [
+        "/ip4/162.243.164.106/tcp/4001/p2p/QmUCCZxDfGxcFpSxKSWe5ckgvAGx5cboFxHCfVRrBhGSkK"
+      ],
+      "pin": {
+        "cid": "bafkreiaesldbgottowukwqogxlex35muz3ksc5w5am33y5dgihlzgsj6ja",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2669,15 +2669,15 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:54:54 GMT",
+  "date": "Mon, 27 Jun 2022 16:23:59 GMT",
   "etag": "W/\"18-sS5FLbfK694W6H4gsKxYsIoy1Pk\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
   "x-ratelimit-limit": "5",
   "x-ratelimit-remaining": "1",
-  "x-ratelimit-reset": "1656122153",
-  "x-request-id": "af6013b3c7f28a7ca40ff30af6255c88"
+  "x-ratelimit-reset": "1656347098",
+  "x-request-id": "9be53ae0623048d57061009207e6e8fb"
 }
 ```
 ##### Body
@@ -2760,17 +2760,17 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "5708",
+  "content-length": "5709",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:54:52 GMT",
-  "etag": "W/\"164c-8+0Cog5M7vyYtVCBJxCXc9Xwjts\"",
+  "date": "Mon, 27 Jun 2022 16:23:57 GMT",
+  "etag": "W/\"164d-1Ry4ZCPXxOXfesZSV6PRasOY82E\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
   "x-ratelimit-limit": "5",
   "x-ratelimit-remaining": "3",
-  "x-ratelimit-reset": "1656122153",
-  "x-request-id": "15f744af3d8e5c08b6e5fd50e40982ec"
+  "x-ratelimit-reset": "1656347098",
+  "x-request-id": "1058a5bcae9d0ddbef20a8f56736cc1f"
 }
 ```
 ##### Body
@@ -2978,13 +2978,13 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "status": "failed"
     },
     {
-      "requestid": "e918f9f8-7922-4d57-8782-f48c20cfd0b5",
-      "created": "2022-06-25T01:53:52.374Z",
+      "requestid": "139c896a-5326-4ceb-b61c-527e7f6517d4",
+      "created": "2022-06-27T16:22:56.725Z",
       "delegates": [
-        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
+        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
       ],
       "pin": {
-        "cid": "bafkreieptutvadsy2s7cfz5dt3vwd3jpkyusjsalfciuua4fl2ah4hpbpi",
+        "cid": "bafkreiazoav5yg5wdenl66bgdfrmpknoh762d43er4gylgntza6dhrll5q",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2996,13 +2996,13 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "status": "queued"
     },
     {
-      "requestid": "b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc",
-      "created": "2022-06-25T01:53:56.546Z",
+      "requestid": "c896cdb9-c48f-4786-af36-c23f5a1c4dcf",
+      "created": "2022-06-27T16:23:00.817Z",
       "delegates": [
-        "/ip4/198.211.112.207/tcp/4001/p2p/QmbWRoGEz6g32uZ9xFWpf2xsiikyE5KNXoj3QPAULpW8vN"
+        "/ip4/159.65.235.60/tcp/4001/p2p/QmWa1rmPs6KrhxMQK8hfGSDnJ3gNjSRMeqCa9Z77Ljj8nn"
       ],
       "pin": {
-        "cid": "bafkreiapglvngogjm3iyha567uqzrs34jejbb2ipo7xvvsapwup45owgzy",
+        "cid": "bafkreigo37mzxkji3f3o6sk3rvedfku5f5lvjj2yekrua3ngopkzozldwa",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3014,18 +3014,18 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "status": "queued"
     },
     {
-      "requestid": "22f58874-b270-48be-94cd-b0973fd5fa53",
-      "created": "2022-06-25T01:54:00.605Z",
+      "requestid": "051d0bfa-8f06-4ddd-978a-98fe0b19eb41",
+      "created": "2022-06-27T16:23:02.980Z",
       "delegates": [
-        "/ip4/64.227.8.22/tcp/4001/p2p/QmQh4NeikAQnxFC8hxZW3B6aVTKCjzwud9ArQnS9ZFdSEz"
+        "/ip4/142.93.60.197/tcp/4001/p2p/QmNZwVaiibfFEJLSkoSmWeWCAak38hV89jPTtyWXRH5mQP"
       ],
       "pin": {
-        "cid": "bafkreicgqydhvhl2w3c6aadsbgjylijbjophqvm2qjclrsyhg2spkycliu",
+        "cid": "bafkreifazwupemr2s6a5lhlut42bl7tqj6f7mj7wz3onxumtxtyajldcg4",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         },
-        "name": "f047bcc5-7223-463b-bcee-b75896c22fc6"
+        "name": "9b038233-ff93-443c-9946-1fef9527e9ec"
       },
       "info": {
         "pinata_pinjob_status": "searching"
@@ -3241,13 +3241,13 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "status": "failed"
     },
     {
-      "requestid": "e918f9f8-7922-4d57-8782-f48c20cfd0b5",
-      "created": "2022-06-25T01:53:52.374Z",
+      "requestid": "139c896a-5326-4ceb-b61c-527e7f6517d4",
+      "created": "2022-06-27T16:22:56.725Z",
       "delegates": [
-        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
+        "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
       ],
       "pin": {
-        "cid": "bafkreieptutvadsy2s7cfz5dt3vwd3jpkyusjsalfciuua4fl2ah4hpbpi",
+        "cid": "bafkreiazoav5yg5wdenl66bgdfrmpknoh762d43er4gylgntza6dhrll5q",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3259,13 +3259,13 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "status": "queued"
     },
     {
-      "requestid": "b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc",
-      "created": "2022-06-25T01:53:56.546Z",
+      "requestid": "c896cdb9-c48f-4786-af36-c23f5a1c4dcf",
+      "created": "2022-06-27T16:23:00.817Z",
       "delegates": [
-        "/ip4/198.211.112.207/tcp/4001/p2p/QmbWRoGEz6g32uZ9xFWpf2xsiikyE5KNXoj3QPAULpW8vN"
+        "/ip4/159.65.235.60/tcp/4001/p2p/QmWa1rmPs6KrhxMQK8hfGSDnJ3gNjSRMeqCa9Z77Ljj8nn"
       ],
       "pin": {
-        "cid": "bafkreiapglvngogjm3iyha567uqzrs34jejbb2ipo7xvvsapwup45owgzy",
+        "cid": "bafkreigo37mzxkji3f3o6sk3rvedfku5f5lvjj2yekrua3ngopkzozldwa",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3277,18 +3277,18 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "status": "queued"
     },
     {
-      "requestid": "22f58874-b270-48be-94cd-b0973fd5fa53",
-      "created": "2022-06-25T01:54:00.605Z",
+      "requestid": "051d0bfa-8f06-4ddd-978a-98fe0b19eb41",
+      "created": "2022-06-27T16:23:02.980Z",
       "delegates": [
-        "/ip4/64.227.8.22/tcp/4001/p2p/QmQh4NeikAQnxFC8hxZW3B6aVTKCjzwud9ArQnS9ZFdSEz"
+        "/ip4/142.93.60.197/tcp/4001/p2p/QmNZwVaiibfFEJLSkoSmWeWCAak38hV89jPTtyWXRH5mQP"
       ],
       "pin": {
-        "cid": "bafkreicgqydhvhl2w3c6aadsbgjylijbjophqvm2qjclrsyhg2spkycliu",
+        "cid": "bafkreifazwupemr2s6a5lhlut42bl7tqj6f7mj7wz3onxumtxtyajldcg4",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         },
-        "name": "f047bcc5-7223-463b-bcee-b75896c22fc6"
+        "name": "9b038233-ff93-443c-9946-1fef9527e9ec"
       },
       "info": {
         "pinata_pinjob_status": "searching"
@@ -3305,7 +3305,7 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "results": {}
 }
 ```
-## Can delete pin with requestid 'e918f9f8-7922-4d57-8782-f48c20cfd0b5' - 🟢 SUCCESS
+## Can delete pin with requestid '139c896a-5326-4ceb-b61c-527e7f6517d4' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -3331,7 +3331,7 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 
 #### Request
 ```
-DELETE https://api.pinata.cloud/psa/pins/e918f9f8-7922-4d57-8782-f48c20cfd0b5
+DELETE https://api.pinata.cloud/psa/pins/139c896a-5326-4ceb-b61c-527e7f6517d4
 ```
 ##### Headers
 ```json
@@ -3355,12 +3355,12 @@ DELETE https://api.pinata.cloud/psa/pins/e918f9f8-7922-4d57-8782-f48c20cfd0b5
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:54:56 GMT",
+  "date": "Mon, 27 Jun 2022 16:24:01 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
-  "x-request-id": "a2ba2d463551d2ede6bccfa46b76ddc2"
+  "x-request-id": "97e379b43c0a9502f53c029e53057842"
 }
 ```
 ##### Body
@@ -3376,7 +3376,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc' - 🟢 SUCCESS
+## Can delete pin with requestid 'c896cdb9-c48f-4786-af36-c23f5a1c4dcf' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -3402,7 +3402,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.pinata.cloud/psa/pins/b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc
+DELETE https://api.pinata.cloud/psa/pins/c896cdb9-c48f-4786-af36-c23f5a1c4dcf
 ```
 ##### Headers
 ```json
@@ -3426,12 +3426,12 @@ DELETE https://api.pinata.cloud/psa/pins/b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:54:57 GMT",
+  "date": "Mon, 27 Jun 2022 16:24:02 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
-  "x-request-id": "90fcc76c759b7bcf28d437ddd90052ba"
+  "x-request-id": "7a4dbec73ea553fa6de41cf534f6ed55"
 }
 ```
 ##### Body
@@ -3447,7 +3447,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid '22f58874-b270-48be-94cd-b0973fd5fa53' - 🟢 SUCCESS
+## Can delete pin with requestid '051d0bfa-8f06-4ddd-978a-98fe0b19eb41' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -3473,7 +3473,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.pinata.cloud/psa/pins/22f58874-b270-48be-94cd-b0973fd5fa53
+DELETE https://api.pinata.cloud/psa/pins/051d0bfa-8f06-4ddd-978a-98fe0b19eb41
 ```
 ##### Headers
 ```json
@@ -3497,12 +3497,12 @@ DELETE https://api.pinata.cloud/psa/pins/22f58874-b270-48be-94cd-b0973fd5fa53
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:54:58 GMT",
+  "date": "Mon, 27 Jun 2022 16:24:03 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
-  "x-request-id": "846cbfdea55e9ac943c89375a52a25f3"
+  "x-request-id": "17762dfc18afd39b3cc4ad68f4d90c6a"
 }
 ```
 ##### Body
@@ -3518,7 +3518,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid '3e0fd1f8-9aea-4a7a-813d-62123d28d7bc' - 🟢 SUCCESS
+## Can delete pin with requestid 'f6d75768-de2c-48e2-8863-548a276bb549' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -3544,7 +3544,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.pinata.cloud/psa/pins/3e0fd1f8-9aea-4a7a-813d-62123d28d7bc
+DELETE https://api.pinata.cloud/psa/pins/f6d75768-de2c-48e2-8863-548a276bb549
 ```
 ##### Headers
 ```json
@@ -3568,12 +3568,12 @@ DELETE https://api.pinata.cloud/psa/pins/3e0fd1f8-9aea-4a7a-813d-62123d28d7bc
   "connection": "close",
   "content-length": "2",
   "content-type": "text/plain; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:54:59 GMT",
+  "date": "Mon, 27 Jun 2022 16:24:04 GMT",
   "etag": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
-  "x-request-id": "3f90e6f0cae0197dfffaa0608e0e4473"
+  "x-request-id": "61994da2b2746ca04e273d5495d1e173"
 }
 ```
 ##### Body
@@ -3627,15 +3627,15 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&
   "connection": "close",
   "content-length": "24",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:55:55 GMT",
+  "date": "Mon, 27 Jun 2022 16:25:00 GMT",
   "etag": "W/\"18-sS5FLbfK694W6H4gsKxYsIoy1Pk\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
   "x-ratelimit-limit": "5",
   "x-ratelimit-remaining": "4",
-  "x-ratelimit-reset": "1656122216",
-  "x-request-id": "5b5f9e7cc1297306fa8aa1c1cf3fded6"
+  "x-ratelimit-reset": "1656347161",
+  "x-request-id": "e9f745573b5387ccca3fa8970063a0e2"
 }
 ```
 ##### Body
@@ -3698,15 +3698,15 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "connection": "close",
   "content-length": "4459",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:55:55 GMT",
+  "date": "Mon, 27 Jun 2022 16:25:00 GMT",
   "etag": "W/\"116b-WiA06lZWI1dTN5SNOrkA/Astm18\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
   "x-ratelimit-limit": "5",
   "x-ratelimit-remaining": "3",
-  "x-ratelimit-reset": "1656122216",
-  "x-request-id": "c2b24a020f616566edafc3be6c4bca07"
+  "x-ratelimit-reset": "1656347161",
+  "x-request-id": "ec63cddc0f78e99e9487e174bab38a66"
 }
 ```
 ##### Body
@@ -4223,17 +4223,17 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-credentials": "true",
   "connection": "close",
-  "content-length": "6110",
+  "content-length": "6114",
   "content-type": "application/json; charset=utf-8",
-  "date": "Sat, 25 Jun 2022 01:54:55 GMT",
-  "etag": "W/\"17de-NiQSbg3XO1M9/N5nPc92DUax3EI\"",
+  "date": "Mon, 27 Jun 2022 16:24:00 GMT",
+  "etag": "W/\"17e2-U4JaeSVkuepxxYNn1jUhaB4Hr6M\"",
   "strict-transport-security": "max-age=15724800; includeSubDomains",
   "vary": "Origin",
   "x-powered-by": "Express",
   "x-ratelimit-limit": "5",
   "x-ratelimit-remaining": "0",
-  "x-ratelimit-reset": "1656122153",
-  "x-request-id": "0a579f661fb30adc17968b397cc787da"
+  "x-ratelimit-reset": "1656347098",
+  "x-request-id": "10ca02aa581e2a7c3022caecf7b41190"
 }
 ```
 ##### Body
@@ -4441,68 +4441,13 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "status": "failed"
     },
     {
-      "requestid": "e918f9f8-7922-4d57-8782-f48c20cfd0b5",
-      "created": "2022-06-25T01:53:52.374Z",
-      "delegates": [
-        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
-      ],
-      "pin": {
-        "cid": "bafkreieptutvadsy2s7cfz5dt3vwd3jpkyusjsalfciuua4fl2ah4hpbpi",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "pinata_pinjob_status": "searching"
-      },
-      "status": "queued"
-    },
-    {
-      "requestid": "b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc",
-      "created": "2022-06-25T01:53:56.546Z",
-      "delegates": [
-        "/ip4/198.211.112.207/tcp/4001/p2p/QmbWRoGEz6g32uZ9xFWpf2xsiikyE5KNXoj3QPAULpW8vN"
-      ],
-      "pin": {
-        "cid": "bafkreiapglvngogjm3iyha567uqzrs34jejbb2ipo7xvvsapwup45owgzy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "pinata_pinjob_status": "searching"
-      },
-      "status": "queued"
-    },
-    {
-      "requestid": "22f58874-b270-48be-94cd-b0973fd5fa53",
-      "created": "2022-06-25T01:54:00.605Z",
-      "delegates": [
-        "/ip4/64.227.8.22/tcp/4001/p2p/QmQh4NeikAQnxFC8hxZW3B6aVTKCjzwud9ArQnS9ZFdSEz"
-      ],
-      "pin": {
-        "cid": "bafkreicgqydhvhl2w3c6aadsbgjylijbjophqvm2qjclrsyhg2spkycliu",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        },
-        "name": "f047bcc5-7223-463b-bcee-b75896c22fc6"
-      },
-      "info": {
-        "pinata_pinjob_status": "searching"
-      },
-      "status": "queued"
-    },
-    {
-      "requestid": "3e0fd1f8-9aea-4a7a-813d-62123d28d7bc",
-      "created": "2022-06-25T01:54:53.622Z",
+      "requestid": "139c896a-5326-4ceb-b61c-527e7f6517d4",
+      "created": "2022-06-27T16:22:56.725Z",
       "delegates": [
         "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
       ],
       "pin": {
-        "cid": "bafkreibr4os7ag6jnffpuaotl2abrednoiricn5fd777icoypar3bvd4pi",
+        "cid": "bafkreiazoav5yg5wdenl66bgdfrmpknoh762d43er4gylgntza6dhrll5q",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -4510,6 +4455,61 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       },
       "info": {
         "pinata_pinjob_status": "searching"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "c896cdb9-c48f-4786-af36-c23f5a1c4dcf",
+      "created": "2022-06-27T16:23:00.817Z",
+      "delegates": [
+        "/ip4/159.65.235.60/tcp/4001/p2p/QmWa1rmPs6KrhxMQK8hfGSDnJ3gNjSRMeqCa9Z77Ljj8nn"
+      ],
+      "pin": {
+        "cid": "bafkreigo37mzxkji3f3o6sk3rvedfku5f5lvjj2yekrua3ngopkzozldwa",
+        "origins": [],
+        "meta": {
+          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
+        }
+      },
+      "info": {
+        "pinata_pinjob_status": "searching"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "051d0bfa-8f06-4ddd-978a-98fe0b19eb41",
+      "created": "2022-06-27T16:23:02.980Z",
+      "delegates": [
+        "/ip4/142.93.60.197/tcp/4001/p2p/QmNZwVaiibfFEJLSkoSmWeWCAak38hV89jPTtyWXRH5mQP"
+      ],
+      "pin": {
+        "cid": "bafkreifazwupemr2s6a5lhlut42bl7tqj6f7mj7wz3onxumtxtyajldcg4",
+        "origins": [],
+        "meta": {
+          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
+        },
+        "name": "9b038233-ff93-443c-9946-1fef9527e9ec"
+      },
+      "info": {
+        "pinata_pinjob_status": "searching"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "f6d75768-de2c-48e2-8863-548a276bb549",
+      "created": "2022-06-27T16:23:58.512Z",
+      "delegates": [
+        "/ip4/162.243.164.106/tcp/4001/p2p/QmUCCZxDfGxcFpSxKSWe5ckgvAGx5cboFxHCfVRrBhGSkK"
+      ],
+      "pin": {
+        "cid": "bafkreiaesldbgottowukwqogxlex35muz3ksc5w5am33y5dgihlzgsj6ja",
+        "origins": [],
+        "meta": {
+          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
+        }
+      },
+      "info": {
+        "pinata_pinjob_status": "prechecking"
       },
       "status": "queued"
     }
@@ -4722,68 +4722,13 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "status": "failed"
     },
     {
-      "requestid": "e918f9f8-7922-4d57-8782-f48c20cfd0b5",
-      "created": "2022-06-25T01:53:52.374Z",
-      "delegates": [
-        "/ip4/134.122.21.45/tcp/4001/p2p/QmUAcN8txh3QhRKVrDL8w3rdPiNNuhi9iKFogvo74s34UQ"
-      ],
-      "pin": {
-        "cid": "bafkreieptutvadsy2s7cfz5dt3vwd3jpkyusjsalfciuua4fl2ah4hpbpi",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "pinata_pinjob_status": "searching"
-      },
-      "status": "queued"
-    },
-    {
-      "requestid": "b26a6c6e-d5c9-4ed2-ab59-e39e1da94ebc",
-      "created": "2022-06-25T01:53:56.546Z",
-      "delegates": [
-        "/ip4/198.211.112.207/tcp/4001/p2p/QmbWRoGEz6g32uZ9xFWpf2xsiikyE5KNXoj3QPAULpW8vN"
-      ],
-      "pin": {
-        "cid": "bafkreiapglvngogjm3iyha567uqzrs34jejbb2ipo7xvvsapwup45owgzy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "pinata_pinjob_status": "searching"
-      },
-      "status": "queued"
-    },
-    {
-      "requestid": "22f58874-b270-48be-94cd-b0973fd5fa53",
-      "created": "2022-06-25T01:54:00.605Z",
-      "delegates": [
-        "/ip4/64.227.8.22/tcp/4001/p2p/QmQh4NeikAQnxFC8hxZW3B6aVTKCjzwud9ArQnS9ZFdSEz"
-      ],
-      "pin": {
-        "cid": "bafkreicgqydhvhl2w3c6aadsbgjylijbjophqvm2qjclrsyhg2spkycliu",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        },
-        "name": "f047bcc5-7223-463b-bcee-b75896c22fc6"
-      },
-      "info": {
-        "pinata_pinjob_status": "searching"
-      },
-      "status": "queued"
-    },
-    {
-      "requestid": "3e0fd1f8-9aea-4a7a-813d-62123d28d7bc",
-      "created": "2022-06-25T01:54:53.622Z",
+      "requestid": "139c896a-5326-4ceb-b61c-527e7f6517d4",
+      "created": "2022-06-27T16:22:56.725Z",
       "delegates": [
         "/ip4/159.223.99.237/tcp/4001/p2p/QmaSH44DDNwowDMYieFNXoSvLj2NK788dRT1hidAprEJy9"
       ],
       "pin": {
-        "cid": "bafkreibr4os7ag6jnffpuaotl2abrednoiricn5fd777icoypar3bvd4pi",
+        "cid": "bafkreiazoav5yg5wdenl66bgdfrmpknoh762d43er4gylgntza6dhrll5q",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -4791,6 +4736,61 @@ GET https://api.pinata.cloud/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       },
       "info": {
         "pinata_pinjob_status": "searching"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "c896cdb9-c48f-4786-af36-c23f5a1c4dcf",
+      "created": "2022-06-27T16:23:00.817Z",
+      "delegates": [
+        "/ip4/159.65.235.60/tcp/4001/p2p/QmWa1rmPs6KrhxMQK8hfGSDnJ3gNjSRMeqCa9Z77Ljj8nn"
+      ],
+      "pin": {
+        "cid": "bafkreigo37mzxkji3f3o6sk3rvedfku5f5lvjj2yekrua3ngopkzozldwa",
+        "origins": [],
+        "meta": {
+          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
+        }
+      },
+      "info": {
+        "pinata_pinjob_status": "searching"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "051d0bfa-8f06-4ddd-978a-98fe0b19eb41",
+      "created": "2022-06-27T16:23:02.980Z",
+      "delegates": [
+        "/ip4/142.93.60.197/tcp/4001/p2p/QmNZwVaiibfFEJLSkoSmWeWCAak38hV89jPTtyWXRH5mQP"
+      ],
+      "pin": {
+        "cid": "bafkreifazwupemr2s6a5lhlut42bl7tqj6f7mj7wz3onxumtxtyajldcg4",
+        "origins": [],
+        "meta": {
+          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
+        },
+        "name": "9b038233-ff93-443c-9946-1fef9527e9ec"
+      },
+      "info": {
+        "pinata_pinjob_status": "searching"
+      },
+      "status": "queued"
+    },
+    {
+      "requestid": "f6d75768-de2c-48e2-8863-548a276bb549",
+      "created": "2022-06-27T16:23:58.512Z",
+      "delegates": [
+        "/ip4/162.243.164.106/tcp/4001/p2p/QmUCCZxDfGxcFpSxKSWe5ckgvAGx5cboFxHCfVRrBhGSkK"
+      ],
+      "pin": {
+        "cid": "bafkreiaesldbgottowukwqogxlex35muz3ksc5w5am33y5dgihlzgsj6ja",
+        "origins": [],
+        "meta": {
+          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
+        }
+      },
+      "info": {
+        "pinata_pinjob_status": "prechecking"
       },
       "status": "queued"
     }
