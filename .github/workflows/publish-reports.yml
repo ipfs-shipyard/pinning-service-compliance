@@ -3,6 +3,13 @@ on:
 
   # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow
   workflow_call:
+    inputs:
+      type:
+        description: 'If a workflow that calls this workflow is called via workflow_dispatch, it should pass this property'
+        required: true
+        default: 'nothing'
+        type: string
+
   workflow_dispatch:
     inputs:
       type:
@@ -20,6 +27,7 @@ jobs:
   # Deploy to gh pages branch
   push-reports-to-gh-pages:
     runs-on: ubuntu-latest
+    if: (github.event.inputs.type == 'push' || github.event_name == 'push') && github.ref == 'refs/heads/main'
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     steps:
       - name: Reports Cache
