@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.1.0...v1.1.1) (2022-08-17)
+
+
+### Trivial Changes
+
+* create CODEOWNERS file ([#144](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/144)) ([a259ad0](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/a259ad07b7cf0c9d76e9e4be4b89f240e5f60dee))
+
 ## [1.1.0](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.10...v1.1.0) (2022-06-27)
 
 
