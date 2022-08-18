@@ -1,3 +1,13 @@
+## [1.1.3](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.1.2...v1.1.3) (2022-08-18)
+
+
+### Trivial Changes
+
+* **deps-dev:** bump @types/node from 17.0.43 to 18.7.6 ([#173](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/173)) ([08e3e18](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/08e3e1879be49b039706165780846751c48c2992))
+* **deps-dev:** bump @types/yargs from 17.0.10 to 17.0.11 ([#176](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/176)) ([c1d7da6](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/c1d7da6cdda7bce0bbccf35181012b4316e6d1d0))
+* **deps-dev:** bump ts-node from 10.8.1 to 10.9.1 ([#174](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/174)) ([bd86249](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/bd862491f02447748558690d5bec8555124366b6))
+* **deps:** bump node-fetch from 3.2.6 to 3.2.10 ([#178](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/178)) ([3293e82](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/3293e82e1c0a0432f79ce32576ec1980b0037812))
+
 ## [1.1.2](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.1.1...v1.1.2) (2022-08-18)
 
 
