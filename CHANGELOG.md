@@ -1,3 +1,17 @@
+## [1.1.2](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.1.1...v1.1.2) (2022-08-18)
+
+
+### Trivial Changes
+
+* **deps-dev:** bump aegir from 37.3.0 to 37.5.1 ([#169](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/169)) ([0e40dc2](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/0e40dc22c8def869e73f524f8b5e3a622d1f3a39))
+* **deps-dev:** bump ipfs-core-types from 0.11.0 to 0.11.1 ([#133](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/133)) ([b3edb0e](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/b3edb0e8bdb3321147cf52afd1d9f30f52b4f906))
+* **deps-dev:** bump typescript from 4.7.3 to 4.7.4 ([#122](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/122)) ([f01bf0a](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/f01bf0a75ccca6bb0ea1275a8d7094b1a5553938))
+* **deps:** bump ipfs-core from 0.15.2 to 0.15.4 ([#136](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/136)) ([59bbcb0](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/59bbcb0ee19fa6fefa908e8ff625c9434d50db25))
+* **deps:** bump ipfs-http-client from 57.0.1 to 57.0.3 ([#137](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/137)) ([bf56cdd](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/bf56cdd37109899a5d5576974958e23d92be7a17))
+* **deps:** bump multiformats from 9.6.5 to 9.7.1 ([#156](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/156)) ([6469dc7](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/6469dc7f832fb42b2fbbc9335e6a95c0866e5889))
+* **deps:** bump p-queue from 7.2.0 to 7.3.0 ([#175](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/175)) ([3b2939c](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/3b2939c02f2d39c4dfa17dac196c1c9a294824f7))
+* **deps:** bump winston from 3.7.2 to 3.8.1 ([#147](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/147)) ([ba4da8a](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/ba4da8a5705387dbb26db712cb52ae35b1e61758))
+
 ## [1.1.1](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.1.0...v1.1.1) (2022-08-17)
 
 
