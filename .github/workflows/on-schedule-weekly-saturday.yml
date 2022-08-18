@@ -2,6 +2,16 @@
 name: On every Saturday
 
 on:
+  workflow_dispatch:
+    inputs:
+      type:
+        description: 'Emulate a push manually: Only do this if a manual report update is required!'
+        required: false
+        default: 'nothing'
+        type: choice
+        options:
+        - schedule
+        - nothing
   schedule:
     - cron: "0 0 * * 6" # Run at 00:00 on every Saturday
 
@@ -17,3 +27,5 @@ jobs:
     needs: [build_reports]
     uses: ./.github/workflows/publish-reports.yml
     secrets: inherit
+    with:
+      type: ${{ github.event.inputs.type || github.event_name }}

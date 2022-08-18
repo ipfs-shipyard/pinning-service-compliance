@@ -1,3 +1,30 @@
+## [1.1.1](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.1.0...v1.1.1) (2022-08-17)
+
+
+### Trivial Changes
+
+* create CODEOWNERS file ([#144](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/144)) ([a259ad0](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/a259ad07b7cf0c9d76e9e4be4b89f240e5f60dee))
+
+## [1.1.0](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.10...v1.1.0) (2022-06-27)
+
+
+### Features
+
+* compose github actions ([#128](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/128)) ([b5a3e08](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/b5a3e08553a84e9b155dd44f79d62f85eaf95259))
+* test & release fails if reports workflow fails ([#126](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/126)) ([e7e606f](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/e7e606feffe0db66b68b440a7ccff6d00cffe1ea))
+
+
+### Bug Fixes
+
+* correct reusable workflow ([#127](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/127)) ([e52f066](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/e52f066763036015c50c284da4a1825af106c014))
+* PinResults, Pin Delete Response Code and CID Generation ([#123](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/123)) ([128c70c](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/128c70c2ebd6fca9997dac3a7d3b855e1de95b2a))
+
+
+### Trivial Changes
+
+* fix on-main-push.yml ([#142](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/142)) ([ff47a19](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/ff47a197d67ab2a3feaefaaee22bdd11f5c2d4c9))
+* update dispatchable workflows ([#134](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/134)) ([44f9034](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/44f90341288ad1c04b8c74b912c43a049b1628a9))
+
 ## [1.0.10](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.0.9...v1.0.10) (2022-06-21)
 
 

@@ -1,24 +1,18 @@
 name: test & maybe release
 on:
   workflow_call:
-
-  workflow_dispatch:
     inputs:
       type:
-        description: 'Emulate either schedule, push, or pull_request'
-        required: true
-        default: 'schedule'
-        type: choice
-        options:
-        - schedule
-        - push
-        - pull_request
+        description: 'Emulate a push manually'
+        required: false
+        default: 'nothing'
+        type: string
 
 jobs:
 
   release:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main' # with #262 - 'refs/heads/${{{ github.default_branch }}}'
+    if: (github.event.inputs.type == 'push' || github.event_name == 'push') && github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v3
         with:
