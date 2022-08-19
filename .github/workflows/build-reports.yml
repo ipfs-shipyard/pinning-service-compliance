@@ -60,6 +60,27 @@ jobs:
           name: estuary-report
           path: docs/api.estuary.tech.md
 
+  check-filebase-compliance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - uses: ipfs/aegir/actions/cache-node-modules@master
+      - name: Reports Cache
+        uses: actions/cache@v3
+        with:
+          path: docs
+          key: ${{ github.sha }}-filebase
+      - run: npm run dev-start -- -s ${{ secrets.FILEBASE_API_ENDPOINT }} ${{secrets.FILEBASE_API_TOKEN}}
+      - uses: actions/upload-artifact@v2
+        with:
+          name: filebase-logs
+          path: docs/api.filebase.io
+      - uses: actions/upload-artifact@v2
+        with:
+          name: filebase-report
+          path: docs/api.filebase.io.md
+
   check-nft-dot-storage-compliance:
     runs-on: ubuntu-latest
     steps:
