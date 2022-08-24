@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.1.4...v1.1.5) (2022-08-24)
+
+
+### Trivial Changes
+
+* **deps:** bump go-ipfs from 0.13.0 to 0.14.0 ([#177](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/177)) ([b799377](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/b7993771e3eafb2e455afc731f786eec2f410afc))
+
 ## [1.1.4](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.1.3...v1.1.4) (2022-08-24)
 
 
