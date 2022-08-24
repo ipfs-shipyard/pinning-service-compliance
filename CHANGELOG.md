@@ -1,3 +1,12 @@
+## [1.1.4](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.1.3...v1.1.4) (2022-08-24)
+
+
+### Trivial Changes
+
+* **deps-dev:** bump @types/node from 18.7.6 to 18.7.13 ([#184](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/184)) ([d61abcc](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/d61abccb21ecb32e6c87c12cf5baf0f77d5dad41))
+* **deps:** bump lewagon/wait-on-check-action from 1.1.1 to 1.1.2 ([#183](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/183)) ([a36bf32](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/a36bf32944f3609dba4eaa7d40e8b7bd67c928a2))
+* **deps:** bump s0/git-publish-subdir-action from 399aab378450f99b7de6767f62b0d1dbfcb58b53 to 2.5.1 ([#182](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/182)) ([aa559f6](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/aa559f65c80025fc7081e0d48201714d2b4169ee))
+
 ## [1.1.3](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.1.2...v1.1.3) (2022-08-18)
 
 
