@@ -2,6 +2,7 @@
 
 # These owners will be the default owners for everything in
 # the repo. Unless a later match takes precedence,
-# @SgtPooki will be requested for
-# review when someone opens a pull request.
-*       @ipfs-shipyard/ipfs-gui
+# these owners will be requested for review when someone
+# opens a pull request.
+# All GUI Teams: @ipfs-shipyard/ipfs-gui @ipfs-shipyard/gui @ipfs/gui-dev @ipfs/wg-gui-ux
+*   @ipfs-shipyard/gui @ipfs/gui-dev
