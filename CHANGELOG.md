@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.1.5...v1.1.6) (2022-08-25)
+
+
+### Trivial Changes
+
+* **deps:** bump ipfs from 0.63.3 to 0.63.5 ([#139](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/139)) ([19659d6](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/19659d63fcf0ab4d2704b736762c513b917b7b65))
+
 ## [1.1.5](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.1.4...v1.1.5) (2022-08-24)
 
 
