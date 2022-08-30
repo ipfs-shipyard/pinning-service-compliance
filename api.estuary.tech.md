@@ -1,19 +1,19 @@
 
 # https://api.estuary.tech/pinning compliance:
 
-Execution Date: 2022-08-30T17:32:27.258Z
+Execution Date: 2022-08-30T17:35:43.667Z
 
-Revision: [b7d1f46](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/b7d1f46)
+Revision: [ff39295](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/ff39295)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/api.estuary.tech.md)
 
-## Summary (7/9 successful)
+## Summary (8/9 successful)
 
   🟢 [Request with no authentication token](#request-with-no-authentication-token----success)
 
   🟢 [Request with invalid token](#request-with-invalid-token----success)
 
-  🟢 [Pins post of CID 'bafkreiekjkzviemewils3riqwptnbysupmepxgmj5a5zfj3riuouvt2lra'](#pins-post-of-cid-bafkreiekjkzviemewils3riqwptnbysupmepxgmj5a5zfj3riuouvt2lra----success)
+  🟢 [Pins post of CID 'bafkreiau46nl5ganihhygkf5leyevenczej45xzxg7khaw36mfc6youzy4'](#pins-post-of-cid-bafkreiau46nl5ganihhygkf5leyevenczej45xzxg7khaw36mfc6youzy4----success)
 
   🟢 [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----success)
 
@@ -21,11 +21,11 @@ Revision: [b7d1f46](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   🟢 [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----success)
 
-  🟢 [Can create a pin with name='d88d14ff-3350-4851-bdbf-ffd42b0ecb26'](#can-create-a-pin-with-named88d14ff-3350-4851-bdbf-ffd42b0ecb26----success)
+  🟢 [Can create a pin with name='8502deef-7980-4f3f-b8b6-0ca43dc37a2f'](#can-create-a-pin-with-name8502deef-7980-4f3f-b8b6-0ca43dc37a2f----success)
 
   ❌ [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----failed)
 
-  ❌ [Can delete all pins created during compliance checks](#can-delete-all-pins-created-during-compliance-checks----failed)
+  🟢 [Can delete all pins created during compliance checks](#can-delete-all-pins-created-during-compliance-checks----success)
 
 ## Request with no authentication token - 🟢 SUCCESS
 
@@ -69,7 +69,7 @@ GET https://api.estuary.tech/pinning/pins
   "connection": "close",
   "content-length": "77",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:31:35 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:19 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -142,7 +142,7 @@ GET https://api.estuary.tech/pinning/pins
   "connection": "close",
   "content-length": "77",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:31:35 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:20 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -171,7 +171,7 @@ GET https://api.estuary.tech/pinning/pins
 ```json
 null
 ```
-## Pins post of CID 'bafkreiekjkzviemewils3riqwptnbysupmepxgmj5a5zfj3riuouvt2lra' - 🟢 SUCCESS
+## Pins post of CID 'bafkreiau46nl5ganihhygkf5leyevenczej45xzxg7khaw36mfc6youzy4' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -198,7 +198,7 @@ POST https://api.estuary.tech/pinning/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiekjkzviemewils3riqwptnbysupmepxgmj5a5zfj3riuouvt2lra","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiau46nl5ganihhygkf5leyevenczej45xzxg7khaw36mfc6youzy4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -211,7 +211,7 @@ POST https://api.estuary.tech/pinning/pins
   "connection": "close",
   "content-length": "361",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:31:54 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:26 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -220,15 +220,15 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body
 ```json
 {
-  "requestid": "36161743",
+  "requestid": "36161825",
   "status": "queued",
-  "created": "2022-08-30T17:31:54.820902465Z",
+  "created": "2022-08-30T17:35:26.413031312Z",
   "delegates": [
     "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
   ],
   "info": {},
   "pin": {
-    "cid": "bafkreiekjkzviemewils3riqwptnbysupmepxgmj5a5zfj3riuouvt2lra",
+    "cid": "bafkreiau46nl5ganihhygkf5leyevenczej45xzxg7khaw36mfc6youzy4",
     "name": "",
     "origins": [],
     "meta": {
@@ -241,15 +241,15 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "36161743",
+  "requestid": "36161825",
   "status": "queued",
-  "created": "2022-08-30T17:31:54.820902465Z",
+  "created": "2022-08-30T17:35:26.413031312Z",
   "delegates": [
     "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
   ],
   "info": {},
   "pin": {
-    "cid": "bafkreiekjkzviemewils3riqwptnbysupmepxgmj5a5zfj3riuouvt2lra",
+    "cid": "bafkreiau46nl5ganihhygkf5leyevenczej45xzxg7khaw36mfc6youzy4",
     "name": "",
     "origins": [],
     "meta": {
@@ -261,11 +261,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "36161743",
+  "requestid": "36161825",
   "status": "queued",
-  "created": "2022-08-30T17:31:54.820Z",
+  "created": "2022-08-30T17:35:26.413Z",
   "pin": {
-    "cid": "bafkreiekjkzviemewils3riqwptnbysupmepxgmj5a5zfj3riuouvt2lra",
+    "cid": "bafkreiau46nl5ganihhygkf5leyevenczej45xzxg7khaw36mfc6youzy4",
     "name": "",
     "origins": [],
     "meta": {
@@ -306,7 +306,7 @@ POST https://api.estuary.tech/pinning/pins
 
 #### Request
 ```
-DELETE https://api.estuary.tech/pinning/pins/36161745
+DELETE https://api.estuary.tech/pinning/pins/36161827
 ```
 ##### Headers
 ```json
@@ -328,7 +328,7 @@ DELETE https://api.estuary.tech/pinning/pins/36161745
 {
   "connection": "close",
   "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:31:56 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:27 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -390,7 +390,7 @@ POST https://api.estuary.tech/pinning/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigykxfk7l3trm3ypqjsgclhvcuuano64dsowdslog7tc2qeui6etq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihu3pc6mlgkjvrlenvggumbxrrosdtg5pd7dvvkdgj46ebso4hls4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -403,7 +403,7 @@ POST https://api.estuary.tech/pinning/pins
   "connection": "close",
   "content-length": "361",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:31:55 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:26 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -412,15 +412,15 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body
 ```json
 {
-  "requestid": "36161745",
+  "requestid": "36161827",
   "status": "queued",
-  "created": "2022-08-30T17:31:55.071528958Z",
+  "created": "2022-08-30T17:35:26.674984512Z",
   "delegates": [
     "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
   ],
   "info": {},
   "pin": {
-    "cid": "bafkreigykxfk7l3trm3ypqjsgclhvcuuano64dsowdslog7tc2qeui6etq",
+    "cid": "bafkreihu3pc6mlgkjvrlenvggumbxrrosdtg5pd7dvvkdgj46ebso4hls4",
     "name": "",
     "origins": [],
     "meta": {
@@ -433,15 +433,15 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "36161745",
+  "requestid": "36161827",
   "status": "queued",
-  "created": "2022-08-30T17:31:55.071528958Z",
+  "created": "2022-08-30T17:35:26.674984512Z",
   "delegates": [
     "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
   ],
   "info": {},
   "pin": {
-    "cid": "bafkreigykxfk7l3trm3ypqjsgclhvcuuano64dsowdslog7tc2qeui6etq",
+    "cid": "bafkreihu3pc6mlgkjvrlenvggumbxrrosdtg5pd7dvvkdgj46ebso4hls4",
     "name": "",
     "origins": [],
     "meta": {
@@ -453,11 +453,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "36161745",
+  "requestid": "36161827",
   "status": "queued",
-  "created": "2022-08-30T17:31:55.071Z",
+  "created": "2022-08-30T17:35:26.674Z",
   "pin": {
-    "cid": "bafkreigykxfk7l3trm3ypqjsgclhvcuuano64dsowdslog7tc2qeui6etq",
+    "cid": "bafkreihu3pc6mlgkjvrlenvggumbxrrosdtg5pd7dvvkdgj46ebso4hls4",
     "name": "",
     "origins": [],
     "meta": {
@@ -508,7 +508,7 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 {
   "connection": "close",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:32:05 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:27 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "transfer-encoding": "chunked",
   "vary": "Origin",
@@ -518,103 +518,18 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 ##### Body
 ```json
 {
-  "count": 43,
+  "count": 38,
   "results": [
     {
-      "requestid": "36161746",
+      "requestid": "36161825",
       "status": "queued",
-      "created": "2022-08-30T17:31:55.094868828Z",
+      "created": "2022-08-30T17:35:26.413031312Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreibkdsozemwfky67vqqxhbyfsrgpd6uah7nsnbmm2walbcibp3qrdu",
-        "name": "",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      }
-    },
-    {
-      "requestid": "36161743",
-      "status": "queued",
-      "created": "2022-08-30T17:31:54.820902465Z",
-      "delegates": [
-        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
-      ],
-      "info": {},
-      "pin": {
-        "cid": "bafkreiekjkzviemewils3riqwptnbysupmepxgmj5a5zfj3riuouvt2lra",
-        "name": "",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      }
-    },
-    {
-      "requestid": "36161741",
-      "status": "queued",
-      "created": "2022-08-30T17:31:33.071890643Z",
-      "delegates": [
-        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
-      ],
-      "info": {},
-      "pin": {
-        "cid": "bafkreido53rpef5ke4upc6qoq337qf5cuqqj3xwsjuhvjqe2kld43rkrai",
-        "name": "81d2f323-9f6f-444c-86e3-f8ad14481431",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      }
-    },
-    {
-      "requestid": "36161740",
-      "status": "queued",
-      "created": "2022-08-30T17:31:32.823872178Z",
-      "delegates": [
-        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
-      ],
-      "info": {},
-      "pin": {
-        "cid": "bafkreidqx46qkyx56zwmglfuq3jw5llibnstktiaeypdei4f5rhsvcqsq4",
-        "name": "",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      }
-    },
-    {
-      "requestid": "36161739",
-      "status": "queued",
-      "created": "2022-08-30T17:31:30.878480767Z",
-      "delegates": [
-        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
-      ],
-      "info": {},
-      "pin": {
-        "cid": "bafkreifk63behkns3q4p42xzh3nd6f7ltdjangx5coyqbtbvbkeen3x3we",
-        "name": "",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      }
-    },
-    {
-      "requestid": "36161735",
-      "status": "queued",
-      "created": "2022-08-30T17:31:26.637810441Z",
-      "delegates": [
-        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
-      ],
-      "info": {},
-      "pin": {
-        "cid": "bafkreifquyfjp73ygllele4lbrm5teljkioyfziv255xienaltyqjeedxq",
+        "cid": "bafkreiau46nl5ganihhygkf5leyevenczej45xzxg7khaw36mfc6youzy4",
         "name": "",
         "origins": [],
         "meta": {
@@ -671,6 +586,81 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
       "requestid": "33126797",
       "status": "pinned",
       "created": "2022-07-18T19:42:14.739878Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33126155",
+      "status": "pinned",
+      "created": "2022-07-18T19:32:28.552634Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33126142",
+      "status": "pinned",
+      "created": "2022-07-18T19:31:58.205614Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33126075",
+      "status": "pinned",
+      "created": "2022-07-18T19:29:58.099452Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33125399",
+      "status": "pinned",
+      "created": "2022-07-18T19:16:17.982375Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33125333",
+      "status": "pinned",
+      "created": "2022-07-18T19:15:07.824375Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
@@ -689,103 +679,18 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 ##### Body (as JSON)
 ```json
 {
-  "count": 43,
+  "count": 38,
   "results": [
     {
-      "requestid": "36161746",
+      "requestid": "36161825",
       "status": "queued",
-      "created": "2022-08-30T17:31:55.094868828Z",
+      "created": "2022-08-30T17:35:26.413031312Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreibkdsozemwfky67vqqxhbyfsrgpd6uah7nsnbmm2walbcibp3qrdu",
-        "name": "",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      }
-    },
-    {
-      "requestid": "36161743",
-      "status": "queued",
-      "created": "2022-08-30T17:31:54.820902465Z",
-      "delegates": [
-        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
-      ],
-      "info": {},
-      "pin": {
-        "cid": "bafkreiekjkzviemewils3riqwptnbysupmepxgmj5a5zfj3riuouvt2lra",
-        "name": "",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      }
-    },
-    {
-      "requestid": "36161741",
-      "status": "queued",
-      "created": "2022-08-30T17:31:33.071890643Z",
-      "delegates": [
-        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
-      ],
-      "info": {},
-      "pin": {
-        "cid": "bafkreido53rpef5ke4upc6qoq337qf5cuqqj3xwsjuhvjqe2kld43rkrai",
-        "name": "81d2f323-9f6f-444c-86e3-f8ad14481431",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      }
-    },
-    {
-      "requestid": "36161740",
-      "status": "queued",
-      "created": "2022-08-30T17:31:32.823872178Z",
-      "delegates": [
-        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
-      ],
-      "info": {},
-      "pin": {
-        "cid": "bafkreidqx46qkyx56zwmglfuq3jw5llibnstktiaeypdei4f5rhsvcqsq4",
-        "name": "",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      }
-    },
-    {
-      "requestid": "36161739",
-      "status": "queued",
-      "created": "2022-08-30T17:31:30.878480767Z",
-      "delegates": [
-        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
-      ],
-      "info": {},
-      "pin": {
-        "cid": "bafkreifk63behkns3q4p42xzh3nd6f7ltdjangx5coyqbtbvbkeen3x3we",
-        "name": "",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      }
-    },
-    {
-      "requestid": "36161735",
-      "status": "queued",
-      "created": "2022-08-30T17:31:26.637810441Z",
-      "delegates": [
-        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
-      ],
-      "info": {},
-      "pin": {
-        "cid": "bafkreifquyfjp73ygllele4lbrm5teljkioyfziv255xienaltyqjeedxq",
+        "cid": "bafkreiau46nl5ganihhygkf5leyevenczej45xzxg7khaw36mfc6youzy4",
         "name": "",
         "origins": [],
         "meta": {
@@ -852,6 +757,81 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
         "origins": [],
         "meta": {}
       }
+    },
+    {
+      "requestid": "33126155",
+      "status": "pinned",
+      "created": "2022-07-18T19:32:28.552634Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33126142",
+      "status": "pinned",
+      "created": "2022-07-18T19:31:58.205614Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33126075",
+      "status": "pinned",
+      "created": "2022-07-18T19:29:58.099452Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33125399",
+      "status": "pinned",
+      "created": "2022-07-18T19:16:17.982375Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33125333",
+      "status": "pinned",
+      "created": "2022-07-18T19:15:07.824375Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
     }
   ]
 }
@@ -859,7 +839,7 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "count": 43,
+  "count": 38,
   "results": {}
 }
 ```
@@ -882,7 +862,7 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 
 #### Request
 ```
-GET https://api.estuary.tech/pinning/pins/36161748
+GET https://api.estuary.tech/pinning/pins/36161833
 ```
 ##### Headers
 ```json
@@ -905,7 +885,7 @@ GET https://api.estuary.tech/pinning/pins/36161748
   "connection": "close",
   "content-length": "97",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:32:07 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:30 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -916,7 +896,7 @@ GET https://api.estuary.tech/pinning/pins/36161748
 {
   "error": {
     "reason": "ERR_CONTENT_NOT_FOUND",
-    "details": "content with ID(36161748) was not found"
+    "details": "content with ID(36161833) was not found"
   }
 }
 ```
@@ -926,7 +906,7 @@ GET https://api.estuary.tech/pinning/pins/36161748
 {
   "error": {
     "reason": "ERR_CONTENT_NOT_FOUND",
-    "details": "content with ID(36161748) was not found"
+    "details": "content with ID(36161833) was not found"
   }
 }
 ```
@@ -948,7 +928,7 @@ null
 
 #### Request
 ```
-GET https://api.estuary.tech/pinning/pins/36161749
+GET https://api.estuary.tech/pinning/pins/36161836
 ```
 ##### Headers
 ```json
@@ -971,7 +951,7 @@ GET https://api.estuary.tech/pinning/pins/36161749
   "connection": "close",
   "content-length": "361",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:32:08 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:31 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -980,15 +960,15 @@ GET https://api.estuary.tech/pinning/pins/36161749
 ##### Body
 ```json
 {
-  "requestid": "36161749",
+  "requestid": "36161836",
   "status": "queued",
-  "created": "2022-08-30T17:32:06.735371342Z",
+  "created": "2022-08-30T17:35:29.862532954Z",
   "delegates": [
     "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
   ],
   "info": {},
   "pin": {
-    "cid": "bafkreig5pjteq37crc4pxbegz5sbumeyv4e4vwsalagejs5zgpltvbi4e4",
+    "cid": "bafkreid6l24benujj2xmeykgth7rx4tpriawzrih5meofpfspde4h3mw2m",
     "name": "",
     "origins": [],
     "meta": {
@@ -1001,15 +981,15 @@ GET https://api.estuary.tech/pinning/pins/36161749
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "36161749",
+  "requestid": "36161836",
   "status": "queued",
-  "created": "2022-08-30T17:32:06.735371342Z",
+  "created": "2022-08-30T17:35:29.862532954Z",
   "delegates": [
     "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
   ],
   "info": {},
   "pin": {
-    "cid": "bafkreig5pjteq37crc4pxbegz5sbumeyv4e4vwsalagejs5zgpltvbi4e4",
+    "cid": "bafkreid6l24benujj2xmeykgth7rx4tpriawzrih5meofpfspde4h3mw2m",
     "name": "",
     "origins": [],
     "meta": {
@@ -1021,11 +1001,11 @@ GET https://api.estuary.tech/pinning/pins/36161749
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "36161749",
+  "requestid": "36161836",
   "status": "queued",
-  "created": "2022-08-30T17:32:06.735Z",
+  "created": "2022-08-30T17:35:29.862Z",
   "pin": {
-    "cid": "bafkreig5pjteq37crc4pxbegz5sbumeyv4e4vwsalagejs5zgpltvbi4e4",
+    "cid": "bafkreid6l24benujj2xmeykgth7rx4tpriawzrih5meofpfspde4h3mw2m",
     "name": "",
     "origins": [],
     "meta": {
@@ -1038,7 +1018,7 @@ GET https://api.estuary.tech/pinning/pins/36161749
   "info": {}
 }
 ```
-## Pin's with requestid '36161748' can have cid 'bafkreihkgmabqyq6rknnsggcgxmb3ynbdjcz37liiuhtsrgrqbi2yo25gq' replaced with 'bafkreig5pjteq37crc4pxbegz5sbumeyv4e4vwsalagejs5zgpltvbi4e4' - 🟢 SUCCESS
+## Pin's with requestid '36161833' can have cid 'bafkreiafjclr3n5ruvt6aubaeqcguhymafpasu4bore476drmsfrpnjxqa' replaced with 'bafkreid6l24benujj2xmeykgth7rx4tpriawzrih5meofpfspde4h3mw2m' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1059,7 +1039,7 @@ GET https://api.estuary.tech/pinning/pins/36161749
 
 #### Request
 ```
-POST https://api.estuary.tech/pinning/pins/36161748
+POST https://api.estuary.tech/pinning/pins/36161833
 ```
 ##### Headers
 ```json
@@ -1070,7 +1050,7 @@ POST https://api.estuary.tech/pinning/pins/36161748
 ```
 ##### Body
 ```json
-{"cid":"bafkreig5pjteq37crc4pxbegz5sbumeyv4e4vwsalagejs5zgpltvbi4e4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreid6l24benujj2xmeykgth7rx4tpriawzrih5meofpfspde4h3mw2m","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1083,7 +1063,7 @@ POST https://api.estuary.tech/pinning/pins/36161748
   "connection": "close",
   "content-length": "361",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:32:06 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:29 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -1092,15 +1072,15 @@ POST https://api.estuary.tech/pinning/pins/36161748
 ##### Body
 ```json
 {
-  "requestid": "36161749",
+  "requestid": "36161836",
   "status": "queued",
-  "created": "2022-08-30T17:32:06.735371342Z",
+  "created": "2022-08-30T17:35:29.862532954Z",
   "delegates": [
     "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
   ],
   "info": {},
   "pin": {
-    "cid": "bafkreig5pjteq37crc4pxbegz5sbumeyv4e4vwsalagejs5zgpltvbi4e4",
+    "cid": "bafkreid6l24benujj2xmeykgth7rx4tpriawzrih5meofpfspde4h3mw2m",
     "name": "",
     "origins": [],
     "meta": {
@@ -1113,15 +1093,15 @@ POST https://api.estuary.tech/pinning/pins/36161748
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "36161749",
+  "requestid": "36161836",
   "status": "queued",
-  "created": "2022-08-30T17:32:06.735371342Z",
+  "created": "2022-08-30T17:35:29.862532954Z",
   "delegates": [
     "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
   ],
   "info": {},
   "pin": {
-    "cid": "bafkreig5pjteq37crc4pxbegz5sbumeyv4e4vwsalagejs5zgpltvbi4e4",
+    "cid": "bafkreid6l24benujj2xmeykgth7rx4tpriawzrih5meofpfspde4h3mw2m",
     "name": "",
     "origins": [],
     "meta": {
@@ -1133,11 +1113,11 @@ POST https://api.estuary.tech/pinning/pins/36161748
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "36161749",
+  "requestid": "36161836",
   "status": "queued",
-  "created": "2022-08-30T17:32:06.735Z",
+  "created": "2022-08-30T17:35:29.862Z",
   "pin": {
-    "cid": "bafkreig5pjteq37crc4pxbegz5sbumeyv4e4vwsalagejs5zgpltvbi4e4",
+    "cid": "bafkreid6l24benujj2xmeykgth7rx4tpriawzrih5meofpfspde4h3mw2m",
     "name": "",
     "origins": [],
     "meta": {
@@ -1156,7 +1136,7 @@ POST https://api.estuary.tech/pinning/pins/36161748
 
   🟢 Pin exists (success)
 
-  🟢 Could obtain requestid from new pin (36161748) (success)
+  🟢 Could obtain requestid from new pin (36161833) (success)
 
   🟢 Response is ok (success)
 
@@ -1192,7 +1172,7 @@ POST https://api.estuary.tech/pinning/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreihkgmabqyq6rknnsggcgxmb3ynbdjcz37liiuhtsrgrqbi2yo25gq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiafjclr3n5ruvt6aubaeqcguhymafpasu4bore476drmsfrpnjxqa","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1205,7 +1185,7 @@ POST https://api.estuary.tech/pinning/pins
   "connection": "close",
   "content-length": "361",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:32:05 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:28 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -1214,15 +1194,15 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body
 ```json
 {
-  "requestid": "36161748",
+  "requestid": "36161833",
   "status": "queued",
-  "created": "2022-08-30T17:32:05.787240288Z",
+  "created": "2022-08-30T17:35:28.884970317Z",
   "delegates": [
     "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
   ],
   "info": {},
   "pin": {
-    "cid": "bafkreihkgmabqyq6rknnsggcgxmb3ynbdjcz37liiuhtsrgrqbi2yo25gq",
+    "cid": "bafkreiafjclr3n5ruvt6aubaeqcguhymafpasu4bore476drmsfrpnjxqa",
     "name": "",
     "origins": [],
     "meta": {
@@ -1235,15 +1215,15 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "36161748",
+  "requestid": "36161833",
   "status": "queued",
-  "created": "2022-08-30T17:32:05.787240288Z",
+  "created": "2022-08-30T17:35:28.884970317Z",
   "delegates": [
     "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
   ],
   "info": {},
   "pin": {
-    "cid": "bafkreihkgmabqyq6rknnsggcgxmb3ynbdjcz37liiuhtsrgrqbi2yo25gq",
+    "cid": "bafkreiafjclr3n5ruvt6aubaeqcguhymafpasu4bore476drmsfrpnjxqa",
     "name": "",
     "origins": [],
     "meta": {
@@ -1255,11 +1235,11 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "36161748",
+  "requestid": "36161833",
   "status": "queued",
-  "created": "2022-08-30T17:32:05.787Z",
+  "created": "2022-08-30T17:35:28.884Z",
   "pin": {
-    "cid": "bafkreihkgmabqyq6rknnsggcgxmb3ynbdjcz37liiuhtsrgrqbi2yo25gq",
+    "cid": "bafkreiafjclr3n5ruvt6aubaeqcguhymafpasu4bore476drmsfrpnjxqa",
     "name": "",
     "origins": [],
     "meta": {
@@ -1272,7 +1252,7 @@ POST https://api.estuary.tech/pinning/pins
   "info": {}
 }
 ```
-## Can retrieve pin with name 'd88d14ff-3350-4851-bdbf-ffd42b0ecb26' via the 'exact' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '8502deef-7980-4f3f-b8b6-0ca43dc37a2f' via the 'exact' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (4/4 successful)
 
@@ -1292,7 +1272,7 @@ POST https://api.estuary.tech/pinning/pins
 
 #### Request
 ```
-GET https://api.estuary.tech/pinning/pins?name=d88d14ff-3350-4851-bdbf-ffd42b0ecb26&match=exact
+GET https://api.estuary.tech/pinning/pins?name=8502deef-7980-4f3f-b8b6-0ca43dc37a2f&match=exact
 ```
 ##### Headers
 ```json
@@ -1315,7 +1295,7 @@ GET https://api.estuary.tech/pinning/pins?name=d88d14ff-3350-4851-bdbf-ffd42b0ec
   "connection": "close",
   "content-length": "421",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:32:10 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:33 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -1327,16 +1307,16 @@ GET https://api.estuary.tech/pinning/pins?name=d88d14ff-3350-4851-bdbf-ffd42b0ec
   "count": 1,
   "results": [
     {
-      "requestid": "36161750",
+      "requestid": "36161839",
       "status": "queued",
-      "created": "2022-08-30T17:32:08.983098757Z",
+      "created": "2022-08-30T17:35:32.111887391Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-        "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+        "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+        "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1353,16 +1333,16 @@ GET https://api.estuary.tech/pinning/pins?name=d88d14ff-3350-4851-bdbf-ffd42b0ec
   "count": 1,
   "results": [
     {
-      "requestid": "36161750",
+      "requestid": "36161839",
       "status": "queued",
-      "created": "2022-08-30T17:32:08.983098757Z",
+      "created": "2022-08-30T17:35:32.111887391Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-        "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+        "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+        "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1379,7 +1359,7 @@ GET https://api.estuary.tech/pinning/pins?name=d88d14ff-3350-4851-bdbf-ffd42b0ec
   "results": {}
 }
 ```
-## Can retrieve pin with name 'D88D14FF-3350-4851-BDBF-FFD42B0ECB26' via the 'iexact' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '8502DEEF-7980-4F3F-B8B6-0CA43DC37A2F' via the 'iexact' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (4/4 successful)
 
@@ -1399,7 +1379,7 @@ GET https://api.estuary.tech/pinning/pins?name=d88d14ff-3350-4851-bdbf-ffd42b0ec
 
 #### Request
 ```
-GET https://api.estuary.tech/pinning/pins?name=D88D14FF-3350-4851-BDBF-FFD42B0ECB26&match=iexact
+GET https://api.estuary.tech/pinning/pins?name=8502DEEF-7980-4F3F-B8B6-0CA43DC37A2F&match=iexact
 ```
 ##### Headers
 ```json
@@ -1422,7 +1402,7 @@ GET https://api.estuary.tech/pinning/pins?name=D88D14FF-3350-4851-BDBF-FFD42B0EC
   "connection": "close",
   "content-length": "421",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:32:10 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:34 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -1434,16 +1414,16 @@ GET https://api.estuary.tech/pinning/pins?name=D88D14FF-3350-4851-BDBF-FFD42B0EC
   "count": 1,
   "results": [
     {
-      "requestid": "36161750",
+      "requestid": "36161839",
       "status": "queued",
-      "created": "2022-08-30T17:32:08.983098757Z",
+      "created": "2022-08-30T17:35:32.111887391Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-        "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+        "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+        "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1460,16 +1440,16 @@ GET https://api.estuary.tech/pinning/pins?name=D88D14FF-3350-4851-BDBF-FFD42B0EC
   "count": 1,
   "results": [
     {
-      "requestid": "36161750",
+      "requestid": "36161839",
       "status": "queued",
-      "created": "2022-08-30T17:32:08.983098757Z",
+      "created": "2022-08-30T17:35:32.111887391Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-        "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+        "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+        "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1486,7 +1466,7 @@ GET https://api.estuary.tech/pinning/pins?name=D88D14FF-3350-4851-BDBF-FFD42B0EC
   "results": {}
 }
 ```
-## Can retrieve pin with name '3350-4851-bdbf-ffd' via the 'partial' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '7980-4f3f-b8b6-0ca' via the 'partial' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (4/4 successful)
 
@@ -1506,7 +1486,7 @@ GET https://api.estuary.tech/pinning/pins?name=D88D14FF-3350-4851-BDBF-FFD42B0EC
 
 #### Request
 ```
-GET https://api.estuary.tech/pinning/pins?name=3350-4851-bdbf-ffd&match=partial
+GET https://api.estuary.tech/pinning/pins?name=7980-4f3f-b8b6-0ca&match=partial
 ```
 ##### Headers
 ```json
@@ -1529,7 +1509,7 @@ GET https://api.estuary.tech/pinning/pins?name=3350-4851-bdbf-ffd&match=partial
   "connection": "close",
   "content-length": "421",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:32:12 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:35 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -1541,16 +1521,16 @@ GET https://api.estuary.tech/pinning/pins?name=3350-4851-bdbf-ffd&match=partial
   "count": 1,
   "results": [
     {
-      "requestid": "36161750",
+      "requestid": "36161839",
       "status": "queued",
-      "created": "2022-08-30T17:32:08.983098757Z",
+      "created": "2022-08-30T17:35:32.111887391Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-        "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+        "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+        "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1567,16 +1547,16 @@ GET https://api.estuary.tech/pinning/pins?name=3350-4851-bdbf-ffd&match=partial
   "count": 1,
   "results": [
     {
-      "requestid": "36161750",
+      "requestid": "36161839",
       "status": "queued",
-      "created": "2022-08-30T17:32:08.983098757Z",
+      "created": "2022-08-30T17:35:32.111887391Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-        "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+        "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+        "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1593,7 +1573,7 @@ GET https://api.estuary.tech/pinning/pins?name=3350-4851-bdbf-ffd&match=partial
   "results": {}
 }
 ```
-## Can retrieve pin with name '3350-4851-BDBF-FFD' via the 'ipartial' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '7980-4F3F-B8B6-0CA' via the 'ipartial' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (4/4 successful)
 
@@ -1613,7 +1593,7 @@ GET https://api.estuary.tech/pinning/pins?name=3350-4851-bdbf-ffd&match=partial
 
 #### Request
 ```
-GET https://api.estuary.tech/pinning/pins?name=3350-4851-BDBF-FFD&match=ipartial
+GET https://api.estuary.tech/pinning/pins?name=7980-4F3F-B8B6-0CA&match=ipartial
 ```
 ##### Headers
 ```json
@@ -1636,7 +1616,7 @@ GET https://api.estuary.tech/pinning/pins?name=3350-4851-BDBF-FFD&match=ipartial
   "connection": "close",
   "content-length": "421",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:32:13 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:36 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -1648,16 +1628,16 @@ GET https://api.estuary.tech/pinning/pins?name=3350-4851-BDBF-FFD&match=ipartial
   "count": 1,
   "results": [
     {
-      "requestid": "36161750",
+      "requestid": "36161839",
       "status": "queued",
-      "created": "2022-08-30T17:32:08.983098757Z",
+      "created": "2022-08-30T17:35:32.111887391Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-        "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+        "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+        "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1674,16 +1654,16 @@ GET https://api.estuary.tech/pinning/pins?name=3350-4851-BDBF-FFD&match=ipartial
   "count": 1,
   "results": [
     {
-      "requestid": "36161750",
+      "requestid": "36161839",
       "status": "queued",
-      "created": "2022-08-30T17:32:08.983098757Z",
+      "created": "2022-08-30T17:35:32.111887391Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-        "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+        "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+        "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1700,7 +1680,7 @@ GET https://api.estuary.tech/pinning/pins?name=3350-4851-BDBF-FFD&match=ipartial
   "results": {}
 }
 ```
-## Can create a pin with name='d88d14ff-3350-4851-bdbf-ffd42b0ecb26' - 🟢 SUCCESS
+## Can create a pin with name='8502deef-7980-4f3f-b8b6-0ca43dc37a2f' - 🟢 SUCCESS
 
 ### Expectations (19/19 successful)
 
@@ -1761,7 +1741,7 @@ POST https://api.estuary.tech/pinning/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva","name":"d88d14ff-3350-4851-bdbf-ffd42b0ecb26","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq","name":"8502deef-7980-4f3f-b8b6-0ca43dc37a2f","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1774,7 +1754,7 @@ POST https://api.estuary.tech/pinning/pins
   "connection": "close",
   "content-length": "397",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:32:08 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:32 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -1783,16 +1763,16 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body
 ```json
 {
-  "requestid": "36161750",
+  "requestid": "36161839",
   "status": "queued",
-  "created": "2022-08-30T17:32:08.983098757Z",
+  "created": "2022-08-30T17:35:32.111887391Z",
   "delegates": [
     "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
   ],
   "info": {},
   "pin": {
-    "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-    "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+    "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+    "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1804,16 +1784,16 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "36161750",
+  "requestid": "36161839",
   "status": "queued",
-  "created": "2022-08-30T17:32:08.983098757Z",
+  "created": "2022-08-30T17:35:32.111887391Z",
   "delegates": [
     "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
   ],
   "info": {},
   "pin": {
-    "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-    "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+    "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+    "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1824,12 +1804,12 @@ POST https://api.estuary.tech/pinning/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "36161750",
+  "requestid": "36161839",
   "status": "queued",
-  "created": "2022-08-30T17:32:08.983Z",
+  "created": "2022-08-30T17:35:32.111Z",
   "pin": {
-    "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-    "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+    "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+    "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1885,7 +1865,7 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 {
   "connection": "close",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:32:14 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:37 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "transfer-encoding": "chunked",
   "vary": "Origin",
@@ -1898,16 +1878,16 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
   "count": 40,
   "results": [
     {
-      "requestid": "36161750",
+      "requestid": "36161839",
       "status": "queued",
-      "created": "2022-08-30T17:32:08.983098757Z",
+      "created": "2022-08-30T17:35:32.111887391Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-        "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+        "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+        "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1915,15 +1895,15 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
       }
     },
     {
-      "requestid": "36161749",
+      "requestid": "36161836",
       "status": "queued",
-      "created": "2022-08-30T17:32:06.735371342Z",
+      "created": "2022-08-30T17:35:29.862532954Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreig5pjteq37crc4pxbegz5sbumeyv4e4vwsalagejs5zgpltvbi4e4",
+        "cid": "bafkreid6l24benujj2xmeykgth7rx4tpriawzrih5meofpfspde4h3mw2m",
         "name": "",
         "origins": [],
         "meta": {
@@ -1932,15 +1912,15 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
       }
     },
     {
-      "requestid": "36161743",
+      "requestid": "36161825",
       "status": "queued",
-      "created": "2022-08-30T17:31:54.820902465Z",
+      "created": "2022-08-30T17:35:26.413031312Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiekjkzviemewils3riqwptnbysupmepxgmj5a5zfj3riuouvt2lra",
+        "cid": "bafkreiau46nl5ganihhygkf5leyevenczej45xzxg7khaw36mfc6youzy4",
         "name": "",
         "origins": [],
         "meta": {
@@ -2063,16 +2043,16 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
   "count": 40,
   "results": [
     {
-      "requestid": "36161750",
+      "requestid": "36161839",
       "status": "queued",
-      "created": "2022-08-30T17:32:08.983098757Z",
+      "created": "2022-08-30T17:35:32.111887391Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-        "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+        "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+        "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2080,15 +2060,15 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
       }
     },
     {
-      "requestid": "36161749",
+      "requestid": "36161836",
       "status": "queued",
-      "created": "2022-08-30T17:32:06.735371342Z",
+      "created": "2022-08-30T17:35:29.862532954Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreig5pjteq37crc4pxbegz5sbumeyv4e4vwsalagejs5zgpltvbi4e4",
+        "cid": "bafkreid6l24benujj2xmeykgth7rx4tpriawzrih5meofpfspde4h3mw2m",
         "name": "",
         "origins": [],
         "meta": {
@@ -2097,15 +2077,15 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
       }
     },
     {
-      "requestid": "36161743",
+      "requestid": "36161825",
       "status": "queued",
-      "created": "2022-08-30T17:31:54.820902465Z",
+      "created": "2022-08-30T17:35:26.413031312Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiekjkzviemewils3riqwptnbysupmepxgmj5a5zfj3riuouvt2lra",
+        "cid": "bafkreiau46nl5ganihhygkf5leyevenczej45xzxg7khaw36mfc6youzy4",
         "name": "",
         "origins": [],
         "meta": {
@@ -2268,7 +2248,7 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 {
   "connection": "close",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:32:15 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:38 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "transfer-encoding": "chunked",
   "vary": "Origin",
@@ -2653,7 +2633,7 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 {
   "connection": "close",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:32:13 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:36 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "transfer-encoding": "chunked",
   "vary": "Origin",
@@ -2666,16 +2646,16 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
   "count": 40,
   "results": [
     {
-      "requestid": "36161750",
+      "requestid": "36161839",
       "status": "queued",
-      "created": "2022-08-30T17:32:08.983098757Z",
+      "created": "2022-08-30T17:35:32.111887391Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-        "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+        "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+        "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2683,15 +2663,15 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
       }
     },
     {
-      "requestid": "36161749",
+      "requestid": "36161836",
       "status": "queued",
-      "created": "2022-08-30T17:32:06.735371342Z",
+      "created": "2022-08-30T17:35:29.862532954Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreig5pjteq37crc4pxbegz5sbumeyv4e4vwsalagejs5zgpltvbi4e4",
+        "cid": "bafkreid6l24benujj2xmeykgth7rx4tpriawzrih5meofpfspde4h3mw2m",
         "name": "",
         "origins": [],
         "meta": {
@@ -2700,15 +2680,15 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
       }
     },
     {
-      "requestid": "36161743",
+      "requestid": "36161825",
       "status": "queued",
-      "created": "2022-08-30T17:31:54.820902465Z",
+      "created": "2022-08-30T17:35:26.413031312Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiekjkzviemewils3riqwptnbysupmepxgmj5a5zfj3riuouvt2lra",
+        "cid": "bafkreiau46nl5ganihhygkf5leyevenczej45xzxg7khaw36mfc6youzy4",
         "name": "",
         "origins": [],
         "meta": {
@@ -2831,16 +2811,16 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
   "count": 40,
   "results": [
     {
-      "requestid": "36161750",
+      "requestid": "36161839",
       "status": "queued",
-      "created": "2022-08-30T17:32:08.983098757Z",
+      "created": "2022-08-30T17:35:32.111887391Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-        "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+        "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+        "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2848,15 +2828,15 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
       }
     },
     {
-      "requestid": "36161749",
+      "requestid": "36161836",
       "status": "queued",
-      "created": "2022-08-30T17:32:06.735371342Z",
+      "created": "2022-08-30T17:35:29.862532954Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreig5pjteq37crc4pxbegz5sbumeyv4e4vwsalagejs5zgpltvbi4e4",
+        "cid": "bafkreid6l24benujj2xmeykgth7rx4tpriawzrih5meofpfspde4h3mw2m",
         "name": "",
         "origins": [],
         "meta": {
@@ -2865,15 +2845,15 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
       }
     },
     {
-      "requestid": "36161743",
+      "requestid": "36161825",
       "status": "queued",
-      "created": "2022-08-30T17:31:54.820902465Z",
+      "created": "2022-08-30T17:35:26.413031312Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiekjkzviemewils3riqwptnbysupmepxgmj5a5zfj3riuouvt2lra",
+        "cid": "bafkreiau46nl5ganihhygkf5leyevenczej45xzxg7khaw36mfc6youzy4",
         "name": "",
         "origins": [],
         "meta": {
@@ -2996,7 +2976,7 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
   "results": {}
 }
 ```
-## Can delete pin with requestid '36161750' - 🟢 SUCCESS
+## Can delete pin with requestid '36161839' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -3022,7 +3002,7 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 
 #### Request
 ```
-DELETE https://api.estuary.tech/pinning/pins/36161750
+DELETE https://api.estuary.tech/pinning/pins/36161839
 ```
 ##### Headers
 ```json
@@ -3044,7 +3024,7 @@ DELETE https://api.estuary.tech/pinning/pins/36161750
 {
   "connection": "close",
   "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:32:24 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:40 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -3063,7 +3043,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid '36161749' - 🟢 SUCCESS
+## Can delete pin with requestid '36161836' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -3089,7 +3069,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.estuary.tech/pinning/pins/36161749
+DELETE https://api.estuary.tech/pinning/pins/36161836
 ```
 ##### Headers
 ```json
@@ -3111,7 +3091,7 @@ DELETE https://api.estuary.tech/pinning/pins/36161749
 {
   "connection": "close",
   "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:32:25 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:41 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -3130,7 +3110,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid '36161743' - 🟢 SUCCESS
+## Can delete pin with requestid '36161825' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -3156,7 +3136,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.estuary.tech/pinning/pins/36161743
+DELETE https://api.estuary.tech/pinning/pins/36161825
 ```
 ##### Headers
 ```json
@@ -3178,7 +3158,7 @@ DELETE https://api.estuary.tech/pinning/pins/36161743
 {
   "connection": "close",
   "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:32:26 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:42 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "vary": "Origin",
   "x-appversion": "v0.1.7"
@@ -3197,11 +3177,378 @@ null
 ```json
 undefined
 ```
-## Call pinsGet after deletions - ❌ FAILED
+## Get all Pins created before 'Mon Jul 18 2022 19:29:58 GMT+0000 (Coordinated Universal Time)' - 🟢 SUCCESS
 
-### Expectations (0/1 successful)
+### Expectations (0/0 successful)
 
-  ❌ Final pinsGet call returns the same count as before all compliance checks: '42' (failure)
+  
+
+
+
+
+
+### Details
+
+#### Request
+```
+GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-07-18T19%3A29%3A58.099Z
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+200 OK
+```
+##### Headers
+```json
+{
+  "connection": "close",
+  "content-type": "application/json; charset=UTF-8",
+  "date": "Tue, 30 Aug 2022 17:35:43 GMT",
+  "server": "nginx/1.18.0 (Ubuntu)",
+  "transfer-encoding": "chunked",
+  "vary": "Origin",
+  "x-appversion": "v0.1.7"
+}
+```
+##### Body
+```json
+{
+  "count": 30,
+  "results": [
+    {
+      "requestid": "33125399",
+      "status": "pinned",
+      "created": "2022-07-18T19:16:17.982375Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33125333",
+      "status": "pinned",
+      "created": "2022-07-18T19:15:07.824375Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33125199",
+      "status": "pinned",
+      "created": "2022-07-18T19:13:38.667485Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33125061",
+      "status": "pinned",
+      "created": "2022-07-18T19:10:01.175085Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33124993",
+      "status": "pinned",
+      "created": "2022-07-18T19:08:09.227653Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33124575",
+      "status": "pinned",
+      "created": "2022-07-18T19:02:30.392281Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33124430",
+      "status": "pinned",
+      "created": "2022-07-18T18:56:46.284933Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33124419",
+      "status": "pinned",
+      "created": "2022-07-18T18:49:50.147145Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33124416",
+      "status": "pinned",
+      "created": "2022-07-18T18:49:31.012481Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33124369",
+      "status": "pinned",
+      "created": "2022-07-18T18:45:15.118163Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    }
+  ]
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "count": 30,
+  "results": [
+    {
+      "requestid": "33125399",
+      "status": "pinned",
+      "created": "2022-07-18T19:16:17.982375Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33125333",
+      "status": "pinned",
+      "created": "2022-07-18T19:15:07.824375Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33125199",
+      "status": "pinned",
+      "created": "2022-07-18T19:13:38.667485Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33125061",
+      "status": "pinned",
+      "created": "2022-07-18T19:10:01.175085Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33124993",
+      "status": "pinned",
+      "created": "2022-07-18T19:08:09.227653Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33124575",
+      "status": "pinned",
+      "created": "2022-07-18T19:02:30.392281Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33124430",
+      "status": "pinned",
+      "created": "2022-07-18T18:56:46.284933Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33124419",
+      "status": "pinned",
+      "created": "2022-07-18T18:49:50.147145Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33124416",
+      "status": "pinned",
+      "created": "2022-07-18T18:49:31.012481Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    },
+    {
+      "requestid": "33124369",
+      "status": "pinned",
+      "created": "2022-07-18T18:45:15.118163Z",
+      "delegates": [
+        "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
+      ],
+      "info": {},
+      "pin": {
+        "cid": "QmS9i1Ee2HZNX27qWXdYXeHQarn55s9wkZE2svdrw4rPNK",
+        "name": "",
+        "origins": [],
+        "meta": {}
+      }
+    }
+  ]
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+{
+  "count": 30,
+  "results": {}
+}
+```
+## Call pinsGet after deletions - 🟢 SUCCESS
+
+### Expectations (1/1 successful)
+
+  🟢 Final pinsGet call returns the same count as before all compliance checks: '37' (success)
 
 
 
@@ -3233,7 +3580,7 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 {
   "connection": "close",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:32:27 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:43 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "transfer-encoding": "chunked",
   "vary": "Origin",
@@ -3564,17 +3911,17 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
   "results": {}
 }
 ```
-## Can delete all pins created during compliance checks - ❌ FAILED
+## Can delete all pins created during compliance checks - 🟢 SUCCESS
 
-### Expectations (3/4 successful)
-
-  🟢 Response is ok (success)
+### Expectations (4/4 successful)
 
   🟢 Response is ok (success)
 
   🟢 Response is ok (success)
 
-  ❌ Final pinsGet call returns the same count as before all compliance checks: '42' (failure)
+  🟢 Response is ok (success)
+
+  🟢 Final pinsGet call returns the same count as before all compliance checks: '37' (success)
 
 
 ### Errors during run
@@ -3642,7 +3989,7 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
 {
   "connection": "close",
   "content-type": "application/json; charset=UTF-8",
-  "date": "Tue, 30 Aug 2022 17:32:23 GMT",
+  "date": "Tue, 30 Aug 2022 17:35:39 GMT",
   "server": "nginx/1.18.0 (Ubuntu)",
   "transfer-encoding": "chunked",
   "vary": "Origin",
@@ -3655,16 +4002,16 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
   "count": 40,
   "results": [
     {
-      "requestid": "36161750",
+      "requestid": "36161839",
       "status": "queued",
-      "created": "2022-08-30T17:32:08.983098757Z",
+      "created": "2022-08-30T17:35:32.111887391Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-        "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+        "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+        "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3672,15 +4019,15 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
       }
     },
     {
-      "requestid": "36161749",
+      "requestid": "36161836",
       "status": "queued",
-      "created": "2022-08-30T17:32:06.735371342Z",
+      "created": "2022-08-30T17:35:29.862532954Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreig5pjteq37crc4pxbegz5sbumeyv4e4vwsalagejs5zgpltvbi4e4",
+        "cid": "bafkreid6l24benujj2xmeykgth7rx4tpriawzrih5meofpfspde4h3mw2m",
         "name": "",
         "origins": [],
         "meta": {
@@ -3689,15 +4036,15 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
       }
     },
     {
-      "requestid": "36161743",
+      "requestid": "36161825",
       "status": "queued",
-      "created": "2022-08-30T17:31:54.820902465Z",
+      "created": "2022-08-30T17:35:26.413031312Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiekjkzviemewils3riqwptnbysupmepxgmj5a5zfj3riuouvt2lra",
+        "cid": "bafkreiau46nl5ganihhygkf5leyevenczej45xzxg7khaw36mfc6youzy4",
         "name": "",
         "origins": [],
         "meta": {
@@ -3820,16 +4167,16 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
   "count": 40,
   "results": [
     {
-      "requestid": "36161750",
+      "requestid": "36161839",
       "status": "queued",
-      "created": "2022-08-30T17:32:08.983098757Z",
+      "created": "2022-08-30T17:35:32.111887391Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiaxkbu2uv7i2jxuti7ab5pwxg7p3emwr44ccepwih62lxjbl7qdva",
-        "name": "d88d14ff-3350-4851-bdbf-ffd42b0ecb26",
+        "cid": "bafkreicstiwfdredj4xhusqdfsy6dlnd3btn2ddh46666rnsghwp6yvjkq",
+        "name": "8502deef-7980-4f3f-b8b6-0ca43dc37a2f",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3837,15 +4184,15 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
       }
     },
     {
-      "requestid": "36161749",
+      "requestid": "36161836",
       "status": "queued",
-      "created": "2022-08-30T17:32:06.735371342Z",
+      "created": "2022-08-30T17:35:29.862532954Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreig5pjteq37crc4pxbegz5sbumeyv4e4vwsalagejs5zgpltvbi4e4",
+        "cid": "bafkreid6l24benujj2xmeykgth7rx4tpriawzrih5meofpfspde4h3mw2m",
         "name": "",
         "origins": [],
         "meta": {
@@ -3854,15 +4201,15 @@ GET https://api.estuary.tech/pinning/pins?status=failed%2Cpinned%2Cpinning%2Cque
       }
     },
     {
-      "requestid": "36161743",
+      "requestid": "36161825",
       "status": "queued",
-      "created": "2022-08-30T17:31:54.820902465Z",
+      "created": "2022-08-30T17:35:26.413031312Z",
       "delegates": [
         "/ip4/3.134.223.177/tcp/6745/p2p/12D3KooWN8vAoGd6eurUSidcpLYguQiGZwt4eVgDvbgaS7kiGTup"
       ],
       "info": {},
       "pin": {
-        "cid": "bafkreiekjkzviemewils3riqwptnbysupmepxgmj5a5zfj3riuouvt2lra",
+        "cid": "bafkreiau46nl5ganihhygkf5leyevenczej45xzxg7khaw36mfc6youzy4",
         "name": "",
         "origins": [],
         "meta": {
