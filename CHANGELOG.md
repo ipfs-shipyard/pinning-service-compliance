@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.1.6...v1.2.0) (2022-08-29)
+
+
+### Features
+
+* Add Filebase pinning service ([#180](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/180)) ([43954a8](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/43954a855dbb675f54793ced44204e474ac56f78))
+
 ## [1.1.6](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.1.5...v1.1.6) (2022-08-25)
 
 
