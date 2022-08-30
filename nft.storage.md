@@ -1,9 +1,9 @@
 
 # https://nft.storage/api compliance:
 
-Execution Date: 2022-08-30T17:21:42.480Z
+Execution Date: 2022-08-30T17:21:50.663Z
 
-Revision: [be11a1e](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/be11a1e)
+Revision: [0f29092](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/0f29092)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/nft.storage.md)
 
@@ -13,7 +13,7 @@ Revision: [be11a1e](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   ❌ [Request with invalid token](#request-with-invalid-token----failed)
 
-  ❌ [Pins post of CID 'bafkreig7msn2tbjxnjudrc4osk2abhqa2pe5nylbev6d24rmzpmwy5doty'](#pins-post-of-cid-bafkreig7msn2tbjxnjudrc4osk2abhqa2pe5nylbev6d24rmzpmwy5doty----failed)
+  ❌ [Pins post of CID 'bafkreigbruhnyoylys4qunshqjp6tj2t7mixh7yqpub4q2lxoks5ivva4i'](#pins-post-of-cid-bafkreigbruhnyoylys4qunshqjp6tj2t7mixh7yqpub4q2lxoks5ivva4i----failed)
 
   ❌ [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----failed)
 
@@ -21,7 +21,7 @@ Revision: [be11a1e](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   ❌ [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----failed)
 
-  ❌ [Can create a pin with name='bdaa1e46-53dc-4ecb-953d-c25556c07ad1'](#can-create-a-pin-with-namebdaa1e46-53dc-4ecb-953d-c25556c07ad1----failed)
+  ❌ [Can create a pin with name='ff0a749b-0571-4668-8dd1-11e9016d9983'](#can-create-a-pin-with-nameff0a749b-0571-4668-8dd1-11e9016d9983----failed)
 
   ❌ [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----failed)
 
@@ -85,15 +85,15 @@ GET https://nft.storage/api/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f338a8d4a9e6b-SJC",
+  "cf-ray": "742f33c1e98896e7-SJC",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "text/html; charset=utf-8",
-  "date": "Tue, 30 Aug 2022 17:21:11 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:19 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=rMZTMsd9qxgxg%2BHfsLh38XFyUECiwQV%2FeJV%2FAjguaONznvD39b85ugzhJ21wOqsqt2mR83dxz8XbkfapJhOcwSw2t%2BSSCvjHePoIVdKDQiToieHIGyvFYxjHwOlXXA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=35wg6111zii4w5Yer%2FM0cQBHmoc5ipJJffN8rQKs%2BViq4sLGBN3oz0%2FTF%2FCyz1vIKXUSzwEfVrrM1ADvP3lnWvTSF%2BehJcu0LaW7peFciVOdeojnvr1x%2BMNPCJ3WQA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -113,7 +113,7 @@ GET https://nft.storage/api/pins
                   .next-error-h1 {
                     border-right: 1px solid rgba(255, 255, 255, .3);
                   }
-                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f338a8d4a9e6b","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f33c1e98896e7","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
 </body></html>
 ```
 
@@ -185,15 +185,15 @@ GET https://nft.storage/api/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f3390ced896ea-SJC",
+  "cf-ray": "742f33c81d009661-SJC",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "text/html; charset=utf-8",
-  "date": "Tue, 30 Aug 2022 17:21:12 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:21 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=4%2F2LV%2FfqJe73dfYNY0YWfTCP1ZuOhnIM7lbk%2BuoB2CVVs%2BXKDmivXzvseyIIQo8GRmObRBhmdqI7QeZD0f4oW2dSsBqTT8Fv9kFKYnc7mFvciAtZamcz7n0IeG1%2FWg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=LC7wQAJDJFfgC4IYmg6Ni72iYg8MOt1pd2FWF1ackUg1fdYTxOYdPc2mpovrCy03V8JXMJEn%2B3HP7KG8JGrIftZs6Q2AEenKJmLazX82P4i3V7kjwvB8lPFY33hHYw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -213,7 +213,7 @@ GET https://nft.storage/api/pins
                   .next-error-h1 {
                     border-right: 1px solid rgba(255, 255, 255, .3);
                   }
-                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f3390ced896ea","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f33c81d009661","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
 </body></html>
 ```
 
@@ -225,7 +225,7 @@ null
 ```json
 null
 ```
-## Pins post of CID 'bafkreig7msn2tbjxnjudrc4osk2abhqa2pe5nylbev6d24rmzpmwy5doty' - ❌ FAILED
+## Pins post of CID 'bafkreigbruhnyoylys4qunshqjp6tj2t7mixh7yqpub4q2lxoks5ivva4i' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -281,7 +281,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreig7msn2tbjxnjudrc4osk2abhqa2pe5nylbev6d24rmzpmwy5doty","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigbruhnyoylys4qunshqjp6tj2t7mixh7yqpub4q2lxoks5ivva4i","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -294,14 +294,14 @@ POST https://nft.storage/api/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33973b9696c6-SJC",
+  "cf-ray": "742f33ce5dd797b7-SJC",
   "connection": "close",
   "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:21:13 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:21 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=l3YB0nZyrqfBCO%2BzBdMEevolee48UK5Tc%2FVl%2BUzqtPmut%2Bdgdv3ODt0Y05T%2B6F48ILbzvOTnnDrHJL8S412N4nb5QKiXs3Qc%2FRuKuD1tnMojkqfDxTa%2Bw8ZBs%2FNGHQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=9I9m2bmezjL%2Fu6h4E8obfIV7rAFout9mjKWQaz4%2FeHStLkFT60RUeRnWsHDrsLDmt%2FCV%2FLsQwM2bN7zYSLvdSnZJZh1bvcB8cJW8qoJ4pqW3aEOhGbps7OboCkKCgw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -375,14 +375,14 @@ DELETE https://nft.storage/api/pins/null
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33a38e1096db-SJC",
+  "cf-ray": "742f33daec6baaac-SJC",
   "connection": "close",
   "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:21:14 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:23 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=E9v4nBoz9qID1gPjeEmiVudhe%2Bn3Abd4FLwDwHnDmJadx9M9Cg3EPz%2Bb9XdXt7tgYWNv8b3H5QiHxc4Gra2XGUc59odfWgXB3no8xsUUn3T1xUgMjiiDMyqSMC63FQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2Frc87EuLrKOIut%2Bb%2F19Cj6nsKDXtFZXQeQT4hG%2BlVqB2WZPMDNBe5BI855%2FZWex8qMqCt3uXviORNrv0cJdg1hPxB3x535a2Mp4vzkRYVWCmAkMpzrW6cFKx3d9dEA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -465,7 +465,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreibk2o654yuxggrurolrsp2zzvnfluuqiav6a7dsdhr6eed2mhwuou","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiawrkcpvik3nsrth43mffvxvay5axmuc2pbklwonworjnrg4n3xoa","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -478,14 +478,14 @@ POST https://nft.storage/api/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f339d4edf9645-SJC",
+  "cf-ray": "742f33d4ac729655-SJC",
   "connection": "close",
   "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:21:13 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:22 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=za1fXctIgEMwbG6NnXAE4dma%2B6DkgnIeJYty5yVxU5WYWzebKyQOjQYA8YsfbiD%2FCBG4W14G%2F6SmtPrpjAgrmjj8IUABbYm8CUWYU58jAEc5gfb3LdrAT8%2FBv%2FFG8w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ySw65m2wcgoyiHdhZy6HZX7FqYKYMlOPKSNPg%2BoSqBhDiK7gPubIXfjGhzCp7sqsFhdEyckrGlif6F74UviOGlfOHY9byunREblEamlAeB%2B4WdNCcjmoy8lQxIL9jw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -559,15 +559,15 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33a4ed256456-SJC",
+  "cf-ray": "742f33dbf8c496ae-SJC",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "text/html; charset=utf-8",
-  "date": "Tue, 30 Aug 2022 17:21:15 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:23 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=So3ws2dY0pel4za5e9kPxgDErxstG%2BCLrB5YTcHxZBx8UUnYjVaVdAsxrWHoizOcPXOiUnYQUndPx8wwtzhdAu3Tj2fVlw9AnCPT7tBVHYUvfjMw667mCewkrh70FQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=hGjISTTM3mNmnfbfVqkUKjUEt12IE%2B2t1kArGKKYNZuBBSnbI82n55IXHffsDpVYmE3n6NXxgKZFyqCpS4pt6v1uMBQzZYaOP4cdsApCO5ufon1V8sqc25%2FckRXvsw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -587,7 +587,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
                   .next-error-h1 {
                     border-right: 1px solid rgba(255, 255, 255, .3);
                   }
-                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f33a4ed256456","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f33dbf8c496ae","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
 </body></html>
 ```
 
@@ -653,15 +653,15 @@ GET https://nft.storage/api/pins/null
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33b79e37641d-SJC",
+  "cf-ray": "742f33eeb8d597ed-SJC",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "text/html; charset=utf-8",
-  "date": "Tue, 30 Aug 2022 17:21:18 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:27 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=F5rqSF0lC6HlWDUmx4KFOVOb1u90PpcWczUBqYEbPbibZXPwYcf%2BON7jFyi4IIXzV7SfAbSMwofvHTXg8m06C30%2FTvQZfM7Zq09DwsWRXfKdqFycnRJnd94GN3mhPw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=6VFZyEVzsKK43RYq15IQBScjVqOkx23klIizFT%2FLUCYP396LcBkkotv7QtgDzMd4%2FILKy93TvUJNtsu2%2FUkUzh6lLAjrk0GmbHkXJDzsElGx4rjvqtNGuSfDYivALA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -681,7 +681,7 @@ GET https://nft.storage/api/pins/null
                   .next-error-h1 {
                     border-right: 1px solid rgba(255, 255, 255, .3);
                   }
-                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f33b79e37641d","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f33eeb8d597ed","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
 </body></html>
 ```
 
@@ -747,15 +747,15 @@ GET https://nft.storage/api/pins/null
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33bdec26945e-SJC",
+  "cf-ray": "742f33f4ea1497b7-SJC",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "text/html; charset=utf-8",
-  "date": "Tue, 30 Aug 2022 17:21:19 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:28 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=kXLZyDc%2FSrvM3DPUB8TOiasY6FMWJtQqC2RLUkUQs4rWW8%2FcG8LgiJ%2Bl14cH8jRGGsliYz9leuKy%2BAiVvV4lxHVK1%2F8PjD49ArGt686crOJG8ZfsGnoKPknEomUNhg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=sECKyNT5VjxKc3IW6B2ifd%2B3zOToL6DYqBCBziNiVqcEpaftAf2H2o439DSDisiyPNP%2BeDX4klbywbzpQ3yNExdEKd27c2p9L10ISWoOUrXsY%2BmPzn3SL%2FzxY1SAwQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -775,7 +775,7 @@ GET https://nft.storage/api/pins/null
                   .next-error-h1 {
                     border-right: 1px solid rgba(255, 255, 255, .3);
                   }
-                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f33bdec26945e","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f33f4ea1497b7","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
 </body></html>
 ```
 
@@ -787,7 +787,7 @@ null
 ```json
 null
 ```
-## Pin's with requestid 'null' can have cid 'bafkreibuyvnk4zkaotibodbvlrdkpypqgwffvyb3ecfwcxu4c7rnqqfk2y' replaced with 'bafkreibtz6mmwlqi6cuswf2pial566b5uwl5ufxfp3c2se5nn7usbtvn64' - ❌ FAILED
+## Pin's with requestid 'null' can have cid 'bafkreighkiktqqf2pjbagnfsnacr7uu4262cmoivcunwwnwexnsccwwidq' replaced with 'bafkreig5qgjdcsbo36uwsihfo2bldgm6mzvuncxfkthshqapqmej2tevfe' - ❌ FAILED
 
 ### Expectations (1/2 successful)
 
@@ -865,7 +865,7 @@ POST https://nft.storage/api/pins/null
 ```
 ##### Body
 ```json
-{"cid":"bafkreibtz6mmwlqi6cuswf2pial566b5uwl5ufxfp3c2se5nn7usbtvn64","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreig5qgjdcsbo36uwsihfo2bldgm6mzvuncxfkthshqapqmej2tevfe","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -878,14 +878,14 @@ POST https://nft.storage/api/pins/null
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33b169659464-SJC",
+  "cf-ray": "742f33e86c62987c-SJC",
   "connection": "close",
   "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:21:17 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:26 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ZEbKYCPRESKVPnJshIgDWQHEaT6EDpAzqYlW7XpJKmRpvGNQRDYx3FtU5A7cSz7Wp%2FKGjDKpfiZRKFguNakd4GfjM%2FfiDx3ViOYAJvuyrsAxpwriAqsCa0uxUywx%2Fw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=vhEKWP7xpvQsHVGPfXNVqGQtCFwdn0haqyk9LjpupC7%2B5QUwOupqAOeHEANq3KOUBlRLhI9MjvX1TesXur2laJi4CudAwBR5h0Aj4l3zhoblBqCFHgKCziTXl%2FS0yQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -1008,7 +1008,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreibuyvnk4zkaotibodbvlrdkpypqgwffvyb3ecfwcxu4c7rnqqfk2y","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreighkiktqqf2pjbagnfsnacr7uu4262cmoivcunwwnwexnsccwwidq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1021,14 +1021,14 @@ POST https://nft.storage/api/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33ab2a486459-SJC",
+  "cf-ray": "742f33e22cf596ea-SJC",
   "connection": "close",
   "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:21:16 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:24 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=q4SJJ9d9xzKxVnY%2BVQzLwA1ZvfrihTDHXxwT1Y2%2FUMAy9HvN3zS%2FAurUnVcqQlMXUEevMRoEkPEMgEcKp5bxlYXKwAyfTz0ygwFWqJGA5TXWfPh4dtw9adx5EFZ3tA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=IzkzHuuyLEzxwpmRMQNL7cQDJ3YyLL0piRRn%2FxnBbweMfzPEcplM2yPQnyoYLQhSmFnEPuF0E5Rz5pj5vYM2UmSfcpKVKjzpIN%2BF4ElnYReQu04yo3mhC%2BGhMTDT8Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -1046,7 +1046,7 @@ null
 ```json
 null
 ```
-## Can retrieve pin with name 'bdaa1e46-53dc-4ecb-953d-c25556c07ad1' via the 'exact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name 'ff0a749b-0571-4668-8dd1-11e9016d9983' via the 'exact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1083,7 +1083,7 @@ null
 
 #### Request
 ```
-GET https://nft.storage/api/pins?name=bdaa1e46-53dc-4ecb-953d-c25556c07ad1&match=exact
+GET https://nft.storage/api/pins?name=ff0a749b-0571-4668-8dd1-11e9016d9983&match=exact
 ```
 ##### Headers
 ```json
@@ -1106,15 +1106,15 @@ GET https://nft.storage/api/pins?name=bdaa1e46-53dc-4ecb-953d-c25556c07ad1&match
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33c6794e254e-SJC",
+  "cf-ray": "742f33fc9df69655-SJC",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "text/html; charset=utf-8",
-  "date": "Tue, 30 Aug 2022 17:21:20 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:29 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=bfamzKjDOhV6JtGX%2B3%2B36seb%2FIBMB9VlufCs6EE1YrG1wTP6NVITG4Ajro7L18kiM%2FwViXE%2BPcMU2NXdqspvTKgZswyGsiy7cDnW2r5BAq279ZJ%2BD5fSh1t1Z4jz2Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=kCvf5UiisiqGZNjt93Fe4FJxCHjJ2rT8YDBnmWbezliOmPQqIQxetQcSXLbFapRdA8%2BYLoK%2F%2FTwQ%2FKbzHRJkqqGiX%2F3Sj7ydgCDhEk96fZaLewDV574MEw%2Ff1HE1%2FA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -1134,7 +1134,7 @@ GET https://nft.storage/api/pins?name=bdaa1e46-53dc-4ecb-953d-c25556c07ad1&match
                   .next-error-h1 {
                     border-right: 1px solid rgba(255, 255, 255, .3);
                   }
-                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f33c6794e254e","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f33fc9df69655","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
 </body></html>
 ```
 
@@ -1146,7 +1146,7 @@ null
 ```json
 null
 ```
-## Can retrieve pin with name 'BDAA1E46-53DC-4ECB-953D-C25556C07AD1' via the 'iexact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name 'FF0A749B-0571-4668-8DD1-11E9016D9983' via the 'iexact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1183,7 +1183,7 @@ null
 
 #### Request
 ```
-GET https://nft.storage/api/pins?name=BDAA1E46-53DC-4ECB-953D-C25556C07AD1&match=iexact
+GET https://nft.storage/api/pins?name=FF0A749B-0571-4668-8DD1-11E9016D9983&match=iexact
 ```
 ##### Headers
 ```json
@@ -1206,15 +1206,15 @@ GET https://nft.storage/api/pins?name=BDAA1E46-53DC-4ECB-953D-C25556C07AD1&match
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33cccc9f96c3-SJC",
+  "cf-ray": "742f3402ff87aaac-SJC",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "text/html; charset=utf-8",
-  "date": "Tue, 30 Aug 2022 17:21:21 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:30 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=HCu2azkSzdXB23usravv6uG6O21fqt2AF0IvN9wR2fsg14dZ2BnO43n2%2BfZvjS8t59dLiIzLdXkldpavZaAndn3RhA2skSB%2F5J%2B6zVdBypZjCq%2BQMYJTlL34TKd2xg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=GhcG6LJXBuAipHQRTFbtKF1Y4NnfOwOpo9QCTjc1KnRVrcRNcYIHyexyzdYs%2FUvXqLlmfLAyX3wf7dnrZ4tiLj46jykI8a3L11rhVy9mOfHBNMNc7VFpeumf%2B91bvA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -1234,7 +1234,7 @@ GET https://nft.storage/api/pins?name=BDAA1E46-53DC-4ECB-953D-C25556C07AD1&match
                   .next-error-h1 {
                     border-right: 1px solid rgba(255, 255, 255, .3);
                   }
-                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f33cccc9f96c3","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f3402ff87aaac","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
 </body></html>
 ```
 
@@ -1246,7 +1246,7 @@ null
 ```json
 null
 ```
-## Can retrieve pin with name '53dc-4ecb-953d-c25' via the 'partial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '0571-4668-8dd1-11e' via the 'partial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1283,7 +1283,7 @@ null
 
 #### Request
 ```
-GET https://nft.storage/api/pins?name=53dc-4ecb-953d-c25&match=partial
+GET https://nft.storage/api/pins?name=0571-4668-8dd1-11e&match=partial
 ```
 ##### Headers
 ```json
@@ -1306,15 +1306,15 @@ GET https://nft.storage/api/pins?name=53dc-4ecb-953d-c25&match=partial
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33d31f316456-SJC",
+  "cf-ray": "742f34092ffd96ea-SJC",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "text/html; charset=utf-8",
-  "date": "Tue, 30 Aug 2022 17:21:22 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:31 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=J4lUMgpk355ViZKW7ub6sIfgbthT8%2FF9MlnbIAl00v%2BGnP%2BRqWFxsCAo7w%2FfAt1Oocg8GBJIU0Vg835DwVLkVfT0x5f78icVxWNyd3B1U0QnSrf%2Bne8H%2BQYY1LNjhA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=EVYbLeAw45akUaWXJGRO%2FWnNfDfPkvd%2FcHwW0S%2BD%2BSPQnmn48OrAmhQi%2B2Fp47FQJGcXgiWWSx3Vrx2szVbE4U5PJqbxaMIfvwzS66Y8mZ5yrgirC0glmXUQE1QORw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -1334,7 +1334,7 @@ GET https://nft.storage/api/pins?name=53dc-4ecb-953d-c25&match=partial
                   .next-error-h1 {
                     border-right: 1px solid rgba(255, 255, 255, .3);
                   }
-                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f33d31f316456","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f34092ffd96ea","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
 </body></html>
 ```
 
@@ -1346,7 +1346,7 @@ null
 ```json
 null
 ```
-## Can retrieve pin with name '53DC-4ECB-953D-C25' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '0571-4668-8DD1-11E' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1383,7 +1383,7 @@ null
 
 #### Request
 ```
-GET https://nft.storage/api/pins?name=53DC-4ECB-953D-C25&match=ipartial
+GET https://nft.storage/api/pins?name=0571-4668-8DD1-11E&match=ipartial
 ```
 ##### Headers
 ```json
@@ -1406,15 +1406,15 @@ GET https://nft.storage/api/pins?name=53DC-4ECB-953D-C25&match=ipartial
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33d94aef9673-SJC",
+  "cf-ray": "742f340f596b987c-SJC",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "text/html; charset=utf-8",
-  "date": "Tue, 30 Aug 2022 17:21:23 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:32 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=tNtm0RZSQ3z0xgVhKSRa2Ae7X0ccmC7I8ztvx3PDOLJKzSbzWX8QZZF7C0faU%2BNM6gqEue1Hr7TlLtwEyHTy10%2BVVBUrpFNUk3hQnyWRsntFSuNf3mNb3mt85%2BdiUw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=6shLefQH64Aolh2xNL7z3vmlZOhERqDezZejkLW2gw4%2Bj6IvN5W2W02aWUTaevYtXLMmt%2Bq%2FGjibogk3mNJimRtpeN6Wp5k9TIky%2F8cw%2BI40EfRJq86NHW94JE2HUg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -1434,7 +1434,7 @@ GET https://nft.storage/api/pins?name=53DC-4ECB-953D-C25&match=ipartial
                   .next-error-h1 {
                     border-right: 1px solid rgba(255, 255, 255, .3);
                   }
-                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f33d94aef9673","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f340f596b987c","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
 </body></html>
 ```
 
@@ -1446,7 +1446,7 @@ null
 ```json
 null
 ```
-## Can create a pin with name='bdaa1e46-53dc-4ecb-953d-c25556c07ad1' - ❌ FAILED
+## Can create a pin with name='ff0a749b-0571-4668-8dd1-11e9016d9983' - ❌ FAILED
 
 ### Expectations (0/19 successful)
 
@@ -1592,7 +1592,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidrdcmewbbmiq5eujx7qlgdtvo3ktjm5zua3tcikbovspr5rclnni","name":"bdaa1e46-53dc-4ecb-953d-c25556c07ad1","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreie3ultq7ucu27wjid47h6yk2rc5oloexcrfy5vfn7znmigppp6hcm","name":"ff0a749b-0571-4668-8dd1-11e9016d9983","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1605,424 +1605,14 @@ POST https://nft.storage/api/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33c0395d2574-SJC",
-  "connection": "close",
-  "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:21:19 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=MjPreq2Vv8sHVIfLVTuF32RExb2C3chz96703nndacTTDMmdL%2FscOECu2DF0uSr%2B3xxhLCg5sNrVdzNHmzLEEmmWaobqKO4V%2FSdN77ALMdktj5zd%2B08oOl5SDWvMLA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-  "server": "cloudflare",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can create new pin for testing pagination cid='bafkreieb5z2ppuyedl2hgvrj3xqdc3xk5g7l77ebtrpfy2jb2aqhevhhu4' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Result is not null (failure)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
-    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreieb5z2ppuyedl2hgvrj3xqdc3xk5g7l77ebtrpfy2jb2aqhevhhu4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-405 Method Not Allowed
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33e0ba3997c7-SJC",
-  "connection": "close",
-  "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:21:24 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=qaB14GE%2BVrPTb9zVMbJjrxdesM7lJ1ofd1uALWOq2%2FchJjVCSlk1dkSlGlOS906BxJrOAlWmqhvIFEUT4OSDWapcks%2BF%2F4e%2Fdz0Q62p%2F6KS8auzTzGDpefi%2B5Q6vcQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-  "server": "cloudflare",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can create new pin for testing pagination cid='bafkreieuckzjfyokd22eqzp33l7z26hvtvovc4ju7ibvahgg4bbxjrbpim' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Result is not null (failure)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
-    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreieuckzjfyokd22eqzp33l7z26hvtvovc4ju7ibvahgg4bbxjrbpim","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-405 Method Not Allowed
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33e6f844641d-SJC",
-  "connection": "close",
-  "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:21:25 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=cMrztlb32q%2Fysl6JU6NJ757%2FW6YpKSN1fkjuRMJUAGCdQPQFRr8QYD5Ws64fjfRO1KCzvIWHLqAjz%2Bb6mwvFCczEmF428w8osNKMeGNe3llJa6OHPyT44FLnWT6ekQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-  "server": "cloudflare",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can create new pin for testing pagination cid='bafkreig7qyof52mrn77i5dg7nul4qtrstr4by3j5fjkxwfwttl3c3r675a' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Result is not null (failure)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
-    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreig7qyof52mrn77i5dg7nul4qtrstr4by3j5fjkxwfwttl3c3r675a","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-405 Method Not Allowed
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33ed4958968e-SJC",
-  "connection": "close",
-  "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:21:26 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=S3ggWq6V7G6f9Hzrh8v9eqw1s9YmeCt6j9K37G3tNBtblYhzDwU4J8G6NF0kq2E63WWCGJC2LGvm7pvqWE9i1kA8manb4OHYktZil0nsjecHhqm6DHa3eqykjkGFWA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-  "server": "cloudflare",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can create new pin for testing pagination cid='bafkreifd6o57b4x3pt4exbkw4q25pi26aois5leu54vvhxwf6me5gyd5ju' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Result is not null (failure)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
-    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreifd6o57b4x3pt4exbkw4q25pi26aois5leu54vvhxwf6me5gyd5ju","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-405 Method Not Allowed
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33f38801254e-SJC",
-  "connection": "close",
-  "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:21:27 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=kPISwRopr%2Fh1GfOys3yOYr%2BYI9h%2Bba%2Fxum%2B%2BLn3VIISUDa5IifdJicWHhDrVUYWA1olSg5yra9pfPjinI14kp7ILdes57oivtIjZrl7KUM9PQnHWYqhYHzTjXG%2FI1Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-  "server": "cloudflare",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can create new pin for testing pagination cid='bafkreidg2mju2lm3ifcpo2xecylkiweb2zl43vd5sra2ikvgnqbdwqwo2e' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Result is not null (failure)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
-    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreidg2mju2lm3ifcpo2xecylkiweb2zl43vd5sra2ikvgnqbdwqwo2e","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-405 Method Not Allowed
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33f9c846980f-SJC",
+  "cf-ray": "742f33f66f769e65-SJC",
   "connection": "close",
   "content-length": "0",
   "date": "Tue, 30 Aug 2022 17:21:28 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=wMuXmjHWy3ls2cTWdfAyL3q8we7MDUR%2B%2FOd9VOCsdMhcwSfLYjbs6lxVF0v%2FRee5pjErQfSI%2FVAse1l9%2FdZAvXWQOrvUsW50uaY%2Bd4IsEps2egcZ3agtcduXZqUZJQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=GgksdtOrVZCkmulydrTwThcIF0%2Fa48jTp0uCcr5bvUAxxaQ4ApICTtD4GnPcgwbFJz0x9oyAKdtjwkZGfBR2Ts9Ul%2FMSRIKlHAH9VIFSjCPsUnCS1W%2BNq7rQEATKVQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -2040,7 +1630,7 @@ null
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreic6o7rvuworhdp53j3cy73ydsy64rjehjew4ztxlfuqroxyedvq2m' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreibw34avug7gxwwbiwxhxudmsaiop2pvpgqv32evvy6zuxzetptxqy' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2084,7 +1674,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreic6o7rvuworhdp53j3cy73ydsy64rjehjew4ztxlfuqroxyedvq2m","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreibw34avug7gxwwbiwxhxudmsaiop2pvpgqv32evvy6zuxzetptxqy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2097,342 +1687,14 @@ POST https://nft.storage/api/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f340008a797fa-SJC",
-  "connection": "close",
-  "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:21:29 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=mJilrTB3yJ5sU5NqSOHcVnOV5WC5tawaFSsoMWYcFicINXalI8eZeuX5PGnagrnANyq6sRzR5t6aO4kvA5Bv72MzBMpCzrTZhiCQK10VJGXWnkPUZrHHv12dGYa4Yw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-  "server": "cloudflare",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can create new pin for testing pagination cid='bafkreifhljghpl2dqdlyzyxygm7fu6fl3z5jm3jqtq7pq2v7by7t2crvui' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Result is not null (failure)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
-    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreifhljghpl2dqdlyzyxygm7fu6fl3z5jm3jqtq7pq2v7by7t2crvui","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-405 Method Not Allowed
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f34064fbf9444-SJC",
-  "connection": "close",
-  "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:21:30 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=JoAEt375XP12y%2BfcXlFPx8tDnA9qURJIF3T42LbcRWSYEnyj1m225d8hGsBTcVclBUSuVWwWWx9yihNGnFXZi7ZucGQEpj6S9ETa%2BLDAC35YbktnVsKNUKXw95G67w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-  "server": "cloudflare",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can create new pin for testing pagination cid='bafkreiah6qxxcfukzpymg5dn6g3sxew7u4h245m2lhtjoh7bytpi5kbi5m' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Result is not null (failure)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
-    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreiah6qxxcfukzpymg5dn6g3sxew7u4h245m2lhtjoh7bytpi5kbi5m","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-405 Method Not Allowed
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f340c9c3397c7-SJC",
-  "connection": "close",
-  "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:21:31 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=NIA%2FNg4uxhfG%2BKpHxV2OchHd7cgs3msd0Fl5oB8uvlR0NrD1sie4GPPu9pN6XU2f4l0Gt9sH%2B58Hl%2Bzytm9P8GVKSo%2BRVgFZpmLY%2B%2FAxw5I5fcsd0RWOONWZO1vwHA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-  "server": "cloudflare",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can create new pin for testing pagination cid='bafkreihhbfwuzh7llpfjngt7s7i4kfygngr7kgbx3jsg2dnj6n5n5jk35a' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Result is not null (failure)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
-    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreihhbfwuzh7llpfjngt7s7i4kfygngr7kgbx3jsg2dnj6n5n5jk35a","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-405 Method Not Allowed
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f3412dc92641d-SJC",
-  "connection": "close",
-  "content-length": "0",
-  "date": "Tue, 30 Aug 2022 17:21:32 GMT",
-  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=CQ%2BHnWxZZb9qfJBQxSGtiRHav%2BgdbR7nlNi4C7Oky3UBGPdNS4CZaolHdNs%2Fn4%2BfXDWuaStB2BDZ6lFvfI%2FCR%2FUJpMY4Vpmb13keoTgi3SihwMB5hwWoVXyCJTA6wA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-  "server": "cloudflare",
-  "vary": "Accept-Encoding"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can create new pin for testing pagination cid='bafkreiej6s6eer47sywqocaz6acegxh3nw3x6onxfob6th2lpoabncclvi' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Result is not null (failure)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
-    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://nft.storage/api/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreiej6s6eer47sywqocaz6acegxh3nw3x6onxfob6th2lpoabncclvi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-405 Method Not Allowed
-```
-##### Headers
-```json
-{
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f3419195f968e-SJC",
+  "cf-ray": "742f3416c8832548-SJC",
   "connection": "close",
   "content-length": "0",
   "date": "Tue, 30 Aug 2022 17:21:33 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=mEelXvCdEvGbVKwbK%2BqGvXD7qEK7DQNd4zBw693WX9hkzuLTL3PjBQmwU7A4vc%2FCFtlDvLT4Z%2FDKKVglzdjZ8gvQvHncGQEkUzUMD64zZgch%2Bm2Z%2BypqHRJzPEql2w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=7aSgU84WLXxoWGb%2FDelTtiWzWGujLvlqgfwvKDv6E9y0vwbyuBNYreyTRfabmB6bL5OMqH0KrpgrKv8kCosCSxfgcsEO5u24PhiH5nrQa47W4k4KJIHTjpPOsUz93g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -2450,7 +1712,7 @@ null
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiewysij4zd52jvpub3arodrp3bocih3jyddromct33tpz3lbt5emu' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreiddazk3oyeltb2bk5kr43vllr4hxsxawjtqajfq5xs6woe2ma3ega' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2494,7 +1756,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiewysij4zd52jvpub3arodrp3bocih3jyddromct33tpz3lbt5emu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiddazk3oyeltb2bk5kr43vllr4hxsxawjtqajfq5xs6woe2ma3ega","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2507,14 +1769,14 @@ POST https://nft.storage/api/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f341f5c92254e-SJC",
+  "cf-ray": "742f341d1b6797b7-SJC",
   "connection": "close",
   "content-length": "0",
   "date": "Tue, 30 Aug 2022 17:21:34 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=HBYlWSDd4yzzAHUudbZdpYeDC17%2Ftfuxb5UyX8Od0cM6LGA2HwnKwUjNqD7WomadHuglcxGOgbAl2YZQYKkClAoXoH31rE3ZOqOOQ%2FnEaPj%2F4oSVEZqTMW2ck0yL5g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=AJ%2BoX0cayD9rYDUsCXHj6jxFJuIqOkj2rU5m7HGDF91U1wZidf7vh1UiZUWYEauQF%2BL8BX5WKPTnrrlN4bNydbaYaAZX02RQ6cJQT8xMh7fyjc4sy%2B2TLohMyMEZIA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -2532,7 +1794,7 @@ null
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreialjmvjxietv37d6csqadtwswwtj3pu2tmhpsef4rved66ixwq3zu' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreifi6m2sv5ttkcyllepyiqqmodqlbjcloirr4xuxfjet4mtpx5cbh4' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2576,7 +1838,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreialjmvjxietv37d6csqadtwswwtj3pu2tmhpsef4rved66ixwq3zu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreifi6m2sv5ttkcyllepyiqqmodqlbjcloirr4xuxfjet4mtpx5cbh4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2589,14 +1851,14 @@ POST https://nft.storage/api/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f34258eb796a5-SJC",
+  "cf-ray": "742f3423588397e5-SJC",
   "connection": "close",
   "content-length": "0",
   "date": "Tue, 30 Aug 2022 17:21:35 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=MK6AeUV0sakURVRdPYpRy2dXVcffAdJm8Op%2F5dELigBBO%2B75oJ8bWyd7NWRZTE5LISVOUfgkgEAs%2BumlpkbnB%2BYPH2nBFgdgUWds4AOlROBfxOWFlNUYYIY72944jQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2FvqX8V6QOrL%2BmrrV2vxXVuQGkEvzbP6lx%2BNgVFxBg%2Basm1pDKRRnllixAbNpJyT64wke6lSHl2P8Zg73YYhVRiIWM5iRrZZeDenZ7qJph2U7IgbFo0wykOv1nrcSGg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -2614,7 +1876,7 @@ null
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreidhukjxl3op6vgabwyajqmt3r4ernhxsp3jj2h6eqsunp655kaoyy' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreib4f4b2zmfggmdq7ctycdah2pebb2uwry46qwpdegkpgayitn5twa' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2658,7 +1920,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidhukjxl3op6vgabwyajqmt3r4ernhxsp3jj2h6eqsunp655kaoyy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreib4f4b2zmfggmdq7ctycdah2pebb2uwry46qwpdegkpgayitn5twa","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2671,14 +1933,14 @@ POST https://nft.storage/api/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f342bed9697fa-SJC",
+  "cf-ray": "742f34299d4faaac-SJC",
   "connection": "close",
   "content-length": "0",
   "date": "Tue, 30 Aug 2022 17:21:36 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=9jWi2C9fEqU8%2B6UuyZnkIGH%2FhPD280tuUZ5QTgBPWLyQJln1YSPMOhxVvcynjnLc3B5Ii7%2B2Nbjo3v4jJ%2B844Vpxo0QkT%2Fugf4eYKlTZK9%2Bzro%2FvPzmxVQ7LONceTQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=jAhxZhE%2BPY2z%2BrPPc%2Bvaryj3XneTcqhXh0LpidU9nqzxWI6OrOyy7Um5wCkbe1o8mMTrJO8nwg0rYNJ9502CvwIz9qrgVkoLlIwkFuG9LuTJCtGMtvYOCF9p7Mc1fA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -2696,7 +1958,7 @@ null
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreidaqaunxaxruwid64gnhqo7xd2o6fkypiysenn3fguhbz5hqezf6y' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreihyskcjtez4sehsq3hw7aasg46en242misrxwp6sa7pzrxldtqdxm' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2740,7 +2002,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidaqaunxaxruwid64gnhqo7xd2o6fkypiysenn3fguhbz5hqezf6y","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihyskcjtez4sehsq3hw7aasg46en242misrxwp6sa7pzrxldtqdxm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2753,14 +2015,14 @@ POST https://nft.storage/api/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f343218be983d-SJC",
+  "cf-ray": "742f342fdeb09e53-SJC",
   "connection": "close",
   "content-length": "0",
   "date": "Tue, 30 Aug 2022 17:21:37 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=j7C%2FvX7P9oKEngGhvQGb42kzgs8u55S%2BtJOieKZBA4VyaaC19w9CdFmoM44lX7EHeo5pi8CjiZ2CptRyi%2Fcime4hqAzTfK%2Fbt%2BF2yA10Cs%2BE4COJfxnho4aqQvSWOQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=MS7ZGDUxlW8mHBBwe7vHouj1sZsVQWoteiu%2Fh%2BsAIuLCUQUZdSCXpr2pIkNT81XjcVsFnnzkrID45FLVKn7%2FV5n%2FSDJmjoj1tTEjW6WsFrjCEKsEmKZzffACrI8d6Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -2778,7 +2040,7 @@ null
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreifcrcazdmbmc2pxd6htmqd7zrhnnbknruvidsg2jld3zfse36eeli' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidy7clut6dplt7kfpt6j2nb47jijxerqrvqkyxojmbjucc5hvn4me' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2822,7 +2084,7 @@ POST https://nft.storage/api/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreifcrcazdmbmc2pxd6htmqd7zrhnnbknruvidsg2jld3zfse36eeli","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidy7clut6dplt7kfpt6j2nb47jijxerqrvqkyxojmbjucc5hvn4me","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2835,14 +2097,752 @@ POST https://nft.storage/api/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f3438682697c7-SJC",
+  "cf-ray": "742f34361d65987c-SJC",
   "connection": "close",
   "content-length": "0",
   "date": "Tue, 30 Aug 2022 17:21:38 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=nrXFOIyjLTAayQa%2BMRx0Ebr0lLVUDnRh68BLI%2FQ6p8IYHm978L6UDNzLiBnhRHfc1NQWhNtQc6s2tdAtGlnzg7nJRJf%2BT5BiEMWvQMsp8v0VjaUHE5KzetYppBTm%2FA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=t9FAonhdu%2B1s4O8TdE8uitZ5Kn14UpuCWOsQWh40YXReOUUinctNp8Zbyx2zxiMkJJDecrLohMNXePPm8wy6JWKETQZp9xLPtSt%2B55IOVzpyToQ1wGWG2FpPjRud0w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreib45ozxykw2ag267d4ij3lu7f6wuduroxvxxzfodua2afxfhmpque' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreib45ozxykw2ag267d4ij3lu7f6wuduroxvxxzfodua2afxfhmpque","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+405 Method Not Allowed
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "742f343c4d69aaa9-SJC",
+  "connection": "close",
+  "content-length": "0",
+  "date": "Tue, 30 Aug 2022 17:21:39 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=qG0r%2Fno5V2dGqMPwYevhPHWCgVJf43kL4jWB6HvYLGlEJ5Y%2BVCZUnmvkWbf3iBuCqIHjewCWT94wpFNVJ%2B0vyWXY4MIYAYv0%2BnflcQcBn69TPo2RcvU3mpt%2FzHwJZQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreia2fakcxnju5bafznd5aaeebflvigodilv43iaw5eqbkrwq5ue4ee' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreia2fakcxnju5bafznd5aaeebflvigodilv43iaw5eqbkrwq5ue4ee","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+405 Method Not Allowed
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "742f344298b697b7-SJC",
+  "connection": "close",
+  "content-length": "0",
+  "date": "Tue, 30 Aug 2022 17:21:40 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=rbkHvIHb6cGNYDo1fyJzbDrKMy4t0cblJQP37HrC0ao2BZcxgJBrSy866z15ckQb4jqPSik6X0xxTx9pCFD7kehGk9TIT2gWMGzE5HQyacWfebB%2BRWDnLbDTknPP6w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreigwarw4bb5lbgqqqvs243c5wlbeipnk5nsx3v3xyuoxwhren377vy' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreigwarw4bb5lbgqqqvs243c5wlbeipnk5nsx3v3xyuoxwhren377vy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+405 Method Not Allowed
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "742f3448cab22548-SJC",
+  "connection": "close",
+  "content-length": "0",
+  "date": "Tue, 30 Aug 2022 17:21:41 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=FMJsKfYr0PoNFYi7Mz51yl%2FVnwIhu4awn1M1qmGSTKVtrzcKNGVyrZjS82jWTJVxLYTtMFPX86WePvklmgJRVjBZ0bGxgfeGSGF3CRUFFNo05xPBjrO61B78xECmuA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreifigbjwxrcghkwxj2kktevjcxevyr3nu6yirnuignc2zvvxfc34qu' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreifigbjwxrcghkwxj2kktevjcxevyr3nu6yirnuignc2zvvxfc34qu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+405 Method Not Allowed
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "742f344f2a7a97e5-SJC",
+  "connection": "close",
+  "content-length": "0",
+  "date": "Tue, 30 Aug 2022 17:21:42 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=QHJKF2I3h3fVSvB5WYP4%2FHKAjXoIbVUBDuT1qyLzOw%2FWy400CDU6T%2FcKPgSbONlQZ0VEKKRSO6R90qsNTSJB8QSF%2Bitoy9OhRowsDnFZfvagtQ7tQJSPaaPvIr5sCg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreiaxoh7xkg37pgdyjyotonzttgsbeegkj43usakg5pzvyn3s2bbwbu' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreiaxoh7xkg37pgdyjyotonzttgsbeegkj43usakg5pzvyn3s2bbwbu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+405 Method Not Allowed
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "742f34556a9596c9-SJC",
+  "connection": "close",
+  "content-length": "0",
+  "date": "Tue, 30 Aug 2022 17:21:43 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=2p%2FP5cKyWLllFHt8I6IXcZEvIxrlj2J%2BPUhqWhP0xBxkQ43%2BeGYA3Pd53sYYsBPb8tmZtdaPslmmtAUXvo03iVbDjqmTgFGungrz19mgiUVoQuO04%2Bc8yXKdsNniQA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreihy7cjsln4bgd73rh67wdbsclc7w6kwpehucvelyxpe4zf3gci6da' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreihy7cjsln4bgd73rh67wdbsclc7w6kwpehucvelyxpe4zf3gci6da","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+405 Method Not Allowed
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "742f345baf58987c-SJC",
+  "connection": "close",
+  "content-length": "0",
+  "date": "Tue, 30 Aug 2022 17:21:44 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=cFoJPxoNJcUEKCPCqG0uuvEigyYdyKeNF9qQGLqipau6UKCAIpi627HY%2By8PCRaal15ZBd0eRdO5xuuKhBUSCUinQbx%2FNWmoN%2BVaUn9SqMaW58emRVj611%2BveuSp6g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreianya2nmauxn6lmaezpyjnk6v3qcojayvonxpfdcrlqpjuzigxiim' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreianya2nmauxn6lmaezpyjnk6v3qcojayvonxpfdcrlqpjuzigxiim","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+405 Method Not Allowed
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "742f3461dec8aaa9-SJC",
+  "connection": "close",
+  "content-length": "0",
+  "date": "Tue, 30 Aug 2022 17:21:45 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=9HbhqUxa7XuEMxqnuxQhvy%2F8REXYqroLFeSz36WVy8BYFMvzz7Ehxm%2F72AgKibODb1ovkQ3dgEmtaLeZ6G4ns%2FGiNlbq%2F7PDdM5qqWZCpcuhztfGbYh59ipdH%2FpEAg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreidm5lyy3kothf7arqtytb2lfxmed6bjwvwvwxgakh64ucum7zgtfu' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreidm5lyy3kothf7arqtytb2lfxmed6bjwvwvwxgakh64ucum7zgtfu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+405 Method Not Allowed
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "742f3468197c97b7-SJC",
+  "connection": "close",
+  "content-length": "0",
+  "date": "Tue, 30 Aug 2022 17:21:46 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=LDQ6GhVfy6q%2B9Yb8RRb584ZLGae0OHsaphMY81p4mMu1y91qMw3RUbcM%2FVhxm%2BNP82XNpprEt9uzErEu8UTq52K5YkjsjOhclotqS1DHFNgg6hf45ig1nGyhngovSw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "vary": "Accept-Encoding"
+}
+```
+##### Body
+```json
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreif42eter2rat6azmosvtbv555zfinemll2yguiv65zdhw7gm33pqe' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://nft.storage/api/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreif42eter2rat6azmosvtbv555zfinemll2yguiv65zdhw7gm33pqe","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+405 Method Not Allowed
+```
+##### Headers
+```json
+{
+  "access-control-allow-origin": "*",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "742f346e7b882548-SJC",
+  "connection": "close",
+  "content-length": "0",
+  "date": "Tue, 30 Aug 2022 17:21:47 GMT",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=MPtw83%2BjYR%2FHIGi3j2c777LN8v%2FEqyEepx0obICEPyMPa62EI%2Fk9RU2FOvqCWSv7tDla0aoHKeD734%2BRHI6YqQ5T6gtAHZdxPp59U5Oil31zrH7%2F0wcgxkzmon%2BahQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -2928,15 +2928,15 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f343e9b279438-SJC",
+  "cf-ray": "742f3474bc9997e5-SJC",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "text/html; charset=utf-8",
-  "date": "Tue, 30 Aug 2022 17:21:40 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:48 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=3Iy2Vp%2FNxrfH%2Bp8KfQMknE3ng8TXK2T0aA6N4q31Ss8zqFpSFrupVnU1v0s0f%2BazDi5GbZlWJLi5KE0AKy90t7FS97eTWnULbjApzseS%2FVGUiicGlZYjymI833nOLA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=fclLetR86Ma2NPe8m30%2F68kzGssgWNpwrsPJZrv%2FAcMfgBiyX4qvtmepP2lmRyUhGU3Dp%2Fmn1n9lvZHLAqw3%2BcRJZYJfwIVgtIYk5187GHz9FASZprTkyY2W5nKRvA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -2956,7 +2956,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
                   .next-error-h1 {
                     border-right: 1px solid rgba(255, 255, 255, .3);
                   }
-                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f343e9b279438","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f3474bc9997e5","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
 </body></html>
 ```
 
@@ -2984,6 +2984,7 @@ null
   ⚠️ SyntaxError: Unexpected token < in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
@@ -2991,16 +2992,17 @@ null
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
     at async PinsApi.pinsGetRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:217:26)
     at async PinsApi.pinsGet (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:232:26)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:103:27)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Second page result is null
     at fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:119:17)
     at ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:184:31)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:212:7)
     at async testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:124:3)
@@ -3012,7 +3014,7 @@ null
 
 #### Request
 ```
-GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-08-30T17%3A21%3A40.215Z
+GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-08-30T17%3A21%3A48.460Z
 ```
 ##### Headers
 ```json
@@ -3035,15 +3037,15 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befor
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f34428c79968e-SJC",
+  "cf-ray": "742f347608619644-SJC",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "text/html; charset=utf-8",
-  "date": "Tue, 30 Aug 2022 17:21:40 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:48 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=drAbgVEbCuxW6gqe9RAM0JELs%2FYMeyrNHla4IoyIewDIguTOYQyH5OFHn52d%2FfAnSLdlv10vrex4DGLpgBXU7h2pWjGqVM5ES7MXQY6aFio%2FfCdwqMKugi6u0d8kRQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=W%2BWmKJuVtxC%2Fes407M9%2BUpW5uyDrClem7ZxJEWGfVxHUGZjQ6%2FuUyJfhxAh3yPxrxnaA1zIcn2hbfria2saCm0438XlnAYxy34ipIxv2WLEA0KIoKvjjNSMghb0i5g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -3063,7 +3065,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befor
                   .next-error-h1 {
                     border-right: 1px solid rgba(255, 255, 255, .3);
                   }
-                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f34428c79968e","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f347608619644","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
 </body></html>
 ```
 
@@ -3466,6 +3468,7 @@ null
   ⚠️ SyntaxError: Unexpected token < in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
@@ -3473,16 +3476,17 @@ null
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
     at async PinsApi.pinsGetRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:217:26)
     at async PinsApi.pinsGet (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:232:26)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:103:27)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Second page result is null
     at fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:119:17)
     at ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:184:31)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:212:7)
     at async testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:124:3)
@@ -3517,15 +3521,15 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f33da784696bd-SJC",
+  "cf-ray": "742f34108a50aaa9-SJC",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "text/html; charset=utf-8",
-  "date": "Tue, 30 Aug 2022 17:21:23 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:32 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=wUGO9fnrNcjleD8Yvhgh9NbUUB%2Bf%2FFbqvZypqpAGwUBBM83i11wY4owoiS8bpVGnlQsAexmyYFIeyS1hJEjM0w5ICeaR7L9Wo2cSrRZ11qMI0P%2FyaUGYehmAG%2BRkOw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=lWHmOGnggWxdEFcljnbO%2B%2Bw1GaaQZ8p5fz1QXYErljG%2BfN3oQgXnixGTm74MAKN1xH5UuUtA%2BgwkQMzgcQE5Myj1y%2B9ZcPl6S8Qv0bvJ24ORobtJR0DgSqtrHYYiDA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -3545,7 +3549,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
                   .next-error-h1 {
                     border-right: 1px solid rgba(255, 255, 255, .3);
                   }
-                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f33da784696bd","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f34108a50aaa9","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
 </body></html>
 ```
 
@@ -3569,6 +3573,7 @@ null
   ⚠️ SyntaxError: Unexpected token < in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
@@ -3576,10 +3581,10 @@ null
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
     at async PinsApi.pinsGetRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:217:26)
     at async PinsApi.pinsGet (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:232:26)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:80:27)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
@@ -3611,15 +3616,15 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f344efe8c9e62-SJC",
+  "cf-ray": "742f34828d77987c-SJC",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "text/html; charset=utf-8",
-  "date": "Tue, 30 Aug 2022 17:21:42 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:50 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=3sxH62rNGJmrNTU1JLUrH%2BXBU0RCOviaFmGUbyMZbU%2Fbdttv%2BpTDPS7DaGXX%2FCfhe%2FkhJ%2F5mtCvjvgfO59Gkqu5hzlgJJX9Qqubg%2B0I86Vf%2BMhEL29LktLrjg4JMCA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=lhDaTkuuEtQvFkkeeJJGFVChudS6%2FVSVIo7UCSVDfI8lgLJ7lR1xlALjRgxhAQ6aZybNHkgIYUtPYvUhsVdb2%2Fs4HdN9ZkO8V8r5HtuNA0hFTvxcguSRdGwtm6LR1g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -3639,7 +3644,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
                   .next-error-h1 {
                     border-right: 1px solid rgba(255, 255, 255, .3);
                   }
-                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f344efe8c9e62","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f34828d77987c","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
 </body></html>
 ```
 
@@ -3663,6 +3668,7 @@ null
   ⚠️ SyntaxError: Unexpected token < in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
@@ -3670,16 +3676,17 @@ null
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
     at async PinsApi.pinsGetRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:217:26)
     at async PinsApi.pinsGet (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:232:26)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:71:27)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ SyntaxError: Unexpected token < in JSON at position 0
     at JSON.parse (<anonymous>)
     at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:284:38)
     at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
@@ -3687,10 +3694,10 @@ null
     at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
     at async PinsApi.pinsGetRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:217:26)
     at async PinsApi.pinsGet (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:232:26)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:80:27)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
@@ -3722,15 +3729,15 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "742f3448bc49981f-SJC",
+  "cf-ray": "742f347c5854981e-SJC",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "text/html; charset=utf-8",
-  "date": "Tue, 30 Aug 2022 17:21:41 GMT",
+  "date": "Tue, 30 Aug 2022 17:21:49 GMT",
   "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=nKehg%2Fl1a1IglUMWwDA4cFTqzb1fntHsSSNjQZM1it%2FkGs7F%2FdLAr4GF4WySuQrzo5fhWx%2FXwuNcl%2FFcal6AuLJ3QinjK3EMArSczmHc4opzMM6YfYQmGruVxy0Abw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=OxaxaHchIH7JTw9T6PaWhMz8HD%2B3rGAFZGFjYnGELFDpZ9KQFgU1Nx1gyDb0TN0KuPWzSIRH7jfMRc79dA11Km%2F4NxsnXkOkMKkMMFYc85Xrizn3FeW6yufELvfaqg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -3750,7 +3757,7 @@ GET https://nft.storage/api/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
                   .next-error-h1 {
                     border-right: 1px solid rgba(255, 255, 255, .3);
                   }
-                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f3448bc49981f","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
+                }</style><h1 class="next-error-h1" style="display:inline-block;margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top">404</h1><div style="display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle"><h2 style="font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0">This page could not be found<!-- -->.</h2></div></div></div></div><footer class="bg-black block lg:flex items-center justify-between text-xs text-white py-4 px-6 sm:px-16"><div><span class="my-4 pl-byline">Made with ❤️ by<!-- --> <a href="https://protocol.ai/" class="nspink underline-hover no-underline pl-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 h-4 fill-current icon"><path fill-rule="evenodd" d="M20.156 5.697c-.38-.218-.378-.572 0-.788l6.526-3.746c.38-.218.997-.217 1.375 0l6.525 3.746c.38.218.378.572 0 .788l-6.525 3.747c-.38.217-.997.216-1.375 0zm7.947 6.197c0-.436.31-.968.687-1.185l6.524-3.744c.378-.218.686-.034.686.407v18.22c0 .443-.314.982-.698 1.203L19.435 35.9c-.385.222-.698.046-.698-.388v-7.493c0-.435.313-.968.688-1.183l7.989-4.585c.38-.22.688-.754.688-1.186zM7.894 30.132c0 .436-.31.613-.687.396l-6.52-3.742C.306 26.568 0 26.03 0 25.59V7.37c0-.443.315-.621.698-.4l15.867 9.105c.385.221.698.756.698 1.19v7.492c0 .436-.312.61-.69.394l-7.99-4.585c-.38-.22-.689-.038-.689.394zM25.202 10.28c.386.221.389.579.011.795l-6.527 3.747c-.38.218-1.002.214-1.386-.006L1.43 5.706c-.386-.22-.389-.578-.011-.795l6.528-3.747c.38-.218 1.002-.214 1.386.006zm1.433 9.946c0 .435-.31.967-.687 1.182l-6.524 3.745c-.378.218-.687.039-.687-.395v-7.49c0-.436.31-.968.687-1.184l6.525-3.744c.378-.218.687-.039.687.394zm-10.06 6.61c.38.217.688.75.688 1.183v7.493c0 .436-.31.612-.687.395l-6.522-3.742c-.378-.218-.686-.75-.686-1.183v-7.494c0-.436.31-.612.686-.395z"></path></svg>Protocol Labs</a></span></div><div class="social-icons"><a href="https://discord.com/invite/KKucsCpZmY" title="IPFS Discord (#nft-storage)" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><g><path d="M22.67,1a1,1,0,0,0-1-1H2.34a1,1,0,0,0-1,1V20.33a1,1,0,0,0,1,1H15.6a1,1,0,0,0,.78-.37,2.25,2.25,0,0,0,.21-1.31.2.2,0,0,1,.1-.22.21.21,0,0,1,.24,0l4,4.25a1,1,0,0,0,.7.28,1.14,1.14,0,0,0,.4-.08,1,1,0,0,0,.61-.93Zm-4,13.06A6.25,6.25,0,0,1,14.85,16l-.41,0a.68.68,0,0,1-.51-.21l-.55-.72a.24.24,0,0,0-.24-.1c-.23,0-.46.06-.7.08a10.45,10.45,0,0,1-1.48,0,8.88,8.88,0,0,1-1-.1.26.26,0,0,0-.24.1l-.52.7a.74.74,0,0,1-.76.21,6.41,6.41,0,0,1-2.4-.7,5.32,5.32,0,0,1-1.62-1.26.68.68,0,0,1-.15-.43A14.92,14.92,0,0,1,6.2,6.7a1,1,0,0,1,.19-.21A7.28,7.28,0,0,1,8,5.61a6.32,6.32,0,0,1,1.55-.4.59.59,0,0,1,.68.37l.07.14a.26.26,0,0,0,.25.13l.52,0a11,11,0,0,1,1.29,0l.25,0a.27.27,0,0,0,.25-.14v0L13,5.48a.57.57,0,0,1,.53-.28,4.43,4.43,0,0,1,.81.14,7.2,7.2,0,0,1,2.43,1.15,1.26,1.26,0,0,1,.2.2,15.32,15.32,0,0,1,1.89,6.81A.7.7,0,0,1,18.68,14.07Z"></path><path d="M13.57,13a1.47,1.47,0,0,1-1-.36,1.84,1.84,0,0,1-.21-2.54A1.48,1.48,0,0,1,14.63,10a1.84,1.84,0,0,1,0,2.57A1.49,1.49,0,0,1,13.57,13Z"></path><path d="M9.57,13a1.46,1.46,0,0,1-1.06-.44A1.85,1.85,0,0,1,8.5,10,1.48,1.48,0,0,1,9.56,9.5h0a1.48,1.48,0,0,1,1,.44,1.84,1.84,0,0,1,0,2.57A1.62,1.62,0,0,1,9.57,13Z"></path></g></g></svg></a><a href="https://twitter.com/nft_storage" title="@nft_storage Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M23.32,6.44a.5.5,0,0,0-.2-.87l-.79-.19A.49.49,0,0,1,22,5.1a.5.5,0,0,1,0-.43l.45-.89a.5.5,0,0,0-.59-.7l-2,.56a.48.48,0,0,1-.43-.09,5,5,0,0,0-8,4v.36a.25.25,0,0,1-.22.25c-2.81.33-5.5-1.1-8.4-4.44a.5.5,0,0,0-.51-.16A.49.49,0,0,0,2,4a7.52,7.52,0,0,0,.46,4.92.27.27,0,0,1,0,.26.24.24,0,0,1-.25.1L1.08,9.06a.52.52,0,0,0-.44.15.51.51,0,0,0-.13.44,5.15,5.15,0,0,0,2.37,3.78.25.25,0,0,1,.12.23.24.24,0,0,1-.15.22l-.54.21a.53.53,0,0,0-.28.29.51.51,0,0,0,0,.4,4.36,4.36,0,0,0,3.2,2.48.27.27,0,0,1,.19.22.26.26,0,0,1-.15.26A11,11,0,0,1,1,18.56a.49.49,0,0,0-.2,1,19.92,19.92,0,0,0,8.14,1.93,12.6,12.6,0,0,0,7-2A12.48,12.48,0,0,0,21.5,9.06V8.19a.49.49,0,0,1,.18-.38Z"></path></g></svg></a><a href="https://github.com/nftstorage" title="NFT.Storage Github" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" fill="currentColor"><g transform="matrix(0.375,0,0,0.375,0,0)"><path d="M12,.28A12,12,0,0,0,8.28,23.69l.28,0a1,1,0,0,0,.7-.24,1.05,1.05,0,0,0,.36-.82v-.21c0-.17,0-.4,0-1.09A.49.49,0,0,0,9.43,21a.5.5,0,0,0-.41-.1c-2.69.58-3.26-1.1-3.29-1.21A4.64,4.64,0,0,0,4,17.5l-.15-.11a.73.73,0,0,1,.38-.07,1.48,1.48,0,0,1,1.14.88,3,3,0,0,0,4,1.16A.53.53,0,0,0,9.67,19a2,2,0,0,1,.56-1.22.5.5,0,0,0,.15-.53.49.49,0,0,0-.42-.35c-2.37-.27-4.8-1.1-4.8-5.19A4,4,0,0,1,6.22,8.93a.49.49,0,0,0,.09-.52A3.56,3.56,0,0,1,6.32,6,5.57,5.57,0,0,1,8.84,7.15a.48.48,0,0,0,.42.06A10.66,10.66,0,0,1,12,6.85a10.31,10.31,0,0,1,2.75.36.46.46,0,0,0,.41-.06A5.53,5.53,0,0,1,17.68,6a3.54,3.54,0,0,1,0,2.38.48.48,0,0,0,.1.52,4,4,0,0,1,1.05,2.75c0,4.1-2.43,4.92-4.81,5.18a.49.49,0,0,0-.42.35.49.49,0,0,0,.15.52,2.23,2.23,0,0,1,.61,1.75v3.18a1.06,1.06,0,0,0,.37.82,1.18,1.18,0,0,0,1.06.19A12,12,0,0,0,12,.28Z"></path></g></svg></a></div><div><span class="block lg:inline-block my-4"><a href="https://status.nft.storage/" class="nspink no-underline underline-hover align-middle" target="_blank" rel="noreferrer">Status</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/terms" class="nspink no-underline underline-hover align-middle" tabindex="0">Terms of Service</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/faq" class="nspink no-underline underline-hover align-middle" tabindex="0">FAQ</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><a href="/stats" class="nspink no-underline underline-hover align-middle" tabindex="0">Stats</a></span><span class="mx-2 font-bold hidden lg:inline-block my-4 align-middle">•</span><span class="block lg:inline-block my-4"><span class="align-middle">Need Help? </span><a href="https://github.com/nftstorage/nft.storage/issues/new" class="nspink underline-hover no-underline align-middle">Open an Issue</a></span></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404}},"page":"/_error","query":{},"buildId":"8rlvSWcbKu2ISN4RgEU5E","nextExport":true,"isFallback":false,"gip":true,"scriptLoader":[]}</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"742f347c5854981e","token":"1e39a0b7773d454798951a5b45b1913a","version":"2022.8.0","si":100}' crossorigin="anonymous"></script>
 </body></html>
 ```
 
