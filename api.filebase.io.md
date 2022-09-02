@@ -1,9 +1,9 @@
 
 # https://api.filebase.io/v1/ipfs compliance:
 
-Execution Date: 2022-09-02T11:48:44.249Z
+Execution Date: 2022-09-02T11:49:23.976Z
 
-Revision: [50879d2](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/50879d2)
+Revision: [ad9cfda](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/ad9cfda)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/api.filebase.io.md)
 
@@ -13,7 +13,7 @@ Revision: [50879d2](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   🟢 [Request with invalid token](#request-with-invalid-token----success)
 
-  🟢 [Pins post of CID 'bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq'](#pins-post-of-cid-bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq----success)
+  🟢 [Pins post of CID 'bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy'](#pins-post-of-cid-bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy----success)
 
   🟢 [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----success)
 
@@ -21,7 +21,7 @@ Revision: [50879d2](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   🟢 [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----success)
 
-  🟢 [Can create a pin with name='216339a9-e82e-4ba6-a3ba-f68ec831c119'](#can-create-a-pin-with-name216339a9-e82e-4ba6-a3ba-f68ec831c119----success)
+  🟢 [Can create a pin with name='15d4419b-04a3-4f95-a7d2-1c8014b9e49b'](#can-create-a-pin-with-name15d4419b-04a3-4f95-a7d2-1c8014b9e49b----success)
 
   🟢 [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----success)
 
@@ -71,7 +71,7 @@ GET https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:05 GMT",
+  "date": "Fri, 02 Sep 2022 11:48:44 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
   "transfer-encoding": "chunked",
@@ -79,7 +79,7 @@ GET https://api.filebase.io/v1/ipfs/pins
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "a5afe16e-da32-4457-8a12-7f33e8218cde",
+  "x-request-id": "c1ed14b5-03f2-48ce-9f34-abf4f879aefc",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -152,7 +152,7 @@ GET https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:06 GMT",
+  "date": "Fri, 02 Sep 2022 11:48:45 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
   "transfer-encoding": "chunked",
@@ -160,7 +160,7 @@ GET https://api.filebase.io/v1/ipfs/pins
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "3d72f00b-d0e2-4cd6-831b-b5aad43bd842",
+  "x-request-id": "bcbf8536-4c75-4721-b93b-02dec9921ce3",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -187,7 +187,7 @@ GET https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Pins post of CID 'bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq' - 🟢 SUCCESS
+## Pins post of CID 'bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -214,7 +214,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -229,28 +229,28 @@ POST https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:07 GMT",
+  "date": "Fri, 02 Sep 2022 11:48:46 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=SRQ3aIHD%2B3aSlJYYTKb%2BSg20pzYoKEGd9RBksHwG0CPBB%2FRghUTEclFiGBkZtqgL1TOdGpAw4D%2B9QmE2WibdPteJcy1HSoWsn%2BJDUUkkF297Pps9AV5dzrUxjeh7aOQPost7gYFYQkvBlRVXtR%2FZWhHbrvaXJwepp7LTTQJGTaNaoED9XTUorJXFn5DgR4uyXombTONyfaWGCJ8Dn9u72ui7B46FgcWO7qh3J5Y%3D--vE7wrNRzDYqVK6qj--pXTsIXtzXoX2%2F%2Fuq%2FpdLHA%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:07 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=fOEFhibu4LfBFVvICa7EwTDCZe3meJkxUwZg1myX9KAHdwLQTFxHQKZxqIWpokH%2BOL9yRMYDSTpMDqfpO6QpufHgh13RXVVll%2BGkZ184Q6KdXju8U58eaqa1daO3tvgIjhZmVzquo%2FeOBUjUiGgFgQzvDnQ96Gb82L0LdEdG2rZZYlR6XXFkmoW9r9pKLugOgLGM%2Ffu6S4gv6XZwA2Q316QUrWICl6eemM8bhFM%3D--KNjDfxeseRSjBMSi--dwMulCmhvOH9lbVhSo8maQ%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:46 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "c6080ece-5b3e-4c6b-a1b0-41220cbf03e0",
+  "x-request-id": "7a308891-625a-4d06-b52c-6c8ef0cd600e",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjY3",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTc5",
   "status": "queued",
-  "created": "2022-09-02T07:48:07.000-04:00",
+  "created": "2022-09-02T07:48:46.000-04:00",
   "pin": {
-    "cid": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
-    "name": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
+    "cid": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
+    "name": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -270,12 +270,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjY3",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTc5",
   "status": "queued",
-  "created": "2022-09-02T07:48:07.000-04:00",
+  "created": "2022-09-02T07:48:46.000-04:00",
   "pin": {
-    "cid": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
-    "name": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
+    "cid": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
+    "name": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -294,12 +294,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjY3",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTc5",
   "status": "queued",
-  "created": "2022-09-02T11:48:07.000Z",
+  "created": "2022-09-02T11:48:46.000Z",
   "pin": {
-    "cid": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
-    "name": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
+    "cid": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
+    "name": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -343,7 +343,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 
 #### Request
 ```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjc1
+DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTkw
 ```
 ##### Headers
 ```json
@@ -368,16 +368,16 @@ DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgz
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json",
-  "date": "Fri, 02 Sep 2022 11:48:09 GMT",
+  "date": "Fri, 02 Sep 2022 11:48:47 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=PcnJpIxEq9cZrhWb9kxYg2KCyPSWQAuTK%2Bh1yaq7THg7taLKjYWI1hmGs6sEC24hqpNHKnhfxVHGMInMAPM0K7%2FE%2FpgsNybERASHLKWXPp08%2Bj44nyUTwRWn7LAdXKinVpBXB7NrfzKg%2B%2BiL9oMxq07FWib%2FL0XiXbMBtJT4j7Cj4yhCnPWYdc%2FB50hPExX3dAVY00616z4y3fy%2FqyyXAFAhkqPNtJxmJnFZXQE%3D--nLkfz1hS%2BVKZBJNs--YE6e7IaAtUvOyCqnu8hxVg%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:09 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=bTt8IY4wWlAP65Rju%2F6IoIrSIzhuSexi2ybgJ6aeOgr%2BqfvvmEb4gjRUKZfYfHcq9t6LGNHWoOusdmAISyEc1GtDuyYjqDrUFReIKv582xAiso0wIXkIlnPgV556PcijEyr4%2FV1yAWO3jtsnlJe0dLusyXqOaj50NpI610%2B2kSsH5qnZ0LnmRSvuh%2Ba2B06OJNqoPd2exVTDW2cEOfigGGb6lYC%2FB4r8zsFVMjk%3D--AD9F6%2FbGnKIA7C%2Bk--RcKola3HsREDcA9Nc2m47Q%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:47 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "997e3fb9-e485-4ac4-aea7-eb5c1d816523",
+  "x-request-id": "e5aac8cb-870a-4123-9d55-108ac4b37516",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -437,7 +437,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreib4i44sdxfxapppkyb2p2updjt6s56txm546qnoe5um5ta7walxae","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreifr7otsdd33awbrk2s3rb2meprdjlmeosf7s6zezqfj7b3o6kkava","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -452,28 +452,28 @@ POST https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:08 GMT",
+  "date": "Fri, 02 Sep 2022 11:48:47 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=Wo7ILo3z5H89iZC2RMvhDat8JZot%2F7jKR5kjm4egOaS48j4R3be8nkoZ8MCO3%2BSqPVjfALT93%2BLRyscuvSbTYRFdNaF90KY2Fb3PSYv9e64HURhPvuFxYJcjCkMtWNK5JuSH0kBX0JcggHjeCmqLJBZdLw%2BZL4eOdvrJYuJt25NYy4kZaUh2zBa%2Bn1M0jo1SMqbC%2B%2BC9WRLu9LljW3oMxBfvriwzpkCNregOxjA%3D--Tj9%2FViCH66%2FTgoQs--TTI5Ajiw8S5MFUqB0CD48A%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:08 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=YwJAO%2BWaoiGOt%2BFkS3BFBVOVQSCHUNVw7y7mnXPTkfNImZXN%2BDUqCXgm0BkrBJywLE%2B32knYp1hK7dmC%2BsU%2FcNDEwwv1nLEEWYg1XSpQUd2P%2FqITxrN%2B1PqX6Q8j3Ug6GWJIbZhj%2F%2B2Am24CkfPBYndXCx5WM%2FfqNSkvsZUNVyu7pm0zR042T2yiIjZ2fAeSGSx9diBMmksO25I9kE4k4G9SfpTLLxiwgg6ikiI%3D--vX41ee0Nzi6CW9lw--uhwRf1XkOF5dDmZWARYEjg%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:47 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "b136edb6-2653-4503-b88e-8484ce4c856d",
+  "x-request-id": "d69bf8fe-3172-40c2-b131-833540f032a0",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjc1",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTkw",
   "status": "queued",
-  "created": "2022-09-02T07:48:08.000-04:00",
+  "created": "2022-09-02T07:48:47.000-04:00",
   "pin": {
-    "cid": "bafkreib4i44sdxfxapppkyb2p2updjt6s56txm546qnoe5um5ta7walxae",
-    "name": "bafkreib4i44sdxfxapppkyb2p2updjt6s56txm546qnoe5um5ta7walxae",
+    "cid": "bafkreifr7otsdd33awbrk2s3rb2meprdjlmeosf7s6zezqfj7b3o6kkava",
+    "name": "bafkreifr7otsdd33awbrk2s3rb2meprdjlmeosf7s6zezqfj7b3o6kkava",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -493,12 +493,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjc1",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTkw",
   "status": "queued",
-  "created": "2022-09-02T07:48:08.000-04:00",
+  "created": "2022-09-02T07:48:47.000-04:00",
   "pin": {
-    "cid": "bafkreib4i44sdxfxapppkyb2p2updjt6s56txm546qnoe5um5ta7walxae",
-    "name": "bafkreib4i44sdxfxapppkyb2p2updjt6s56txm546qnoe5um5ta7walxae",
+    "cid": "bafkreifr7otsdd33awbrk2s3rb2meprdjlmeosf7s6zezqfj7b3o6kkava",
+    "name": "bafkreifr7otsdd33awbrk2s3rb2meprdjlmeosf7s6zezqfj7b3o6kkava",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -517,12 +517,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjc1",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTkw",
   "status": "queued",
-  "created": "2022-09-02T11:48:08.000Z",
+  "created": "2022-09-02T11:48:47.000Z",
   "pin": {
-    "cid": "bafkreib4i44sdxfxapppkyb2p2updjt6s56txm546qnoe5um5ta7walxae",
-    "name": "bafkreib4i44sdxfxapppkyb2p2updjt6s56txm546qnoe5um5ta7walxae",
+    "cid": "bafkreifr7otsdd33awbrk2s3rb2meprdjlmeosf7s6zezqfj7b3o6kkava",
+    "name": "bafkreifr7otsdd33awbrk2s3rb2meprdjlmeosf7s6zezqfj7b3o6kkava",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -580,8 +580,8 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:09 GMT",
-  "etag": "W/\"548d966475243d8326a38341da53c6c3\"",
+  "date": "Fri, 02 Sep 2022 11:48:48 GMT",
+  "etag": "W/\"77fbcabe62d01d5e467b6245b9874a74\"",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
   "transfer-encoding": "chunked",
@@ -590,7 +590,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "da2a7b06-d278-40d6-a619-fe63e27a20ff",
+  "x-request-id": "31e92cc4-9120-4c1f-a023-c5103539f55f",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -600,12 +600,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "count": 3,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjY3",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTc5",
       "status": "pinning",
-      "created": "2022-09-02T07:48:07.000-04:00",
+      "created": "2022-09-02T07:48:46.000-04:00",
       "pin": {
-        "cid": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
-        "name": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
+        "cid": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
+        "name": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -672,12 +672,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "count": 3,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjY3",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTc5",
       "status": "pinning",
-      "created": "2022-09-02T07:48:07.000-04:00",
+      "created": "2022-09-02T07:48:46.000-04:00",
       "pin": {
-        "cid": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
-        "name": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
+        "cid": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
+        "name": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -763,7 +763,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjg4
+GET https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjA4
 ```
 ##### Headers
 ```json
@@ -789,7 +789,7 @@ GET https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjg
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:12 GMT",
+  "date": "Fri, 02 Sep 2022 11:48:51 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
   "transfer-encoding": "chunked",
@@ -798,7 +798,7 @@ GET https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjg
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "ca1fe736-cc80-4fe4-a3b8-0b4df13361fe",
+  "x-request-id": "19bca509-6e91-4a9d-9603-dfa7efcb38e6",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -839,7 +839,7 @@ null
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzAw
+GET https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjE2
 ```
 ##### Headers
 ```json
@@ -865,8 +865,8 @@ GET https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzA
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:13 GMT",
-  "etag": "W/\"a5c2e7eb5b0c56b3c68eb68fff18d4d2\"",
+  "date": "Fri, 02 Sep 2022 11:48:52 GMT",
+  "etag": "W/\"507ed562240e6be37d1a1481ffc18b23\"",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
   "transfer-encoding": "chunked",
@@ -875,19 +875,19 @@ GET https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzA
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "b7d78195-a258-4320-ba55-7359b7b83772",
+  "x-request-id": "759765d7-ed65-45a1-87d1-65b95275cf9c",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzAw",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjE2",
   "status": "pinning",
-  "created": "2022-09-02T07:48:11.000-04:00",
+  "created": "2022-09-02T07:48:50.000-04:00",
   "pin": {
-    "cid": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
-    "name": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
+    "cid": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
+    "name": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -907,12 +907,12 @@ GET https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzA
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzAw",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjE2",
   "status": "pinning",
-  "created": "2022-09-02T07:48:11.000-04:00",
+  "created": "2022-09-02T07:48:50.000-04:00",
   "pin": {
-    "cid": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
-    "name": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
+    "cid": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
+    "name": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -931,12 +931,12 @@ GET https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzA
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzAw",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjE2",
   "status": "pinning",
-  "created": "2022-09-02T11:48:11.000Z",
+  "created": "2022-09-02T11:48:50.000Z",
   "pin": {
-    "cid": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
-    "name": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
+    "cid": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
+    "name": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -952,7 +952,7 @@ GET https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzA
   }
 }
 ```
-## Pin's with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjg4' can have cid 'bafkreih73l32jzmvg6gck7n5z5nx3aqddrohjjf33rwx6ng6tawxnummny' replaced with 'bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q' - 🟢 SUCCESS
+## Pin's with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjA4' can have cid 'bafkreifnrtl5klnhxfoygxwlqboujidlevvw4pvzdg6hq5hoa76qy6ce4m' replaced with 'bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -973,7 +973,7 @@ GET https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzA
 
 #### Request
 ```
-POST https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjg4
+POST https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjA4
 ```
 ##### Headers
 ```json
@@ -984,7 +984,7 @@ POST https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMj
 ```
 ##### Body
 ```json
-{"cid":"bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1000,30 +1000,30 @@ POST https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMj
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:11 GMT",
-  "etag": "W/\"3e6ee8796d5a14f92b965faa5653c1c0\"",
+  "date": "Fri, 02 Sep 2022 11:48:50 GMT",
+  "etag": "W/\"75394ee0682c84d5364fef80555cb9e7\"",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=3mjZb7w3wQxa6JPa5MnV9B5RnSOp6s6HD8vnXFDE6DKde1xF1YqRjhwgm9%2FOJ17Jm1VJDXO4bWssW0zrFNlUalSTq2xx20t%2BMTPkV0t%2B6JQJv6V%2ByYNkNN3GYmwxehLWOzgBHA%2F8wmC4LuKz7pk03vFeNcUbD18cLXV%2FWe%2B1ic4WYp8syNDo8zQ6A4odS84PNx8DtxNS6aT9HGRjTcUeEpVIxH8FvCjGr3UaWB4%3D--5v5Knqhltztw3D2e--qO89qWVuHcXTKEHec85BSQ%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:11 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=qy1AVei3gGJS%2FHdblK456n65oq8d5WlhbeU%2Bhbxz2xkWn%2FNll%2B1zjqRfpdc6OdgtMJfLmKJd61oq%2FH%2FjXe0dsLJ40Dv4BR8Y7w2MHSmdGCk7qApKZMNDFwGSlsl0s0jn%2BMvDM1UgFX%2BTO8if4qJ6z%2F0rnRpP%2BSTWkzJLgpkKt6idYeFrfAtLJSwtQD9oOLlmEilbNJghX1MDDwTdGeCmb%2FSuXc9wiHUwRx20YRU%3D--3iLJxH6suMoQC94f--uhJ7vhllaY3nseqY91zkHg%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:50 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "a6fad603-cf3b-44a5-bb99-01bbbf018bd9",
+  "x-request-id": "798ebc47-fe30-46fd-9b58-80d12e8cb7de",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzAw",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjE2",
   "status": "queued",
-  "created": "2022-09-02T07:48:11.000-04:00",
+  "created": "2022-09-02T07:48:50.000-04:00",
   "pin": {
-    "cid": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
-    "name": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
+    "cid": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
+    "name": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1043,12 +1043,12 @@ POST https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMj
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzAw",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjE2",
   "status": "queued",
-  "created": "2022-09-02T07:48:11.000-04:00",
+  "created": "2022-09-02T07:48:50.000-04:00",
   "pin": {
-    "cid": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
-    "name": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
+    "cid": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
+    "name": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1067,12 +1067,12 @@ POST https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMj
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzAw",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjE2",
   "status": "queued",
-  "created": "2022-09-02T11:48:11.000Z",
+  "created": "2022-09-02T11:48:50.000Z",
   "pin": {
-    "cid": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
-    "name": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
+    "cid": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
+    "name": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1094,7 +1094,7 @@ POST https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMj
 
   🟢 Pin exists (success)
 
-  🟢 Could obtain requestid from new pin (Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjg4) (success)
+  🟢 Could obtain requestid from new pin (Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjA4) (success)
 
   🟢 Response is ok (success)
 
@@ -1130,7 +1130,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreih73l32jzmvg6gck7n5z5nx3aqddrohjjf33rwx6ng6tawxnummny","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreifnrtl5klnhxfoygxwlqboujidlevvw4pvzdg6hq5hoa76qy6ce4m","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1145,28 +1145,28 @@ POST https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:10 GMT",
+  "date": "Fri, 02 Sep 2022 11:48:49 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=KwjADHaoINfN%2FvpsxserGy0hYA7PV5%2FdmR4Tcp%2F2Oyz8nezrA0yxgGWBvTvpaGXD9XOx18JJRvJdiRAayLRj2bXR2RkeXLgK3JA8kHAtXo8ulvLOf6VUdic6wZ45IogMUPpyRSQ75JTbkFuoHKPQqLct042E2Z%2Blw%2BHRDe4BjDWzSL9Iz16vKopai1b27AvQ0jO6EHRctNs4MSwSsZ1DcnCi7D3xK3OUTUmF%2BO0%3D--9R4A%2B2Ywi1efDcgm--F6vyIkzz4Wx5U8Fb3w89nA%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:10 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=TQz5e8PNp7qZzDbWHXvdOlPp6b4H7tfkjl%2BDbHua0I%2Fgq16OJOYcQh5mojhBMpsUpltVpxufBLSQSVCFCi%2FR7lgln5Ud37iUHuTM467Ftub5Jd4IBWHO84ZlF4GT3IpE8z0wvNFTCVv9WrgARtx1IFbRKhdHV4d9B8Mg0wOVANMpaSf0FDyG3tm2dzUE%2FQI0s8eb0Nyx88d1pOIhx5k4Zv56DLpEHga4l%2BxwqxM%3D--cmnX0xLTEot7eP4F--3uDAMcE5wlJPGjFWMAzLig%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:49 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "a0441f1f-1744-4d73-b777-46dc6a756d96",
+  "x-request-id": "b6cfde0e-9e77-4c33-9098-80b35ecd2ba6",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjg4",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjA4",
   "status": "queued",
-  "created": "2022-09-02T07:48:10.000-04:00",
+  "created": "2022-09-02T07:48:49.000-04:00",
   "pin": {
-    "cid": "bafkreih73l32jzmvg6gck7n5z5nx3aqddrohjjf33rwx6ng6tawxnummny",
-    "name": "bafkreih73l32jzmvg6gck7n5z5nx3aqddrohjjf33rwx6ng6tawxnummny",
+    "cid": "bafkreifnrtl5klnhxfoygxwlqboujidlevvw4pvzdg6hq5hoa76qy6ce4m",
+    "name": "bafkreifnrtl5klnhxfoygxwlqboujidlevvw4pvzdg6hq5hoa76qy6ce4m",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1186,12 +1186,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjg4",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjA4",
   "status": "queued",
-  "created": "2022-09-02T07:48:10.000-04:00",
+  "created": "2022-09-02T07:48:49.000-04:00",
   "pin": {
-    "cid": "bafkreih73l32jzmvg6gck7n5z5nx3aqddrohjjf33rwx6ng6tawxnummny",
-    "name": "bafkreih73l32jzmvg6gck7n5z5nx3aqddrohjjf33rwx6ng6tawxnummny",
+    "cid": "bafkreifnrtl5klnhxfoygxwlqboujidlevvw4pvzdg6hq5hoa76qy6ce4m",
+    "name": "bafkreifnrtl5klnhxfoygxwlqboujidlevvw4pvzdg6hq5hoa76qy6ce4m",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1210,12 +1210,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjg4",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjA4",
   "status": "queued",
-  "created": "2022-09-02T11:48:10.000Z",
+  "created": "2022-09-02T11:48:49.000Z",
   "pin": {
-    "cid": "bafkreih73l32jzmvg6gck7n5z5nx3aqddrohjjf33rwx6ng6tawxnummny",
-    "name": "bafkreih73l32jzmvg6gck7n5z5nx3aqddrohjjf33rwx6ng6tawxnummny",
+    "cid": "bafkreifnrtl5klnhxfoygxwlqboujidlevvw4pvzdg6hq5hoa76qy6ce4m",
+    "name": "bafkreifnrtl5klnhxfoygxwlqboujidlevvw4pvzdg6hq5hoa76qy6ce4m",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1231,7 +1231,7 @@ POST https://api.filebase.io/v1/ipfs/pins
   }
 }
 ```
-## Can retrieve pin with name '216339a9-e82e-4ba6-a3ba-f68ec831c119' via the 'exact' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '15d4419b-04a3-4f95-a7d2-1c8014b9e49b' via the 'exact' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (4/4 successful)
 
@@ -1251,7 +1251,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?name=216339a9-e82e-4ba6-a3ba-f68ec831c119&match=exact
+GET https://api.filebase.io/v1/ipfs/pins?name=15d4419b-04a3-4f95-a7d2-1c8014b9e49b&match=exact
 ```
 ##### Headers
 ```json
@@ -1277,8 +1277,8 @@ GET https://api.filebase.io/v1/ipfs/pins?name=216339a9-e82e-4ba6-a3ba-f68ec831c1
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:15 GMT",
-  "etag": "W/\"d02134395ab3e4bacdd2309eec3880e1\"",
+  "date": "Fri, 02 Sep 2022 11:48:53 GMT",
+  "etag": "W/\"031c42e09d50756d43f0d0c5d8d3a445\"",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
   "transfer-encoding": "chunked",
@@ -1287,7 +1287,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=216339a9-e82e-4ba6-a3ba-f68ec831c1
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "60431a5a-29d8-4568-9840-457eea732727",
+  "x-request-id": "8594a9c8-6cd2-4bff-a042-838d46683133",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1297,12 +1297,12 @@ GET https://api.filebase.io/v1/ipfs/pins?name=216339a9-e82e-4ba6-a3ba-f68ec831c1
   "count": 1,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:14.000-04:00",
+      "created": "2022-09-02T07:48:52.000-04:00",
       "pin": {
-        "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-        "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+        "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+        "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1327,12 +1327,12 @@ GET https://api.filebase.io/v1/ipfs/pins?name=216339a9-e82e-4ba6-a3ba-f68ec831c1
   "count": 1,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:14.000-04:00",
+      "created": "2022-09-02T07:48:52.000-04:00",
       "pin": {
-        "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-        "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+        "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+        "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1357,7 +1357,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=216339a9-e82e-4ba6-a3ba-f68ec831c1
   "results": {}
 }
 ```
-## Can retrieve pin with name '216339A9-E82E-4BA6-A3BA-F68EC831C119' via the 'iexact' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '15D4419B-04A3-4F95-A7D2-1C8014B9E49B' via the 'iexact' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (4/4 successful)
 
@@ -1377,7 +1377,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=216339a9-e82e-4ba6-a3ba-f68ec831c1
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?name=216339A9-E82E-4BA6-A3BA-F68EC831C119&match=iexact
+GET https://api.filebase.io/v1/ipfs/pins?name=15D4419B-04A3-4F95-A7D2-1C8014B9E49B&match=iexact
 ```
 ##### Headers
 ```json
@@ -1403,8 +1403,8 @@ GET https://api.filebase.io/v1/ipfs/pins?name=216339A9-E82E-4BA6-A3BA-F68EC831C1
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:16 GMT",
-  "etag": "W/\"d02134395ab3e4bacdd2309eec3880e1\"",
+  "date": "Fri, 02 Sep 2022 11:48:54 GMT",
+  "etag": "W/\"031c42e09d50756d43f0d0c5d8d3a445\"",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
   "transfer-encoding": "chunked",
@@ -1413,7 +1413,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=216339A9-E82E-4BA6-A3BA-F68EC831C1
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "af561f28-3ea6-4289-bb93-40e0cc52fb2f",
+  "x-request-id": "4b6d9ac9-094e-4ae9-a15b-83bc8a581dcd",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1423,12 +1423,12 @@ GET https://api.filebase.io/v1/ipfs/pins?name=216339A9-E82E-4BA6-A3BA-F68EC831C1
   "count": 1,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:14.000-04:00",
+      "created": "2022-09-02T07:48:52.000-04:00",
       "pin": {
-        "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-        "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+        "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+        "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1453,12 +1453,12 @@ GET https://api.filebase.io/v1/ipfs/pins?name=216339A9-E82E-4BA6-A3BA-F68EC831C1
   "count": 1,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:14.000-04:00",
+      "created": "2022-09-02T07:48:52.000-04:00",
       "pin": {
-        "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-        "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+        "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+        "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1483,7 +1483,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=216339A9-E82E-4BA6-A3BA-F68EC831C1
   "results": {}
 }
 ```
-## Can retrieve pin with name 'e82e-4ba6-a3ba-f68' via the 'partial' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '04a3-4f95-a7d2-1c8' via the 'partial' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (4/4 successful)
 
@@ -1503,7 +1503,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=216339A9-E82E-4BA6-A3BA-F68EC831C1
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?name=e82e-4ba6-a3ba-f68&match=partial
+GET https://api.filebase.io/v1/ipfs/pins?name=04a3-4f95-a7d2-1c8&match=partial
 ```
 ##### Headers
 ```json
@@ -1529,8 +1529,8 @@ GET https://api.filebase.io/v1/ipfs/pins?name=e82e-4ba6-a3ba-f68&match=partial
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:17 GMT",
-  "etag": "W/\"d02134395ab3e4bacdd2309eec3880e1\"",
+  "date": "Fri, 02 Sep 2022 11:48:55 GMT",
+  "etag": "W/\"031c42e09d50756d43f0d0c5d8d3a445\"",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
   "transfer-encoding": "chunked",
@@ -1539,7 +1539,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=e82e-4ba6-a3ba-f68&match=partial
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "6a132cd9-b7c4-4c67-89cc-acfcd6200c68",
+  "x-request-id": "f853bfb8-feef-4610-9e8d-1674216f45c1",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1549,12 +1549,12 @@ GET https://api.filebase.io/v1/ipfs/pins?name=e82e-4ba6-a3ba-f68&match=partial
   "count": 1,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:14.000-04:00",
+      "created": "2022-09-02T07:48:52.000-04:00",
       "pin": {
-        "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-        "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+        "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+        "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1579,12 +1579,12 @@ GET https://api.filebase.io/v1/ipfs/pins?name=e82e-4ba6-a3ba-f68&match=partial
   "count": 1,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:14.000-04:00",
+      "created": "2022-09-02T07:48:52.000-04:00",
       "pin": {
-        "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-        "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+        "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+        "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1609,7 +1609,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=e82e-4ba6-a3ba-f68&match=partial
   "results": {}
 }
 ```
-## Can retrieve pin with name 'E82E-4BA6-A3BA-F68' via the 'ipartial' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '04A3-4F95-A7D2-1C8' via the 'ipartial' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (4/4 successful)
 
@@ -1629,7 +1629,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=e82e-4ba6-a3ba-f68&match=partial
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?name=E82E-4BA6-A3BA-F68&match=ipartial
+GET https://api.filebase.io/v1/ipfs/pins?name=04A3-4F95-A7D2-1C8&match=ipartial
 ```
 ##### Headers
 ```json
@@ -1655,8 +1655,8 @@ GET https://api.filebase.io/v1/ipfs/pins?name=E82E-4BA6-A3BA-F68&match=ipartial
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:18 GMT",
-  "etag": "W/\"d02134395ab3e4bacdd2309eec3880e1\"",
+  "date": "Fri, 02 Sep 2022 11:48:56 GMT",
+  "etag": "W/\"031c42e09d50756d43f0d0c5d8d3a445\"",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
   "transfer-encoding": "chunked",
@@ -1665,7 +1665,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=E82E-4BA6-A3BA-F68&match=ipartial
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "3126f0df-a452-4b90-b11e-649e4e16183a",
+  "x-request-id": "7e8f0510-b33e-4a4e-be27-ffe2958271a1",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1675,12 +1675,12 @@ GET https://api.filebase.io/v1/ipfs/pins?name=E82E-4BA6-A3BA-F68&match=ipartial
   "count": 1,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:14.000-04:00",
+      "created": "2022-09-02T07:48:52.000-04:00",
       "pin": {
-        "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-        "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+        "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+        "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1705,12 +1705,12 @@ GET https://api.filebase.io/v1/ipfs/pins?name=E82E-4BA6-A3BA-F68&match=ipartial
   "count": 1,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:14.000-04:00",
+      "created": "2022-09-02T07:48:52.000-04:00",
       "pin": {
-        "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-        "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+        "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+        "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1735,7 +1735,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=E82E-4BA6-A3BA-F68&match=ipartial
   "results": {}
 }
 ```
-## Can create a pin with name='216339a9-e82e-4ba6-a3ba-f68ec831c119' - 🟢 SUCCESS
+## Can create a pin with name='15d4419b-04a3-4f95-a7d2-1c8014b9e49b' - 🟢 SUCCESS
 
 ### Expectations (19/19 successful)
 
@@ -1796,7 +1796,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i","name":"216339a9-e82e-4ba6-a3ba-f68ec831c119","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy","name":"15d4419b-04a3-4f95-a7d2-1c8014b9e49b","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1811,28 +1811,28 @@ POST https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:14 GMT",
+  "date": "Fri, 02 Sep 2022 11:48:52 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=oQEjGIsVEXdMDcQBDwWC90nsjbsLCleQYvYBtzSGxR2llK4LrSxXv0FEm4fq2lD1FJOU5dUi6qN%2Bc0TIb0mO7rAGsN%2F87B0zMtKiehKR7MMBpRrUBqtc4Tqrdl5m9TeZ1NAMuVVH%2BTM5G9efaIwE2Kg%2B08ocuIS%2B2ciYb72zZcNuzFQEJd5PSE%2F%2B6b9iuAue5z2h2oEQa%2B0OPLU7m2tLXVonZPTqLG85iyfh2pE%3D--pXhDc1l%2Bpm8PLzxC--mHeM3ynyor%2FjZKm2gPJaBA%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:14 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=M3xIw%2BC6Hw8Y4cXo6ORyyevtuVldQjdPoQGLgESlfUcbWHPyTXI%2F%2FKEBDnecp6keLFo0QBRqqclRxiCUv%2F8WwyeJquM%2F5lwVSuZ1rr%2FlBNhzmGa2XRfcKYF7NM9%2FKW%2FGwI7uvMYC2XjOpyTa1ZTAW%2FSpcue%2BnrjmpSr9JJj27Xeb%2BFc5nRMyG8qYmiyIKqLn9wJ8MsaPm%2FYYpzcBdbrSop%2BtjTHHY2yG0j%2FTIqM%3D--F5IzzVaqc3xpgdqb--tNEpwlfKF1QTG20E%2BwSqkQ%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:52 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "9d5e7345-6b7e-47da-b8c4-150731da55ab",
+  "x-request-id": "8e050ed2-bcbe-4263-b47d-c73d783bf929",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
   "status": "queued",
-  "created": "2022-09-02T07:48:14.000-04:00",
+  "created": "2022-09-02T07:48:52.000-04:00",
   "pin": {
-    "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-    "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+    "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+    "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1852,12 +1852,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
   "status": "queued",
-  "created": "2022-09-02T07:48:14.000-04:00",
+  "created": "2022-09-02T07:48:52.000-04:00",
   "pin": {
-    "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-    "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+    "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+    "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1876,12 +1876,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
   "status": "queued",
-  "created": "2022-09-02T11:48:14.000Z",
+  "created": "2022-09-02T11:48:52.000Z",
   "pin": {
-    "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-    "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+    "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+    "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1897,7 +1897,7 @@ POST https://api.filebase.io/v1/ipfs/pins
   }
 }
 ```
-## Can create new pin for testing pagination cid='bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -1924,7 +1924,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1939,28 +1939,28 @@ POST https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:19 GMT",
+  "date": "Fri, 02 Sep 2022 11:48:58 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=7h1OXnsT1bmzmWkQnHKNHFO1FP6MjD4s%2Be9LEcunLI1qAJbAQPnLQqMBTnoInOS0y0KsiWWfijxDisjEtfgzk33xzYHnBAj1XtKvwlo%2B3bGM5gI73k2bopt%2BsGKCzFmCkPIn0RnAtvRxgLg9xzcuRG%2FU51dLUBQ3a8grh3nkaR4nfvfHJgd1VR20897r5RQSIqrafL3R3RwPPsMBKc6rh4K0NskNKvQKrRvhhkQ%3D--kMrxNMUVcBU%2FlzV2--gT%2BGpE7%2B66gz1o9KXZ0FCA%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:19 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=oaQdmNdta3fSoGZNUqjtvJrKdM%2BPBLU%2BJHKAnri8FtLiRZW3RD8oleZiTJALES5UmF3sVoGHch67jP2es0F1WJsqZTFN7DL2gflFLC5Qsv15UsCkUm2faCiZP78%2BMTBVnm8FyW%2FvXitaCmexycaEQbMFxuA9tZrCIbAsq3x2ue9GU6CAvXKw5M%2F%2FiujP84gWGhMlVj7%2FGIxsKtFmUTbjeuZPjZsCYs1H6Nn5Dkc%3D--rCKp2HDsCLuqEE89--YRXhaf3624SViATxIFLGiA%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:58 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "7b5f86af-f8c5-4b80-82e9-f037fcceb0a6",
+  "x-request-id": "3972d9b7-dc4f-4cf6-94a9-7a132407430a",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzcy",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjY4",
   "status": "queued",
-  "created": "2022-09-02T07:48:19.000-04:00",
+  "created": "2022-09-02T07:48:58.000-04:00",
   "pin": {
-    "cid": "bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u",
-    "name": "bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u",
+    "cid": "bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne",
+    "name": "bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -1980,12 +1980,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzcy",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjY4",
   "status": "queued",
-  "created": "2022-09-02T07:48:19.000-04:00",
+  "created": "2022-09-02T07:48:58.000-04:00",
   "pin": {
-    "cid": "bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u",
-    "name": "bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u",
+    "cid": "bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne",
+    "name": "bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2004,12 +2004,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzcy",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjY4",
   "status": "queued",
-  "created": "2022-09-02T11:48:19.000Z",
+  "created": "2022-09-02T11:48:58.000Z",
   "pin": {
-    "cid": "bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u",
-    "name": "bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u",
+    "cid": "bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne",
+    "name": "bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2025,7 +2025,7 @@ POST https://api.filebase.io/v1/ipfs/pins
   }
 }
 ```
-## Can create new pin for testing pagination cid='bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -2052,7 +2052,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2067,28 +2067,28 @@ POST https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:19 GMT",
+  "date": "Fri, 02 Sep 2022 11:48:59 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=ScvXJTcrM1h%2F2bpKDpfZtH0VyackBtcfZ2ZIQzp63WwcpR7VoXu1ak9FQxeaBSicsfIuQKC%2Ff9swno5APO3CptgxaaMueO8Tz3szhDURGk5%2F%2F8I7NKmtSa1FL%2BPh7w40lHx1snAbaGJbFVZlLY%2Bx3UaDRRrTSI0s8VSwI%2FxkvJGIwWNoUjc0x0nhD3%2BoX%2Bbqg8JD7Q7tCcodYGeJ51UElfBut89S8kxReZEcYmI%3D--VGGjOiXfrpDu5Aqi--BdfLWmtciH9e1xKjc5IlKA%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:19 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=IMRXxjeXJx%2F5z9%2BMZ9Sp8hA33DnZqwA88XI0rMZ4FvmePh%2FEZsRSzDd%2FWVD8mJzKnlwtdQwXiGpX3V4uyGeWm%2FYaQizuHlZLaD1aISESpubbzvgq1jnfSPCG3RZ6t%2FVPlQMYEj1nVxah%2FiWlurihgncghO%2FvF6RHFLQK5JH90I%2BiOTNj3tlr1lPrC0iFSJm4BIYgI8uMDeo0vSFUtKSuBx7QnGMxTaNwxUbTP0w%3D--1bOoN7C%2F9uBsighN--jjMZy3uzPwS3ZJo1Av6y%2Bg%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:59 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "8a51f4f8-8343-4497-8013-486a6b767af0",
+  "x-request-id": "9b34c09c-1c85-4fb0-9d64-fadfa8c7a6fd",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzc1",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjc3",
   "status": "queued",
-  "created": "2022-09-02T07:48:19.000-04:00",
+  "created": "2022-09-02T07:48:59.000-04:00",
   "pin": {
-    "cid": "bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy",
-    "name": "bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy",
+    "cid": "bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy",
+    "name": "bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2108,12 +2108,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzc1",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjc3",
   "status": "queued",
-  "created": "2022-09-02T07:48:19.000-04:00",
+  "created": "2022-09-02T07:48:59.000-04:00",
   "pin": {
-    "cid": "bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy",
-    "name": "bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy",
+    "cid": "bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy",
+    "name": "bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2132,12 +2132,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzc1",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjc3",
   "status": "queued",
-  "created": "2022-09-02T11:48:19.000Z",
+  "created": "2022-09-02T11:48:59.000Z",
   "pin": {
-    "cid": "bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy",
-    "name": "bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy",
+    "cid": "bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy",
+    "name": "bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2153,7 +2153,7 @@ POST https://api.filebase.io/v1/ipfs/pins
   }
 }
 ```
-## Can create new pin for testing pagination cid='bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -2180,7 +2180,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2195,28 +2195,28 @@ POST https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:20 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:00 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=iUVVzjduwA7FezMLd4aX6lmiPlWakbsW7lUx6aDNY%2B4o%2BNh5YpTE1dzPnzl8m1yQkCGBvbcbNR%2BXqTnh7uVsRAVnkh5N1EJOEE0%2Fk4bCxe8pfmkZI37dO%2B3FI4s%2Ba%2Fjh4FQTF5kOTAwNcZSIAJw9DLh2KQfRSqa9Zwx2sAQkWN%2BAaa3jHYEPpEeB4HwTDz7AYa1RdLvTgivVTQC6TF6TZB11tnUNLUO%2BtRgB70E%3D--yBL5mN5hQZ9G5%2Bvu--PEJTOIo%2Bn%2BGJyJEV6Rc6%2FQ%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:20 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=3fpDBLSd1NxpmF5ZV3F5b4IAkV%2F4AnGhljatnwpVThpViF%2BGgzxGcuzioMuwoKNwQKFdhrhoXJdngbLy3czixCQbanoueSc6e047l3REEruOMmiPZG3FlawaSazb8AhYf2jdVyJ%2BpV62LPCIlMNwW3Bt5PX41f1tLy5YlrGAI2opTwJUdWXS1Coje2FJrJsjB%2BkEFIZzN4X%2F%2FlQsw3qP1jkDncnWPXAJsAaDwws%3D--PSV8jryScyvDK55z--pdcevbIfmoZvTH9VqX6WYg%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:00 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "1eb473cb-ad15-4527-ae54-168e50a36c79",
+  "x-request-id": "2bc433a5-6d58-46ab-adae-034e90317142",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzgx",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjg0",
   "status": "queued",
-  "created": "2022-09-02T07:48:20.000-04:00",
+  "created": "2022-09-02T07:49:00.000-04:00",
   "pin": {
-    "cid": "bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi",
-    "name": "bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi",
+    "cid": "bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im",
+    "name": "bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2236,12 +2236,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzgx",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjg0",
   "status": "queued",
-  "created": "2022-09-02T07:48:20.000-04:00",
+  "created": "2022-09-02T07:49:00.000-04:00",
   "pin": {
-    "cid": "bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi",
-    "name": "bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi",
+    "cid": "bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im",
+    "name": "bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2260,12 +2260,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzgx",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjg0",
   "status": "queued",
-  "created": "2022-09-02T11:48:20.000Z",
+  "created": "2022-09-02T11:49:00.000Z",
   "pin": {
-    "cid": "bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi",
-    "name": "bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi",
+    "cid": "bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im",
+    "name": "bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2281,7 +2281,7 @@ POST https://api.filebase.io/v1/ipfs/pins
   }
 }
 ```
-## Can create new pin for testing pagination cid='bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -2308,7 +2308,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2323,28 +2323,28 @@ POST https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:21 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:01 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=gY9TDi0kUEC57qJi5PGlW1kJSkY5J9gSXDzjXiUBeXXhz4A40deum0esyd%2Bj8w7%2FXHSVYIYqvKn40snsUXVDV4BOUfLEJcS6xcJBQVdt5utRsyd4RkB8f3AvEfdT2Ma7PEqN%2Fm5R7nbW8Ib%2FrarATwgLamKpzAtSEjtqu%2FJDhgVjM4lQfe%2FOnol0TA5rK6f2cDTKsB%2B6mOZ2OJ%2BF%2FwK5YPGmEvBJETUGM3Whrt0%3D--J4BN1AZAsiNhKYY9--Ol5HdPAEs1xQG%2F%2B4CiVXiw%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:21 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=6%2FQKfwGZ3Jfo1bYMLBoJjkJ7jJa9hnUdGzRWDI8JQnvqibQGByA%2FzPHX%2FzKMFk%2FELyY69iVRF7EqibQEiVI8nhsJSmIFwN2S%2ByjnyzWOs%2Fqvqiq9ZR3tV3TgYaPpaFOED6PBmv8gbYwQZ6%2BHUn7I7o7R%2BECU3SeLQZfBBaDRrFIFhjrqoUOjZOav9DEytvtAUn1yRWIY0fgvGVN1uQ3YGK9cyOWYM7PmPvs8LfQ%3D--mofZLoNa3UO4G9Q1--yDrNlnKddUItlt8z3TCFtw%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:01 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "38b23951-cee5-4951-9d3c-8f7551cbc948",
+  "x-request-id": "8a038b00-0412-47e8-be67-e65fc56b1f60",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzkz",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjky",
   "status": "queued",
-  "created": "2022-09-02T07:48:21.000-04:00",
+  "created": "2022-09-02T07:49:01.000-04:00",
   "pin": {
-    "cid": "bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i",
-    "name": "bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i",
+    "cid": "bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia",
+    "name": "bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2364,12 +2364,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzkz",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjky",
   "status": "queued",
-  "created": "2022-09-02T07:48:21.000-04:00",
+  "created": "2022-09-02T07:49:01.000-04:00",
   "pin": {
-    "cid": "bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i",
-    "name": "bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i",
+    "cid": "bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia",
+    "name": "bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2388,12 +2388,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzkz",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjky",
   "status": "queued",
-  "created": "2022-09-02T11:48:21.000Z",
+  "created": "2022-09-02T11:49:01.000Z",
   "pin": {
-    "cid": "bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i",
-    "name": "bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i",
+    "cid": "bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia",
+    "name": "bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2409,7 +2409,7 @@ POST https://api.filebase.io/v1/ipfs/pins
   }
 }
 ```
-## Can create new pin for testing pagination cid='bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -2436,7 +2436,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2451,28 +2451,28 @@ POST https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:22 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:02 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=HBX724QEKVtDzM4TgeSp8O9ew2lz7zNbiauDSB9wrW70YylDpIkC2FnEct0apG%2FZNkYPUApAJW47g%2Fk77GqCVgPCrvXIwO%2Bq5zI5P0e7wGY9rxMIGFuqxfKrsP%2BuyVMjATyvmHBh%2Fz74ucBMi0JCZFp21LvcVyufJfK4zytRbxGbfx5SM0QCyVdAVLUNqNmqjIVfu0H2lCx9HysaGdfqtpr1R5EQsQNAch%2Bqcjs%3D--shEvB8I3h6RyBFFG--YfrTl94egzLxQEYWhDLuCQ%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:22 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=2faIKLLEJVVJK%2BSSVHTl1JrqnQg7jDXxMtNgV%2B5iR%2FsKHqdjtRGAXskjmOprBtrAmX6BK4tuKncvBGXRX1lyo2wovGlZJAjGTk7LicWONo7B20f9LHuNshwF5NminZ5BIhtT%2BWUJcqma01BeVVCKyoEvzzgzZsmGEk62tp6lUPP1KURSTcjattGAOkmepcc%2FaNW3CMlbeX%2F6MLlAYXiyrVtBcHY8XMFm%2B9ysBEg%3D--%2BSRTVTRK%2Fz3hnJRm--V%2BP%2BeOx4WkCpdtOekO2Fwg%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:02 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "9b2544cb-3573-460f-82a8-45dfc9696353",
+  "x-request-id": "8a5ec716-f7dd-492d-9eb8-dda90183eb04",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzk5",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjk3",
   "status": "queued",
-  "created": "2022-09-02T07:48:22.000-04:00",
+  "created": "2022-09-02T07:49:02.000-04:00",
   "pin": {
-    "cid": "bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm",
-    "name": "bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm",
+    "cid": "bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny",
+    "name": "bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2492,12 +2492,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzk5",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjk3",
   "status": "queued",
-  "created": "2022-09-02T07:48:22.000-04:00",
+  "created": "2022-09-02T07:49:02.000-04:00",
   "pin": {
-    "cid": "bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm",
-    "name": "bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm",
+    "cid": "bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny",
+    "name": "bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2516,12 +2516,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzk5",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjk3",
   "status": "queued",
-  "created": "2022-09-02T11:48:22.000Z",
+  "created": "2022-09-02T11:49:02.000Z",
   "pin": {
-    "cid": "bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm",
-    "name": "bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm",
+    "cid": "bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny",
+    "name": "bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2537,7 +2537,7 @@ POST https://api.filebase.io/v1/ipfs/pins
   }
 }
 ```
-## Can create new pin for testing pagination cid='bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -2564,7 +2564,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2579,28 +2579,28 @@ POST https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:23 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:03 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=R2YLq%2FLGv48mHU6msiKSUBq6lyptKEKeOulQrITa1Zx0TPKs1kXGvzENleKTqcQdwBrt14KYH61kUOQt%2BangUDoNNunHa4URnrjLWVxZzeeDoUGpKCOA3G9ObZOIgI0ocTwc%2FvysQlsbIPqMFuVHMtsgpfpa2zQW%2FTfyR0oGoG5c9urkedck4hipx0VYtwAyEDe5LvojOzJrYBCEFpVf2l4xS2thmeceujIuIDk%3D--0J%2FAp5OvBAzdzDWX--tZw5ZXFZAt5Sr0M%2BeC0YAw%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:23 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=nAEvtL7i8YXH7KkqDoRrbUMA9xfl1Ke1U9tdsZdvN3o7QucePI4CUgsTmaNpNNICQywrSjqB5J51y8hJ%2FRx4jkAXoC1MYf9AM%2FIXj8MarRaWLoKbgtZ%2Bo%2FF9T4fVW8BmZ9PEejTn1ruaMGwESVrXYQ5eGmJVwVZ6ro52ze3rKMljlKB55f4q5vIHIRK1knv0boIcbktBaln4kQkM4LKT7xD2Q369Euvp3vBSZu0%3D--pjEqR2AIDQvNFKdo--%2FZLvfwhsSxcklAvIvO5SKw%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:03 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "8b4a9234-17df-4850-b2aa-c50979b1e59c",
+  "x-request-id": "76298048-489f-49fa-8f7d-dc4106d5f199",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDA2",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzA1",
   "status": "queued",
-  "created": "2022-09-02T07:48:23.000-04:00",
+  "created": "2022-09-02T07:49:03.000-04:00",
   "pin": {
-    "cid": "bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi",
-    "name": "bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi",
+    "cid": "bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq",
+    "name": "bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2620,12 +2620,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDA2",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzA1",
   "status": "queued",
-  "created": "2022-09-02T07:48:23.000-04:00",
+  "created": "2022-09-02T07:49:03.000-04:00",
   "pin": {
-    "cid": "bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi",
-    "name": "bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi",
+    "cid": "bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq",
+    "name": "bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2644,12 +2644,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDA2",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzA1",
   "status": "queued",
-  "created": "2022-09-02T11:48:23.000Z",
+  "created": "2022-09-02T11:49:03.000Z",
   "pin": {
-    "cid": "bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi",
-    "name": "bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi",
+    "cid": "bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq",
+    "name": "bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2665,7 +2665,7 @@ POST https://api.filebase.io/v1/ipfs/pins
   }
 }
 ```
-## Can create new pin for testing pagination cid='bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -2692,7 +2692,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2707,28 +2707,28 @@ POST https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:24 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:04 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=IycogmTJpDJv93htCfSYD9cYW5HHjnbQltuGv0aAo6uodIDrybIAz5UCjWfjMdpYOgwp76ytSRsDWOcI2pZAYEP%2BXXtNFPK9tMgi%2FKGrQkWFCBTCr8MbBXqFvmEl6kzjsqZPLqzVaz0WsXXEQBvrVW6SpVjzs89R4MEAOqaC0E4KPLXmoO0iQNgMJVjSkbu%2F0XmuwmUljD88rxLstF0M8XFh2axkSsCZ%2BbaQQPY%3D--cikby5tBA6wXXxqA--qxROZfGgVqFqVLPtTuXhZA%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:24 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=c1PHIWyxkgxJ50UMF6NsMbnnwQHXLCa7KrBz%2FlHl%2FSOuUKKEkaiqD8DP6TNgNOlB1rdqT%2BbdYPGtjpL874w07hULden9YhvpgIaLUD5kHMEPteasJ6j9m3eKwXHc7TnTcsqAr13nvXZoRuKlaw2LMHsc%2Fco8CX%2BVavuMjvQdPrFGArzqkjDmxERcNxAa5pvIYcM2ktqQPUZpkPZkQOsvTRHO8ZIRiBt2XcX%2BnkE%3D--hBkB8TniDDfahLei--WH6Y4S3QXLIppmHyvykrhw%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:04 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "c2890042-d0a3-4c58-bfa0-43aafd912f28",
+  "x-request-id": "be4a007c-dfb9-49c5-8284-2dea31396cc7",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDE0",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzE0",
   "status": "queued",
-  "created": "2022-09-02T07:48:24.000-04:00",
+  "created": "2022-09-02T07:49:04.000-04:00",
   "pin": {
-    "cid": "bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq",
-    "name": "bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq",
+    "cid": "bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy",
+    "name": "bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2748,12 +2748,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDE0",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzE0",
   "status": "queued",
-  "created": "2022-09-02T07:48:24.000-04:00",
+  "created": "2022-09-02T07:49:04.000-04:00",
   "pin": {
-    "cid": "bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq",
-    "name": "bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq",
+    "cid": "bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy",
+    "name": "bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2772,12 +2772,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDE0",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzE0",
   "status": "queued",
-  "created": "2022-09-02T11:48:24.000Z",
+  "created": "2022-09-02T11:49:04.000Z",
   "pin": {
-    "cid": "bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq",
-    "name": "bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq",
+    "cid": "bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy",
+    "name": "bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2793,7 +2793,7 @@ POST https://api.filebase.io/v1/ipfs/pins
   }
 }
 ```
-## Can create new pin for testing pagination cid='bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -2820,7 +2820,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2835,28 +2835,28 @@ POST https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:25 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:05 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=cGcJl4ot9TtiEq5eNz1MGBYs0%2Bo2xqtqROLPr5dELa0XDkqNIGSxLhoIsLAvTlwe6O2HyrjyGvo6ani62%2BDgRgA95zLkxrA9xCIwmC95lf7EPQcmofqIpd9%2FxSdcHNQG7%2B1jVPBXn3t5EQAb%2FuLfkug%2FDpFIHljV4EyCzYdEIlo78GSjGcOm%2FBlMs9oc5gJ6OSC8Pwo4%2Bl3ttkodRn7G3g85oOFZWfHCs4pETkc%3D--2EDbUDFYuzOPkfe5--soYZMtddt%2BYWXtNo9qYqPA%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:25 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=itaFXi17hADfGGzvkq4LmXJu8651MuSHbRBmgyRQcaJiqIjodLKbZvMJYGOvqNgCJEyIvQer2APjq6XZnfwEbcrP4bYmW0CH319QCDg4qjOllJOMfyOFqw9SpJ7LfYX9TlvFDUpelGasVXizgU7ePKRQBMAbIOiXuTvnn44Xsxxh6Le7wGg0FgMa6gW4BZU1vwZnV4%2B2z%2F%2Bh9Ds6VecllzP9sqSFw4PCW8aSHXE%3D--SW9QGOdFaVZelDLl--0C1li6fUWYfcQZ5%2FW2H1eQ%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:05 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "de1503cb-06a7-4007-8351-f0749b9a8a8e",
+  "x-request-id": "e61de442-4013-439f-8d38-d3a2c46c89a9",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDI0",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzI1",
   "status": "queued",
-  "created": "2022-09-02T07:48:25.000-04:00",
+  "created": "2022-09-02T07:49:05.000-04:00",
   "pin": {
-    "cid": "bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny",
-    "name": "bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny",
+    "cid": "bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm",
+    "name": "bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2876,12 +2876,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDI0",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzI1",
   "status": "queued",
-  "created": "2022-09-02T07:48:25.000-04:00",
+  "created": "2022-09-02T07:49:05.000-04:00",
   "pin": {
-    "cid": "bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny",
-    "name": "bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny",
+    "cid": "bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm",
+    "name": "bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2900,12 +2900,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDI0",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzI1",
   "status": "queued",
-  "created": "2022-09-02T11:48:25.000Z",
+  "created": "2022-09-02T11:49:05.000Z",
   "pin": {
-    "cid": "bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny",
-    "name": "bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny",
+    "cid": "bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm",
+    "name": "bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -2921,7 +2921,7 @@ POST https://api.filebase.io/v1/ipfs/pins
   }
 }
 ```
-## Can create new pin for testing pagination cid='bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -2948,7 +2948,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2963,28 +2963,28 @@ POST https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:26 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:06 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=GWSzankIJSIQ4dN0CxFC6VUba%2BtSHuF7HzTj9O6XZCv5X11plsTuTiCSNrBQMsMf3bcvwfsKtgkS%2BiEXrcIRePiqyt4qzyGTMQqBxqebffQGm%2BAJCLsDdcjQHh7Niqwx%2Fyxxo8zz3mPg6aoGi1EBEItyCX13ocIs%2FNuAETz6jTG6sC7WmhtJzpgaQECU%2BAjNmemvTkKUHZqMfFY4VR1vI9HCJbl7IbmqYK90dMI%3D--KulVUMNf12zTvRct--h9MBnEmGbjrM9hKbm6npiw%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:26 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=p9jrs%2FdjLnugs%2BqSuxuWw%2FoLF4IiwUCoHA5T3IFysVWidbT7e%2Fa0WLq2gqtQLVNNC8Ag9THQI2h%2BLUTuCzAFVSrKaRnN2qI1zkOzemrdYyfzF3uBdfl9QzqMK2Pcuf6CcwQAU9Hht91%2Fzep0EgQJNUl2GMtwjI1b2bDpssNjBAkh%2FXXyTHqYHFUlk1GCHYe9bk%2BuuSFr9RYOjCIxi%2FvviUqoUnTZrDUKiVN6ioI%3D--6rl75PrG9swfQx%2Fm--BIJr3%2F0ennwvUCGAPv5fAA%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:06 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "b880e3f1-6357-4412-9383-ee5d0506aeec",
+  "x-request-id": "041819f3-b7e9-4428-9c8e-64f9490cac1b",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDMw",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzM0",
   "status": "queued",
-  "created": "2022-09-02T07:48:26.000-04:00",
+  "created": "2022-09-02T07:49:06.000-04:00",
   "pin": {
-    "cid": "bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu",
-    "name": "bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu",
+    "cid": "bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74",
+    "name": "bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3004,12 +3004,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDMw",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzM0",
   "status": "queued",
-  "created": "2022-09-02T07:48:26.000-04:00",
+  "created": "2022-09-02T07:49:06.000-04:00",
   "pin": {
-    "cid": "bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu",
-    "name": "bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu",
+    "cid": "bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74",
+    "name": "bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3028,12 +3028,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDMw",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzM0",
   "status": "queued",
-  "created": "2022-09-02T11:48:26.000Z",
+  "created": "2022-09-02T11:49:06.000Z",
   "pin": {
-    "cid": "bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu",
-    "name": "bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu",
+    "cid": "bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74",
+    "name": "bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3049,7 +3049,7 @@ POST https://api.filebase.io/v1/ipfs/pins
   }
 }
 ```
-## Can create new pin for testing pagination cid='bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm' - 🟢 SUCCESS
+## Can create new pin for testing pagination cid='bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -3076,7 +3076,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -3091,28 +3091,28 @@ POST https://api.filebase.io/v1/ipfs/pins
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:27 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:07 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=zE8oSD7qqBY0uWb%2B9LroRUvw2ESFvPw0o4KXegXjbsphq4LhP%2BlzuF4qwuaTWAYQrLdwdAyjNG2ln8vjXRpMOtHPnVmBirsI1OyZ9lgjZwu5nKxvAqEvRNeDyOr0kCtd%2BXd7ykpMMT4aORT%2BMjCGg%2B98nTdEf0Jc11arXQOtGf1VfeMKMGCtn%2FUakZw2x2zO70iDuqgQz53tmZdKIJGy3V%2FVCccwvTy0GgQXCjg%3D--RA8n1EdKa9LnJPWD--VIUdrjLtTAD3tuGFdUHAVw%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:27 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=OJV6RTSwttdAznuqyTCOesxi00rfmW%2FzpOPp8yOtw%2FjUJN4vjUtx94P1IdqzgxZxn%2FsTBh8W0y5BNj9lSgB%2Fz3zO23yp3siXMZlTE3ePT%2FfbEMJiHJwv3ecUzTTO91zuiTYXDRqoUWieTfEx5g5Fq4pqGYKwGxzLWWTlPxVDAloR0DFACe1LwoBYk%2FQ2%2Fdmo42BUoYLYt%2FubnImDL9fWNoihOmihKaNMPwKeW%2Bs%3D--zt%2FOoAUrOzc49LCT--AGgWpL8HdNii9KDp4VmvNQ%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:07 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "811485a5-d5c1-4012-8b73-080128fc9a4e",
+  "x-request-id": "9e397a28-d3ca-44a0-9d09-a16a78887044",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDQx",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzQ4",
   "status": "queued",
-  "created": "2022-09-02T07:48:27.000-04:00",
+  "created": "2022-09-02T07:49:07.000-04:00",
   "pin": {
-    "cid": "bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm",
-    "name": "bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm",
+    "cid": "bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy",
+    "name": "bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3132,12 +3132,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDQx",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzQ4",
   "status": "queued",
-  "created": "2022-09-02T07:48:27.000-04:00",
+  "created": "2022-09-02T07:49:07.000-04:00",
   "pin": {
-    "cid": "bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm",
-    "name": "bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm",
+    "cid": "bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy",
+    "name": "bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3156,12 +3156,12 @@ POST https://api.filebase.io/v1/ipfs/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDQx",
+  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzQ4",
   "status": "queued",
-  "created": "2022-09-02T11:48:27.000Z",
+  "created": "2022-09-02T11:49:07.000Z",
   "pin": {
-    "cid": "bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm",
-    "name": "bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm",
+    "cid": "bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy",
+    "name": "bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy",
     "origins": [],
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3225,8 +3225,8 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:28 GMT",
-  "etag": "W/\"db7d15fb463689c353ba343afdf33d7d\"",
+  "date": "Fri, 02 Sep 2022 11:49:08 GMT",
+  "etag": "W/\"8ff43ffd34057c13628ab33c4333d399\"",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
   "transfer-encoding": "chunked",
@@ -3235,7 +3235,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "62682967-5de3-4e39-bd36-2c8488bcdebe",
+  "x-request-id": "bc4c7d98-4242-44ca-ae43-fb4f943f28ca",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -3245,12 +3245,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "count": 15,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDQx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzQ4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:27.000-04:00",
+      "created": "2022-09-02T07:49:07.000-04:00",
       "pin": {
-        "cid": "bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm",
-        "name": "bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm",
+        "cid": "bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy",
+        "name": "bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3266,12 +3266,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDMw",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzM0",
       "status": "pinning",
-      "created": "2022-09-02T07:48:26.000-04:00",
+      "created": "2022-09-02T07:49:06.000-04:00",
       "pin": {
-        "cid": "bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu",
-        "name": "bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu",
+        "cid": "bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74",
+        "name": "bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3287,12 +3287,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDI0",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzI1",
       "status": "pinning",
-      "created": "2022-09-02T07:48:25.000-04:00",
+      "created": "2022-09-02T07:49:05.000-04:00",
       "pin": {
-        "cid": "bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny",
-        "name": "bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny",
+        "cid": "bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm",
+        "name": "bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3308,12 +3308,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDE0",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzE0",
       "status": "pinning",
-      "created": "2022-09-02T07:48:24.000-04:00",
+      "created": "2022-09-02T07:49:04.000-04:00",
       "pin": {
-        "cid": "bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq",
-        "name": "bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq",
+        "cid": "bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy",
+        "name": "bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3329,12 +3329,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDA2",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzA1",
       "status": "pinning",
-      "created": "2022-09-02T07:48:23.000-04:00",
+      "created": "2022-09-02T07:49:03.000-04:00",
       "pin": {
-        "cid": "bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi",
-        "name": "bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi",
+        "cid": "bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq",
+        "name": "bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3350,12 +3350,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzk5",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjk3",
       "status": "pinning",
-      "created": "2022-09-02T07:48:22.000-04:00",
+      "created": "2022-09-02T07:49:02.000-04:00",
       "pin": {
-        "cid": "bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm",
-        "name": "bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm",
+        "cid": "bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny",
+        "name": "bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3371,12 +3371,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzkz",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjky",
       "status": "pinning",
-      "created": "2022-09-02T07:48:21.000-04:00",
+      "created": "2022-09-02T07:49:01.000-04:00",
       "pin": {
-        "cid": "bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i",
-        "name": "bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i",
+        "cid": "bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia",
+        "name": "bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3392,12 +3392,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzgx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjg0",
       "status": "pinning",
-      "created": "2022-09-02T07:48:20.000-04:00",
+      "created": "2022-09-02T07:49:00.000-04:00",
       "pin": {
-        "cid": "bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi",
-        "name": "bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi",
+        "cid": "bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im",
+        "name": "bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3413,12 +3413,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzcy",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjc3",
       "status": "pinning",
-      "created": "2022-09-02T07:48:19.000-04:00",
+      "created": "2022-09-02T07:48:59.000-04:00",
       "pin": {
-        "cid": "bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u",
-        "name": "bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u",
+        "cid": "bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy",
+        "name": "bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3434,12 +3434,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzc1",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjY4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:19.000-04:00",
+      "created": "2022-09-02T07:48:58.000-04:00",
       "pin": {
-        "cid": "bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy",
-        "name": "bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy",
+        "cid": "bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne",
+        "name": "bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3464,12 +3464,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "count": 15,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDQx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzQ4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:27.000-04:00",
+      "created": "2022-09-02T07:49:07.000-04:00",
       "pin": {
-        "cid": "bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm",
-        "name": "bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm",
+        "cid": "bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy",
+        "name": "bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3485,12 +3485,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDMw",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzM0",
       "status": "pinning",
-      "created": "2022-09-02T07:48:26.000-04:00",
+      "created": "2022-09-02T07:49:06.000-04:00",
       "pin": {
-        "cid": "bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu",
-        "name": "bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu",
+        "cid": "bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74",
+        "name": "bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3506,12 +3506,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDI0",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzI1",
       "status": "pinning",
-      "created": "2022-09-02T07:48:25.000-04:00",
+      "created": "2022-09-02T07:49:05.000-04:00",
       "pin": {
-        "cid": "bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny",
-        "name": "bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny",
+        "cid": "bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm",
+        "name": "bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3527,12 +3527,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDE0",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzE0",
       "status": "pinning",
-      "created": "2022-09-02T07:48:24.000-04:00",
+      "created": "2022-09-02T07:49:04.000-04:00",
       "pin": {
-        "cid": "bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq",
-        "name": "bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq",
+        "cid": "bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy",
+        "name": "bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3548,12 +3548,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDA2",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzA1",
       "status": "pinning",
-      "created": "2022-09-02T07:48:23.000-04:00",
+      "created": "2022-09-02T07:49:03.000-04:00",
       "pin": {
-        "cid": "bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi",
-        "name": "bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi",
+        "cid": "bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq",
+        "name": "bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3569,12 +3569,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzk5",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjk3",
       "status": "pinning",
-      "created": "2022-09-02T07:48:22.000-04:00",
+      "created": "2022-09-02T07:49:02.000-04:00",
       "pin": {
-        "cid": "bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm",
-        "name": "bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm",
+        "cid": "bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny",
+        "name": "bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3590,12 +3590,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzkz",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjky",
       "status": "pinning",
-      "created": "2022-09-02T07:48:21.000-04:00",
+      "created": "2022-09-02T07:49:01.000-04:00",
       "pin": {
-        "cid": "bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i",
-        "name": "bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i",
+        "cid": "bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia",
+        "name": "bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3611,12 +3611,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzgx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjg0",
       "status": "pinning",
-      "created": "2022-09-02T07:48:20.000-04:00",
+      "created": "2022-09-02T07:49:00.000-04:00",
       "pin": {
-        "cid": "bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi",
-        "name": "bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi",
+        "cid": "bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im",
+        "name": "bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3632,12 +3632,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzcy",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjc3",
       "status": "pinning",
-      "created": "2022-09-02T07:48:19.000-04:00",
+      "created": "2022-09-02T07:48:59.000-04:00",
       "pin": {
-        "cid": "bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u",
-        "name": "bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u",
+        "cid": "bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy",
+        "name": "bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3653,12 +3653,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzc1",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjY4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:19.000-04:00",
+      "created": "2022-09-02T07:48:58.000-04:00",
       "pin": {
-        "cid": "bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy",
-        "name": "bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy",
+        "cid": "bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne",
+        "name": "bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3701,7 +3701,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-09-02T11%3A48%3A19.000Z
+GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-09-02T11%3A48%3A58.000Z
 ```
 ##### Headers
 ```json
@@ -3727,8 +3727,8 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:28 GMT",
-  "etag": "W/\"0c9771e064987a216132d5622aa2deb1\"",
+  "date": "Fri, 02 Sep 2022 11:49:08 GMT",
+  "etag": "W/\"a351024b478f73e121f596d00e6abb00\"",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
   "transfer-encoding": "chunked",
@@ -3737,7 +3737,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "e9c712b6-88fb-4029-b7c3-20af05b0865b",
+  "x-request-id": "afafeac6-c972-46be-978e-bb7436b6cb2a",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -3747,12 +3747,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "count": 5,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:14.000-04:00",
+      "created": "2022-09-02T07:48:52.000-04:00",
       "pin": {
-        "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-        "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+        "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+        "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3768,12 +3768,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzAw",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjE2",
       "status": "pinning",
-      "created": "2022-09-02T07:48:11.000-04:00",
+      "created": "2022-09-02T07:48:50.000-04:00",
       "pin": {
-        "cid": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
-        "name": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
+        "cid": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
+        "name": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3789,12 +3789,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjY3",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTc5",
       "status": "pinning",
-      "created": "2022-09-02T07:48:07.000-04:00",
+      "created": "2022-09-02T07:48:46.000-04:00",
       "pin": {
-        "cid": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
-        "name": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
+        "cid": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
+        "name": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3861,12 +3861,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "count": 5,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:14.000-04:00",
+      "created": "2022-09-02T07:48:52.000-04:00",
       "pin": {
-        "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-        "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+        "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+        "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3882,12 +3882,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzAw",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjE2",
       "status": "pinning",
-      "created": "2022-09-02T07:48:11.000-04:00",
+      "created": "2022-09-02T07:48:50.000-04:00",
       "pin": {
-        "cid": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
-        "name": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
+        "cid": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
+        "name": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -3903,12 +3903,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjY3",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTc5",
       "status": "pinning",
-      "created": "2022-09-02T07:48:07.000-04:00",
+      "created": "2022-09-02T07:48:46.000-04:00",
       "pin": {
-        "cid": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
-        "name": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
+        "cid": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
+        "name": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -4073,8 +4073,8 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:18 GMT",
-  "etag": "W/\"0c9771e064987a216132d5622aa2deb1\"",
+  "date": "Fri, 02 Sep 2022 11:48:57 GMT",
+  "etag": "W/\"a351024b478f73e121f596d00e6abb00\"",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
   "transfer-encoding": "chunked",
@@ -4083,7 +4083,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "da154dd9-160c-4f68-b223-fee8be150be1",
+  "x-request-id": "72bfc9e0-b017-4ab0-ab2d-edda9a159c66",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -4093,12 +4093,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "count": 5,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:14.000-04:00",
+      "created": "2022-09-02T07:48:52.000-04:00",
       "pin": {
-        "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-        "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+        "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+        "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -4114,12 +4114,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzAw",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjE2",
       "status": "pinning",
-      "created": "2022-09-02T07:48:11.000-04:00",
+      "created": "2022-09-02T07:48:50.000-04:00",
       "pin": {
-        "cid": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
-        "name": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
+        "cid": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
+        "name": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -4135,12 +4135,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjY3",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTc5",
       "status": "pinning",
-      "created": "2022-09-02T07:48:07.000-04:00",
+      "created": "2022-09-02T07:48:46.000-04:00",
       "pin": {
-        "cid": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
-        "name": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
+        "cid": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
+        "name": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -4207,12 +4207,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "count": 5,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:14.000-04:00",
+      "created": "2022-09-02T07:48:52.000-04:00",
       "pin": {
-        "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-        "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+        "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+        "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -4228,12 +4228,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzAw",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjE2",
       "status": "pinning",
-      "created": "2022-09-02T07:48:11.000-04:00",
+      "created": "2022-09-02T07:48:50.000-04:00",
       "pin": {
-        "cid": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
-        "name": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
+        "cid": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
+        "name": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -4249,12 +4249,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjY3",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTc5",
       "status": "pinning",
-      "created": "2022-09-02T07:48:07.000-04:00",
+      "created": "2022-09-02T07:48:46.000-04:00",
       "pin": {
-        "cid": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
-        "name": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
+        "cid": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
+        "name": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -4321,7 +4321,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "results": {}
 }
 ```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDQx' - 🟢 SUCCESS
+## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzQ4' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -4347,7 +4347,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
 
 #### Request
 ```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDQx
+DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzQ4
 ```
 ##### Headers
 ```json
@@ -4372,16 +4372,16 @@ DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgz
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json",
-  "date": "Fri, 02 Sep 2022 11:48:30 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:10 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=%2FvRnYVj5yw7T20i1Givk3%2FbJ4F85xDN1e4wZB5NkTPw0GwPFxeusXzSuAJK8RAv5%2ByLB3zqEIbo6E4GCXKWPXvSAkudF5bmStWzLT4gNVWtEyY8EusT%2Fcb5pM8jhSaMHTaYt1x7Dhz%2FEb1um7%2FLSJilZr78LLxtj5jGyL19%2FkvEM3totoe4Umfc9%2FWIZZ1T4hO8QTlMSoIeyc83QUJFXU6HIVZBJ7xZ3irzAb2g%3D--h4Swu%2BKm331BO%2Fum--aulGeeSnVtvNO4N4OeLG2A%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:30 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=QATKC0k%2BpUdD%2BSLyriCFqZqCeixRHY4O%2B8H6nrkn0l4ja5anLHfinkUvosZTXOz5OTNRgupZJx2%2BSPcWdrHxN9SNbGFTi%2Fjg3GZhKUbQLJt1SMwRNRVzTXCMHJ5j3rKFp73ad5rJ2bz2%2F5fBDnpTIcP4LRjuRkGiDsq3rgNSgoNIocv9You%2BxsnW%2FX%2F4U%2F2O4m8hWfboGe6gTnYF%2F0asQtlg6cdhaybG29WHX1c%3D--IdIMaUNqNh5%2BeXl0--aWScyFbXZafMiAOsvD4MPg%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:10 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "420262e0-bc3d-400d-b456-5eb99bee63f5",
+  "x-request-id": "5cf40f93-e3f3-4e22-98e2-a7e5f11d14ea",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -4398,7 +4398,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDMw' - 🟢 SUCCESS
+## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzM0' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -4424,7 +4424,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDMw
+DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzM0
 ```
 ##### Headers
 ```json
@@ -4449,16 +4449,16 @@ DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgz
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json",
-  "date": "Fri, 02 Sep 2022 11:48:31 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:11 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=WOQJUfaCGDdCms4bkf2Z2Df73UDAaacQEf1exr9PDL1nDZKXhtscdLsDCKdiuzjVQzDqfbhaNLhzQvk0%2BdZcekf7aiLmHXVaku4ZYVRlOTG4tpk91RxORyIVgDKb2DNqAb73uFBLt6%2BgyDAhkmEr2BD8yURPDKqnfE4IfG%2BhBBJ6K0nYnbnbGYansl%2BX%2Bb4PYBC%2B5iypzcIiCwCfwgq4u1uU57Y0%2FtlfS8NEM6A%3D--viDDnsDJLXOvVtbQ--EXiqn4nFWxohvcyo283l9A%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:31 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=War82TIX0qDvKf02J3UHO7ZbxLVuPbRxj%2FlpIXkoNOhtYncBSGv9TXD74xq3VGqelY2%2FbVmjvh%2FXYKhXD9MojouFBDVW%2B%2FAHUgvpj4ItIVl47BaM4KHYzK4CZCag5%2F%2FlL5YUvCA9TGvhgYRT%2BOL9p%2BChPSXWCFL5NSofR66oVr7hzpeLgFM9jrsGEwKCrADzPJbrbgwJrqhETmWWbo9Mb4Ni%2BVbqV7RDQswx%2BMs%3D--YdUvvsvNadoxEy9y--mUjGn02%2FC7x%2FPAX7k6JGlA%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:11 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "8885972b-14df-42c8-81d7-a33549971436",
+  "x-request-id": "41962a8e-87d0-4504-b2f1-6a0bbf9027ea",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -4475,7 +4475,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDI0' - 🟢 SUCCESS
+## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzI1' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -4501,7 +4501,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDI0
+DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzI1
 ```
 ##### Headers
 ```json
@@ -4526,16 +4526,16 @@ DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgz
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json",
-  "date": "Fri, 02 Sep 2022 11:48:32 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:12 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=mKSNwStw7iDXmoue7xKXXWQRFOjdOfwJXBkPpKX5FXeDJZoi37McaJdoeqiWZZBdc3843PrnW1CzrrxAzoD9SGIdwBVsompyohzpizD3PzsurHoECGOcQ3vEmvl2CRrOany%2Fqq3w2wFlchj4AeVjAwRAK6Hncqe20pPruZgs5KDTrl5s4zDTgKOEtcyHOY1oyNLbM6LjfX0B5bwqrccfmZkU%2FYIq33qAMWE8Fb0%3D--oKyGAQ0SWHmwa0d4--sSAn9uEGqvq77Shq0HgmSg%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:32 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=KCglrd6zuFlwRcgtzojKScYytxP3n0qTWGxdSlRnKVNrdXd7frv%2FKa9tqXQihl9sV05j5gYNoskgSyaxsKcOzkV5FsDHX65cYnCKQMIQWUT16Uvj0KdTe%2Bo1qBDsnQf3ITxF443YbabpRYWEHPJ4Pu1R%2Fo%2B2BmvyOaRgqnoX4wBUO%2B9m4i7vDf0fo%2FAjUArYHNgb9MiGmA%2BKwqZHxWENKm3V3GkJ9Km1gTsoSwE%3D--dL3BhDhm4P98KLR7--N2aKYxL3cWPbPKrbHI7oIg%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:12 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "2d98c7a3-c6fc-42ed-9b5f-efd49ce0884a",
+  "x-request-id": "230044ec-7430-4546-adff-6a6fd17023b8",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -4552,7 +4552,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDE0' - 🟢 SUCCESS
+## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzE0' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -4578,7 +4578,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDE0
+DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzE0
 ```
 ##### Headers
 ```json
@@ -4603,16 +4603,16 @@ DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgz
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json",
-  "date": "Fri, 02 Sep 2022 11:48:33 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:13 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=rpgANbZq2NUWZBeBOXhSV%2F3g1EUQu9aqTj78j6tCNyff6wGCh%2BFvD3W4Hr7MUkZMzrazYxAtaxqbS6kd%2Fkb4Tss3qfJfbJfNdijE55GOWF%2F7AkR3J%2B5BMtLKc28saM3Szy5fSN5DOVSTW4S%2BGrrTTomhPeY5l93PQLyU8gcIu7vOiyHtaJEg6LRw9UbRCbIqAJwGTDubWPZAXuPY3saJzVkB%2B4j2sdtPI1PSfsQ%3D--0d4jw2wFIdXfGAR2--H%2FRIuU9naAC7N71omH9iTQ%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:33 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=7YJQhuMHYH1%2BulaRYFHmBRMuYHnV5Jv80mM8IsjS%2BsN9C5ZrDK2TxyWqIF9AXTGRl4WvoXgR2Dp0RbgnAne%2F073KKUPZepFRFtYO1roeAEmE%2Bxqb8wI82LD9fZFwraHAyYXHspGe2v5n9Tw7pGLAESaopKql9Id8VSo8aoF0qNl4JG5F1m%2B3AQTohDWUvGgGxPJtHTl2kmJgr8BT0b7P7UBftsVmJyoDzofWrgs%3D--%2FT%2FsvhFr1%2BNNZIVQ--Fj8tE56Mploll03Q%2Bzrdog%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:13 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "e36b40ab-7c4f-40e0-b108-f1e2cda138d9",
+  "x-request-id": "da7026b4-cf99-408c-b8cf-36a6d5926425",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -4629,7 +4629,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDA2' - 🟢 SUCCESS
+## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzA1' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -4655,7 +4655,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDA2
+DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzA1
 ```
 ##### Headers
 ```json
@@ -4680,16 +4680,16 @@ DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgz
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json",
-  "date": "Fri, 02 Sep 2022 11:48:34 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:14 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=mnK%2F2t6skK%2BOuMuBJHuCTuHJigsId7Bjhe1W4VZ465eBArWzVhlDUnO1U2kLTU5BDVYF0T%2FjCRo0pMP9rIPP60kPZljppbp9QDbxahvcVZwMJ1MK4aPZDu2RgryR6t5Vpkmf3lKET63WurxNoa1Jw%2B2F02%2Fj9sFxCGN6gJNHcLza8jokgWkyB0OM3yN8EjA6mKORNcqJi3%2FIm10koic9jIUvtZPYRiVK6Yb1%2FzY%3D--P892c4TeEy%2FYTJcn--BEwlnl%2BY%2BuQrnZtKdgkYfg%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:34 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=fz4dR5pca2MEN38%2FdPKKLWDUm9CHcDE7BHuj%2BplDcuhIEt0PXb%2Fa%2FvsKahOl4mu4rfb1TfT7Qh8VdGVxhHElrnjymw0rpImAwgFoz1rrcDzsypYCOXYc7bxaXw6Gj1LIciw5Fpekdk83SgNapqyDwcj3T%2FHwco15zekDmZIAVDaPOwcW6X0fUcP1pB9N0cR%2B2Hlga340IUtjkwBNiTWBL3D9nvmNEjvS0PdaLhQ%3D--nOymtF%2FCumnvFhw5--a7aaQZS7HPP3mEiKmgadyA%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:14 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "8cdaf93d-119f-4c25-aa4b-bd6aa2930867",
+  "x-request-id": "7d6ee9ee-b659-4dda-a81e-15c09b50d80d",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -4706,7 +4706,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzk5' - 🟢 SUCCESS
+## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjk3' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -4732,7 +4732,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzk5
+DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjk3
 ```
 ##### Headers
 ```json
@@ -4757,16 +4757,16 @@ DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgz
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json",
-  "date": "Fri, 02 Sep 2022 11:48:35 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:15 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=u7yPKoxkY1uqdVsEtEXmDNuttwfFgQO7EPFGvry25jDLtAPH%2F%2BmDpGlE%2BN0zkIXx6Hyk27SnhE3QgQhD1mps9s0iOgGcLk7nvTKMrF1YQdpfZnh844EFsEMmkFiBXAry558FsPRvddBtolJH97UUN5OjeuO4yKsVur2e0wN079Qut7HuQmOHyEjJTRA%2FEEbtAWX%2Byb0ejQ6Qis%2FvM6n0OgacggYeWrwx3scLDY4%3D--DnBQfRiVaRw6CLN2--0kUv%2F%2FpafV%2B06tRFxstLTg%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:35 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=0QVU9FJe0d%2BLTulHz1XpBSCfd7i4loTenVQEhDMHn%2FApDEF3ol95d45ON7Xfw%2FGTZvMzNk9s3iH29urK3Ow4WDbu7mEJc9heZypfDGXvt5Ik40%2FERVv4uCmJ3upHJm8mmqYerP4hpitSec4wVlZnoV3Ufxq4SCuvb4N5SUiktITnip%2FKHlzeCJnFHYSTT2PXM63P7J4%2BSmMDMiIZw2MFO4BDxsh1sjY2gCgit%2Bo%3D--zlIRO6pEma44EFfb--AYWqy2Z7LLSf%2F85y6nRAfA%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:15 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "94823ce5-3d45-4788-b9e7-9487e4991c70",
+  "x-request-id": "7c9a899f-286d-4785-8ed7-3045ad9c719b",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -4783,7 +4783,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzkz' - 🟢 SUCCESS
+## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjky' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -4809,7 +4809,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzkz
+DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjky
 ```
 ##### Headers
 ```json
@@ -4834,16 +4834,16 @@ DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgz
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json",
-  "date": "Fri, 02 Sep 2022 11:48:36 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:16 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=ZNdwSjLn9Y9sL%2F4AUjxlGnnfT3%2FzKuFenc6Vr%2F0OQDitfoZyOV7j4Wre8Kx8cR5Nw5Y4EBTabPvOBbWcW8piErJfiGHz5TzowN8TldqlfSwaahw2TPiFcSAHAbqR55kqwbWCT%2Bk%2BhhVQDrMgSmfrk%2FUhGt7fffs1MCz40e6YMwtfdBPMKmg%2FTVO6krx4%2BOQeFkxdV517mOhKnysbqtfM2JbRNgsKeaMDIcs7taw%3D--StX04EUJuyDMkrYQ--%2BkNiZ8Wx%2BgptrLOjvL4MZg%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:36 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=VcTwyq4fIBwJ3ygcIyE44zOcGqgwmRFZvlYyy1tPTGJj7MfdCmVL5EtBfNbS59AIe07M8XciyCG0tBCy%2BRSZAA%2FY04rTTNsGqj3h%2FF%2BHFGvh8ByBFT9iw47akw3DMRPRAygM%2BAFcZrkhCNS9W%2Bm0GrGEDSty9Nd5aeAP5FCtT3jcGV3gEmkmRZehXudh%2BkfFE37oqjglztWUtNzh2vMcHPQLea4tiPVInxLhKOA%3D--3q4ci%2BAitsOWWP5%2F--tgTfaxnXBA87FIr4ifcEcA%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:16 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "3dc7753e-612f-4ad5-8b8f-4f2e303b5868",
+  "x-request-id": "d81be6ff-63ae-407d-a970-09295567bcd3",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -4860,7 +4860,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzgx' - 🟢 SUCCESS
+## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjg0' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -4886,7 +4886,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzgx
+DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjg0
 ```
 ##### Headers
 ```json
@@ -4911,16 +4911,16 @@ DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgz
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json",
-  "date": "Fri, 02 Sep 2022 11:48:37 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:17 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=fF9R%2BoFOVsMk4OKc8RY2Ww2E0IehBMIZbQm%2BpxQzISBn1eJsC8tblt82Ax9VLRAnMAugmnC0WC5NwtQ3oFIVtCpj4RKXg3OetVLbJXDwvkd7zDVEjlxrLIAYX4slfDJo2cTZ2bJ2bOK5%2F%2FFG4PG3Fge10B3HhMJ1Ml1kZG0vSvOufZkoBeGZgxD0ZP%2Fd47mL3yIlx%2BVfsH%2FNZhh2S%2F0rG%2Bmhi9ZNnhaAcqwSFs0%3D--B0248M0Xd%2F0wuTyS--x80F993eWW19sjlbPP8Kog%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:37 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=Q0FXhSZUGZnZ1CMzJzUW61IdVib1EorB%2BPZbNz3Nbc8QMatQ2PSTYBideY5KdlJicrIn8gMHh2A%2BxdUECzv8ldeb5EMf7LbvitEv%2BcsCw8ONNSXqoKLGSYPActwEFlGQit%2Bjmhq8ezr8QnjYyDEdQJHNQ2LhzLSUMe7oCUDbUc9V89roO7vuNYXFnmSSUWuvIeSls1tb5eCQgh9uaG56LnjpPEqqBKquG%2BMGdS4%3D--13uHLSqe2xrdHrjh--CkA2pepwptPXYhySh9z5Fw%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:17 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "6f7fb8d6-695f-4c4f-a7f8-bea27a6ac555",
+  "x-request-id": "058cf34d-ec41-4030-8317-be47a3e2be19",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -4937,7 +4937,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzcy' - 🟢 SUCCESS
+## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjc3' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -4963,7 +4963,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzcy
+DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjc3
 ```
 ##### Headers
 ```json
@@ -4988,16 +4988,16 @@ DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgz
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json",
-  "date": "Fri, 02 Sep 2022 11:48:38 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:18 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=HKLx8x5Ra3K7H4VBdb8BnJz0ey88cvOrxk938lcnAs5m3GVwK6xISfN3EJLUXG5bIop1Cbhht%2BgMsgMYaipmm4VSOVLwqDmnSvLTX6m%2Fq%2FpusOIcPI1LdibC5TQNiILVQHNbh4kWSMRZMFpvo6%2F%2BY54dPVVsZy4vlSDsrucM%2BmebH3gYFzbrvGc0QHkoa0iVNWkwnmMCvtNCi6SIixGJwoEXaGlSKFCgc%2BP578U%3D--WoNsi508WNINz1ak--SDV296u6Q%2FJxM9jDRJOGmQ%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:38 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=Y%2BqyQym60gKJA1IaasWznypXFjDlzi57lgQyAvY%2FsZCrXet%2FQDqs2AlqqwseTBRg%2FLCiKCxxS7OAHpsOU3X7gn4ojvV6%2BPfu27AVeB3q3piNyBph%2BaawfSji4Z9FuJ8xoV%2FMK0K19e%2FlNKI%2F2UGVsAmXCHGcWmY%2F3c%2B%2FUrNBinphEWHOEOE60NL%2FN3rEUyTVqR4L%2FaP%2FpmVUNZarz7anksvq6lkdn5fXys7mWJ8%3D--KVZmQf3Bxwx4FRBC--gsYHAgIklhJgzKwUW%2FNLpg%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:18 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "a2a2ff5c-afc9-4b42-88f2-0436d5df2ab9",
+  "x-request-id": "354eaa25-2534-4f9e-8dd5-6072f23b1732",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -5014,7 +5014,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzc1' - 🟢 SUCCESS
+## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjY4' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -5040,7 +5040,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzc1
+DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjY4
 ```
 ##### Headers
 ```json
@@ -5065,16 +5065,16 @@ DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgz
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json",
-  "date": "Fri, 02 Sep 2022 11:48:39 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:19 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=dAkKmtZjlmUJnLlXU%2F%2F3KHUyvQX47hBZE2Mfa%2BCzRVL1LKbxLbgviFoDUE7KZA9yj5GJDVENwAo9zmEyo2VLzwlh1UlwpXpLAc%2BlnMxFz7mu4Oqx1Hi%2Bh%2BJZxZGfDDIm6qABbIsM%2B%2BEhyRLC%2Bf5Tg60gf9iwwlr63qq99LtG%2BPSXrFbuAjaoc3L8sMxG3XsvjHY6hyjM8Gn8HU9F4Y0a1JoeS1nNruw0Lwc5S3s%3D--MmO5jj9mPNnJcJYK--vzSW8gq91rAwNQ957BSAnQ%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:39 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=wtZTTQKHKEk89rcVoNVr3j58Lo3VviAdqEwP0wM2RJGzG%2BE3gGDO7u3dzJWb1jwBkx6PPcZYcmay5dX7qkelhYhpFVMKDxPrpDL2lsUiIiGoZ%2FD0vObc%2FTL0pQFWm1mwCNVppMoFtXBGJGgxYVvprF2%2BrywYXkJ9hVzf8NPlD%2Ba2vdsYOvXWxSifM1OimXygEHfwJNlhjEBPeeTP1jitTr6wsb6rbZSyPDzf%2Fn0%3D--%2B5QZ9GIuC62ASjJ5--eSKwMkH00XwXtSAhjPHg7Q%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:19 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "430a8591-3738-4681-a91e-63a0dde20db9",
+  "x-request-id": "3cc57e5c-4480-44bb-bdc1-9ed67d4a4699",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -5091,7 +5091,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx' - 🟢 SUCCESS
+## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -5117,7 +5117,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx
+DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4
 ```
 ##### Headers
 ```json
@@ -5142,16 +5142,16 @@ DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgz
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json",
-  "date": "Fri, 02 Sep 2022 11:48:40 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:20 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=DTvCmX8nOpxL67NYNomDkgwCpEIEDQbmq%2B7HWTAulbF6UIWPpfnMi%2BpsDNLcHOl11C17erT9n3mJFzv7DNxzfnYEZTN0e6%2BjBEsRFDkie2i7e6tpIyQvUAAfpKZMxB7GzRRkvwZES9M%2Ffuvqq6NlV1yYXBjeOQA3b8865VMUqMyQJv8296IIOkKT8ryrshQuai2YBYMWRSCr3si6Skul75LWBpOwLdIlkZ%2Fi0FE%3D--gtp0gAcc39RdVgOb--Uce8D1vlnLvSGxHT9e9ogA%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:40 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=Nmr%2B4dq2H5%2FrGxvO4Xpy1NygoCGl8C4hqP54xgOJhw%2F%2FR3hpJPooMmNa0kQeyewLUgszo3VtqrS2Ty%2BGGpX4SAc3WTCE8pBqgWy0nTcBjqvTIv5yPA8jqoX1Ev4s1hkAh7HqBb42%2FxzyXyMVdgvfzDe3XKGXYxrzHqFL2WCU6X3LIQsYOQfxDid4HSWX9PsQVFLAzBR3QGaF1Pa0tQ9fnbZR6zRMqpSfqLpO9K0%3D--N7O79SchZhJOCkU4--HtuCJlE32NZWRY8GfY5mAw%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:20 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "434af8e6-97c6-4119-97ca-a141ac1efc48",
+  "x-request-id": "b1beb05c-1bbd-4f65-9507-78ae09ebe2bb",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -5168,7 +5168,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzAw' - 🟢 SUCCESS
+## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjE2' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -5194,7 +5194,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzAw
+DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjE2
 ```
 ##### Headers
 ```json
@@ -5219,16 +5219,16 @@ DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgz
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json",
-  "date": "Fri, 02 Sep 2022 11:48:41 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:21 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=%2BMwC9bV37wTXo9BNrIr4XE3YrZe1YEdIL%2BSSKEa3xXYeSB8zKvBcsWtUF7MZB%2B5cnURQ7HXE8tlUTje%2Fy21uMr0a1LWBiKF6NIO1kZx%2FfHX6yZc2I6eifWCTZ8C1weuNJUy2QRpN3DzpKQoY0boEQJoq7WkjI4hKV0XLB%2Fsu29UjXRLVuyU6J8jvJeQpkVkbpOrca8frleHl1w9jjA7bDL71a%2FMPnldYFLJwUsQ%3D--2Ier%2BZ0eTBxNjecw--eeEhNwZt%2FkcbDskJmprCeA%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:41 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=kJ8ZzhnQJI0tqI04HvjHWaR1HIitetLK1Jaz0GCr6SbfaMELM0ZNfHsaLWaFxCjMzkG4uRpSPx0AdV%2FMmFvwMbnhH0lgIdg%2F3FcoCoAUU6CtvInKmp6FKoo9ieW9qRMLDHlCJJxDVlAKc7VCXML3Vp1VkqJE47lyP39AABvmmzR39qBNPzuMSaNiqbIpkG%2F9jMghpOoVX1UvlYuuR301dKvbODhySDRiP9uy8bs%3D--GpUqwvazPqLCSg7%2F--gQ59%2BDZ8GFWikD5KNPS%2FUw%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:21 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "43ca24c1-0767-4f01-a682-a34c447468bd",
+  "x-request-id": "0d565314-32e4-41a7-9c8b-2c2aeb5d9f5b",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -5245,7 +5245,7 @@ null
 ```json
 undefined
 ```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjY3' - 🟢 SUCCESS
+## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTc5' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -5271,7 +5271,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjY3
+DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTc5
 ```
 ##### Headers
 ```json
@@ -5296,16 +5296,16 @@ DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgz
   "cache-control": "no-cache",
   "connection": "close",
   "content-type": "application/json",
-  "date": "Fri, 02 Sep 2022 11:48:42 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:22 GMT",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
-  "set-cookie": "_filebase_session=UiBmkHmAg%2FPhsvzrCBJ8x5A%2FUuD51mK9XJudGCXntLADFK4le6I0Rdz1s6RmKO265yCmHzovOgzNCMs%2FKhqX1MKiTJ%2Ff2GqHGIyG%2BbRH0jYqO%2BDY9ONDW0rt1AC8leE0966Jtu4SO1noJE2t8byVFzUnGYb145IxunuOQEg%2Fl7JLhZJLSSfErL5p%2FyzmwIQMbo5GrQWicmZtbFZ6dZBUL7aYJHKfA6rc4yWHfiM%3D--di00Qcy8PSvPva6s--oKUQ2cxeQFzSsXeZjxp%2BrQ%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:48:42 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=zkvFRv9rE%2B4mhM54vb9LCFUOuqBMv3MX18IqY6BzK8ICq%2FdYGnlXKkaihJqQIiwNFKFlxeCvyz4oStdv5FwppQht%2Bfgf%2Bz0UAXO289O0gB%2BMPIU%2FyLUTiFDLWOxGOLzJe%2B924CC%2FDpvF3mZY6mmqvwOKmIckkW8%2BFkMIuAlQmptcE3gYE8UxxXL8RYSOyB82RTl54NRccuSGkRM0KAHgs9Yc1VjwzezHHfKIHd8%3D--h7h48eJbkGfEtvgO--EqMb2n%2Fq5KOPj5s2D%2BJ3fg%3D%3D; domain=.filebase.io; path=/; expires=Fri, 16 Sep 2022 11:49:22 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "cfb77562-0335-429c-81a9-3a8eb14fc044",
+  "x-request-id": "8ce1b4c9-5001-448d-919f-a7f201b9efeb",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -5362,7 +5362,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:43 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:23 GMT",
   "etag": "W/\"3438c5b0da51b073b4fa87b68d35e3b9\"",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
@@ -5372,7 +5372,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "a16e3276-2a0f-4bca-af5d-3529e4f8c7fe",
+  "x-request-id": "c79a278e-bae1-4e37-830b-32302e83d114",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -5398,7 +5398,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "results": {}
 }
 ```
-## Get all Pins created before 'Fri Sep 02 2022 11:48:19 GMT+0000 (Coordinated Universal Time)' - 🟢 SUCCESS
+## Get all Pins created before 'Fri Sep 02 2022 11:48:58 GMT+0000 (Coordinated Universal Time)' - 🟢 SUCCESS
 
 ### Expectations (3/3 successful)
 
@@ -5452,7 +5452,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-09-02T11%3A48%3A19.000Z
+GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-09-02T11%3A48%3A58.000Z
 ```
 ##### Headers
 ```json
@@ -5478,8 +5478,8 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:40 GMT",
-  "etag": "W/\"0c9771e064987a216132d5622aa2deb1\"",
+  "date": "Fri, 02 Sep 2022 11:49:20 GMT",
+  "etag": "W/\"a351024b478f73e121f596d00e6abb00\"",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
   "transfer-encoding": "chunked",
@@ -5488,7 +5488,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "5956d7aa-a9af-48bd-83d6-2d4b9019e827",
+  "x-request-id": "82cdb172-81a2-4283-b847-834738ebb623",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -5498,12 +5498,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "count": 5,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:14.000-04:00",
+      "created": "2022-09-02T07:48:52.000-04:00",
       "pin": {
-        "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-        "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+        "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+        "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -5519,12 +5519,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzAw",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjE2",
       "status": "pinning",
-      "created": "2022-09-02T07:48:11.000-04:00",
+      "created": "2022-09-02T07:48:50.000-04:00",
       "pin": {
-        "cid": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
-        "name": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
+        "cid": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
+        "name": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -5540,12 +5540,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjY3",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTc5",
       "status": "pinning",
-      "created": "2022-09-02T07:48:07.000-04:00",
+      "created": "2022-09-02T07:48:46.000-04:00",
       "pin": {
-        "cid": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
-        "name": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
+        "cid": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
+        "name": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -5612,12 +5612,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "count": 5,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzMx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjI4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:14.000-04:00",
+      "created": "2022-09-02T07:48:52.000-04:00",
       "pin": {
-        "cid": "bafkreiagbwlvsusttzdmlgfzd5i7gta2bhe5mhyekv3wkkolkrqaopkq2i",
-        "name": "216339a9-e82e-4ba6-a3ba-f68ec831c119",
+        "cid": "bafkreihtakwlbdllw6lfu6cqr47c74njdfayq2vuun34c4r7okitjqsuvy",
+        "name": "15d4419b-04a3-4f95-a7d2-1c8014b9e49b",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -5633,12 +5633,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzAw",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjE2",
       "status": "pinning",
-      "created": "2022-09-02T07:48:11.000-04:00",
+      "created": "2022-09-02T07:48:50.000-04:00",
       "pin": {
-        "cid": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
-        "name": "bafkreic5qknoctmc54qiwflzimyfckz4x4pcirlbi5hufnjszfpm6ojy4q",
+        "cid": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
+        "name": "bafkreifshikhx7nsfkyevb3hjwqvxplvnjo32a3un7kgrmrz7zuwy6fule",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -5654,12 +5654,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMjY3",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNTc5",
       "status": "pinning",
-      "created": "2022-09-02T07:48:07.000-04:00",
+      "created": "2022-09-02T07:48:46.000-04:00",
       "pin": {
-        "cid": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
-        "name": "bafkreiest5on5l56fytw5s3tm74ogv3uo6hmhxjlx4t3vw2do27ubxz7iq",
+        "cid": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
+        "name": "bafkreibs2rkom7cqm37hk4mdcelk44xff2yf3seyqys6zvln2mzy6bvwgy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -5766,7 +5766,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:44 GMT",
+  "date": "Fri, 02 Sep 2022 11:49:23 GMT",
   "etag": "W/\"4d76b8f4aeff840e944bbb95d497f063\"",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
@@ -5776,7 +5776,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "d7f2bbd6-ef64-41e3-b69c-8f5012c1618d",
+  "x-request-id": "c828aaba-1ce2-4ceb-a03b-c0d7add67270",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -6110,8 +6110,8 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json; charset=utf-8",
-  "date": "Fri, 02 Sep 2022 11:48:29 GMT",
-  "etag": "W/\"db7d15fb463689c353ba343afdf33d7d\"",
+  "date": "Fri, 02 Sep 2022 11:49:09 GMT",
+  "etag": "W/\"8ff43ffd34057c13628ab33c4333d399\"",
   "referrer-policy": "strict-origin-when-cross-origin",
   "server": "Filebase",
   "transfer-encoding": "chunked",
@@ -6120,7 +6120,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "b51090af-b25b-4692-8e9f-f3fbb89a023d",
+  "x-request-id": "96242f86-8176-48cb-9f40-02e8a8ac3147",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -6130,12 +6130,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "count": 15,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDQx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzQ4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:27.000-04:00",
+      "created": "2022-09-02T07:49:07.000-04:00",
       "pin": {
-        "cid": "bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm",
-        "name": "bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm",
+        "cid": "bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy",
+        "name": "bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6151,12 +6151,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDMw",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzM0",
       "status": "pinning",
-      "created": "2022-09-02T07:48:26.000-04:00",
+      "created": "2022-09-02T07:49:06.000-04:00",
       "pin": {
-        "cid": "bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu",
-        "name": "bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu",
+        "cid": "bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74",
+        "name": "bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6172,12 +6172,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDI0",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzI1",
       "status": "pinning",
-      "created": "2022-09-02T07:48:25.000-04:00",
+      "created": "2022-09-02T07:49:05.000-04:00",
       "pin": {
-        "cid": "bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny",
-        "name": "bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny",
+        "cid": "bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm",
+        "name": "bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6193,12 +6193,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDE0",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzE0",
       "status": "pinning",
-      "created": "2022-09-02T07:48:24.000-04:00",
+      "created": "2022-09-02T07:49:04.000-04:00",
       "pin": {
-        "cid": "bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq",
-        "name": "bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq",
+        "cid": "bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy",
+        "name": "bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6214,12 +6214,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDA2",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzA1",
       "status": "pinning",
-      "created": "2022-09-02T07:48:23.000-04:00",
+      "created": "2022-09-02T07:49:03.000-04:00",
       "pin": {
-        "cid": "bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi",
-        "name": "bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi",
+        "cid": "bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq",
+        "name": "bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6235,12 +6235,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzk5",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjk3",
       "status": "pinning",
-      "created": "2022-09-02T07:48:22.000-04:00",
+      "created": "2022-09-02T07:49:02.000-04:00",
       "pin": {
-        "cid": "bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm",
-        "name": "bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm",
+        "cid": "bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny",
+        "name": "bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6256,12 +6256,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzkz",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjky",
       "status": "pinning",
-      "created": "2022-09-02T07:48:21.000-04:00",
+      "created": "2022-09-02T07:49:01.000-04:00",
       "pin": {
-        "cid": "bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i",
-        "name": "bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i",
+        "cid": "bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia",
+        "name": "bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6277,12 +6277,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzgx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjg0",
       "status": "pinning",
-      "created": "2022-09-02T07:48:20.000-04:00",
+      "created": "2022-09-02T07:49:00.000-04:00",
       "pin": {
-        "cid": "bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi",
-        "name": "bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi",
+        "cid": "bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im",
+        "name": "bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6298,12 +6298,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzcy",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjc3",
       "status": "pinning",
-      "created": "2022-09-02T07:48:19.000-04:00",
+      "created": "2022-09-02T07:48:59.000-04:00",
       "pin": {
-        "cid": "bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u",
-        "name": "bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u",
+        "cid": "bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy",
+        "name": "bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6319,12 +6319,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzc1",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjY4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:19.000-04:00",
+      "created": "2022-09-02T07:48:58.000-04:00",
       "pin": {
-        "cid": "bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy",
-        "name": "bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy",
+        "cid": "bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne",
+        "name": "bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6349,12 +6349,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "count": 15,
   "results": [
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDQx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzQ4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:27.000-04:00",
+      "created": "2022-09-02T07:49:07.000-04:00",
       "pin": {
-        "cid": "bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm",
-        "name": "bafkreifmnwvahgn4fcemhlidoojxc5usrzvrpe4mhhvz4yp4tfpzyye3bm",
+        "cid": "bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy",
+        "name": "bafkreihieqospn2r24xjns4omzidkcea6i4qmhzbfqhgw5giyg6r33rvmy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6370,12 +6370,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDMw",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzM0",
       "status": "pinning",
-      "created": "2022-09-02T07:48:26.000-04:00",
+      "created": "2022-09-02T07:49:06.000-04:00",
       "pin": {
-        "cid": "bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu",
-        "name": "bafkreid5axucrneluwa74p43zpzm3km3czshffwbtcznfsab55e2dwnqdu",
+        "cid": "bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74",
+        "name": "bafkreic2evu52ijy5pksyvzfn4hkkdb2svodabhwiplq4vxkgsoummoc74",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6391,12 +6391,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDI0",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzI1",
       "status": "pinning",
-      "created": "2022-09-02T07:48:25.000-04:00",
+      "created": "2022-09-02T07:49:05.000-04:00",
       "pin": {
-        "cid": "bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny",
-        "name": "bafkreieqi74bc3nvphyqq7ga6dhfyxucohqpytc6eisj4ak7xpqx7bvpny",
+        "cid": "bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm",
+        "name": "bafkreicikaw34audeuga2eic6nj4y3szj3gzmutmhlosqvzaysd3tfgucm",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6412,12 +6412,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDE0",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzE0",
       "status": "pinning",
-      "created": "2022-09-02T07:48:24.000-04:00",
+      "created": "2022-09-02T07:49:04.000-04:00",
       "pin": {
-        "cid": "bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq",
-        "name": "bafkreifg5drkfxowtzzai52ubjy3jlb3ugrrseonrun6p6l5odnbfao6yq",
+        "cid": "bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy",
+        "name": "bafkreicdxn2nh3xsdmzhqwptlfxx5noc6hojkem4loy276rdiaeznuvwfy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6433,12 +6433,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNDA2",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNzA1",
       "status": "pinning",
-      "created": "2022-09-02T07:48:23.000-04:00",
+      "created": "2022-09-02T07:49:03.000-04:00",
       "pin": {
-        "cid": "bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi",
-        "name": "bafkreibf7wplfia5542ucvshvzohsyimurpnfrtmydg2ac3ry562tmthmi",
+        "cid": "bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq",
+        "name": "bafkreiatf5q46kr6pn6667ebmxa4fq5hiypgrnft7rg4fvh6ytyu4ohepq",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6454,12 +6454,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzk5",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjk3",
       "status": "pinning",
-      "created": "2022-09-02T07:48:22.000-04:00",
+      "created": "2022-09-02T07:49:02.000-04:00",
       "pin": {
-        "cid": "bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm",
-        "name": "bafkreifhpfzg3k7u5s2mhdqs2jqxykklpqlbgftk6gvfclomgn3w4psgsm",
+        "cid": "bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny",
+        "name": "bafkreihhdbs6hm6ciytflaioc5pkm6zygf2lbaypjrrlmenow3n3pnkxny",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6475,12 +6475,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzkz",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjky",
       "status": "pinning",
-      "created": "2022-09-02T07:48:21.000-04:00",
+      "created": "2022-09-02T07:49:01.000-04:00",
       "pin": {
-        "cid": "bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i",
-        "name": "bafkreie2vjo7on3rkxnde2yanh5oyxvh7r3s222usk5kjmbscbf4krjk6i",
+        "cid": "bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia",
+        "name": "bafkreia6lmjydlj4srtqr4e67atrejzvvesmdvkf5e2fykyzwfgxsddeia",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6496,12 +6496,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzgx",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjg0",
       "status": "pinning",
-      "created": "2022-09-02T07:48:20.000-04:00",
+      "created": "2022-09-02T07:49:00.000-04:00",
       "pin": {
-        "cid": "bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi",
-        "name": "bafkreicv5frxxz6isd7z7wjzkdh7mejmd7k5fmdtgzjkb2dt3dusn7jdfi",
+        "cid": "bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im",
+        "name": "bafkreiggfxgsxtt53icikuwtdaugwofx2h2di3sbo245gwmchk3zcb23im",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6517,12 +6517,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzcy",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjc3",
       "status": "pinning",
-      "created": "2022-09-02T07:48:19.000-04:00",
+      "created": "2022-09-02T07:48:59.000-04:00",
       "pin": {
-        "cid": "bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u",
-        "name": "bafkreifh6cmyug2zrnmxiw6vt23bbyneh5a23mru3qgm3f5werwcxgoi4u",
+        "cid": "bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy",
+        "name": "bafkreib5bm6b34gsxuz2xjak4fzhgttvuh4hnnovbftnairlyh434pd6zy",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
@@ -6538,12 +6538,12 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
       ]
     },
     {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzMzc1",
+      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgzNDgzNjY4",
       "status": "pinning",
-      "created": "2022-09-02T07:48:19.000-04:00",
+      "created": "2022-09-02T07:48:58.000-04:00",
       "pin": {
-        "cid": "bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy",
-        "name": "bafkreifi2hwveqyhzqrogbbgvetdzvcqxydhea7ek76dvf6gujvtw4qqxy",
+        "cid": "bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne",
+        "name": "bafkreiebse26xfkjxofz2m43jqkylxe2mwq7j4gzpvcgumzmpmxjdqv7ne",
         "origins": [],
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
