@@ -1,3 +1,12 @@
+## [1.2.3](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.2.2...v1.2.3) (2022-09-02)
+
+
+### Trivial Changes
+
+* **deps:** bump actions/upload-artifact from 2 to 3 ([#119](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/119)) ([ad9cfda](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/ad9cfdafb1c6a4ca72a7cbd3684c37898d4615a8))
+* **deps:** bump go-ipfs from 0.14.0 to 0.15.0 ([#191](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/191)) ([50879d2](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/50879d2fdd8127f16122944a15edf8df54a2c6e7))
+* **deps:** bump ipfsd-ctl from 11.0.1 to 12.0.1 ([#192](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/192)) ([c7fe568](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/c7fe568bc6e2ca5e21a45e954a78656586569699))
+
 ## [1.2.2](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.2.1...v1.2.2) (2022-08-30)
 
 
