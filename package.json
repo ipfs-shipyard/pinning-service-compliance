@@ -150,7 +150,7 @@
     "ipfs": "^0.63.3",
     "ipfs-core": "^0.15.2",
     "ipfs-http-client": "^57.0.1",
-    "ipfsd-ctl": "^11.0.0",
+    "ipfsd-ctl": "^12.0.1",
     "marked": "^4.0.16",
     "marked-terminal": "^5.1.1",
     "multiformats": "^9.6.5",
