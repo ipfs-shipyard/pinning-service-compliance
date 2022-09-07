@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.2.4...v1.3.0) (2022-09-07)
+
+
+### Features
+
+* create re-usable workflow for service providers to use, and export json ([#141](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/141)) ([108fdcb](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/108fdcb7f68117e8eb8c4cd31a8f94335983647c)), closes [#142](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/142)
+
 ## [1.2.4](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.2.3...v1.2.4) (2022-09-05)
 
 
