@@ -51,11 +51,11 @@ jobs:
           path: docs
           key: ${{ github.sha }}-pinata
       - run: npm run dev-start -- -s ${{ secrets.PINATA_API_ENDPOINT }} ${{secrets.PINATA_API_TOKEN}}
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: pinata-logs
           path: docs/api.pinata.cloud
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: pinata-report
           path: docs/api.pinata.cloud.md
@@ -72,14 +72,35 @@ jobs:
           path: docs
           key: ${{ github.sha }}-estuary
       - run: npm run dev-start -- -s ${{ secrets.ESTUARY_API_ENDPOINT }} ${{secrets.ESTUARY_API_TOKEN}}
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: estuary-logs
           path: docs/api.estuary.tech
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: estuary-report
           path: docs/api.estuary.tech.md
+
+  check-filebase-compliance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - uses: ipfs/aegir/actions/cache-node-modules@master
+      - name: Reports Cache
+        uses: actions/cache@v3
+        with:
+          path: docs
+          key: ${{ github.sha }}-filebase
+      - run: npm run dev-start -- -s ${{ secrets.FILEBASE_API_ENDPOINT }} ${{secrets.FILEBASE_API_TOKEN}}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: filebase-logs
+          path: docs/api.filebase.io
+      - uses: actions/upload-artifact@v3
+        with:
+          name: filebase-report
+          path: docs/api.filebase.io.md
 
   check-nft-dot-storage-compliance:
     runs-on: ubuntu-latest
@@ -93,11 +114,11 @@ jobs:
           path: docs
           key: ${{ github.sha }}-nft
       - run: npm run dev-start -- -s ${{ secrets.NFT_API_ENDPOINT }} ${{secrets.NFT_API_TOKEN}}
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: nft-logs
           path: docs/nft.storage
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: nft-report
           path: docs/nft.storage.md
@@ -114,11 +135,11 @@ jobs:
           path: docs
           key: ${{ github.sha }}-web3
       - run: npm run dev-start -- -s ${{ secrets.WEB3_API_ENDPOINT }} ${{secrets.WEB3_API_TOKEN}}
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: web3-logs
           path: docs/api.web3.storage
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: web3-report
           path: docs/api.web3.storage.md

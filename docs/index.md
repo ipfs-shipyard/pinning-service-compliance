@@ -6,6 +6,7 @@ Periodically tested:
 
 * [Crust](./api.crust.cloud.md)
 * [Estuary](./api.estuary.tech.md)
+* [Filebase](./api.filebase.io.md)
 * [Pinata](./api.pinata.cloud.md)
 * [web3.storage](./api.web3.storage.md)
 * [nft.storage](./nft.storage.md)
@@ -23,7 +24,7 @@ The Pinning Service Compliance project originated from [pinning-services-api-spe
 
 ### How to run the compliance checker against my own pinning service?
 
-***Disclaimer***: It is recommended to use an `auth_token` separate from your production/live services. The compliance checks will do their best not to corrupt any existing pins you have, but consistent tests without consistent data is challenging. 
+***Disclaimer***: It is recommended to use an `auth_token` separate from your production/live services. The compliance checks will do their best not to corrupt any existing pins you have, but consistent tests without consistent data is challenging.
 
 [pinning-service-compliance](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-compliance) package is available on NPM:
 
