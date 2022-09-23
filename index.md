@@ -4,6 +4,7 @@
 
 Periodically tested:
 
+* [Crust](./api.crust.cloud.md)
 * [Estuary](./api.estuary.tech.md)
 * [Filebase](./api.filebase.io.md)
 * [Pinata](./api.pinata.cloud.md)
