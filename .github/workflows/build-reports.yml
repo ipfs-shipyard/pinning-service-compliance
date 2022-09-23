@@ -33,11 +33,11 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: crust-logs
-          path: docs/api.crust.cloud
+          path: docs/pin.crustcode.com
       - uses: actions/upload-artifact@v2
         with:
           name: crust-report
-          path: docs/api.crust.cloud.md
+          path: docs/pin.crustcode.com.md
 
   check-pinata-compliance:
     runs-on: ubuntu-latest

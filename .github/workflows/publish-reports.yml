@@ -55,6 +55,11 @@ jobs:
         with:
           path: docs
           key: ${{ github.sha }}-filebase
+      - name: Reports Cache
+        uses: actions/cache@v3
+        with:
+          path: docs
+          key: ${{ github.sha }}-crust
       - name: Scheduled deployment
         uses: s0/git-publish-subdir-action@77ba3d841ebd413837b5e72676bd9e54e537f3f8
         env:
