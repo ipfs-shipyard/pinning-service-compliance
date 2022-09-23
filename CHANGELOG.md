@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.3.1...v1.3.2) (2022-09-23)
+
+
+### Bug Fixes
+
+* crust.io report link ([83e33c2](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/83e33c218ad084002164d89fee05b1b32ee0f866))
+
 ## [1.3.1](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.3.0...v1.3.1) (2022-09-23)
 
 
