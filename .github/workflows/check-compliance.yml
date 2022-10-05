@@ -47,7 +47,7 @@ jobs:
           path: docs
           key: ${{ github.sha }}
       - run: npm run dev-start -- -s ${{ inputs.API_ENDPOINT }} ${{ secrets.API_TOKEN }}
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: docs
           path: docs
