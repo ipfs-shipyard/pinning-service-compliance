@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.3.2...v1.3.3) (2022-10-05)
+
+
+### Trivial Changes
+
+* **deps:** bump actions/upload-artifact from 2 to 3 ([#215](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/215)) ([b308964](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/b308964362cd0deaaef79a1e8d1abcf1fffc15c5))
+
 ## [1.3.2](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.3.1...v1.3.2) (2022-09-23)
 
 

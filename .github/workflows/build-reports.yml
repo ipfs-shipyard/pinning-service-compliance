@@ -30,11 +30,11 @@ jobs:
           path: docs
           key: ${{ github.sha }}-crust
       - run: npm run dev-start -- -s ${{ secrets.CRUST_API_ENDPOINT }} ${{secrets.CRUST_API_TOKEN}}
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: crust-logs
           path: docs/pin.crustcode.com
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: crust-report
           path: docs/pin.crustcode.com.md
