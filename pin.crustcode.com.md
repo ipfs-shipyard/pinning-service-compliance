@@ -1,9 +1,9 @@
 
 # https://pin.crustcode.com/psa compliance:
 
-Execution Date: 2022-09-23T19:42:16.091Z
+Execution Date: 2022-10-05T00:14:43.270Z
 
-Revision: [83e33c2](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/83e33c2)
+Revision: [b308964](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/b308964)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/pin.crustcode.com.md)
 
@@ -13,7 +13,7 @@ Revision: [83e33c2](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   ❌ [Request with invalid token](#request-with-invalid-token----failed)
 
-  ❌ [Pins post of CID 'bafkreig26i6u6enyvmjgcq4tn5nn7li7zwgwva6dxzki5tkf4726fmw5te'](#pins-post-of-cid-bafkreig26i6u6enyvmjgcq4tn5nn7li7zwgwva6dxzki5tkf4726fmw5te----failed)
+  ❌ [Pins post of CID 'bafkreidjex23bcap6xzjt6eqdoixg755skyddqbbwqkiayjorh2lutwak4'](#pins-post-of-cid-bafkreidjex23bcap6xzjt6eqdoixg755skyddqbbwqkiayjorh2lutwak4----failed)
 
   ❌ [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----failed)
 
@@ -21,7 +21,7 @@ Revision: [83e33c2](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   ❌ [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----failed)
 
-  ❌ [Can create a pin with name='c90350c6-fbdf-4032-a5f9-2de54c541e50'](#can-create-a-pin-with-namec90350c6-fbdf-4032-a5f9-2de54c541e50----failed)
+  ❌ [Can create a pin with name='6df7415e-3738-4a74-b2cf-a7fd41879fc8'](#can-create-a-pin-with-name6df7415e-3738-4a74-b2cf-a7fd41879fc8----failed)
 
   ❌ [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----failed)
 
@@ -78,7 +78,7 @@ GET https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "27",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:43 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:11 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -153,7 +153,7 @@ GET https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:44 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:12 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -175,7 +175,7 @@ GET https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Pins post of CID 'bafkreig26i6u6enyvmjgcq4tn5nn7li7zwgwva6dxzki5tkf4726fmw5te' - ❌ FAILED
+## Pins post of CID 'bafkreidjex23bcap6xzjt6eqdoixg755skyddqbbwqkiayjorh2lutwak4' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -221,7 +221,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreig26i6u6enyvmjgcq4tn5nn7li7zwgwva6dxzki5tkf4726fmw5te","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidjex23bcap6xzjt6eqdoixg755skyddqbbwqkiayjorh2lutwak4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -237,7 +237,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:45 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:13 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -306,7 +306,7 @@ DELETE https://pin.crustcode.com/psa/pins/null
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:47 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:14 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -369,7 +369,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiajc2g4fxwbdsgayj6fhsvro6u2ylivtndsfo4k4r4haqrbod4rgu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreicdretdwkxn6nrqflwa66kfek5kshqtbnojf6el3n5u5tetlgngpm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -385,7 +385,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:46 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:14 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -454,7 +454,7 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:48 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:15 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -521,7 +521,7 @@ GET https://pin.crustcode.com/psa/pins/null
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:51 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:18 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -588,7 +588,7 @@ GET https://pin.crustcode.com/psa/pins/null
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:52 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:19 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -610,7 +610,7 @@ GET https://pin.crustcode.com/psa/pins/null
 ```json
 null
 ```
-## Pin's with requestid 'null' can have cid 'bafkreic7xr75zrpyzcd6fqonpux4tsingbi7rk3pzqcf2h22azd3vtgm2e' replaced with 'bafkreidyqgjamepz4dpuln7golsag2256elnpa26tiw54vf63zyqjrzote' - ❌ FAILED
+## Pin's with requestid 'null' can have cid 'bafkreihxoiplsnoa4rqphbvvmr25q2pmnumc6nybqz7rbn5auan7pdkyzq' replaced with 'bafkreifgyukbcwo2v4vn57ue26yssknbuisedkweesfadzp2crnmer6doa' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -652,7 +652,7 @@ POST https://pin.crustcode.com/psa/pins/null
 ```
 ##### Body
 ```json
-{"cid":"bafkreidyqgjamepz4dpuln7golsag2256elnpa26tiw54vf63zyqjrzote","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreifgyukbcwo2v4vn57ue26yssknbuisedkweesfadzp2crnmer6doa","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -668,7 +668,7 @@ POST https://pin.crustcode.com/psa/pins/null
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:50 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:17 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -747,7 +747,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreic7xr75zrpyzcd6fqonpux4tsingbi7rk3pzqcf2h22azd3vtgm2e","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihxoiplsnoa4rqphbvvmr25q2pmnumc6nybqz7rbn5auan7pdkyzq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -763,7 +763,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:49 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:16 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -785,7 +785,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can retrieve pin with name 'c90350c6-fbdf-4032-a5f9-2de54c541e50' via the 'exact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '6df7415e-3738-4a74-b2cf-a7fd41879fc8' via the 'exact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -810,7 +810,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=c90350c6-fbdf-4032-a5f9-2de54c541e50&match=exact
+GET https://pin.crustcode.com/psa/pins?name=6df7415e-3738-4a74-b2cf-a7fd41879fc8&match=exact
 ```
 ##### Headers
 ```json
@@ -836,7 +836,7 @@ GET https://pin.crustcode.com/psa/pins?name=c90350c6-fbdf-4032-a5f9-2de54c541e50
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:53 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:21 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -858,7 +858,7 @@ GET https://pin.crustcode.com/psa/pins?name=c90350c6-fbdf-4032-a5f9-2de54c541e50
 ```json
 null
 ```
-## Can retrieve pin with name 'C90350C6-FBDF-4032-A5F9-2DE54C541E50' via the 'iexact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '6DF7415E-3738-4A74-B2CF-A7FD41879FC8' via the 'iexact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -883,7 +883,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=C90350C6-FBDF-4032-A5F9-2DE54C541E50&match=iexact
+GET https://pin.crustcode.com/psa/pins?name=6DF7415E-3738-4A74-B2CF-A7FD41879FC8&match=iexact
 ```
 ##### Headers
 ```json
@@ -909,7 +909,7 @@ GET https://pin.crustcode.com/psa/pins?name=C90350C6-FBDF-4032-A5F9-2DE54C541E50
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:54 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:22 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -931,7 +931,7 @@ GET https://pin.crustcode.com/psa/pins?name=C90350C6-FBDF-4032-A5F9-2DE54C541E50
 ```json
 null
 ```
-## Can retrieve pin with name 'fbdf-4032-a5f9-2de' via the 'partial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '3738-4a74-b2cf-a7f' via the 'partial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -956,7 +956,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=fbdf-4032-a5f9-2de&match=partial
+GET https://pin.crustcode.com/psa/pins?name=3738-4a74-b2cf-a7f&match=partial
 ```
 ##### Headers
 ```json
@@ -982,7 +982,7 @@ GET https://pin.crustcode.com/psa/pins?name=fbdf-4032-a5f9-2de&match=partial
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:55 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:23 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -1004,7 +1004,7 @@ GET https://pin.crustcode.com/psa/pins?name=fbdf-4032-a5f9-2de&match=partial
 ```json
 null
 ```
-## Can retrieve pin with name 'FBDF-4032-A5F9-2DE' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '3738-4A74-B2CF-A7F' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1029,7 +1029,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=FBDF-4032-A5F9-2DE&match=ipartial
+GET https://pin.crustcode.com/psa/pins?name=3738-4A74-B2CF-A7F&match=ipartial
 ```
 ##### Headers
 ```json
@@ -1055,7 +1055,7 @@ GET https://pin.crustcode.com/psa/pins?name=FBDF-4032-A5F9-2DE&match=ipartial
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:56 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:24 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -1077,7 +1077,7 @@ GET https://pin.crustcode.com/psa/pins?name=FBDF-4032-A5F9-2DE&match=ipartial
 ```json
 null
 ```
-## Can create a pin with name='c90350c6-fbdf-4032-a5f9-2de54c541e50' - ❌ FAILED
+## Can create a pin with name='6df7415e-3738-4a74-b2cf-a7fd41879fc8' - ❌ FAILED
 
 ### Expectations (0/19 successful)
 
@@ -1163,7 +1163,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreifi7fukl3rjyimrvbbdhorkqgfnvss2c7vgzbd2szxi3vzxn4w7fm","name":"c90350c6-fbdf-4032-a5f9-2de54c541e50","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihw7arsr4mwyy3di36ztavp4gcq5jw44pbznpiqrrrdsvvhke6ida","name":"6df7415e-3738-4a74-b2cf-a7fd41879fc8","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1179,7 +1179,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:52 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:20 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -1201,7 +1201,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreihfp5na3y5dq76gaofe5lq4kdbo2r23zwesdeywr2n6ituliqn2jq' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidsdjebuc7pp3euoqh3vrcigbk266xpzkpuewthzp65gi4ow4e7re' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1233,7 +1233,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreihfp5na3y5dq76gaofe5lq4kdbo2r23zwesdeywr2n6ituliqn2jq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidsdjebuc7pp3euoqh3vrcigbk266xpzkpuewthzp65gi4ow4e7re","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1249,7 +1249,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:58 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:25 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -1271,7 +1271,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiavsfv4ghv5z3uq4yvg4hwgvql3ys6fpfm2gakqkcyhihpwo5viaq' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidiltvepqkcftlxfts54nusnd5dzelnesnmvp4onihizp5wg7lfga' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1303,7 +1303,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiavsfv4ghv5z3uq4yvg4hwgvql3ys6fpfm2gakqkcyhihpwo5viaq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidiltvepqkcftlxfts54nusnd5dzelnesnmvp4onihizp5wg7lfga","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1319,7 +1319,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:59 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:26 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -1341,7 +1341,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreihsgxmfvl6pyq4wh2dhb6s7om4iyluzq5st7fohwac36eq6igqube' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreibnfma7twvlhu2srxistl36xmbhfav5i2enwbxtluo7wr6bia4w6q' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1373,7 +1373,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreihsgxmfvl6pyq4wh2dhb6s7om4iyluzq5st7fohwac36eq6igqube","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreibnfma7twvlhu2srxistl36xmbhfav5i2enwbxtluo7wr6bia4w6q","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1389,7 +1389,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:00 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:27 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -1411,7 +1411,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreibu2cwrsbz2nuaoji7wymsdrad5hgq2hrivaqu7nmvy55suay2qo4' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidi2djzktlpizq7xqctdmk2m2jdc6tgb6nfj4bhxedpgaquo7drau' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1443,7 +1443,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreibu2cwrsbz2nuaoji7wymsdrad5hgq2hrivaqu7nmvy55suay2qo4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidi2djzktlpizq7xqctdmk2m2jdc6tgb6nfj4bhxedpgaquo7drau","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1459,7 +1459,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:01 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:28 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -1481,7 +1481,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreicgbezcfppfoogra6urkedi6vnqzmnpvy66f2qvkcm4o2l47gogs4' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreic5zwxbiwtqj6pyhtatvddzoffsi66nlneqkblqvqvgvg55x6y7ny' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1513,7 +1513,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreicgbezcfppfoogra6urkedi6vnqzmnpvy66f2qvkcm4o2l47gogs4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreic5zwxbiwtqj6pyhtatvddzoffsi66nlneqkblqvqvgvg55x6y7ny","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1529,7 +1529,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:02 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:29 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -1551,7 +1551,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreigb3hk4hexx3nf6c5p6aoey3utvxhpk6l74p446sp4hb2zdsrcira' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreiaf5hod23j5wm4fig23ulxhri7l6erxry4aglimbpbb2k3d6yruhq' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1583,7 +1583,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigb3hk4hexx3nf6c5p6aoey3utvxhpk6l74p446sp4hb2zdsrcira","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiaf5hod23j5wm4fig23ulxhri7l6erxry4aglimbpbb2k3d6yruhq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1599,7 +1599,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:03 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:30 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -1621,7 +1621,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreib72km6elfpdymfh6c7fnjnotbfy6a2dkikyv4r2uumbgondfovni' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreihb2kppeg2eeyddwm5dxgmnupjdbgcpmfgc7pu7jsxaxpnprgsnga' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1653,7 +1653,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreib72km6elfpdymfh6c7fnjnotbfy6a2dkikyv4r2uumbgondfovni","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihb2kppeg2eeyddwm5dxgmnupjdbgcpmfgc7pu7jsxaxpnprgsnga","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1669,7 +1669,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:04 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:31 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -1691,7 +1691,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreigprvnmujr6ugnttviyp6om7byl4is56mailsawbyndentzmt53ce' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreifsh2dhxscgz2lprccjukfk7qzjjtikrej7wux25brre4vcwdckcm' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1723,7 +1723,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigprvnmujr6ugnttviyp6om7byl4is56mailsawbyndentzmt53ce","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreifsh2dhxscgz2lprccjukfk7qzjjtikrej7wux25brre4vcwdckcm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1739,7 +1739,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:05 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:32 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -1761,7 +1761,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreid3ee2q3oj6yvkdowgkg3b7q6nul3wqs7z4ysih3uckdwr6gwiboq' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreicuhadmqvdxvhaxyvi5flpbypbvoogvv4nyf4z2i6dvleldvahcqa' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1793,7 +1793,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreid3ee2q3oj6yvkdowgkg3b7q6nul3wqs7z4ysih3uckdwr6gwiboq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreicuhadmqvdxvhaxyvi5flpbypbvoogvv4nyf4z2i6dvleldvahcqa","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1809,7 +1809,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:06 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:33 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -1831,7 +1831,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreidpvps35idnsipneitgqdmacbikiyz53ydo3esw5s4d5putzvftzm' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreigg77eva6uzfsura52dniq46ggd45l442srckap3nqenu2ajuziye' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1863,7 +1863,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidpvps35idnsipneitgqdmacbikiyz53ydo3esw5s4d5putzvftzm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigg77eva6uzfsura52dniq46ggd45l442srckap3nqenu2ajuziye","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1879,7 +1879,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:07 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:34 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -1901,7 +1901,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreieqllj5cceha2tseh5g6t4rkkgyp2yibztswc7f2qpheaksdrzf2q' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreie2r2lfz2t3jakzauhokxdkpkuvxf4yyd7pbyyldy6rsdgegs4y7e' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1933,7 +1933,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreieqllj5cceha2tseh5g6t4rkkgyp2yibztswc7f2qpheaksdrzf2q","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreie2r2lfz2t3jakzauhokxdkpkuvxf4yyd7pbyyldy6rsdgegs4y7e","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1949,7 +1949,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:08 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:35 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -1971,7 +1971,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiezwr3sy4vn33r2d2lkk2i3kmrhx2adkndaly2dab64drxv57mmpa' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreig24g7ctulcpjneag4exs537rtmwfkqsjsiwqyxbaxo3lisaxcr6m' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2003,7 +2003,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiezwr3sy4vn33r2d2lkk2i3kmrhx2adkndaly2dab64drxv57mmpa","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreig24g7ctulcpjneag4exs537rtmwfkqsjsiwqyxbaxo3lisaxcr6m","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2019,7 +2019,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:09 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:36 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -2041,7 +2041,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreigzc5zpn4wlhtyxbkxef4eh2et6owdx2mvx2kwunwauifzndfyg3i' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidn6ey4unblfqowdpn54fegmaf62mccw5u6xk4zxxtuwypkaboiky' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2073,7 +2073,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigzc5zpn4wlhtyxbkxef4eh2et6owdx2mvx2kwunwauifzndfyg3i","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidn6ey4unblfqowdpn54fegmaf62mccw5u6xk4zxxtuwypkaboiky","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2089,7 +2089,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:10 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:37 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -2111,7 +2111,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreif6fmr7sbqngn7plbkbfmnvc4ywrdauikvlhjlcjphw4nlcxwrknq' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreighosgbezxz2l6ky7wzyfffleuys4i6b7b2fqjzyfkfblv6gdey7i' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2143,7 +2143,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreif6fmr7sbqngn7plbkbfmnvc4ywrdauikvlhjlcjphw4nlcxwrknq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreighosgbezxz2l6ky7wzyfffleuys4i6b7b2fqjzyfkfblv6gdey7i","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2159,7 +2159,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:11 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:38 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -2181,7 +2181,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreigbfwkmbdigvoslrnp233t36earc4qfuldrr3oujewi2jh7vwk3du' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreihcywk5rnzbpwinswrtzco7f6ecie425syxuxs5u73lodlyjtub3q' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2213,7 +2213,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigbfwkmbdigvoslrnp233t36earc4qfuldrr3oujewi2jh7vwk3du","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihcywk5rnzbpwinswrtzco7f6ecie425syxuxs5u73lodlyjtub3q","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2229,7 +2229,7 @@ POST https://pin.crustcode.com/psa/pins
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:12 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:39 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -2310,7 +2310,7 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:13 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:40 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -2364,7 +2364,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-09-23T19%3A42%3A13.492Z
+GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-10-05T00%3A14%3A40.714Z
 ```
 ##### Headers
 ```json
@@ -2390,7 +2390,7 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:13 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:41 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -2641,7 +2641,7 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:41:57 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:24 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -2708,7 +2708,7 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:15 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:43 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
@@ -2780,7 +2780,7 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "connection": "close",
   "content-length": "29",
   "content-type": "application/json",
-  "date": "Fri, 23 Sep 2022 19:42:14 GMT",
+  "date": "Wed, 05 Oct 2022 00:14:42 GMT",
   "server": "Caddy",
   "x-powered-by": "Express"
 }
