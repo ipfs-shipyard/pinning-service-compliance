@@ -1,6 +1,6 @@
 {
   "name": "@ipfs-shipyard/pinning-service-compliance",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "",
   "author": "Russell Dempsey <1173416+SgtPooki@users.noreply.github.com>",
   "license": "Apache-2.0 OR MIT",

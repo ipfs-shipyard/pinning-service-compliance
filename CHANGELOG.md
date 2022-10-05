@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.3.3...v1.3.4) (2022-10-05)
+
+
+### Trivial Changes
+
+* **deps:** bump ipfsd-ctl from 12.0.2 to 12.1.0 ([#221](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/221)) ([535ee80](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/535ee807e7fcc15cafb33b511016b6ac9ad6ac75))
+
 ## [1.3.3](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.3.2...v1.3.3) (2022-10-05)
 
 
