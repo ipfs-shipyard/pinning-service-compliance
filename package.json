@@ -135,7 +135,7 @@
     "chalk": "^5.0.1",
     "check-aegir-project": "^1.1.1",
     "cp-cli": "^2.0.0",
-    "ipfs-core-types": "^0.11.0",
+    "ipfs-core-types": "^0.13.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
     "ts-node": "^10.7.0",
