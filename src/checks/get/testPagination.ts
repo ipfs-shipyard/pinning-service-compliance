@@ -79,7 +79,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
       fn: ({ result }) => result?.results.size === 10
     })
 
-  const cids: Set<string> = new Set()
+  const requestIds: Set<string> = new Set()
   const firstPageResult = await firstPageOfPins.request
   let before = new Date()
   let firstPageSize = 0
@@ -91,7 +91,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
   } else {
     before = getOldestPinCreateDate(firstPageResult.results)
     firstPageResult.results.forEach((pin) => {
-      cids.add(pin.pin.cid)
+      requestIds.add(pin.requestid)
     })
     firstPageSize = firstPageResult.results.size
   }
@@ -112,9 +112,9 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
           const secondPageSize = secondPageResult.results.size
 
           secondPageResult.results.forEach((pin) => {
-            cids.add(pin.pin.cid)
+            requestIds.add(pin.requestid)
           })
-          return firstPageSize + secondPageSize === cids.size
+          return firstPageSize + secondPageSize === requestIds.size
         } else {
           throw new Error('Second page result is null')
         }
