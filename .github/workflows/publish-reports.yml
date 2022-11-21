@@ -61,7 +61,7 @@ jobs:
           path: docs
           key: ${{ github.sha }}-crust
       - name: Scheduled deployment
-        uses: s0/git-publish-subdir-action@77ba3d841ebd413837b5e72676bd9e54e537f3f8
+        uses: s0/git-publish-subdir-action@92faf786f11dfa44fc366ac3eb274d193ca1af7e
         env:
           REPO: self
           BRANCH: gh-pages
