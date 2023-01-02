@@ -153,7 +153,7 @@
     "ipfsd-ctl": "^12.0.1",
     "marked": "^4.0.16",
     "marked-terminal": "^5.1.1",
-    "multiformats": "^9.6.5",
+    "multiformats": "^11.0.0",
     "node-fetch": "^3.2.4",
     "oas2joi": "^2.0.2",
     "p-defer": "^4.0.0",
