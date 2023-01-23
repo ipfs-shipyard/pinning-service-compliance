@@ -117,7 +117,8 @@
   "scripts": {
     "clean": "rimraf downloaded/*.yaml generated dist",
     "test": "aegir lint",
-    "build": "aegir build",
+    "build": "aegir build && run-s build:telemetry",
+    "build:telemetry": "esbuild src/telemetry.ts --outdir=dist --platform=browser --format=iife --bundle --target=chrome109,firefox109,edge108,safari16 && cp dist/telemetry.js docs",
     "start": "node dist/src/index.js",
     "dev-start": "NODE_OPTIONS='--unhandled-rejections=strict --trace-atomics-wait --trace-deprecation --trace-exit --trace-sigint --trace-uncaught --trace-warnings' ts-node-esm --esm -T --preferTsExts --logError src/index.ts",
     "release": "aegir release",
@@ -143,6 +144,7 @@
   },
   "dependencies": {
     "@hapi/joi": "^17.1.1",
+    "@ipfs-shipyard/ignite-metrics": "^1.2.2",
     "@ipfs-shipyard/pinning-service-client": "^1.0.1",
     "fetch-ponyfill": "^7.1.0",
     "git-rev": "^0.2.1",
