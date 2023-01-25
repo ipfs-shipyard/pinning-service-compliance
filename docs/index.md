@@ -1,3 +1,5 @@
+<script src="./telemetry.js"></script>
+
 # Pinning Service Compliance Reports
 
 ## Latest reports
