@@ -1,3 +1,10 @@
+## [1.4.0](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.3.4...v1.4.0) (2023-01-25)
+
+
+### Features
+
+* add telemetry ([#274](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/274)) ([c0d25f3](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/c0d25f3cbff7a38bd91bb142637740d34152721a))
+
 ## [1.3.4](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.3.3...v1.3.4) (2022-10-05)
 
 
