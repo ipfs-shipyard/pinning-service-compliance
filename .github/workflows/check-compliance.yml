@@ -55,9 +55,9 @@ jobs:
         id: set_results
         run: |
           hostname="$( echo ${{inputs.API_ENDPOINT}} | perl -ne '/^[^\/]+[\/]+([^\/]+)/ && print $1')"
-          echo "::set-output name=success::$(jq -r '.success' docs/$hostname.json)"
-          echo "::set-output name=passed::$(jq -r '.passed' docs/$hostname.json)"
-          echo "::set-output name=total::$(jq -r '.total' docs/$hostname.json)"
+          echo "success=$(jq -r '.success' docs/$hostname.json)" >> $GITHUB_OUTPUT
+          echo "passed=$(jq -r '.passed' docs/$hostname.json)" >> $GITHUB_OUTPUT
+          echo "total=$(jq -r '.total' docs/$hostname.json)" >> $GITHUB_OUTPUT
       - name: Notify
         uses: actions/github-script@v3
         with:
