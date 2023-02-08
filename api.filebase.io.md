@@ -2,31 +2,31 @@
 <script src="./telemetry.js"></script>
 # https://api.filebase.io/v1/ipfs compliance:
 
-Execution Date: 2023-01-25T23:02:20.882Z
+Execution Date: 2023-02-08T18:50:29.948Z
 
-Revision: [c0d25f3](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/c0d25f3)
+Revision: [fb91968](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/fb91968)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/api.filebase.io.md)
 
-## Summary (9/9 successful)
+## Summary (2/9 successful)
 
   🟢 [Request with no authentication token](#request-with-no-authentication-token----success)
 
   🟢 [Request with invalid token](#request-with-invalid-token----success)
 
-  🟢 [Pins post of CID 'bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui'](#pins-post-of-cid-bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui----success)
+  ❌ [Pins post of CID 'bafkreigrlevflpw3hwoinldofpkup2ii3ryspi7lfcg47tc2z7qqzwxbmi'](#pins-post-of-cid-bafkreigrlevflpw3hwoinldofpkup2ii3ryspi7lfcg47tc2z7qqzwxbmi----failed)
 
-  🟢 [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----success)
+  ❌ [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----failed)
 
-  🟢 [List pin objects (GET /pins) in all states](#list-pin-objects-get-pins-in-all-states----success)
+  ❌ [List pin objects (GET /pins) in all states](#list-pin-objects-get-pins-in-all-states----failed)
 
-  🟢 [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----success)
+  ❌ [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----failed)
 
-  🟢 [Can create a pin with name='adb94451-d9c0-4000-b0f2-5b3ed9857c33'](#can-create-a-pin-with-nameadb94451-d9c0-4000-b0f2-5b3ed9857c33----success)
+  ❌ [Can create a pin with name='70fdedd9-ee1d-412b-b783-29d04b62bc41'](#can-create-a-pin-with-name70fdedd9-ee1d-412b-b783-29d04b62bc41----failed)
 
-  🟢 [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----success)
+  ❌ [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----failed)
 
-  🟢 [Can delete all pins created during compliance checks](#can-delete-all-pins-created-during-compliance-checks----success)
+  ❌ [Can delete all pins created during compliance checks](#can-delete-all-pins-created-during-compliance-checks----failed)
 
 ## Request with no authentication token - 🟢 SUCCESS
 
@@ -70,17 +70,21 @@ GET https://api.filebase.io/v1/ipfs/pins
   "access-control-allow-credentials": "true",
   "access-control-allow-origin": "*",
   "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668c6388715b10-IAD",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:41 GMT",
+  "date": "Wed, 08 Feb 2023 18:49:59 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=cAsaOCAWoeDvxt6IF2I15%2FpwvSMXLM3uM4nfpSN31ZT2%2FFXmQ6IyGVKL9nrfWGkHnrIbjRLQYjKTDRittnGCtxqZeaQImlzCQZe0Sr8B2lH9mYHqeRLjYhmpMhT2pja8lw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "66554096-2ade-4a63-b7c6-f9a701c80d21",
+  "x-request-id": "8a6885e8-91c8-45d8-9364-a7977fb8a9f5",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -151,17 +155,21 @@ GET https://api.filebase.io/v1/ipfs/pins
   "access-control-allow-credentials": "true",
   "access-control-allow-origin": "*",
   "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668c69bd853975-IAD",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:42 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:00 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=p30hFaT9IScLdnJsVHiY%2FYcgKAclRRsPpY9xKQgPnJXqwQ9HDyTNGurgVNZnXppHlVhzVCTZjQyT2HJ8VAhYASek5a2yhrDYd9mbZDhqp6ALoN%2Bi2RZoRHeqVKkhiwOs5Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "9af5294f-4c1e-477f-8815-64eb0eee282e",
+  "x-request-id": "cac5207b-bdb2-40bd-a371-ebd2058904b4",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -188,572 +196,13 @@ GET https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Pins post of CID 'bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui' - 🟢 SUCCESS
+## Pins post of CID 'bafkreigrlevflpw3hwoinldofpkup2ii3ryspi7lfcg47tc2z7qqzwxbmi' - ❌ FAILED
 
-### Expectations (2/2 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response object matches api spec schema (success)
+  ❌ Response object matches api spec schema (failure)
 
-  🟢 Pinning status is either queued, pinning, or pinned (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://api.filebase.io/v1/ipfs/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:43 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=Ymrs4p0xfRAplGHOU9%2F2uZpKMeALjn0PPpruNvdrzf%2B9723pZp3f8x7%2Bgyymi85yyCxKUKfSz7sYIi0aGK4ZkFtGV96KsxDLKHpXxV77m5NNxChLkE8RAe3CTLIZg%2BwakcKfFUvjTqXZfo4%2F2%2FdctHHwifWDW9xk4ZiBgapZj8w0URF8Wy23ZwAHiiuIZGpWryBKatTH6%2BW7D%2BPIh%2FXU2i5ORoGiitXlzoN%2BoTY%3D--oodhQbyegnWyGUQ0--h%2F4cIgioTG7W1%2BZUCcfAdg%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:01:43 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "3e18801a-96bf-4e16-8caa-b1a7b59c61d5",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMA",
-  "status": "queued",
-  "created": "2023-01-25T18:01:43.000-05:00",
-  "pin": {
-    "cid": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-    "name": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMA",
-  "status": "queued",
-  "created": "2023-01-25T18:01:43.000-05:00",
-  "pin": {
-    "cid": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-    "name": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMA",
-  "status": "queued",
-  "created": "2023-01-25T23:01:43.000Z",
-  "pin": {
-    "cid": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-    "name": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## The newly created pin can be immediately deleted - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Response code is 202: The Pin was deleted successfully (success)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteNewPin.ts:23:14)
-
-
-### Details
-
-#### Request
-```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMw
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:45 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=eKg%2FMjp4eL95lGhD3Xv%2BEZZwd%2FGaXUlgdB3dW0G%2BA7KJa3LGj3GIcAVdWZ2dwb9L2Mny9eulur1SqO1Jxs9pouQa4ZbJoLREwQEFSDWrMzl9L%2FdVuqFaXfwYsPZNowcZsaRDCimSaWV%2FHsV9iGRt0Id9%2B51W9jgjxJ12DQA8D2Iodhynm3iXWpuCcemIG%2FJ%2B6DlrWLN7FN6nSFQbwnuSllx6N3ZvPXCWJGZATJw%3D--fwXEy2HPfGYY5NGJ--B5CCyDffvlrt5sCU63ZfzA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:01:45 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "56508b57-2f9b-4aee-9ad4-a5db4072e571",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-undefined
-```
-## Can create and then delete a new pin - 🟢 SUCCESS
-
-### Expectations (4/4 successful)
-
-  🟢 Result is not null (success)
-
-  🟢 Response code is 202 (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Response code is 202: The Pin was deleted successfully (success)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteNewPin.ts:23:14)
-
-
-### Details
-
-#### Request
-```
-POST https://api.filebase.io/v1/ipfs/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreia4lxhvlqwtdpjdg6xu6ggep5euji5p4rfzal5alkbvds535xlhnq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:44 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=aLMOmaZTiaHMy1qP1c87mNQvYuJtwMka2%2BPCdYll%2BsdhzTr7iegPwd9WBuB4wD6rQhHFWyU%2Bq9IRf%2Ft9388D2BA5VkXvWLsFi7vyf%2Fx2RYlW29q9%2FKglErgGcGVh7jD8NKalFj1Qq6dk5svRjqsaKF4jGlV9Af3jGiHDFOLGPg0hUR%2BOSTVUOSv9J2cxTeWdNx3LoAaOTKKRmNCYD2PsPe0e2%2ByjImVADCMCuUc%3D--Cini7oi1zyYQ33rm--JBIaNbk5g4ooWRYkXI70gg%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:01:44 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "279bfad5-9e56-4080-b669-43bb7c6e4dd9",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMw",
-  "status": "queued",
-  "created": "2023-01-25T18:01:44.000-05:00",
-  "pin": {
-    "cid": "bafkreia4lxhvlqwtdpjdg6xu6ggep5euji5p4rfzal5alkbvds535xlhnq",
-    "name": "bafkreia4lxhvlqwtdpjdg6xu6ggep5euji5p4rfzal5alkbvds535xlhnq",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMw",
-  "status": "queued",
-  "created": "2023-01-25T18:01:44.000-05:00",
-  "pin": {
-    "cid": "bafkreia4lxhvlqwtdpjdg6xu6ggep5euji5p4rfzal5alkbvds535xlhnq",
-    "name": "bafkreia4lxhvlqwtdpjdg6xu6ggep5euji5p4rfzal5alkbvds535xlhnq",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMw",
-  "status": "queued",
-  "created": "2023-01-25T23:01:44.000Z",
-  "pin": {
-    "cid": "bafkreia4lxhvlqwtdpjdg6xu6ggep5euji5p4rfzal5alkbvds535xlhnq",
-    "name": "bafkreia4lxhvlqwtdpjdg6xu6ggep5euji5p4rfzal5alkbvds535xlhnq",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## List pin objects (GET /pins) in all states - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Response code is 200 (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "max-age=0, private, must-revalidate",
-  "connection": "close",
-  "content-encoding": "gzip",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:45 GMT",
-  "etag": "W/\"9c7f96697a971ffdf24d48b0d7363cfd\"",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "f3cfca64-e8f3-4b90-818f-101dcca1bc42",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "count": 3,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:43.000-05:00",
-      "pin": {
-        "cid": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "name": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4NjE5",
-      "status": "failed",
-      "created": "2022-08-30T13:22:53.000-04:00",
-      "pin": {
-        "cid": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "name": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4MDg0",
-      "status": "failed",
-      "created": "2022-08-30T13:21:27.000-04:00",
-      "pin": {
-        "cid": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "name": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 3,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:43.000-05:00",
-      "pin": {
-        "cid": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "name": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4NjE5",
-      "status": "failed",
-      "created": "2022-08-30T13:22:53.000-04:00",
-      "pin": {
-        "cid": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "name": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4MDg0",
-      "status": "failed",
-      "created": "2022-08-30T13:21:27.000-04:00",
-      "pin": {
-        "cid": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "name": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 3,
-  "results": {}
-}
-```
-## Get original pin via requestid - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response code is 404: Original Pin's requestid cannot be found (success)
+  ❌ Pinning status is either queued, pinning, or pinned (failure)
 
 
 ### Errors during run
@@ -763,4709 +212,115 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
+#### Response object doesn't match expected schema:
 
-### Details
+* "requestid" is required
 
-#### Request
-```
-GET https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0Mg
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
+* "status" is required
 
-```
+* "created" is required
 
-#### Response
-```
-404 Not Found
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-encoding": "gzip",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:48 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "783fd85d-d6fe-472c-8927-0d4a55ce8521",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "error": {
-    "reason": "NOT_FOUND",
-    "details": "The specified resource was not found"
-  }
-}
-```
+* "pin" is required
 
-##### Body (as JSON)
-```json
-{
-  "error": {
-    "reason": "NOT_FOUND",
-    "details": "The specified resource was not found"
-  }
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Get new pin via requestid - 🟢 SUCCESS
+* "delegates" is required
 
-### Expectations (1/1 successful)
-
-  🟢 Response code is 200: New Pin's requestid can be found (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0OA
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "max-age=0, private, must-revalidate",
-  "connection": "close",
-  "content-encoding": "gzip",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:49 GMT",
-  "etag": "W/\"b23aca9f23068ca0e11b9e2aff409d1e\"",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "72a1fb2b-60f6-49b2-b479-b358a8280074",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0OA",
-  "status": "pinning",
-  "created": "2023-01-25T18:01:47.000-05:00",
-  "pin": {
-    "cid": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-    "name": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0OA",
-  "status": "pinning",
-  "created": "2023-01-25T18:01:47.000-05:00",
-  "pin": {
-    "cid": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-    "name": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0OA",
-  "status": "pinning",
-  "created": "2023-01-25T23:01:47.000Z",
-  "pin": {
-    "cid": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-    "name": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## Pin's with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0Mg' can have cid 'bafkreidxfhhhxov6lxqyue6qxeklo5wuzqejoubhj5rvkrbfabsahx5vqa' replaced with 'bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response code is 404: Original Pin's requestid cannot be found (success)
-
-  🟢 Response code is 200: New Pin's requestid can be found (success)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0Mg
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "max-age=0, private, must-revalidate",
-  "connection": "close",
-  "content-encoding": "gzip",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:47 GMT",
-  "etag": "W/\"37cae8407f4270845c0cf3318debb16e\"",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=Kq3oLj9ygjFLf38kL8fuqtojdo9vp7lVccId0nGKHmoAixhV%2Bahbqsofiu1a0e%2BX3OF1iIgCIupy68U%2F5c%2FIKnTbvInqM%2FXHYBKbsxMmoE7%2FflbPayHof0quowRy3Td6JJYVl31Mx84GV%2BPiY8V9y4LJJIGCnpFwgrzMhOZf%2B7XRsloopM6XuFmKSyOEDNtj1ThwwuIfOUrVytF7U5UKQfsU1shKZXpItZ%2FHV6o%3D--syBKNUDwv3T8BJJU--uqOGcg511ixAZIL9Fqo6rA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:01:47 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "da5eca2a-306c-425b-8024-9e6b31ad28bd",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0OA",
-  "status": "queued",
-  "created": "2023-01-25T18:01:47.000-05:00",
-  "pin": {
-    "cid": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-    "name": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0OA",
-  "status": "queued",
-  "created": "2023-01-25T18:01:47.000-05:00",
-  "pin": {
-    "cid": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-    "name": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0OA",
-  "status": "queued",
-  "created": "2023-01-25T23:01:47.000Z",
-  "pin": {
-    "cid": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-    "name": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## Can create and replace a pin's CID - 🟢 SUCCESS
-
-### Expectations (7/7 successful)
-
-  🟢 Pin exists (success)
-
-  🟢 Could obtain requestid from new pin (Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0Mg) (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Replaced pin has the new & expected CID (success)
-
-  🟢 Replaced pin has a different requestid (success)
-
-  🟢 Response code is 404: Original Pin's requestid cannot be found (success)
-
-  🟢 Response code is 200: New Pin's requestid can be found (success)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://api.filebase.io/v1/ipfs/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreidxfhhhxov6lxqyue6qxeklo5wuzqejoubhj5rvkrbfabsahx5vqa","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:46 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=dzQgLzyhvwYPeQrjL2M%2BvHLTVyLbOT1iCDyiFDOd%2FuEiigl%2BoYwcmUEkFZJpFarYBYpLfc%2BIx2OBjXfUmjPwZ7Fj7Ndg2a8p%2FeSZMFj6V%2FvOxnnPWv32xSXnhQhz6MnvXyq5F5CFqmk6uMfySm8BQQiftIyXzbIAihyqjrh5%2FxBLCuXx8z4UCwzwq%2BZ3iZQyUnA7HrH4zqYpSBPMWkbnJwUiVC%2Fghd4l%2BNjohB8%3D--smIk%2F3l5bN2j%2BxiY--GX5100O7f35IrugpBueiLg%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:01:46 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "6f56ba44-32f0-4817-a286-e5a45f219421",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0Mg",
-  "status": "queued",
-  "created": "2023-01-25T18:01:46.000-05:00",
-  "pin": {
-    "cid": "bafkreidxfhhhxov6lxqyue6qxeklo5wuzqejoubhj5rvkrbfabsahx5vqa",
-    "name": "bafkreidxfhhhxov6lxqyue6qxeklo5wuzqejoubhj5rvkrbfabsahx5vqa",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0Mg",
-  "status": "queued",
-  "created": "2023-01-25T18:01:46.000-05:00",
-  "pin": {
-    "cid": "bafkreidxfhhhxov6lxqyue6qxeklo5wuzqejoubhj5rvkrbfabsahx5vqa",
-    "name": "bafkreidxfhhhxov6lxqyue6qxeklo5wuzqejoubhj5rvkrbfabsahx5vqa",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0Mg",
-  "status": "queued",
-  "created": "2023-01-25T23:01:46.000Z",
-  "pin": {
-    "cid": "bafkreidxfhhhxov6lxqyue6qxeklo5wuzqejoubhj5rvkrbfabsahx5vqa",
-    "name": "bafkreidxfhhhxov6lxqyue6qxeklo5wuzqejoubhj5rvkrbfabsahx5vqa",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## Can retrieve pin with name 'adb94451-d9c0-4000-b0f2-5b3ed9857c33' via the 'exact' TextMatchingStrategy - 🟢 SUCCESS
-
-### Expectations (4/4 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Count is equal to 1 (success)
-
-  🟢 Name matches name provided during creation (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://api.filebase.io/v1/ipfs/pins?name=adb94451-d9c0-4000-b0f2-5b3ed9857c33&match=exact
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "max-age=0, private, must-revalidate",
-  "connection": "close",
-  "content-encoding": "gzip",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:50 GMT",
-  "etag": "W/\"324e531ba6f974964e000a0830c6054f\"",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "ab0d1ccd-7488-4470-948a-434b8d0082bd",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "count": 1,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:49.000-05:00",
-      "pin": {
-        "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-        "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 1,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:49.000-05:00",
-      "pin": {
-        "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-        "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 1,
-  "results": {}
-}
-```
-## Can retrieve pin with name 'ADB94451-D9C0-4000-B0F2-5B3ED9857C33' via the 'iexact' TextMatchingStrategy - 🟢 SUCCESS
-
-### Expectations (4/4 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Count is equal to 1 (success)
-
-  🟢 Name matches name provided during creation (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://api.filebase.io/v1/ipfs/pins?name=ADB94451-D9C0-4000-B0F2-5B3ED9857C33&match=iexact
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "max-age=0, private, must-revalidate",
-  "connection": "close",
-  "content-encoding": "gzip",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:51 GMT",
-  "etag": "W/\"324e531ba6f974964e000a0830c6054f\"",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "457496a4-c8ed-4623-a442-0e26c525e08d",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "count": 1,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:49.000-05:00",
-      "pin": {
-        "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-        "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 1,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:49.000-05:00",
-      "pin": {
-        "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-        "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 1,
-  "results": {}
-}
-```
-## Can retrieve pin with name 'd9c0-4000-b0f2-5b3' via the 'partial' TextMatchingStrategy - 🟢 SUCCESS
-
-### Expectations (4/4 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Count is equal to 1 (success)
-
-  🟢 Name matches name provided during creation (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://api.filebase.io/v1/ipfs/pins?name=d9c0-4000-b0f2-5b3&match=partial
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "max-age=0, private, must-revalidate",
-  "connection": "close",
-  "content-encoding": "gzip",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:52 GMT",
-  "etag": "W/\"324e531ba6f974964e000a0830c6054f\"",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "9400c6ac-34a3-4f90-b8ac-f1d712586cf1",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "count": 1,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:49.000-05:00",
-      "pin": {
-        "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-        "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 1,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:49.000-05:00",
-      "pin": {
-        "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-        "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 1,
-  "results": {}
-}
-```
-## Can retrieve pin with name 'D9C0-4000-B0F2-5B3' via the 'ipartial' TextMatchingStrategy - 🟢 SUCCESS
-
-### Expectations (4/4 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Count is equal to 1 (success)
-
-  🟢 Name matches name provided during creation (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://api.filebase.io/v1/ipfs/pins?name=D9C0-4000-B0F2-5B3&match=ipartial
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "max-age=0, private, must-revalidate",
-  "connection": "close",
-  "content-encoding": "gzip",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:53 GMT",
-  "etag": "W/\"324e531ba6f974964e000a0830c6054f\"",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "02959c5c-ad4e-4fbf-b713-ca3d4c9c0b4b",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "count": 1,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:49.000-05:00",
-      "pin": {
-        "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-        "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 1,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:49.000-05:00",
-      "pin": {
-        "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-        "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 1,
-  "results": {}
-}
-```
-## Can create a pin with name='adb94451-d9c0-4000-b0f2-5b3ed9857c33' - 🟢 SUCCESS
-
-### Expectations (19/19 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Name matches name provided during creation (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Count is equal to 1 (success)
-
-  🟢 Name matches name provided during creation (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Count is equal to 1 (success)
-
-  🟢 Name matches name provided during creation (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Count is equal to 1 (success)
-
-  🟢 Name matches name provided during creation (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Count is equal to 1 (success)
-
-  🟢 Name matches name provided during creation (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://api.filebase.io/v1/ipfs/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra","name":"adb94451-d9c0-4000-b0f2-5b3ed9857c33","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:49 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=nFqqStyWM7ZDamLBPjVSZfRCCUbEl16rkMEho1CumVY29nsAYoPwY7a32OfMWM%2BvfzqQBlFuXBIMimdLucwHcRT8ZjZm2PI2%2B0TiovBWrVP%2FJi0KrOorifWenw2t7G2yh%2BEIOYYSBk%2BmJfl%2Fm8ISLKUClr4EZHVjFZcbkOnHIQShzYnI6xX1pFj6jMyw2E5MaRTm53xh6BCOwniqxF%2BG9oGtJWrAHjdjwDBsxGg%3D--YzveXXrj9NYUGucv--1I301tYSacKYndpU7aaxdA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:01:49 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "f72a27f8-1e26-424d-a797-4ea272eae5ea",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-  "status": "queued",
-  "created": "2023-01-25T18:01:49.000-05:00",
-  "pin": {
-    "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-    "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-  "status": "queued",
-  "created": "2023-01-25T18:01:49.000-05:00",
-  "pin": {
-    "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-    "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-  "status": "queued",
-  "created": "2023-01-25T23:01:49.000Z",
-  "pin": {
-    "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-    "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## Can create new pin for testing pagination cid='bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://api.filebase.io/v1/ipfs/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:55 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=5E%2Fy0Y85s4u47kgMDAdzZR%2Bx92pYjBypXx5PjeMSmCRIqitqcsyaysulyfjnQj%2FeAfu1JvNBR%2F9h%2Bvg%2B68NI4HJKuBvIBMGgJVeJAcOup5m8XeGweKDAkpOvd1Uc6zKRE2%2BQIlSjl9yo7wdN0fRG7g11zqiQTPOiYIk4OZQAJm3EBFg%2BvM4jaqCXK678gGth409ucu1hZeaTLZZW8MGXVgovxNfBvg0tdw95%2Fkg%3D--tCM3qEKEESKJ8HPh--xjg1VfYMUYo0W1dhrvNSDQ%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:01:55 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "e16f4b49-7715-4922-981f-68e4d8224997",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM4Nw",
-  "status": "queued",
-  "created": "2023-01-25T18:01:55.000-05:00",
-  "pin": {
-    "cid": "bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4",
-    "name": "bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM4Nw",
-  "status": "queued",
-  "created": "2023-01-25T18:01:55.000-05:00",
-  "pin": {
-    "cid": "bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4",
-    "name": "bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM4Nw",
-  "status": "queued",
-  "created": "2023-01-25T23:01:55.000Z",
-  "pin": {
-    "cid": "bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4",
-    "name": "bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## Can create new pin for testing pagination cid='bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://api.filebase.io/v1/ipfs/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:55 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=c89dyrypthe8leXjYhZycr8cUuG7pouufmZOSnl%2BKGVNF%2BusQJXp9bFKoSCeVKvRdSKtW7AIrX4GcluzWufqrL2HHeBoDXulu3quNBpmuqBQrHCsypE03DVL3UTNIyXwyxNiQZwA%2Fz9NadOxXdLJixoDPF%2B3eDr19T1gdoiNbGlx%2F2ZXGQVLbrnRQAzKERqlG8mAWzeNULJ8OZM5EBeYOx9o9fT%2BeVfR4EgIm5Y%3D--BMOYz3ah5bOlJ60x--2PKAie3yYjQt5Oq%2Bp4ScLg%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:01:55 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "20f6fa92-e159-4e11-8c14-9adc62411f5b",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5MQ",
-  "status": "queued",
-  "created": "2023-01-25T18:01:55.000-05:00",
-  "pin": {
-    "cid": "bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq",
-    "name": "bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5MQ",
-  "status": "queued",
-  "created": "2023-01-25T18:01:55.000-05:00",
-  "pin": {
-    "cid": "bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq",
-    "name": "bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5MQ",
-  "status": "queued",
-  "created": "2023-01-25T23:01:55.000Z",
-  "pin": {
-    "cid": "bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq",
-    "name": "bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## Can create new pin for testing pagination cid='bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://api.filebase.io/v1/ipfs/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:56 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=d7xUkeoQARGkUe0fBksUHJsjJNmnhF63RSeGsoxZ1Seej6BypPGHTd6cqu8P0gXQAHdG5JcQz0tfcaQLB%2BgxfCGArwFVBlr3yoguT26M%2BnMp9Jod3oDWFVp8v1tdUQFBNBZ8fR7pkHmqaSgJWndjYAk2RRoy4Xs56t2P1CjrG3qUhdsS%2Fl0%2Fiy5VXEpJD6ox%2BtiyIxHKq%2BONc8xyqySatnImPO2fpF9tRGbqTqo%3D--7UkCVOA6mKFYfuK1--xWAChTVWy8uYHwFWpChWJA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:01:56 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "88ed2db8-1314-4b0c-8b29-c8ebfd024cda",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5Ng",
-  "status": "queued",
-  "created": "2023-01-25T18:01:56.000-05:00",
-  "pin": {
-    "cid": "bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq",
-    "name": "bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5Ng",
-  "status": "queued",
-  "created": "2023-01-25T18:01:56.000-05:00",
-  "pin": {
-    "cid": "bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq",
-    "name": "bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5Ng",
-  "status": "queued",
-  "created": "2023-01-25T23:01:56.000Z",
-  "pin": {
-    "cid": "bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq",
-    "name": "bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## Can create new pin for testing pagination cid='bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://api.filebase.io/v1/ipfs/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:58 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=lCtNtrBs3rX1DeK9ovcJpBMVNtuXy0Bc4emWuYDZpC1ZG7ppMobmLqvgwJZUtMkWl4PrRdd4J%2B9%2BwlqFLMeyJgNM18bmQbuxxzxyPEi96hAW2FH2tZMin%2F6uyMGplUWpMjp5DtJRLPxrsM6J6uEH5AMnns9YTDV6c%2FAP7H514vat83zUtpF0dFWybefj2UJBE0XvOAB7YRMUIj2w7QrbNcNu4Mb4UrT96BhwTvA%3D--qi2M1HtQugN%2BC0cB--xT5lLzup40PlpNhffRNvaA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:01:57 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "ee372c3a-7ffb-4daf-862a-1553de9dc3ea",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwMA",
-  "status": "queued",
-  "created": "2023-01-25T18:01:57.000-05:00",
-  "pin": {
-    "cid": "bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4",
-    "name": "bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwMA",
-  "status": "queued",
-  "created": "2023-01-25T18:01:57.000-05:00",
-  "pin": {
-    "cid": "bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4",
-    "name": "bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwMA",
-  "status": "queued",
-  "created": "2023-01-25T23:01:57.000Z",
-  "pin": {
-    "cid": "bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4",
-    "name": "bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## Can create new pin for testing pagination cid='bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://api.filebase.io/v1/ipfs/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:58 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=g7h%2FDoXJDQs7MoSPTQibM5qsIcfH9f9bOAocGr3%2BmmpwIBH8r2O7N4RWebpICLnlnvq1kqlLE7np7uydEXYS1WuDIUlWkp%2BUBHdQzTS6Ku8IyemNdbhiTR3Dyr4xkJHvC%2F8kDl6KkZGLDD0qAFAfbUJ%2FKyuYb%2FVzURtU2bmU%2F7xZDpplZ27SUQmB3W2Jlmvo3bsi4%2BuFRXZdFHumNRvspBYki7IszqRtgnawHLE%3D--CByoFvPk7ARvzGtD--89SZpxuxT8Cl%2FTF%2FRC3ooA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:01:58 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "fad21d49-4762-4ff0-b1fc-cd615410bfb5",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwNA",
-  "status": "queued",
-  "created": "2023-01-25T18:01:58.000-05:00",
-  "pin": {
-    "cid": "bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe",
-    "name": "bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwNA",
-  "status": "queued",
-  "created": "2023-01-25T18:01:58.000-05:00",
-  "pin": {
-    "cid": "bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe",
-    "name": "bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwNA",
-  "status": "queued",
-  "created": "2023-01-25T23:01:58.000Z",
-  "pin": {
-    "cid": "bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe",
-    "name": "bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## Can create new pin for testing pagination cid='bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://api.filebase.io/v1/ipfs/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:02:00 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=AWixf%2FdrbluHcLlQ1acExHuHazgn0oUk6guTXkZv3QWn9BkYGuFjpbFwn5AuEPKni2zmMoIo3o1yNG9RT%2BsLP6irH3uE%2BJ3iA%2FwcKpCq1DVy7AHDjvYQod69akbvhKL5XMdopYJAJYT7OjdCJopgoVesKGYpMgPnodW1Wu4j4%2B0eO9JYEfXpIm1hvC0F9yt%2Bndn%2F9X1tnPEfwlfebeiQm80nEzuE3PINvEltpDo%3D--QOhfByRr9nGk4jBs--fkQmsmsH7lz8h8LvdDUt7Q%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:00 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "322faca6-5ecc-48fd-b08a-bf475cf147bb",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwOA",
-  "status": "queued",
-  "created": "2023-01-25T18:02:00.000-05:00",
-  "pin": {
-    "cid": "bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom",
-    "name": "bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwOA",
-  "status": "queued",
-  "created": "2023-01-25T18:02:00.000-05:00",
-  "pin": {
-    "cid": "bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom",
-    "name": "bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwOA",
-  "status": "queued",
-  "created": "2023-01-25T23:02:00.000Z",
-  "pin": {
-    "cid": "bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom",
-    "name": "bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## Can create new pin for testing pagination cid='bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://api.filebase.io/v1/ipfs/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:02:01 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=1eVwndXGVSpvO3MRFhZBJbHxtXlD2UKDlnHzmbhmxK3BrLy2zrQLQcyEbzPkjPXiO5EyMfengI4WnHm1YawgUKvxcEjFBakeEsqWYRGS%2BqyD13yamwIODGLWWSKESCb5GqIGwP0fCKBPRzu2I10elQVRm%2FzrudfFSZ9kJ23y2g80Q6GeLl7EZCkYR8Hlz%2BC4W5CJUi8l9ojtBfdGXrWmGSzOX3u81LeK4Jc0S9w%3D--LhWOqr%2B7QDZ2T6JH--OlLK%2BmAKlSxc6xlHfFKcig%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:01 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "14b8b3bb-d42f-40ff-ad50-081fc55772e7",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNA",
-  "status": "queued",
-  "created": "2023-01-25T18:02:00.000-05:00",
-  "pin": {
-    "cid": "bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie",
-    "name": "bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNA",
-  "status": "queued",
-  "created": "2023-01-25T18:02:00.000-05:00",
-  "pin": {
-    "cid": "bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie",
-    "name": "bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNA",
-  "status": "queued",
-  "created": "2023-01-25T23:02:00.000Z",
-  "pin": {
-    "cid": "bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie",
-    "name": "bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## Can create new pin for testing pagination cid='bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://api.filebase.io/v1/ipfs/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:02:01 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=F0Utz8dIgSuPatxkYJo%2Fm6UGVrva2b9eM4nl6%2F2yZNqNu25LuRfM3ZNGvhnIqh9a%2BzEtOlvCxcdcz6m4LwlEP3VoqiXxA4n45twNdzD%2F4KpmIWUR4bk%2FMW%2BuR3M28uCMrzUsPtqsI%2BQ7EHwnCDCEcKT60v7yaULRShkTx61054OI41Zhvqq2%2FwR%2FJB8KpxILpUwZvdWYNMWzCL3HIRsWrAgMPCIVvMjzT7cRuec%3D--BlhUJhgU5iYl3RYT--Smpfj%2Fn2Nx9vdTvGy1lj4Q%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:01 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "675f4c08-26d4-475f-8b8d-fc28eff8e44f",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNw",
-  "status": "queued",
-  "created": "2023-01-25T18:02:01.000-05:00",
-  "pin": {
-    "cid": "bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u",
-    "name": "bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNw",
-  "status": "queued",
-  "created": "2023-01-25T18:02:01.000-05:00",
-  "pin": {
-    "cid": "bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u",
-    "name": "bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNw",
-  "status": "queued",
-  "created": "2023-01-25T23:02:01.000Z",
-  "pin": {
-    "cid": "bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u",
-    "name": "bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## Can create new pin for testing pagination cid='bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://api.filebase.io/v1/ipfs/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:02:02 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=uH%2F9wOrI0Ul%2FM1jjl26rwsT9EffhO7%2FKmEvEjp1hp38Xrx3cljYHLHYYUBDOVr4QAR7XNc9fDnt1TGfRhsMeX%2Bs7WMlWAOo2MRGI%2BORzNNbmaVPoc%2BbdLa%2BDImWoiz4Fn9%2FJTKUlqy2TsVowQafwI%2BsC7oRNCVgdz4CtvGGdYBjLnKAezEgBfUrkPDc9VSYUtimt6VNB0mYfZobIz6f%2F5C5ZxqrjFcCVH9PMmvE%3D--kTDNj4dKXCdx%2FhYz--g8b%2BjsnEt5JSB74DfXRHAQ%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:02 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "cd0c78e4-7bea-4c81-98a4-83d2ef7e302e",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyMg",
-  "status": "queued",
-  "created": "2023-01-25T18:02:02.000-05:00",
-  "pin": {
-    "cid": "bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy",
-    "name": "bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyMg",
-  "status": "queued",
-  "created": "2023-01-25T18:02:02.000-05:00",
-  "pin": {
-    "cid": "bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy",
-    "name": "bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyMg",
-  "status": "queued",
-  "created": "2023-01-25T23:02:02.000Z",
-  "pin": {
-    "cid": "bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy",
-    "name": "bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## Can create new pin for testing pagination cid='bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q' - 🟢 SUCCESS
-
-### Expectations (2/2 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-POST https://api.filebase.io/v1/ipfs/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:02:03 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=BNLckHXWeoJ59jHlwMN7oFKADNeGWv3cFLbvvskHmxi2ld9phjateZBvpS5XdJdGlFDFQd5WZ3F1q2wKz9uwYVvFl9gudrde48vIAaGvHGwghSNn8l0gJAAcN2vg8U3Fn%2F6dpIbVQPCFRKjxlYhSpXoRE9Po5gcyElILHs38yoqkT8RrqT%2F9uwFN3az23NZtyBqqV7Eeylwn87nAlddpReaxrd0ntxaHfyEcd0E%3D--LYKr3jxv4fboEw6N--KJZNp27bjwuoW7%2FJUmbfXQ%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:03 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "cc4b6888-0e3e-426a-8b16-72dbf39c9b8c",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyNw",
-  "status": "queued",
-  "created": "2023-01-25T18:02:03.000-05:00",
-  "pin": {
-    "cid": "bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q",
-    "name": "bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyNw",
-  "status": "queued",
-  "created": "2023-01-25T18:02:03.000-05:00",
-  "pin": {
-    "cid": "bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q",
-    "name": "bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "info": {
-    "size": "0"
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyNw",
-  "status": "queued",
-  "created": "2023-01-25T23:02:03.000Z",
-  "pin": {
-    "cid": "bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q",
-    "name": "bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q",
-    "origins": [],
-    "meta": {
-      "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-    }
-  },
-  "delegates": [
-    "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-    "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-    "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-  ],
-  "info": {
-    "size": "0"
-  }
-}
-```
-## Pagination: First page of pins - 🟢 SUCCESS
-
-### Expectations (5/5 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Count is greater than or equal to 15 (success)
-
-  🟢 Count is greater than the number of pins returned (success)
-
-  🟢 Number of pins returned defaults to 10 (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "max-age=0, private, must-revalidate",
-  "connection": "close",
-  "content-encoding": "gzip",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:02:05 GMT",
-  "etag": "W/\"a54a843b7a6048d87346bfcc292e534a\"",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "7bb59590-9bca-4d83-acb2-2d94cb86a5f5",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "count": 15,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyNw",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:03.000-05:00",
-      "pin": {
-        "cid": "bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q",
-        "name": "bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyMg",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:02.000-05:00",
-      "pin": {
-        "cid": "bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy",
-        "name": "bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNw",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:01.000-05:00",
-      "pin": {
-        "cid": "bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u",
-        "name": "bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwOA",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:00.000-05:00",
-      "pin": {
-        "cid": "bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom",
-        "name": "bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNA",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:00.000-05:00",
-      "pin": {
-        "cid": "bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie",
-        "name": "bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwNA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:58.000-05:00",
-      "pin": {
-        "cid": "bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe",
-        "name": "bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwMA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:57.000-05:00",
-      "pin": {
-        "cid": "bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4",
-        "name": "bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5Ng",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:56.000-05:00",
-      "pin": {
-        "cid": "bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq",
-        "name": "bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM4Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:55.000-05:00",
-      "pin": {
-        "cid": "bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4",
-        "name": "bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5MQ",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:55.000-05:00",
-      "pin": {
-        "cid": "bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq",
-        "name": "bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 15,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyNw",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:03.000-05:00",
-      "pin": {
-        "cid": "bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q",
-        "name": "bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyMg",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:02.000-05:00",
-      "pin": {
-        "cid": "bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy",
-        "name": "bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNw",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:01.000-05:00",
-      "pin": {
-        "cid": "bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u",
-        "name": "bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwOA",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:00.000-05:00",
-      "pin": {
-        "cid": "bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom",
-        "name": "bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNA",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:00.000-05:00",
-      "pin": {
-        "cid": "bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie",
-        "name": "bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwNA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:58.000-05:00",
-      "pin": {
-        "cid": "bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe",
-        "name": "bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwMA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:57.000-05:00",
-      "pin": {
-        "cid": "bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4",
-        "name": "bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5Ng",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:56.000-05:00",
-      "pin": {
-        "cid": "bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq",
-        "name": "bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM4Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:55.000-05:00",
-      "pin": {
-        "cid": "bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4",
-        "name": "bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5MQ",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:55.000-05:00",
-      "pin": {
-        "cid": "bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq",
-        "name": "bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 15,
-  "results": {}
-}
-```
-## Pagination: Retrieve the next page of pins - 🟢 SUCCESS
-
-### Expectations (3/3 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 The next page of pins doesn't contain any of previous pages pins (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2023-01-25T23%3A01%3A55.000Z
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "max-age=0, private, must-revalidate",
-  "connection": "close",
-  "content-encoding": "gzip",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:02:05 GMT",
-  "etag": "W/\"777bbeed413c727a959ca8971de1b33e\"",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "d7c751a7-98dc-4bc6-9864-27d1eadda8b3",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "count": 5,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:49.000-05:00",
-      "pin": {
-        "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-        "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0OA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:47.000-05:00",
-      "pin": {
-        "cid": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-        "name": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:43.000-05:00",
-      "pin": {
-        "cid": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "name": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4NjE5",
-      "status": "failed",
-      "created": "2022-08-30T13:22:53.000-04:00",
-      "pin": {
-        "cid": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "name": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4MDg0",
-      "status": "failed",
-      "created": "2022-08-30T13:21:27.000-04:00",
-      "pin": {
-        "cid": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "name": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 5,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:49.000-05:00",
-      "pin": {
-        "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-        "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0OA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:47.000-05:00",
-      "pin": {
-        "cid": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-        "name": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:43.000-05:00",
-      "pin": {
-        "cid": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "name": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4NjE5",
-      "status": "failed",
-      "created": "2022-08-30T13:22:53.000-04:00",
-      "pin": {
-        "cid": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "name": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4MDg0",
-      "status": "failed",
-      "created": "2022-08-30T13:21:27.000-04:00",
-      "pin": {
-        "cid": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "name": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 5,
-  "results": {}
-}
-```
-## Pagination: Get all pins, create new pins (optional), get first and second pages - 🟢 SUCCESS
-
-### Expectations (30/30 successful)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 Count is greater than or equal to 15 (success)
-
-  🟢 Count is greater than the number of pins returned (success)
-
-  🟢 Number of pins returned defaults to 10 (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Result is not null (success)
-
-  🟢 The next page of pins doesn't contain any of previous pages pins (success)
-
-
-
-
-
-### Details
-
-#### Request
-```
-GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-200 OK
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "max-age=0, private, must-revalidate",
-  "connection": "close",
-  "content-encoding": "gzip",
-  "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:01:54 GMT",
-  "etag": "W/\"777bbeed413c727a959ca8971de1b33e\"",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "transfer-encoding": "chunked",
-  "vary": "Accept-Encoding",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "f10e903a-34fb-4f8c-8812-cdf7253e18c0",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-{
-  "count": 5,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:49.000-05:00",
-      "pin": {
-        "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-        "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0OA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:47.000-05:00",
-      "pin": {
-        "cid": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-        "name": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:43.000-05:00",
-      "pin": {
-        "cid": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "name": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4NjE5",
-      "status": "failed",
-      "created": "2022-08-30T13:22:53.000-04:00",
-      "pin": {
-        "cid": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "name": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4MDg0",
-      "status": "failed",
-      "created": "2022-08-30T13:21:27.000-04:00",
-      "pin": {
-        "cid": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "name": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "count": 5,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:49.000-05:00",
-      "pin": {
-        "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-        "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0OA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:47.000-05:00",
-      "pin": {
-        "cid": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-        "name": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:43.000-05:00",
-      "pin": {
-        "cid": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "name": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4NjE5",
-      "status": "failed",
-      "created": "2022-08-30T13:22:53.000-04:00",
-      "pin": {
-        "cid": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "name": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4MDg0",
-      "status": "failed",
-      "created": "2022-08-30T13:21:27.000-04:00",
-      "pin": {
-        "cid": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "name": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-{
-  "count": 5,
-  "results": {}
-}
-```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyNw' - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response is ok (success)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
-
-
-### Details
-
-#### Request
-```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyNw
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:02:07 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=LXfYMFK4G3rAMnqSAChQs599HVVoWZtRiL7H4tN88ErSdo%2FkpELhROWkl8TujYNnBYPo91%2FQb8fq1jmqMe3xFEvlOq39Uioodxy9WNm4f4xCGiyYXRKvhimMm8GuzLQYS6aqrfPhu21AYw0KVxf%2FtBGvnsAtyxj7nbILKxw5xZss6eMlP4P8UhSQW%2FHBp4GZpJMeXEJof87EAwK2hR5P5R5wPO2DI8QIcKXEdD0%3D--6GSDMmMNAC2SSBPL--OoP7P29zDs3PCiMMYiq9Hw%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:07 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "fdd28b58-f2dc-4943-884b-a954ec5be52f",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-undefined
-```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyMg' - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response is ok (success)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
-
-
-### Details
-
-#### Request
-```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyMg
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:02:08 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=ZnoxKVw4jbYJX3akSkcRS23WXwZCftcxOgolYcrPVvdZrYSC0Vr%2F0H0%2BT3NXePJRQIENQhMMQ16PcvOCZT2AfzpjfFaBhB0UsSlNAAJnOmd5CqfTXV7QBkO99dauJDfMu%2FErEIR1gdUOajEmQVazLh4CyfVYKK6Ct6t305BU15Tf4OFLqL3AZ2Ys2hmw%2FdqJ2BUwHO8xDELr0H7RLCygs4%2F%2B2hfPfqS1ECZp91I%3D--4c369OPMcXzjD321--B%2B2TT3IfCI1whN%2BSh7AMpQ%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:08 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "8261cbca-97d6-4132-82de-ab760e052025",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-undefined
-```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNw' - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response is ok (success)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
-
-
-### Details
-
-#### Request
-```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNw
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:02:09 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=Af2hl8zd4Arsjnl32yUYbj28NBdfBZvJQ22E2AgqSyKjHfvR6wBtfD2P%2FuiM521TTHot2MF%2BpBOrwyQzTcnSME%2FKgKWN2h2BAtIGElVd8TPdhJhukRZ46FtEwIcLPlxJ9xGaIyml%2FpvipBuED5WM8IkIgIacaMt1BOwmsC9fF3yZLgxUm%2BbtcbFzeiCz%2FoE16KS94YdH1nBS0vIq%2B5k2a0H6dH%2F4IQY95zSEEas%3D--cKUApqOUUyXNfiSu--ZE%2FIYr7aD8O5LaaIHqLOBA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:09 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "0440b5d5-da3b-4451-bfb3-bcbdb63ee868",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-undefined
-```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwOA' - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response is ok (success)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
-
-
-### Details
-
-#### Request
-```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwOA
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:02:10 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=4vHz%2F3JktRGx5b2xliPrRliQskdYFcPPBXnIPUCMm%2FhgxbhGKv5yZmTTJoPnNgJHpwdV4%2FFAAo6%2Bci11shmGE980A01jPNd8h39T50SaCGcmEQRk0qzu9RMF%2FVM3n4oChdMMDND%2F51FRZ5OIecfULOHNXDmwuld8S6vJQ4meCzPYUo26rvG%2B3FrVeMuTsppqzQRNd%2B%2FI76OOvBsPpFe4YVEiigATNeiHoLZhs%2Bo%3D--jcR6aRrX25GD%2FkGG--VNEyFczs6EswJQy%2BAWgTqQ%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:10 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "f0dbd546-1de5-42a1-ac30-f43e9f354e4b",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-undefined
-```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNA' - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response is ok (success)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
-
-
-### Details
-
-#### Request
-```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNA
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:02:11 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=h6wY6vTcBk5UhhsI05OsiHbWAI8LNzLFQsnEU3wzHmlxQ5sWDNAb7i0QBFJWvSuTe5yhiu%2F74XcTdH8osrTPIS16R4RdgmWtmfHcBLGbiUgYLNh3YxMZzFQuw126FKx4AXvjgeSbVVDWpx7SmtNFq5VWW0lcYRGb0znyYge2XZ4htKtnYhTzErICDF%2BWq6Yi1D%2BMaDN%2B2IxZtz5X33funIB9iTIUUBdgEMtWcrY%3D--y6BojyTxlr3FJ65s--Eov2dcqyhe%2B0l209OipYaQ%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:11 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "65460e73-a8c9-4040-86e9-94aa8bd0a12e",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-undefined
-```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwNA' - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response is ok (success)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
-
-
-### Details
-
-#### Request
-```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwNA
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:02:12 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=5jQCZKDmsD%2FHDshmSDLQ%2Bj92nBtIzeIDyrmZwTM75zXsXqJENWys30gFLEp01%2BtoLS%2B4z2hlePBFom9uvgjd6XDZE1s8LxZaakW4MAhbbreJbHpKagtIIa6Zj2X8YZYfcRsA1q5Sk2dtUVfkfwXl9%2ByNjFbxSUwJPu6P8E6QayWb%2Fd09h%2BWvFpskTfnlVWFOPXjNsUx9rWOvKVX0og4Rs6eqd8Yujob3RmmiJ6Y%3D--L0i9YeAsUrDz6BFX--74eIMGzb%2FJ7tyEugxXY%2Brw%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:12 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "ff2f5986-ab25-4128-b6e3-b4aa38fe332e",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-undefined
-```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwMA' - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response is ok (success)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
-
-
-### Details
-
-#### Request
-```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwMA
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:02:13 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=xukcB4KWmP%2FVwMHRdOaA7hVCKXcnP2qmJu6q%2BAarPaUVYSDlUy1Nu20PbevygLy%2BfjhdgyxRPd0YVKvsksp7E20MiJ1BPGNqBZ0Lmec22Cb9Svqx87Uv70RLdMdIowKGCV%2FXblwbi%2BYjKq69JWt2WF0grI2UqG8eoMnQoNI2DnezPw9UvTN%2FSKErUqYQsFSJR2YXbUrPQ3x9t9mkK6U1xITHNnst9J1COoAvGNo%3D--%2BD66spe%2BZuBhhZr4--pPHM%2BDC%2FFwp64swGGojzUA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:13 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "82cafa85-d2c7-4bc3-9da5-f7b9a27a9790",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-undefined
-```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5Ng' - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response is ok (success)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
-
-
-### Details
-
-#### Request
-```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5Ng
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:02:14 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=GaH5yeUX4e3dLUCaAXBnPdBB2oTDYve1pjYFh7Y%2BcRbv3CN6f0QixeQngrAy%2F%2FJS%2BuVWMiC7QcrpIdKxmuY%2F3pIsnvJsheEm%2BOsC8fmGmyxr3snEpuF%2FUDkNjAnR5wyNvUWR2WHO%2Bp5syHmKZoJKPsr0DKYWcSciQxtFTMqaHRLBqaF7d19bakN4X9mf4oI0%2Fxt5e6%2Fnc4LEoa5GToDgy0fR%2BkhB0Q1hnAcahfU%3D--9yCXZ2E2hc%2BiUME0--41cRe0pzeiHtr5ACD90xjA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:14 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "c2a6361e-2451-4c18-ab47-04d7f0ea1a25",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-undefined
-```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM4Nw' - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response is ok (success)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
-
-
-### Details
-
-#### Request
-```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM4Nw
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:02:15 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=3HrL3ZznWt05Xhs469mvkNMnhCAYX8fLofnyGM3pg4xLUOeqPvuycLUwbiFjMIS7zVVCOXO7HoXF0h5DU508wp0WO8c9pyK6iNAbruD7hrs5hXjkW95ssvTY8pGzbXVTiCdjHQUk%2B4wMaEIlW3HaoTzFVDiU815kmM7GT1ZC8cQ9tfjA%2FTHFcaeXp13Gu1dnXB43rQ1RGv8oWeIRqD6GawP%2FQxamWOzZUWtW%2BGU%3D--NGTV35u6cJ9apTS6--oixMk0hDjcgbzUlvoDig%2BA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:15 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "1d3257f4-fb35-481e-b5e0-5e52c2f2170b",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-undefined
-```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5MQ' - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response is ok (success)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
-
-
-### Details
-
-#### Request
-```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5MQ
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:02:16 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=AQRBtm6jbrJbp2LF9R%2BNFyX%2BdQLZclkVvxE4UIWRcvZ5NkFf9kdBN6qLhPblwNgqfhKuPSCg7d2xDQwpOutiBKLMNW5kIckg6ib%2FvnRaybwW8nLouc71yfa%2FRnCKpF9457EUdwAbyr7FIB6W%2FK2JmQMKDun0mik%2FKoIcp3IxcOgIAOWfvtwUnR8RaCtnR%2B4g%2BIumUyTSRC90n9j3wJliwoD9l2qHQQgbXRrGPy4%3D--GAyM%2Bi9mVohn358e--nqfVUQxji3TIglgubojllw%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:16 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "336551c7-275e-4acb-a0b0-c522199c9c57",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-undefined
-```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw' - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response is ok (success)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
-
-
-### Details
-
-#### Request
-```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:02:17 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=Xjx2sV5Jkqsk4p8gqlEw%2BaBaqej61jvNdj2QvbG%2B1j3A0QQe7TMNC%2F5h10WkInwS%2B2SS%2FHJiGGSVuj9QNWfIu2ex5HqTRHQYtmQSP1mb5K%2BP6LuWKfEXR1bIMO%2FLCoUyS1GSBL0zVta60xI6WMNsstdJbS3ZFtaTJXgwELRJCR6DlsnTESxuwfNTUGGS5a5F19HM1ROaH6MUDbkFmdE5gY%2F54CBG7LTGhlvZsOw%3D--XkoUnEpQtTO%2F1lfd--QazufU1JXL8t62MZBDfTSw%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:17 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "5948b0f5-4324-4a00-b91e-1d512d843580",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-undefined
-```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0OA' - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response is ok (success)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
-
-
-### Details
-
-#### Request
-```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0OA
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:02:18 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=NgKJrnhQIDjD8m3OH0AF993aklpBMfLjAlZiRmhBIW9HyWX1is9UCMLtFMkU7hxi%2FFlp7%2F24tv%2FMao5CKdj2oCImyiR1fTOyPtjEDaRgXjSHCbGK5tb71cALgRxwZznfYroXSTpwJHwvZUZu4XePMkqFaWRa1p%2Fl0Phk2cTo15f%2FWhMS4h1xfid1PK1fGcTGe7Z06nlB5%2FTIeet02SPwLL%2B0RItp2MV0aohQdw4%3D--WPqHN5B3fUHx5%2FiH--guEpApiC4864AbhsyN%2BEsg%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:18 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "7f29c6a0-1875-498e-be19-8a55ee0b7f99",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-undefined
-```
-## Can delete pin with requestid 'Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMA' - 🟢 SUCCESS
-
-### Expectations (1/1 successful)
-
-  🟢 Response is ok (success)
-
-
-### Errors during run
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
-
-
-### Details
-
-#### Request
-```
-DELETE https://api.filebase.io/v1/ipfs/pins/Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMA
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED"
-}
-```
-##### Body
-```json
-
-```
-
-#### Response
-```
-202 Accepted
-```
-##### Headers
-```json
-{
-  "access-control-allow-credentials": "true",
-  "access-control-allow-origin": "*",
-  "cache-control": "no-cache",
-  "connection": "close",
-  "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:02:19 GMT",
-  "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
-  "set-cookie": "_filebase_session=iCYgJRL9A%2FP8MazCd5%2BPLNbrzSdM1762BhqF1PpgGefQC0EP15Nc6J%2BUrYDfIkGHw22JVxhwMXA6Us2wnmYwwdUFfP9ewTnyB6CXsq%2FUest%2Bbjo20ancR42P5cnEN14kcdQ2p8aJJ3VBlHesAXDtBtyAuk1HTOPzoLsZgIYVAfmn6N9bj8TWO3DRjIrBMKLGdM1SAuPKKMG4cUg2sMgzLY4M6s6W7whM7RqjaTA%3D--tTrmkrKJjb5M3TPw--Eu1ua5uevOzwUJ%2BqWgfGNA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 08 Feb 2023 23:02:19 GMT; HttpOnly",
-  "transfer-encoding": "chunked",
-  "x-content-type-options": "nosniff",
-  "x-download-options": "noopen",
-  "x-frame-options": "SAMEORIGIN",
-  "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "2dda71be-6910-47d5-abfb-944c635eb353",
-  "x-xss-protection": "1; mode=block"
-}
-```
-##### Body
-```json
-
-```
-
-##### Body (as JSON)
-```json
-null
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-undefined
-```
-## Get all Pins created before 'Tue Aug 30 2022 17:21:27 GMT+0000 (Coordinated Universal Time)' - 🟢 SUCCESS
-
-### Expectations (0/0 successful)
+* "error" is not allowed
 
   
-
-
-
-
-
 ### Details
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2022-08-30T17%3A21%3A27.000Z
+POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Headers
 ```json
 {
-  "authorization": "Bearer REDACTED"
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
 }
 ```
 ##### Body
 ```json
-
+{"cid":"bafkreigrlevflpw3hwoinldofpkup2ii3ryspi7lfcg47tc2z7qqzwxbmi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
 ```
-200 OK
+403 Forbidden
 ```
 ##### Headers
 ```json
 {
   "access-control-allow-credentials": "true",
   "access-control-allow-origin": "*",
-  "cache-control": "max-age=0, private, must-revalidate",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668c6ffb5b2426-IAD",
   "connection": "close",
-  "content-encoding": "gzip",
+  "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:02:20 GMT",
-  "etag": "W/\"3438c5b0da51b073b4fa87b68d35e3b9\"",
+  "date": "Wed, 08 Feb 2023 18:50:01 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=jE2YW%2BYNLFMr3ctGshP7WBddSYG8%2BClG4Q8uhgllKaSgXMDXkpDduD7cb76K7stMm1Qw8u9tF0h6P6wUsJlzPnw%2FmUOQyJavEc%2Ft5xU8Wj1hJhqJ1wNXKYoAERYATB6APg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=cCq2Vgl8eh9DtjPTnFKsiQ4DoJmgByt%2F3MYxdKRIQRgPFQWw8ipoMo9upV%2FQY2JZEa0U10b95j49eA1ThI7MbGmnmw6nSRlIf1VHdpiUpugjEuWLT0FRpQDx4EKn6q8i8HQcjRIwwvnX3RZjk88fI2z294DFqg1Z%2FsYWEiAKPhRyNCIzrdNEySlD1anHq%2F9N0UL8kUj4peUXrXARtZweXno6W6tNudnucWqXXvE%3D--DS%2FeQwXVkTemmRw5--zEwv1Wm4BdrKliMiF%2FnQ3w%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:01 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "56feb5e1-fa29-47b4-b0c3-e588995dc750",
+  "x-request-id": "86561e1b-a794-4ffc-8870-e4449af2eb34",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "count": 0,
-  "results": []
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
 }
 ```
 
 ##### Body (as JSON)
 ```json
 {
-  "count": 0,
-  "results": []
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
 }
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-{
-  "count": 0,
-  "results": {}
-}
+null
 ```
-## Get all Pins created before 'Wed Jan 25 2023 23:01:55 GMT+0000 (Coordinated Universal Time)' - 🟢 SUCCESS
+## The newly created pin can be immediately deleted - ❌ FAILED
 
-### Expectations (3/3 successful)
+### Expectations (0/2 successful)
 
-  🟢 Response is ok (success)
+  ❌ Response is ok (failure)
 
-  🟢 Response is ok (success)
-
-  🟢 Response is ok (success)
+  ❌ Response code is 202: The Pin was deleted successfully (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
-
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
 ### Details
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2023-01-25T23%3A01%3A55.000Z
+DELETE https://api.filebase.io/v1/ipfs/pins/null
 ```
 ##### Headers
 ```json
@@ -5480,277 +335,171 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
 
 #### Response
 ```
-200 OK
+403 Forbidden
 ```
 ##### Headers
 ```json
 {
   "access-control-allow-credentials": "true",
   "access-control-allow-origin": "*",
-  "cache-control": "max-age=0, private, must-revalidate",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668c7c8843397f-IAD",
   "connection": "close",
-  "content-encoding": "gzip",
+  "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:02:17 GMT",
-  "etag": "W/\"777bbeed413c727a959ca8971de1b33e\"",
+  "date": "Wed, 08 Feb 2023 18:50:03 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=YbelIfvKEa4lacVlEaCkuR7PWLIdkZ%2BYaQFfcq0fMkMVRnolzl59zytAYpGRdG0Kq8c%2Fm0%2FrLArdmZgYiekkaHg1yma8Oy8XJHUcmPGXE7EvNGg2xrUNQXYvVs2cfVdgww%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=h%2B3m16tKkp3DVdIpkGgKpYlRCZYknSCWL4%2BxzJx8t7zkBWM%2FKK%2FbJcumMic2DFbl12idhNuqqhcDgEv8U91CeNM9KfkjLFINV943L%2Bbnf6r24Hcy90Tw4Szm1e3XR5TpIxbtpZmUlYfDBM41WBlkRliDUBKsH2%2Bgi3%2BPS0SFibttsKRB6YHilaP0cKFiCjRBnSPUDbqfqJ7VOopFPAsPvOlJW4XekBoWaiIRhRE%3D--nP%2F4LzN4YqoGGHnf--LUNvIG048DqCepWXiy75OA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:03 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "dee2ddf6-f953-4ba6-b304-041cafad1ec2",
+  "x-request-id": "175456b2-e1aa-4131-8ab1-b6dbb50a2c26",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "count": 5,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:49.000-05:00",
-      "pin": {
-        "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-        "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0OA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:47.000-05:00",
-      "pin": {
-        "cid": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-        "name": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:43.000-05:00",
-      "pin": {
-        "cid": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "name": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4NjE5",
-      "status": "failed",
-      "created": "2022-08-30T13:22:53.000-04:00",
-      "pin": {
-        "cid": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "name": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4MDg0",
-      "status": "failed",
-      "created": "2022-08-30T13:21:27.000-04:00",
-      "pin": {
-        "cid": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "name": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
 }
 ```
 
 ##### Body (as JSON)
 ```json
 {
-  "count": 5,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM1Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:49.000-05:00",
-      "pin": {
-        "cid": "bafkreignmo27ldfepzoexmtkadqcrba4fyja6cpytmsaavj4nxz6pcjnra",
-        "name": "adb94451-d9c0-4000-b0f2-5b3ed9857c33",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM0OA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:47.000-05:00",
-      "pin": {
-        "cid": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-        "name": "bafkreiabtq4qjgkiy64a7ye53azsgnv4myceohcyrokacvvjmj32neglqu",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTMzMA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:43.000-05:00",
-      "pin": {
-        "cid": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "name": "bafkreihiblit5twsyygebx4bdqvr53eu4gpnblmg4s3nyzjahixaf54vui",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4NjE5",
-      "status": "failed",
-      "created": "2022-08-30T13:22:53.000-04:00",
-      "pin": {
-        "cid": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "name": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4MDg0",
-      "status": "failed",
-      "created": "2022-08-30T13:21:27.000-04:00",
-      "pin": {
-        "cid": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "name": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
 }
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
+null
+```
+## Can create and then delete a new pin - ❌ FAILED
+
+### Expectations (0/4 successful)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response code is 202 (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Response code is 202: The Pin was deleted successfully (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
 {
-  "count": 5,
-  "results": {}
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
 }
 ```
-## Call pinsGet after deletions - 🟢 SUCCESS
+##### Body
+```json
+{"cid":"bafkreicxsp4atayz4napxcljsgflrababcvin2ljkqewgusbcmm3hzcgjm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
 
-### Expectations (1/1 successful)
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668c763969399d-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:02 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=4feOWhrVHk46lNhdcxX2ZeSjbxnN4g46u8OctZEMzM7w1Df4Emveus2m4f9lmA43dcLn78vaFiEMgtILfl%2FYcdjCEjsUtPw5GLckBLqDVwjxPd6Mwp631DKqo5I4x4DWQg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=TAGGrLKdRRnOuFX4E55%2Bl0jUW4zrg%2BXJtwi3tsPjxoqOZjdTyteKAG8hqruwZBTBlDTr4wIcf2T2oh%2B6mzwld767QhWUL%2BBuyn0U98Q3Qazq5BBqSkmu2J5z7jHhI4C44MklNwE2eq0haw5ofDD0egIE461aNGpcDTnlaUZlJOAWsuKa%2FAY2dA0qNPSFT7zR8kulyuD3FZvb0D18EoULLwvv8bqsIL3EPxE6ln4%3D--JannvaiAngunrmH6--8MXWpx3Uy7X04CO6yCOANw%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:02 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "0f634dbf-2faf-438d-854b-f9185ff083b6",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
 
-  🟢 Final pinsGet call returns the same count as before all compliance checks: '2' (success)
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## List pin objects (GET /pins) in all states - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Response code is 200 (failure)
 
 
+### Errors during run
 
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
 ### Details
@@ -5772,333 +521,2309 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
 
 #### Response
 ```
-200 OK
+403 Forbidden
 ```
 ##### Headers
 ```json
 {
   "access-control-allow-credentials": "true",
   "access-control-allow-origin": "*",
-  "cache-control": "max-age=0, private, must-revalidate",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668c7cca757fb8-IAD",
   "connection": "close",
-  "content-encoding": "gzip",
+  "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:02:20 GMT",
-  "etag": "W/\"833f11c00834a861142f4dadb5f92cdb\"",
+  "date": "Wed, 08 Feb 2023 18:50:03 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ythhp2EzjR6GA9qhkaXHuw3r%2FcazJ74RG7C9G8Pf8LBmAeqPstFLiBKmjMTnNUltgXe0Mlt%2B2gWEz7chEmRk5HCx24eXYLUcISL6hrFkaz2hIrLNLL%2FPRd1yUhHrshsxmw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "dd4c79ce-61f2-4498-a1a8-3659c3fff1b8",
+  "x-request-id": "11d08d41-75f6-4c93-a427-fbc2b36c3740",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "count": 2,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4NjE5",
-      "status": "failed",
-      "created": "2022-08-30T13:22:53.000-04:00",
-      "pin": {
-        "cid": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "name": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4MDg0",
-      "status": "failed",
-      "created": "2022-08-30T13:21:27.000-04:00",
-      "pin": {
-        "cid": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "name": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
 }
 ```
 
 ##### Body (as JSON)
 ```json
 {
-  "count": 2,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4NjE5",
-      "status": "failed",
-      "created": "2022-08-30T13:22:53.000-04:00",
-      "pin": {
-        "cid": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "name": "bafkreihmvapoun2haudvjanbgsmi5kbhe3s66xkkmxyrls6l7duhpzyyla",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvOTgxMTk4MDg0",
-      "status": "failed",
-      "created": "2022-08-30T13:21:27.000-04:00",
-      "pin": {
-        "cid": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "name": "bafkreibnneezm63hhqy2cdt7o47a4wmngyfrr77mjggckvugmrihsvnhzy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance",
-          "failure_reason": "Exceeded Max Attempts (11)"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
 }
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
-{
-  "count": 2,
-  "results": {}
-}
+null
 ```
-## Can delete all pins created during compliance checks - 🟢 SUCCESS
+## Get original pin via requestid - ❌ FAILED
 
-### Expectations (14/14 successful)
+### Expectations (0/1 successful)
 
-  🟢 Response is ok (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Response is ok (success)
-
-  🟢 Final pinsGet call returns the same count as before all compliance checks: '2' (success)
+  ❌ Response code is 404: Original Pin's requestid cannot be found (failure)
 
 
 ### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
+### Details
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
+#### Request
+```
+GET https://api.filebase.io/v1/ipfs/pins/null
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
+```
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668c8f9e6a81ca-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:06 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=BzEAMGuL%2BA5qAmOg9SByZMhCT9qzMT25OMyYge0RcFKeoShqBEzNcHYaKI5M%2BigwClpk6Z7xhG5c5n8d0w1KLyPhSLiHa1dgfjURlND8q7RzJmLeDhc1ltq2QSx3XNNfKA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "5895c93a-1bd4-45d6-9c6c-7de0c8158ef3",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Get new pin via requestid - ❌ FAILED
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
+### Expectations (0/1 successful)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
+  ❌ Response code is 200: New Pin's requestid can be found (failure)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
+### Errors during run
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
-  ⚠️ SyntaxError: Unexpected end of JSON input
-    at JSON.parse (<anonymous>)
-    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+
+### Details
+
+#### Request
+```
+GET https://api.filebase.io/v1/ipfs/pins/null
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668c95dc1281f9-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:07 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=JKDnKTy8NZyTLK9EKofZiQTZe%2FjkZPetaC2vAQwOpZeHf47QXJKxpJuOzkb5WORkOs4T2dNDBEEbkdrupL%2Bm%2FOc5OKYSS9gceqmGIj5mznEGz9gPEduddffhqqJqf9h8cw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "058757c5-6281-419d-9bd8-1b349bd09705",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Pin's with requestid 'null' can have cid 'bafkreih2smfdei6urw6eotl6kbzmj2m4wrjflvw52qwkfrykpkjtmxzav4' replaced with 'bafkreid2mmxbznedeifidzrhwmm52ateicagqslxdqbsn3y23kzlhadhce' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response code is 404: Original Pin's requestid cannot be found (failure)
+
+  ❌ Response code is 200: New Pin's requestid can be found (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
-    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
-    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
-    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
-    at async PinsApi.pinsRequestidDeleteRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:300:26)
-    at async PinsApi.pinsRequestidDelete (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:315:9)
-    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/delete/deleteAllPins.ts:30:33)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins/null
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreid2mmxbznedeifidzrhwmm52ateicagqslxdqbsn3y23kzlhadhce","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668c895cbd9c37-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:05 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=V7qfxZQfPy7L2U4HLFZNjYhiV0cKlgz35ldFghKJ5QYk97h%2F38qidfT7LKt26zoAAeU9cZngcFfnC3H0jKdyZLbdPyH1vl3Uov5QT%2BI6x%2FvkGHaOO3rrb%2F6kNpZSPTq2yQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=pSSob%2BQnyDbmI%2FdaZxeCyQgEtsbBHzrtZqaPcwdWKH6AXDHwO%2BFWj69Dm5f%2ByCVH0QaVw8higUBDBXPu%2BpaK%2FzR43aFrXEtVEzy5OxaC15EHj21K%2FkIJ179zcRlKQEPaUfPYb%2BhMAejiwPYTpW8744g4g1%2FIVCZ%2BefG0ofLJuRN7r64AvflcTJQo4jconVhyp7DzsukEaTb08UuUQb6tbFSzKQoO%2BAe9feyu8fQ%3D--Qck%2BDfkMRyq1YYlU--HZFR8zOzjdnXzMJo21cbdg%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:05 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "302b290c-5477-4057-be77-9646e2944602",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create and replace a pin's CID - ❌ FAILED
+
+### Expectations (0/7 successful)
+
+  ❌ Pin exists (failure)
+
+  ❌ Could obtain requestid from new pin (null) (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Replaced pin has the new & expected CID (failure)
+
+  ❌ Replaced pin has a different requestid (failure)
+
+  ❌ Response code is 404: Original Pin's requestid cannot be found (failure)
+
+  ❌ Response code is 200: New Pin's requestid can be found (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreih2smfdei6urw6eotl6kbzmj2m4wrjflvw52qwkfrykpkjtmxzav4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668c831b48207c-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:04 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=BFPYBNqGofsqHu8oCmsgIckSuLzYJMxIQcqOguDXqFSCW7FLaU6ZEZsWJ4wt8vuJLvRhpQZN2YWLK7b1akIhNvM5p35YxYJLPEAZlLAckPE%2BoxMchl2zKf4xyImI6rjuNA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=yEc5R33RBgAN%2F5ova48kLz3807zyGjhn17qpmA3jroFKAAxRYZoZdZ3%2FA3iQDITgGZfoEE82zMXJia51WCs%2BYw3CnCwWnTAZjJ%2BCBbTctdV3qxB24B3a339O0VTCZdkWUrwFxhaYlc24YL%2BYMRHI%2B7SFZSvErvgZy4eGfNJoWXYAhkicGW71YcUYPkWpUItKcTBi7UncKoDth%2BPUIfIaD5yb5Ke%2B7CDw1q94Hmo%3D--cQejRl8A6%2BGiYgmS--0CTj3ToPyntaQk6CuL00wA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:04 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "d17ddb34-5405-461b-bedb-15e262194257",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can retrieve pin with name '70fdedd9-ee1d-412b-b783-29d04b62bc41' via the 'exact' TextMatchingStrategy - ❌ FAILED
+
+### Expectations (0/4 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+GET https://api.filebase.io/v1/ipfs/pins?name=70fdedd9-ee1d-412b-b783-29d04b62bc41&match=exact
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668c9c5da61fce-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:08 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=wSmphn6iXCWQiD%2FUJ41a67Fflg6MgQ2dO9QRbEIfL0VPZ1Ynah2UsZ0wQnKkn%2F1MIVZ%2FD6f2TgSXWJbG8Jovp%2BCdRpGU5qZNgTJerpQe1H5TJI1B6Hx%2FoYPaBZtUlH%2BcTw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "396cc488-5555-45df-9bd4-513cc60c54b6",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can retrieve pin with name '70FDEDD9-EE1D-412B-B783-29D04B62BC41' via the 'iexact' TextMatchingStrategy - ❌ FAILED
+
+### Expectations (0/4 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+GET https://api.filebase.io/v1/ipfs/pins?name=70FDEDD9-EE1D-412B-B783-29D04B62BC41&match=iexact
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668ca29ec020b1-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:09 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ZbB1Xot6OTRbAMnH5%2BO8xkEplKoT4vvOeOF3NpTUyHJEH%2F1XQjh1dHtb3VIlWL1C3qL0aMoqHfu8ikJZOolJ6EUcjERqCoMWMl94Gn5NsWCbudc11oLy6WSM8HUpYDfoXg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "5025ad79-1057-4e49-8fcb-54a5d99fc1d6",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can retrieve pin with name 'ee1d-412b-b783-29d' via the 'partial' TextMatchingStrategy - ❌ FAILED
+
+### Expectations (0/4 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+GET https://api.filebase.io/v1/ipfs/pins?name=ee1d-412b-b783-29d&match=partial
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668ca8d8ab9c19-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:10 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=5KzjE%2FhiRzoNjwDgDf4aH1LqUJZPXRnEte2Cs7v%2Bgxa9ndBP50yf1%2FhApqTYLxt6WlGRNcw1s1I2DAS%2B81%2B7ECZIM3gpzuYVC46SO4GJ9lE213wrwWD%2B9QRSEpNsVXDIVw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "fa42f09e-09d0-405c-a118-f2c1c99dc1e9",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can retrieve pin with name 'EE1D-412B-B783-29D' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
+
+### Expectations (0/4 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+GET https://api.filebase.io/v1/ipfs/pins?name=EE1D-412B-B783-29D&match=ipartial
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668caf2a4d8287-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:11 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Jh9s2gvTYBPtyCM9vJF14zuVNP%2FPTIwRbfiEU1XnjGAS9cRvZ3%2BvRN2yYNcxsz88wVLhXvAHPWN8qSjOCy2K9xGQEwX%2BXKFCsm%2FtVZI8kdyP4JW%2F9DPn5sHr2Dbdntz9%2Fw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "252c6328-0bac-4568-aff5-9cd1fa9060c3",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create a pin with name='70fdedd9-ee1d-412b-b783-29d04b62bc41' - ❌ FAILED
+
+### Expectations (0/19 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Count is equal to 1 (failure)
+
+  ❌ Name matches name provided during creation (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreihuvni5coc6p7drbfywkurty22po3gmimsbob26nu4sq3ny5h7unm","name":"70fdedd9-ee1d-412b-b783-29d04b62bc41","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668c962b620664-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:07 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ZM3CG9JMx1rH5zE53CditYgu0MkR9awRj3loJiah2K9BzIKRz%2F7Awezwxv%2BkgytG%2FzHdc0i%2F0ADYKKXDGa%2BTRmmu17VnG5n%2FJqi4%2BUATFw3g8Eofnbn%2BYUlEVyxdbH51fg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=2%2FpWCK9HK5dH0N9auBYlyqUI9wIL%2BCYFQMdIS%2FBYDsX5hrUt8O9aYxCru64BfshJBgZSBVKeJSngE2XIlwdDmF4y%2BB4sgMqIXT6FWHnmRb7eM3qptLEYu58tStsmGj46TvVEz4ewt5S%2FTWp%2BI2hRHCfPaSDlUpicBzEvNlceFGVno%2Bl%2BEnGna8P%2Fgs1WeQkkxQY7FRH97qvDSarbhIBl3nXuW%2BPXvWKwllgNao0%3D--6o9hp66IfCvGDDMA--u5fT3mdzTd64131ZYWgP8w%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:07 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "255a2ebb-86b7-46c0-bb90-51b9d2314d5b",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreifgxal6w4tszsntk4m7htv5tx7dyxyowqam44ebtpvfdxhqdgagle' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreifgxal6w4tszsntk4m7htv5tx7dyxyowqam44ebtpvfdxhqdgagle","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668cb5ed57206a-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:12 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=nfAcOoBGt8%2FIZOtpIDibke4Lv9GrSMs0mYTBClpCr%2FYLE0i9jYnZ%2FSSun7napraeHhSQ7WK7mthHi%2Br8KtewOmIYtsDNV%2FQb1pehtFsqGaPkQgm3p6nxwNAm8WoXd3DEFA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=OOwNKe7ZXCC6R%2Bh362hGQT5MJ3UxWDgIhr%2B88Yq1ka5RMPUnx09CearxoRaNfUYE7a%2BspxP5e%2FW6Vo6djBSKBm1v37KjCj5EVNyXrymIC9iLk46xw4W%2BLQJ74SY%2Bnq82xNVkVv2intmnzrPCdf2th9sCMY1%2BTjR2QJSFEShlid4%2BjqqPskjwDFAXi72IsMNaqS7jDGpB2LWzW9fxl%2BgtsVQwTgFORJinbghmUuI%3D--RydD%2By%2Bq6LthpGjF--JVPCDwaoP2wF%2Fbg67t7KeQ%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:12 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "43d2f1ee-2ea5-48df-b4a0-5385f7d31652",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreies7gbca2y6b6fewfvqejxtawlvt77qp3c7bfmuaiiwecn3offu2a' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreies7gbca2y6b6fewfvqejxtawlvt77qp3c7bfmuaiiwecn3offu2a","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668cbc2d8a1fdf-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:13 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=VPBBwmumK5Kq%2Fz8IXOT47JNEy1%2BytJfHtLkfMEA34IYzh3Sr4Rw3qjwKQ4vZUIB1GefDh%2FWyDYOZklSMpXfZNVxPqxn%2BCr78gjhI%2BKbN18c%2Bp17S%2B5jT2oaEtLjm1A7r5A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=DngcMs2FiqOrjOrkqlgkZ6K944qjWZj4XZKK1HNAJ%2BnVOVa5vNkC8AuMqOpm66dLNbjsaNd3LE3XMT8BAZdTijdtbNVliVKDmOUUMwT311GM3YkHAmllesnZuQMWnGvgBnnnCGha%2B5bG0%2FKEmRPKIYyQieduvJDCAHANjuVdlbjde%2BlJva3SU4mQ06v7kq87bANmMUb8jYvx%2FPavKFhT7tyY8d9DXzQxxMaJf7k%3D--r2v16eI3i8OmKfiT--5MIoM6d0M0sgA8WX2mvDvg%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:13 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "8bc86d65-4525-43cb-ba10-1037bc28ea6b",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreigbmn3vtfxho7rgiaysr7c4f4nvhqowbkx4xg7dvemufpf5sv23mu' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreigbmn3vtfxho7rgiaysr7c4f4nvhqowbkx4xg7dvemufpf5sv23mu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668cc2681a20c3-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:14 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=o2n59ntravxmSxw15p5Impso3lAVj%2BOkmMGkJO4fZz%2FDlm0LnTlahgMi9WEalOXl6L32%2BT7eiR6qSrrj1hBfxjcM4UTHVsXUgLPa44r96N493mXkWGVFAiihK6URnhETpw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=tpyXp61M02DAyfD%2BcT2zcFbr6zgZ9rPYBsoj6hmvEEFP3sQW3HD%2FqTAzT2bVu8hKwyBQ3HUZLtjdcTaQlqzfFIK3FAw6j89Dy5mi1HN9ax2XkLj6AZKPj%2FD%2Bq0e3K3GGgfxlkaXronXu2PqU6HjX7X5xm8RFtKaIwFM0pdeLPIsdVuQn10YDe7MaPcRmHr3sTqdl8dsqH7bucDEXS%2ByEe%2BnWJEgcZvl1Vf0Sf%2BQ%3D--gQXvhGBLA1NvB1JN--pRsLHW7TTQghDggK2MQ5jA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:14 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "5fc86ab0-eb6e-4168-9b9f-a8e0cc0a1e0b",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreidlypus5inuibcmivogxg3kaixbjguvhuz6ye6qxkz4wirz2wzfum' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreidlypus5inuibcmivogxg3kaixbjguvhuz6ye6qxkz4wirz2wzfum","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668cc8adef824b-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:15 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=YMzCc4XzT6EyvDjA3WCIKop0Xv8W4pD4K1cAtQtlMgKqM%2BV0kQ0sCuLQ2aNMLwduJLHRT9Adf0YMBLmgAb9%2FWGwNnZd9mfYYCYkpbTp7zny9Bt8q%2Bg%2F0KsNhsZ5RE9gHSw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=XGEX%2Bn%2BYn%2By0HsdHvGwA%2BBsOXfDMPLKGaDEYg09zIn8V9t2iCx5m9YdsM9C3QGuGr4uH6JWIBlizLaMRn0%2BC%2F2wTB919b3rkPXu1YWkydtX6DjJTw1pKQPi9GJ6AoFeB5HI9Ne7TujJhWyD3O77xplqXzaUi2Aooolb3m7IvRAQRijnrDAOvpIWrCuLPLnot2hzUqsQTzC6YVtlTRwBYHMl2jFrM6Yp1mzxmJII%3D--VuJKC0%2B3eBwrcGAk--yTGUqb0XBI1sWkylte6tAw%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:15 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "da7f1815-252f-42a9-832d-12ca03c0dff7",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreibkbnxo7xbjqm53utsuq6lgurxe2sdjebrwwhqfsnbm2xke74mtye' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreibkbnxo7xbjqm53utsuq6lgurxe2sdjebrwwhqfsnbm2xke74mtye","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668ccee96112c9-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:16 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=9bLvuYV57Q3WS7kY8Z8yR7NP6FxpoBYUl7pwaEjl12u3zQYgqyxiQ%2FeqCcMNpDKG%2BrgMKf1%2FkkozuCN6d93EUSnSUHuNTYg5xFWz6e0bT75dFCcSUQc%2BPqB%2FtRD%2BaD46TA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=bHunxC5FQ%2BJ07rRBMnLVNBe5%2Fv4L3RGUnVVLxlryHvVTJ69%2F0y85HakyGqfHWfNB0jWlFqs9FRfuXR9js%2F%2FD5OCNJWgOZP89bt59qo7cegY%2BC1HHsdzRAItBgOIhqAvuumP5UzpmYqOG2z2qGSkJvL5N5wkQx6yu94VifHMv0jg9aBK1qlAYzjqpo5Iuj8nnIbY2EFiVf3NG2cf6RXvToBSyLWd6X0v7gYS9BiU%3D--QLb7%2BZD4ApZpfv2v--xwSUYrqVj3v9YHYwCBdVFg%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:16 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "a079f0e9-0d7f-478f-a36d-b174603984e3",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreihcwaep5rgzudftr765rsyjzsgjzwqjytbbsedpzr64lmktkfu7be' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreihcwaep5rgzudftr765rsyjzsgjzwqjytbbsedpzr64lmktkfu7be","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668cd52d633aff-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:17 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=kGXgjBQgzjKNx%2FHEARd3QRXxeGZK4lX%2FZg%2BZiOzsZcPurTyKT2qECgHsSBtRK4x4kidSIZOdwh3%2BtpeLbUT1gLNksQqP0Ve5PW9P5%2BTlHe2pFTdTAYn69S1%2FbpdxD17CDg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=uwXjQhRJMR%2FGDQuPtVLinP7Oi5GEo06cB9Du8Oiu2%2B6HyJo9nKHTzJk8jOmyAXMUuVHW0kAroVVirWSOLBhREP3rQGMMGoAFUQtGbnuQAs1nPahZsYrhZLEm%2BnwTEioGsWS61oZsD0q3%2BQhVtqiaGlk49OHopsZ3EP%2BRaFSrH7xtcrqxlGPn6CQYT%2FYbDWIVX%2FFRFXFQ4Fd8oysRGur%2BCftB84aFYuTtA36UE2k%3D--CehKO1gnv4gwd3Eb--6O3aL46Owaif7W%2BOI%2FPeHw%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:17 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "c947f5d3-8d81-4e50-9256-7973c0aa89ca",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreiaujs3pmatj74krqkgscw36pq7qnylicfy2m3q4ryhcxumqsqyvgu' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreiaujs3pmatj74krqkgscw36pq7qnylicfy2m3q4ryhcxumqsqyvgu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668cdb681105a0-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:18 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=F6B0dCL%2FlJGf9rocFkGwDpszZF3oiyuv0PoVF8%2FiMFtSrnRu8e0tqhSSvEj9%2Bpqg4kJg3rGnYUv7D%2BnYaTlw9YJWTuCgyeljBu%2BF4fjaKyl6FzDRweka4mheuad16frE5g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=Hes4nV855%2FbpGvmI0dxazR0h4KSsBBqwTHtA4WS6I1DoX82w6TU1gmiQedRI0IQIY5rqwlUX5oSDhG6ffdKDtjzLgFRB%2F4BDpJDjSCiYZkMtUcJy%2Fuj%2FRfePESIj3ytqwimZ1ciSKD0g3Msn2FuEbImJsa8C1JbjTNLj1IyWuls2CXvHnDNE%2FHOXKvVcoFDmgWuyC9L9dzQhz1zNYKAT7Ku%2BZ4uiFQxOMO8sbYI%3D--YPRNMoFzIlJc1IOM--7VxZnG%2FMkBGsjHG7HAl%2FZA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:18 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "dcbf8d4e-24ff-4043-bf67-ce49a4291a6a",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreica6cewninwf2m33danydwqa2wo2ojhxl5t2lqhfcamlrdfh3xwzm' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreica6cewninwf2m33danydwqa2wo2ojhxl5t2lqhfcamlrdfh3xwzm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668ce1af8905eb-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:19 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=0wV3VvfH7ET5uSvtGE1qqyrGXsXTq3iJF8ptRSXqhSowMpx5qirAheGQ%2BZYYnhepUe7aYjHTQvVyz%2B3A2uATVFPKbshlUOwNGKk7S0UJ9Or%2FCywywYuZN4cnjxpIvGurxg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=2tcA2Q8L707TbPABrcFG2du7fUur%2Bomh%2FTDqO1TpJiQ9DDCjPqqDtegEJIVa4rgloRt2YGwChtP7crGxq383JBqb9IsW3KJVGO4sFzFdC8OM1QRWdWCWLeDVKd9jtQCt7O09w%2FA4sTA%2F35iytNHQE%2Bk21oOKbp8AdB9C1bId4jYCpPY2%2BGEQkg0bsMN9t9w8X19KszEwwkt8mS9f5EuzTRXBN%2F8gW8qpSWB6%2FqM%3D--6rT4otFfJMf7tWl2--UXZfzLmUBfHIbU2c8%2B39qA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:19 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "811813d0-cf75-4957-920b-88474c328e75",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreidnjqf7lsbedki5eo5xaipw7gow33tly3nh2ul2lt53gpfvjxvn4y' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreidnjqf7lsbedki5eo5xaipw7gow33tly3nh2ul2lt53gpfvjxvn4y","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668ce7fa5a593d-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:20 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=GN53P3laEaBacGe28VeMoFlLS%2BQkXZDPpi9ayboZPIUQki423hBEkt6a1BaGAANZh0TUtuFb3iAyJJfnvz7DH6L%2FPInxbX5HB8N8ZPMI5ivGhTBSkSvI9SOLluVnMK2hbA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=Tb6x3cB%2B%2FUIDFdtyeHwNUIkIeyDeNJSiZaSQSLYITzJAxx8UfThe2OULnht8kfvkipDjm9j2%2BOQ1TZdIuy%2FQIHALkqe%2BmntZyjbSbUokRhMSU7DCoXaVed56aCtgAjb%2BhjS0KBYiq67tp4y0t%2BJo0TGoAcrIJ2QSPKDa1EOz4aTpaEyjBVx3tJcp00sExwF2U2XlVyq%2FXhj6o65pZyRqRg%2F8CIj805jxkXNm1Eg%3D--ujhyrZtONojBu9pV--wQ900eqMX7%2FFiMchNH%2FCVA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:20 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "68c1c9ed-46a1-4ee9-a3ab-6f9c8e508e09",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreierbeghbd23kkjm2kb25hghjxyuanzxq6qfknvg5swfawgyypgznm' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreierbeghbd23kkjm2kb25hghjxyuanzxq6qfknvg5swfawgyypgznm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668cee3de19c7f-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:21 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ZNMaoCM7yFmDSrqB3GfGrFHFgLiJDRudJNEK6ThRdbgxyGr2TViC5Pim6GZjFDELUgc5548LY5cU7t5n97lS7rlThNcRVnnB2i4QuutUQMCdmLb%2FxdvCKIGAHlPlTiIE%2FQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=MfnqWrgzdmN2zF6%2Bgt%2F1Kh5MrIH2XDt8zg%2BT6jj60dmg9xtRl9VjddwOHnCnGIBHO8FY0%2BqeBlwiBIdXsN4x%2BqFbEe9t5uhOqr5z1eSOOQJOdtIK3whCXRapsMlf7KA%2BiPF6aRRVxNrV6Gm4Q%2BEiewgTzhd8BFpR35K%2BVePopglTBHZhEzfYSCzdrp50suL%2BzsPEQ008%2Bqz3KQRVhI85SQjWvq8BBAugc3ZZj1w%3D--Gjdt6kH5tecJ8XK8--HWHk8PuTEuhEmRktQfnoow%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:21 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "2d13d765-9e5c-45f5-a9ac-f498bee3878f",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreianhv2ebvh6bai3ljgejz7cwicazvsfmjr475yw3oqkxubo2pocpe' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreianhv2ebvh6bai3ljgejz7cwicazvsfmjr475yw3oqkxubo2pocpe","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668cf47f567f82-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:22 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2BL9ggqfaGXfq4yoz8RHLPxdpP64ZJanj77Pf%2FeoabSlZCqDZYExvIG9BQbuIcPiGkTviV1liqbAZqMzVxVVK0QSSGVBaz5LoeV3TezDUipTGI7gb3tUoNnwNEfX9r6mz6A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=WihMr26rLjj4Hmx125aIMfu9666DOHBmb5JLBrc3NGHT1MzfbZ81rR2juDuBSMtrquMiogf0sHDLF5exOl6jNEA2kPcCRhUBCd8GCMgLc5MMlyVOwzlpE4rq7heyvS2qaLT8jblBj9yuBfICRj%2B2zuQtF7ZiJqzFitMgDWVog4CW%2BUt4I61ppRu1vFNxxXrQ0N7k4MM2OCi6IdO7C2sjfj%2FZjlgMBxWy%2Bv2pMvo%3D--BB7MLe39l3p409TI--ImD1JOC9T5piSr3VLg%2BK%2FA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:22 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "b97e2c6e-0dfb-44cd-af3a-5dc6cf810e21",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreihxu3mxg6zmmzhkkaawaro76o2o7g7x5pwmvcovez2um5d7hq77ui' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreihxu3mxg6zmmzhkkaawaro76o2o7g7x5pwmvcovez2um5d7hq77ui","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668cfabb192010-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:23 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=eY%2FcbhBQBDfhZ6pSLboFXWuw1i8o%2B09mWvOBFsXyhWwAYGrOyTh%2BhSIEpUXLGjy1yqrp4NcvAuE%2B0iMuS0r9ELXPlVq1zZ4C0dEUZJwaJnfpfdzU8N4Xq2mkygxRDpAtpw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=dLmy2TLA0HC0RpqhjpnGVDl%2FaSquv%2FUAupfLtN31WoR2TDKuMYu8AS%2BmIiPTl%2FtyRPmyyEidiObPQXb9vYA1FspLHTZ6IgJ1jAODREeoEiTtxHmcESEJ0wKnUbreBCrHp2fgd2uitNBRD6oyQDpeeqBMlxi3b%2FqG%2BqSivxdKtTwnq3UevydR4LBTJBK3hsDQ5ME4gsz1KiZnPptH%2F9eq1YjyGPzRLNktiKlnaEc%3D--mhPC%2FQhzqLxgu6z2--EmxdWA5O8J9cFrTP%2B3oYQA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:23 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "103e1dc5-d15d-40d6-a3c1-28b3556734cb",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreie7trrm2dhdxgdifckb3t3kqcce5vtf663gzlzvg65xuk4h4lizwu' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreie7trrm2dhdxgdifckb3t3kqcce5vtf663gzlzvg65xuk4h4lizwu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668d00f9e93922-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:24 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Ya%2Fc8H1QIcJlIFpiNEde3L%2BZBP1NoFiwoR1PQlanAMm6jhD%2B20yY%2Fd2lmdrpVZor6GdKeBgRi6HI1eWI6ZIRfv1CQ1ElPADifVAnK2un3HJCHEpmoILmMF1kFGoSHn%2F76g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=IAs8Pr3QihkKta8CNj%2B1mH5gJgdvPvxsW1JrCm%2FQMqH1IBClNE5rDvpGntAqBUQARK7jtiuohNKlTL2dIsP7ZC5gkWHS7m7mgJU7iyeJe8PyeMTys2nB%2FUxBmE3mV4HiDvRS1mRJWGO%2Fm3vViI2gatnpv2j6maG7IllwRzry%2B3m%2FAkemqmQ5irLN%2FGZXoM3TWvMDW2he4qIx0JMxnjY1kmdxKK39mdyFKTBCnOo%3D--PATMfFE%2FlbTGBQdC--vOylnxvYjPo6VxNkAxClzw%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:24 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "64d97e58-423a-49b6-bf9c-5ca6e3070236",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreihh2l6szfk25ibyssyh7d25rt4zbu4nczzwefppsqco7fepwauf24' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreihh2l6szfk25ibyssyh7d25rt4zbu4nczzwefppsqco7fepwauf24","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668d073c70581e-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:25 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=9yAZz9UY%2B5%2FBQYCefeeW4jQ%2FHuIPXmD6096QD35ijZuscMGTi23diTyzVomng04D9HH%2FbO5tdzGxwLGsqoSF%2Fewn%2BCA6NO8uUBHW8F45GFUsR8xRCREHXTz7qZaAB5c24A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=cuj0qYyALYA0bFZou9EZSAahnBMAgpGCTDFWWnnHF1YEbvb5KL5tjcKYwCrJ0oSU%2Ffmy%2FSMo6H%2BdkIVkAJnvS%2Bkl9dNLZswkEvxl%2BfFmf4%2FSa3TqqmSLPFZhMIVz5YLWJGHZ0PdNE668TCqFo9midFaHpmFuAQut0dPzwb8bLhscw%2FC2oZ%2F5SpvZzrdoDfeDMejugxjSLMQHlZNoYNl3BktOylvOkcgR2ehk8Cw%3D--zSTb7xM5sPlBZID0--uKnZALU1XdCzjG9qjwEcHg%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:25 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "e433260b-0395-4257-a049-c9051314b8dc",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreie4hh7idka736tsfzymeh6qj7mt22plzwyapbcy66ftf6mgxwfgpi' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://api.filebase.io/v1/ipfs/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreie4hh7idka736tsfzymeh6qj7mt22plzwyapbcy66ftf6mgxwfgpi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668d0d7ee83ae2-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:26 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=2qYzhYT%2Fo3Ur81bl0XMFpzPSDsh7YedWgWi0av8iOmPsLnjnJHj0pqb2Z5C8cL3kw%2Bt5LVM%2BI%2BlZjCIKYdw71Cn9xn4iyDuzQwSOinFPma2ZIMrYFqHbFFi6EsqrfLF6Cg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "set-cookie": "_filebase_session=NquIcUySi4J2Emj%2BjulPzq7l0jwATdoI0SPTl%2B3dZ2k72b%2BLDeXbLdYq7r94%2BporSmpjMSKzKqwlBOYQS2Uwnx%2FDXY%2F7Z7d0a9tuLEAO1b8%2B7ecsPat%2Bf%2FBqv3mYYC0FYy5n%2BsEXGcwTJAQjHuh4wrrCRNFaQohlmiymeQrZvJtzbvJKq746gJhYlDECYSyYb1ff9tsn7QjF5MN8nBm1m1LS5RIj2vZHHe1HQD4%3D--F3GmL73Q4e04eoBQ--CSr24AkaSYmduv84NdtcPA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:26 GMT; HttpOnly",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "f67e8cd7-8481-4d91-b35d-331a15701be3",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Pagination: First page of pins - ❌ FAILED
+
+### Expectations (0/5 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Count is greater than or equal to 15 (failure)
+
+  ❌ Count is greater than the number of pins returned (failure)
+
+  ❌ Number of pins returned defaults to 10 (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: First page result is null
+    at testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:89:14)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
+    at async main (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:39:7)
 
 
 ### Details
@@ -6120,472 +2845,596 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
 
 #### Response
 ```
-200 OK
+403 Forbidden
 ```
 ##### Headers
 ```json
 {
   "access-control-allow-credentials": "true",
   "access-control-allow-origin": "*",
-  "cache-control": "max-age=0, private, must-revalidate",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668d13bccf3b8f-IAD",
   "connection": "close",
-  "content-encoding": "gzip",
+  "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 25 Jan 2023 23:02:06 GMT",
-  "etag": "W/\"a54a843b7a6048d87346bfcc292e534a\"",
+  "date": "Wed, 08 Feb 2023 18:50:27 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "server": "Filebase",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=T1sog2cXIVmYJep3O0Ji4pFBbQZwl3Wssk6%2FIey9KzneFFCIqbEbiATZCa3Qx0%2Ff%2B1t3el92u12vy0zrhyMSb%2BsXgKOhwjPFIjw6mknPhZWJ0lSWwm9aymu6KSSyzjFTbQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "2df7a8f6-8488-4490-86b2-995784b6fcad",
+  "x-request-id": "73932cb6-ea9d-46dd-ab1b-826d2a1df05e",
   "x-xss-protection": "1; mode=block"
 }
 ```
 ##### Body
 ```json
 {
-  "count": 15,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyNw",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:03.000-05:00",
-      "pin": {
-        "cid": "bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q",
-        "name": "bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyMg",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:02.000-05:00",
-      "pin": {
-        "cid": "bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy",
-        "name": "bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNw",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:01.000-05:00",
-      "pin": {
-        "cid": "bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u",
-        "name": "bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwOA",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:00.000-05:00",
-      "pin": {
-        "cid": "bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom",
-        "name": "bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNA",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:00.000-05:00",
-      "pin": {
-        "cid": "bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie",
-        "name": "bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwNA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:58.000-05:00",
-      "pin": {
-        "cid": "bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe",
-        "name": "bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwMA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:57.000-05:00",
-      "pin": {
-        "cid": "bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4",
-        "name": "bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5Ng",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:56.000-05:00",
-      "pin": {
-        "cid": "bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq",
-        "name": "bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM4Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:55.000-05:00",
-      "pin": {
-        "cid": "bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4",
-        "name": "bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5MQ",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:55.000-05:00",
-      "pin": {
-        "cid": "bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq",
-        "name": "bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
 }
 ```
 
 ##### Body (as JSON)
 ```json
 {
-  "count": 15,
-  "results": [
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyNw",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:03.000-05:00",
-      "pin": {
-        "cid": "bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q",
-        "name": "bafkreihvqdzkeatl5trz55fk5cmqxg5ijyhuwqpxnxgxirnsl4qwfgiy3q",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQyMg",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:02.000-05:00",
-      "pin": {
-        "cid": "bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy",
-        "name": "bafkreifj2ayliuhxwyfpe5573wncjyjv5dy6f5ohikcyzyeqxw3wfe5vgy",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNw",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:01.000-05:00",
-      "pin": {
-        "cid": "bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u",
-        "name": "bafkreidybkt2miowkp7wacdsl4wganx5vhseohp5mimkf7mbsyuohjez5u",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwOA",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:00.000-05:00",
-      "pin": {
-        "cid": "bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom",
-        "name": "bafkreifbhbnltq2c2c4ui7drflcm2ff77g24dthwqcti7t3csdavy5zbom",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQxNA",
-      "status": "pinning",
-      "created": "2023-01-25T18:02:00.000-05:00",
-      "pin": {
-        "cid": "bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie",
-        "name": "bafkreih7tvylnf2t565uy5urug4dmookcxvvl3dux4icagrmqyioowufie",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwNA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:58.000-05:00",
-      "pin": {
-        "cid": "bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe",
-        "name": "bafkreidbx55m7hqyllnrql4wf2sn6brhx4d5axpzaz77hfldfvudelpyoe",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTQwMA",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:57.000-05:00",
-      "pin": {
-        "cid": "bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4",
-        "name": "bafkreiari6tcvk7dnn4vgdh7wv2ae5y6w6ib2noihkjol6g2oaieblbbz4",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5Ng",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:56.000-05:00",
-      "pin": {
-        "cid": "bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq",
-        "name": "bafkreihdarkvenyutytxjxn7mmdnzzq3v7ne33dck3wrm4r4lfgqgvkspq",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM4Nw",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:55.000-05:00",
-      "pin": {
-        "cid": "bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4",
-        "name": "bafkreihtdclj47wuiityxztht2blvewggy3kfyu7ytddcyolwvv4rlxrg4",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    },
-    {
-      "requestid": "Z2lkOi8vZmlsZWJhc2UvQXNzZXQvMTE4MjUzNTM5MQ",
-      "status": "pinning",
-      "created": "2023-01-25T18:01:55.000-05:00",
-      "pin": {
-        "cid": "bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq",
-        "name": "bafkreidlwaa3z3s3safckbu7ogdj2jaqai43e66ny5hzkwcvpqduqlvcsq",
-        "origins": [],
-        "meta": {
-          "createdBy": "@ipfs-shipyard/pinning-service-compliance"
-        }
-      },
-      "info": {
-        "size": "0"
-      },
-      "delegates": [
-        "/ip4/15.204.141.240/tcp/4001/p2p/12D3KooWF77nV77TryrhTjjgv1ZNEmPkpcdr6CBy5UGPgNS1cZKa",
-        "/ip4/15.204.141.241/tcp/4001/p2p/12D3KooWATtvdsJZQt3a4neVJZcT6vfv8zcdT9FdoPUjVsL83u4i",
-        "/ip4/15.204.161.98/tcp/4001/p2p/12D3KooWEVv5ZxSixZUUpKKvAUPGupkwiViubAVRJuuHqAihRdrj"
-      ]
-    }
-  ]
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
 }
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
+null
+```
+## Pagination: Retrieve the next page of pins - ❌ FAILED
+
+### Expectations (0/3 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ The next page of pins doesn't contain any of previous pages pins (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Second page result is null
+    at fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:119:17)
+    at ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:184:31)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:212:7)
+    at async testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:124:3)
+    at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
+    at async main (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:39:7)
+
+
+### Details
+
+#### Request
+```
+GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2023-02-08T18%3A50%3A27.865Z
+```
+##### Headers
+```json
 {
-  "count": 15,
-  "results": {}
+  "authorization": "Bearer REDACTED"
 }
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668d144bcb9c1c-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:27 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=4FNE1pSYEOicM36ybGi2iG7o24dLD2oHDrKR6iwspFUnMTfwr3LVlBKSGKSFprTNEIOpqRlc6%2F2HlXI33d5N6pZB6AxSPW1HZ4vDOsUKYAiHuS5Iiz61HYBl05%2FX0FrmKA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "a029149e-4b60-404b-85ca-c4d60a1c0882",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Pagination: Get all pins, create new pins (optional), get first and second pages - ❌ FAILED
+
+### Expectations (0/40 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ Count is greater than or equal to 15 (failure)
+
+  ❌ Count is greater than the number of pins returned (failure)
+
+  ❌ Number of pins returned defaults to 10 (failure)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+  ❌ The next page of pins doesn't contain any of previous pages pins (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ TypeError: Cannot read properties of null (reading 'count')
+    at testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:32:65)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
+    at async main (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:39:7)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: First page result is null
+    at testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:89:14)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
+    at async main (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:39:7)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Second page result is null
+    at fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:119:17)
+    at ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:184:31)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:212:7)
+    at async testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:124:3)
+    at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
+    at async main (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:39:7)
+
+
+### Details
+
+#### Request
+```
+GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668cafaab756ec-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:11 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=TgBsCs5cagsWJIL7RPEtWCx7nwQRpRb3Z6tFaYAkAPgA%2BgyZrSFNuw6Yo%2BnqqCk9G5vDLjv4hTfdyUSTyTQXbN6rD2DFE5Q2QABf94ZRxoz7oXyczcdzP4a%2BEhntbjQhqg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "7b8b7608-0199-46d5-bfa2-2bcdd4c6d14e",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Call pinsGet after deletions - ❌ FAILED
+
+### Expectations (0/1 successful)
+
+  ❌ Final pinsGet call returns the same count as before all compliance checks: '0' (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668d20c92681db-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:29 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=XWR4kxeUuwlzOtKC9XOliRdAA0B8Fdl3xn81fb%2F3mO0e8oEQCi5CyVwm3IvLlA6hlCbxcBZCEJQ9I9kdZm2G1CpSMIz8Gi4bOc%2FuCEeU%2Bj0m3RQLAvs5odGcZymz56%2F17Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "03bc6fca-0d52-44e9-a4be-e7e836946686",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can delete all pins created during compliance checks - ❌ FAILED
+
+### Expectations (0/1 successful)
+
+  ❌ Final pinsGet call returns the same count as before all compliance checks: '0' (failure)
+
+
+### Errors during run
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED"
+}
+```
+##### Body
+```json
+
+```
+
+#### Response
+```
+403 Forbidden
+```
+##### Headers
+```json
+{
+  "access-control-allow-credentials": "true",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "79668d1a8fdf5a27-IAD",
+  "connection": "close",
+  "content-encoding": "br",
+  "content-type": "application/json; charset=utf-8",
+  "date": "Wed, 08 Feb 2023 18:50:28 GMT",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=wRdfEnlqeaDXzpyug1LY1hXTpp%2FSuEt3U3%2Bqhi7wZiLGm2cj03ZGgqOcKKIqMpyUYECdTpuZOhdBC%2Bqba1QNFYPmw%2BMorwiB8oDfSe%2FNlu%2FGbL8ga22dN7wF2F4MJxYKRw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-content-type-options": "nosniff",
+  "x-download-options": "noopen",
+  "x-frame-options": "SAMEORIGIN",
+  "x-permitted-cross-domain-policies": "none",
+  "x-request-id": "0594137e-cc2a-45e5-a12b-475f69174514",
+  "x-xss-protection": "1; mode=block"
+}
+```
+##### Body
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+
+##### Body (as JSON)
+```json
+{
+  "error": {
+    "reason": "FORBIDDEN",
+    "details": "The Pinning Service API requires a paid account"
+  }
+}
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
 ```

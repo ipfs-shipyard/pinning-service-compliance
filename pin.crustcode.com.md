@@ -2,9 +2,9 @@
 <script src="./telemetry.js"></script>
 # https://pin.crustcode.com/psa compliance:
 
-Execution Date: 2023-01-25T23:01:57.382Z
+Execution Date: 2023-02-08T18:50:38.266Z
 
-Revision: [c0d25f3](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/c0d25f3)
+Revision: [fb91968](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/fb91968)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/pin.crustcode.com.md)
 
@@ -14,7 +14,7 @@ Revision: [c0d25f3](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   🟢 [Request with invalid token](#request-with-invalid-token----success)
 
-  ❌ [Pins post of CID 'bafkreid2jjtrd4ogj4gusgfcqggoxejvcxpssp3fgjqpdupuavpflta23i'](#pins-post-of-cid-bafkreid2jjtrd4ogj4gusgfcqggoxejvcxpssp3fgjqpdupuavpflta23i----failed)
+  ❌ [Pins post of CID 'bafkreieyksitepnegebdkgb5futmw5hm4so2wrvfgerwausnv7c54chz5y'](#pins-post-of-cid-bafkreieyksitepnegebdkgb5futmw5hm4so2wrvfgerwausnv7c54chz5y----failed)
 
   ❌ [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----failed)
 
@@ -22,7 +22,7 @@ Revision: [c0d25f3](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   ❌ [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----failed)
 
-  ❌ [Can create a pin with name='f39bc36f-d6f1-4c24-abdf-bbf9c60e0aaa'](#can-create-a-pin-with-namef39bc36f-d6f1-4c24-abdf-bbf9c60e0aaa----failed)
+  ❌ [Can create a pin with name='6f67cc94-e429-4962-8be6-30d1646aa434'](#can-create-a-pin-with-name6f67cc94-e429-4962-8be6-30d1646aa434----failed)
 
   ❌ [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----failed)
 
@@ -72,13 +72,13 @@ GET https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a16f7ab3208e-IAD",
+  "cf-ray": "79668c6ea93a2b9e-LAX",
   "connection": "close",
   "content-length": "63",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:25 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:02 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=YkJsT6W9ifH5Foplo9%2BRVdcSzyoPnu35uYGCeyacnDGVGblN4fNYpxcYF9pMcmLMsfJZPI%2F1EaSkRHxlaSxsIdHlCrMBMIiZe7q1xuZUjTOO4qqjNSXacI0qD8aabqyAwPVbkQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=VuMxDVlktw4rO1582lLciLTnyF8NRBwzAY6xW6t5moRO1DlxrF6d%2F3RtFNkGIza8o9D9sXPnTwA%2FMfBtQZILv%2FLjV%2B88JFxpODDjzNohZr5HkHvx%2FuyDVb5sExuFnG6qa8RbDA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -152,13 +152,13 @@ GET https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a175bf217f7e-IAD",
+  "cf-ray": "79668c759a7d7cf8-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:26 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:03 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=rwYSbxaLPgOsMdOf0MDEXsqV5QSL0If5D0AVzK7E964Nv85xxuvUKDIdUF4TfxFhK3ED%2F5SjCtzGJLp4scaV%2BQM%2B1T8lps%2F75w5iFJGdcaLO7veeD%2FAbassyZvcs48CsJ1NtEw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Nl1GhKFKFAQQgjfFdIQv3gbUNpsYa5RSBEBdW%2Bd%2BC2%2B%2Fcmbzgb%2BOMWjgtnsexR4f5wWhnw4CW7GW1yEoe6VnejUV4TOsq9j1pBZtzml5yHzzGghE7Bg26AsujVMNin8OFC7lOQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -186,7 +186,7 @@ GET https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Pins post of CID 'bafkreid2jjtrd4ogj4gusgfcqggoxejvcxpssp3fgjqpdupuavpflta23i' - ❌ FAILED
+## Pins post of CID 'bafkreieyksitepnegebdkgb5futmw5hm4so2wrvfgerwausnv7c54chz5y' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -232,7 +232,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreid2jjtrd4ogj4gusgfcqggoxejvcxpssp3fgjqpdupuavpflta23i","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreieyksitepnegebdkgb5futmw5hm4so2wrvfgerwausnv7c54chz5y","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -247,13 +247,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a17bfd3e5a1c-IAD",
+  "cf-ray": "79668c7bd8e97c89-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:27 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:04 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2BylciFHS7J%2FrejU6O2wod32M%2B32gTg1Gt5iTg3rLRSifxeqBxtuFxbiytxZUYW8Iu8H3CnMWM%2FjtX84XCD03V%2BEuNKlizvXIDCuOTDaageAfFxatKm%2B2cptx7n4Bm3G2tcqIRw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=rdOWmoI8%2BESNJ%2Bo5wjmy56Dq8egtHd3O9nEXrARE6g%2BGzm%2Fiol33mV7NTZIhFGOI5j1IwDjxrgkwsge0eplCCvZG26QS6Ilatv69Fxv8F8XAceFqgsMMhI%2FevKkzR1R9Y0MTpQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -327,13 +327,13 @@ DELETE https://pin.crustcode.com/psa/pins/null
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1887d3e82b1-IAD",
+  "cf-ray": "79668c8d79282ac5-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:29 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:07 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=EQtVM2Y9uyiexwqjYv0F6I3RC59%2FhJ91N22WUHXfSHPqWkkMLUhyff%2BAEnQ7IsXa44TThmdPnysmqSlBa6KgMgdjnrcr1Z9tfK6uO9w843l7WbMrlE30ydYorcHRGs4zTzZ8WA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=FC1MNZH%2BVoAH7VaRLE5OyDrl6qU2XF9FNjO1vPTRu%2BFUuQs0wSNlDGQpwnt14SdRYcAPPgp4iRcqloWPuXpwTnhI7E4O%2FHALbwH8VY7a75WkPbpZ8PoG%2FyCoIxcngXm9MuIw0w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -402,7 +402,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiachqthmxjfjkyokpunxbgysnuwpj7v2blqawyqtruhrohcwcqmje","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiac2p7mkdl4ztb2sqfqp2o2xvxjcnqpoevcoap5hoey4eggaqwjra","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -417,13 +417,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1824e3c818c-IAD",
+  "cf-ray": "79668c821d7ddb8e-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:28 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:06 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=SusO6hhfhfD5EloS9K22yyD5N0QR8S2nQyU66C%2BQibFTamHXxOJKRbfCr7fQm8RiJt853SZ9JVDOYR3B46%2Fr3rzg53RMkfW3jGeRvZi9d%2BBwXDG8dldVNVOyIi8khayVYEg8aw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=7ZZcbBb6pFhsdZRhE4LizZRoBoYujgKQlhGzm%2FL6whYcIRBB7s83pNcUDr9sVr%2FbdbglxvMMJ7xnlbf26kfVc35aSaG9dffSHIOOEiXAUVbBCSJTQKB05WVDRzP%2Bw8davN4aog%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -497,13 +497,13 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a18bda8d56b0-IAD",
+  "cf-ray": "79668c930bb32f03-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:30 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:08 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=iBQ1BUYI0nVd%2F25rO8D4S73x6nzxIcV9IZMOgOuXxyBzGabY1sfkfPwnFBPa24Kz7z6tjc90wuMLbkocy5DT9tVw1S7UtZ2NW%2FLVVRyKdp5N5OSsxxp9aLF6ednmg4xappTXoQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=WXBqVlOiHaJxg3FGI%2BycbxPCYcHCQbffAyGpADMjnc2q097pIWuuDFfOsLl5mj5R4Ww8w6hm%2F57kR7hK5qVKcaq%2BARAU2chcKep4RnS3dzXFUdbAfsZ7lhcW%2FABDSfGnohvFRQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -575,13 +575,13 @@ GET https://pin.crustcode.com/psa/pins/null
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a19e9a4482ea-IAD",
+  "cf-ray": "79668ca5c9687c71-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:33 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:11 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=rN3ZagiAkgGp18ONKvGyK%2FHbiexEzc8Qe%2BxPQ6wyskKmjImyGwd2xbZwlU%2F9jsFyLuuH3Odc4%2FupI%2B1YdYAZj3GFDK6Um%2F0basK4euxqTXE%2BxxUGxXfTzbARgT5aYp8RVOSoYA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=q%2FJhAgyUVZ1qkNA0BvNZGVPm69wC8YoJ83iz6v0nxFhNSot4JGlLAuLt8z%2BfhCWzvMbY6YQRVRSvQ2e5bgEqSy81eCUldq6nasAemq7YFFnlYTlp1k0NajJm6QuU8zQYLx6Fqw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -653,13 +653,13 @@ GET https://pin.crustcode.com/psa/pins/null
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1a4e8a45a3a-IAD",
+  "cf-ray": "79668cac099e7e20-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:34 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:11 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=yVKE7SP6U2TV4%2BqHz7YO%2FtT94DlioU0Bg4ndR4tM7d66HdIGKmL8nLqAi%2B%2B3kIaz%2BAzG9ClBhjfjj7dFzK%2BhXYxolY%2FFInvNAAdFgQNUYVOy%2Brszd2VniepbHXJj3CxQCAqBpQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2FC8LUyDMNS5mtZFfgQvcifVJ8RdbHrsyl1PUOQlXLPoZPqiNUXWbcsoZ2O%2FlG5FRU9jLRAICuUsaQgqs8GIKSeyaIBvfUemTxnlPoiGh7RTD9ndcXAaeNciErT8EsEMCFrLVGg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -687,7 +687,7 @@ GET https://pin.crustcode.com/psa/pins/null
 ```json
 null
 ```
-## Pin's with requestid 'null' can have cid 'bafkreibai3amolscxnklyk7y433yklh52564so6urtnjqv3ugquxshdehu' replaced with 'bafkreigjztzuzugne62v4p45l343cktyinaduxblqu3cl72z2ipzpalm7y' - ❌ FAILED
+## Pin's with requestid 'null' can have cid 'bafkreifvfoanzclyhgt5cw7xswzmwzxqnd2mkc3gqb6a7pdpzm4toik33a' replaced with 'bafkreia7anpw4ccbykm62kiizbhwtznswpj2gkak3ilzp3pofumgzkaqgu' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -729,7 +729,7 @@ POST https://pin.crustcode.com/psa/pins/null
 ```
 ##### Body
 ```json
-{"cid":"bafkreigjztzuzugne62v4p45l343cktyinaduxblqu3cl72z2ipzpalm7y","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreia7anpw4ccbykm62kiizbhwtznswpj2gkak3ilzp3pofumgzkaqgu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -744,13 +744,13 @@ POST https://pin.crustcode.com/psa/pins/null
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1985a287004-IAD",
+  "cf-ray": "79668c9f8c377e5e-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:32 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:09 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=g2%2BdgHw9QY8ZZwMuAvF1EqiNJawDJ3S5xVCkuiokQhcQ0VlK39bfvhWQZ7%2BEm%2BXIXO%2BqVAwBkx2Tq1KpLxL%2Bto5ZZPuK3dGqZRSoUXzaE173ZOY21UeeGrp%2FAcaZTQ0subdiZw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=vDHGsBr3gDq0aavtzrmYuThWaLVvZtOJAuoqahPFyhopx6CcHP3S6SS1mUsNmk2dRzQtznlib%2BlrFFdDpmTLcOBBV9xrMYZumYtSsJYDE6EmYTdz2lEztr1TrqEKX7L37K6%2FdA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -835,7 +835,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreibai3amolscxnklyk7y433yklh52564so6urtnjqv3ugquxshdehu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreifvfoanzclyhgt5cw7xswzmwzxqnd2mkc3gqb6a7pdpzm4toik33a","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -850,13 +850,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a19218778286-IAD",
+  "cf-ray": "79668c994b377d09-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:30 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:08 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=t6jFD7eg6lQqwxfPeNDyHqJp%2FFJrPbooF8fpMgQuXhsHxJntbM%2Fw0x03%2BDwFc%2FL%2FlaKWWZvTjR%2BXi5r9DB4H73XW7LXh%2BaWb7NEKduyOvfUMAVmmQO09L1WgMwi4OEbOujmWvg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=GkSsSFeHS8Pzr7dXUB2QMExK4ohSmyPNpXtFGyRcYXSvkh0nYryKftaWZSmIG8mVGD%2B4zsFj3TsuVwG7dntSUPGyc8plaJtUTdCzxw2KuSsrsmZzL3JbvnbRsc09RmBUiIeC4Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -884,7 +884,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can retrieve pin with name 'f39bc36f-d6f1-4c24-abdf-bbf9c60e0aaa' via the 'exact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '6f67cc94-e429-4962-8be6-30d1646aa434' via the 'exact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -909,7 +909,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=f39bc36f-d6f1-4c24-abdf-bbf9c60e0aaa&match=exact
+GET https://pin.crustcode.com/psa/pins?name=6f67cc94-e429-4962-8be6-30d1646aa434&match=exact
 ```
 ##### Headers
 ```json
@@ -934,13 +934,13 @@ GET https://pin.crustcode.com/psa/pins?name=f39bc36f-d6f1-4c24-abdf-bbf9c60e0aaa
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1ae9be65a69-IAD",
+  "cf-ray": "79668cb5ed707e44-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:35 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:13 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=53wphWwCjjfgMxCJ0YGvWy46KtCM9gcFx6nKFUz3wQDM9vBo%2BDiDKGjzg0kXrGu2h9Ge2iWVMG9vEORWwHKFQvHOgSR2xrmsyUUzbAhJKwITghR6iYjyZ4KcCT8uK3%2B465Lk%2Fg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=kOB6WBLTKMHkwihsFoh2UdhOLUgjiORMIbOrZ%2BGlG7t2%2Bv4ZfF8wqkhAZltBDyiISybF1Jg39rVwB3LX8fEVvY2Ca0UF68K2hzh5q0uNaaXRf0AzBdUibqyOrywVCzZGV%2FSzmQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -968,7 +968,7 @@ GET https://pin.crustcode.com/psa/pins?name=f39bc36f-d6f1-4c24-abdf-bbf9c60e0aaa
 ```json
 null
 ```
-## Can retrieve pin with name 'F39BC36F-D6F1-4C24-ABDF-BBF9C60E0AAA' via the 'iexact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '6F67CC94-E429-4962-8BE6-30D1646AA434' via the 'iexact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -993,7 +993,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=F39BC36F-D6F1-4C24-ABDF-BBF9C60E0AAA&match=iexact
+GET https://pin.crustcode.com/psa/pins?name=6F67CC94-E429-4962-8BE6-30D1646AA434&match=iexact
 ```
 ##### Headers
 ```json
@@ -1018,13 +1018,13 @@ GET https://pin.crustcode.com/psa/pins?name=F39BC36F-D6F1-4C24-ABDF-BBF9C60E0AAA
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1b4df21205e-IAD",
+  "cf-ray": "79668cbc29267e10-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:36 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:14 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=efwjIt1gtmhXoXQZZH3nCGXyPYY2QQoSOi6SpdrBQokKvKpbnf%2BEMmOEUnFwPKEaJ4Asj2%2BWpC4GVzOlGjy5LP6uvGTOGw75MUGoXmxXAXoa37PVOZX0Jsz7z6GsGNZh5qW%2BGg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=yWz8lDbZfQVdcu23ZlYLCU0kYJJtA%2BMxmEEeaBGxnPKuYaY8RAZF1i%2BZ%2FYMtzriZG3cBdQt5PwWYu%2FP2FlSctrJvzVtrQX%2FKRK5NWmdCfMd3ZaLp0LlKwVAbE4UjiH3WF%2FBZqw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1052,7 +1052,7 @@ GET https://pin.crustcode.com/psa/pins?name=F39BC36F-D6F1-4C24-ABDF-BBF9C60E0AAA
 ```json
 null
 ```
-## Can retrieve pin with name 'd6f1-4c24-abdf-bbf' via the 'partial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name 'e429-4962-8be6-30d' via the 'partial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1077,7 +1077,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=d6f1-4c24-abdf-bbf&match=partial
+GET https://pin.crustcode.com/psa/pins?name=e429-4962-8be6-30d&match=partial
 ```
 ##### Headers
 ```json
@@ -1102,13 +1102,13 @@ GET https://pin.crustcode.com/psa/pins?name=d6f1-4c24-abdf-bbf&match=partial
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1bb1b0d57ac-IAD",
+  "cf-ray": "79668cc2680a7c9e-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:37 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:15 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=FCX%2BTEE3kaQ7WBtQoZZB2OoWArPWSP2%2BYCCoLP%2BU7c1ZOf6teMdGYfQqMophUr7VP58%2F3oHSCEDe6u2EFfzHnrbTgNN7%2FFfY6KOqGmnZCzXQfRBPav2gHXWXD3wGHDf%2FvYKc9g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=PM9wcMzByb6bgRfRfmhv6sxaTJD88Q47FPKQn44N69xXFlHGfkemWufgWdRr5qTJSjLjL1PJFBbEzsk9SHZTHJkgYgW1kzELzG9oSeCqS1bF36ngTwbPZi6jKAHlsTNjcEy57g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1136,7 +1136,7 @@ GET https://pin.crustcode.com/psa/pins?name=d6f1-4c24-abdf-bbf&match=partial
 ```json
 null
 ```
-## Can retrieve pin with name 'D6F1-4C24-ABDF-BBF' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name 'E429-4962-8BE6-30D' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1161,7 +1161,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=D6F1-4C24-ABDF-BBF&match=ipartial
+GET https://pin.crustcode.com/psa/pins?name=E429-4962-8BE6-30D&match=ipartial
 ```
 ##### Headers
 ```json
@@ -1186,13 +1186,13 @@ GET https://pin.crustcode.com/psa/pins?name=D6F1-4C24-ABDF-BBF&match=ipartial
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1c15bb97fb2-IAD",
+  "cf-ray": "79668cc8af5adb92-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:38 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:16 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=T%2Bs3enlxwmuCZtsTyobDovnBMvf5lPA9pwyzH9phX2GCDyIeq5QXw1TjVstxTnF%2FLvtahY6IeljBZAxuhYnwVeqnN5zVYNOUU9789rjgb0RoI%2BrxGKkhukbV8I14lTesiBDtAg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=qC6EFtr8P1Foxc%2BWuQ9n4alsLN5IkpVxI4IzRTOBujjByyNg27xgT%2BPUIYpJhfdbimmekuYoIJkqAJmn2hKVsWC%2BKrNCFhFjn0ZcAyZ8TznOE%2BgJGxKtIfpyB8Df%2F4Y0mOStFg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1220,7 +1220,7 @@ GET https://pin.crustcode.com/psa/pins?name=D6F1-4C24-ABDF-BBF&match=ipartial
 ```json
 null
 ```
-## Can create a pin with name='f39bc36f-d6f1-4c24-abdf-bbf9c60e0aaa' - ❌ FAILED
+## Can create a pin with name='6f67cc94-e429-4962-8be6-30d1646aa434' - ❌ FAILED
 
 ### Expectations (0/19 successful)
 
@@ -1306,7 +1306,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiedr4vq2bwjzuk3ny7oyzvxjyac333dlyzang2lhkrozifw62prnq","name":"f39bc36f-d6f1-4c24-abdf-bbf9c60e0aaa","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreib5jvlvulkb2grjq3feyovwpwhlv5dpj5s2x2xb5iicek5iw2sdem","name":"6f67cc94-e429-4962-8be6-30d1646aa434","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1321,13 +1321,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1a858f281be-IAD",
+  "cf-ray": "79668cafa8a90c93-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:34 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:12 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=d%2BNkYKmCbpUvZBrA7yJRbqsEXI6YZv1AoizjNfgP5VpNKhC3gmFoIPUANBsrswYLPbrs0lh1zhWh%2B%2Bxh83DFHPQoNfS%2B3S6awbrJdfJJrRaMZqPZMGLXXt6ZFKLlspkqjxvm%2Fw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=L%2F7xd6W9%2BD6%2B5LfXZ%2BThCGZAhUd7U7t6uhnGV10Gstc84y9ihkROOsdO%2FFrQpPVyJEPl4oq38gAymOkQ9WxQjd7by1EALerZJ19z5%2FY4ot1L9mYwz6YAjW%2BnKt32%2FToUR81AqA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1355,7 +1355,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreigtzxbjv426pbszqrtv26chbubv5ui5sabpmfha6rbyihwrfjqqlq' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreiaaigkpfbcohb267vku5t2k7tqj7tj6hzlozbjarbgwf3cacqvwj4' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1387,7 +1387,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigtzxbjv426pbszqrtv26chbubv5ui5sabpmfha6rbyihwrfjqqlq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiaaigkpfbcohb267vku5t2k7tqj7tj6hzlozbjarbgwf3cacqvwj4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1402,13 +1402,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1cabe045af3-IAD",
+  "cf-ray": "79668cd58d892ef0-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:39 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:18 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=62Lah33BNfxBfLisTZXIjmvoKUpFChGxCndUVDix6x0fnSkNwUuvPcxKQP%2Bfbhiy%2FNuzcudfSKM310lAntKb8Efxoc9hQTV1zRNlz7YYstXD2cJXkYXUnUcjjVeRXelwFOblCw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=uWF65GctKGfIM0FS%2FZHKEj3DVMB6m4fuZusCfis65pqyRkP7basVZ7v%2F1LJ0IfLCXgYRCBURXCxLSsyFfLi8YSXtOF9XSjOPRGuRctBPKTV0xxTJ4Dr49AcO7QZYX1DlUZ4GHA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1436,7 +1436,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreif7oxaffk46tkomxa3rb5cwe3m77jjzmrhcqkqke6wbmju24znt34' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreigjcdwygrijcuu2bmlrf4bbzuinfjwpnwbigmc5bak2x5cia5pzum' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1468,7 +1468,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreif7oxaffk46tkomxa3rb5cwe3m77jjzmrhcqkqke6wbmju24znt34","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigjcdwygrijcuu2bmlrf4bbzuinfjwpnwbigmc5bak2x5cia5pzum","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1483,13 +1483,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1d0fdee8230-IAD",
+  "cf-ray": "79668cdbc99f7e68-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:40 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:19 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=1GU7d%2B3XwK1kJhhiL5SeqPjM2%2FNYgxCdY7AcH0QQfO3ZNiMMLnsxGj4Rva2r38Rv8t9osSUMbfgELcD2D2DkVPSjvht0Vzqv5UM414IMLgjwP6LfVZ4zl4SuBCRhZaSfDJwdog%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=rKPIEsKUvXt%2F8PrCZfbY%2FA4BtEDGJopr130OUBIAkSsO%2BahVSO6grBvQ%2BlkrP0zm9FXgZvFXtN8I%2BQGk9EmSB9RUi9BkidNuE%2FoCI0mi%2FsYx2HTK5YupbmPM9D5FCN94YvHIzQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1517,7 +1517,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiaxsgo7yobv72ugls3mfepko3a3tvwshpiq4bhgfmqxfbw4pfchxi' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreigcra353jucm62nhztyr2ibcwmxl7llc5qi2w3pkkjbwyvw33fjtq' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1549,7 +1549,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiaxsgo7yobv72ugls3mfepko3a3tvwshpiq4bhgfmqxfbw4pfchxi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigcra353jucm62nhztyr2ibcwmxl7llc5qi2w3pkkjbwyvw33fjtq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1564,13 +1564,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1d73de257cc-IAD",
+  "cf-ray": "79668ce20c642eae-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:42 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:20 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=RI3pmVT7oItOsJs9JMWimflnj0ekkSUS7c2UmoYNHlxpTcJJ%2BMQR2EPFkYhuQjeiBV%2BeR%2FbyZtRWKq%2FQMtXcL%2FgatWtDVqqN0QYNOt7EXgaBXYqS0joRAXFgH09yjN%2FtgjMesw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=zGV36KyeXp%2F5fHahsjKEC6NSvv%2FC4GZH4npmTM5T%2FB8KDvd8Y34B7MnJRFt%2FA8RWAOeL6FJWaejc%2B26HP1sYKVjJuqBxN4HoQwC5waky6hdRb56wLycz%2BLb%2FFljKJFlVfyMgHA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1598,7 +1598,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiadaoe47qehakv7ta3abgtrujmlgarrc53wmogdr7efrzor3fp2xa' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreif3sojnj6doshaxzovcihzofhtmllfcylmxjokfehvro3tdykbzpa' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1630,7 +1630,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiadaoe47qehakv7ta3abgtrujmlgarrc53wmogdr7efrzor3fp2xa","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreif3sojnj6doshaxzovcihzofhtmllfcylmxjokfehvro3tdykbzpa","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1645,13 +1645,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1dd7f287fd9-IAD",
+  "cf-ray": "79668ce84be57cf7-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:42 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:21 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=tk0fd3kg3xoRvC4Tkggl1HSbNk%2Bt%2BqhLtPxAN4voOnNais2sBM%2FjiN2eGxAZmoaKTtVhz%2BeqBKRRh1TU%2BT9psOA9AMG1tbng8Df2v4%2B00gbUqYYZSrWqroYTKDXav%2Fqsms9PLQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=oHzzSDCCPttU11cU7Q9UJCFNPdlb3jgrb4w8so93TpYCLi2uNGqrSa3kV%2BlphEbuMc8j4EkzJCiY9t9xGmsDWF8%2Bt7HfYMGQ8ehxa5KO27lfL3Y0BJhP0vkmdE%2BQk0iPvPGKJQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1679,7 +1679,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreihrwl6ithbmbon6cdm4x2un76eqtxvpkheiseexmzg4wvww4fb6oe' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreiaii5ssegbjqivzfeicv527r2o5htak6tcopcmhybxlqjaxg2bylu' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1711,7 +1711,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreihrwl6ithbmbon6cdm4x2un76eqtxvpkheiseexmzg4wvww4fb6oe","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiaii5ssegbjqivzfeicv527r2o5htak6tcopcmhybxlqjaxg2bylu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1726,13 +1726,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1e3bc31824a-IAD",
+  "cf-ray": "79668cee894d7e0e-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:43 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:22 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Vh%2B%2FWrrz5AECcNjHrwV1w8hB8XM0lua6lWcdr4hq6DR84dpBwcl5SNhY8L7AZkhmpmpedY3n9qvEdh7kx1gJ8CZf4MxLW9PEHnILGPkBXEKKxdP%2Fc13Ewkq6c7izdGbnrjshsg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=bg0jkNxmu5EUww53nunpcAxlHwkfMQp350xZrEUMRhJHf0lzYHi6it7ILz7SRM%2FxRI9E4TSzKt1r7AtS6aWT%2BSgz%2Fa5Gmbto0ac%2BGWl6D9%2BJMHl5izvNBJcD1onBEBuUfEjo4w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1760,7 +1760,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreienelbefhjce5ijfap6rn26rk6l4ceka3sfvbln3cocxniuro4lgi' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreielzhsjzw6fmldt4uj65qhun436g3inw7tuebzf7bw77lwfraumje' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1792,7 +1792,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreienelbefhjce5ijfap6rn26rk6l4ceka3sfvbln3cocxniuro4lgi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreielzhsjzw6fmldt4uj65qhun436g3inw7tuebzf7bw77lwfraumje","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1807,13 +1807,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1e9f9a86ff7-IAD",
+  "cf-ray": "79668cf4cba32b5e-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:45 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:27 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=UxP%2Br%2FcwFxwKw%2BNKRn7IdroOi3gdmo4VBEaOKXYcjq7%2FLh7UVBPnnbaA%2BkKYYB6niXN1nGqGV9bnag7soD1YPpZsDzCgAyTKmKFfuBoHub29IUf4v%2FatzSJSY9e9A0O3Y3V4xQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=iU0EFfvIF828x3dkMC2BsLmrQ91Vf6Q6b%2FYszjtGi866PXUJyaitO6bgitM3tHm1Dqo82jnWUbF1RkJjjgvAiIOOlkZKqIF0%2Bqc46zhmrgSdXxby04RNJSvgp8ZmaFu0dmbExQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1841,7 +1841,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiets7rwkzpzzx6cm6iq7dciznjy3zesh4ppduyhkprzdv7nimxu7q' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreiexivj4g63hth7w7sjltwnk3iunmnmxyzilutjbd3viex6jaui6um' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1873,7 +1873,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiets7rwkzpzzx6cm6iq7dciznjy3zesh4ppduyhkprzdv7nimxu7q","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiexivj4g63hth7w7sjltwnk3iunmnmxyzilutjbd3viex6jaui6um","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1888,13 +1888,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1f0393d2427-IAD",
+  "cf-ray": "79668d111b922ec7-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:46 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:27 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=rfL2hJnld0PEVpo9X1IYjNpsJsisNgl28%2FSgtqzOuWEnLBgo4Oc9QUUXE6jJMzd4jHrAAyLICpkmJ%2BBi57UZ87hXkEZjXAeRKCBlykoh%2FHM7%2BPPBlnqwDHyyyRW9cS%2B1Y0Olhg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=1uEekDVnCJL2xNc1k4MedL3fQ1Q81RnKdRhXsyruX%2BhUF6l4LfkwcZ4lbpFY%2BlmJ7Wxa0kAoXpaajdeKJNnsH8%2FKCd6AjQgoUPmVtAa1R1lwqRKSLPV9UxrmdDQ72yzR9wRzRQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1922,7 +1922,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreihzxqrmqmsrn4vla5xzhyzun2r2yt5fubfsduxlsct3yi3tb2m25a' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreieu7wu7qtfrtmb6bb4ebaxvvfktskqkxg4pjop7dkotlqjvgoif3m' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1954,7 +1954,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreihzxqrmqmsrn4vla5xzhyzun2r2yt5fubfsduxlsct3yi3tb2m25a","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreieu7wu7qtfrtmb6bb4ebaxvvfktskqkxg4pjop7dkotlqjvgoif3m","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1969,13 +1969,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1f67d808262-IAD",
+  "cf-ray": "79668d140b0e52b3-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:46 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:28 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Q1mjn1V8edQrMjxAFNJP03KSuBoLo9MIsbF7VPCkvyT9SseU0znkbYjFAV%2FkekUBxHM%2FeIQ22LYn6gd6G6sb4YqH6EJZlelTnzoVx8XGfyTzA6yWMCidnKa5yONpP4eP3JvTXQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=FfUiKyimdWRNWiAySoTdY%2Fu9vshb00jTTapwoxQuLrEDmOHx5hf2oMWtpC6L4AymtEkerKK7RY5sQXI8PWoQuR3dQv7hjxuLBvaW%2BV4dWK5OGlq%2BocMPvl3FEt0NAsHKG10u7Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2003,7 +2003,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreifghsm3b2v7niwebwc4yzhsorkc7azwnpmcgu3bdbv2imirm6wgki' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidwvqv7arzl4uywuuxlsleouxw3k4cwwj6rjnk3jbijqorzczpw3m' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2035,7 +2035,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreifghsm3b2v7niwebwc4yzhsorkc7azwnpmcgu3bdbv2imirm6wgki","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidwvqv7arzl4uywuuxlsleouxw3k4cwwj6rjnk3jbijqorzczpw3m","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2050,13 +2050,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1fcba7d7f72-IAD",
+  "cf-ray": "79668d1a4a492f23-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:47 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:29 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=OyDndhsY9XSaFH7s7m58riu9mww8Qf1AN0E6MqSeu0vMaECuGWLMapN4MxBQFp0prphmVVfAGOUN61RucExdnOLFFdLAqVaQd5I0Gy3KrkIhP5yuMRoqWz8Vo4BFa7K%2FjBmY%2Fg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Ul955a4feCjXbrZ927Z9o7aBwZvNok3QRHYYlf35yCChCPHIbC%2BNQR1gB2rksoXwL04AXh2ybUFtSNlQsKcSJMMcvU1OwTrqAGUveRr5ZeOnT6ZgRcmieotiL1tM2joUkAlDfw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2084,7 +2084,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreigyjjk65olckze6wewmntsvd553ze2zgj4fms7svkzy7jkg4m3q5q' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreicpwn6lm2yqsxob7lcsb7c2rtusyay3jp7mxfxn4fvhigvlsdtzj4' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2116,7 +2116,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigyjjk65olckze6wewmntsvd553ze2zgj4fms7svkzy7jkg4m3q5q","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreicpwn6lm2yqsxob7lcsb7c2rtusyay3jp7mxfxn4fvhigvlsdtzj4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2131,13 +2131,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a202fde02082-IAD",
+  "cf-ray": "79668d208a552b7f-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:48 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:30 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ikU%2BS%2FajUsy%2F8XKwI4sdPg56eGm1lUUnvvpGYOwq67QrNyKimH3eNmzcjHyCvR7orus4JD0j52bVo4Q01TgE%2BkzTPkRL2set8hfLKhSXhkJ2swh7Xg6c43FsFuQ0hvGqoqvRDQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=D2p5GKJ46pxrpnzL71GvtrFP3SX2pBixy%2Ff%2FetYJGbOunAc9tqvqMpIeaDG%2BdI%2FEc6vEofSYo53nUD3p22TUvmuTfP8kQNJgP9mfjhoDED%2BjN07ThLB6vw1tF9jbxwQciVyRTw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2165,7 +2165,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreicb72i47ztxc5qfrnnhbmdnsa4d5alyp5rp37yul47xczryklra2a' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreifafeef4lycyqaqbw3cd3gw4vod46rpayee2aphxt3ojsajhavcse' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2197,7 +2197,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreicb72i47ztxc5qfrnnhbmdnsa4d5alyp5rp37yul47xczryklra2a","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreifafeef4lycyqaqbw3cd3gw4vod46rpayee2aphxt3ojsajhavcse","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2212,13 +2212,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a2094aea1779-IAD",
+  "cf-ray": "79668d26da27318b-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:50 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:31 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=FU0YqUfyn6s07Ccp4gcwPQGAHka6VcR%2FoIR0djpj0wzXxjyqUDDKWZ4QGPX6%2BsQRF9EQbGyKY3HkMRN8ouCg2RDdM44BWpdlzvq7Qp4BLA%2FkeAOWXH4WUcbz1j0xETcjBMuhjQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=mSYWSaDJruEkPnqDiPDPN3pxzv9CZJd5oXwwTD%2FhcVBdJYvWvMNpPT7X%2BDafmPd3GEMBkPA7g7mh%2BeOywl1MygpFroxRjo%2Bqb6XaDRCN2imkG2J2fx1vVwSVskZImUZ2LjpHmA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2246,7 +2246,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreianegmkcj5gqluikm2atydp26wrs7vf42j2hwmd6clyvbomi7kyh4' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreigpnmd3dm2cvq7iiz3mq5nut5stde2bk626e4psysjir2tyjwlggi' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2278,7 +2278,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreianegmkcj5gqluikm2atydp26wrs7vf42j2hwmd6clyvbomi7kyh4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigpnmd3dm2cvq7iiz3mq5nut5stde2bk626e4psysjir2tyjwlggi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2293,13 +2293,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a20f7e836fe3-IAD",
+  "cf-ray": "79668d2d0b117e94-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:50 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:32 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=6KzDTFfxXojbHkMBU73WxFyndWeDO0UmrTctQU2rCWSdskJxOYLxJf%2FjArmvlfgC6npnXQ9iIkJSbSeN%2FE7Srj6%2Fa%2BcbffbjYFi3qLjXMAOhA0ODGApfmEZLwliWW9OxlqHVvw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=HznUDoKOZ%2B4r2XsOEKaIJnJNRxpcTC88YV0R%2FP5HELE%2Fbsc%2BJY5NWlB1L0%2FXrPHbavQC6VRAHRxFcu2aChh37ZpNhmbnEEU6XaWFSgzWqJQHBzyr82Y1ne9wi5J9nZnct8%2BqiQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2327,7 +2327,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreia2hh2d5jtozr6ic4b2hbhubyq2anyqzo66xcfp4t2n36nvmm3f4m' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreig3s3qbrls5vqwkkngf4lpkugd73zscpxomzov2azfv6op5ex3ggy' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2359,7 +2359,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreia2hh2d5jtozr6ic4b2hbhubyq2anyqzo66xcfp4t2n36nvmm3f4m","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreig3s3qbrls5vqwkkngf4lpkugd73zscpxomzov2azfv6op5ex3ggy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2374,13 +2374,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a215ccbc8245-IAD",
+  "cf-ray": "79668d3348cddba6-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:51 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:33 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=30%2BF2xvgPWRXIAuHCuNuSSHzFwZQfhf0IzM4JHm4%2BaRXFspMNsECf26HZNY4YgvssiMa93xn1%2FzYYpRWcZEuStGmU%2FGeoZN5FNS%2Bz855TRPRM31rcly0n%2BDzxrelMJsYcO4axQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=2r7fqGbzs2ED1GcROpmkxQDTbzRQZ4hPYSm7Ol1BeNPS4d1LQDwi2kALBGG5SlqSKFDE%2BoAvhiY08YreCYWrJPcaV2BafhKmlSzQnEoosgiI15uGIq5XLNBJwOH3kYRlJqkAyQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2408,7 +2408,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreidu5otzjbsyn35peqyzcjbhu4rju5niiep6sjhj6pdbvzo2sifmfm' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreicjfnfaja54e6gswubv4luacblvgyya35ihwmz7tiomrx3y3vsi2e' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2440,7 +2440,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidu5otzjbsyn35peqyzcjbhu4rju5niiep6sjhj6pdbvzo2sifmfm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreicjfnfaja54e6gswubv4luacblvgyya35ihwmz7tiomrx3y3vsi2e","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2455,13 +2455,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a21c08bd585a-IAD",
+  "cf-ray": "79668d398d162f43-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:52 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:34 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=fHWmYtfHOjBeCAenRHh3yR8aetMR9EqSUpQ0%2BZjUooY08FkvG2BDQu5w1oEtSQaq9ZSEXMx16TYfazN4EGm1dMfzpwvuFogi%2BL05U3JRz%2BHf%2FXAf4vA0NeHnQVAIVlgBbfhS%2BQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=pgHgTvgy7UPiKX9aAPxAskzHzT9XU2nS9zyS1pkUT5AjC8QgGB5r9E6wDrztujQe1msszN%2BbSb3%2F9hbAPjdgfmiswiyY1bYAqZcPb6DIeBHBeX6udmbg%2FDMH2EHa8F%2Bstx0mGA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2489,7 +2489,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreifxzgyjhhlhg35m6tgxueznqz22u5r7ffy3lukmovn4gtdonugvye' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreiewnug5jqfy4jp2d6itkixvt6icdlwdbecvial5uozax474raks4e' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2521,7 +2521,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreifxzgyjhhlhg35m6tgxueznqz22u5r7ffy3lukmovn4gtdonugvye","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiewnug5jqfy4jp2d6itkixvt6icdlwdbecvial5uozax474raks4e","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2536,13 +2536,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a22248338011-IAD",
+  "cf-ray": "79668d3fce0b7c7d-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:53 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:35 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=so5bO8kAXVlnELso1jr2im8wOql1WlfilUebIoekkt9HTQhhsg87qQv6Kn%2B5zrsQHWDndZl50y0zSOH4gq83MLPJdubWBMeVIphjibESHVKMSUJQ6Ya98eBpRn9zGA%2B8zAhKaA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=AyNti%2FZ1c8Vqpu5Lc0ENe89iWS9Vsc5rzV950LW4IniiW6Ipbxw0EGP8ZTf0RcWVvG9ZtLcqj47YKOrOQBFZ%2FHfbeKbaLBv0ANjyTEbNBnZC5YbKmHOGSqwn0Al2i4jO0O%2BELQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2628,13 +2628,13 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a22889685a1c-IAD",
+  "cf-ray": "79668d461cf62a89-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:55 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:36 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ZmL6bEn5V9VMzJRh6i9W6sQSQ81gmF7s98whT82Ecwcal58JETacA4Ao4aMYsl7MLbgAnDfTcu18lqae%2BvHte%2FBwz39R%2BMVpH9lfERlzr2FSq9%2FbS3nfVnSSGKUUsU3%2Fqx17Ug%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=v9tL329SVnMengM5MStpowQ77dAotI90yOJ44L4m%2B19jwzCpdvlekjid2TZqeB8qMyHSaRhcjDPoeWs%2FgaQM3BrazAPiWLZdXPUy9Tmt6zZfo69QDfOkw6B2TUwvqUgFg2Ta6g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2694,7 +2694,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2023-01-25T23%3A01%3A55.105Z
+GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2023-02-08T18%3A50%3A36.037Z
 ```
 ##### Headers
 ```json
@@ -2719,13 +2719,13 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a22b8d651fd0-IAD",
+  "cf-ray": "79668d476b975377-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:55 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:36 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=VNz8t329fhDq3ZK6n1kSnK%2FO8JYJj0Nxeocpba4uXD2YfX1IjxmWB1iu%2Feut7hpApSq%2BCc4demrt8tned7h6PuZ9NDLt63haPHShsrXme77LjaSf2Fu8MWrdzYLdo%2BFjKqemcQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=xtI9dBotOjCnSiMSfOeknfdb78xDxNdLPrEEpk14uRZfbv72kzECgkJ6PxkIUsnlrK6m8QPrj9YJAgtbg%2FdXo4VCeQKWx7xM8YY0joBAlRd3s9kWEToonDwcaWxOS%2BJOWCToSA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2981,13 +2981,13 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a1c478a92022-IAD",
+  "cf-ray": "79668ccf4c167ab7-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:38 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:17 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=29m6bKW1k5u3ao%2B0Uc2MOOKQcmsHCSSSTvxTCx%2FiXOfHnmi5l9GbBz0Sy2XshT940C1gCZIi9HbyWBn6rKgKWKIVoh4hbku42dPsOc64SffK430xhiMiCJx7Ss8ITrJ%2BzFR%2FKw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=4fy5K67YkIipZFv8RFRE200Cq0m2jkrfgf9Z1Qz3G2J2V4Qoz%2BMhL7oFLH3XFb2jn85vyvGPELwZu%2BSVsuWWpPt%2BvUYCKc%2Btpf36azcuG2VInNphc9HlBy8qkrRAKLwdml1d6A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -3059,13 +3059,13 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a237ffbb700a-IAD",
+  "cf-ray": "79668d53ebd62adb-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:57 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:38 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=mrttFz9zeqYlwPWHElVNorxVm7NJfyiAcSCDwbbXtcqCIggMMKAbEEmwxLD2TYx6q3gXZpfdtvMqdlAVSVV%2F%2BkEyktMKQAjuavbymjA0hebPnASrou3%2Bo1GAbtwLwK2kkclfVg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=UxlXmwy208ukUY6njiRuJivrHHdUjovQemFJ6wcjVT7BOC%2FWT2MdJdRqqYqBoDzAbZOElPyglnXjQzwh%2FgyqTkWeApV5K9nYmVBaF36k2BS3Fbs62S6LGdqaFyXpitX1%2BT3oEQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -3142,13 +3142,13 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "78f4a231b81e1fec-IAD",
+  "cf-ray": "79668d4da8777bf8-LAX",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 25 Jan 2023 23:01:56 GMT",
+  "date": "Wed, 08 Feb 2023 18:50:37 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=rfG%2F4uyUdjgN2ZZ2QbtDrHlXUed7JeuudpVuOhkqG11tQtLi0pUfUMMRNC6ihRJfCPcyVU3KbnlaZkTvGJJ%2B3Mt7WjjhhQXWPZn%2Bht2TencfjBMzd1BAEq8yhrLsLwSKTn64Ww%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=usNnEp3T%2F9dUaTqC2urTyYXJ4VTGtPSlawtdYoJLVEh%2FUQiGZKDtIEQvrBXZFaXadB0%2FHhNyyFNYlNjSxYO97TFBSLiF%2BfbwFBaU%2FVcBijXl3QqMQsmd%2F8uOu2mUH2%2FTPfv79A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
