@@ -143,3 +143,24 @@ jobs:
         with:
           name: web3-report
           path: docs/api.web3.storage.md
+
+  check-4everland-compliance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - uses: ipfs/aegir/actions/cache-node-modules@master
+      - name: Reports Cache
+        uses: actions/cache@v3
+        with:
+          path: docs
+          key: ${{ github.sha }}-4everland
+      - run: npm run dev-start -- -s ${{ secrets.FOREVERLAND_API_ENDPOINT }} ${{secrets.FOREVERLAND_API_TOKEN}}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: 4everland-logs
+          path: docs/api.4everland.dev
+      - uses: actions/upload-artifact@v3
+        with:
+          name: 4everland-report
+          path: docs/api.4everland.dev.md
