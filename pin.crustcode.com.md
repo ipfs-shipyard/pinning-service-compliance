@@ -2,9 +2,9 @@
 <script src="./telemetry.js"></script>
 # https://pin.crustcode.com/psa compliance:
 
-Execution Date: 2023-06-22T09:19:24.479Z
+Execution Date: 2023-06-22T09:20:20.807Z
 
-Revision: [d0df4e8](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/d0df4e8)
+Revision: [3d9aa58](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/3d9aa58)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/pin.crustcode.com.md)
 
@@ -14,7 +14,7 @@ Revision: [d0df4e8](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   🟢 [Request with invalid token](#request-with-invalid-token----success)
 
-  ❌ [Pins post of CID 'bafkreigxjtmymocngoe5bkmyz4o3n447dsgk6ana27mf5qxknhb2j47squ'](#pins-post-of-cid-bafkreigxjtmymocngoe5bkmyz4o3n447dsgk6ana27mf5qxknhb2j47squ----failed)
+  ❌ [Pins post of CID 'bafkreieke6ibtrejvsewf2jajg3xjiyqykitbqrx5emmap73vpkkoqhm5e'](#pins-post-of-cid-bafkreieke6ibtrejvsewf2jajg3xjiyqykitbqrx5emmap73vpkkoqhm5e----failed)
 
   ❌ [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----failed)
 
@@ -22,7 +22,7 @@ Revision: [d0df4e8](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   ❌ [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----failed)
 
-  ❌ [Can create a pin with name='82f47a2d-c0fe-4970-a89e-8a360d33b494'](#can-create-a-pin-with-name82f47a2d-c0fe-4970-a89e-8a360d33b494----failed)
+  ❌ [Can create a pin with name='b66a39e2-4c6c-499f-a37e-89e16d12ac53'](#can-create-a-pin-with-nameb66a39e2-4c6c-499f-a37e-89e16d12ac53----failed)
 
   ❌ [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----failed)
 
@@ -72,13 +72,13 @@ GET https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db367c51b8b0a93-IAD",
+  "cf-ray": "7db368c39f64479a-DFW",
   "connection": "close",
   "content-length": "63",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:41 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:23 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=gBkciTlrXlRGa0oGGHw%2BDxWtLE5WFJl7ZkmrJE6sybEkSxNpsyuwJxMRqpVi53ZxH6WQ8AqGa3M4MxTPLjH0omGKLSjqcW39%2FEqP1pNRDWv1WV%2FIjCRSG0OIRtVo7atXQCV4rA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=sd4anR7tmHE5WwnpwDD32mMHwn%2FybLpcrQTCNgV08KLWGMbZzkVhZk4IZIIpQ4WP3l1y%2Fyl%2FV%2B1wDmt%2F7zXLE%2BxkaJYogMQWFufEmdDGgtZayOKKHxlMSaEzS7chJQk71p%2FR3w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -152,13 +152,13 @@ GET https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db367cb5b7e065c-IAD",
+  "cf-ray": "7db368c9dce13ace-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:42 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:24 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=7om8VOzeL3UxOUpv6xxGWqKuFkflQyYIPSwzUniceAxq6UyFCIZfQndpHvgCQJ%2B8P5%2FF4BYxWmMKFzOJjEq8Zpkj6gFamfAsR8RAzabOo12%2Fx8PAPIkQEsAYu3cQCOYc2uB%2FKg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=VxRxeO715Fxzr%2F6HZhausQBGRHA7owgqIGkwtyuOcLCOQpU0tXRoXq4G%2BtoQ6Jqc8ZXVsvn%2FwcP3SpCnjVF3%2BlJkiWHn8SRJmxEGZ4nuKnJZlyDZIqEYOcbGce%2FWQOwpeDUj8A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -186,7 +186,7 @@ GET https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Pins post of CID 'bafkreigxjtmymocngoe5bkmyz4o3n447dsgk6ana27mf5qxknhb2j47squ' - ❌ FAILED
+## Pins post of CID 'bafkreieke6ibtrejvsewf2jajg3xjiyqykitbqrx5emmap73vpkkoqhm5e' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -232,7 +232,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigxjtmymocngoe5bkmyz4o3n447dsgk6ana27mf5qxknhb2j47squ","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreieke6ibtrejvsewf2jajg3xjiyqykitbqrx5emmap73vpkkoqhm5e","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -247,13 +247,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db367d1986007bb-IAD",
+  "cf-ray": "7db368d02c3d4788-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:44 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:25 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=NjVaHPjzoTFyhnwwtviqMEJzKs1ZVVxMgLT8QFE2A0bW%2F6dGwb0ByzV4B8hE9lEH5Bp1ztsYjLXyG%2FzoWWtJ5Ku7gP3GGO9PZSVCg5Swm08K1SC1yYeDMx4KG01MxutyG%2FniDQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=R0Oq2EGAYXDKCNInwiOyNBdHFrGg3WWoYEFjHVLoK7Adn0vjDcPj%2FSkCymjWP%2BnSCJXcFIeT8Wql1OXGICicOrzpq59L%2FLd9ezxD0TgCIF%2FF8EX%2FSzWfhuxRHIJDYNBXPWZqjA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -327,13 +327,13 @@ DELETE https://pin.crustcode.com/psa/pins/null
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db367de1876f889-IAD",
+  "cf-ray": "7db368dcab5c2e69-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:45 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:26 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=BuHAhrPN8TOBtkG40O6%2BbsCzr%2FYahavhnv75JgSof00U440gEEe1Urt0PmPQYuyMc4uGSI9PtdHJCrUEHiORlIQ3mVh0Sy5JxQI7BTcXGyHP02Mvyuq%2FO6k6MxUgGtUeYQEY9A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Uf%2F72Q8MZp0WXVMXUvsrlJev8eWiTVXc7N7O418MhLbjcJXJChbLPzdMVCHLWItNG43oXhpsd%2FarWfcDAg6PhIH44KKZBgkshLoaeMvs7q7BVgNLh0Bt%2BYzlGSo44jjhrHRKdA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -402,7 +402,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidkpzrnfhqfneixyli22x2vufygrcvpb2r2adw7p5ftwclsslheoq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreibzilyjur2e3vcnyarz5qfpiqqcz3qdkzrh52ogkkrc2afsccnmlm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -417,13 +417,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db367d7d9e857bb-IAD",
+  "cf-ray": "7db368d66e41aa82-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:44 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:26 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=v805LEBveUPBtK41hsRGAs092ZU%2BXVsK06aZeXZVfx2MOU3BdCaE2repq0owF59wbzaM5vHeMGY4LIPXxwL9C%2F9kUgffsSi1PYyqIEXxkXEGSuYeXvfMmP0qsJuOpVjw4HYG4A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=7zHr%2F2TwFRikZ4P9PB1vGKmliDnDLaHpqeI1AsLdYsysyzotpridWFh615YMrU5gt4QHxKAxkpgBVCI8eQhjSoLFB91qr2c6Y%2FD56GNGF0etHXLX1RUIf9n8bQI4c2Me9%2BZ37Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -497,13 +497,13 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db367e18fdc8233-IAD",
+  "cf-ray": "7db368e0dff7ea60-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:46 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:30 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=2sDGIPIWHEIkX%2FoCfk54zLEE5tBTQ9ZGueKwS%2FjhyEsfb4QEQuLHDj4oZ7QS9dr8IcyQi7D8pEnLk3quygmVsEIdqyBJl8ho%2BDNfFlKhYrT8tSC0saAD%2BSK%2BYaw0RTRekrT3hg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=O99T9q4mwBEneSC9983JQiZ2TRJtvHrbjx9QiSMWc7rH%2FMlwaXhtjesfnJJgobW3Ld1B3evd2BGCiowj06kRlg%2Fzv5Y6AkjEPjkAaP5mGpkHbDWbnZF9wzHmXPADsEhW6DVCCQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -575,13 +575,13 @@ GET https://pin.crustcode.com/psa/pins/null
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db367f44bb207c4-IAD",
+  "cf-ray": "7db36905eb0be99b-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:49 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:35 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=8L1fkq3cCsE%2B74geY%2BkL9%2BnD6DAEJnWCCtwosXqXiAFdEvKl948B%2Bdj6GTv7DDdEPQe9s4XdvBdReaOuXdXBUv%2B7ffSaJMGJBOS%2FjTS2icqZCmBHKpH7Qun0KYzxah2EiavjFA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=gBDud4Hl%2B0PJ%2BS%2BFMQc%2BANVNQcOafAaSLtIZ8g3MuZvLVl5raIS%2BeRmdbVS1LFjLykbeE47g8iP33hGAdptbQAjcTclsRdRFiS8DtsT8L0FZo1LJdrWcpN2ax%2FUS5uk0KfEb5A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -653,13 +653,13 @@ GET https://pin.crustcode.com/psa/pins/null
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db367fa8b133b4d-IAD",
+  "cf-ray": "7db36914f92ae524-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:50 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:36 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=GXJnCcNeQGc4jypGl7uCfWu92fCorh8cA09F3YT44hB%2BSJZ0jzkbrLP5uAi%2FMAEVj77rJuoCG895u7Pt%2FKy%2FzaANJd7Ac5WYnsUhpOhwdHaEKFzhr0oGwPzj2d%2FVcvauXsnw6g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=w8NlnA5qI5Wt4pciu8BKHm4Go4YsVqPwh6pQZj7r%2BHGAgdeVXaDLH80Pa0Ef4GKaDYrEwoNcmvH2d23xFoC6PLcA6JLAzuaewR5T3aUO6No4hDSRlCXeSqTmGDhVSaG2utC7QA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -687,7 +687,7 @@ GET https://pin.crustcode.com/psa/pins/null
 ```json
 null
 ```
-## Pin's with requestid 'null' can have cid 'bafkreieu4wqni3qqee4e453hleimvlwvpwf7fjreryez53myy4iee5yv3e' replaced with 'bafkreibirzbi52zblwf6ctsvm2negmtxb42g2wrw6e7l5w7xxgnrrq55ha' - ❌ FAILED
+## Pin's with requestid 'null' can have cid 'bafkreiaksofke3ubp575btvrhsurvgddy4h2kishehn3jjiyko76uvbgfu' replaced with 'bafkreigqvrlfsgqwp6vv4qda4bxulzf6xpllvdbptwq2cayqtizy3hjaqm' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -729,7 +729,7 @@ POST https://pin.crustcode.com/psa/pins/null
 ```
 ##### Body
 ```json
-{"cid":"bafkreibirzbi52zblwf6ctsvm2negmtxb42g2wrw6e7l5w7xxgnrrq55ha","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigqvrlfsgqwp6vv4qda4bxulzf6xpllvdbptwq2cayqtizy3hjaqm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -744,13 +744,13 @@ POST https://pin.crustcode.com/psa/pins/null
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db367ee0adb081f-IAD",
+  "cf-ray": "7db368ff99023172-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:48 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:32 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=K6dJQxXlBxQTHBRnr1ZV7tEe0lInvVK8SLn6VUUTXpU19LXIusyAALCTy6VpG3y9zgtEfUVan9OP41DH8PTr42ksbZf1BVk3aurhitMI35ytntgONIh%2BIbh3mwMjEbb9IgFGrA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=BR5CBb4b9dz0a7efrV7QPGR2opj9FttfVRgenPrXc4%2BCsyA7jF53aUMDFKJ%2Fhmdd3NeA4S%2Fc0m%2Fy%2BPzq%2FcobVW4SncNWn5aQUZ3TcRB68HLz6kY2UodiwvR9kb5HHl2IoTcgeA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -835,7 +835,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreieu4wqni3qqee4e453hleimvlwvpwf7fjreryez53myy4iee5yv3e","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiaksofke3ubp575btvrhsurvgddy4h2kishehn3jjiyko76uvbgfu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -850,13 +850,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db367e7c88f205e-IAD",
+  "cf-ray": "7db368f95cf8e76a-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:47 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:31 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=NQ72fok2Xqq5B2anqR0rt1Cxn9i5dVxzCr7hF7wMjQ2NPnItin4aRj9malmUEex1EWtNgmOxKKNCMD%2B81xCr2%2BD1vCdnxHrL21caj6IqtyA9pP68VfV2BLPsAqZSY1K8arxBQw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=1UuYsUHhINgHOrjI58P6cQN5rhZLj8Jrxwwz36vkWX3cwMfEf6FSZXQsoqdx3iIuqajtvozfW%2Ftd8vt8lmJ%2BFGbXIq8GZoMqRMIOayp35Mo0zvizA5Z5Wjwbyhdc4XoeWwGj2Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -884,7 +884,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can retrieve pin with name '82f47a2d-c0fe-4970-a89e-8a360d33b494' via the 'exact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name 'b66a39e2-4c6c-499f-a37e-89e16d12ac53' via the 'exact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -909,7 +909,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=82f47a2d-c0fe-4970-a89e-8a360d33b494&match=exact
+GET https://pin.crustcode.com/psa/pins?name=b66a39e2-4c6c-499f-a37e-89e16d12ac53&match=exact
 ```
 ##### Headers
 ```json
@@ -934,13 +934,13 @@ GET https://pin.crustcode.com/psa/pins?name=82f47a2d-c0fe-4970-a89e-8a360d33b494
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36803eaa381be-IAD",
+  "cf-ray": "7db3692cdf453ace-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:52 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:43 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=qf5k85CV9JpB1xAb8OKtwhHdIS3t5qS2xkGFO60r4rBQj7eqv55uhDmgfc6BJn7TflKolf2NivPNwW1W1f0kRkOxsVt8crpTFQCkymWXc76gcg9szIWzekc74R2cLLCPcuHxRg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=eVJGnEXfYg0mrAFt%2Bqe1IcOwOVGigm9k%2FoEddasJKEHc16bzphd%2FHZrReLLmG3K555OPJCdQ1Plh29XsYc3nHQwp9A5Qt0zPZx1KjjfVO8X3VvnDa434cHk5OC9iTz6%2Bx9Lacg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -968,7 +968,7 @@ GET https://pin.crustcode.com/psa/pins?name=82f47a2d-c0fe-4970-a89e-8a360d33b494
 ```json
 null
 ```
-## Can retrieve pin with name '82F47A2D-C0FE-4970-A89E-8A360D33B494' via the 'iexact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name 'B66A39E2-4C6C-499F-A37E-89E16D12AC53' via the 'iexact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -993,7 +993,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=82F47A2D-C0FE-4970-A89E-8A360D33B494&match=iexact
+GET https://pin.crustcode.com/psa/pins?name=B66A39E2-4C6C-499F-A37E-89E16D12AC53&match=iexact
 ```
 ##### Headers
 ```json
@@ -1018,13 +1018,13 @@ GET https://pin.crustcode.com/psa/pins?name=82F47A2D-C0FE-4970-A89E-8A360D33B494
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3680a2ee007e1-IAD",
+  "cf-ray": "7db369462f45e98b-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:53 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:45 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=P45jPeqj%2FgTsYtnD6rLU63TaWQHd6XIC%2Ben50ZcAqYrstBxmau7puuCMwGzbjI0qqYLL9rephz1aj5OlEjPmJZ6BAySD3ZhPdJnzs7rgvOYcfISdlXFro6vI1%2BEmVkcKy5TZ%2Bg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=93dRnpWS9Xp8RqLOTVlsZEX%2BTRm1l4oErdZ5BUO5uo9fLAHPErtzSMLDpbWk4xR36y1MFWFsm%2B1rLZCxv3oCyX11w0bd1t3OJtM%2FgGMNWO6zkqOUJ9ncVO1519gBrVrRgwr8NQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1052,7 +1052,7 @@ GET https://pin.crustcode.com/psa/pins?name=82F47A2D-C0FE-4970-A89E-8A360D33B494
 ```json
 null
 ```
-## Can retrieve pin with name 'c0fe-4970-a89e-8a3' via the 'partial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '4c6c-499f-a37e-89e' via the 'partial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1077,7 +1077,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=c0fe-4970-a89e-8a3&match=partial
+GET https://pin.crustcode.com/psa/pins?name=4c6c-499f-a37e-89e&match=partial
 ```
 ##### Headers
 ```json
@@ -1102,13 +1102,13 @@ GET https://pin.crustcode.com/psa/pins?name=c0fe-4970-a89e-8a3&match=partial
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db368106b707fae-IAD",
+  "cf-ray": "7db369570cdd4671-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:54 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:50 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=55tSi0oVjOU89etlCvRFAbOIowgVGl2A4g596NnzfoXonFO%2Fw6POpcCqm9mwCVSw7EO2HpEvSEzHUIhvSRRK2Rc08pJw20ncNkWojp572mK3TLNFZmholH1OYnmRZ0zRAsY%2F4A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=e8yYTVeFaqTHloUeD8KzCYIYfEn%2Fp6QKR%2FIZiujMqgdF2wTmK6NQ3hTV7Cmz2ioMw01el3Nw%2FHsbZCfP0DeJvI5CVBCbl1IR9EeeA%2FOMzfIpnl9yMZSAV0lzT7xszaGknEmzUw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1136,7 +1136,7 @@ GET https://pin.crustcode.com/psa/pins?name=c0fe-4970-a89e-8a3&match=partial
 ```json
 null
 ```
-## Can retrieve pin with name 'C0FE-4970-A89E-8A3' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '4C6C-499F-A37E-89E' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1151,6 +1151,18 @@ null
 
 ### Errors during run
 
+  ⚠️ SyntaxError: Unexpected token < in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsGetRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:217:26)
+    at async PinsApi.pinsGet (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:232:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/matchPin.ts:15:27)
+
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
@@ -1161,7 +1173,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=C0FE-4970-A89E-8A3&match=ipartial
+GET https://pin.crustcode.com/psa/pins?name=4C6C-499F-A37E-89E&match=ipartial
 ```
 ##### Headers
 ```json
@@ -1176,51 +1188,167 @@ GET https://pin.crustcode.com/psa/pins?name=C0FE-4970-A89E-8A3&match=ipartial
 
 #### Response
 ```
-401 Unauthorized
+502 Bad Gateway
 ```
 ##### Headers
 ```json
 {
-  "access-control-allow-headers": "*",
-  "access-control-allow-methods": "*",
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36816af4c81fa-IAD",
+  "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+  "cf-ray": "7db369728d6de5ee-DFW",
   "connection": "close",
-  "content-length": "65",
-  "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:54 GMT",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=JjmxTMXx2iKi7j3nk3jYarbZJ%2Bj8nMpgWefRr4RJZMKm4eSkHIBbW%2FwZSBsHDJobXC1r2VFRmDQa45KSqjcxvJTfQiti63E92hyLSROEFtH6qACECXsikgChCVFDIy5Ib3wFZg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "content-type": "text/html; charset=UTF-8",
+  "date": "Thu, 22 Jun 2023 09:19:59 GMT",
+  "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+  "referrer-policy": "same-origin",
   "server": "cloudflare",
-  "x-powered-by": "Express"
+  "transfer-encoding": "chunked",
+  "x-frame-options": "SAMEORIGIN"
 }
 ```
 ##### Body
 ```json
-{
-  "error": {
-    "reason": "UNAUTHORIZED",
-    "details": "Invalid Signature"
-  }
-}
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>pin.crustcode.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="inline-block">Bad gateway</span>
+              <span class="code-label">Error code 502</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2023-06-22 09:19:59 UTC</div>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Dallas</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">pin.crustcode.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">7db369728d6de5ee</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">40.122.235.118</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
 ```
 
 ##### Body (as JSON)
 ```json
-{
-  "error": {
-    "reason": "UNAUTHORIZED",
-    "details": "Invalid Signature"
-  }
-}
+null
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 null
 ```
-## Can create a pin with name='82f47a2d-c0fe-4970-a89e-8a360d33b494' - ❌ FAILED
+## Can create a pin with name='b66a39e2-4c6c-499f-a37e-89e16d12ac53' - ❌ FAILED
 
 ### Expectations (0/19 successful)
 
@@ -1285,6 +1413,18 @@ null
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
+  ⚠️ SyntaxError: Unexpected token < in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsGetRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:217:26)
+    at async PinsApi.pinsGet (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:232:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/matchPin.ts:15:27)
+
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
@@ -1306,7 +1446,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreifgm25lm2hgbfvdfkgsl3zmg3vqgcxqjagyfvird2474v2tq6muge","name":"82f47a2d-c0fe-4970-a89e-8a360d33b494","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreih7gvvxcgapanegjo3auxcmusk26tv6gdz2dycps2ja3egqomnadq","name":"b66a39e2-4c6c-499f-a37e-89e16d12ac53","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1321,13 +1461,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db367fdae8d82b6-IAD",
+  "cf-ray": "7db3691abca445e4-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:51 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:38 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2Fdn%2FbSYKpVsEVr7rCQqCwu%2F1NYdVNnAE6lfuMlUDntbO2unPmeZTLm63VErAa2%2FFlveRiDI4tvlRB5UkmAuG%2BqRyz7uEIaDUxcd2bgVtUiWLlsk%2FT6GsHh7dGj92XBGJCBe8vw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=kW5jtz0ntZknn94ZrAtelmBFbx6DY8xJLCeIGVlJE6tYoMfcfuEe7hs1iKPisrOMlktkee7z4RVZ6uIq%2BuIrckCL6MWknsKnn4r1ESTsnM4t8o7rTPnXGX2INn6Ns%2BL5mA7TlA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1355,7 +1495,425 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreieblchn5pjmj33lkn4ix7nyzifsmzgskiqpwitm2lyz3a4jxwr5vy' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreif6aldgnrcepmgr643omtbwjnjjy2nx4lzren56hb5teflz6wk5tu' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected token < in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://pin.crustcode.com/psa/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreif6aldgnrcepmgr643omtbwjnjjy2nx4lzren56hb5teflz6wk5tu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+502 Bad Gateway
+```
+##### Headers
+```json
+{
+  "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+  "cf-ray": "7db369b69e18345c-DFW",
+  "connection": "close",
+  "content-type": "text/html; charset=UTF-8",
+  "date": "Thu, 22 Jun 2023 09:20:01 GMT",
+  "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+  "referrer-policy": "same-origin",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "x-frame-options": "SAMEORIGIN"
+}
+```
+##### Body
+```json
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>pin.crustcode.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="inline-block">Bad gateway</span>
+              <span class="code-label">Error code 502</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2023-06-22 09:20:01 UTC</div>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Dallas</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">pin.crustcode.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">7db369b69e18345c</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">40.122.235.118</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreicigbfb3jg7g7udegwgsh2rj4ip53qnk4qdgvwjf42iunm4nnjpja' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected token < in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://pin.crustcode.com/psa/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreicigbfb3jg7g7udegwgsh2rj4ip53qnk4qdgvwjf42iunm4nnjpja","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+502 Bad Gateway
+```
+##### Headers
+```json
+{
+  "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+  "cf-ray": "7db369bcec43aa46-DFW",
+  "connection": "close",
+  "content-type": "text/html; charset=UTF-8",
+  "date": "Thu, 22 Jun 2023 09:20:02 GMT",
+  "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+  "referrer-policy": "same-origin",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "x-frame-options": "SAMEORIGIN"
+}
+```
+##### Body
+```json
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>pin.crustcode.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="inline-block">Bad gateway</span>
+              <span class="code-label">Error code 502</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2023-06-22 09:20:02 UTC</div>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Dallas</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">pin.crustcode.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">7db369bcec43aa46</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">40.122.235.118</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreiaeaf7nyqraguej4p7d6zgnnf7egsoosgdivslolydvqsa6ok4p74' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1387,7 +1945,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreieblchn5pjmj33lkn4ix7nyzifsmzgskiqpwitm2lyz3a4jxwr5vy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiaeaf7nyqraguej4p7d6zgnnf7egsoosgdivslolydvqsa6ok4p74","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1402,13 +1960,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db368201a75397c-IAD",
+  "cf-ray": "7db369c32856aa49-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:56 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:05 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=u8yfK1iWCPayt98U7HFd9ldkNpsa%2BGIGkvnbW9viWTiWNkPdD48Bgn2fe5BZc03XQ4Zm4s7rQPla2rjQIBlNzRDxOqbAE9ASmw6V1B85IHbpmwH89AFL5Ynj4u2qk9tj0B2WiA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=lkKj64UqDSP5Mb6eomgWnZWigDFudy1YXwaesSaLNfc%2FWW1t71u%2BPd5jOganObKDtkpe61D20jx35Znoshrx9TuOCGxoTE%2BGNvBOjoGoWy2b%2FRofaB%2BjTxgweK6HZScN5LnrlQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1436,7 +1994,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreibbgyaj5t52auezljbphkuftfacmijmpsqijbpfwjjos73wulh3ii' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidf4tw4zwih3rdkhfvlcrhwrwhnehfzcnwdzqx7rvxhmosnscycpe' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1468,7 +2026,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreibbgyaj5t52auezljbphkuftfacmijmpsqijbpfwjjos73wulh3ii","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidf4tw4zwih3rdkhfvlcrhwrwhnehfzcnwdzqx7rvxhmosnscycpe","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1483,13 +2041,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db368265f900825-IAD",
+  "cf-ray": "7db369d16ee60b99-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:57 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:05 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=feFZf5o2KwZugWMUwP%2FGMRWhLunXrGSGMt34DggZRORJ03yQF5vKsp1NQcI0gCmnJ%2BCgDcX9qRNN2QUKAIzpT0Rb1eifJ4uydR4BthFDjIWMQEMJ1CsvC6LgOxxibch2NWN7sw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=h4ksLHD1eJRSNMxdV7A93bvajgOePo1fSFXLDvSyiQKgvQnwLz5glyE02m6Ggx4OMWilSzsJNAO%2Fw4%2FCBJdU5EBUo3n90zOOEjNl%2FJZ1P71bhctlO3l%2Bo93KJmapU2jA01Gdfw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1517,7 +2075,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreicvisg7jh2674aklsgasw7zs5rcegfvlbpkrcvrrbwdedo3rsxkiy' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreifky7r2rqtnfnjvnib4i7tf534uwwctdcb2pnynxukgf2ipveukiq' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1549,7 +2107,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreicvisg7jh2674aklsgasw7zs5rcegfvlbpkrcvrrbwdedo3rsxkiy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreifky7r2rqtnfnjvnib4i7tf534uwwctdcb2pnynxukgf2ipveukiq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1564,13 +2122,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3682c9c668218-IAD",
+  "cf-ray": "7db369d5d8e43ace-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:58 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:06 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=R%2F9yCeUYpXoWpC7jjIcGGrKsqlSY6RVlRSHEbgNP1f8tMqol%2Bpa3uIM%2BkwkC8vTy7DGIHYmcrtFZODJMhIuZcmrrKwCVasDG3GDAD4dn%2B%2B0cysLkbNtQ6DjFd2QC8Z77dVDOQA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=bw3arpFoqnQ1FMW1U8I2AUZULMFGOCQUwMy1sOvmpcB9huS7qmrzcs4NfJXrHJU%2FmMEmChKOWAkGgxQGdlScefWgaOslQ5CRl3FMHRX5d%2F1Kp14tkUZHEuYNsDNaW3tEiuWXGw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1598,7 +2156,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreihsrcpcalmijlbto3bvjkgpbd6relfstpxoqc5czthbh6m762mlme' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreiddhonmbv3i3w2cnhqmmhuxnlmrdybfbkmjeoxlav3qpnyoosj4ni' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1630,7 +2188,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreihsrcpcalmijlbto3bvjkgpbd6relfstpxoqc5czthbh6m762mlme","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiddhonmbv3i3w2cnhqmmhuxnlmrdybfbkmjeoxlav3qpnyoosj4ni","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1645,13 +2203,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36832eddf206f-IAD",
+  "cf-ray": "7db369dc297ca9f2-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:59 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:07 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=oyJ9gqF4e1JTl2lUzn83JpZLrcwygW7Mg%2FybULIn0E720htoXvT7Tdez9Os4JFpyo7cwFlH852EzQ01kxme3N9g1xr23lnOfefSiVUhQ7LkdmOc2eBvA1iyaWiCNIHInc%2FuPZA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=CKG6Obuy56p8tIKNh74MUEyJGURJtee7tDqFDAbljjm73REgrWPdCdgEGQZhLBWzblXoS6nWS3xvDJV%2F9AIn5sAVNbIOQTMkoIHbnnmNbO5qCr4Ze82wDSR4s10I%2BWNG1BTyog%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1679,7 +2237,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreia3iqlxetz2ayuqstfehsrt55jn5gzjb5nclxu7kwv2wkdulilek4' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreid2u2enrfaexwhwqrjz2n5qpmfpqo5heswupbcvjr6rcxo3ots6ui' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1711,7 +2269,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreia3iqlxetz2ayuqstfehsrt55jn5gzjb5nclxu7kwv2wkdulilek4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreid2u2enrfaexwhwqrjz2n5qpmfpqo5heswupbcvjr6rcxo3ots6ui","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1726,13 +2284,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db368392a7d5b0b-IAD",
+  "cf-ray": "7db369e269334602-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:19:00 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:08 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=sjUcKlDUhrduwZbMZF5vlBcWFhnfHMwnaG6zrA5Jd%2BfEWivou9tXCH1%2BQNE6FyB8wNBHmvIGCrOPx%2FquTUCocMGo7KXveB2ScVA0gvToJGqqKY0qzeWgrAkXJaobGuw3dJH2sw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=YdU7J1cUJyT%2BQ89MT2XmrknpLUT3817XA%2Bp7aynRNImL31X67cgLYG5PePnk8EEpFrUDh%2BOc0flcO6ZiiLipg%2BuTwkPJsOjW30%2BetnsUikDhYG869AoZBx%2B1s34fXYTwdosTyg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1760,7 +2318,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreidv3sspgjqjfggluhytuk2tpwtphdrt2olana2tasrv2wdekmqauu' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidkb4d262dqmd44q3csrac5x2zgnu5w2i4jtm6qq5husoofpfuyku' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1792,7 +2350,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidv3sspgjqjfggluhytuk2tpwtphdrt2olana2tasrv2wdekmqauu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidkb4d262dqmd44q3csrac5x2zgnu5w2i4jtm6qq5husoofpfuyku","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1807,13 +2365,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3683f6d359c3a-IAD",
+  "cf-ray": "7db369e8ae1f2cd6-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:19:04 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:09 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=UHy7lGcGiPJjVJW1kuV5ywfgU3r%2B4laxua9rutudhWDauBiRAfqw1NjdhGD9lOP0DfFeeH2nPZc6hYv5R58kMF7KYRke2d9pplWIZSy7APmvdxMkmak6mV6Wm2tSY035lCYGig%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=YiD%2B90kK3rjKoX01SpAsftth3MXq%2BzPeqN%2FaWUVDq00l5%2BKkWw35wTxK1KeQX0ttiRKie7H%2B7R%2FN%2B0NzJ424%2FjVGHQVxCt%2FMdcf6CoNlYPp%2BxrxjaizxPSPIwPRzi7HmnWsYxg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1841,7 +2399,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreidnzab237sknxswo4ype52ru4ov7y5oewenltxxa5utsgrn6coywq' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidbwodzsop4ttqbffi37bymf2eybo6vru4oub3ntxblfgc3hbrfm4' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1873,7 +2431,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidnzab237sknxswo4ype52ru4ov7y5oewenltxxa5utsgrn6coywq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidbwodzsop4ttqbffi37bymf2eybo6vru4oub3ntxblfgc3hbrfm4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1888,13 +2446,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36855ce1e3908-IAD",
+  "cf-ray": "7db369eeec412c92-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:19:05 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:10 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=cPp1kNHqZ0oJrdmDS%2BJXqhd6NqlY38xkilwlzOdyGMc%2FoSJVTzqtYioMyNDN18OjwpDzM5ELKFGBT3Ytm1hgnI%2FazoxfN09WIkLF1o2l1B9K%2B9a%2BCPaafrNMRj%2Fu77YsiD0arA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=IcQNjmNA%2FiVh9uYYWp5Fm0V2I2NgBzvZpN0uo9OkrnjP1WfY2ipos7DBnutHF0OaJn1sc%2FPhq6KQGH9pG2j9SNQeYYACa7TnwnIyiBqiYUPhzhVqkcXXGQTS51fsyh6sfFQlcA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1922,7 +2480,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiauiepxr5hmec6vjxix3uok7nonn2wbyf3awn3w6i3wolexwto4ta' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreibqchyv7e43czasoc6r6hiomujuanvzu6gyikgonqcispc3qohumi' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1954,7 +2512,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiauiepxr5hmec6vjxix3uok7nonn2wbyf3awn3w6i3wolexwto4ta","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreibqchyv7e43czasoc6r6hiomujuanvzu6gyikgonqcispc3qohumi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1969,13 +2527,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3685beb411776-IAD",
+  "cf-ray": "7db369f528370bdd-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:19:06 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:11 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=HnMnH7X27d%2FlO5KnNeiYFhGG8C%2FfkX5rWSKzcKFT4U8JWTsX8s%2Bt%2FdePUOyMCpzow5T1odeuzjMEIvbpBNnuRIYqK%2BplOdQ1%2BoF5YnlBJ6tI%2B0K0ZdgvYciZ%2FkWGnNKZCRoBxQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=daYxRxdU27n19%2FUy9dT2Iyc62aK8RI90jBBZDbQbvRDKb1r8oSkq4p7JVF%2Bm5yzfUV4TmJu2%2BR35uf385%2Fx4Guq6usp3xZ0%2F6F0FED1CbDC3rpbe1Jnzm0Eoxm9lqLMHNb0OFQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2003,7 +2561,634 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiepldfecgk2dcolqczpmgp6dfckktot3rvvmxidjdtoxxivn3hfle' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidrago635mnflvglawsxxle42ltoi4j7bnj4nuudw5u6cnmsy43sm' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected token < in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://pin.crustcode.com/psa/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreidrago635mnflvglawsxxle42ltoi4j7bnj4nuudw5u6cnmsy43sm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+502 Bad Gateway
+```
+##### Headers
+```json
+{
+  "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+  "cf-ray": "7db369fb6b032e69-DFW",
+  "connection": "close",
+  "content-type": "text/html; charset=UTF-8",
+  "date": "Thu, 22 Jun 2023 09:20:12 GMT",
+  "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+  "referrer-policy": "same-origin",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "x-frame-options": "SAMEORIGIN"
+}
+```
+##### Body
+```json
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>pin.crustcode.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="inline-block">Bad gateway</span>
+              <span class="code-label">Error code 502</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2023-06-22 09:20:12 UTC</div>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Dallas</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">pin.crustcode.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">7db369fb6b032e69</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">40.122.235.118</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreie5vke34odr36ogntpavex6gr3wyz3oh37mfnzs6iqd7di7bbjhbu' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected token < in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://pin.crustcode.com/psa/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreie5vke34odr36ogntpavex6gr3wyz3oh37mfnzs6iqd7di7bbjhbu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+502 Bad Gateway
+```
+##### Headers
+```json
+{
+  "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+  "cf-ray": "7db36a01a8dfe85b-DFW",
+  "connection": "close",
+  "content-type": "text/html; charset=UTF-8",
+  "date": "Thu, 22 Jun 2023 09:20:13 GMT",
+  "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+  "referrer-policy": "same-origin",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "x-frame-options": "SAMEORIGIN"
+}
+```
+##### Body
+```json
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>pin.crustcode.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="inline-block">Bad gateway</span>
+              <span class="code-label">Error code 502</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2023-06-22 09:20:13 UTC</div>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Dallas</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">pin.crustcode.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">7db36a01a8dfe85b</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">40.122.235.118</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreiaxeflg27li5m2z5p7wdaq23jqmtgjdm6rpu6xja2ljddgkfzrwri' - ❌ FAILED
+
+### Expectations (0/2 successful)
+
+  ❌ Response is ok (failure)
+
+  ❌ Result is not null (failure)
+
+
+### Errors during run
+
+  ⚠️ SyntaxError: Unexpected token < in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+
+### Details
+
+#### Request
+```
+POST https://pin.crustcode.com/psa/pins
+```
+##### Headers
+```json
+{
+  "authorization": "Bearer REDACTED",
+  "content-type": "application/json"
+}
+```
+##### Body
+```json
+{"cid":"bafkreiaxeflg27li5m2z5p7wdaq23jqmtgjdm6rpu6xja2ljddgkfzrwri","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+```
+
+#### Response
+```
+502 Bad Gateway
+```
+##### Headers
+```json
+{
+  "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+  "cf-ray": "7db36a07e90b4698-DFW",
+  "connection": "close",
+  "content-type": "text/html; charset=UTF-8",
+  "date": "Thu, 22 Jun 2023 09:20:14 GMT",
+  "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+  "referrer-policy": "same-origin",
+  "server": "cloudflare",
+  "transfer-encoding": "chunked",
+  "x-frame-options": "SAMEORIGIN"
+}
+```
+##### Body
+```json
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>pin.crustcode.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="inline-block">Bad gateway</span>
+              <span class="code-label">Error code 502</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2023-06-22 09:20:14 UTC</div>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Dallas</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">pin.crustcode.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">7db36a07e90b4698</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">40.122.235.118</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+```
+
+##### Body (as JSON)
+```json
+null
+```
+##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
+```json
+null
+```
+## Can create new pin for testing pagination cid='bafkreifenbjxbgh5ddddsm5pvqlz5itkxwxzwiimsj7t6djearrl42zlrm' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2035,7 +3220,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiepldfecgk2dcolqczpmgp6dfckktot3rvvmxidjdtoxxivn3hfle","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreifenbjxbgh5ddddsm5pvqlz5itkxwxzwiimsj7t6djearrl42zlrm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2050,13 +3235,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36861ca953aed-IAD",
+  "cf-ray": "7db36a0e2df9ea57-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:19:07 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:17 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=i5bu0qyUkXjt28pEP8fMv%2Bd1vMAQQMINkm9r0yvli%2FFIlAmkmwDBmBp0T18eUnHIR3efGv%2FMSBYqJF7pOfXbnbIIO77GkL97Cyz03JIvtqUUT%2FiIAhpAVj7S1M%2F2coAGHXnY9Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=MEA8vDY0R4TwOFFmkLSswn4aQmasTXM627MJdVA0p9T1ngc8Qxg0eh3Z4jQj8zAsoh5Tx8DYskxAGn%2BCGinFbjtiGhWg3pnA1SzCNBnwWBxEJjWDMywA1Ssb91WIqomziY9bxA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2084,7 +3269,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreie7ejmkqbcc565s66guy34rtqt6pl2dbtb7xyvqhiid3ajwfk3qtu' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreigpiuju57s5dseg6zk2s4nbk3aoywtzo3xpzadgwfdglejd4bvgeu' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2116,7 +3301,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreie7ejmkqbcc565s66guy34rtqt6pl2dbtb7xyvqhiid3ajwfk3qtu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigpiuju57s5dseg6zk2s4nbk3aoywtzo3xpzadgwfdglejd4bvgeu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2131,418 +3316,13 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db368680c9881cf-IAD",
+  "cf-ray": "7db36a1e9b0745e4-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:19:08 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:17 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=zIgiglthmJYtp5JnBpqlhiO%2BugNLjIU9wAV8SxRph5nRJO6pWrOf0h7j3dFZYhmjM2vnGJaljxcK0c3aUMefrLooBLl2yV1HBI%2FfVSrzNo59OTMVTCeJkrjT4nblfDj%2B%2BTic8Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-  "server": "cloudflare",
-  "x-powered-by": "Express"
-}
-```
-##### Body
-```json
-{
-  "error": {
-    "reason": "UNAUTHORIZED",
-    "details": "Invalid Signature"
-  }
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "error": {
-    "reason": "UNAUTHORIZED",
-    "details": "Invalid Signature"
-  }
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can create new pin for testing pagination cid='bafkreicu55hs5rzqcq6aoeyuhx2tbldny4jpdqpuim3a4oeijqghebra3q' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Result is not null (failure)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://pin.crustcode.com/psa/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreicu55hs5rzqcq6aoeyuhx2tbldny4jpdqpuim3a4oeijqghebra3q","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-401 Unauthorized
-```
-##### Headers
-```json
-{
-  "access-control-allow-headers": "*",
-  "access-control-allow-methods": "*",
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3686dd98e3af9-IAD",
-  "connection": "close",
-  "content-length": "65",
-  "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:19:09 GMT",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=AQ8fnI4HR6iqBwVC9PqkETGgrFBpV6HdjVlDevHKglLX1JL6i5h4XR2Gmoliw7IwA5WeceMaE3RSYxJoisbvdNPfm9kcTGcVUOu9s7hHgc7uGmhhbAd67tlfyFGtGQ5c5iqLZA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-  "server": "cloudflare",
-  "x-powered-by": "Express"
-}
-```
-##### Body
-```json
-{
-  "error": {
-    "reason": "UNAUTHORIZED",
-    "details": "Invalid Signature"
-  }
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "error": {
-    "reason": "UNAUTHORIZED",
-    "details": "Invalid Signature"
-  }
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can create new pin for testing pagination cid='bafkreigpsc75wvpd2xrq2i3l36i3fi5yivwpuypzrjzceh2dylvoejru2e' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Result is not null (failure)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://pin.crustcode.com/psa/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreigpsc75wvpd2xrq2i3l36i3fi5yivwpuypzrjzceh2dylvoejru2e","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-401 Unauthorized
-```
-##### Headers
-```json
-{
-  "access-control-allow-headers": "*",
-  "access-control-allow-methods": "*",
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36871db540780-IAD",
-  "connection": "close",
-  "content-length": "65",
-  "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:19:09 GMT",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=1zGC6Ke9C48pt8535DDmX6KB%2BMZeZckMa3E5n1o66IR2jN2xQxU4kAZrU04XCZbCdz74aVjkbCFHlnDcijcKGxGU%2FYfmyLj2lOyerwiFWdTQl0yeTVVVVY81x7GDWle%2BF0rIzA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-  "server": "cloudflare",
-  "x-powered-by": "Express"
-}
-```
-##### Body
-```json
-{
-  "error": {
-    "reason": "UNAUTHORIZED",
-    "details": "Invalid Signature"
-  }
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "error": {
-    "reason": "UNAUTHORIZED",
-    "details": "Invalid Signature"
-  }
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can create new pin for testing pagination cid='bafkreigctaeaz6mui66za5qmjypboouhp3ystsdc27zmst4xdfu6fe5k2a' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Result is not null (failure)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://pin.crustcode.com/psa/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreigctaeaz6mui66za5qmjypboouhp3ystsdc27zmst4xdfu6fe5k2a","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-401 Unauthorized
-```
-##### Headers
-```json
-{
-  "access-control-allow-headers": "*",
-  "access-control-allow-methods": "*",
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36877ad8d38fd-IAD",
-  "connection": "close",
-  "content-length": "65",
-  "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:19:10 GMT",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=UQ%2FpD9c8Vw3UlB5Q6Ood7k7FgHnT4Rt4PSq9y4bqvvdFWbdVRSL3myWssO6m4h8WqjmlyhwV%2FJ5eoky3byRGyAIpNBKSIX0HkYxKb24%2F572kpdZJ%2BbxJcpx%2BRh0kAw3vj4YlYQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-  "server": "cloudflare",
-  "x-powered-by": "Express"
-}
-```
-##### Body
-```json
-{
-  "error": {
-    "reason": "UNAUTHORIZED",
-    "details": "Invalid Signature"
-  }
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "error": {
-    "reason": "UNAUTHORIZED",
-    "details": "Invalid Signature"
-  }
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can create new pin for testing pagination cid='bafkreihct6w25eblrhcj2ciboykzkwi3fhttsxqmqfokv6k5wbowmqeqlu' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Result is not null (failure)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://pin.crustcode.com/psa/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreihct6w25eblrhcj2ciboykzkwi3fhttsxqmqfokv6k5wbowmqeqlu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-401 Unauthorized
-```
-##### Headers
-```json
-{
-  "access-control-allow-headers": "*",
-  "access-control-allow-methods": "*",
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3687deef30957-IAD",
-  "connection": "close",
-  "content-length": "65",
-  "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:19:11 GMT",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=z5egazik%2BAjoPnWvFfu%2BiMJKi0Kw6FOqUCX7gh%2B8E7Guiwtg9B2lmZhWnciA7oHemteUGrEtbmBKHCzExllWfIn2OiLaXLUngCa2VwOonojlSbWUbD6ETjhw62KVOxHOCMKGVA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-  "server": "cloudflare",
-  "x-powered-by": "Express"
-}
-```
-##### Body
-```json
-{
-  "error": {
-    "reason": "UNAUTHORIZED",
-    "details": "Invalid Signature"
-  }
-}
-```
-
-##### Body (as JSON)
-```json
-{
-  "error": {
-    "reason": "UNAUTHORIZED",
-    "details": "Invalid Signature"
-  }
-}
-```
-##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
-```json
-null
-```
-## Can create new pin for testing pagination cid='bafkreianyzek665bhqicw4frfgc2mnxaxp75suqwncnssrjrgikdm5csjq' - ❌ FAILED
-
-### Expectations (0/2 successful)
-
-  ❌ Response is ok (failure)
-
-  ❌ Result is not null (failure)
-
-
-### Errors during run
-
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
-
-
-### Details
-
-#### Request
-```
-POST https://pin.crustcode.com/psa/pins
-```
-##### Headers
-```json
-{
-  "authorization": "Bearer REDACTED",
-  "content-type": "application/json"
-}
-```
-##### Body
-```json
-{"cid":"bafkreianyzek665bhqicw4frfgc2mnxaxp75suqwncnssrjrgikdm5csjq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
-```
-
-#### Response
-```
-401 Unauthorized
-```
-##### Headers
-```json
-{
-  "access-control-allow-headers": "*",
-  "access-control-allow-methods": "*",
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db368842a8f5878-IAD",
-  "connection": "close",
-  "content-length": "65",
-  "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:19:15 GMT",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=fm9XYPepvJeJR%2Bb4nOR%2BsrMW%2BIStZ10Cv%2Bgxxc%2BHwrT%2BooE0gJg1RnUy%2Bt9R5%2FE2LeKCZneUyz%2FiFCodreAk4rIxM3DqbWUQX6R49bFX%2FpIoMgdWsDyUDh6DT3%2FQ%2F6ycLFdVNQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=gaVCadP6Q%2F%2BbRwtFWgMc0TB8X3Z8j0DxMnem07%2BRgRzhZhfaWMgYj8htmgdLEyfB8KV7Y09LxL2qU1hqhxYcurDyWzuzuNtMQ1N16Ewt0Vj6Qo%2FVha%2FCTjqvtS7dhYEsogqdZA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2628,13 +3408,13 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db368995ed52063-IAD",
+  "cf-ray": "7db36a20ec2d346e-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:19:19 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:18 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=C0V3yuHTyBgHI8IgrKuquldqkc1YBD5gtJ9Fl5xgbAMxREb2s35W%2FLy0GCt4AIM85iIvNpl2KsZgjdAmf2cFDFa7%2BWxxMnY8bb900rS6jeHMtWtPBajHgpFQJluCqLu8%2B%2BpUyg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=RtWuhv6GxDagFJHFzP4n5tcJYtPNR2uyoNLDjyCUYfYjqEBeN2tR1UbZQtwy%2FY72hLw5hiZcCzwcXGyy%2BaPHG2gDvNodFJ9kF3G0gwj%2F%2F8l4JFt9opwmp%2BcyTeJiLaiGG8vrDA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2694,7 +3474,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2023-06-22T09%3A19%3A19.041Z
+GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2023-06-22T09%3A20%3A18.316Z
 ```
 ##### Headers
 ```json
@@ -2719,13 +3499,13 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db368b02b8d7001-IAD",
+  "cf-ray": "7db36a22c98ea9ec-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:19:22 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:18 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=2RvE0CbQ%2FWX5n8cFLecE40Fxx3CZJiEmKhZkmNPH7ksBQVb0QbEZT2aFJempQpMYEcNbIz4YDnqNtuNAbMqmL9wHMaLdwJrMrS0rp%2F44Ogjf7XHLamT1CbU7U%2Fqh7YtAnZ5Keg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Hljlek%2FQqSzf%2B4LR2olE4ctblsbFRXXS%2FVgLHbAtBYgE86NMwcWzoX400JTcSuw0VMcVh2WamXXRkt2Gs26LSndm4H52%2FIjXGAOnpnX3olN907DL6zTECj79F%2BcnP4IVTp8x2w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2840,6 +3620,18 @@ null
 
 ### Errors during run
 
+  ⚠️ SyntaxError: Unexpected token < in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsGetRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:217:26)
+    at async PinsApi.pinsGet (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:232:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:18:27)
+
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
@@ -2851,10 +3643,34 @@ null
     at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
     at async main (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:39:7)
 
+  ⚠️ SyntaxError: Unexpected token < in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ SyntaxError: Unexpected token < in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
@@ -2901,15 +3717,51 @@ null
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
-  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
-    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+  ⚠️ SyntaxError: Unexpected token < in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ SyntaxError: Unexpected token < in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
+
+  ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
+    at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
+
+  ⚠️ SyntaxError: Unexpected token < in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at getTextAndJson (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/utils/fetchSafe/getTextAndJson.ts:14:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ApiCall.saveResponse (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:292:38)
+    at async Object.post (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/middleware/requestReponseLogger.ts:94:11)
+    at async PinsApi.BaseAPI.fetchApi (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:92:28)
+    at async PinsApi.request (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/runtime.ts:49:26)
+    at async PinsApi.pinsPostRaw (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:259:26)
+    at async PinsApi.pinsPost (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/@ipfs-shipyard/pinning-service-client/dist/dist.generated/apis/apis/PinsApi.ts:275:26)
+    at async fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:53:29)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
@@ -2971,45 +3823,161 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 
 #### Response
 ```
-401 Unauthorized
+502 Bad Gateway
 ```
 ##### Headers
 ```json
 {
-  "access-control-allow-headers": "*",
-  "access-control-allow-methods": "*",
-  "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400",
-  "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36819dd110850-IAD",
+  "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+  "cf-ray": "7db369b05fdd2ca2-DFW",
   "connection": "close",
-  "content-length": "65",
-  "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:18:55 GMT",
-  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=zKRCjuv%2FymHcyiY9cy09ancOrhCsZFv1aQ7bxJLsP4CvibAv5AWvNsnOnaoBmWuL8BSSecXo1dIdD3RmBLqohOrFx8fc9zWr3zCBJvnIkVK5SisK%2FyDmLMn%2BZfiB3hWGqK%2BSOA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "content-type": "text/html; charset=UTF-8",
+  "date": "Thu, 22 Jun 2023 09:20:00 GMT",
+  "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+  "referrer-policy": "same-origin",
   "server": "cloudflare",
-  "x-powered-by": "Express"
+  "transfer-encoding": "chunked",
+  "x-frame-options": "SAMEORIGIN"
 }
 ```
 ##### Body
 ```json
-{
-  "error": {
-    "reason": "UNAUTHORIZED",
-    "details": "Invalid Signature"
-  }
-}
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>pin.crustcode.com | 502: Bad gateway</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="inline-block">Bad gateway</span>
+              <span class="code-label">Error code 502</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2023-06-22 09:20:00 UTC</div>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Dallas</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">pin.crustcode.com</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>The web server reported a bad gateway error.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                    <p class="mb-6">Please try again in a few minutes.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">7db369b05fdd2ca2</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">40.122.235.118</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=pin.crustcode.com" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
 ```
 
 ##### Body (as JSON)
 ```json
-{
-  "error": {
-    "reason": "UNAUTHORIZED",
-    "details": "Invalid Signature"
-  }
-}
+null
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
@@ -3059,13 +4027,13 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db368cdbc1a0780-IAD",
+  "cf-ray": "7db36a2f3978e85b-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:19:24 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:20 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=k17sASsjL9x1NY3O0j0gRVkfD%2F5O6BhYbVA7go%2B2wLeFKPUEcW0%2B9%2BtYzHrbQpIyPAkz3UQufuzWVxTWKlLZNVGpGlx%2F2pAivyI4e4VXVSSaIDM65lDZUmhYQ%2FC93Ab%2BfYomtA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=SVgKSDwxz1VAdQdg7uGdGWk6S6FHC387R5jJc2QpUTEcX%2B126KoYoCVxaL6bxroRZIYMNLpyjCmBgNKsWI7VU%2B5IZqnOjX0rZw8aVleKbC6IEil2Slm%2FqT1OqYQNwXNt9SmvRA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -3142,13 +4110,13 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-origin": "*",
   "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db368c75d048230-IAD",
+  "cf-ray": "7db36a28fb2be5c6-DFW",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Thu, 22 Jun 2023 09:19:23 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:19 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=peqnZrBMej10OPxm%2FCJYTs5N66e4k4HfeTYosu5Y3OCljyKPNJ5v6og6T4hzFyyzYAg6s9FHccOvNFMqcVbmccOf0R%2ByLB%2BHM6RrJPgyQxh9XwGpX26WKPcpoj7SyT%2FJXipBng%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=V1J3sc%2Bydra6c5OU1ErLcY%2FnBLQXDN1nYQZDvKzCFawEdPM%2BrEOeUn9O48a9LqSovGpdZElh2NK1p98C7eWIx39LBsM4IlIHyQV72x5r4Oey1SKk5QvMUVH3z3khbaGAW5vXXQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
