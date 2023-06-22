@@ -2,9 +2,9 @@
 <script src="./telemetry.js"></script>
 # https://api.filebase.io/v1/ipfs compliance:
 
-Execution Date: 2023-02-08T18:50:29.948Z
+Execution Date: 2023-06-22T09:19:19.406Z
 
-Revision: [fb91968](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/fb91968)
+Revision: [d0df4e8](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/d0df4e8)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/api.filebase.io.md)
 
@@ -14,7 +14,7 @@ Revision: [fb91968](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   🟢 [Request with invalid token](#request-with-invalid-token----success)
 
-  ❌ [Pins post of CID 'bafkreigrlevflpw3hwoinldofpkup2ii3ryspi7lfcg47tc2z7qqzwxbmi'](#pins-post-of-cid-bafkreigrlevflpw3hwoinldofpkup2ii3ryspi7lfcg47tc2z7qqzwxbmi----failed)
+  ❌ [Pins post of CID 'bafkreicozz5hejerh32arjl2ta55izglrxvc2hpdia53yqq6pj75f2qn6a'](#pins-post-of-cid-bafkreicozz5hejerh32arjl2ta55izglrxvc2hpdia53yqq6pj75f2qn6a----failed)
 
   ❌ [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----failed)
 
@@ -22,7 +22,7 @@ Revision: [fb91968](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   ❌ [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----failed)
 
-  ❌ [Can create a pin with name='70fdedd9-ee1d-412b-b783-29d04b62bc41'](#can-create-a-pin-with-name70fdedd9-ee1d-412b-b783-29d04b62bc41----failed)
+  ❌ [Can create a pin with name='76529643-2313-4e59-ac3e-6dc3dcd5e0a8'](#can-create-a-pin-with-name76529643-2313-4e59-ac3e-6dc3dcd5e0a8----failed)
 
   ❌ [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----failed)
 
@@ -41,7 +41,7 @@ Revision: [fb91968](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -68,23 +68,26 @@ GET https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c6388715b10-IAD",
+  "cf-ray": "7db367f2bd782ccf-DFW",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:49:59 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:48 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=cAsaOCAWoeDvxt6IF2I15%2FpwvSMXLM3uM4nfpSN31ZT2%2FFXmQ6IyGVKL9nrfWGkHnrIbjRLQYjKTDRittnGCtxqZeaQImlzCQZe0Sr8B2lH9mYHqeRLjYhmpMhT2pja8lw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=fDJOfcDHEh3AZnRoSpC%2ByDI%2BE33nVj8QzY5jiwzy9yTX6rBiGTZtJ%2FJ9y5soJtg3dxhw2a396Z0mc4ZB24t2LiYzzu1ziuMGk4qxZYc5c%2F%2FOsNbHXVzoXCvR%2BoWt1jvlKw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "8a6885e8-91c8-45d8-9364-a7977fb8a9f5",
+  "x-request-id": "9fa11f62-e087-4c94-bc4b-caec31ccbb0a",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -124,7 +127,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -153,23 +156,26 @@ GET https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c69bd853975-IAD",
+  "cf-ray": "7db367f8f810aa99-DFW",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:00 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:49 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=p30hFaT9IScLdnJsVHiY%2FYcgKAclRRsPpY9xKQgPnJXqwQ9HDyTNGurgVNZnXppHlVhzVCTZjQyT2HJ8VAhYASek5a2yhrDYd9mbZDhqp6ALoN%2Bi2RZoRHeqVKkhiwOs5Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=NjGAriPDyTMeYEGYkpHiiglIUFK1xCsgpwWrdBKXb4KFMNXhbSmOrmhYlmCppBwOmGnJGCHCWvW0hBC4PdxzkVil4s5rOn%2BIeeqNwopfb8VvpBN3c0MOXMOE7sMuQkyinw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "cac5207b-bdb2-40bd-a371-ebd2058904b4",
+  "x-request-id": "ec14a72a-495e-477e-89e1-308ed09f2587",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -196,7 +202,7 @@ GET https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Pins post of CID 'bafkreigrlevflpw3hwoinldofpkup2ii3ryspi7lfcg47tc2z7qqzwxbmi' - ❌ FAILED
+## Pins post of CID 'bafkreicozz5hejerh32arjl2ta55izglrxvc2hpdia53yqq6pj75f2qn6a' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -209,7 +215,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 #### Response object doesn't match expected schema:
@@ -242,7 +248,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigrlevflpw3hwoinldofpkup2ii3ryspi7lfcg47tc2z7qqzwxbmi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreicozz5hejerh32arjl2ta55izglrxvc2hpdia53yqq6pj75f2qn6a","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -253,26 +259,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c6ffb5b2426-IAD",
+  "cf-ray": "7db367ff3ac2aa97-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:01 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:50 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=jE2YW%2BYNLFMr3ctGshP7WBddSYG8%2BClG4Q8uhgllKaSgXMDXkpDduD7cb76K7stMm1Qw8u9tF0h6P6wUsJlzPnw%2FmUOQyJavEc%2Ft5xU8Wj1hJhqJ1wNXKYoAERYATB6APg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=zUCbUZFDbbbpmTnigrfJu3%2FbNmih32E6eS10inar%2Fp%2BPmdt9o9%2BfNNLXc2ABzqKa5pewMnmKKPohb%2BUGee%2F6znOOQssTw%2FDODcUapNimfPA8tSPVmqSESbLS3QqoYuwjpw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=cCq2Vgl8eh9DtjPTnFKsiQ4DoJmgByt%2F3MYxdKRIQRgPFQWw8ipoMo9upV%2FQY2JZEa0U10b95j49eA1ThI7MbGmnmw6nSRlIf1VHdpiUpugjEuWLT0FRpQDx4EKn6q8i8HQcjRIwwvnX3RZjk88fI2z294DFqg1Z%2FsYWEiAKPhRyNCIzrdNEySlD1anHq%2F9N0UL8kUj4peUXrXARtZweXno6W6tNudnucWqXXvE%3D--DS%2FeQwXVkTemmRw5--zEwv1Wm4BdrKliMiF%2FnQ3w%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:01 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=3%2FwyncCTM4a3IKf9xSsGqOHX5%2Btz%2FyypLjcFzSnQgmu1v5rTrcJtCQ3jLpx1or5RCCNoScWRraOS2rRAicIpiUBlkvV3FECIReXbpA8HiGwXNYa5RKBAE6PVxeKnwHBqhWBZQXtY4V2GtfW78%2BEMH0QY2s%2BblcedcrpfI%2ByQXgkLVeAFHILL5QUOdqwqJOJR42NlF%2BKiEXw90JLJhFQNbYjZM6P0QcwuAVBazMU%3D--mA2JIfWc7y5X%2BpcT--2DFBp36cKnM4I7pffd2OCQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:18:50 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "86561e1b-a794-4ffc-8870-e4449af2eb34",
+  "x-request-id": "51b6d787-0980-44e4-a4ec-2c6b2a7ec0a1",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -312,7 +321,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -341,26 +350,29 @@ DELETE https://api.filebase.io/v1/ipfs/pins/null
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c7c8843397f-IAD",
+  "cf-ray": "7db3680bbe49315c-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:03 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:52 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=YbelIfvKEa4lacVlEaCkuR7PWLIdkZ%2BYaQFfcq0fMkMVRnolzl59zytAYpGRdG0Kq8c%2Fm0%2FrLArdmZgYiekkaHg1yma8Oy8XJHUcmPGXE7EvNGg2xrUNQXYvVs2cfVdgww%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ZajsCXfMjk0IlGA44wUaOnYOmO%2BDtMhU7YnJjM8DapSD7YlFh8XYmSiYPZrp4ORd%2BRTLwZ6qSrw0yECwIgpxJ10Qs2yS%2BbuKKF6yRvFGIVb3tuqS%2FTr%2Bpd0BtI22vXLjjw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=h%2B3m16tKkp3DVdIpkGgKpYlRCZYknSCWL4%2BxzJx8t7zkBWM%2FKK%2FbJcumMic2DFbl12idhNuqqhcDgEv8U91CeNM9KfkjLFINV943L%2Bbnf6r24Hcy90Tw4Szm1e3XR5TpIxbtpZmUlYfDBM41WBlkRliDUBKsH2%2Bgi3%2BPS0SFibttsKRB6YHilaP0cKFiCjRBnSPUDbqfqJ7VOopFPAsPvOlJW4XekBoWaiIRhRE%3D--nP%2F4LzN4YqoGGHnf--LUNvIG048DqCepWXiy75OA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:03 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=GhMc2TYFW159veH2a49v9wtYzvohxb2uPvdJXSdgadiWcRhKSWijsgrH%2FyWM87x6kiV%2Bi0584F8tmyJIYnwkKOvUdCTrUzpzt242H9kQIMsnukm94iqWs1kkGsGJRD2Gd5n02AGGfToN3RIJlE%2F6XgCQlMYkrWitHiS2CsbGRV%2BYN6yJi6JlLwPi4jpARY7ADXcGuYDabsPaPanCQHqEhWjKvaam92iIg%2F26oug%3D--hyK1VIMrHUl3qHND--Xqq3Q7z0yCneAwnwOe05zw%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:18:52 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "175456b2-e1aa-4131-8ab1-b6dbb50a2c26",
+  "x-request-id": "8e0631c7-b159-4996-9444-4b7bb89fc41d",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -404,12 +416,12 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -428,7 +440,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreicxsp4atayz4napxcljsgflrababcvin2ljkqewgusbcmm3hzcgjm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigmffgdfwv7mwtx4uojle4iwr5ypgeacim75xfjhiwmmkhw4k326q","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -439,26 +451,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c763969399d-IAD",
+  "cf-ray": "7db368057c3b2cce-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:02 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:51 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=4feOWhrVHk46lNhdcxX2ZeSjbxnN4g46u8OctZEMzM7w1Df4Emveus2m4f9lmA43dcLn78vaFiEMgtILfl%2FYcdjCEjsUtPw5GLckBLqDVwjxPd6Mwp631DKqo5I4x4DWQg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=OkdzChmb%2BwqEAZCYR0wdje05gFh%2F0IQUkLBHuuEyXgXORSeV%2BHeBn4ltc5KZQeWkirW3fyR3fFr8ygNFsXYbPNtnG1oloc4l%2BrzDaiNSvMyYHrrddjYAxNagsanJ8bB2Lg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=TAGGrLKdRRnOuFX4E55%2Bl0jUW4zrg%2BXJtwi3tsPjxoqOZjdTyteKAG8hqruwZBTBlDTr4wIcf2T2oh%2B6mzwld767QhWUL%2BBuyn0U98Q3Qazq5BBqSkmu2J5z7jHhI4C44MklNwE2eq0haw5ofDD0egIE461aNGpcDTnlaUZlJOAWsuKa%2FAY2dA0qNPSFT7zR8kulyuD3FZvb0D18EoULLwvv8bqsIL3EPxE6ln4%3D--JannvaiAngunrmH6--8MXWpx3Uy7X04CO6yCOANw%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:02 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=sTdy56Y8Ppke1Up9GiQ4Ei28TdJE4338b7fWXYsuIjDN0ASwt%2F4R2VG0F2RR7Q2H6F%2Fc4pI3Sce7njffjn7E4HeB4YQBIEeVoRR5XJAuIw82YiatCHOsVGG6gQw7r8MKD6UT8vNozj5oTdadDxroD4JdFH%2Fj3OIIDe%2FXKSCDzGV1ntjZ%2FWkiHmcou%2FzMlozoU%2BmrJL4jAkXnFpernftHJnN1YWwtBjSFAlBW6nM%3D--QmrwUOAD3Bb7%2FNEk--eBZxrrukPoL2aKrBCM21cQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:18:51 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "0f634dbf-2faf-438d-854b-f9185ff083b6",
+  "x-request-id": "f6aea0de-c46a-4687-bf66-49d5fa9b8226",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -498,7 +513,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -527,17 +542,20 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c7cca757fb8-IAD",
+  "cf-ray": "7db3680cd9cae867-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:03 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:53 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ythhp2EzjR6GA9qhkaXHuw3r%2FcazJ74RG7C9G8Pf8LBmAeqPstFLiBKmjMTnNUltgXe0Mlt%2B2gWEz7chEmRk5HCx24eXYLUcISL6hrFkaz2hIrLNLL%2FPRd1yUhHrshsxmw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=GDN9aygxgeea1PEnJDRqwHlumRnJm5XJTCFM4p%2BA%2Fq8S7jMPmSoz2JFGaQjYmhhBX8bWwb55Y5bfjuhxia1HO1kJsENNjMj4pDv4vBXLjrrdxhGe96bA0I9qp%2FY%2F12ZoEA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -545,7 +563,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "11d08d41-75f6-4c93-a427-fbc2b36c3740",
+  "x-request-id": "f7cc3426-d9b8-4b98-a25c-72b22732f931",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -583,7 +601,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -612,17 +630,20 @@ GET https://api.filebase.io/v1/ipfs/pins/null
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c8f9e6a81ca-IAD",
+  "cf-ray": "7db3681f9eeae98b-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:06 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:56 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=BzEAMGuL%2BA5qAmOg9SByZMhCT9qzMT25OMyYge0RcFKeoShqBEzNcHYaKI5M%2BigwClpk6Z7xhG5c5n8d0w1KLyPhSLiHa1dgfjURlND8q7RzJmLeDhc1ltq2QSx3XNNfKA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=pRDHj38%2FXQqDWiblksHz0Hm%2BEgxzp0N1h01A%2FZCgIJwB0lIMy3VN905RVcIbsaCTuL%2BW8vlUFXXBT1XU8%2BOASSik3bDposZFXLiTSJBcUkhSJYyzGF2seMrHxHrJeRrOkQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -630,7 +651,7 @@ GET https://api.filebase.io/v1/ipfs/pins/null
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "5895c93a-1bd4-45d6-9c6c-7de0c8158ef3",
+  "x-request-id": "59d223a8-434b-45f5-8b0a-797fb01ea7d8",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -668,7 +689,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -697,17 +718,20 @@ GET https://api.filebase.io/v1/ipfs/pins/null
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c95dc1281f9-IAD",
+  "cf-ray": "7db36825da39e98b-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:07 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:56 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=JKDnKTy8NZyTLK9EKofZiQTZe%2FjkZPetaC2vAQwOpZeHf47QXJKxpJuOzkb5WORkOs4T2dNDBEEbkdrupL%2Bm%2FOc5OKYSS9gceqmGIj5mznEGz9gPEduddffhqqJqf9h8cw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ruqsLovGEpxaFU6Ek%2FaqpbZumOCWQpKg4%2BmzdlsYz6Pz%2BJv3epwpqaOpI9tDslFFkCVHNYxSm%2BSTtLpEuYqsXpC9wAgUdljAPnUGBerENfGVpNLykq5fkYvMK2CKOLdu%2FA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -715,7 +739,7 @@ GET https://api.filebase.io/v1/ipfs/pins/null
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "058757c5-6281-419d-9bd8-1b349bd09705",
+  "x-request-id": "21a28fb5-8547-40be-9089-dc559c21cf52",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -742,7 +766,7 @@ GET https://api.filebase.io/v1/ipfs/pins/null
 ```json
 null
 ```
-## Pin's with requestid 'null' can have cid 'bafkreih2smfdei6urw6eotl6kbzmj2m4wrjflvw52qwkfrykpkjtmxzav4' replaced with 'bafkreid2mmxbznedeifidzrhwmm52ateicagqslxdqbsn3y23kzlhadhce' - ❌ FAILED
+## Pin's with requestid 'null' can have cid 'bafkreict763bhmexnhseuilcotitz6eqfrwxsa66lzhkjolgj2l5y5k3pm' replaced with 'bafkreihbjuzkkzjh3uvf5c2hxkcub7j5m4o54gmkclviubchpz6qqf6xv4' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -755,17 +779,17 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -784,7 +808,7 @@ POST https://api.filebase.io/v1/ipfs/pins/null
 ```
 ##### Body
 ```json
-{"cid":"bafkreid2mmxbznedeifidzrhwmm52ateicagqslxdqbsn3y23kzlhadhce","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihbjuzkkzjh3uvf5c2hxkcub7j5m4o54gmkclviubchpz6qqf6xv4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -795,26 +819,29 @@ POST https://api.filebase.io/v1/ipfs/pins/null
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c895cbd9c37-IAD",
+  "cf-ray": "7db368195e333172-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:05 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:55 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=V7qfxZQfPy7L2U4HLFZNjYhiV0cKlgz35ldFghKJ5QYk97h%2F38qidfT7LKt26zoAAeU9cZngcFfnC3H0jKdyZLbdPyH1vl3Uov5QT%2BI6x%2FvkGHaOO3rrb%2F6kNpZSPTq2yQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=qRQBtetFaniJ%2B138OudbftHlUIFhZsQ9gmyC1UEy7AlaX8P%2BKDeMDnTSSTfkayDOkMvqzxMCqjbTKtJSseuXBzYlmhWiwG1S2qujwsoqlkwf8wQsBhM2QDNgFTonTM52PQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=pSSob%2BQnyDbmI%2FdaZxeCyQgEtsbBHzrtZqaPcwdWKH6AXDHwO%2BFWj69Dm5f%2ByCVH0QaVw8higUBDBXPu%2BpaK%2FzR43aFrXEtVEzy5OxaC15EHj21K%2FkIJ179zcRlKQEPaUfPYb%2BhMAejiwPYTpW8744g4g1%2FIVCZ%2BefG0ofLJuRN7r64AvflcTJQo4jconVhyp7DzsukEaTb08UuUQb6tbFSzKQoO%2BAe9feyu8fQ%3D--Qck%2BDfkMRyq1YYlU--HZFR8zOzjdnXzMJo21cbdg%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:05 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=WTPDr24uWVH7PJxa%2BozFagTljAELGlnEHxHmnKcbO3YhZm1O5sMGnRsZsClsNDjpxT5zJPlOhoFjdnAy48hgK%2Bk3Hi9Znidw5I2XqX48ULQOECYhiPkOXnt9bIHSkBC9L3%2BV0uSamOQ%2B%2FSUEpOZXNhAo7XJ10L5u9X09TMmqfa%2Bb65Nh%2BsBJySe9xt9r53wECHivqRHdjZW9dFAzlN4%2BlisWbX7OINrRDPRe6lg%3D--WRgHFp9wGYtwED7a--Y%2FYjONsbDJniO9wk7mYBFQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:18:55 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "302b290c-5477-4057-be77-9646e2944602",
+  "x-request-id": "1b92ede1-a5ad-41e0-a85e-b8d02009ec68",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -864,22 +891,22 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -898,7 +925,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreih2smfdei6urw6eotl6kbzmj2m4wrjflvw52qwkfrykpkjtmxzav4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreict763bhmexnhseuilcotitz6eqfrwxsa66lzhkjolgj2l5y5k3pm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -909,26 +936,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c831b48207c-IAD",
+  "cf-ray": "7db368131faf4870-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:04 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:54 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=BFPYBNqGofsqHu8oCmsgIckSuLzYJMxIQcqOguDXqFSCW7FLaU6ZEZsWJ4wt8vuJLvRhpQZN2YWLK7b1akIhNvM5p35YxYJLPEAZlLAckPE%2BoxMchl2zKf4xyImI6rjuNA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=T9sQKNzGL3KcTUYjUZLf6h5TGoB8t9V5kMXzV%2BEG77l9br8mMnIdaihVCjgZPNAA1iE87u4SXHOyT1hy0JzX7QZQJO6%2B71ORUhKJa1mamc2GGP8b%2FbpnSa7UzjBcp04MMQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=yEc5R33RBgAN%2F5ova48kLz3807zyGjhn17qpmA3jroFKAAxRYZoZdZ3%2FA3iQDITgGZfoEE82zMXJia51WCs%2BYw3CnCwWnTAZjJ%2BCBbTctdV3qxB24B3a339O0VTCZdkWUrwFxhaYlc24YL%2BYMRHI%2B7SFZSvErvgZy4eGfNJoWXYAhkicGW71YcUYPkWpUItKcTBi7UncKoDth%2BPUIfIaD5yb5Ke%2B7CDw1q94Hmo%3D--cQejRl8A6%2BGiYgmS--0CTj3ToPyntaQk6CuL00wA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:04 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=%2FP%2BhwUSiDmyc%2Bvg1w%2By2L7NYtp8EEHUOeHpTEujPBoCEZpzNIgEwUxjvK71Y6EWovDPNB6LgJFiEJYJpP1My15n4VLdiUHU%2FsV6FLEZXDGyyeclxuLGBY5ql4r5fTXt5Ayt4ko2Io8mZS4W2cMTaPYS3p0%2FKbOVRXW3aX8g5gaNIIfH1xmEkNECb0fiIP%2FTEeW8ISjkxRMCjvQBe1u6oTtP2ASqhXyHmg5ov9hs%3D--88nn8tuh6PEHUUKz--f1WaqTURjMXocCFp2XSR2w%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:18:54 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "d17ddb34-5405-461b-bedb-15e262194257",
+  "x-request-id": "6680c1f7-ee26-4202-ab60-49d2ee9987a1",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -955,7 +985,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can retrieve pin with name '70fdedd9-ee1d-412b-b783-29d04b62bc41' via the 'exact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '76529643-2313-4e59-ac3e-6dc3dcd5e0a8' via the 'exact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -972,7 +1002,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -980,7 +1010,7 @@ null
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?name=70fdedd9-ee1d-412b-b783-29d04b62bc41&match=exact
+GET https://api.filebase.io/v1/ipfs/pins?name=76529643-2313-4e59-ac3e-6dc3dcd5e0a8&match=exact
 ```
 ##### Headers
 ```json
@@ -1001,17 +1031,20 @@ GET https://api.filebase.io/v1/ipfs/pins?name=70fdedd9-ee1d-412b-b783-29d04b62bc
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c9c5da61fce-IAD",
+  "cf-ray": "7db3682ccd8ee5a5-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:08 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:58 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=wSmphn6iXCWQiD%2FUJ41a67Fflg6MgQ2dO9QRbEIfL0VPZ1Ynah2UsZ0wQnKkn%2F1MIVZ%2FD6f2TgSXWJbG8Jovp%2BCdRpGU5qZNgTJerpQe1H5TJI1B6Hx%2FoYPaBZtUlH%2BcTw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=fzvAnTm0k%2BcPKfENUYAwd7V1xWx7vIEp3WHUWXzzykeEk6A%2F734ewuHSnIVussmbEhAAltFtfchbf4jTsIFsP0j%2FaR50t0ZXni%2FbU6KGmXUH%2B9%2B9fjELwGlWyvEGenYc3w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -1019,7 +1052,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=70fdedd9-ee1d-412b-b783-29d04b62bc
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "396cc488-5555-45df-9bd4-513cc60c54b6",
+  "x-request-id": "fccf8438-7e5b-43ab-9850-dbb99ab09de1",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1046,7 +1079,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=70fdedd9-ee1d-412b-b783-29d04b62bc
 ```json
 null
 ```
-## Can retrieve pin with name '70FDEDD9-EE1D-412B-B783-29D04B62BC41' via the 'iexact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '76529643-2313-4E59-AC3E-6DC3DCD5E0A8' via the 'iexact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1063,7 +1096,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1071,7 +1104,7 @@ null
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?name=70FDEDD9-EE1D-412B-B783-29D04B62BC41&match=iexact
+GET https://api.filebase.io/v1/ipfs/pins?name=76529643-2313-4E59-AC3E-6DC3DCD5E0A8&match=iexact
 ```
 ##### Headers
 ```json
@@ -1092,17 +1125,20 @@ GET https://api.filebase.io/v1/ipfs/pins?name=70FDEDD9-EE1D-412B-B783-29D04B62BC
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668ca29ec020b1-IAD",
+  "cf-ray": "7db368330866462c-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:09 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:59 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ZbB1Xot6OTRbAMnH5%2BO8xkEplKoT4vvOeOF3NpTUyHJEH%2F1XQjh1dHtb3VIlWL1C3qL0aMoqHfu8ikJZOolJ6EUcjERqCoMWMl94Gn5NsWCbudc11oLy6WSM8HUpYDfoXg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=5LUsXdlfDVYQ2OZwVbFNAZIzlIaVYYhudGo6f9Enj%2Bm%2Fo9wSoHLuSB25JUzBX5OR80u72zZ0sF%2B5jwIfHxe8%2FwMTnRzF7UFq9x844dnZ3DTlbycp5cgYRKXlg4OJW5afQA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -1110,7 +1146,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=70FDEDD9-EE1D-412B-B783-29D04B62BC
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "5025ad79-1057-4e49-8fcb-54a5d99fc1d6",
+  "x-request-id": "3b7758fd-1870-4f1a-b053-3b710f9d47c3",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1137,7 +1173,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=70FDEDD9-EE1D-412B-B783-29D04B62BC
 ```json
 null
 ```
-## Can retrieve pin with name 'ee1d-412b-b783-29d' via the 'partial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '2313-4e59-ac3e-6dc' via the 'partial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1154,7 +1190,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1162,7 +1198,7 @@ null
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?name=ee1d-412b-b783-29d&match=partial
+GET https://api.filebase.io/v1/ipfs/pins?name=2313-4e59-ac3e-6dc&match=partial
 ```
 ##### Headers
 ```json
@@ -1183,17 +1219,20 @@ GET https://api.filebase.io/v1/ipfs/pins?name=ee1d-412b-b783-29d&match=partial
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668ca8d8ab9c19-IAD",
+  "cf-ray": "7db3683948d045ea-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:10 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:00 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=5KzjE%2FhiRzoNjwDgDf4aH1LqUJZPXRnEte2Cs7v%2Bgxa9ndBP50yf1%2FhApqTYLxt6WlGRNcw1s1I2DAS%2B81%2B7ECZIM3gpzuYVC46SO4GJ9lE213wrwWD%2B9QRSEpNsVXDIVw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=0xBQWaq3pS7PYJmEPmt4Y%2Fs20Mwi%2BjKEPRQdvOdhiUHqWuZ3tvLi0bSFYR763FWWLuoPuyNOECt7WPv7PqbHlIkimiwS%2BbV2zgK9rGMihqSa20BOQZo7JockfC9rbBUiCw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -1201,7 +1240,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=ee1d-412b-b783-29d&match=partial
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "fa42f09e-09d0-405c-a118-f2c1c99dc1e9",
+  "x-request-id": "caca4dec-215a-4b79-8687-b90d5ba44043",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1228,7 +1267,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=ee1d-412b-b783-29d&match=partial
 ```json
 null
 ```
-## Can retrieve pin with name 'EE1D-412B-B783-29D' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '2313-4E59-AC3E-6DC' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1245,7 +1284,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1253,7 +1292,7 @@ null
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?name=EE1D-412B-B783-29D&match=ipartial
+GET https://api.filebase.io/v1/ipfs/pins?name=2313-4E59-AC3E-6DC&match=ipartial
 ```
 ##### Headers
 ```json
@@ -1274,17 +1313,20 @@ GET https://api.filebase.io/v1/ipfs/pins?name=EE1D-412B-B783-29D&match=ipartial
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668caf2a4d8287-IAD",
+  "cf-ray": "7db3683f8c002e27-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:11 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:01 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Jh9s2gvTYBPtyCM9vJF14zuVNP%2FPTIwRbfiEU1XnjGAS9cRvZ3%2BvRN2yYNcxsz88wVLhXvAHPWN8qSjOCy2K9xGQEwX%2BXKFCsm%2FtVZI8kdyP4JW%2F9DPn5sHr2Dbdntz9%2Fw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=jd%2BVqMPAbrgsvKgBgqwU%2B%2F0COddKSxK7u2fNh8RLHV1JImoJuWip8SZe578xUsROZwM%2FO64kz%2B7dUnVvgT8KFnzUVqsSjFIyp6dtChvJRat47oyRDxWgf9XbCMipeUzpqg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -1292,7 +1334,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=EE1D-412B-B783-29D&match=ipartial
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "252c6328-0bac-4568-aff5-9cd1fa9060c3",
+  "x-request-id": "6d266fc9-adbf-46ff-b638-9e0364609845",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1319,7 +1361,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=EE1D-412B-B783-29D&match=ipartial
 ```json
 null
 ```
-## Can create a pin with name='70fdedd9-ee1d-412b-b783-29d04b62bc41' - ❌ FAILED
+## Can create a pin with name='76529643-2313-4e59-ac3e-6dc3dcd5e0a8' - ❌ FAILED
 
 ### Expectations (0/19 successful)
 
@@ -1366,27 +1408,27 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1405,7 +1447,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreihuvni5coc6p7drbfywkurty22po3gmimsbob26nu4sq3ny5h7unm","name":"70fdedd9-ee1d-412b-b783-29d04b62bc41","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiccksh6jvmmmy2rcrivtborfxpzw6thspz52sdptsluzameix3lfi","name":"76529643-2313-4e59-ac3e-6dc3dcd5e0a8","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1416,26 +1458,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c962b620664-IAD",
+  "cf-ray": "7db368268d07460c-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:07 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:57 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ZM3CG9JMx1rH5zE53CditYgu0MkR9awRj3loJiah2K9BzIKRz%2F7Awezwxv%2BkgytG%2FzHdc0i%2F0ADYKKXDGa%2BTRmmu17VnG5n%2FJqi4%2BUATFw3g8Eofnbn%2BYUlEVyxdbH51fg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=SnzXonUGHEO3oCAM53XBsL4hCnWdmjcsHB2fXGBbvDmoxhwXMOAMPLe%2BcsW4SjBQI9nD5kn2Gtou%2Bjkg%2BNZbK3C9Wpd6%2FvBNpJdIWDiJBMwbiazdiRTwDLAylqwOMp3VeQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=2%2FpWCK9HK5dH0N9auBYlyqUI9wIL%2BCYFQMdIS%2FBYDsX5hrUt8O9aYxCru64BfshJBgZSBVKeJSngE2XIlwdDmF4y%2BB4sgMqIXT6FWHnmRb7eM3qptLEYu58tStsmGj46TvVEz4ewt5S%2FTWp%2BI2hRHCfPaSDlUpicBzEvNlceFGVno%2Bl%2BEnGna8P%2Fgs1WeQkkxQY7FRH97qvDSarbhIBl3nXuW%2BPXvWKwllgNao0%3D--6o9hp66IfCvGDDMA--u5fT3mdzTd64131ZYWgP8w%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:07 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=jSPTRdeABUhTUYgd7m0whwcSlvANkSMFKeYoh3ID%2FzWYLginuFr3LuhQ76C0CEMKImPwQUCZqikSkgsRKtMJKfKbmEFI1uBhRh%2BdbsFrex31MOAgNcv2%2FyCzD8HlcR65tOIZ15%2Fp6udi1GK6phWEFjTtB726A23mU68d9JKywDRvXAhlEVERFAVMxoPEra%2FWRiXtR1sFUXDZcjuM%2FNRV7tMW1zpY0Osl%2B3w2AIg%3D--ew1nwmuDnvc%2BFh5E--UE5cvqmCapXKAaueTvGOXw%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:18:57 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "255a2ebb-86b7-46c0-bb90-51b9d2314d5b",
+  "x-request-id": "ea1da080-fd22-4cc0-b882-380241d513e1",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1462,7 +1507,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreifgxal6w4tszsntk4m7htv5tx7dyxyowqam44ebtpvfdxhqdgagle' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreigd2wsxuv3kopgygf2ygaqp2ttbgxlidyed35kiuduirlutumxd5a' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1475,7 +1520,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1494,7 +1539,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreifgxal6w4tszsntk4m7htv5tx7dyxyowqam44ebtpvfdxhqdgagle","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigd2wsxuv3kopgygf2ygaqp2ttbgxlidyed35kiuduirlutumxd5a","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1505,26 +1550,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cb5ed57206a-IAD",
+  "cf-ray": "7db36846ea3e465f-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:12 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:02 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=nfAcOoBGt8%2FIZOtpIDibke4Lv9GrSMs0mYTBClpCr%2FYLE0i9jYnZ%2FSSun7napraeHhSQ7WK7mthHi%2Br8KtewOmIYtsDNV%2FQb1pehtFsqGaPkQgm3p6nxwNAm8WoXd3DEFA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=C3JNRmByHq8bwWqTf02kfS2A6NQJSqPzCimM%2BRvz984ZvR%2BGZBJCJ5WqKlO%2FpNokk%2B5kWqTrTMn8fg%2FKM4bipWdvPj%2F4POtwwq62NpuqNbeIb4Jc%2FsJMrWnpvKBditgbAw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=OOwNKe7ZXCC6R%2Bh362hGQT5MJ3UxWDgIhr%2B88Yq1ka5RMPUnx09CearxoRaNfUYE7a%2BspxP5e%2FW6Vo6djBSKBm1v37KjCj5EVNyXrymIC9iLk46xw4W%2BLQJ74SY%2Bnq82xNVkVv2intmnzrPCdf2th9sCMY1%2BTjR2QJSFEShlid4%2BjqqPskjwDFAXi72IsMNaqS7jDGpB2LWzW9fxl%2BgtsVQwTgFORJinbghmUuI%3D--RydD%2By%2Bq6LthpGjF--JVPCDwaoP2wF%2Fbg67t7KeQ%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:12 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=BUAeR7YNhz97L2s0svKVsTk6sDq2v4c%2Bj%2Fl1NVwza817jXQh9AbyFAJQT4bEG7ytFp6Vqt%2F6p3%2BUsx9uMJqV204fmP0QZVHtZYzyW%2BDybRDRdDTVO%2BBvDqT5fmwcnEh1IQFKv%2Fuo3Xg6w1qwL1o1r4Ehs02HvOHAhe%2BC9Nt9KcInD%2Bd4bZsLaBqs63xTBeZlh58BnN2I5Hl6fyaexlpvB05z9%2FgLOggf6iVmqro%3D--trO5nqNqi0oHU1%2BZ--pIXg2XCrQUbD8MVBHg9NIg%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:02 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "43d2f1ee-2ea5-48df-b4a0-5385f7d31652",
+  "x-request-id": "01a97212-1aef-4c7d-b381-4bbadfd84f62",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1551,7 +1599,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreies7gbca2y6b6fewfvqejxtawlvt77qp3c7bfmuaiiwecn3offu2a' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreig4fehqytvhr5snlredyacuvq5usxrsy5huicgn4qdenx2gzksm24' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1564,7 +1612,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1583,7 +1631,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreies7gbca2y6b6fewfvqejxtawlvt77qp3c7bfmuaiiwecn3offu2a","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreig4fehqytvhr5snlredyacuvq5usxrsy5huicgn4qdenx2gzksm24","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1594,26 +1642,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cbc2d8a1fdf-IAD",
+  "cf-ray": "7db3684d29d1e8f5-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:13 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:03 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=VPBBwmumK5Kq%2Fz8IXOT47JNEy1%2BytJfHtLkfMEA34IYzh3Sr4Rw3qjwKQ4vZUIB1GefDh%2FWyDYOZklSMpXfZNVxPqxn%2BCr78gjhI%2BKbN18c%2Bp17S%2B5jT2oaEtLjm1A7r5A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=82k%2F6szR2z4X5S%2B0eITJb%2F23rkpuxwugR%2B%2F17H3Mz6ImkSH%2F0D2emfp2DYAZECgq6oWBiAMHrPa3FdM9UOF3gnGZbsbY8JFSL0Q%2B5AIs9et9coC9toSOdgLdEnnDxozduQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=DngcMs2FiqOrjOrkqlgkZ6K944qjWZj4XZKK1HNAJ%2BnVOVa5vNkC8AuMqOpm66dLNbjsaNd3LE3XMT8BAZdTijdtbNVliVKDmOUUMwT311GM3YkHAmllesnZuQMWnGvgBnnnCGha%2B5bG0%2FKEmRPKIYyQieduvJDCAHANjuVdlbjde%2BlJva3SU4mQ06v7kq87bANmMUb8jYvx%2FPavKFhT7tyY8d9DXzQxxMaJf7k%3D--r2v16eI3i8OmKfiT--5MIoM6d0M0sgA8WX2mvDvg%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:13 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=SRSnuoC1HJGGBfXlBfL5D8DV8Mc2FiHgKnY3OgwG3u%2BM2ApG4Jae8jvDGLVrbTkfz0UTOJ9cIBDBXbHiHO3IXOwHX7MlhvpjHGCH0L1lJn3kpDI0ufHfBU1a17PQMAoMhgS0nlR2mdm0LsGEEQLO%2BWm0FH6e%2BeGO4MD24thHOv%2BOC8LuDBSLXYg7YuF2jdUXuxFXkJc2HQcLr80HjZ7pBWlw9twb0DPNImeQUBw%3D--K%2FpRGr9B%2BOfsjFW9--bk5XEVWQqWRF2gG72ONq%2FA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:03 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "8bc86d65-4525-43cb-ba10-1037bc28ea6b",
+  "x-request-id": "4db0f640-2e52-436b-9ab2-5210c3875541",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1640,7 +1691,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreigbmn3vtfxho7rgiaysr7c4f4nvhqowbkx4xg7dvemufpf5sv23mu' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreiene6mlzrkq4j7q7u4x5brgxl6deel6q4acsmrxof2fgkm4ptzeeq' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1653,7 +1704,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1672,7 +1723,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigbmn3vtfxho7rgiaysr7c4f4nvhqowbkx4xg7dvemufpf5sv23mu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiene6mlzrkq4j7q7u4x5brgxl6deel6q4acsmrxof2fgkm4ptzeeq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1683,26 +1734,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cc2681a20c3-IAD",
+  "cf-ray": "7db368536cab2ccb-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:14 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:04 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=o2n59ntravxmSxw15p5Impso3lAVj%2BOkmMGkJO4fZz%2FDlm0LnTlahgMi9WEalOXl6L32%2BT7eiR6qSrrj1hBfxjcM4UTHVsXUgLPa44r96N493mXkWGVFAiihK6URnhETpw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=rmnQMnwQPymXyc9CU4ev6gI1kQZ7iYeRSK96w5QKaAgyXTpmSQTJHsnOQiL5gLh2c9qAZuyofsRkv%2B6zAVEn6QCkBEtpKaQ67ZFfw9EZzu%2BYRjymKFx6BnMKIc%2FeJESOcw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=tpyXp61M02DAyfD%2BcT2zcFbr6zgZ9rPYBsoj6hmvEEFP3sQW3HD%2FqTAzT2bVu8hKwyBQ3HUZLtjdcTaQlqzfFIK3FAw6j89Dy5mi1HN9ax2XkLj6AZKPj%2FD%2Bq0e3K3GGgfxlkaXronXu2PqU6HjX7X5xm8RFtKaIwFM0pdeLPIsdVuQn10YDe7MaPcRmHr3sTqdl8dsqH7bucDEXS%2ByEe%2BnWJEgcZvl1Vf0Sf%2BQ%3D--gQXvhGBLA1NvB1JN--pRsLHW7TTQghDggK2MQ5jA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:14 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=gKBLZmAbTELfDCh29Y39qDXpdUKwYhc1iqfPvR%2FcjHQXFk9aNbsDqH6YwmgNei3LY5icENlaZ%2BFNvGa2Dmnk4f%2FlmqlB2H2VM8UAQTv9wkFJoFYEo7KGyZKYotyfA%2FZiyiG5AYASXOZE8zfBOkdKP%2BQu9Jy9erujLi00e6TF0IDSsnCr9YUKdzzWjn1up0rcNOT6oZBCW6jKnBmFm%2B29ceq2Bcoic%2BagpD46bdA%3D--TnKWRiNT4bRq1%2FpQ--%2Fkux1jAT%2Fnnje6xamEudJQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:04 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "5fc86ab0-eb6e-4168-9b9f-a8e0cc0a1e0b",
+  "x-request-id": "700f2741-1b37-4de8-b7fd-f5d8d48999ba",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1729,7 +1783,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreidlypus5inuibcmivogxg3kaixbjguvhuz6ye6qxkz4wirz2wzfum' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreia6zt3gic65biflddmeznhl6rogvywgaxjjkmmteoz7bnfl4fx2ha' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1742,7 +1796,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1761,7 +1815,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidlypus5inuibcmivogxg3kaixbjguvhuz6ye6qxkz4wirz2wzfum","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreia6zt3gic65biflddmeznhl6rogvywgaxjjkmmteoz7bnfl4fx2ha","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1772,26 +1826,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cc8adef824b-IAD",
+  "cf-ray": "7db36859a8b345fb-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:15 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:05 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=YMzCc4XzT6EyvDjA3WCIKop0Xv8W4pD4K1cAtQtlMgKqM%2BV0kQ0sCuLQ2aNMLwduJLHRT9Adf0YMBLmgAb9%2FWGwNnZd9mfYYCYkpbTp7zny9Bt8q%2Bg%2F0KsNhsZ5RE9gHSw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=XcymHz0PcpWsT9RKdg3wqXK6vTigSr7XTZKtSB7BnXI1%2BQNbFHCIMTfhkawXnAZApAVvXlHS4Im%2F6YxWeGq7sovnKfrEcq%2B33Yn2w3vCvBo0%2B0r0i6aiTqYCk4AcuWyaKw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=XGEX%2Bn%2BYn%2By0HsdHvGwA%2BBsOXfDMPLKGaDEYg09zIn8V9t2iCx5m9YdsM9C3QGuGr4uH6JWIBlizLaMRn0%2BC%2F2wTB919b3rkPXu1YWkydtX6DjJTw1pKQPi9GJ6AoFeB5HI9Ne7TujJhWyD3O77xplqXzaUi2Aooolb3m7IvRAQRijnrDAOvpIWrCuLPLnot2hzUqsQTzC6YVtlTRwBYHMl2jFrM6Yp1mzxmJII%3D--VuJKC0%2B3eBwrcGAk--yTGUqb0XBI1sWkylte6tAw%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:15 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=kXAHiQq7ptMxyRU3MYiKz224RC%2FRpkjIEUrFupaT7qaLDOP7FfH7Onu1AMjvVMsVPWAr00EtZGrWQlzKxQExv53FIkyUwSy%2BHg%2FseBoK1lUTWQtiaOI5hM80yqPy9sGGK8mw37jawwyEJm5y74ob9AfY7JCaDNQ06cXFB1fesekiDxK0oPuM9Se%2B5JUrbgn%2BxuWOrFhjEJRweV5DRwC%2FpEga%2Fc9r9qhd3YbPw%2BM%3D--hD7nvehsRy2XwHqU--qx%2FgHYWa3YGLGpTlsNdWSA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:05 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "da7f1815-252f-42a9-832d-12ca03c0dff7",
+  "x-request-id": "ceca6960-0bae-436b-8308-83b4a9658f02",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1818,7 +1875,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreibkbnxo7xbjqm53utsuq6lgurxe2sdjebrwwhqfsnbm2xke74mtye' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreigndjowbqw3vak7oisz3vilwx7js56yuh4xbgbehlbdvzku4ouexu' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1831,7 +1888,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1850,7 +1907,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreibkbnxo7xbjqm53utsuq6lgurxe2sdjebrwwhqfsnbm2xke74mtye","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigndjowbqw3vak7oisz3vilwx7js56yuh4xbgbehlbdvzku4ouexu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1861,26 +1918,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668ccee96112c9-IAD",
+  "cf-ray": "7db3685fed7b2c9e-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:16 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:06 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=9bLvuYV57Q3WS7kY8Z8yR7NP6FxpoBYUl7pwaEjl12u3zQYgqyxiQ%2FeqCcMNpDKG%2BrgMKf1%2FkkozuCN6d93EUSnSUHuNTYg5xFWz6e0bT75dFCcSUQc%2BPqB%2FtRD%2BaD46TA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=oR4DaoBYScshwkQ7KAsAVXvRhNp5qNkWUOHWreWuKL%2FDClHs%2BtiK2QJ8tf8wI9UJUdrD9lLIZnAAsvHgL0rifcgskvvNPTzv6Q5%2FwQEztuHVW7zLnH9o0YpZ84L%2BdTWQIQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=bHunxC5FQ%2BJ07rRBMnLVNBe5%2Fv4L3RGUnVVLxlryHvVTJ69%2F0y85HakyGqfHWfNB0jWlFqs9FRfuXR9js%2F%2FD5OCNJWgOZP89bt59qo7cegY%2BC1HHsdzRAItBgOIhqAvuumP5UzpmYqOG2z2qGSkJvL5N5wkQx6yu94VifHMv0jg9aBK1qlAYzjqpo5Iuj8nnIbY2EFiVf3NG2cf6RXvToBSyLWd6X0v7gYS9BiU%3D--QLb7%2BZD4ApZpfv2v--xwSUYrqVj3v9YHYwCBdVFg%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:16 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=cGjTkMWyosVwClbwV4uXpkIom6xTN3CfGIXpuq6VzCYB7D4H2Cd9LeYiqwdabvoyESN84YBNCZIl9U6PL5e%2F8b1e7BQP0NRKwV5DR%2FJ%2F%2Fgt8GIOz1ORlYTWRPwfP0QaNoZmEb3NwNiiKpECEiio6fE%2FCONos0xrfsL3Ik0CqMIk0lq6j6XMFox3FARYEwlHNNA8kn3SfAmVzOQnWWH3PsopfxX0BhcMUqo3WZ0M%3D--m0VqY9DMACRccK5E--rZSfpjyAKJp%2Bd0yBsKqiKQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:06 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "a079f0e9-0d7f-478f-a36d-b174603984e3",
+  "x-request-id": "6ad22b28-a28b-4ab4-b1bd-2e589de2c033",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1907,7 +1967,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreihcwaep5rgzudftr765rsyjzsgjzwqjytbbsedpzr64lmktkfu7be' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreigxoovpgel7hqvoscadhgdw6c46bez5ip3ss6msx3xxtlgpfugn3q' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1920,7 +1980,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1939,7 +1999,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreihcwaep5rgzudftr765rsyjzsgjzwqjytbbsedpzr64lmktkfu7be","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigxoovpgel7hqvoscadhgdw6c46bez5ip3ss6msx3xxtlgpfugn3q","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1950,26 +2010,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cd52d633aff-IAD",
+  "cf-ray": "7db368662ef54672-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:17 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:07 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=kGXgjBQgzjKNx%2FHEARd3QRXxeGZK4lX%2FZg%2BZiOzsZcPurTyKT2qECgHsSBtRK4x4kidSIZOdwh3%2BtpeLbUT1gLNksQqP0Ve5PW9P5%2BTlHe2pFTdTAYn69S1%2FbpdxD17CDg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=OQLWPVip0WnzgdgOSyybzM05aUEHsxAgYKfWsc49kdKF0GnG1cGzCLS5%2Fa770YmCwSDuhm1xOCqsVlM0THeKBOtXDhA4PBRpMYPrRNPh%2B%2BoaP2gBsVlYnYkq1gEME1qTNQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=uwXjQhRJMR%2FGDQuPtVLinP7Oi5GEo06cB9Du8Oiu2%2B6HyJo9nKHTzJk8jOmyAXMUuVHW0kAroVVirWSOLBhREP3rQGMMGoAFUQtGbnuQAs1nPahZsYrhZLEm%2BnwTEioGsWS61oZsD0q3%2BQhVtqiaGlk49OHopsZ3EP%2BRaFSrH7xtcrqxlGPn6CQYT%2FYbDWIVX%2FFRFXFQ4Fd8oysRGur%2BCftB84aFYuTtA36UE2k%3D--CehKO1gnv4gwd3Eb--6O3aL46Owaif7W%2BOI%2FPeHw%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:17 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=kO2w%2BWqJGZ%2FLkkET0DRB8Va4Y4sfzPQVlRgYYx3PmtIF4wZr%2BaeKHMZ0TZAwSp9orFqHTVkGcCTQbZz%2FdPFxNqCWQW7fPWfUnGndqvqMGn8xPhbKdXsJY6g4ljXdO4mqEGvr%2FAGMIOUsVQVeUSuHC5th3urV%2Fbe5BTEhVplOnJkz1NCJYAuObW4dCaul0M0o51%2Fsgwr4P%2Bl9koIZXd%2BYwA5XRdn6TuE2X6wuZHg%3D--rYg8IPFXIlQHkpo0--Z7bRFiajSKN1gLrmw7boLA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:07 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "c947f5d3-8d81-4e50-9256-7973c0aa89ca",
+  "x-request-id": "55998a96-cd9e-4f42-9fd8-0b404dbd622c",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1996,7 +2059,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiaujs3pmatj74krqkgscw36pq7qnylicfy2m3q4ryhcxumqsqyvgu' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreigc4uz37dmxnt32mewsmtd4vnopvfbqhs2wytk6up3xc57xq66xby' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2009,7 +2072,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2028,7 +2091,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiaujs3pmatj74krqkgscw36pq7qnylicfy2m3q4ryhcxumqsqyvgu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigc4uz37dmxnt32mewsmtd4vnopvfbqhs2wytk6up3xc57xq66xby","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2039,26 +2102,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cdb681105a0-IAD",
+  "cf-ray": "7db3686c6e552e1e-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:18 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:08 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=F6B0dCL%2FlJGf9rocFkGwDpszZF3oiyuv0PoVF8%2FiMFtSrnRu8e0tqhSSvEj9%2Bpqg4kJg3rGnYUv7D%2BnYaTlw9YJWTuCgyeljBu%2BF4fjaKyl6FzDRweka4mheuad16frE5g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=L4QaIrlwMt5ovoJb9RiDM6yZZ%2FFL3OwT%2B2KD6xcjskdkIMC%2FtAFRWUit3Qaln9o%2B9vWEO7ompYnsPcYcbs0E%2FnMy1dqgZuJRxfbNN2JSalZDQbBGXHDEjorJcDOADkwupA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=Hes4nV855%2FbpGvmI0dxazR0h4KSsBBqwTHtA4WS6I1DoX82w6TU1gmiQedRI0IQIY5rqwlUX5oSDhG6ffdKDtjzLgFRB%2F4BDpJDjSCiYZkMtUcJy%2Fuj%2FRfePESIj3ytqwimZ1ciSKD0g3Msn2FuEbImJsa8C1JbjTNLj1IyWuls2CXvHnDNE%2FHOXKvVcoFDmgWuyC9L9dzQhz1zNYKAT7Ku%2BZ4uiFQxOMO8sbYI%3D--YPRNMoFzIlJc1IOM--7VxZnG%2FMkBGsjHG7HAl%2FZA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:18 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=BvIq5LsQbobb5CT2GhKy3MMoad0gYi0iFrStjySxMoJBW6iM3n8%2Fug20TABfaPvOijYHMfbLDe9wrChSb%2FctKx7ImZi3DBFAlctLUiy4oKsp41wQdhuD0BMOlyQY%2BIIaZybu%2FCaC%2BYlgUyYuDx5T4CFaJ3Qb8hd3K3izO59jHzSbr6RxwPE4QerednwWqPT16l%2BgYivFKwfLyHg8poyONdJVQz%2FB71wrSyLNonI%3D--TBU7aKx%2FytdVJt03--SCZ%2BOR1K8PV2o4zv4DQebA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:08 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "dcbf8d4e-24ff-4043-bf67-ce49a4291a6a",
+  "x-request-id": "10821f19-69f9-44a6-84dd-3f8eb24c9a2b",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2085,7 +2151,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreica6cewninwf2m33danydwqa2wo2ojhxl5t2lqhfcamlrdfh3xwzm' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreickzjum6cyporbypv6t24a5idziz3jrgmoaofb6agn6hya6cx27va' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2098,7 +2164,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2117,7 +2183,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreica6cewninwf2m33danydwqa2wo2ojhxl5t2lqhfcamlrdfh3xwzm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreickzjum6cyporbypv6t24a5idziz3jrgmoaofb6agn6hya6cx27va","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2128,26 +2194,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668ce1af8905eb-IAD",
+  "cf-ray": "7db36872bd8a2ca8-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:19 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:09 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=0wV3VvfH7ET5uSvtGE1qqyrGXsXTq3iJF8ptRSXqhSowMpx5qirAheGQ%2BZYYnhepUe7aYjHTQvVyz%2B3A2uATVFPKbshlUOwNGKk7S0UJ9Or%2FCywywYuZN4cnjxpIvGurxg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=3lFq49D3rF4xmgL9zj9dxbUx7OdyfIrfGEVrn6wcsFPgM8JTYHK5XvDv%2FD9h61Z9OeG%2Bt6tvZwj2DR22wzo2ENbPyKbnIRU9NW2gcv9iFN2C1F%2F8P9%2Bvbp6XMnVdwPM9%2BA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=2tcA2Q8L707TbPABrcFG2du7fUur%2Bomh%2FTDqO1TpJiQ9DDCjPqqDtegEJIVa4rgloRt2YGwChtP7crGxq383JBqb9IsW3KJVGO4sFzFdC8OM1QRWdWCWLeDVKd9jtQCt7O09w%2FA4sTA%2F35iytNHQE%2Bk21oOKbp8AdB9C1bId4jYCpPY2%2BGEQkg0bsMN9t9w8X19KszEwwkt8mS9f5EuzTRXBN%2F8gW8qpSWB6%2FqM%3D--6rT4otFfJMf7tWl2--UXZfzLmUBfHIbU2c8%2B39qA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:19 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=JBu1Ji5dfmFNY6B%2B31lm%2FDV2Ohynpy16M%2BdhNIdg%2BRc6kH%2ByQOhNYOcNV05JwyzMUXDkcbk7QMYbNu1b0KnYay6dJ5QHO54TLyS8gGOosl6tgqkFTF07IFHOj%2Fu8vfy6Ytl779FRWbKZSSzdLlNURtegKQECZG0ImQrIZx93cEuUl7uXyWQ6OGObISV1uFHlXNFga5yETiaPwz7Vv6MOqu1bq0ZuDcclY2BqXG4%3D--sUctvPJ3rOkPAr9u--cMWRt%2FtjRe%2By6RtBuQnaUA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:09 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "811813d0-cf75-4957-920b-88474c328e75",
+  "x-request-id": "b7602d08-004c-4f53-9aeb-92fa5cf5be73",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2174,7 +2243,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreidnjqf7lsbedki5eo5xaipw7gow33tly3nh2ul2lt53gpfvjxvn4y' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreihpfzqwd6m3givo3y2pgpxshvfjxic5tmu3y4ynkrlofxqjkn7zfu' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2187,7 +2256,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2206,7 +2275,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidnjqf7lsbedki5eo5xaipw7gow33tly3nh2ul2lt53gpfvjxvn4y","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihpfzqwd6m3givo3y2pgpxshvfjxic5tmu3y4ynkrlofxqjkn7zfu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2217,26 +2286,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668ce7fa5a593d-IAD",
+  "cf-ray": "7db36878fb7d28e7-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:20 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:10 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=GN53P3laEaBacGe28VeMoFlLS%2BQkXZDPpi9ayboZPIUQki423hBEkt6a1BaGAANZh0TUtuFb3iAyJJfnvz7DH6L%2FPInxbX5HB8N8ZPMI5ivGhTBSkSvI9SOLluVnMK2hbA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=dnwIskPd54atUK%2BykiX3rJQ3frnl45jHudImn6HQbKRRb1iRaFfFB%2F%2BsrPJ%2FiH1N2DvvXFhIkaOl2NDAOxzIDWPcyB24hO6FzTdCg8w8MeQVk5iIhZ0rTT3Meu1AekqIlw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=Tb6x3cB%2B%2FUIDFdtyeHwNUIkIeyDeNJSiZaSQSLYITzJAxx8UfThe2OULnht8kfvkipDjm9j2%2BOQ1TZdIuy%2FQIHALkqe%2BmntZyjbSbUokRhMSU7DCoXaVed56aCtgAjb%2BhjS0KBYiq67tp4y0t%2BJo0TGoAcrIJ2QSPKDa1EOz4aTpaEyjBVx3tJcp00sExwF2U2XlVyq%2FXhj6o65pZyRqRg%2F8CIj805jxkXNm1Eg%3D--ujhyrZtONojBu9pV--wQ900eqMX7%2FFiMchNH%2FCVA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:20 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=n6DJ%2FNCm8%2FkeOxK5n3bTXzfrmSRek1HkKHt4pRAvO8gUMzb3rQ4P3wXwTR3Qf5TOdm0MaATTK0uwqaPEV%2ByXkk73%2Bz%2BwN896QDnGa692fSh7rbZJeu9NHi7KhJpBXqYnxOwcKoOYWm0UF%2BUIo6CWFfrsVC0ZA6Rpg3oIn5X3MflJvZahtcID0NfHJLGP5f3zECepOj9HqpoOt2oT%2F0PZkKTcEe4vQEfmTQmZXRE%3D--7FYoV7qRfN3Tz3GU--wiyN4PIbTPxC074aamd2eg%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:10 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "68c1c9ed-46a1-4ee9-a3ab-6f9c8e508e09",
+  "x-request-id": "cbac3162-cd2b-4ecc-9705-f66de736b89e",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2263,7 +2335,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreierbeghbd23kkjm2kb25hghjxyuanzxq6qfknvg5swfawgyypgznm' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreiabv25wusg2cmqbfaffodtedfbmv7uv5f4pdjybeg33twqmtvyeuu' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2276,7 +2348,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2295,7 +2367,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreierbeghbd23kkjm2kb25hghjxyuanzxq6qfknvg5swfawgyypgznm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiabv25wusg2cmqbfaffodtedfbmv7uv5f4pdjybeg33twqmtvyeuu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2306,26 +2378,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cee3de19c7f-IAD",
+  "cf-ray": "7db3687f3e45e942-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:21 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:11 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ZNMaoCM7yFmDSrqB3GfGrFHFgLiJDRudJNEK6ThRdbgxyGr2TViC5Pim6GZjFDELUgc5548LY5cU7t5n97lS7rlThNcRVnnB2i4QuutUQMCdmLb%2FxdvCKIGAHlPlTiIE%2FQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=3%2BGL42uoO9R0Cq3UnbwUl%2B19cnrDz7O6qoEQXATq0bqTDTb%2B3eLhGyvL7EXmgBJ2TN5rYxEX4C%2FxYVkYMzh4ol6jY2yqGRrIjqTyirqTBpFPZRVg7Mzxbal3xaf3WSFeaA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=MfnqWrgzdmN2zF6%2Bgt%2F1Kh5MrIH2XDt8zg%2BT6jj60dmg9xtRl9VjddwOHnCnGIBHO8FY0%2BqeBlwiBIdXsN4x%2BqFbEe9t5uhOqr5z1eSOOQJOdtIK3whCXRapsMlf7KA%2BiPF6aRRVxNrV6Gm4Q%2BEiewgTzhd8BFpR35K%2BVePopglTBHZhEzfYSCzdrp50suL%2BzsPEQ008%2Bqz3KQRVhI85SQjWvq8BBAugc3ZZj1w%3D--Gjdt6kH5tecJ8XK8--HWHk8PuTEuhEmRktQfnoow%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:21 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=KKkWpVPy7CM%2F1SbUyNqStc34Jvl71NBX1ch6GJ1xPOMywvcNWVi3qCZHl8og%2FFMS9LShJlx9bi0J1nRkzVHPfJ99Kf6bP%2BhJfcTdAg94jG7dRfVzUvdBY1eUlkf7fJ4fHN2fiOs0cW1C7Dy0uzOiouqdV7FFGqJAFEuPa5pMKOa4jWclUmpwRVnjrig3Fv1edkeYPmXw5YNVM2EXhsX8GNc%2BW1WaZN8ZknB8%2Bnc%3D--suhm0vSWTwG6PGd%2B--0CjFP0Y6r38FN%2Bs5U6BGgw%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:11 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "2d13d765-9e5c-45f5-a9ac-f498bee3878f",
+  "x-request-id": "bf999e08-d92e-4028-a424-3509316c8e81",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2352,7 +2427,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreianhv2ebvh6bai3ljgejz7cwicazvsfmjr475yw3oqkxubo2pocpe' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidh63edwpwmfafvnplvwijdcqbsbmzzrd2x4xqp7xc334ngdm7feu' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2365,7 +2440,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2384,7 +2459,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreianhv2ebvh6bai3ljgejz7cwicazvsfmjr475yw3oqkxubo2pocpe","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidh63edwpwmfafvnplvwijdcqbsbmzzrd2x4xqp7xc334ngdm7feu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2395,26 +2470,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cf47f567f82-IAD",
+  "cf-ray": "7db368857eee46dd-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:22 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:12 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2BL9ggqfaGXfq4yoz8RHLPxdpP64ZJanj77Pf%2FeoabSlZCqDZYExvIG9BQbuIcPiGkTviV1liqbAZqMzVxVVK0QSSGVBaz5LoeV3TezDUipTGI7gb3tUoNnwNEfX9r6mz6A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=JINuUAuhBK%2B7xC%2BqGV%2BYFgjXjj%2B1%2BztFRKt75PgvBck7%2FZhlgMCkk6g3%2FeEaoQu3acq97woWATlxLow2oruRhXDWtOvfj%2BLMasMgpal3rmVrwDJ9%2BnVyNPo7F0gCsut6SA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=WihMr26rLjj4Hmx125aIMfu9666DOHBmb5JLBrc3NGHT1MzfbZ81rR2juDuBSMtrquMiogf0sHDLF5exOl6jNEA2kPcCRhUBCd8GCMgLc5MMlyVOwzlpE4rq7heyvS2qaLT8jblBj9yuBfICRj%2B2zuQtF7ZiJqzFitMgDWVog4CW%2BUt4I61ppRu1vFNxxXrQ0N7k4MM2OCi6IdO7C2sjfj%2FZjlgMBxWy%2Bv2pMvo%3D--BB7MLe39l3p409TI--ImD1JOC9T5piSr3VLg%2BK%2FA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:22 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=HGAYaE7Y1UL6R6qkvTqUGnoiUm%2FiplDQrLjaxzvJcCsxRQp2jsDs27m3Th9o9d1z25nQKWUFZs8kDHBXTESDX0aorQv16VvWaIkpjYGPnCC0lJYVqFiuFg7AYbAefj9TB1B%2FeD9n3tC9g65%2FaQDrTPR9sph%2BjSMtwkJLWhxzwpI7fvzLg2OZ%2FvpJTXZaHroovf3o%2F2k5DjT68r2aGCaW2qPdWB6C8cmd%2FUt2faE%3D--94XCZzUdNRPlSbgv--I3ybts3zSs1k3Rutb2uGkA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:12 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "b97e2c6e-0dfb-44cd-af3a-5dc6cf810e21",
+  "x-request-id": "60727bae-39dc-4ab4-af2d-9962a4eec96b",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2441,7 +2519,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreihxu3mxg6zmmzhkkaawaro76o2o7g7x5pwmvcovez2um5d7hq77ui' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreic5rpect6muptukdvrxdcajq7rp5gawmcgjtkanrnseq4uaojgcpq' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2454,7 +2532,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2473,7 +2551,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreihxu3mxg6zmmzhkkaawaro76o2o7g7x5pwmvcovez2um5d7hq77ui","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreic5rpect6muptukdvrxdcajq7rp5gawmcgjtkanrnseq4uaojgcpq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2484,26 +2562,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cfabb192010-IAD",
+  "cf-ray": "7db3688bb8a62ff0-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:23 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:13 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=eY%2FcbhBQBDfhZ6pSLboFXWuw1i8o%2B09mWvOBFsXyhWwAYGrOyTh%2BhSIEpUXLGjy1yqrp4NcvAuE%2B0iMuS0r9ELXPlVq1zZ4C0dEUZJwaJnfpfdzU8N4Xq2mkygxRDpAtpw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=QxXZ2LkinsoEiI2TQ28YlbeNmArrDIUiIUMY91hVRMBBtnhbRGh32p4Qw2b0xnOFVo93M%2BeIsq%2FhTMfar8oNALOxzOLQKXyzIYSkVY%2Flqgk3o1Xcq%2Bs1tPaAQT9nqWAcDA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=dLmy2TLA0HC0RpqhjpnGVDl%2FaSquv%2FUAupfLtN31WoR2TDKuMYu8AS%2BmIiPTl%2FtyRPmyyEidiObPQXb9vYA1FspLHTZ6IgJ1jAODREeoEiTtxHmcESEJ0wKnUbreBCrHp2fgd2uitNBRD6oyQDpeeqBMlxi3b%2FqG%2BqSivxdKtTwnq3UevydR4LBTJBK3hsDQ5ME4gsz1KiZnPptH%2F9eq1YjyGPzRLNktiKlnaEc%3D--mhPC%2FQhzqLxgu6z2--EmxdWA5O8J9cFrTP%2B3oYQA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:23 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=LMmn7Xs3YkhbzNuIjypiGGXXmLIRdYYS1HKXF01zXwLLxpqMIB4EYR8FEmIhpSaz2tiBBMqXpqnMv9K8HHcWw30EBLUYE0nsD%2BEkQFbccu0CYYylT0q56JsSnKqD3zCzeLDmQnEDYTdlobju6R%2BQAKRtxl5ezU0d%2BLMKc8WRu7o5dJQSLitK%2BLU865B5cG4PvaopoljjEmo8E8GR0EvLc3DeqCjf2GdwQTKXtx8%3D--9BD2DSKLJKwR7IKf--RiFzT1yhjFhEJ3eSEx2vyw%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:13 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "103e1dc5-d15d-40d6-a3c1-28b3556734cb",
+  "x-request-id": "91213ecc-b111-44bb-aeed-46d1acf854d3",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2530,7 +2611,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreie7trrm2dhdxgdifckb3t3kqcce5vtf663gzlzvg65xuk4h4lizwu' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreifheuwxxljozykf5gw2occyqoig2mefmqsvifhagjduvvt44igae4' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2543,7 +2624,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2562,7 +2643,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreie7trrm2dhdxgdifckb3t3kqcce5vtf663gzlzvg65xuk4h4lizwu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreifheuwxxljozykf5gw2occyqoig2mefmqsvifhagjduvvt44igae4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2573,26 +2654,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d00f9e93922-IAD",
+  "cf-ray": "7db36891fe612cc6-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:24 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:14 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Ya%2Fc8H1QIcJlIFpiNEde3L%2BZBP1NoFiwoR1PQlanAMm6jhD%2B20yY%2Fd2lmdrpVZor6GdKeBgRi6HI1eWI6ZIRfv1CQ1ElPADifVAnK2un3HJCHEpmoILmMF1kFGoSHn%2F76g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=mqdfY%2FYrQJIqhHhkS%2Bx77xCoo1hSPiMzlpyEFKPfblzVVxcnOAj1XPZ2xkZ%2FlOIkl7eZVySwIGyQyHFBDGRssggPmx8R7gNLvPRXsMGGE1ww18PM0Li68iN9WesneKiBvA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=IAs8Pr3QihkKta8CNj%2B1mH5gJgdvPvxsW1JrCm%2FQMqH1IBClNE5rDvpGntAqBUQARK7jtiuohNKlTL2dIsP7ZC5gkWHS7m7mgJU7iyeJe8PyeMTys2nB%2FUxBmE3mV4HiDvRS1mRJWGO%2Fm3vViI2gatnpv2j6maG7IllwRzry%2B3m%2FAkemqmQ5irLN%2FGZXoM3TWvMDW2he4qIx0JMxnjY1kmdxKK39mdyFKTBCnOo%3D--PATMfFE%2FlbTGBQdC--vOylnxvYjPo6VxNkAxClzw%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:24 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=txOhdEpOh4%2FYEA1arJ2AYcZSQfKYxhixZ0ZBbCfhYv%2FSG5xMB5W%2F3sniVlivWhvmV3cmxzloskWop8BZHZUAYaRSEG7GtdH28nOqRoZH9rVbqCqWqlMY0WEDe3Vx%2Br3EpNDxLa6GrGYJ2vunrnm1V8%2Fw1K68iNfxQJJbJVt%2FFVARi%2F3nk9WdPhmTuDDESjNMCU%2F2EN9Vgo1k%2FlabM4gXqjwEp8qlbZw0uDsfZB8%3D--71xly3I4bYOp5bui--TFLETpfsALEp2nL5EfkP1A%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:14 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "64d97e58-423a-49b6-bf9c-5ca6e3070236",
+  "x-request-id": "857ccc88-a1cc-476a-b693-e070cd2eb3cf",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2619,7 +2703,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreihh2l6szfk25ibyssyh7d25rt4zbu4nczzwefppsqco7fepwauf24' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreib4yjlxul6jgf3frbs23v5iecw5nbkuceb6uyeobk4b4dre3mhv5m' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2632,7 +2716,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2651,7 +2735,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreihh2l6szfk25ibyssyh7d25rt4zbu4nczzwefppsqco7fepwauf24","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreib4yjlxul6jgf3frbs23v5iecw5nbkuceb6uyeobk4b4dre3mhv5m","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2662,26 +2746,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d073c70581e-IAD",
+  "cf-ray": "7db3689839750c0f-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:25 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:15 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=9yAZz9UY%2B5%2FBQYCefeeW4jQ%2FHuIPXmD6096QD35ijZuscMGTi23diTyzVomng04D9HH%2FbO5tdzGxwLGsqoSF%2Fewn%2BCA6NO8uUBHW8F45GFUsR8xRCREHXTz7qZaAB5c24A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=CLinrgGEFCiO7r%2FNpeBagXkJlCNI13pbx6XEdUVups5YswFmcUdxMyK7d3mrh%2B126siGuFwtJxQK5xMe5s%2BrXASQyKj3boCC021NQ%2BuFEbWju0qjRY5hCEg8m5BLEZzv%2FA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=cuj0qYyALYA0bFZou9EZSAahnBMAgpGCTDFWWnnHF1YEbvb5KL5tjcKYwCrJ0oSU%2Ffmy%2FSMo6H%2BdkIVkAJnvS%2Bkl9dNLZswkEvxl%2BfFmf4%2FSa3TqqmSLPFZhMIVz5YLWJGHZ0PdNE668TCqFo9midFaHpmFuAQut0dPzwb8bLhscw%2FC2oZ%2F5SpvZzrdoDfeDMejugxjSLMQHlZNoYNl3BktOylvOkcgR2ehk8Cw%3D--zSTb7xM5sPlBZID0--uKnZALU1XdCzjG9qjwEcHg%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:25 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=3%2F6onx9WMO7vzVRqil6sVeQYVhV1ITwY42C4E718%2B3SeQKlXJlfNFQi6AknvIFa2wZtMjRBfEBiHyEhKlPnREUIwkupGWP9exbfZzQrpp2kKxNHkYDoKtUAl4LCMmu4H5ka634S3nEGMxUMXJsCYqIByACYha9eLhhahcrZR9HQIY7dp8enyros65x8F76XC3CKqInnMqFzbHhMnj3yJ%2Bbzt5TDVimb2ea9Vm2A%3D--0Q8XOyxmNeNMMWE6--l4vFv1mlYJ8VtgQR0xJ8RQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:15 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "e433260b-0395-4257-a049-c9051314b8dc",
+  "x-request-id": "b30da621-c2e7-4ed7-be93-cf14b202f47d",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2708,7 +2795,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreie4hh7idka736tsfzymeh6qj7mt22plzwyapbcy66ftf6mgxwfgpi' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreid2v2nbifaz5x5qqou5wq3c7rz7x3audblib2hlfhtyz37rxu25sq' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2721,7 +2808,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2740,7 +2827,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreie4hh7idka736tsfzymeh6qj7mt22plzwyapbcy66ftf6mgxwfgpi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreid2v2nbifaz5x5qqou5wq3c7rz7x3audblib2hlfhtyz37rxu25sq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2751,26 +2838,29 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d0d7ee83ae2-IAD",
+  "cf-ray": "7db3689e7f832cbc-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:26 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:16 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=2qYzhYT%2Fo3Ur81bl0XMFpzPSDsh7YedWgWi0av8iOmPsLnjnJHj0pqb2Z5C8cL3kw%2Bt5LVM%2BI%2BlZjCIKYdw71Cn9xn4iyDuzQwSOinFPma2ZIMrYFqHbFFi6EsqrfLF6Cg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=dGcumx3GYos7gi5f6EVwpQ04c1batckSlUPPDCIq0GHMmUEAQCu%2FyYRjIUbIkoR1C%2BUS3%2Fkl1fF15%2FcxahqYSW%2BZCcYYCiQLecHKmehBOPLJC0KBSQewrKXAvqEmBasUEw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=NquIcUySi4J2Emj%2BjulPzq7l0jwATdoI0SPTl%2B3dZ2k72b%2BLDeXbLdYq7r94%2BporSmpjMSKzKqwlBOYQS2Uwnx%2FDXY%2F7Z7d0a9tuLEAO1b8%2B7ecsPat%2Bf%2FBqv3mYYC0FYy5n%2BsEXGcwTJAQjHuh4wrrCRNFaQohlmiymeQrZvJtzbvJKq746gJhYlDECYSyYb1ff9tsn7QjF5MN8nBm1m1LS5RIj2vZHHe1HQD4%3D--F3GmL73Q4e04eoBQ--CSr24AkaSYmduv84NdtcPA%3D%3D; domain=.filebase.io; path=/; expires=Wed, 22 Feb 2023 18:50:26 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=%2B%2FcaYDJkiOojrAZQCDbX%2Bp%2BIS7B7cycCYKX8091REmrtpTmF8IZPVr9%2FZUTcHDxulpshgBx14CjFqus1gcGrBT%2BmtvwhQXso4u0X3AJov4uM0TSE9vh2eMTvMmJa%2Fxr3VDhbuanO8yJVUYqjflYEevgOikWVWPM5TT4lOnjAzSdaWY54SWNKdV%2FOY9LA%2Ft37R5PyN2ok1x3RvOT8tbXbTMmRZob9FL1Iq1dufM0%3D--Hn2vnJRfY%2Fh%2B5fsI--8Wgv0oyFY5gBaJpxNY5Jrg%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:16 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "f67e8cd7-8481-4d91-b35d-331a15701be3",
+  "x-request-id": "f2029ef5-7627-4b3b-b5ce-42f458c1dc57",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2816,12 +2906,12 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: First page result is null
     at testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:89:14)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
     at async main (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:39:7)
 
@@ -2851,17 +2941,20 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d13bccf3b8f-IAD",
+  "cf-ray": "7db368a4b8bf0c2b-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:27 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:17 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=T1sog2cXIVmYJep3O0Ji4pFBbQZwl3Wssk6%2FIey9KzneFFCIqbEbiATZCa3Qx0%2Ff%2B1t3el92u12vy0zrhyMSb%2BsXgKOhwjPFIjw6mknPhZWJ0lSWwm9aymu6KSSyzjFTbQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=yYJlcouwgPcvfkuNI5yFHCdWiXIaZEfGSil1osTO4KFsa50Jpk8r5X49H%2BhJQbxpE0DXJSRw1968zJzYTvbk8MeJ%2F%2FZ%2Fur%2BVtsAtiGvfUjT0N7kF6pYsQ67H7xQX0I21kQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -2869,7 +2962,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "73932cb6-ea9d-46dd-ab1b-826d2a1df05e",
+  "x-request-id": "28bbf483-32e1-4ac4-a04b-a71e93244446",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2911,13 +3004,13 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Second page result is null
     at fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:119:17)
     at ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:184:31)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:212:7)
     at async testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:124:3)
     at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
@@ -2928,7 +3021,7 @@ null
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2023-02-08T18%3A50%3A27.865Z
+GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2023-06-22T09%3A19%3A17.283Z
 ```
 ##### Headers
 ```json
@@ -2949,17 +3042,20 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d144bcb9c1c-IAD",
+  "cf-ray": "7db368a55af92cd4-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:27 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:17 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=4FNE1pSYEOicM36ybGi2iG7o24dLD2oHDrKR6iwspFUnMTfwr3LVlBKSGKSFprTNEIOpqRlc6%2F2HlXI33d5N6pZB6AxSPW1HZ4vDOsUKYAiHuS5Iiz61HYBl05%2FX0FrmKA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=3OdYxhawV%2Bj9i23N9%2BQQm7Ibpg8V6zxvARwsXuvqvko1G1zgK4V9B%2FXlnkJ9wzoDRQtcv0cz6zOaffTYUABRfulzx5DAovXgO2MIxpQZynTwhFDZJmNVHG%2FUKWkW6Arocg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -2967,7 +3063,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "a029149e-4b60-404b-85ca-c4d60a1c0882",
+  "x-request-id": "daa363fc-4bf3-4282-a124-4616d1bb1439",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -3083,110 +3179,110 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ TypeError: Cannot read properties of null (reading 'count')
     at testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:32:65)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
     at async main (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:39:7)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: First page result is null
     at testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:89:14)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
     at async main (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:39:7)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Second page result is null
     at fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:119:17)
     at ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:184:31)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:212:7)
     at async testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:124:3)
     at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
@@ -3218,17 +3314,20 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cafaab756ec-IAD",
+  "cf-ray": "7db36840adea3aaf-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:11 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:01 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=TgBsCs5cagsWJIL7RPEtWCx7nwQRpRb3Z6tFaYAkAPgA%2BgyZrSFNuw6Yo%2BnqqCk9G5vDLjv4hTfdyUSTyTQXbN6rD2DFE5Q2QABf94ZRxoz7oXyczcdzP4a%2BEhntbjQhqg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=31aW5UUgVGz12rGiwLyRswEeKoWmxnyLajCCq0He77p6k6Y2es0CtKNVumjnIOoUD505YJWo0WQSMnSogTsYbdBEuNHWeSaokGBcSQuOGeFZzUteHBKKAhLhmqwG7uBUIg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -3236,7 +3335,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "7b8b7608-0199-46d5-bfa2-2bcdd4c6d14e",
+  "x-request-id": "11d1ecc6-8655-40c4-9b89-a3862eca599e",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -3274,7 +3373,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -3303,17 +3402,20 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d20c92681db-IAD",
+  "cf-ray": "7db368b1d8662ca6-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:29 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:19 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=XWR4kxeUuwlzOtKC9XOliRdAA0B8Fdl3xn81fb%2F3mO0e8oEQCi5CyVwm3IvLlA6hlCbxcBZCEJQ9I9kdZm2G1CpSMIz8Gi4bOc%2FuCEeU%2Bj0m3RQLAvs5odGcZymz56%2F17Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=MEH4tu94uBXtaZY2rWAjXMU8WMljJwZc88u7%2Fh1jYljDxrMQGkqAKSWYGYq49151VcgPS82wDsQAcQB%2FaU56DsUVqQY1YDU1md6lLeJgOL7YFvY%2BwkgSfGxAlsVS6Gm0NA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -3321,7 +3423,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "03bc6fca-0d52-44e9-a4be-e7e836946686",
+  "x-request-id": "9ae2dae9-a241-46e3-b7cf-caa4716bee9a",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -3359,12 +3461,12 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -3393,17 +3495,20 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
 ```json
 {
   "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+  "access-control-allow-methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
   "access-control-allow-origin": "*",
+  "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d1a8fdf5a27-IAD",
+  "cf-ray": "7db368ab9fa04644-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Wed, 08 Feb 2023 18:50:28 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:18 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=wRdfEnlqeaDXzpyug1LY1hXTpp%2FSuEt3U3%2Bqhi7wZiLGm2cj03ZGgqOcKKIqMpyUYECdTpuZOhdBC%2Bqba1QNFYPmw%2BMorwiB8oDfSe%2FNlu%2FGbL8ga22dN7wF2F4MJxYKRw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=gI2V6JnqVK61iTd8R5bFJdDMEwHWqVOreDGjaI1bnGFsk1Gxcv3jgI8K%2FPl4YkVtpg776zZ2m8jz2SEKiKUbuHcvAwr2%2BTcqF1Z31s5XLwyLtEKQ5FcuQyyTgLG8ICe%2F%2FA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -3411,7 +3516,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "0594137e-cc2a-45e5-a12b-475f69174514",
+  "x-request-id": "f3a55920-89cd-4d7b-810d-d52f961cd252",
   "x-xss-protection": "1; mode=block"
 }
 ```

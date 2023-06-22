@@ -2,9 +2,9 @@
 <script src="./telemetry.js"></script>
 # https://pin.crustcode.com/psa compliance:
 
-Execution Date: 2023-02-08T18:50:38.266Z
+Execution Date: 2023-06-22T09:19:24.479Z
 
-Revision: [fb91968](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/fb91968)
+Revision: [d0df4e8](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/d0df4e8)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/pin.crustcode.com.md)
 
@@ -14,7 +14,7 @@ Revision: [fb91968](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   🟢 [Request with invalid token](#request-with-invalid-token----success)
 
-  ❌ [Pins post of CID 'bafkreieyksitepnegebdkgb5futmw5hm4so2wrvfgerwausnv7c54chz5y'](#pins-post-of-cid-bafkreieyksitepnegebdkgb5futmw5hm4so2wrvfgerwausnv7c54chz5y----failed)
+  ❌ [Pins post of CID 'bafkreigxjtmymocngoe5bkmyz4o3n447dsgk6ana27mf5qxknhb2j47squ'](#pins-post-of-cid-bafkreigxjtmymocngoe5bkmyz4o3n447dsgk6ana27mf5qxknhb2j47squ----failed)
 
   ❌ [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----failed)
 
@@ -22,7 +22,7 @@ Revision: [fb91968](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   ❌ [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----failed)
 
-  ❌ [Can create a pin with name='6f67cc94-e429-4962-8be6-30d1646aa434'](#can-create-a-pin-with-name6f67cc94-e429-4962-8be6-30d1646aa434----failed)
+  ❌ [Can create a pin with name='82f47a2d-c0fe-4970-a89e-8a360d33b494'](#can-create-a-pin-with-name82f47a2d-c0fe-4970-a89e-8a360d33b494----failed)
 
   ❌ [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----failed)
 
@@ -41,7 +41,7 @@ Revision: [fb91968](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -70,15 +70,15 @@ GET https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c6ea93a2b9e-LAX",
+  "cf-ray": "7db367c51b8b0a93-IAD",
   "connection": "close",
   "content-length": "63",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:02 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:41 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=VuMxDVlktw4rO1582lLciLTnyF8NRBwzAY6xW6t5moRO1DlxrF6d%2F3RtFNkGIza8o9D9sXPnTwA%2FMfBtQZILv%2FLjV%2B88JFxpODDjzNohZr5HkHvx%2FuyDVb5sExuFnG6qa8RbDA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=gBkciTlrXlRGa0oGGHw%2BDxWtLE5WFJl7ZkmrJE6sybEkSxNpsyuwJxMRqpVi53ZxH6WQ8AqGa3M4MxTPLjH0omGKLSjqcW39%2FEqP1pNRDWv1WV%2FIjCRSG0OIRtVo7atXQCV4rA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -119,7 +119,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -150,15 +150,15 @@ GET https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c759a7d7cf8-LAX",
+  "cf-ray": "7db367cb5b7e065c-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:03 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:42 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Nl1GhKFKFAQQgjfFdIQv3gbUNpsYa5RSBEBdW%2Bd%2BC2%2B%2Fcmbzgb%2BOMWjgtnsexR4f5wWhnw4CW7GW1yEoe6VnejUV4TOsq9j1pBZtzml5yHzzGghE7Bg26AsujVMNin8OFC7lOQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=7om8VOzeL3UxOUpv6xxGWqKuFkflQyYIPSwzUniceAxq6UyFCIZfQndpHvgCQJ%2B8P5%2FF4BYxWmMKFzOJjEq8Zpkj6gFamfAsR8RAzabOo12%2Fx8PAPIkQEsAYu3cQCOYc2uB%2FKg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -186,7 +186,7 @@ GET https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Pins post of CID 'bafkreieyksitepnegebdkgb5futmw5hm4so2wrvfgerwausnv7c54chz5y' - ❌ FAILED
+## Pins post of CID 'bafkreigxjtmymocngoe5bkmyz4o3n447dsgk6ana27mf5qxknhb2j47squ' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -199,7 +199,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 #### Response object doesn't match expected schema:
@@ -232,7 +232,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreieyksitepnegebdkgb5futmw5hm4so2wrvfgerwausnv7c54chz5y","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigxjtmymocngoe5bkmyz4o3n447dsgk6ana27mf5qxknhb2j47squ","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -245,15 +245,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c7bd8e97c89-LAX",
+  "cf-ray": "7db367d1986007bb-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:04 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:44 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=rdOWmoI8%2BESNJ%2Bo5wjmy56Dq8egtHd3O9nEXrARE6g%2BGzm%2Fiol33mV7NTZIhFGOI5j1IwDjxrgkwsge0eplCCvZG26QS6Ilatv69Fxv8F8XAceFqgsMMhI%2FevKkzR1R9Y0MTpQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=NjVaHPjzoTFyhnwwtviqMEJzKs1ZVVxMgLT8QFE2A0bW%2F6dGwb0ByzV4B8hE9lEH5Bp1ztsYjLXyG%2FzoWWtJ5Ku7gP3GGO9PZSVCg5Swm08K1SC1yYeDMx4KG01MxutyG%2FniDQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -294,7 +294,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -325,15 +325,15 @@ DELETE https://pin.crustcode.com/psa/pins/null
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c8d79282ac5-LAX",
+  "cf-ray": "7db367de1876f889-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:07 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:45 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=FC1MNZH%2BVoAH7VaRLE5OyDrl6qU2XF9FNjO1vPTRu%2BFUuQs0wSNlDGQpwnt14SdRYcAPPgp4iRcqloWPuXpwTnhI7E4O%2FHALbwH8VY7a75WkPbpZ8PoG%2FyCoIxcngXm9MuIw0w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=BuHAhrPN8TOBtkG40O6%2BbsCzr%2FYahavhnv75JgSof00U440gEEe1Urt0PmPQYuyMc4uGSI9PtdHJCrUEHiORlIQ3mVh0Sy5JxQI7BTcXGyHP02Mvyuq%2FO6k6MxUgGtUeYQEY9A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -378,12 +378,12 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -402,7 +402,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiac2p7mkdl4ztb2sqfqp2o2xvxjcnqpoevcoap5hoey4eggaqwjra","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidkpzrnfhqfneixyli22x2vufygrcvpb2r2adw7p5ftwclsslheoq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -415,15 +415,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c821d7ddb8e-LAX",
+  "cf-ray": "7db367d7d9e857bb-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:06 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:44 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=7ZZcbBb6pFhsdZRhE4LizZRoBoYujgKQlhGzm%2FL6whYcIRBB7s83pNcUDr9sVr%2FbdbglxvMMJ7xnlbf26kfVc35aSaG9dffSHIOOEiXAUVbBCSJTQKB05WVDRzP%2Bw8davN4aog%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=v805LEBveUPBtK41hsRGAs092ZU%2BXVsK06aZeXZVfx2MOU3BdCaE2repq0owF59wbzaM5vHeMGY4LIPXxwL9C%2F9kUgffsSi1PYyqIEXxkXEGSuYeXvfMmP0qsJuOpVjw4HYG4A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -464,7 +464,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -495,15 +495,15 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c930bb32f03-LAX",
+  "cf-ray": "7db367e18fdc8233-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:08 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:46 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=WXBqVlOiHaJxg3FGI%2BycbxPCYcHCQbffAyGpADMjnc2q097pIWuuDFfOsLl5mj5R4Ww8w6hm%2F57kR7hK5qVKcaq%2BARAU2chcKep4RnS3dzXFUdbAfsZ7lhcW%2FABDSfGnohvFRQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=2sDGIPIWHEIkX%2FoCfk54zLEE5tBTQ9ZGueKwS%2FjhyEsfb4QEQuLHDj4oZ7QS9dr8IcyQi7D8pEnLk3quygmVsEIdqyBJl8ho%2BDNfFlKhYrT8tSC0saAD%2BSK%2BYaw0RTRekrT3hg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -542,7 +542,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -573,15 +573,15 @@ GET https://pin.crustcode.com/psa/pins/null
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668ca5c9687c71-LAX",
+  "cf-ray": "7db367f44bb207c4-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:11 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:49 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=q%2FJhAgyUVZ1qkNA0BvNZGVPm69wC8YoJ83iz6v0nxFhNSot4JGlLAuLt8z%2BfhCWzvMbY6YQRVRSvQ2e5bgEqSy81eCUldq6nasAemq7YFFnlYTlp1k0NajJm6QuU8zQYLx6Fqw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=8L1fkq3cCsE%2B74geY%2BkL9%2BnD6DAEJnWCCtwosXqXiAFdEvKl948B%2Bdj6GTv7DDdEPQe9s4XdvBdReaOuXdXBUv%2B7ffSaJMGJBOS%2FjTS2icqZCmBHKpH7Qun0KYzxah2EiavjFA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -620,7 +620,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -651,15 +651,15 @@ GET https://pin.crustcode.com/psa/pins/null
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cac099e7e20-LAX",
+  "cf-ray": "7db367fa8b133b4d-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:11 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:50 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2FC8LUyDMNS5mtZFfgQvcifVJ8RdbHrsyl1PUOQlXLPoZPqiNUXWbcsoZ2O%2FlG5FRU9jLRAICuUsaQgqs8GIKSeyaIBvfUemTxnlPoiGh7RTD9ndcXAaeNciErT8EsEMCFrLVGg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=GXJnCcNeQGc4jypGl7uCfWu92fCorh8cA09F3YT44hB%2BSJZ0jzkbrLP5uAi%2FMAEVj77rJuoCG895u7Pt%2FKy%2FzaANJd7Ac5WYnsUhpOhwdHaEKFzhr0oGwPzj2d%2FVcvauXsnw6g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -687,7 +687,7 @@ GET https://pin.crustcode.com/psa/pins/null
 ```json
 null
 ```
-## Pin's with requestid 'null' can have cid 'bafkreifvfoanzclyhgt5cw7xswzmwzxqnd2mkc3gqb6a7pdpzm4toik33a' replaced with 'bafkreia7anpw4ccbykm62kiizbhwtznswpj2gkak3ilzp3pofumgzkaqgu' - ❌ FAILED
+## Pin's with requestid 'null' can have cid 'bafkreieu4wqni3qqee4e453hleimvlwvpwf7fjreryez53myy4iee5yv3e' replaced with 'bafkreibirzbi52zblwf6ctsvm2negmtxb42g2wrw6e7l5w7xxgnrrq55ha' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -700,17 +700,17 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -729,7 +729,7 @@ POST https://pin.crustcode.com/psa/pins/null
 ```
 ##### Body
 ```json
-{"cid":"bafkreia7anpw4ccbykm62kiizbhwtznswpj2gkak3ilzp3pofumgzkaqgu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreibirzbi52zblwf6ctsvm2negmtxb42g2wrw6e7l5w7xxgnrrq55ha","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -742,15 +742,15 @@ POST https://pin.crustcode.com/psa/pins/null
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c9f8c377e5e-LAX",
+  "cf-ray": "7db367ee0adb081f-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:09 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:48 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=vDHGsBr3gDq0aavtzrmYuThWaLVvZtOJAuoqahPFyhopx6CcHP3S6SS1mUsNmk2dRzQtznlib%2BlrFFdDpmTLcOBBV9xrMYZumYtSsJYDE6EmYTdz2lEztr1TrqEKX7L37K6%2FdA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=K6dJQxXlBxQTHBRnr1ZV7tEe0lInvVK8SLn6VUUTXpU19LXIusyAALCTy6VpG3y9zgtEfUVan9OP41DH8PTr42ksbZf1BVk3aurhitMI35ytntgONIh%2BIbh3mwMjEbb9IgFGrA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -801,22 +801,22 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -835,7 +835,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreifvfoanzclyhgt5cw7xswzmwzxqnd2mkc3gqb6a7pdpzm4toik33a","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreieu4wqni3qqee4e453hleimvlwvpwf7fjreryez53myy4iee5yv3e","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -848,15 +848,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668c994b377d09-LAX",
+  "cf-ray": "7db367e7c88f205e-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:08 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:47 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=GkSsSFeHS8Pzr7dXUB2QMExK4ohSmyPNpXtFGyRcYXSvkh0nYryKftaWZSmIG8mVGD%2B4zsFj3TsuVwG7dntSUPGyc8plaJtUTdCzxw2KuSsrsmZzL3JbvnbRsc09RmBUiIeC4Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=NQ72fok2Xqq5B2anqR0rt1Cxn9i5dVxzCr7hF7wMjQ2NPnItin4aRj9malmUEex1EWtNgmOxKKNCMD%2B81xCr2%2BD1vCdnxHrL21caj6IqtyA9pP68VfV2BLPsAqZSY1K8arxBQw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -884,7 +884,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can retrieve pin with name '6f67cc94-e429-4962-8be6-30d1646aa434' via the 'exact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '82f47a2d-c0fe-4970-a89e-8a360d33b494' via the 'exact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -901,7 +901,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -909,7 +909,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=6f67cc94-e429-4962-8be6-30d1646aa434&match=exact
+GET https://pin.crustcode.com/psa/pins?name=82f47a2d-c0fe-4970-a89e-8a360d33b494&match=exact
 ```
 ##### Headers
 ```json
@@ -932,15 +932,15 @@ GET https://pin.crustcode.com/psa/pins?name=6f67cc94-e429-4962-8be6-30d1646aa434
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cb5ed707e44-LAX",
+  "cf-ray": "7db36803eaa381be-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:13 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:52 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=kOB6WBLTKMHkwihsFoh2UdhOLUgjiORMIbOrZ%2BGlG7t2%2Bv4ZfF8wqkhAZltBDyiISybF1Jg39rVwB3LX8fEVvY2Ca0UF68K2hzh5q0uNaaXRf0AzBdUibqyOrywVCzZGV%2FSzmQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=qf5k85CV9JpB1xAb8OKtwhHdIS3t5qS2xkGFO60r4rBQj7eqv55uhDmgfc6BJn7TflKolf2NivPNwW1W1f0kRkOxsVt8crpTFQCkymWXc76gcg9szIWzekc74R2cLLCPcuHxRg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -968,7 +968,7 @@ GET https://pin.crustcode.com/psa/pins?name=6f67cc94-e429-4962-8be6-30d1646aa434
 ```json
 null
 ```
-## Can retrieve pin with name '6F67CC94-E429-4962-8BE6-30D1646AA434' via the 'iexact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '82F47A2D-C0FE-4970-A89E-8A360D33B494' via the 'iexact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -985,7 +985,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -993,7 +993,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=6F67CC94-E429-4962-8BE6-30D1646AA434&match=iexact
+GET https://pin.crustcode.com/psa/pins?name=82F47A2D-C0FE-4970-A89E-8A360D33B494&match=iexact
 ```
 ##### Headers
 ```json
@@ -1016,15 +1016,15 @@ GET https://pin.crustcode.com/psa/pins?name=6F67CC94-E429-4962-8BE6-30D1646AA434
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cbc29267e10-LAX",
+  "cf-ray": "7db3680a2ee007e1-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:14 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:53 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=yWz8lDbZfQVdcu23ZlYLCU0kYJJtA%2BMxmEEeaBGxnPKuYaY8RAZF1i%2BZ%2FYMtzriZG3cBdQt5PwWYu%2FP2FlSctrJvzVtrQX%2FKRK5NWmdCfMd3ZaLp0LlKwVAbE4UjiH3WF%2FBZqw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=P45jPeqj%2FgTsYtnD6rLU63TaWQHd6XIC%2Ben50ZcAqYrstBxmau7puuCMwGzbjI0qqYLL9rephz1aj5OlEjPmJZ6BAySD3ZhPdJnzs7rgvOYcfISdlXFro6vI1%2BEmVkcKy5TZ%2Bg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1052,7 +1052,7 @@ GET https://pin.crustcode.com/psa/pins?name=6F67CC94-E429-4962-8BE6-30D1646AA434
 ```json
 null
 ```
-## Can retrieve pin with name 'e429-4962-8be6-30d' via the 'partial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name 'c0fe-4970-a89e-8a3' via the 'partial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1069,7 +1069,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1077,7 +1077,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=e429-4962-8be6-30d&match=partial
+GET https://pin.crustcode.com/psa/pins?name=c0fe-4970-a89e-8a3&match=partial
 ```
 ##### Headers
 ```json
@@ -1100,15 +1100,15 @@ GET https://pin.crustcode.com/psa/pins?name=e429-4962-8be6-30d&match=partial
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cc2680a7c9e-LAX",
+  "cf-ray": "7db368106b707fae-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:15 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:54 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=PM9wcMzByb6bgRfRfmhv6sxaTJD88Q47FPKQn44N69xXFlHGfkemWufgWdRr5qTJSjLjL1PJFBbEzsk9SHZTHJkgYgW1kzELzG9oSeCqS1bF36ngTwbPZi6jKAHlsTNjcEy57g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=55tSi0oVjOU89etlCvRFAbOIowgVGl2A4g596NnzfoXonFO%2Fw6POpcCqm9mwCVSw7EO2HpEvSEzHUIhvSRRK2Rc08pJw20ncNkWojp572mK3TLNFZmholH1OYnmRZ0zRAsY%2F4A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1136,7 +1136,7 @@ GET https://pin.crustcode.com/psa/pins?name=e429-4962-8be6-30d&match=partial
 ```json
 null
 ```
-## Can retrieve pin with name 'E429-4962-8BE6-30D' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name 'C0FE-4970-A89E-8A3' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1153,7 +1153,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1161,7 +1161,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?name=E429-4962-8BE6-30D&match=ipartial
+GET https://pin.crustcode.com/psa/pins?name=C0FE-4970-A89E-8A3&match=ipartial
 ```
 ##### Headers
 ```json
@@ -1184,15 +1184,15 @@ GET https://pin.crustcode.com/psa/pins?name=E429-4962-8BE6-30D&match=ipartial
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cc8af5adb92-LAX",
+  "cf-ray": "7db36816af4c81fa-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:16 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:54 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=qC6EFtr8P1Foxc%2BWuQ9n4alsLN5IkpVxI4IzRTOBujjByyNg27xgT%2BPUIYpJhfdbimmekuYoIJkqAJmn2hKVsWC%2BKrNCFhFjn0ZcAyZ8TznOE%2BgJGxKtIfpyB8Df%2F4Y0mOStFg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=JjmxTMXx2iKi7j3nk3jYarbZJ%2Bj8nMpgWefRr4RJZMKm4eSkHIBbW%2FwZSBsHDJobXC1r2VFRmDQa45KSqjcxvJTfQiti63E92hyLSROEFtH6qACECXsikgChCVFDIy5Ib3wFZg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1220,7 +1220,7 @@ GET https://pin.crustcode.com/psa/pins?name=E429-4962-8BE6-30D&match=ipartial
 ```json
 null
 ```
-## Can create a pin with name='6f67cc94-e429-4962-8be6-30d1646aa434' - ❌ FAILED
+## Can create a pin with name='82f47a2d-c0fe-4970-a89e-8a360d33b494' - ❌ FAILED
 
 ### Expectations (0/19 successful)
 
@@ -1267,27 +1267,27 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1306,7 +1306,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreib5jvlvulkb2grjq3feyovwpwhlv5dpj5s2x2xb5iicek5iw2sdem","name":"6f67cc94-e429-4962-8be6-30d1646aa434","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreifgm25lm2hgbfvdfkgsl3zmg3vqgcxqjagyfvird2474v2tq6muge","name":"82f47a2d-c0fe-4970-a89e-8a360d33b494","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1319,15 +1319,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cafa8a90c93-LAX",
+  "cf-ray": "7db367fdae8d82b6-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:12 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:51 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=L%2F7xd6W9%2BD6%2B5LfXZ%2BThCGZAhUd7U7t6uhnGV10Gstc84y9ihkROOsdO%2FFrQpPVyJEPl4oq38gAymOkQ9WxQjd7by1EALerZJ19z5%2FY4ot1L9mYwz6YAjW%2BnKt32%2FToUR81AqA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2Fdn%2FbSYKpVsEVr7rCQqCwu%2F1NYdVNnAE6lfuMlUDntbO2unPmeZTLm63VErAa2%2FFlveRiDI4tvlRB5UkmAuG%2BqRyz7uEIaDUxcd2bgVtUiWLlsk%2FT6GsHh7dGj92XBGJCBe8vw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1355,7 +1355,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiaaigkpfbcohb267vku5t2k7tqj7tj6hzlozbjarbgwf3cacqvwj4' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreieblchn5pjmj33lkn4ix7nyzifsmzgskiqpwitm2lyz3a4jxwr5vy' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1368,7 +1368,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1387,7 +1387,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiaaigkpfbcohb267vku5t2k7tqj7tj6hzlozbjarbgwf3cacqvwj4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreieblchn5pjmj33lkn4ix7nyzifsmzgskiqpwitm2lyz3a4jxwr5vy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1400,15 +1400,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cd58d892ef0-LAX",
+  "cf-ray": "7db368201a75397c-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:18 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:56 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=uWF65GctKGfIM0FS%2FZHKEj3DVMB6m4fuZusCfis65pqyRkP7basVZ7v%2F1LJ0IfLCXgYRCBURXCxLSsyFfLi8YSXtOF9XSjOPRGuRctBPKTV0xxTJ4Dr49AcO7QZYX1DlUZ4GHA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=u8yfK1iWCPayt98U7HFd9ldkNpsa%2BGIGkvnbW9viWTiWNkPdD48Bgn2fe5BZc03XQ4Zm4s7rQPla2rjQIBlNzRDxOqbAE9ASmw6V1B85IHbpmwH89AFL5Ynj4u2qk9tj0B2WiA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1436,7 +1436,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreigjcdwygrijcuu2bmlrf4bbzuinfjwpnwbigmc5bak2x5cia5pzum' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreibbgyaj5t52auezljbphkuftfacmijmpsqijbpfwjjos73wulh3ii' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1449,7 +1449,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1468,7 +1468,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigjcdwygrijcuu2bmlrf4bbzuinfjwpnwbigmc5bak2x5cia5pzum","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreibbgyaj5t52auezljbphkuftfacmijmpsqijbpfwjjos73wulh3ii","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1481,15 +1481,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cdbc99f7e68-LAX",
+  "cf-ray": "7db368265f900825-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:19 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:57 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=rKPIEsKUvXt%2F8PrCZfbY%2FA4BtEDGJopr130OUBIAkSsO%2BahVSO6grBvQ%2BlkrP0zm9FXgZvFXtN8I%2BQGk9EmSB9RUi9BkidNuE%2FoCI0mi%2FsYx2HTK5YupbmPM9D5FCN94YvHIzQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=feFZf5o2KwZugWMUwP%2FGMRWhLunXrGSGMt34DggZRORJ03yQF5vKsp1NQcI0gCmnJ%2BCgDcX9qRNN2QUKAIzpT0Rb1eifJ4uydR4BthFDjIWMQEMJ1CsvC6LgOxxibch2NWN7sw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1517,7 +1517,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreigcra353jucm62nhztyr2ibcwmxl7llc5qi2w3pkkjbwyvw33fjtq' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreicvisg7jh2674aklsgasw7zs5rcegfvlbpkrcvrrbwdedo3rsxkiy' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1530,7 +1530,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1549,7 +1549,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigcra353jucm62nhztyr2ibcwmxl7llc5qi2w3pkkjbwyvw33fjtq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreicvisg7jh2674aklsgasw7zs5rcegfvlbpkrcvrrbwdedo3rsxkiy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1562,15 +1562,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668ce20c642eae-LAX",
+  "cf-ray": "7db3682c9c668218-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:20 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:58 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=zGV36KyeXp%2F5fHahsjKEC6NSvv%2FC4GZH4npmTM5T%2FB8KDvd8Y34B7MnJRFt%2FA8RWAOeL6FJWaejc%2B26HP1sYKVjJuqBxN4HoQwC5waky6hdRb56wLycz%2BLb%2FFljKJFlVfyMgHA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=R%2F9yCeUYpXoWpC7jjIcGGrKsqlSY6RVlRSHEbgNP1f8tMqol%2Bpa3uIM%2BkwkC8vTy7DGIHYmcrtFZODJMhIuZcmrrKwCVasDG3GDAD4dn%2B%2B0cysLkbNtQ6DjFd2QC8Z77dVDOQA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1598,7 +1598,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreif3sojnj6doshaxzovcihzofhtmllfcylmxjokfehvro3tdykbzpa' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreihsrcpcalmijlbto3bvjkgpbd6relfstpxoqc5czthbh6m762mlme' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1611,7 +1611,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1630,7 +1630,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreif3sojnj6doshaxzovcihzofhtmllfcylmxjokfehvro3tdykbzpa","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihsrcpcalmijlbto3bvjkgpbd6relfstpxoqc5czthbh6m762mlme","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1643,15 +1643,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668ce84be57cf7-LAX",
+  "cf-ray": "7db36832eddf206f-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:21 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:59 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=oHzzSDCCPttU11cU7Q9UJCFNPdlb3jgrb4w8so93TpYCLi2uNGqrSa3kV%2BlphEbuMc8j4EkzJCiY9t9xGmsDWF8%2Bt7HfYMGQ8ehxa5KO27lfL3Y0BJhP0vkmdE%2BQk0iPvPGKJQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=oyJ9gqF4e1JTl2lUzn83JpZLrcwygW7Mg%2FybULIn0E720htoXvT7Tdez9Os4JFpyo7cwFlH852EzQ01kxme3N9g1xr23lnOfefSiVUhQ7LkdmOc2eBvA1iyaWiCNIHInc%2FuPZA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1679,7 +1679,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiaii5ssegbjqivzfeicv527r2o5htak6tcopcmhybxlqjaxg2bylu' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreia3iqlxetz2ayuqstfehsrt55jn5gzjb5nclxu7kwv2wkdulilek4' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1692,7 +1692,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1711,7 +1711,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiaii5ssegbjqivzfeicv527r2o5htak6tcopcmhybxlqjaxg2bylu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreia3iqlxetz2ayuqstfehsrt55jn5gzjb5nclxu7kwv2wkdulilek4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1724,15 +1724,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cee894d7e0e-LAX",
+  "cf-ray": "7db368392a7d5b0b-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:22 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:00 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=bg0jkNxmu5EUww53nunpcAxlHwkfMQp350xZrEUMRhJHf0lzYHi6it7ILz7SRM%2FxRI9E4TSzKt1r7AtS6aWT%2BSgz%2Fa5Gmbto0ac%2BGWl6D9%2BJMHl5izvNBJcD1onBEBuUfEjo4w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=sjUcKlDUhrduwZbMZF5vlBcWFhnfHMwnaG6zrA5Jd%2BfEWivou9tXCH1%2BQNE6FyB8wNBHmvIGCrOPx%2FquTUCocMGo7KXveB2ScVA0gvToJGqqKY0qzeWgrAkXJaobGuw3dJH2sw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1760,7 +1760,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreielzhsjzw6fmldt4uj65qhun436g3inw7tuebzf7bw77lwfraumje' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidv3sspgjqjfggluhytuk2tpwtphdrt2olana2tasrv2wdekmqauu' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1773,7 +1773,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1792,7 +1792,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreielzhsjzw6fmldt4uj65qhun436g3inw7tuebzf7bw77lwfraumje","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidv3sspgjqjfggluhytuk2tpwtphdrt2olana2tasrv2wdekmqauu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1805,15 +1805,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668cf4cba32b5e-LAX",
+  "cf-ray": "7db3683f6d359c3a-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:27 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:04 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=iU0EFfvIF828x3dkMC2BsLmrQ91Vf6Q6b%2FYszjtGi866PXUJyaitO6bgitM3tHm1Dqo82jnWUbF1RkJjjgvAiIOOlkZKqIF0%2Bqc46zhmrgSdXxby04RNJSvgp8ZmaFu0dmbExQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=UHy7lGcGiPJjVJW1kuV5ywfgU3r%2B4laxua9rutudhWDauBiRAfqw1NjdhGD9lOP0DfFeeH2nPZc6hYv5R58kMF7KYRke2d9pplWIZSy7APmvdxMkmak6mV6Wm2tSY035lCYGig%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1841,7 +1841,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiexivj4g63hth7w7sjltwnk3iunmnmxyzilutjbd3viex6jaui6um' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidnzab237sknxswo4ype52ru4ov7y5oewenltxxa5utsgrn6coywq' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1854,7 +1854,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1873,7 +1873,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiexivj4g63hth7w7sjltwnk3iunmnmxyzilutjbd3viex6jaui6um","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidnzab237sknxswo4ype52ru4ov7y5oewenltxxa5utsgrn6coywq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1886,15 +1886,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d111b922ec7-LAX",
+  "cf-ray": "7db36855ce1e3908-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:27 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:05 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=1uEekDVnCJL2xNc1k4MedL3fQ1Q81RnKdRhXsyruX%2BhUF6l4LfkwcZ4lbpFY%2BlmJ7Wxa0kAoXpaajdeKJNnsH8%2FKCd6AjQgoUPmVtAa1R1lwqRKSLPV9UxrmdDQ72yzR9wRzRQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=cPp1kNHqZ0oJrdmDS%2BJXqhd6NqlY38xkilwlzOdyGMc%2FoSJVTzqtYioMyNDN18OjwpDzM5ELKFGBT3Ytm1hgnI%2FazoxfN09WIkLF1o2l1B9K%2B9a%2BCPaafrNMRj%2Fu77YsiD0arA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -1922,7 +1922,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreieu7wu7qtfrtmb6bb4ebaxvvfktskqkxg4pjop7dkotlqjvgoif3m' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreiauiepxr5hmec6vjxix3uok7nonn2wbyf3awn3w6i3wolexwto4ta' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1935,7 +1935,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -1954,7 +1954,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreieu7wu7qtfrtmb6bb4ebaxvvfktskqkxg4pjop7dkotlqjvgoif3m","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiauiepxr5hmec6vjxix3uok7nonn2wbyf3awn3w6i3wolexwto4ta","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1967,15 +1967,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d140b0e52b3-LAX",
+  "cf-ray": "7db3685beb411776-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:28 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:06 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=FfUiKyimdWRNWiAySoTdY%2Fu9vshb00jTTapwoxQuLrEDmOHx5hf2oMWtpC6L4AymtEkerKK7RY5sQXI8PWoQuR3dQv7hjxuLBvaW%2BV4dWK5OGlq%2BocMPvl3FEt0NAsHKG10u7Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=HnMnH7X27d%2FlO5KnNeiYFhGG8C%2FfkX5rWSKzcKFT4U8JWTsX8s%2Bt%2FdePUOyMCpzow5T1odeuzjMEIvbpBNnuRIYqK%2BplOdQ1%2BoF5YnlBJ6tI%2B0K0ZdgvYciZ%2FkWGnNKZCRoBxQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2003,7 +2003,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreidwvqv7arzl4uywuuxlsleouxw3k4cwwj6rjnk3jbijqorzczpw3m' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreiepldfecgk2dcolqczpmgp6dfckktot3rvvmxidjdtoxxivn3hfle' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2016,7 +2016,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2035,7 +2035,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidwvqv7arzl4uywuuxlsleouxw3k4cwwj6rjnk3jbijqorzczpw3m","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiepldfecgk2dcolqczpmgp6dfckktot3rvvmxidjdtoxxivn3hfle","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2048,15 +2048,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d1a4a492f23-LAX",
+  "cf-ray": "7db36861ca953aed-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:29 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:07 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Ul955a4feCjXbrZ927Z9o7aBwZvNok3QRHYYlf35yCChCPHIbC%2BNQR1gB2rksoXwL04AXh2ybUFtSNlQsKcSJMMcvU1OwTrqAGUveRr5ZeOnT6ZgRcmieotiL1tM2joUkAlDfw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=i5bu0qyUkXjt28pEP8fMv%2Bd1vMAQQMINkm9r0yvli%2FFIlAmkmwDBmBp0T18eUnHIR3efGv%2FMSBYqJF7pOfXbnbIIO77GkL97Cyz03JIvtqUUT%2FiIAhpAVj7S1M%2F2coAGHXnY9Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2084,7 +2084,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreicpwn6lm2yqsxob7lcsb7c2rtusyay3jp7mxfxn4fvhigvlsdtzj4' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreie7ejmkqbcc565s66guy34rtqt6pl2dbtb7xyvqhiid3ajwfk3qtu' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2097,7 +2097,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2116,7 +2116,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreicpwn6lm2yqsxob7lcsb7c2rtusyay3jp7mxfxn4fvhigvlsdtzj4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreie7ejmkqbcc565s66guy34rtqt6pl2dbtb7xyvqhiid3ajwfk3qtu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2129,15 +2129,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d208a552b7f-LAX",
+  "cf-ray": "7db368680c9881cf-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:30 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:08 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=D2p5GKJ46pxrpnzL71GvtrFP3SX2pBixy%2Ff%2FetYJGbOunAc9tqvqMpIeaDG%2BdI%2FEc6vEofSYo53nUD3p22TUvmuTfP8kQNJgP9mfjhoDED%2BjN07ThLB6vw1tF9jbxwQciVyRTw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=zIgiglthmJYtp5JnBpqlhiO%2BugNLjIU9wAV8SxRph5nRJO6pWrOf0h7j3dFZYhmjM2vnGJaljxcK0c3aUMefrLooBLl2yV1HBI%2FfVSrzNo59OTMVTCeJkrjT4nblfDj%2B%2BTic8Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2165,7 +2165,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreifafeef4lycyqaqbw3cd3gw4vod46rpayee2aphxt3ojsajhavcse' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreicu55hs5rzqcq6aoeyuhx2tbldny4jpdqpuim3a4oeijqghebra3q' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2178,7 +2178,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2197,7 +2197,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreifafeef4lycyqaqbw3cd3gw4vod46rpayee2aphxt3ojsajhavcse","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreicu55hs5rzqcq6aoeyuhx2tbldny4jpdqpuim3a4oeijqghebra3q","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2210,15 +2210,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d26da27318b-LAX",
+  "cf-ray": "7db3686dd98e3af9-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:31 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:09 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=mSYWSaDJruEkPnqDiPDPN3pxzv9CZJd5oXwwTD%2FhcVBdJYvWvMNpPT7X%2BDafmPd3GEMBkPA7g7mh%2BeOywl1MygpFroxRjo%2Bqb6XaDRCN2imkG2J2fx1vVwSVskZImUZ2LjpHmA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=AQ8fnI4HR6iqBwVC9PqkETGgrFBpV6HdjVlDevHKglLX1JL6i5h4XR2Gmoliw7IwA5WeceMaE3RSYxJoisbvdNPfm9kcTGcVUOu9s7hHgc7uGmhhbAd67tlfyFGtGQ5c5iqLZA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2246,7 +2246,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreigpnmd3dm2cvq7iiz3mq5nut5stde2bk626e4psysjir2tyjwlggi' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreigpsc75wvpd2xrq2i3l36i3fi5yivwpuypzrjzceh2dylvoejru2e' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2259,7 +2259,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2278,7 +2278,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigpnmd3dm2cvq7iiz3mq5nut5stde2bk626e4psysjir2tyjwlggi","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigpsc75wvpd2xrq2i3l36i3fi5yivwpuypzrjzceh2dylvoejru2e","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2291,15 +2291,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d2d0b117e94-LAX",
+  "cf-ray": "7db36871db540780-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:32 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:09 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=HznUDoKOZ%2B4r2XsOEKaIJnJNRxpcTC88YV0R%2FP5HELE%2Fbsc%2BJY5NWlB1L0%2FXrPHbavQC6VRAHRxFcu2aChh37ZpNhmbnEEU6XaWFSgzWqJQHBzyr82Y1ne9wi5J9nZnct8%2BqiQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=1zGC6Ke9C48pt8535DDmX6KB%2BMZeZckMa3E5n1o66IR2jN2xQxU4kAZrU04XCZbCdz74aVjkbCFHlnDcijcKGxGU%2FYfmyLj2lOyerwiFWdTQl0yeTVVVVY81x7GDWle%2BF0rIzA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2327,7 +2327,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreig3s3qbrls5vqwkkngf4lpkugd73zscpxomzov2azfv6op5ex3ggy' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreigctaeaz6mui66za5qmjypboouhp3ystsdc27zmst4xdfu6fe5k2a' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2340,7 +2340,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2359,7 +2359,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreig3s3qbrls5vqwkkngf4lpkugd73zscpxomzov2azfv6op5ex3ggy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigctaeaz6mui66za5qmjypboouhp3ystsdc27zmst4xdfu6fe5k2a","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2372,15 +2372,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d3348cddba6-LAX",
+  "cf-ray": "7db36877ad8d38fd-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:33 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:10 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=2r7fqGbzs2ED1GcROpmkxQDTbzRQZ4hPYSm7Ol1BeNPS4d1LQDwi2kALBGG5SlqSKFDE%2BoAvhiY08YreCYWrJPcaV2BafhKmlSzQnEoosgiI15uGIq5XLNBJwOH3kYRlJqkAyQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=UQ%2FpD9c8Vw3UlB5Q6Ood7k7FgHnT4Rt4PSq9y4bqvvdFWbdVRSL3myWssO6m4h8WqjmlyhwV%2FJ5eoky3byRGyAIpNBKSIX0HkYxKb24%2F572kpdZJ%2BbxJcpx%2BRh0kAw3vj4YlYQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2408,7 +2408,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreicjfnfaja54e6gswubv4luacblvgyya35ihwmz7tiomrx3y3vsi2e' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreihct6w25eblrhcj2ciboykzkwi3fhttsxqmqfokv6k5wbowmqeqlu' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2421,7 +2421,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2440,7 +2440,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreicjfnfaja54e6gswubv4luacblvgyya35ihwmz7tiomrx3y3vsi2e","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihct6w25eblrhcj2ciboykzkwi3fhttsxqmqfokv6k5wbowmqeqlu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2453,15 +2453,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d398d162f43-LAX",
+  "cf-ray": "7db3687deef30957-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:34 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:11 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=pgHgTvgy7UPiKX9aAPxAskzHzT9XU2nS9zyS1pkUT5AjC8QgGB5r9E6wDrztujQe1msszN%2BbSb3%2F9hbAPjdgfmiswiyY1bYAqZcPb6DIeBHBeX6udmbg%2FDMH2EHa8F%2Bstx0mGA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=z5egazik%2BAjoPnWvFfu%2BiMJKi0Kw6FOqUCX7gh%2B8E7Guiwtg9B2lmZhWnciA7oHemteUGrEtbmBKHCzExllWfIn2OiLaXLUngCa2VwOonojlSbWUbD6ETjhw62KVOxHOCMKGVA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2489,7 +2489,7 @@ POST https://pin.crustcode.com/psa/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiewnug5jqfy4jp2d6itkixvt6icdlwdbecvial5uozax474raks4e' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreianyzek665bhqicw4frfgc2mnxaxp75suqwncnssrjrgikdm5csjq' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2502,7 +2502,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -2521,7 +2521,7 @@ POST https://pin.crustcode.com/psa/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiewnug5jqfy4jp2d6itkixvt6icdlwdbecvial5uozax474raks4e","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreianyzek665bhqicw4frfgc2mnxaxp75suqwncnssrjrgikdm5csjq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2534,15 +2534,15 @@ POST https://pin.crustcode.com/psa/pins
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d3fce0b7c7d-LAX",
+  "cf-ray": "7db368842a8f5878-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:35 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:15 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=AyNti%2FZ1c8Vqpu5Lc0ENe89iWS9Vsc5rzV950LW4IniiW6Ipbxw0EGP8ZTf0RcWVvG9ZtLcqj47YKOrOQBFZ%2FHfbeKbaLBv0ANjyTEbNBnZC5YbKmHOGSqwn0Al2i4jO0O%2BELQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=fm9XYPepvJeJR%2Bb4nOR%2BsrMW%2BIStZ10Cv%2Bgxxc%2BHwrT%2BooE0gJg1RnUy%2Bt9R5%2FE2LeKCZneUyz%2FiFCodreAk4rIxM3DqbWUQX6R49bFX%2FpIoMgdWsDyUDh6DT3%2FQ%2F6ycLFdVNQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2589,12 +2589,12 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: First page result is null
     at testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:89:14)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
     at async main (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:39:7)
 
@@ -2626,15 +2626,15 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d461cf62a89-LAX",
+  "cf-ray": "7db368995ed52063-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:36 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:19 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=v9tL329SVnMengM5MStpowQ77dAotI90yOJ44L4m%2B19jwzCpdvlekjid2TZqeB8qMyHSaRhcjDPoeWs%2FgaQM3BrazAPiWLZdXPUy9Tmt6zZfo69QDfOkw6B2TUwvqUgFg2Ta6g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=C0V3yuHTyBgHI8IgrKuquldqkc1YBD5gtJ9Fl5xgbAMxREb2s35W%2FLy0GCt4AIM85iIvNpl2KsZgjdAmf2cFDFa7%2BWxxMnY8bb900rS6jeHMtWtPBajHgpFQJluCqLu8%2B%2BpUyg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2677,13 +2677,13 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Second page result is null
     at fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:119:17)
     at ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:184:31)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:212:7)
     at async testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:124:3)
     at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
@@ -2694,7 +2694,7 @@ null
 
 #### Request
 ```
-GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2023-02-08T18%3A50%3A36.037Z
+GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2023-06-22T09%3A19%3A19.041Z
 ```
 ##### Headers
 ```json
@@ -2717,15 +2717,15 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d476b975377-LAX",
+  "cf-ray": "7db368b02b8d7001-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:36 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:22 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=xtI9dBotOjCnSiMSfOeknfdb78xDxNdLPrEEpk14uRZfbv72kzECgkJ6PxkIUsnlrK6m8QPrj9YJAgtbg%2FdXo4VCeQKWx7xM8YY0joBAlRd3s9kWEToonDwcaWxOS%2BJOWCToSA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=2RvE0CbQ%2FWX5n8cFLecE40Fxx3CZJiEmKhZkmNPH7ksBQVb0QbEZT2aFJempQpMYEcNbIz4YDnqNtuNAbMqmL9wHMaLdwJrMrS0rp%2F44Ogjf7XHLamT1CbU7U%2Fqh7YtAnZ5Keg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -2842,110 +2842,110 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ TypeError: Cannot read properties of null (reading 'count')
     at testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:32:65)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
     at async main (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:39:7)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: First page result is null
     at testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:89:14)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
     at async main (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:39:7)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Second page result is null
     at fn (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:119:17)
     at ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:184:31)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async ApiCall.runExpectations (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:212:7)
     at async testPagination (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/checks/get/testPagination.ts:124:3)
     at async validatePinningService (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/index.ts:21:7)
@@ -2979,15 +2979,15 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668ccf4c167ab7-LAX",
+  "cf-ray": "7db36819dd110850-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:17 GMT",
+  "date": "Thu, 22 Jun 2023 09:18:55 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=4fy5K67YkIipZFv8RFRE200Cq0m2jkrfgf9Z1Qz3G2J2V4Qoz%2BMhL7oFLH3XFb2jn85vyvGPELwZu%2BSVsuWWpPt%2BvUYCKc%2Btpf36azcuG2VInNphc9HlBy8qkrRAKLwdml1d6A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=zKRCjuv%2FymHcyiY9cy09ancOrhCsZFv1aQ7bxJLsP4CvibAv5AWvNsnOnaoBmWuL8BSSecXo1dIdD3RmBLqohOrFx8fc9zWr3zCBJvnIkVK5SisK%2FyDmLMn%2BZfiB3hWGqK%2BSOA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -3026,7 +3026,7 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -3057,15 +3057,15 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d53ebd62adb-LAX",
+  "cf-ray": "7db368cdbc1a0780-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:38 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:24 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=UxlXmwy208ukUY6njiRuJivrHHdUjovQemFJ6wcjVT7BOC%2FWT2MdJdRqqYqBoDzAbZOElPyglnXjQzwh%2FgyqTkWeApV5K9nYmVBaF36k2BS3Fbs62S6LGdqaFyXpitX1%2BT3oEQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=k17sASsjL9x1NY3O0j0gRVkfD%2F5O6BhYbVA7go%2B2wLeFKPUEcW0%2B9%2BtYzHrbQpIyPAkz3UQufuzWVxTWKlLZNVGpGlx%2F2pAivyI4e4VXVSSaIDM65lDZUmhYQ%2FC93Ab%2BfYomtA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
@@ -3104,12 +3104,12 @@ null
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
   ⚠️ Error: Invalid response caused unexpected error in pinning-service-client
     at file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/src/ApiCall.ts:121:19
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async run (file:///home/runner/work/pinning-service-compliance/pinning-service-compliance/node_modules/p-queue/dist/index.js:115:36)
 
 
@@ -3140,15 +3140,15 @@ GET https://pin.crustcode.com/psa/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "access-control-allow-headers": "*",
   "access-control-allow-methods": "*",
   "access-control-allow-origin": "*",
-  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+  "alt-svc": "h3=\":443\"; ma=86400",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "79668d4da8777bf8-LAX",
+  "cf-ray": "7db368c75d048230-IAD",
   "connection": "close",
   "content-length": "65",
   "content-type": "application/json",
-  "date": "Wed, 08 Feb 2023 18:50:37 GMT",
+  "date": "Thu, 22 Jun 2023 09:19:23 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=usNnEp3T%2F9dUaTqC2urTyYXJ4VTGtPSlawtdYoJLVEh%2FUQiGZKDtIEQvrBXZFaXadB0%2FHhNyyFNYlNjSxYO97TFBSLiF%2BfbwFBaU%2FVcBijXl3QqMQsmd%2F8uOu2mUH2%2FTPfv79A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=peqnZrBMej10OPxm%2FCJYTs5N66e4k4HfeTYosu5Y3OCljyKPNJ5v6og6T4hzFyyzYAg6s9FHccOvNFMqcVbmccOf0R%2ByLB%2BHM6RrJPgyQxh9XwGpX26WKPcpoj7SyT%2FJXipBng%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "x-powered-by": "Express"
 }
