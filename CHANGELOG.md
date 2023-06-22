@@ -1,3 +1,13 @@
+## [1.4.1](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.4.0...v1.4.1) (2023-06-22)
+
+
+### Trivial Changes
+
+* **deps:** bump actions/github-script from 3 to 6 ([#205](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/205)) ([d0df4e8](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/d0df4e8cc3e10f0e5adad7980344dc2d153c4a34))
+* **deps:** bump pascalgn/automerge-action from 0.15.3 to 0.15.6 ([#281](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/281)) ([3d9aa58](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/3d9aa5823c6bc61067cbe09a4570e73a0c93c592))
+* **deps:** bump s0/git-publish-subdir-action from 2.5.1 to 2.6.0 ([#251](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/251)) ([5b07f53](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/5b07f538aabab93f9aada6fe2a7ce86ad9aa3115))
+* Update .github/dependabot.yml [skip ci] ([6af5a2c](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/6af5a2c4ff91784a2ba637192be22de09b335fba))
+
 ## [1.4.0](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.3.4...v1.4.0) (2023-01-25)
 
 
