@@ -2,19 +2,19 @@
 <script src="./telemetry.js"></script>
 # https://api.web3.storage compliance:
 
-Execution Date: 2023-06-22T09:21:01.384Z
+Execution Date: 2023-06-22T09:22:58.792Z
 
-Revision: [3d9aa58](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/3d9aa58)
+Revision: [5b07f53](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/5b07f53)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/api.web3.storage.md)
 
-## Summary (9/9 successful)
+## Summary (7/9 successful)
 
   🟢 [Request with no authentication token](#request-with-no-authentication-token----success)
 
   🟢 [Request with invalid token](#request-with-invalid-token----success)
 
-  🟢 [Pins post of CID 'bafkreiaatvbltz6g2da4etykk7pldjps7fkw6k5jmnmjk67c5v7ekqmrh4'](#pins-post-of-cid-bafkreiaatvbltz6g2da4etykk7pldjps7fkw6k5jmnmjk67c5v7ekqmrh4----success)
+  ❌ [Pins post of CID 'bafkreiaauaonf267gw53g3tfum7m6b23bvogfzct2hnd7gasz5n4ojuvya'](#pins-post-of-cid-bafkreiaauaonf267gw53g3tfum7m6b23bvogfzct2hnd7gasz5n4ojuvya----failed)
 
   🟢 [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----success)
 
@@ -22,11 +22,11 @@ Revision: [3d9aa58](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   🟢 [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----success)
 
-  🟢 [Can create a pin with name='144d2ebf-97dd-4d1b-a418-6fa4e0c801a5'](#can-create-a-pin-with-name144d2ebf-97dd-4d1b-a418-6fa4e0c801a5----success)
+  🟢 [Can create a pin with name='2dae90b2-10d1-46a3-812f-e86adffb8442'](#can-create-a-pin-with-name2dae90b2-10d1-46a3-812f-e86adffb8442----success)
 
   🟢 [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----success)
 
-  🟢 [Can delete all pins created during compliance checks](#can-delete-all-pins-created-during-compliance-checks----success)
+  ❌ [Can delete all pins created during compliance checks](#can-delete-all-pins-created-during-compliance-checks----failed)
 
 ## Request with no authentication token - 🟢 SUCCESS
 
@@ -69,11 +69,11 @@ GET https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db368f5097e9687-SJC",
+  "cf-ray": "7db36b1609a157af-IAD",
   "connection": "close",
   "content-length": "99",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:19:30 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:57 GMT",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -144,11 +144,11 @@ GET https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db368fb3fb0944a-SJC",
+  "cf-ray": "7db36b1c4d4005ff-IAD",
   "connection": "close",
   "content-length": "94",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:19:31 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:58 GMT",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -176,18 +176,22 @@ GET https://api.web3.storage/pins
 ```json
 null
 ```
-## Pins post of CID 'bafkreiaatvbltz6g2da4etykk7pldjps7fkw6k5jmnmjk67c5v7ekqmrh4' - 🟢 SUCCESS
+## Pins post of CID 'bafkreiaauaonf267gw53g3tfum7m6b23bvogfzct2hnd7gasz5n4ojuvya' - ❌ FAILED
 
-### Expectations (2/2 successful)
+### Expectations (1/2 successful)
 
-  🟢 Response object matches api spec schema (success)
+  ❌ Response object matches api spec schema (failure)
 
   🟢 Pinning status is either queued, pinning, or pinned (success)
 
 
 
 
+#### Response object doesn't match expected schema:
 
+* "delegates" must contain at least 1 items
+
+  
 ### Details
 
 #### Request
@@ -203,7 +207,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiaatvbltz6g2da4etykk7pldjps7fkw6k5jmnmjk67c5v7ekqmrh4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiaauaonf267gw53g3tfum7m6b23bvogfzct2hnd7gasz5n4ojuvya","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -215,11 +219,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db369017e14987c-SJC",
+  "cf-ray": "7db36b2288805776-IAD",
   "connection": "close",
-  "content-length": "540",
+  "content-length": "268",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:19:35 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:20 GMT",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -227,59 +231,47 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "87c505ce-58ed-4fd5-8d6c-ced808291f7a",
+  "requestid": "a4cc8f59-e7c8-43da-be89-220b897c707f",
   "status": "queued",
-  "created": "2023-06-22T09:19:34.83+00:00",
+  "created": "2023-06-22T09:21:20.157+00:00",
   "pin": {
-    "cid": "bafkreiaatvbltz6g2da4etykk7pldjps7fkw6k5jmnmjk67c5v7ekqmrh4",
+    "cid": "bafkreiaauaonf267gw53g3tfum7m6b23bvogfzct2hnd7gasz5n4ojuvya",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
   },
-  "delegates": [
-    "/ip4/52.38.126.125/tcp/4001/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS",
-    "/ip4/52.38.126.125/udp/4001/quic-v1/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS",
-    "/ip4/52.38.126.125/udp/4001/quic/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS"
-  ]
+  "delegates": []
 }
 ```
 
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "87c505ce-58ed-4fd5-8d6c-ced808291f7a",
+  "requestid": "a4cc8f59-e7c8-43da-be89-220b897c707f",
   "status": "queued",
-  "created": "2023-06-22T09:19:34.83+00:00",
+  "created": "2023-06-22T09:21:20.157+00:00",
   "pin": {
-    "cid": "bafkreiaatvbltz6g2da4etykk7pldjps7fkw6k5jmnmjk67c5v7ekqmrh4",
+    "cid": "bafkreiaauaonf267gw53g3tfum7m6b23bvogfzct2hnd7gasz5n4ojuvya",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
   },
-  "delegates": [
-    "/ip4/52.38.126.125/tcp/4001/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS",
-    "/ip4/52.38.126.125/udp/4001/quic-v1/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS",
-    "/ip4/52.38.126.125/udp/4001/quic/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS"
-  ]
+  "delegates": []
 }
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "87c505ce-58ed-4fd5-8d6c-ced808291f7a",
+  "requestid": "a4cc8f59-e7c8-43da-be89-220b897c707f",
   "status": "queued",
-  "created": "2023-06-22T09:19:34.830Z",
+  "created": "2023-06-22T09:21:20.157Z",
   "pin": {
-    "cid": "bafkreiaatvbltz6g2da4etykk7pldjps7fkw6k5jmnmjk67c5v7ekqmrh4",
+    "cid": "bafkreiaauaonf267gw53g3tfum7m6b23bvogfzct2hnd7gasz5n4ojuvya",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
   },
-  "delegates": [
-    "/ip4/52.38.126.125/tcp/4001/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS",
-    "/ip4/52.38.126.125/udp/4001/quic-v1/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS",
-    "/ip4/52.38.126.125/udp/4001/quic/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS"
-  ]
+  "delegates": []
 }
 ```
 ## The newly created pin can be immediately deleted - 🟢 SUCCESS
@@ -298,7 +290,7 @@ POST https://api.web3.storage/pins
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/2dcd8cc2-cbdd-47eb-b152-d9a2355c7334
+DELETE https://api.web3.storage/pins/5e1305af-9ce5-41ec-94b8-63e3d7402f21
 ```
 ##### Headers
 ```json
@@ -320,11 +312,11 @@ DELETE https://api.web3.storage/pins/2dcd8cc2-cbdd-47eb-b152-d9a2355c7334
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db3692ce8b89661-SJC",
+  "cf-ray": "7db36c287f9a9c37-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:19:40 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:41 GMT",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -373,7 +365,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigohwo6dmsnpsmvxa6vkvesryvwujblex5ahhofnjb27vkh6uxpiu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreigvmfu3vp4awu3l7sy2fq6omguc4fjlodduyz7ua5fs7ycf4bd5ly","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -385,11 +377,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db369172936fa2a-SJC",
+  "cf-ray": "7db36ba58da6207e-IAD",
   "connection": "close",
-  "content-length": "541",
+  "content-length": "266",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:19:39 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:41 GMT",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -397,59 +389,47 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "2dcd8cc2-cbdd-47eb-b152-d9a2355c7334",
+  "requestid": "5e1305af-9ce5-41ec-94b8-63e3d7402f21",
   "status": "queued",
-  "created": "2023-06-22T09:19:38.316+00:00",
+  "created": "2023-06-22T09:21:41.1+00:00",
   "pin": {
-    "cid": "bafkreigohwo6dmsnpsmvxa6vkvesryvwujblex5ahhofnjb27vkh6uxpiu",
+    "cid": "bafkreigvmfu3vp4awu3l7sy2fq6omguc4fjlodduyz7ua5fs7ycf4bd5ly",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
   },
-  "delegates": [
-    "/ip4/52.38.126.125/tcp/4001/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS",
-    "/ip4/52.38.126.125/udp/4001/quic-v1/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS",
-    "/ip4/52.38.126.125/udp/4001/quic/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS"
-  ]
+  "delegates": []
 }
 ```
 
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "2dcd8cc2-cbdd-47eb-b152-d9a2355c7334",
+  "requestid": "5e1305af-9ce5-41ec-94b8-63e3d7402f21",
   "status": "queued",
-  "created": "2023-06-22T09:19:38.316+00:00",
+  "created": "2023-06-22T09:21:41.1+00:00",
   "pin": {
-    "cid": "bafkreigohwo6dmsnpsmvxa6vkvesryvwujblex5ahhofnjb27vkh6uxpiu",
+    "cid": "bafkreigvmfu3vp4awu3l7sy2fq6omguc4fjlodduyz7ua5fs7ycf4bd5ly",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
   },
-  "delegates": [
-    "/ip4/52.38.126.125/tcp/4001/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS",
-    "/ip4/52.38.126.125/udp/4001/quic-v1/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS",
-    "/ip4/52.38.126.125/udp/4001/quic/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS"
-  ]
+  "delegates": []
 }
 ```
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "2dcd8cc2-cbdd-47eb-b152-d9a2355c7334",
+  "requestid": "5e1305af-9ce5-41ec-94b8-63e3d7402f21",
   "status": "queued",
-  "created": "2023-06-22T09:19:38.316Z",
+  "created": "2023-06-22T09:21:41.100Z",
   "pin": {
-    "cid": "bafkreigohwo6dmsnpsmvxa6vkvesryvwujblex5ahhofnjb27vkh6uxpiu",
+    "cid": "bafkreigvmfu3vp4awu3l7sy2fq6omguc4fjlodduyz7ua5fs7ycf4bd5ly",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
   },
-  "delegates": [
-    "/ip4/52.38.126.125/tcp/4001/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS",
-    "/ip4/52.38.126.125/udp/4001/quic-v1/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS",
-    "/ip4/52.38.126.125/udp/4001/quic/p2p/12D3KooWKXwU6AHwiZvezznUsYcjvdGAcGfTUSDGsNQ8d7QewtSS"
-  ]
+  "delegates": []
 }
 ```
 ## List pin objects (GET /pins) in all states - 🟢 SUCCESS
@@ -490,11 +470,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36933eaf6f9e0-SJC",
+  "cf-ray": "7db36c29385882ec-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:19:41 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:41 GMT",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding"
@@ -506,11 +486,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 44,
   "results": [
     {
-      "requestid": "87c505ce-58ed-4fd5-8d6c-ced808291f7a",
+      "requestid": "a4cc8f59-e7c8-43da-be89-220b897c707f",
       "status": "queued",
-      "created": "2023-06-22T09:19:34.83+00:00",
+      "created": "2023-06-22T09:21:20.157+00:00",
       "pin": {
-        "cid": "bafkreiaatvbltz6g2da4etykk7pldjps7fkw6k5jmnmjk67c5v7ekqmrh4",
+        "cid": "bafkreiaauaonf267gw53g3tfum7m6b23bvogfzct2hnd7gasz5n4ojuvya",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -635,11 +615,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 44,
   "results": [
     {
-      "requestid": "87c505ce-58ed-4fd5-8d6c-ced808291f7a",
+      "requestid": "a4cc8f59-e7c8-43da-be89-220b897c707f",
       "status": "queued",
-      "created": "2023-06-22T09:19:34.83+00:00",
+      "created": "2023-06-22T09:21:20.157+00:00",
       "pin": {
-        "cid": "bafkreiaatvbltz6g2da4etykk7pldjps7fkw6k5jmnmjk67c5v7ekqmrh4",
+        "cid": "bafkreiaauaonf267gw53g3tfum7m6b23bvogfzct2hnd7gasz5n4ojuvya",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -783,7 +763,7 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 
 #### Request
 ```
-GET https://api.web3.storage/pins/1a8e2039-7b83-4c98-bfb6-eb043cd99ad6
+GET https://api.web3.storage/pins/4f94000f-bc24-4ee9-820d-e5362426fe13
 ```
 ##### Headers
 ```json
@@ -805,11 +785,11 @@ GET https://api.web3.storage/pins/1a8e2039-7b83-4c98-bfb6-eb043cd99ad6
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36a4cfe87cf9f-SJC",
+  "cf-ray": "7db36d372c3a3973-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:26 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:24 GMT",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding"
@@ -852,7 +832,7 @@ null
 
 #### Request
 ```
-GET https://api.web3.storage/pins/009d7e5f-0de1-492d-8fd5-4c0d70c129fd
+GET https://api.web3.storage/pins/b649f4bb-8691-4bc2-9544-6388b9a94c45
 ```
 ##### Headers
 ```json
@@ -874,11 +854,11 @@ GET https://api.web3.storage/pins/009d7e5f-0de1-492d-8fd5-4c0d70c129fd
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36a53c9e9cedd-SJC",
+  "cf-ray": "7db36d3d6e9e3961-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:27 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:26 GMT",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding"
@@ -887,11 +867,11 @@ GET https://api.web3.storage/pins/009d7e5f-0de1-492d-8fd5-4c0d70c129fd
 ##### Body
 ```json
 {
-  "requestid": "009d7e5f-0de1-492d-8fd5-4c0d70c129fd",
+  "requestid": "b649f4bb-8691-4bc2-9544-6388b9a94c45",
   "status": "queued",
-  "created": "2023-06-22T09:20:24.299+00:00",
+  "created": "2023-06-22T09:22:24.409+00:00",
   "pin": {
-    "cid": "bafkreibc63g5z4ubddx6kyhn57ghbgiup3gxe3no65xynmca3dxgueb7z4",
+    "cid": "bafkreidcytrkob2ius7xu3vainnos24py5foi7vsbheslkw7khce52gfca",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
@@ -903,11 +883,11 @@ GET https://api.web3.storage/pins/009d7e5f-0de1-492d-8fd5-4c0d70c129fd
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "009d7e5f-0de1-492d-8fd5-4c0d70c129fd",
+  "requestid": "b649f4bb-8691-4bc2-9544-6388b9a94c45",
   "status": "queued",
-  "created": "2023-06-22T09:20:24.299+00:00",
+  "created": "2023-06-22T09:22:24.409+00:00",
   "pin": {
-    "cid": "bafkreibc63g5z4ubddx6kyhn57ghbgiup3gxe3no65xynmca3dxgueb7z4",
+    "cid": "bafkreidcytrkob2ius7xu3vainnos24py5foi7vsbheslkw7khce52gfca",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
@@ -918,11 +898,11 @@ GET https://api.web3.storage/pins/009d7e5f-0de1-492d-8fd5-4c0d70c129fd
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "009d7e5f-0de1-492d-8fd5-4c0d70c129fd",
+  "requestid": "b649f4bb-8691-4bc2-9544-6388b9a94c45",
   "status": "queued",
-  "created": "2023-06-22T09:20:24.299Z",
+  "created": "2023-06-22T09:22:24.409Z",
   "pin": {
-    "cid": "bafkreibc63g5z4ubddx6kyhn57ghbgiup3gxe3no65xynmca3dxgueb7z4",
+    "cid": "bafkreidcytrkob2ius7xu3vainnos24py5foi7vsbheslkw7khce52gfca",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
@@ -930,7 +910,7 @@ GET https://api.web3.storage/pins/009d7e5f-0de1-492d-8fd5-4c0d70c129fd
   "delegates": []
 }
 ```
-## Pin's with requestid '1a8e2039-7b83-4c98-bfb6-eb043cd99ad6' can have cid 'bafkreiggrac3uq7qdxtijga7i7qhud2z7u6bof7cyphtrisechogg3mnou' replaced with 'bafkreibc63g5z4ubddx6kyhn57ghbgiup3gxe3no65xynmca3dxgueb7z4' - 🟢 SUCCESS
+## Pin's with requestid '4f94000f-bc24-4ee9-820d-e5362426fe13' can have cid 'bafkreiajmbjct7pu7vpbfo7vlsnakbgctnm6u5tp3vcpi75ov5r72aekxa' replaced with 'bafkreidcytrkob2ius7xu3vainnos24py5foi7vsbheslkw7khce52gfca' - 🟢 SUCCESS
 
 ### Expectations (2/2 successful)
 
@@ -951,7 +931,7 @@ GET https://api.web3.storage/pins/009d7e5f-0de1-492d-8fd5-4c0d70c129fd
 
 #### Request
 ```
-POST https://api.web3.storage/pins/1a8e2039-7b83-4c98-bfb6-eb043cd99ad6
+POST https://api.web3.storage/pins/4f94000f-bc24-4ee9-820d-e5362426fe13
 ```
 ##### Headers
 ```json
@@ -962,7 +942,7 @@ POST https://api.web3.storage/pins/1a8e2039-7b83-4c98-bfb6-eb043cd99ad6
 ```
 ##### Body
 ```json
-{"cid":"bafkreibc63g5z4ubddx6kyhn57ghbgiup3gxe3no65xynmca3dxgueb7z4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidcytrkob2ius7xu3vainnos24py5foi7vsbheslkw7khce52gfca","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -974,11 +954,11 @@ POST https://api.web3.storage/pins/1a8e2039-7b83-4c98-bfb6-eb043cd99ad6
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db369c1b9751576-SJC",
+  "cf-ray": "7db36cb30e222d20-IAD",
   "connection": "close",
   "content-length": "268",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:25 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:24 GMT",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -986,11 +966,11 @@ POST https://api.web3.storage/pins/1a8e2039-7b83-4c98-bfb6-eb043cd99ad6
 ##### Body
 ```json
 {
-  "requestid": "009d7e5f-0de1-492d-8fd5-4c0d70c129fd",
+  "requestid": "b649f4bb-8691-4bc2-9544-6388b9a94c45",
   "status": "queued",
-  "created": "2023-06-22T09:20:24.299+00:00",
+  "created": "2023-06-22T09:22:24.409+00:00",
   "pin": {
-    "cid": "bafkreibc63g5z4ubddx6kyhn57ghbgiup3gxe3no65xynmca3dxgueb7z4",
+    "cid": "bafkreidcytrkob2ius7xu3vainnos24py5foi7vsbheslkw7khce52gfca",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
@@ -1002,11 +982,11 @@ POST https://api.web3.storage/pins/1a8e2039-7b83-4c98-bfb6-eb043cd99ad6
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "009d7e5f-0de1-492d-8fd5-4c0d70c129fd",
+  "requestid": "b649f4bb-8691-4bc2-9544-6388b9a94c45",
   "status": "queued",
-  "created": "2023-06-22T09:20:24.299+00:00",
+  "created": "2023-06-22T09:22:24.409+00:00",
   "pin": {
-    "cid": "bafkreibc63g5z4ubddx6kyhn57ghbgiup3gxe3no65xynmca3dxgueb7z4",
+    "cid": "bafkreidcytrkob2ius7xu3vainnos24py5foi7vsbheslkw7khce52gfca",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
@@ -1017,11 +997,11 @@ POST https://api.web3.storage/pins/1a8e2039-7b83-4c98-bfb6-eb043cd99ad6
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "009d7e5f-0de1-492d-8fd5-4c0d70c129fd",
+  "requestid": "b649f4bb-8691-4bc2-9544-6388b9a94c45",
   "status": "queued",
-  "created": "2023-06-22T09:20:24.299Z",
+  "created": "2023-06-22T09:22:24.409Z",
   "pin": {
-    "cid": "bafkreibc63g5z4ubddx6kyhn57ghbgiup3gxe3no65xynmca3dxgueb7z4",
+    "cid": "bafkreidcytrkob2ius7xu3vainnos24py5foi7vsbheslkw7khce52gfca",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
@@ -1035,7 +1015,7 @@ POST https://api.web3.storage/pins/1a8e2039-7b83-4c98-bfb6-eb043cd99ad6
 
   🟢 Pin exists (success)
 
-  🟢 Could obtain requestid from new pin (1a8e2039-7b83-4c98-bfb6-eb043cd99ad6) (success)
+  🟢 Could obtain requestid from new pin (4f94000f-bc24-4ee9-820d-e5362426fe13) (success)
 
   🟢 Response is ok (success)
 
@@ -1071,7 +1051,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiggrac3uq7qdxtijga7i7qhud2z7u6bof7cyphtrisechogg3mnou","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiajmbjct7pu7vpbfo7vlsnakbgctnm6u5tp3vcpi75ov5r72aekxa","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1083,11 +1063,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db3693a2b269e5e-SJC",
+  "cf-ray": "7db36c2f7f7c57af-IAD",
   "connection": "close",
   "content-length": "268",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:02 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:03 GMT",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -1095,11 +1075,11 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "1a8e2039-7b83-4c98-bfb6-eb043cd99ad6",
+  "requestid": "4f94000f-bc24-4ee9-820d-e5362426fe13",
   "status": "queued",
-  "created": "2023-06-22T09:20:02.168+00:00",
+  "created": "2023-06-22T09:22:03.269+00:00",
   "pin": {
-    "cid": "bafkreiggrac3uq7qdxtijga7i7qhud2z7u6bof7cyphtrisechogg3mnou",
+    "cid": "bafkreiajmbjct7pu7vpbfo7vlsnakbgctnm6u5tp3vcpi75ov5r72aekxa",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
@@ -1111,11 +1091,11 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "1a8e2039-7b83-4c98-bfb6-eb043cd99ad6",
+  "requestid": "4f94000f-bc24-4ee9-820d-e5362426fe13",
   "status": "queued",
-  "created": "2023-06-22T09:20:02.168+00:00",
+  "created": "2023-06-22T09:22:03.269+00:00",
   "pin": {
-    "cid": "bafkreiggrac3uq7qdxtijga7i7qhud2z7u6bof7cyphtrisechogg3mnou",
+    "cid": "bafkreiajmbjct7pu7vpbfo7vlsnakbgctnm6u5tp3vcpi75ov5r72aekxa",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
@@ -1126,11 +1106,11 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "1a8e2039-7b83-4c98-bfb6-eb043cd99ad6",
+  "requestid": "4f94000f-bc24-4ee9-820d-e5362426fe13",
   "status": "queued",
-  "created": "2023-06-22T09:20:02.168Z",
+  "created": "2023-06-22T09:22:03.269Z",
   "pin": {
-    "cid": "bafkreiggrac3uq7qdxtijga7i7qhud2z7u6bof7cyphtrisechogg3mnou",
+    "cid": "bafkreiajmbjct7pu7vpbfo7vlsnakbgctnm6u5tp3vcpi75ov5r72aekxa",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
@@ -1138,7 +1118,7 @@ POST https://api.web3.storage/pins
   "delegates": []
 }
 ```
-## Can retrieve pin with name '144d2ebf-97dd-4d1b-a418-6fa4e0c801a5' via the 'exact' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '2dae90b2-10d1-46a3-812f-e86adffb8442' via the 'exact' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (4/4 successful)
 
@@ -1158,7 +1138,7 @@ POST https://api.web3.storage/pins
 
 #### Request
 ```
-GET https://api.web3.storage/pins?name=144d2ebf-97dd-4d1b-a418-6fa4e0c801a5&match=exact
+GET https://api.web3.storage/pins?name=2dae90b2-10d1-46a3-812f-e86adffb8442&match=exact
 ```
 ##### Headers
 ```json
@@ -1180,11 +1160,11 @@ GET https://api.web3.storage/pins?name=144d2ebf-97dd-4d1b-a418-6fa4e0c801a5&matc
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36ae0baeacf82-SJC",
+  "cf-ray": "7db36dd09e28066c-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:49 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:49 GMT",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding"
@@ -1196,12 +1176,12 @@ GET https://api.web3.storage/pins?name=144d2ebf-97dd-4d1b-a418-6fa4e0c801a5&matc
   "count": 1,
   "results": [
     {
-      "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+      "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
       "status": "queued",
-      "created": "2023-06-22T09:20:48.108+00:00",
+      "created": "2023-06-22T09:22:48.943+00:00",
       "pin": {
-        "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-        "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+        "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+        "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -1218,12 +1198,12 @@ GET https://api.web3.storage/pins?name=144d2ebf-97dd-4d1b-a418-6fa4e0c801a5&matc
   "count": 1,
   "results": [
     {
-      "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+      "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
       "status": "queued",
-      "created": "2023-06-22T09:20:48.108+00:00",
+      "created": "2023-06-22T09:22:48.943+00:00",
       "pin": {
-        "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-        "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+        "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+        "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -1240,7 +1220,7 @@ GET https://api.web3.storage/pins?name=144d2ebf-97dd-4d1b-a418-6fa4e0c801a5&matc
   "results": {}
 }
 ```
-## Can retrieve pin with name '144D2EBF-97DD-4D1B-A418-6FA4E0C801A5' via the 'iexact' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '2DAE90B2-10D1-46A3-812F-E86ADFFB8442' via the 'iexact' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (4/4 successful)
 
@@ -1260,7 +1240,7 @@ GET https://api.web3.storage/pins?name=144d2ebf-97dd-4d1b-a418-6fa4e0c801a5&matc
 
 #### Request
 ```
-GET https://api.web3.storage/pins?name=144D2EBF-97DD-4D1B-A418-6FA4E0C801A5&match=iexact
+GET https://api.web3.storage/pins?name=2DAE90B2-10D1-46A3-812F-E86ADFFB8442&match=iexact
 ```
 ##### Headers
 ```json
@@ -1282,11 +1262,11 @@ GET https://api.web3.storage/pins?name=144D2EBF-97DD-4D1B-A418-6FA4E0C801A5&matc
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36ae5089916f9-SJC",
+  "cf-ray": "7db36dd17ae120ae-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:50 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:49 GMT",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding"
@@ -1298,12 +1278,12 @@ GET https://api.web3.storage/pins?name=144D2EBF-97DD-4D1B-A418-6FA4E0C801A5&matc
   "count": 1,
   "results": [
     {
-      "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+      "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
       "status": "queued",
-      "created": "2023-06-22T09:20:48.108+00:00",
+      "created": "2023-06-22T09:22:48.943+00:00",
       "pin": {
-        "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-        "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+        "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+        "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -1320,12 +1300,12 @@ GET https://api.web3.storage/pins?name=144D2EBF-97DD-4D1B-A418-6FA4E0C801A5&matc
   "count": 1,
   "results": [
     {
-      "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+      "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
       "status": "queued",
-      "created": "2023-06-22T09:20:48.108+00:00",
+      "created": "2023-06-22T09:22:48.943+00:00",
       "pin": {
-        "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-        "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+        "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+        "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -1342,7 +1322,7 @@ GET https://api.web3.storage/pins?name=144D2EBF-97DD-4D1B-A418-6FA4E0C801A5&matc
   "results": {}
 }
 ```
-## Can retrieve pin with name '97dd-4d1b-a418-6fa' via the 'partial' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '10d1-46a3-812f-e86' via the 'partial' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (4/4 successful)
 
@@ -1362,7 +1342,7 @@ GET https://api.web3.storage/pins?name=144D2EBF-97DD-4D1B-A418-6FA4E0C801A5&matc
 
 #### Request
 ```
-GET https://api.web3.storage/pins?name=97dd-4d1b-a418-6fa&match=partial
+GET https://api.web3.storage/pins?name=10d1-46a3-812f-e86&match=partial
 ```
 ##### Headers
 ```json
@@ -1384,11 +1364,11 @@ GET https://api.web3.storage/pins?name=97dd-4d1b-a418-6fa&match=partial
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36aeb4c52642c-SJC",
+  "cf-ray": "7db36dd70ef205d6-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:51 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:50 GMT",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding"
@@ -1400,12 +1380,12 @@ GET https://api.web3.storage/pins?name=97dd-4d1b-a418-6fa&match=partial
   "count": 1,
   "results": [
     {
-      "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+      "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
       "status": "queued",
-      "created": "2023-06-22T09:20:48.108+00:00",
+      "created": "2023-06-22T09:22:48.943+00:00",
       "pin": {
-        "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-        "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+        "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+        "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -1422,12 +1402,12 @@ GET https://api.web3.storage/pins?name=97dd-4d1b-a418-6fa&match=partial
   "count": 1,
   "results": [
     {
-      "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+      "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
       "status": "queued",
-      "created": "2023-06-22T09:20:48.108+00:00",
+      "created": "2023-06-22T09:22:48.943+00:00",
       "pin": {
-        "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-        "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+        "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+        "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -1444,7 +1424,7 @@ GET https://api.web3.storage/pins?name=97dd-4d1b-a418-6fa&match=partial
   "results": {}
 }
 ```
-## Can retrieve pin with name '97DD-4D1B-A418-6FA' via the 'ipartial' TextMatchingStrategy - 🟢 SUCCESS
+## Can retrieve pin with name '10D1-46A3-812F-E86' via the 'ipartial' TextMatchingStrategy - 🟢 SUCCESS
 
 ### Expectations (4/4 successful)
 
@@ -1464,7 +1444,7 @@ GET https://api.web3.storage/pins?name=97dd-4d1b-a418-6fa&match=partial
 
 #### Request
 ```
-GET https://api.web3.storage/pins?name=97DD-4D1B-A418-6FA&match=ipartial
+GET https://api.web3.storage/pins?name=10D1-46A3-812F-E86&match=ipartial
 ```
 ##### Headers
 ```json
@@ -1486,11 +1466,11 @@ GET https://api.web3.storage/pins?name=97DD-4D1B-A418-6FA&match=ipartial
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36af18c99f967-SJC",
+  "cf-ray": "7db36ddd4f4e1fdd-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:51 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:51 GMT",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding"
@@ -1502,12 +1482,12 @@ GET https://api.web3.storage/pins?name=97DD-4D1B-A418-6FA&match=ipartial
   "count": 1,
   "results": [
     {
-      "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+      "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
       "status": "queued",
-      "created": "2023-06-22T09:20:48.108+00:00",
+      "created": "2023-06-22T09:22:48.943+00:00",
       "pin": {
-        "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-        "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+        "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+        "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -1524,12 +1504,12 @@ GET https://api.web3.storage/pins?name=97DD-4D1B-A418-6FA&match=ipartial
   "count": 1,
   "results": [
     {
-      "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+      "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
       "status": "queued",
-      "created": "2023-06-22T09:20:48.108+00:00",
+      "created": "2023-06-22T09:22:48.943+00:00",
       "pin": {
-        "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-        "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+        "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+        "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -1546,7 +1526,7 @@ GET https://api.web3.storage/pins?name=97DD-4D1B-A418-6FA&match=ipartial
   "results": {}
 }
 ```
-## Can create a pin with name='144d2ebf-97dd-4d1b-a418-6fa4e0c801a5' - 🟢 SUCCESS
+## Can create a pin with name='2dae90b2-10d1-46a3-812f-e86adffb8442' - 🟢 SUCCESS
 
 ### Expectations (19/19 successful)
 
@@ -1607,7 +1587,7 @@ POST https://api.web3.storage/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu","name":"144d2ebf-97dd-4d1b-a418-6fa4e0c801a5","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a","name":"2dae90b2-10d1-46a3-812f-e86adffb8442","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1619,11 +1599,11 @@ POST https://api.web3.storage/pins
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36a5b7d2fce44-SJC",
+  "cf-ray": "7db36d40e9bd5866-IAD",
   "connection": "close",
   "content-length": "314",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:48 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:49 GMT",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -1631,12 +1611,12 @@ POST https://api.web3.storage/pins
 ##### Body
 ```json
 {
-  "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+  "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
   "status": "queued",
-  "created": "2023-06-22T09:20:48.108+00:00",
+  "created": "2023-06-22T09:22:48.943+00:00",
   "pin": {
-    "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-    "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+    "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+    "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
@@ -1648,12 +1628,12 @@ POST https://api.web3.storage/pins
 ##### Body (as JSON)
 ```json
 {
-  "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+  "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
   "status": "queued",
-  "created": "2023-06-22T09:20:48.108+00:00",
+  "created": "2023-06-22T09:22:48.943+00:00",
   "pin": {
-    "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-    "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+    "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+    "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
@@ -1664,12 +1644,12 @@ POST https://api.web3.storage/pins
 ##### Body (parsed by [pinning-service-client](https://www.npmjs.com/package/@ipfs-shipyard/pinning-service-client))
 ```json
 {
-  "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+  "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
   "status": "queued",
-  "created": "2023-06-22T09:20:48.108Z",
+  "created": "2023-06-22T09:22:48.943Z",
   "pin": {
-    "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-    "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+    "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+    "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
     "meta": {
       "createdBy": "@ipfs-shipyard/pinning-service-compliance"
     }
@@ -1721,11 +1701,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36afb3c7df99b-SJC",
+  "cf-ray": "7db36de44e222d21-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:53 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:52 GMT",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding"
@@ -1737,12 +1717,12 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 46,
   "results": [
     {
-      "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+      "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
       "status": "queued",
-      "created": "2023-06-22T09:20:48.108+00:00",
+      "created": "2023-06-22T09:22:48.943+00:00",
       "pin": {
-        "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-        "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+        "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+        "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -1750,11 +1730,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "009d7e5f-0de1-492d-8fd5-4c0d70c129fd",
+      "requestid": "b649f4bb-8691-4bc2-9544-6388b9a94c45",
       "status": "queued",
-      "created": "2023-06-22T09:20:24.299+00:00",
+      "created": "2023-06-22T09:22:24.409+00:00",
       "pin": {
-        "cid": "bafkreibc63g5z4ubddx6kyhn57ghbgiup3gxe3no65xynmca3dxgueb7z4",
+        "cid": "bafkreidcytrkob2ius7xu3vainnos24py5foi7vsbheslkw7khce52gfca",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -1762,11 +1742,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "87c505ce-58ed-4fd5-8d6c-ced808291f7a",
+      "requestid": "a4cc8f59-e7c8-43da-be89-220b897c707f",
       "status": "queued",
-      "created": "2023-06-22T09:19:34.83+00:00",
+      "created": "2023-06-22T09:21:20.157+00:00",
       "pin": {
-        "cid": "bafkreiaatvbltz6g2da4etykk7pldjps7fkw6k5jmnmjk67c5v7ekqmrh4",
+        "cid": "bafkreiaauaonf267gw53g3tfum7m6b23bvogfzct2hnd7gasz5n4ojuvya",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -1867,12 +1847,12 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 46,
   "results": [
     {
-      "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+      "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
       "status": "queued",
-      "created": "2023-06-22T09:20:48.108+00:00",
+      "created": "2023-06-22T09:22:48.943+00:00",
       "pin": {
-        "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-        "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+        "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+        "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -1880,11 +1860,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "009d7e5f-0de1-492d-8fd5-4c0d70c129fd",
+      "requestid": "b649f4bb-8691-4bc2-9544-6388b9a94c45",
       "status": "queued",
-      "created": "2023-06-22T09:20:24.299+00:00",
+      "created": "2023-06-22T09:22:24.409+00:00",
       "pin": {
-        "cid": "bafkreibc63g5z4ubddx6kyhn57ghbgiup3gxe3no65xynmca3dxgueb7z4",
+        "cid": "bafkreidcytrkob2ius7xu3vainnos24py5foi7vsbheslkw7khce52gfca",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -1892,11 +1872,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "87c505ce-58ed-4fd5-8d6c-ced808291f7a",
+      "requestid": "a4cc8f59-e7c8-43da-be89-220b897c707f",
       "status": "queued",
-      "created": "2023-06-22T09:19:34.83+00:00",
+      "created": "2023-06-22T09:21:20.157+00:00",
       "pin": {
-        "cid": "bafkreiaatvbltz6g2da4etykk7pldjps7fkw6k5jmnmjk67c5v7ekqmrh4",
+        "cid": "bafkreiaauaonf267gw53g3tfum7m6b23bvogfzct2hnd7gasz5n4ojuvya",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -2037,11 +2017,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36b017863cf55-SJC",
+  "cf-ray": "7db36dea8a8382a2-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:54 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:53 GMT",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding"
@@ -2367,11 +2347,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36af4fd80ce68-SJC",
+  "cf-ray": "7db36dde09d42051-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:52 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:51 GMT",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding"
@@ -2383,12 +2363,12 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 46,
   "results": [
     {
-      "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+      "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
       "status": "queued",
-      "created": "2023-06-22T09:20:48.108+00:00",
+      "created": "2023-06-22T09:22:48.943+00:00",
       "pin": {
-        "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-        "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+        "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+        "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -2396,11 +2376,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "009d7e5f-0de1-492d-8fd5-4c0d70c129fd",
+      "requestid": "b649f4bb-8691-4bc2-9544-6388b9a94c45",
       "status": "queued",
-      "created": "2023-06-22T09:20:24.299+00:00",
+      "created": "2023-06-22T09:22:24.409+00:00",
       "pin": {
-        "cid": "bafkreibc63g5z4ubddx6kyhn57ghbgiup3gxe3no65xynmca3dxgueb7z4",
+        "cid": "bafkreidcytrkob2ius7xu3vainnos24py5foi7vsbheslkw7khce52gfca",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -2408,11 +2388,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "87c505ce-58ed-4fd5-8d6c-ced808291f7a",
+      "requestid": "a4cc8f59-e7c8-43da-be89-220b897c707f",
       "status": "queued",
-      "created": "2023-06-22T09:19:34.83+00:00",
+      "created": "2023-06-22T09:21:20.157+00:00",
       "pin": {
-        "cid": "bafkreiaatvbltz6g2da4etykk7pldjps7fkw6k5jmnmjk67c5v7ekqmrh4",
+        "cid": "bafkreiaauaonf267gw53g3tfum7m6b23bvogfzct2hnd7gasz5n4ojuvya",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -2513,12 +2493,12 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 46,
   "results": [
     {
-      "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+      "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
       "status": "queued",
-      "created": "2023-06-22T09:20:48.108+00:00",
+      "created": "2023-06-22T09:22:48.943+00:00",
       "pin": {
-        "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-        "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+        "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+        "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -2526,11 +2506,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "009d7e5f-0de1-492d-8fd5-4c0d70c129fd",
+      "requestid": "b649f4bb-8691-4bc2-9544-6388b9a94c45",
       "status": "queued",
-      "created": "2023-06-22T09:20:24.299+00:00",
+      "created": "2023-06-22T09:22:24.409+00:00",
       "pin": {
-        "cid": "bafkreibc63g5z4ubddx6kyhn57ghbgiup3gxe3no65xynmca3dxgueb7z4",
+        "cid": "bafkreidcytrkob2ius7xu3vainnos24py5foi7vsbheslkw7khce52gfca",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -2538,11 +2518,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "87c505ce-58ed-4fd5-8d6c-ced808291f7a",
+      "requestid": "a4cc8f59-e7c8-43da-be89-220b897c707f",
       "status": "queued",
-      "created": "2023-06-22T09:19:34.83+00:00",
+      "created": "2023-06-22T09:21:20.157+00:00",
       "pin": {
-        "cid": "bafkreiaatvbltz6g2da4etykk7pldjps7fkw6k5jmnmjk67c5v7ekqmrh4",
+        "cid": "bafkreiaauaonf267gw53g3tfum7m6b23bvogfzct2hnd7gasz5n4ojuvya",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -2643,7 +2623,7 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "results": {}
 }
 ```
-## Can delete pin with requestid 'cba21eb1-6363-4157-9555-ab92d54cf850' - 🟢 SUCCESS
+## Can delete pin with requestid '9bdebe76-77de-48b6-ba3a-6425446e3149' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -2657,7 +2637,7 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/cba21eb1-6363-4157-9555-ab92d54cf850
+DELETE https://api.web3.storage/pins/9bdebe76-77de-48b6-ba3a-6425446e3149
 ```
 ##### Headers
 ```json
@@ -2679,11 +2659,11 @@ DELETE https://api.web3.storage/pins/cba21eb1-6363-4157-9555-ab92d54cf850
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36b0df81d2500-SJC",
+  "cf-ray": "7db36df70ec781af-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:56 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:55 GMT",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -2701,7 +2681,7 @@ DELETE https://api.web3.storage/pins/cba21eb1-6363-4157-9555-ab92d54cf850
 ```json
 undefined
 ```
-## Can delete pin with requestid '009d7e5f-0de1-492d-8fd5-4c0d70c129fd' - 🟢 SUCCESS
+## Can delete pin with requestid 'b649f4bb-8691-4bc2-9544-6388b9a94c45' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -2715,7 +2695,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/009d7e5f-0de1-492d-8fd5-4c0d70c129fd
+DELETE https://api.web3.storage/pins/b649f4bb-8691-4bc2-9544-6388b9a94c45
 ```
 ##### Headers
 ```json
@@ -2737,11 +2717,11 @@ DELETE https://api.web3.storage/pins/009d7e5f-0de1-492d-8fd5-4c0d70c129fd
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36b143815aab7-SJC",
+  "cf-ray": "7db36dfd5b22818b-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:57 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:56 GMT",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -2759,7 +2739,7 @@ DELETE https://api.web3.storage/pins/009d7e5f-0de1-492d-8fd5-4c0d70c129fd
 ```json
 undefined
 ```
-## Can delete pin with requestid '87c505ce-58ed-4fd5-8d6c-ced808291f7a' - 🟢 SUCCESS
+## Can delete pin with requestid 'a4cc8f59-e7c8-43da-be89-220b897c707f' - 🟢 SUCCESS
 
 ### Expectations (1/1 successful)
 
@@ -2773,7 +2753,7 @@ undefined
 
 #### Request
 ```
-DELETE https://api.web3.storage/pins/87c505ce-58ed-4fd5-8d6c-ced808291f7a
+DELETE https://api.web3.storage/pins/a4cc8f59-e7c8-43da-be89-220b897c707f
 ```
 ##### Headers
 ```json
@@ -2795,11 +2775,11 @@ DELETE https://api.web3.storage/pins/87c505ce-58ed-4fd5-8d6c-ced808291f7a
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36b1a7b5d15be-SJC",
+  "cf-ray": "7db36e03894582b0-IAD",
   "connection": "close",
   "content-length": "2",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:58 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:57 GMT",
   "server": "cloudflare",
   "vary": "Accept-Encoding"
 }
@@ -2853,11 +2833,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36b20ba95230e-SJC",
+  "cf-ray": "7db36e09cec93ae4-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:21:00 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:58 GMT",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding"
@@ -3129,11 +3109,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&befo
   "results": {}
 }
 ```
-## Call pinsGet after deletions - 🟢 SUCCESS
+## Call pinsGet after deletions - ❌ FAILED
 
-### Expectations (1/1 successful)
+### Expectations (0/1 successful)
 
-  🟢 Final pinsGet call returns the same count as before all compliance checks: '43' (success)
+  ❌ Final pinsGet call returns the same count as before all compliance checks: '45' (failure)
 
 
 
@@ -3165,11 +3145,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36b271db89658-SJC",
+  "cf-ray": "7db36e0b4d1c5914-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:21:01 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:58 GMT",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding"
@@ -3439,17 +3419,17 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "results": {}
 }
 ```
-## Can delete all pins created during compliance checks - 🟢 SUCCESS
+## Can delete all pins created during compliance checks - ❌ FAILED
 
-### Expectations (4/4 successful)
-
-  🟢 Response is ok (success)
+### Expectations (3/4 successful)
 
   🟢 Response is ok (success)
 
   🟢 Response is ok (success)
 
-  🟢 Final pinsGet call returns the same count as before all compliance checks: '43' (success)
+  🟢 Response is ok (success)
+
+  ❌ Final pinsGet call returns the same count as before all compliance checks: '45' (failure)
 
 
 
@@ -3481,11 +3461,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
 {
   "access-control-allow-origin": "*",
   "access-control-expose-headers": "Link, Count, Page, Size",
-  "cf-ray": "7db36b07bc86f977-SJC",
+  "cf-ray": "7db36df0c90b396a-IAD",
   "connection": "close",
   "content-encoding": "gzip",
   "content-type": "application/json;charset=UTF-8",
-  "date": "Thu, 22 Jun 2023 09:20:55 GMT",
+  "date": "Thu, 22 Jun 2023 09:22:54 GMT",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding"
@@ -3497,12 +3477,12 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 46,
   "results": [
     {
-      "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+      "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
       "status": "queued",
-      "created": "2023-06-22T09:20:48.108+00:00",
+      "created": "2023-06-22T09:22:48.943+00:00",
       "pin": {
-        "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-        "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+        "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+        "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -3510,11 +3490,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "009d7e5f-0de1-492d-8fd5-4c0d70c129fd",
+      "requestid": "b649f4bb-8691-4bc2-9544-6388b9a94c45",
       "status": "queued",
-      "created": "2023-06-22T09:20:24.299+00:00",
+      "created": "2023-06-22T09:22:24.409+00:00",
       "pin": {
-        "cid": "bafkreibc63g5z4ubddx6kyhn57ghbgiup3gxe3no65xynmca3dxgueb7z4",
+        "cid": "bafkreidcytrkob2ius7xu3vainnos24py5foi7vsbheslkw7khce52gfca",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -3522,11 +3502,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "87c505ce-58ed-4fd5-8d6c-ced808291f7a",
+      "requestid": "a4cc8f59-e7c8-43da-be89-220b897c707f",
       "status": "queued",
-      "created": "2023-06-22T09:19:34.83+00:00",
+      "created": "2023-06-22T09:21:20.157+00:00",
       "pin": {
-        "cid": "bafkreiaatvbltz6g2da4etykk7pldjps7fkw6k5jmnmjk67c5v7ekqmrh4",
+        "cid": "bafkreiaauaonf267gw53g3tfum7m6b23bvogfzct2hnd7gasz5n4ojuvya",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -3627,12 +3607,12 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
   "count": 46,
   "results": [
     {
-      "requestid": "cba21eb1-6363-4157-9555-ab92d54cf850",
+      "requestid": "9bdebe76-77de-48b6-ba3a-6425446e3149",
       "status": "queued",
-      "created": "2023-06-22T09:20:48.108+00:00",
+      "created": "2023-06-22T09:22:48.943+00:00",
       "pin": {
-        "cid": "bafkreidwmfvi6ghxzt4gwnqn5ejmkwlhvrtzgcvxoubjves4my55j7hehu",
-        "name": "144d2ebf-97dd-4d1b-a418-6fa4e0c801a5",
+        "cid": "bafkreihcbw3x6gcwvagsa3dc5tvm22fhtzussgjbskpvvs65vw2222co2a",
+        "name": "2dae90b2-10d1-46a3-812f-e86adffb8442",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -3640,11 +3620,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "009d7e5f-0de1-492d-8fd5-4c0d70c129fd",
+      "requestid": "b649f4bb-8691-4bc2-9544-6388b9a94c45",
       "status": "queued",
-      "created": "2023-06-22T09:20:24.299+00:00",
+      "created": "2023-06-22T09:22:24.409+00:00",
       "pin": {
-        "cid": "bafkreibc63g5z4ubddx6kyhn57ghbgiup3gxe3no65xynmca3dxgueb7z4",
+        "cid": "bafkreidcytrkob2ius7xu3vainnos24py5foi7vsbheslkw7khce52gfca",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }
@@ -3652,11 +3632,11 @@ GET https://api.web3.storage/pins?status=failed%2Cpinned%2Cpinning%2Cqueued
       "delegates": []
     },
     {
-      "requestid": "87c505ce-58ed-4fd5-8d6c-ced808291f7a",
+      "requestid": "a4cc8f59-e7c8-43da-be89-220b897c707f",
       "status": "queued",
-      "created": "2023-06-22T09:19:34.83+00:00",
+      "created": "2023-06-22T09:21:20.157+00:00",
       "pin": {
-        "cid": "bafkreiaatvbltz6g2da4etykk7pldjps7fkw6k5jmnmjk67c5v7ekqmrh4",
+        "cid": "bafkreiaauaonf267gw53g3tfum7m6b23bvogfzct2hnd7gasz5n4ojuvya",
         "meta": {
           "createdBy": "@ipfs-shipyard/pinning-service-compliance"
         }

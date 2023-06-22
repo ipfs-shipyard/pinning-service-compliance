@@ -2,9 +2,9 @@
 <script src="./telemetry.js"></script>
 # https://api.filebase.io/v1/ipfs compliance:
 
-Execution Date: 2023-06-22T09:19:58.845Z
+Execution Date: 2023-06-22T09:21:21.835Z
 
-Revision: [3d9aa58](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/3d9aa58)
+Revision: [5b07f53](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/5b07f53)
 
 [Report History](https://github.com/ipfs-shipyard/pinning-service-compliance/commits/gh-pages/api.filebase.io.md)
 
@@ -14,7 +14,7 @@ Revision: [3d9aa58](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   🟢 [Request with invalid token](#request-with-invalid-token----success)
 
-  ❌ [Pins post of CID 'bafkreidfjbhh4h4tpwqb2n45l7p6dvlusaeyhsh3rezxsjn4zan5yxepaq'](#pins-post-of-cid-bafkreidfjbhh4h4tpwqb2n45l7p6dvlusaeyhsh3rezxsjn4zan5yxepaq----failed)
+  ❌ [Pins post of CID 'bafkreibsxpxw5t5xqvot3tajof34vvqpo62jvnjpubyxo7e5qbewjcktae'](#pins-post-of-cid-bafkreibsxpxw5t5xqvot3tajof34vvqpo62jvnjpubyxo7e5qbewjcktae----failed)
 
   ❌ [Can create and then delete a new pin](#can-create-and-then-delete-a-new-pin----failed)
 
@@ -22,7 +22,7 @@ Revision: [3d9aa58](https://github.com/ipfs-shipyard/pinning-service-compliance/
 
   ❌ [Can create and replace a pin's CID](#can-create-and-replace-a-pins-cid----failed)
 
-  ❌ [Can create a pin with name='240cf77b-ea0c-42dc-9a7b-437d732eddbd'](#can-create-a-pin-with-name240cf77b-ea0c-42dc-9a7b-437d732eddbd----failed)
+  ❌ [Can create a pin with name='0d951d9f-0b13-46d3-ad28-154f08ac537f'](#can-create-a-pin-with-name0d951d9f-0b13-46d3-ad28-154f08ac537f----failed)
 
   ❌ [Pagination: Get all pins, create new pins (optional), get first and second pages](#pagination-get-all-pins-create-new-pins-optional-get-first-and-second-pages----failed)
 
@@ -74,20 +74,20 @@ GET https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db368eb4f54642c-SJC",
+  "cf-ray": "7db36aee9a804859-DFW",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:28 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:51 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=L5pNQxkQ2q1HewZp%2BgNjFUkN5umY%2BCptfYOiMHCI7P2lEzGErnctXBJwtz3tRGDrexquGSL5wiZECqgMcyquSDfeXG9pc382FjasM9tvs3tZ%2FuEwbiAPGeZBQHUMYl6MpA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=p2R1hN3SuVhO2V2y%2FYxqTxA9tUiIZnzbjQsC6L8H%2F5DgxleSyYPa9U16CDkBLgSU20QkEo8Cm813V3fG1jh74%2BYO4J076fjl%2FwdWiKwMksENLRm95OwlENVf2kv7fu0F3g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "c2f0120c-b4da-45f1-a609-14503f48fe35",
+  "x-request-id": "ba18e781-d909-4d53-9fea-8094b9eefc41",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -162,20 +162,20 @@ GET https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db368f18869cfe1-SJC",
+  "cf-ray": "7db36af4de67467d-DFW",
   "connection": "close",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:29 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:52 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Biq03UU44Umiow8gsblAoIHUjdf778MQgFpylb0xKRMBZN7Go3ezCcMH2T%2Bftq%2B21WtiYFM6l4OKulK%2B6danokKiY92o%2FoQFKwvDYDfMrql47lHapdY85CayxZPMibG60Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=A%2F1brCgpLo9pheXVdJ1MbfbwdAP9Hyi%2BuxCYXGLuvIZmMcW4gPkM9alERkDEb6LSsA0wABn1pq9smAuuK6cY2bGnLZiTe%2BGarIhh1J70sfwGIDix8EXWh0%2FittIQYAeWow%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "60682b53-0138-4453-8a74-f177ea08deca",
+  "x-request-id": "088a6b53-6bd3-4f6e-98c3-95011a252601",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -202,7 +202,7 @@ GET https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Pins post of CID 'bafkreidfjbhh4h4tpwqb2n45l7p6dvlusaeyhsh3rezxsjn4zan5yxepaq' - ❌ FAILED
+## Pins post of CID 'bafkreibsxpxw5t5xqvot3tajof34vvqpo62jvnjpubyxo7e5qbewjcktae' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -248,7 +248,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidfjbhh4h4tpwqb2n45l7p6dvlusaeyhsh3rezxsjn4zan5yxepaq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreibsxpxw5t5xqvot3tajof34vvqpo62jvnjpubyxo7e5qbewjcktae","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -265,23 +265,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db368f7ceaefa66-SJC",
+  "cf-ray": "7db36afb1f764674-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:30 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:53 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ds6FVQp8alrUA2TWQ%2Fwygmbo9x614cidu4rMmYQBnH31bLjfxIQqYPiTNnORn33lwDEWeScbfRKohgHoT28%2Bo5QEiieWecn0LRjTRg4sIZEMxuk6CeGhQtmsR5hYXIOobw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=DcWvaOVxPDZzMT%2FMu%2F8aVr4o9H54wfIPReVnYDvPIC6%2BwARnDtO1N2KLeCcpL%2BJXl%2Ff%2Fop%2FrDyDA95jIPljZJWJBEuUZmX4RC1zmobZW6J9ofKTD964lvtr%2FcWrh38oujw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=vQrn2R8LKmHkg%2Fxy7IBF%2FD4IqPz4zpMwkbRYrih40bONFt%2FSZpuVK5zDyp9A%2Bxir0Yku2WJUBbpUUdbx2Wwd0FEjVjt1jdB1vHRALnycYet4lth%2FgF0kxtFWCkvLln8NprLlLNhUzGLbykg78kcjCqWugxZKVT6Xbq4jkiakzAVp2yn3j56%2BWmiXlbq6yKzWPprhP9MnZi1Vw8IC9B1kaV2i0OfQpNVlBDefMyc%3D--wyvj6YnQuZa1b9S%2F--h25yGHdysycxRcFZQ0dqcA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:30 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=%2FcNnt35AncY001aZNH00%2FZSGEO8daK8JsuTYhFDQQp1ozTJXdCnsbckYGQ3nKOzZ7e6KcQkRHlOVC%2FDCOYKDTv0mrfU5tmk5n4pLMwb9MLCijgCRWT99OOsUO6c0flAxCcU90WCkhHkgHY2VeRawT2uKg5QDqq80iTqHzg33L6g881hu%2Fno8DbV9p4VFZiwytCpV2MhCperf37Kk5D%2FReV80xJV8CY7rS%2BF1JlI%3D--FUnlBN0RWytp6BOp--2pFEd5ApokzGGWn2Eq6p9A%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:20:53 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "fe12a6eb-1f75-4880-8772-71db1a68f92c",
+  "x-request-id": "89ea3ae2-42d6-437a-abbd-6177978a6ee0",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -356,23 +356,23 @@ DELETE https://api.filebase.io/v1/ipfs/pins/null
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db369044a8517f4-SJC",
+  "cf-ray": "7db36b079c2ee5ad-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:32 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:55 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=A3mImNa6%2BGcZXH1XNp9mOzFHTAcZ6s0CIuGD0qKbopKT4MZPYlHOV4iLHBuXv8iiXnmY%2BylzZX1k18Hj%2FiWZxSM0hUAk5kQcBeU9xRF5qtjxXiN5Wz%2BHg81Z4kfwNJ53fA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=lY%2Fd8Za0Y0cwqcFPUCSYj6PG59yDVzJaf5fm9cQwvanZ07f4Yy2h28mIPTuN3z9OVPLXdnXz%2Bb5%2FGijtTZtCodr%2FvX9er7sA9dR7LwOb79INGIO9tnmq9hRVo%2FHLtR89kA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=89d2xqqiRpmAUPazuA%2FRLh9hFqKl3m3eI%2FIEFgq7k1zBr3OIWGrvTUgW1bFQQXRFc%2FOY12w7Dl54%2ByfAq6%2FePl8IXVARt3sdUEZLOKqOrTdFdmETri0scC5VyzOa9O%2FkBJExriLKUU3xOuBmEZtTDl4lIulD6WW7R5aOTxdC7b5XvPXWk3bR5JnkVhCvkMcQX4A0X%2Bp5voE%2BCMVrES8WXCAhb6ui8L6nuplNvyg%3D--dJwEhx%2FtQCAuSXq%2F--RnfAcXbeqQtjmjF1SpZB6g%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:32 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=CD6QDTl6Xctm53RH%2FcT8ugbrJfxeo3SeCl1qT9goRezYM5rmuD7EZ8GSWtnEOkG32yvrqvuEpazj%2FreeSmQVZ2n%2F%2F8HiBwtHVsmqXIr38JdV2pE25yHSZbXJpDvS%2Br1oZrK%2BjfHmMqb2vjPDjlOY8XUTQRTZeq3FjGC19D%2BpaDJEIpx8IvRONj3LyZ6K1%2BCn5bvuyCs8j9RSycRk%2FL%2BOTCDOb4tfCiwwujzzS7M%3D--tSxUo1U39AMWwuZj--IVfsY8myM95a7BJzhOfGsw%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:20:55 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "3da9c870-edc6-44af-b9f9-59d4847b48b8",
+  "x-request-id": "6da8988b-dcd3-4405-85e3-892b44c3e459",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -440,7 +440,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidzkhahjq3oy2k2snjczvr6syz2ouwkwsh6s5uhwf6m5tegjfxcay","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidqno5fvwsvpi57xorobdbqfslb46evh4vlumendtx754xv5oxhqe","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -457,23 +457,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db368fe09e3cfc0-SJC",
+  "cf-ray": "7db36b015c7a469c-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:31 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:54 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=cpdQIh3LmOWP9JLRyj7LrZVdl3kOdr%2BTDoj85Voo%2FfQ%2FGjdlTobjM6tqVo49lQRr6hE8egf5ulqIg10GASibmx%2BNCiAapdYGmpcIP%2Fg0bTBs4q5PiH6%2FzvfZo2vkRxhXFA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Tw4XZeIahbUmat02cayuwXLn7UuzqwpmI8TsdX3QvkPG%2Bp7RXTTc47YRPwyj4lzqzNUNe4ONbZfS%2FDRn2RvylcJoOvw7QSvI3n3cb5OPtCSbZu%2BzzGUToETETDwT%2F5y5qg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=uNRYkWGP8uW51lpQMTHFiFVvMmqIfI752lmix1Txd9r3wiJtwQgo5PbfWDf%2FHHO9bGRDA%2FcQS07aHOlP5q0QamsHRNJYW%2Fh6dKMZAg3TZM4Dpn8zSZ2MJVc8XzlDyxXF80xChfmr7z4rYcDMLPBoVbqxX%2Fc1IRA8qqbGn6HF5QOImR%2B815fdYmTPpv8ddRTmV7azsPPINgrhKcsuDlaH7T5ILV7WFqrgLHp0rSY%3D--rHkpQSDcRzhuUVP6--u8CwUCfaVYE0jbS5oG1FXQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:31 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=FbmX4SFOxxehbU%2FE6%2FUVDBEeykhRcZbQBfiCvZrXfJ%2FnjVy0VKLbuSwAjBXWGVk%2FWIUBrtji%2Bn%2BHGQAI9LucuhEDkcuDzFA0axOF0Bl3IskaMGdpP1pCj%2Bz2E2XLD94cypL9HGV5%2Fv2LL%2FYdWCot9Jn%2BXnK8STLD6hdPxzNbrmNtylD9hsww4MaE2k2ET9Rt0f%2FkK1ZRLcXwgcod41baNGv5gAdk9pMGf4OdsUE%3D--hdXTYtTv5Pmj3H8u--errXKrBQQhN98RSoVzYWsA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:20:54 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "f8a0860c-9417-4fb6-9eee-14b9cd5b0622",
+  "x-request-id": "3e197d45-7ff8-4519-af42-1f9990408126",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -548,14 +548,14 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36905df51944a-SJC",
+  "cf-ray": "7db36b08aee7475d-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:32 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:55 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=txb3Iob6yEcrYaz5cSMQsxYDLJQEwpFJlnCJXh7D6pqoTeTG29zCXz%2BGai76LyX%2FulPQXwc2gerOBtkPJzrWtlVX6qiLjRKNLJS9nFIWAhCAG4apJkLv09S2kno7ZnGDTQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2BXCVUqo9CeV3Lq2l14g5Xlkwl0IRowZN6WlyU7VdohuyHTsFLmmMXQBRhxYwPGuJM%2BDK4YMoxEsvY%2B58N2xWZ8ttDQWwl1vw37lATh4%2F93nHzVljTe2PZvGACvg5nt3gTQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -563,7 +563,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "0da536c5-9e8f-40a6-a9c9-b01418a947bd",
+  "x-request-id": "310a10d2-535e-4f64-b95b-c3c7cc138d4d",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -636,14 +636,14 @@ GET https://api.filebase.io/v1/ipfs/pins/null
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36918aae0f9cc-SJC",
+  "cf-ray": "7db36b1b6ca72d4a-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:36 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:58 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=oTQ%2B67es7dGrZauL2c9%2BM%2BL0YORBEuVBJWGcC2jh0FkXc1n8LOYjvw2%2BtxhQgSkdM9f4Mw%2Bz2QCH1dx5003fkomWyM1S67%2F04YSp3HwEF%2Bx1NRm1tNwUpl9HkoehZRtxpQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=VV9nFOAJvMNwL8VR4YC6ZgPTjhbyBMNMq3bwPm4eXIyCutPRD6Pzq3sOBZz0ZvWbZWbuKY7YwtsMHY5jRlTV62jq%2BuGrGzIaGB4d5FalkqlJrdbHexO6wfkwexm2So6hDg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -651,7 +651,7 @@ GET https://api.filebase.io/v1/ipfs/pins/null
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "da86f5b9-b634-4ca1-a293-2a4881fbc411",
+  "x-request-id": "fe696281-4693-460b-abb3-9e677373be1b",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -724,14 +724,14 @@ GET https://api.filebase.io/v1/ipfs/pins/null
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3691eea08641d-SJC",
+  "cf-ray": "7db36b21ad2445ee-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:37 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:59 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=tbmJJ2Ppr9nAKSFX34Gl0G2uZ13oxaYslTL26AswV%2BHStOf82icinRIzMBgfH4WMtDZCQRkEIapKU3FSRq%2B1cYnWt1X1qg69rAM1bcYjzYm0IIR3VezpiZ%2Fy6UXq4ya4NA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=9w5u%2BuQluhuXFFXcevTOvyC3SoyX7upKQV7VkcnAYQt0nBBGSY2Jka7SqKa4hpR0HyuMbAFvr7QpxW9aVYTxrjdeeTXWmu%2BKx17riGB7R0wK56YhQfmkUQ3lF0ozSW29qA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -739,7 +739,7 @@ GET https://api.filebase.io/v1/ipfs/pins/null
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "378a176f-7e33-45f2-a9e7-903225dc4f41",
+  "x-request-id": "04b83383-897f-411d-b695-d29a0ab76db6",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -766,7 +766,7 @@ GET https://api.filebase.io/v1/ipfs/pins/null
 ```json
 null
 ```
-## Pin's with requestid 'null' can have cid 'bafkreidvdbucm7jth7344kl3vqm3zxdul3sbiz7mfpeaprubwprmjximi4' replaced with 'bafkreiehmqwrhbp3f5ypqlpi3oc636acyfaj2wivaxcvju3wx36v35uuz4' - ❌ FAILED
+## Pin's with requestid 'null' can have cid 'bafkreidxjcerecwuzcq7ermtzgr2t7bigbcegid2ekpycjrtwccfl3r6ii' replaced with 'bafkreihpbpjq4qjil5cztpbsdglx7ifngp3tlw23a6nnycgos47pqt7gem' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -808,7 +808,7 @@ POST https://api.filebase.io/v1/ipfs/pins/null
 ```
 ##### Body
 ```json
-{"cid":"bafkreiehmqwrhbp3f5ypqlpi3oc636acyfaj2wivaxcvju3wx36v35uuz4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihpbpjq4qjil5cztpbsdglx7ifngp3tlw23a6nnycgos47pqt7gem","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -825,23 +825,23 @@ POST https://api.filebase.io/v1/ipfs/pins/null
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db369126a2a1746-SJC",
+  "cf-ray": "7db36b152b8745f4-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:35 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:57 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=JRxs12xPA%2B7yrKn%2BuCLs%2Fcl9%2BJpAKvKJsS%2B66QBBHGJnKZvGw3tt6G8P94gt0xPidWvs5FcfbvinElGYbss9hUzCKqHKmrz0NksZG5DxSeivvPZZBg11vHkn%2BLSjPiqJWw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Aw1C95TxiKGbCL2ClBupKW434KZKyOZGFGKiW3hPhG3tOLabtScRLyDDOMD4V0bfZ%2Bxa5SxWgdnVpvJcxvCHFlDv%2F6adIbWv5zRyPIRLeL%2FvVE9RIL7wW5Rz4Rit%2Bntktg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=itOcM%2B6%2BI%2BQt9q3Eijkc3H8KvmjVkS29uDuT6k9g5k%2F8RbJ%2Fj5mb4seuRCxcOynLDkNDFH8NY1rm8%2BHkL5uFJ249CnTFvCgWxYpVFY1k3u86lg4XaZnwXywKBFTh9ecn9MiOfNi91DPpgFHuzO6OpxBiKYRc4hVhLBqH%2BDna8lPwuBFsq4%2BQ0XXSg91EhXoGTbgRjy%2FE6vn%2FXsPE07vukhh6Eo8vGx69b7OvWq8%3D--qZ2U8xZ9Dtp5T6k9--%2F4O17PNswIUckQXWcJpiUg%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:34 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=EDes61doZ4MG8lrDOuNerkkoSZHzAGNOv1n6ZARakdACt3HTHOcrs2RES0DQIEOX0aHHNdWFVYWCOYN1pYkba6%2Fw%2F1K1Wk%2FEeAKzYxGLDr64CALyIFPmEGPZYFSA5kQKK3ATvp67oPMw3BFgxPnX4sNywN9wBNcwr7GB8J4SWdFnvGu2xM1hpxatRWf5xeF%2FjScK8fHCyu1lmv%2Fw8sHJydn9vW3yG0ank7jmxZ0%3D--RPEJWGvOG0NH7j1Q--nVQwXjXg2Uqw0xE8ESQdxQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:20:57 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "d575a0f1-0fe7-4b05-8bc0-673984ad2e77",
+  "x-request-id": "028b24d9-e6f6-4299-9cee-d522e4ec7cb7",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -925,7 +925,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidvdbucm7jth7344kl3vqm3zxdul3sbiz7mfpeaprubwprmjximi4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidxjcerecwuzcq7ermtzgr2t7bigbcegid2ekpycjrtwccfl3r6ii","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -942,23 +942,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3690c1d91175f-SJC",
+  "cf-ray": "7db36b0eec12ea78-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:34 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:56 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=olc%2BozQDGVYmd7Ct20cUdeEsSlZFz8kOTdqRDBUFOzt1ABUEVRxHiGb567gqdufABGIPDyW5TKy4z%2FXVs2D1OvH5XC5ygUQFHUZLf73j49hOFfDjtrZKKdIhn0c%2BmlI5%2Bw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=S2nXv9znJnf%2B%2F%2Fca%2F%2FYZLT%2FNRIJwS7if0FEqBG2P0GXGWoeyGUexZbTEC0qXJiy1hoFgHLljTzx4x1vcclqq%2Bzwvt2QekCLO0%2FcsW1hRmsWA%2F%2FtH4%2Fp4GqHjsnAIHzN1pQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=U%2FS7itg19C4oWVSLpRK%2FGb9SCot%2BJ%2FjwA%2BMLLhGgk897fPF0rGdCFRIsclM%2Bkc%2FBuxUqT3gO%2FPVpD8efginFPwAyZQSFjCNZroaDkPPpyJxPrvj2PeM91%2F95nHgV%2BP6wK7NN%2Fo4TgoHQ%2FBq6NXaoPO8u%2F6ohlJT7UXUnptQJ9A66qXy8jRQLP9zy1vlG%2BQzpSeu2sINURg9xytur2bjViuAQe0lNTF3wriREZJE%3D--MyEediA4lEMg5uP8--hVtoZJ4LZvM4lUW%2FxirjDg%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:33 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=zH1V9mktI4pQPLReFNQoelllQtzvI26mZ3v0rNbzx8Jpp7TtsTwCt8yUyKySuKj7Vpi%2BXqkYMu95hOgUUE2pQ3gup1jPE2iY4a8XLzStVo71jqpU%2BEccRTneE%2Fd59DxXFGA9A%2BPqzw343ned8q9js%2F46rugYhjWdGmejmjOpj8NuTraYWMEAb%2FkEZn1Ag2qvezQ88W1anPoWkIvHS8lUKDkqh5FiHXX3QDe4obw%3D--%2BEuHDfPcnohM5RAI--O9d%2FzgSEUIbOU7pQL9QNaw%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:20:56 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "533c4123-f6b8-4062-89b0-4f2c6f8a6864",
+  "x-request-id": "1001bd41-5b81-4bb7-92f9-20e6b2d368ef",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -985,7 +985,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can retrieve pin with name '240cf77b-ea0c-42dc-9a7b-437d732eddbd' via the 'exact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '0d951d9f-0b13-46d3-ad28-154f08ac537f' via the 'exact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1010,7 +1010,7 @@ null
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?name=240cf77b-ea0c-42dc-9a7b-437d732eddbd&match=exact
+GET https://api.filebase.io/v1/ipfs/pins?name=0d951d9f-0b13-46d3-ad28-154f08ac537f&match=exact
 ```
 ##### Headers
 ```json
@@ -1037,14 +1037,14 @@ GET https://api.filebase.io/v1/ipfs/pins?name=240cf77b-ea0c-42dc-9a7b-437d732edd
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36926bf0015b2-SJC",
+  "cf-ray": "7db36b290bd10bbb-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:38 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:00 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=6a3i9OyD0JUKBY65MBmJUioAk4a%2B3x4JeXZWrQ01rY%2FLH7zmHfLRu%2FAOVC%2BAMZXwaIKJNgizx%2BhT%2BOkGjSy%2BE6iY6P7pIUoLc%2FOfeRkQXxz%2Fa%2B3HrMDLwvRy0hN%2FhBKftw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=KWZLtu4m%2BAOtYac7emdCi%2BtsoVGTqv75pBRviPvcilw4mSQe6QoNfItAzhxm%2FUH1XxVjvc45aqK0dX0rvTUMRmwIOyM1BtDweTGY4eJ5A0t5OUCnA4mi6grugUfJUFqoIg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -1052,7 +1052,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=240cf77b-ea0c-42dc-9a7b-437d732edd
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "6988c5ff-914e-475b-bf88-c0633bdcd559",
+  "x-request-id": "5de31601-13fb-4939-893b-288b84811e8e",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1079,7 +1079,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=240cf77b-ea0c-42dc-9a7b-437d732edd
 ```json
 null
 ```
-## Can retrieve pin with name '240CF77B-EA0C-42DC-9A7B-437D732EDDBD' via the 'iexact' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '0D951D9F-0B13-46D3-AD28-154F08AC537F' via the 'iexact' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1104,7 +1104,7 @@ null
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?name=240CF77B-EA0C-42DC-9A7B-437D732EDDBD&match=iexact
+GET https://api.filebase.io/v1/ipfs/pins?name=0D951D9F-0B13-46D3-AD28-154F08AC537F&match=iexact
 ```
 ##### Headers
 ```json
@@ -1131,14 +1131,14 @@ GET https://api.filebase.io/v1/ipfs/pins?name=240CF77B-EA0C-42DC-9A7B-437D732EDD
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3692cffcd2320-SJC",
+  "cf-ray": "7db36b2f4c5d3abe-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:39 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:01 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=RnhEssMgsl6RjDPPL6eLwZUH4bt7dEDGxbKFF7S%2Fnl4Gv67xkoDGFuczORgKpdvSUkzCP%2FU2iI6TevT8zWGC%2BB86a0gZSjah6zoHG%2BeaypeiBYc2f1efirRXZefybgOp9w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=68jJSAS0kdA07iDvSBfmQXieNJPUTLqbKbZ5jRdsLY%2FkF40BBcz%2BJUfndI6vkR9Upu9ztPud5R8kL%2Bp7mEUzAWjyG80U3bU68dUIQiq7UXpGia82DzHapcUDCpAvtBIR7w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -1146,7 +1146,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=240CF77B-EA0C-42DC-9A7B-437D732EDD
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "9c271481-8dd8-40e7-8712-b2cd104d0597",
+  "x-request-id": "af375b33-965e-4ef0-9202-b2743ae865a5",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1173,7 +1173,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=240CF77B-EA0C-42DC-9A7B-437D732EDD
 ```json
 null
 ```
-## Can retrieve pin with name 'ea0c-42dc-9a7b-437' via the 'partial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '0b13-46d3-ad28-154' via the 'partial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1198,7 +1198,7 @@ null
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?name=ea0c-42dc-9a7b-437&match=partial
+GET https://api.filebase.io/v1/ipfs/pins?name=0b13-46d3-ad28-154&match=partial
 ```
 ##### Headers
 ```json
@@ -1225,14 +1225,14 @@ GET https://api.filebase.io/v1/ipfs/pins?name=ea0c-42dc-9a7b-437&match=partial
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db369333c6dfb4c-SJC",
+  "cf-ray": "7db36b3589dbe905-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:40 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:02 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=NVLNyZBk2rzqKZMEZaC8lgmM495DXWUpgnPyC2ltGns1qc0rIKqhwP3X75LLsB%2FQ0DkNWxUueYTnmsoKCm2NjxRMr8RgZ9TP4QKmkgs0IlwKavabwzB9QVhBRIimkxiE%2FQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=eF9ryz%2Fg3Wu5iN86h7ahjaTx2%2F8ECz%2Fvu6N2hkiQ9blsy52VGEdnpxkKaTBmEHJpZ0qPQ6g6XoKK5K%2B6D4N7jV1yF5mtz3jZjgLVwSgiunMD3G1ENBVVJ4liuKSqeKOlKQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -1240,7 +1240,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=ea0c-42dc-9a7b-437&match=partial
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "c5007bae-e2d4-4e68-aa0c-c63285188032",
+  "x-request-id": "7c0aa0fd-13c6-4c93-a109-45a11f19c2c2",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1267,7 +1267,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=ea0c-42dc-9a7b-437&match=partial
 ```json
 null
 ```
-## Can retrieve pin with name 'EA0C-42DC-9A7B-437' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
+## Can retrieve pin with name '0B13-46D3-AD28-154' via the 'ipartial' TextMatchingStrategy - ❌ FAILED
 
 ### Expectations (0/4 successful)
 
@@ -1292,7 +1292,7 @@ null
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?name=EA0C-42DC-9A7B-437&match=ipartial
+GET https://api.filebase.io/v1/ipfs/pins?name=0B13-46D3-AD28-154&match=ipartial
 ```
 ##### Headers
 ```json
@@ -1319,14 +1319,14 @@ GET https://api.filebase.io/v1/ipfs/pins?name=EA0C-42DC-9A7B-437&match=ipartial
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3693978ec15f5-SJC",
+  "cf-ray": "7db36b3bc96fea3e-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:41 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:03 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=dYreuLeyeTGa6CoouD%2FQR4pHHxmHKa6La35klEAxYrUq%2BJk%2BJlB6EqEMAxgF1ZQniKZEN0Aw%2BRDelWrLcPeJV%2B8TF%2BdVnt68biq76S0WaV27MbPYN9KK%2BR6%2FtSXiwd2TSA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=7BsrZqkTLwQ7lHaWm75gUxtXwmtfLuTsg5nThGvsSK1r0lqtjzEixzXghDW9AQ1YlrK%2BoarPlXpdpNP2DI0%2BOcTd2quGQ3UYKSLpCyDRdSlUD7qq5Bbykk5rCq7pzlhbTw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -1334,7 +1334,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=EA0C-42DC-9A7B-437&match=ipartial
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "079acc8c-3438-4702-936e-64c908ad6e89",
+  "x-request-id": "61ac93b8-39da-4cc4-8570-75dc8f1079cf",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1361,7 +1361,7 @@ GET https://api.filebase.io/v1/ipfs/pins?name=EA0C-42DC-9A7B-437&match=ipartial
 ```json
 null
 ```
-## Can create a pin with name='240cf77b-ea0c-42dc-9a7b-437d732eddbd' - ❌ FAILED
+## Can create a pin with name='0d951d9f-0b13-46d3-ad28-154f08ac537f' - ❌ FAILED
 
 ### Expectations (0/19 successful)
 
@@ -1447,7 +1447,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidbns7rajkslcboeyhncrp5vo3vx5ckmu4oviisj23ekpu2cj2ywm","name":"240cf77b-ea0c-42dc-9a7b-437d732eddbd","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiesjgbi5ceop4yhhi47oot7i7y7geq6ytp2565lysc6cyetb3qeg4","name":"0d951d9f-0b13-46d3-ad28-154f08ac537f","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1464,23 +1464,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db369206d2417f0-SJC",
+  "cf-ray": "7db36b22cee4e716-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:37 GMT",
+  "date": "Thu, 22 Jun 2023 09:20:59 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=JhYc1pwMrdPPCtym3r5HqsNT43EVim3qXx%2B14QTYomxRfyOdpFt%2Bbd2EcGBH%2ByfG0XSvWmbY2vBlBejab0pNluSsS1CTHjmQdFwT2UcQobyd%2BFIn6i3jjdre7C5FYDX4Ew%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Iu6MejD4QLkaq378aVZerWZqllByLcuYWxYX%2BD0YlhqSTU%2Bw6DbAPcx3rHCSg%2BlInkUtmyF575BbPAP%2F5ZZpad4fUo4RiA6nSB3UimDHHftqdwS%2F63jlxhbWnZnj%2BhX9pQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=wBS6OLkS9ujViEbSdmRj2RwLr1lQx2pSv5wkQ7nyqM6%2BA9L6BdhEs1FZM1xOz82UsrB3iFS2X%2FQ07G5kL3JVB2pmAviLTc3h0kVIA4Mh0h11q8Pne2sjsJ8bRjSQD3jQjsWXkHyx71vPbL86ray1KTkVrNnRp42OM6Ea7vo3zXeE71VgNyP%2BHUuLl3nBGsZASetwWFD6hTMAdUg0kxit4hGuXXB%2FztH%2BB5UGUfM%3D--4%2B5CtyAiyYWoNu1P--JdBTQShASCDH2i1TagQj%2BA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:37 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=BC0y%2BSJesjOla0rcf20NveifVCjJf1GEdjHIIttPtibjah9O1klQUteLyEdlHlwpLyNZ8sQtR14oj3%2BLbzRQ8%2BBUh8qnLJfgWDcV94eyLS%2B5VRBiNucTDJ2K1F%2FpvQ5rm5%2BTpf%2F%2FDHXu0UNiyKt6v5bBWJKOCBxozNEUCrW5dl7yigxnmFRsiG6FtGa3B7ZhCRfb3dlwk4IBADdX6J5ljdegSI3pBEjypiGkf9c%3D--LAEQsPOHi0YhY4r2--d6CwbxnZa05Pj3kI%2FCjaAw%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:20:59 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "9bb6d0f7-8ece-4455-b89f-8ef126aeedcb",
+  "x-request-id": "c02db567-a97e-4d3d-86e4-59419dbb6a38",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1507,7 +1507,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreidj6uov5ji2xuy3xlanjpr36rptsvcahieu6zz6or5o35ltnzhosu' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreihevo6zhqbe5i2qvgs6svu44w67w4e3kqfmcvmygq3r73zwhqyrha' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1539,7 +1539,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidj6uov5ji2xuy3xlanjpr36rptsvcahieu6zz6or5o35ltnzhosu","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihevo6zhqbe5i2qvgs6svu44w67w4e3kqfmcvmygq3r73zwhqyrha","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1556,23 +1556,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36941798796b4-SJC",
+  "cf-ray": "7db36b432fa3e93e-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:42 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:04 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=83YkYXpnuzXxO3kBVhgPUow6%2BUl3WsaEGu5s1GklksQAbYKX8p4%2BGUBeKkzq9SIKY3zxHcrYPSsdTIpD1kbNCrFTz%2FhNsFJ1gkrWAOd9pgbhQO8N0DjwHIT5c8jZ%2BJE%2BMA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2FPgPT2r5Fnd%2FeB%2FohNZllCnPY4MJ9uOf%2BrMtIa9LQvcXWyIfMUWoYaWtT5%2FtzF9kfiPNxumTB%2FzvEaQyW%2FnJ2pg92%2B%2F9kPQqF3YXC5CgXjl%2FOjCKRFaDHSSdCcN8CpNUHQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=oLKeEdzv4EZJdGehVqf89qhOg0y0YQ7xsUPzUi8g9rsRpGbX8AIZdJecgEcmmPTtyLjli7Z2HGQNUK7Anfot38cKjWsMBvE5oVZhd9emN0leWIzIE8BANwSXQGGVo%2BVIcngdgF2%2FBSGuYc384TTTDWVNboP9jFA3SBjWt9TEn1Ww%2FXNDDoJGkAe4rMTfIyeZ4%2FUdngdO0fX3Rzi5jkW6iyNKiGJ4XBxr7%2BtRAuI%3D--rbPox2sxo6QTfSoz--IBsQIeAMh3Pfh1GV2SOzjg%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:42 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=H3rERQEzXsiFnBC5GnF2cntQvXCrZhZj%2BCTL%2FkKXc98k2hUcu0Hq0waEZDWuL1w9C0L0sGAcKAfS7BbedHZZ%2BRSj%2BK5ej%2FMzl%2BUqxvnvJ0887SkNLyDQLLIsrklW%2BeetGWCwIiBVKNkkQrywWip5ROsUDK9oZTb0K8sQ%2Bd4wNnnMZHYQOI8uTtS1VePclkSXd0qCjtkzq5lI%2BGeQiCZmSYKHtd67ClTT8O3Rd98%3D--z%2FhvsMTDyLUaqh%2Bk--MzqooTQ%2BcEJHWsJt%2Bj9GAQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:21:04 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "5b2ba1d1-0b38-417f-b7c7-875fc13adabe",
+  "x-request-id": "d3e6f9be-0824-4bb9-a93e-4519049336f6",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1599,7 +1599,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreid5oomesg5wlo2au53d77l23vktuwtmlqbgq5xtfnv7mcnwwzmrji' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidoebc6dh3y2mkclovulrpmlnsprkjsceyjfcicdrkaxhl745rznq' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1631,7 +1631,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreid5oomesg5wlo2au53d77l23vktuwtmlqbgq5xtfnv7mcnwwzmrji","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidoebc6dh3y2mkclovulrpmlnsprkjsceyjfcicdrkaxhl745rznq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1648,23 +1648,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36943193e227e-SJC",
+  "cf-ray": "7db36b496a670b82-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:42 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:05 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=CkCjrFB5q%2BgryWsXFN%2FpLZSp9hTHU5i8gXdECJFLdrQrPOw12pAK0d%2Bi5yZSnAqt59CPH8z%2FGfpFBtog4LtGo%2FIFMMrdjbUlvVSBCndOGArH3e2nX0PvD%2BVsW4KaC5lhtA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=KGbYNYMHNNujLz%2Fqmoj3SaS9MH8fxvseZoHA0RquY%2F%2F9vjDZsOdyGrdtEgrujwHPSpBokNLOJXKAwCnMNXtjsKQSl9lSiGlYuZVAftrOSghOgyG2ZWNSBb13owvBxjneqQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=1JJ8qQ%2B5Ka9WZO51j3qD8phKwsbtYrtdM%2BVpEdVouJ30ZzMXoAxhkLEIZGxcL0HgPMew9jgKPCfCs0vBA8U0GBafe8bF7Xarywd%2FbVJfErot74REXdJCgt3ajVti14gx4kqElInt2cp2UEc%2BFjX4BGytilgtwPCgu2dbZTJfNn77GtSBsZbnuBf6Xnnz3SZSrBpK3WoF%2FbRrHb3BtEIhXzZ2CLYyxWE%2FBHWXvks%3D--IKU3tupt1f9Ah0Rn--bX%2Bz9CsyrNknDhIH3n0Xyw%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:42 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=5oa2k0C%2BHk8weUUqdf80g394OLVAWOPZTj2APZk0OoD15nyJe6DnnvrGTdPGmWDuRlTniyR904RKXiVLMF1CMPvJAPKuljSfQwkC1De%2FYX3xx2WSDl8bgGW1wX27ZJ7NNR03eo%2FcbGcQm3ajbRMHzbEeuOqSLsNu83i%2BRr8maMjIhF8T7DELGzTnI0%2FOjT01PsSdh%2F9AzJuT39caQkgS41pdXZItBxnvT6h29rI%3D--TUb%2B1mr7ha1SBzXb--Rczbd9TMCxC%2BhoBikXuFPQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:21:05 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "43fead63-f500-4f5f-90b4-eab98eaf29c0",
+  "x-request-id": "e840c64b-5228-40fb-a053-638fcd4a059f",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1691,7 +1691,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreieulhloqjmpgoiztz2lxwovcdhk56mlinl5gtzodrgxbowu7r55v4' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreicedywbah7fvtozgbifcmxbpz774j5ftmr6f6uoljkg4ui56dkvs4' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1723,7 +1723,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreieulhloqjmpgoiztz2lxwovcdhk56mlinl5gtzodrgxbowu7r55v4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreicedywbah7fvtozgbifcmxbpz774j5ftmr6f6uoljkg4ui56dkvs4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1740,23 +1740,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36947be5d6438-SJC",
+  "cf-ray": "7db36b4faf7a4861-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:43 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:06 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=9fRRGdzxJLtv3qsJLqP2vmbpj3C5GSIzX2xKx4jWSpruOsMfbUbViW08BinFLlA5gKWHUptc2Wzj%2F4AoSBCJh5oHyysBefzFd%2Fmn5es89bOZSDQGfDdXznvosaKAqjIuxQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=lAwRM%2FPOE6Eh9BJhPCbuEzi4M7PpEBvb4ieNT1d4TFF17VYPPNs7vNBqz3r7Rf2plm19y5Yzpli6HV%2B7pN9Ia5yiS9N7bpSgIMztvzdT726eXjSXSZC7vUd%2F8yHLOEDaTg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=Xk0jTJPZAIpa00KH29ckndu0TzTCqDXuURBR6BDjrG7zJu8BXF8FGWqivwqLic4GSlVIgliBQG2DIJUzaDjKiPoHxfaXOoOXNiaSM%2BvDiVKkL%2BwDm2VB5hENPSviso610CSPjiW4ejJ%2ByJDEz67pIHLYhRMiRPDqbCqD2vTEBCgKbJ55g1J24NO8vr08SQqxZX7vAu7PTG8jEe1U5yNhJUZi46xZimjg%2BCVH%2FZc%3D--Ycygs3verLD%2BhkIS--lkbPVrRPrhdx%2BfBa%2BOAXHw%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:43 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=jSoXxvC7iVppldw9%2BIsPGGtpwU03wC08ypKtOPBYRMZL2lPrhNmRLWnTxKvpFrYV0cVXlh1o786NJyRz9H0fAcM3nFi7DWBGc0njii791vZujYDuS3H5fr4ETgyE9t1UF12omOOEh8jZaw8BaWKs6pRS96SUmZWHWIMEjNKVX5H0Wq8uOB06K6m5m3EX1RY9wG8rVq2rJQ6FBt%2Fhr6gZ4cjiMWgM8%2BwcTf01lJw%3D--PfrW8P9%2FUwCVD%2Fr3--EmPeN%2BqFXKc1To%2FraMhJoQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:21:06 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "60a08ad6-ab1b-4068-ad3c-806a7b8a4553",
+  "x-request-id": "8501b4f3-fa03-44b0-a67f-82ca479ac5e3",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1783,7 +1783,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreigdnm4xmvvqslmvq7qgofv3ohk3dlbnlaxxuterqipk5micczqcei' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreicqtfmuwzw5t3mkosgvsmbrzmtu63qqrtdl454ma4uspmhla7mb4a' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1815,7 +1815,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigdnm4xmvvqslmvq7qgofv3ohk3dlbnlaxxuterqipk5micczqcei","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreicqtfmuwzw5t3mkosgvsmbrzmtu63qqrtdl454ma4uspmhla7mb4a","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1832,23 +1832,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3694dfe6a1742-SJC",
+  "cf-ray": "7db36b55e923e7fb-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:44 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:07 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=QsIpZ4kJcAjNxfEUqGsLINnHyWO5lXr8nh0ZH%2BUn4%2Bw4fiWeOz50ZrTS6ceTr8lZPNt2y0sgvMHnLBmQIB6MjQ7nm1ftS72TodtvdlDMLS8cKd9ip54bChZEtEU38jiysQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=X%2FuLouU2BnGMtuDIugU9h1EYjhC%2FZGBwrSMN0HAr4cHJ1iGuY5vqQGT3TOWdQkzPbK1Y5C7RinFmrPbHvWmyeYNITkV0yzirHBVfaxLNHG6dtcAH2GG6qaES56CLwLlDkg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=zCSyaWpqPBDzymAde1IZjMXSXKJ9lB1DiQfXDmmPhgyMFlylN%2B%2BdwDOrG9Vo9HvUqs42b1Ck4SAraiPjhqMraQizCHxkeJyv7ax0NMOYb1kkGj0YpWwleIYyXHixqEI50f%2BPdyz%2BZmBBDl4eiMHiXCOcSAB98F2pJ%2FYfE1%2BiWiGarU8ef89rBtrQQNdKN%2B6yMKNwiyxtvXkAh8IbbJkHvCh5SLrdTEKSxDlTjEE%3D--wCZdlZZm2FsMzoD5--paOjm3XTGEJrgZE5TwztFQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:44 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=NnDXWICMoSIFsRBaZd8szAvaXRFbrV3MmswaKPvyWszGUhZucOlyHem215JCPetoi4vFYWaAtjInou%2FwQieymw2%2B8q4dI9%2BC9mOwFiJUti%2FmLe541z2eyG5R1RA8s4d5f5U7%2FCYbZpusLMCmGQJHnQMZcVxWn2fG2dthhYod8UB0uQPeUTc0tHApd49rIxzizgRp%2FKJx3tyA%2BAkfQ2O7p2Vn5TuNbbrIz614qBU%3D--9GLxJ0Xe%2BegJrW5k--DhPPIOcBFQ57i%2FpTt%2FoTIw%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:21:07 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "b496647a-bc7d-483b-9051-1949470b9cc6",
+  "x-request-id": "ee5d03cd-1c3c-4145-9ea2-c889d1879498",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1875,7 +1875,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreifayq3uxurkbb7oxthaorw2ll3gaozhdc44oe7ezhd4uoa3tugb74' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreifr2q4fqozozfl6tvayys335kwqkc3qelz6nipyvtkoxytapvlasa' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1907,7 +1907,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreifayq3uxurkbb7oxthaorw2ll3gaozhdc44oe7ezhd4uoa3tugb74","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreifr2q4fqozozfl6tvayys335kwqkc3qelz6nipyvtkoxytapvlasa","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -1924,23 +1924,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db369543836d039-SJC",
+  "cf-ray": "7db36b5c2a6bea1e-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:45 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:08 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=y5HOnFlzPer28vnMVGDXmMwiakumCq2RXRBKuFPTUm4W1NoeYJEbbZ%2Fo32B1odaSVy3VQwnU0VZYX2YrPhq%2BPRaULmnPhw3hF5Hs5WHkXK5umSp1hRRfgAqd8U%2Bj6NdQaQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=HcgH6V%2B3mTcfkCJlL8hqb5PYenJDtA4jQw%2Bzchb2qLWFKqay1xRuyii1SjKYjuvbJR9JiGTWz5vy76w8L9mmqgLt1oa5sz1X7UmBeUZRZv8J6fL%2F0O0HzGjg4dAXxklMzg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=29hIoCxtxv3E7pcQA6MUqtxvk397geiq8uP71eWVZleQGRBiAkoneNeR2qqYBJF8w22RzqVjYKIJBfCwBdEow4wxy4yeoWfjgSerZAuf0QG6xp2oJmnRy1BinRtm%2FjBMOPpxNEvnjeXyXo7vl%2BWFm4EV%2Fu%2FhKmi2any0QgHX%2BYRe6N9U4LNc9jG3K%2B%2BdEPttGWqdjePfvbbdI%2F%2FSTl2FQkoW2ULKhrK9%2Bno1bCA%3D--Cfeh79iSYaZlNCax--yRo6CGov57LdHWrnD1HH%2FA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:45 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=rSij4LoAgKvvYFJW%2FlIWdueBvqOtwOV5t6GOpz2jiywFCZAwVCBbeN4Wq4ao5Wd2gRqVVf026lJuIEdO8y4vslOoZVaOYqdLfuFo9TtsHMqN4JIsaE90o25pqIDErC9R1n76CfqOy0jZdZyK7bQ9Q8egSNYNlyXKoaybZe5lAWKqlL3295P6Kwu77v2hMZMW%2BL8xtKd6UjYIUL6pGz%2BmZQplSxQe9vOJ%2BoFMv6Y%3D--AaLN06Psa%2Fki9EuY--BcnpTki8ibk9oJ31HQbdFQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:21:08 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "6792f183-32fa-4c44-ac0d-0990b574f1ff",
+  "x-request-id": "5b1c5f01-c704-482a-9e62-5cf22908a3a9",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -1967,7 +1967,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreigsbpmbuwi4fyl6uroileyre4nyvwwiid5ni24ios2ok2x3mtf344' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreiduiisaduwvgyeyhesqupflusxm266joo7xbofireosfkba42kbjq' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -1999,7 +1999,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigsbpmbuwi4fyl6uroileyre4nyvwwiid5ni24ios2ok2x3mtf344","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiduiisaduwvgyeyhesqupflusxm266joo7xbofireosfkba42kbjq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2016,23 +2016,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3695a7b00f93d-SJC",
+  "cf-ray": "7db36b626eb74644-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:46 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:09 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=zVmRrLMdhTjqhj66YmgxDQ1ACJtjMf01p5v74HPaIIZizlyTFDensq6CaRV6JF%2BQgN4W5TCT1uJlXp8%2FKtLNxVRA9OoT%2BogPGWsLlmXt8ZIHZ%2BdppK2LIGLwIvRPNw4sNw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=QgnMXZyKgpcLYvmw2xfD%2BrocAIl1DyLP3oxKHHGWh0qxk30v%2F3aLGnYB0lYXh9OoITMD9xmFvFwb3M88TXFr1dUQAE6GBIavz7JK7WYKhzOlMTYAnOyBFL3l6ZTWCNwIUw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=%2B5mQ9mpij2iLDQKqD9KRe8fncC%2FP3B8Ifz7xG76uMn3qPIKHQ%2F0uyshNeferq4piohDfZz95t8ybJu%2Bx5jytNTb%2Bez6A%2BA2rBAUtZb%2Fzhjq5Rl9nQFbPI92GuGDSc9GbzoBElDWMxVMWkOhe%2F2gUeeHrDubD5qgU%2FDeZGXtKCWRL1nZMIP2B1gcfZhuukm8GlSfgNZIeP9WgbZRV8%2BqmeZdYUV7ninDIuc7dO%2BQ%3D--tpPfM5qYMiR7vRld--ztTW5jmrqNQ089rEQ8SZ2A%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:46 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=JCtTeCr2Z7Svyid%2FVSvJZDt7nchH02teZ8dXJKAqa49fv2JTjt1DERn9xECNe4BS12ooi7%2Bm4haUfIJkGXyoRfqMCA%2BDnjQbtVovYOF9OqqE%2FgIj5qmAtLgBLwdEZIRNxh8gJwZlDd%2BGM1SQdIl1HN5lQVDyhv%2FTLxdQV2QNJ7%2FkI0fmJNMMoOfiNkevDUUIvR4t1TqW%2F0LnmRye1hWOrStoXCKastskKBjbqck%3D--O9Cjwu3g%2Fp%2BGOsIt--QqtoIrR8zTafez39u8cPrQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:21:09 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "7f9a2ae2-7baf-499e-908a-6a187caec250",
+  "x-request-id": "6862c00d-439e-4a34-a911-b7df5d1125b0",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2059,7 +2059,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreifqvqfq3ryqhlgtreotarfjq76lvxe264iz22fme43wxhwk5n2fpm' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreihbohwxw2qudyt42t45gbtgk66iyspwt4ib5r7hu2ksg4gantpwve' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2091,7 +2091,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreifqvqfq3ryqhlgtreotarfjq76lvxe264iz22fme43wxhwk5n2fpm","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreihbohwxw2qudyt42t45gbtgk66iyspwt4ib5r7hu2ksg4gantpwve","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2108,23 +2108,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36960b8fd641c-SJC",
+  "cf-ray": "7db36b68adac478e-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:47 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:10 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=UtfXPmcokuk%2BmZY3obI291c4qI22%2FUOiB6L1AAPbtWL7bdg6w7QdSzv0JVEqYk3LnK%2FhjCe8QTjZHN7lx0XAwx4PXhSad36kM24me5PYlola9K1dSv56t9oAtBIkhrwP6w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=sg8QUuTEEz%2FaBPkNnCu6xETa0v2StBRrYFUu8sDu%2FoV8b86weYMvSZhavqlWei8QkLYwNcLfU8RWHq1%2BYoyqXwq4pWOForIHiwiX2KNWcUs6h2Nx9UO7g5VuKDWQPSL3qg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=ujMSef0CXrzCtVaSeTar0V9ByXDhlvgLh9HyAA5eyHLqtSoh4%2BeIjT9UE59XYG57Ym9cjPaatkDkzX%2FBz4WnGr85mzxQK82idswauFhAEYN2pnHTpQmYm0cCH9gKsVjA9OkUF7rn7Cjoe8FHAZLKOrOCtjA1zuM5vp%2BM3hQ1tUgMSvAGDGUqFPcj3EC%2BplhroJ7evrCZ%2F0AxTUcDzgpmPpvxgageHQFaTLtVCjc%3D--unz%2Fm4AKekXcjbbi--iMp4cm7fl9tiCzVVrr%2F7aA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:47 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=kmX%2BTVftsxjgpotVUZapXolCs6k9sydiPzIXdqxF9%2Bv1G6me9s6EMke%2F5nSV1OguanM1jlDbrvzLYpgUAP%2F8vxd0R%2BmLo0dJ2nMGeIlQmWbQokejhQmGp335SBTQzMDAn0fbz01KA0yBwr8hTkzHaxZehekN66txTn%2BRkgRO68oAGvrgVmfeomZyC7%2FHQ5i%2FSsDQQeJr9TCF5lfsdBUjjSR1beb5BucXEIjThIA%3D--j%2B1RahLyBGNZvJqI--OM663uZ%2BJyML6KH2GLuETw%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:21:10 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "25d12ab5-918b-4efd-a9d2-724ef3c36ed3",
+  "x-request-id": "4b0c0d68-f1f9-4584-86c5-7c536673b562",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2151,7 +2151,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreidrdcq5afb5gj5fqu4pthxifptfhanng4o7u6bt6wnbhgdprvrb54' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidg4zw7c2ine2shjwbktb4j6q535li3235xplp7wfalszxmlbz6nq' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2183,7 +2183,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidrdcq5afb5gj5fqu4pthxifptfhanng4o7u6bt6wnbhgdprvrb54","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidg4zw7c2ine2shjwbktb4j6q535li3235xplp7wfalszxmlbz6nq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2200,23 +2200,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db369670a359803-SJC",
+  "cf-ray": "7db36b6eea73aa39-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:48 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:11 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ILIYDKOkATIODRStDxXt8OVPhapuwYdGMiamapuoAHX%2FOd12IErLCpIg%2FUkO27CRs3lKY2%2Bf5aQArm1W4BJrLKagqLUGhECklNZdl9sUQgTa%2FmK%2Bx4sEpw8ORC6tqMXDsg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=h7NUUmlNrAhKls9C8E1ckbuVbr9Ux0eEOPhwRN9OEZLJMeEvQAe8aFKQ6xIefpKMhO%2FFiOWmMLw833tB2tAo9zPLVBSOJeWp6uwPp3dSs8xbZP%2BudRDPdyf%2FnbLCjMzTDg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=FfCzA69%2Fhp8McZl8wiKqWAn6xFQkqEtb1b4GDUAs3NClD9eLVoys8u7NSkV3ZTRYv1za9EZMQ8fULcqWU3QD1zIXVH3Yha6bvHngQwWdz27mISmW1cjMz8MAM2huw4g2KGjDJYACwAyTZdm8qrxiafmhVoj954SQAN%2FP%2BLRGSHEplwylchvg2lW56BlBLsoPJIJmS9JlipNyRGkCvxgOHKONDIJ%2FTZUhd7DWz8M%3D--GtBz2J4so7yCEbAj--X44q9WFUclTfG0tyQmG1%2BA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:48 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=kApmsZkkARQ7cY5igl%2Fzl7CNlYIAn63FzUWMnCt214m7SIgLrqrMnqvgKmnVD9Fp4GDbmv2RnWhoRXtwMVEqXBdi3KOC4WoQLt0S%2BDfoJatYytJylz0nO%2FsM%2Bdav7r7mnzqzO29S%2B11hlccGIcPxwRiPTMa%2FX462lZ33hct8ZBDvV8xIfErW3f%2BYa3%2Fcji1Y49c8DWAxsWp3LUO2KHg3kiqV66ULOPGH9QZVIu0%3D--zEBvrEGzUg3iyC0Z--XU2lXTTFC3xDfYotW5Eywg%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:21:11 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "5cad1e01-a604-441b-a330-90cbb63188fa",
+  "x-request-id": "eb568213-1fcf-43d1-94c3-e66833cad8d9",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2243,7 +2243,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreidtm4w4wndjykisdlbtck5564zdbqf3x5gyipwhysupjbmxrkfbfe' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreic3soq5lkuru2wld4kng5rm3czzt45q6opclvnmgqmnmwetwsd64q' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2275,7 +2275,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreidtm4w4wndjykisdlbtck5564zdbqf3x5gyipwhysupjbmxrkfbfe","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreic3soq5lkuru2wld4kng5rm3czzt45q6opclvnmgqmnmwetwsd64q","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2292,23 +2292,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3696d49b4156b-SJC",
+  "cf-ray": "7db36b752a953594-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:49 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:12 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=FLCfP2NoA86QefrT%2BuGVU9jKmA9E6whq%2BYFgKVmedvmiGAc3kw0ImHf2Km2eK%2FMJnGzyYpdzeADtXlUkTgI891sHpG38gFFoZh5tt%2FtwNbE%2Buso3Va7bPbYSvjiek4nXGQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=egI9S2rFe0g4atGYVCsNFIuP8COgjSBQiZOMjkWJWJijy1i7Rnpefasv9SCkz%2BIlI2Rx8FzBAMcdKyOZc6CFP0D%2BosyD0IGf16YsrFhr4KY4B69OBceEh2qUFWyHRhTetw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=4rzh9nsfGsRKDb8S9NrOLQ0TpUwYFuQ1NzSdrexhGtrkbXH%2FXDW2elKO5x9cKH7%2FNCtNRvN1JX5kIUcISbZ4kNVdlOwkTwJojgH4ZkIjdrUwBQNRr0dzpynOHeAkTiFvAHe9gpmSPBN44N3Q5lBtpbkUHGPZwgWbsNle%2BDIgMKV5l7Ifm3mS1ulkhRk%2FcjRzPLA1sg%2FX5btHYKBomug9Zzdw2w%2FCw0rjzTHI7r8%3D--d6nKpK4yJJUVGWj1--PsoYvJIbit49I6xCwqf%2BLA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:49 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=Np%2FhlwGQZ1BwQp3NvZ6OJMChyuP0Kz9ZuuTJKWTh5X8WLGWOwB6iJd4huKIwHIEUI9NV3ts23i89BzVpsfiH08mQ5qLtgB3Zy6DVGvaoAaykTwSGFDLiX3ucC5jEqtm02oFS5gI5g00sNG%2FiN6nje418dprwdrfP5JdAQywEXIrQCLG6iuTAk4DiQp0BWAUdipc30yWzY4LoLtXpYTj9yFBSnTJOca5qQunJjuM%3D--Zb5sV5gPbrttt96H--kC0FswhOZQ8yBhPUPQ7UnQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:21:12 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "7c8209dd-6f06-4867-963a-febee7c9ba67",
+  "x-request-id": "07abf8df-1a08-4465-9b8b-8ab99691ad04",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2335,7 +2335,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreibsi2xabjw4och5rcjfsewquku6j3fd2jbwndt5osad6eh5o7fcwy' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreicdktb72y3wfpxh5wi6f46xn4ijii3uxtb4wk45kst7qqnhfgxnwq' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2367,7 +2367,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreibsi2xabjw4och5rcjfsewquku6j3fd2jbwndt5osad6eh5o7fcwy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreicdktb72y3wfpxh5wi6f46xn4ijii3uxtb4wk45kst7qqnhfgxnwq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2384,23 +2384,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db369739e7d15ed-SJC",
+  "cf-ray": "7db36b7b6e97485d-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:50 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:13 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=GhIit4ijvE4fntvGsnPG9hBp16ckM71o%2FKtD8wdam38zzaxxS4V8IA6QbAN8i%2FERz7rgu%2B9LaNetIIe6xQrjHaET126O3bzZGWdQUausHZH5isa%2BefhTC2lhuFzlS%2BV%2BlQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=f4sBPTcCb6f94AmzgKq%2BI7Gnwlbzh%2FAANLODv9wbpCFH1IQ3Uk%2BMAx%2Fk%2Fyk0xapIi7EWsv5U7%2FN8ByUMQfprxilj%2Bg5a3YEIz0cyYjFYF158tcr%2ByCHL5qcWNSSkDD%2Fb5A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=LbvgMFGs1vonrD9z4IZMhwNhjolw3dZ2ujv%2F5UiYHsWmOZtm68nDqBVVL1r074mvm82p55iVxHjYS7q3M3qu26oxxTLBNhWG%2F4UAp9exd1om%2BniX9u7tfHE%2BPbWb1ZXrN8zDtPUKgvnhV9joZzF%2BDxIOlt6f6hwLcrXQWsLj6u5o8eJ2Z90zKFBjANeawlohWlgh0vE55jDDd%2BqxYMb%2FHFtipQxSLClA9ug72F0%3D--ssGvwvY%2BymcBS1fT--xnnLluqftDKK6WWRXDnaow%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:50 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=ZwINQBlKOBe%2BYHhh1HKU78mQ847ld878kezeyXzOIh6cY5jxotokX4lcJVhQL71JNH75APSSpwpSElYdBT2rmd9GVgUwDlqz54vBKrCo%2BeSsgaaVq86RZK0vNacqGoOSPBXOcyD3rJf8P7oqCkkJ3rt9rLxy4cMQ5DiFX6S%2BlBchYXT%2BlNLfDKG1BkZsPmNPix9oA5O0TGIF%2F53tDQQ9i0PkbO6KK7XUfkz4%2FdE%3D--9t2ttcl9TuRRAglW--0Pi9MFcx7eQwt%2FGziXK6nw%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:21:13 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "4d24430e-5ced-4da0-8ce7-c21408369da1",
+  "x-request-id": "94cf07fc-3d42-4216-8dae-e6895998a568",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2427,7 +2427,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreigk3sz33wve5wc6ci5jvwdu75xzonk5qkvkjmf5yabwyppkjv76e4' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreicjimkdyfsrot2tcz5hqtunjlrl4iyqzdva5wl7dir7k4cvmix5c4' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2459,7 +2459,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigk3sz33wve5wc6ci5jvwdu75xzonk5qkvkjmf5yabwyppkjv76e4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreicjimkdyfsrot2tcz5hqtunjlrl4iyqzdva5wl7dir7k4cvmix5c4","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2476,23 +2476,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36979ceeef97f-SJC",
+  "cf-ray": "7db36b81bcc70bdd-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:51 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:14 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=g2oMM7zvwCzBaQwZNwYtvO9kLjjGa47laofG7GqWtUYJNE6v0Ea%2FAgQAkX22oeJ5rF1P%2Fv%2B3kao6qzIV7YnYbvRbYIkPyJHMYe6CkU0V8eeydWlmzykQa5s2kRqtsrrdEw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Me2iwz%2FcUQFqmpqjLCYNuDLnfos6TMD%2FupWCFALWxNQvVqxFXMnZCk%2FRQC1PC2MYqXWES3svq9NZE5bf2KnCUD7C6k%2BVERgpERM8P%2FN9i%2F70R3Rybt9FnYwGjwx%2BnkIq6g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=vxB30u45wUHOxQXosGXtlM8E9Xoc3hkpFywqu9PsGMIxnPwcEyUvu%2B8vAxHnMudiXla1i6NK3su97AW2qyy1sEKHqzcL7%2FYiy3R1zURlvU3A23AGO6Tr3YUvcfj6OME71W5G5wQ%2BVIJa653nctw7L3a8qy7TTIkPX0YMA7shMG%2FdSdQKdwH%2BJ1%2FWut01mK2DE0KL5y2UR6rXldFtHySr6J1R7HSgQWJukBEpYbw%3D--L4WkSg2y2YqnK4ii--lypyoB1MmKDWod5pJrbIiA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:51 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=dM%2FeJKyMZGQpVgA4ci0xi7FSnMRjCiToCZOY8go5T9KZpfc1pffbfAHHuuPr9XNjf1Hs5A7xRae7hOPfanSaCl8r0tyLXnKW9FQ%2FZpCiKJZZTGdGbqj5gMZACq24PsbyE8clXEhd%2FHPCsXwPsxJ3w4SjYYVR0kIoVLEbjEaJ4DMxd3IPiz9hR8JDCrMtki0oa370j0%2FM62S4h%2B4fGFOrjtiRxW82R7Pi%2FK41%2F8M%3D--egP4oCLn8NWeT64P--oVvp2Z7gyisElryJthx42g%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:21:14 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "ba5b0e2d-116e-41eb-ad4a-12c549202e7c",
+  "x-request-id": "3018b533-a131-482e-b664-f0153374f190",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2519,7 +2519,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreigodhwbsoll7ffghlz6yphk7dlb2ss533nlhztyer6hblddpvehgy' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreicwfrntaw6e5irytl3oivycgiqpzoxntndauju4jf2x3o2e5jaz3m' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2551,7 +2551,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreigodhwbsoll7ffghlz6yphk7dlb2ss533nlhztyer6hblddpvehgy","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreicwfrntaw6e5irytl3oivycgiqpzoxntndauju4jf2x3o2e5jaz3m","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2568,23 +2568,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3698009fd22d2-SJC",
+  "cf-ray": "7db36b880b48eae1-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:52 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:15 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=qhCzrphUH2WoS9UfxBZ3ObyuxQbylnu0j0lZjF6rOT2wj0vhcMNWfIQxCQ%2B63%2BgbdJryzSQ2NJT27p%2FyarEK5rrzyhfXtPSxFhICzgq0ZJodnz%2FXlU%2FqfRaaVEDgA8bMYA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=nosY4hWSHxqU4t1u4%2FBNpEVsEfZVjyCjLyFGVc0Y0xV%2Btje5DWXvfdHfxM41qWgisWF5qSPTDjZfEuuxTvrtOniWDv3BCmhaqsf1evQ%2BuFIOP4WsP68bMIFCrPC7L%2BLiJQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=M2dy6%2Be7OPKWIdQYo7HjZV5h1awPRcg59lyv1VlHZIJf4Hj3OKs7K7m9r%2BQ4dyaZDq3NrpyhsNJD4n%2BxVLsPoeka9O9xfTnp9aRF6kME06ZRLDgdkcg0gsdv3j9LPXDBWNs9wajLFOWyz5cWcMh93%2FSRntkyCq0fW5Pa1x%2FPMD3R5KusM7%2FMVWQVMZZLV20uRvteiLQftnE18oBBgJuj%2BO3uoMSpoHudI%2Bt%2F2wY%3D--tiNWjEVmnehlM9eG--d1ezPF%2BBVt%2FFO5nYW79HVA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:52 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=yMaJzLWSCPwoSsvWniiUNQhHtWWNA6KSNejq2354oklV7uzmlZgtt%2BMd4n5jFwrTfjt4422blqUB0bMTyDmm7LQq4st%2FWXgzJMpEmx6pb1%2Boo2deqq8Ak%2Be7awzfnAh7l1Fz0aJrATcShcoJSFaDb%2Biqwpa1IQy%2Fn8z0506WNXl%2BNt192uC3uL0kWH3eLGh3XI7Vhk8vB853zbFcHoCxGJ5bict%2Fk31SCclGavQ%3D--wqFnxAODIpRvC6NQ--tR8TOtMY3M0PmO8BMSi4Ag%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:21:15 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "57efcbaa-2b27-44ba-be09-495442a3dd48",
+  "x-request-id": "d154d441-535c-48ed-a6de-4190a52dda36",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2611,7 +2611,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiayvg6sqquf5emwnmlhamv5s7hkndpcn2kbnshkwg5n6zxvij737e' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreidahbkmnywgb5gllcz4qnodi4w77jq7phl5qna453bccy56hewy2q' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2643,7 +2643,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiayvg6sqquf5emwnmlhamv5s7hkndpcn2kbnshkwg5n6zxvij737e","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreidahbkmnywgb5gllcz4qnodi4w77jq7phl5qna453bccy56hewy2q","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2660,23 +2660,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3698648959861-SJC",
+  "cf-ray": "7db36b8e3e7ae832-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:53 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:16 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=NXMhj7V1rgcRtSuqvIVtK2ij32gUb%2BSSF69nT1PIlEzgI1w30s5RVrvsCqXx1cVpTRgAOhWHcJjhSPT9r%2BYNwxTwifElhrAqWSYHv9%2FMpP5pi15s49OqBTeC9wcBdwTppA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=nFWAY8xxNv3TCXrhcP3HeJp7ba1O4ePr5YP5m4%2FI4fyiYgwf9zM%2BTydkJ4sEgejzMwSErPxhGn1BeMKh5PR1H%2BuNRgcAz3DlYf41IXTpNyeOgqkEV3CxL4CZ9JSPjRuw8w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=GOaXm9M3I5xI8VhjCshlpXSnFWbI6AXMtt3Bn2Kh1Ve8c3SHFLf0T0GV%2B290SX85MNf9XlUtNEJg3zT%2BwB2aHCfLLfFcpRG%2FRKOpR85A8rpPKC1OCA6QGVbEXEuB%2FzO2NPe5KiB9PB49bjeV7v3K8H%2FuWXr6CjMjJYUAaW%2FZtBpWGkK68s1WOZ9hQYGU6BRdSWTyV%2F%2Bvxjzzinww9zRjU5TrhVJrtOfmVEXzbaY%3D--idlRavZ6FHX%2Fepxv--zA4YJ6gATJWiAldnsZE3Gg%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:53 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=IMatpimYp0VfQ5G%2BbhawDuuOPRyrmD5cQiddk6aaamDXURF%2BoRM7DuiphiOddsC%2B%2BJ%2FlV31cDB%2FD884CQaANyouO%2BsYlThuNcCFJ3%2BhIOI4m96EDGiPm19IqI%2FIzZk1D%2F0323b1N29ZsICEIP9GaTgZu4YOU39v573jTe5LGN5%2FSrD3lG8UARKwSrxdy0FTate4m4EbWeGL69%2Fg0qY%2FZESixXI7dqcWnCNf8tCI%3D--CMMCzj%2F6Vn%2FIeBuh--D9zLvWZ2rNbudZeA7q8xcg%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:21:16 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "d236ac63-7b75-4ef7-b2a0-590ad024ed2f",
+  "x-request-id": "8ce4086a-4424-4071-be77-0f487178ed10",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2703,7 +2703,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiasq6kl4e26muzotqj4jcrxwxpzvwrx3upo6fj2mdy2gpw7dnvy6e' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreifflyi7e6vo6cxein4wbtbxavsbxznx72526tfqqqlvjv7rurxmqa' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2735,7 +2735,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiasq6kl4e26muzotqj4jcrxwxpzvwrx3upo6fj2mdy2gpw7dnvy6e","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreifflyi7e6vo6cxein4wbtbxavsbxznx72526tfqqqlvjv7rurxmqa","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2752,23 +2752,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3698c89ac22ea-SJC",
+  "cf-ray": "7db36b947ff7e857-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:54 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:17 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=0yVimPsmKYmoZh45fZwSuYjAR65OIEF642xvL3eQmqm6Ivp8XLPiMnN4L%2F9ShKe2x2viL9PIou09CPbwcvawE8TWrUfqZ6pvoklyitgluGVs74kTXbHdBbPfSmRzXhNWjA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=t9uLkEGNppp1M1HfjkXjzZMFT2nVe3GDIx%2Bi%2FXoidKqmWg97uWqhtg3IcwKhZci72HwbSEal5hNozYNI121TnrvXE39aYFceItuloe5jgi7jLYLQwYmeEiF6eQWsTxdC%2Fw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=uAnV28bWoC5QwQ3NRoEl3Ppvzbi0SmwPjy0YgggGJP1RDjfhw%2BzMDwFKSSyprDNZmL9gt%2Fp1v%2FKVrSUBVogZYXm9i2EEUTBfSBV7Jc9ly0c4Myp2Th%2BwvQrmo8BVwj8Gx0Cy6O6kASgGSyOMW3Pay%2B706dawXqo1vWeXrDaE0Pa6AMCM5Mg8HJk%2BMjn7xfSM4TzWlDdTLi772G%2Bj6ZxIgFa%2FIFWG%2F3NbZVlpm4M%3D--ccjKTdOkh76vd%2FEg--0Rximej2aBowJsMRDcXs8w%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:54 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=db%2F%2BL0HKtxZRDdd%2FQfw6Srmsn4JTY2HjRVBYE0htL0yaDgjoKV1OWTxDl3IV7cuzgP8Etgq0qrQChAi7cON02IaHB%2B2ao5uWDYZZpkES59xaHRPbzrq0AGcNhdCUv7pvhixob%2FegTDp2TOK4h7XWwEd9ao38JjhncGddjc5NsAZFMRcDHDQpbpEHnPTR1S7UoKaJpvojUqV0nKaDHaiD6hRxeJ6Ok6vqBZsuF3M%3D--%2FulF6ugllaDo%2FztC--SdZbo67EI5DhIis%2BXOSxrQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:21:17 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "c6ebfb6b-f4b3-4428-9610-5022d0259fc6",
+  "x-request-id": "3bb1ab0a-c47d-4e09-98ea-fca5806a9da0",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2795,7 +2795,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```json
 null
 ```
-## Can create new pin for testing pagination cid='bafkreiem6qxetezunhkjrrysgwzlwmmmm46lo2xoa3glyyvceyqbfmu37u' - ❌ FAILED
+## Can create new pin for testing pagination cid='bafkreiepdxicbkheyb4eige3ntza7upbtam4lbtkfndtnqveod3scvxhwq' - ❌ FAILED
 
 ### Expectations (0/2 successful)
 
@@ -2827,7 +2827,7 @@ POST https://api.filebase.io/v1/ipfs/pins
 ```
 ##### Body
 ```json
-{"cid":"bafkreiem6qxetezunhkjrrysgwzlwmmmm46lo2xoa3glyyvceyqbfmu37u","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
+{"cid":"bafkreiepdxicbkheyb4eige3ntza7upbtam4lbtkfndtnqveod3scvxhwq","meta":{"createdBy":"@ipfs-shipyard/pinning-service-compliance"}}
 ```
 
 #### Response
@@ -2844,23 +2844,23 @@ POST https://api.filebase.io/v1/ipfs/pins
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db36992c9e3fa05-SJC",
+  "cf-ray": "7db36b9abe8ae7bf-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:55 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:18 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=lpXbIuzU0FkP%2BXgCyDq2Blm5vTWxp7fvrpG5TwwvnPaM45dZqer3wgWyHMwS8OwkmSVg%2BsNTaIYTYINGrXsCAdQTSBVWc2uZfBi09iPkjT72E7XIEo9FazDBurzZks1bxA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=bL0k3up6uHB834jnkcN3ZFDC%2FmuozfRKGcIZ1%2FOOEYyUszxgtJGYhIqPrxazpiTT4pdMfQ1NFOuI8auAVFVIXCrTN14LyigqPjHfgW5F1KmutSQ4Azd2Pq2BuCuhsDl3AQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
-  "set-cookie": "_filebase_session=bh3M9oxYvksDTHxXP9MzxfOS5ppoY6mNgW1ix7%2FQB3XBXLpJP8pg8SVsyzEKbdjrrUJ7vf0uGUhpUE4oKbAwPtFsTJLsHq3wmEvnVnHEySzJIqmVd1PX%2Bakz8kE0vUQ%2B40R0N9s%2FFR2uI%2FMRZ82dkWR41be8i5miZzrLiXDJ1w9NK6ARKD5EqLu0m27ZMpkH26PhcgSVldmH%2BbVdGx4%2BDhTH1K%2BT%2FlPPAXjUPKA%3D--vMXasNRf1IbmquRZ--GXK%2BjNfCV6zRXX6z5t1eDA%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:19:55 GMT; HttpOnly",
+  "set-cookie": "_filebase_session=GOJVtL7YB%2BvWasQCfRsD1lQFZJyP5wH43QXYtw03%2FohRdJFMzF%2FrC0tgmnO6o0YMhtR%2BLzw0cEvIrwvB4YCpj%2FyhV%2FcHJtriRE6%2FNP7ElZWLabpH5BroMV1GzKRmVrJX1Y88Qjc%2BoO5JwQh3rGs7p9gtYCqtmZ1vOCnclkUB9%2BN4O70MyQ9l5m98ycCJGCzJZt7mGGP2GejvnorToHd8rAsPKbtrDoAsp22SWWo%3D--JcOPzZgpGoUdRSnO--K7bhcf7EOksWD3sA7N61hQ%3D%3D; domain=.filebase.io; path=/; expires=Thu, 06 Jul 2023 09:21:18 GMT; HttpOnly",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
   "x-content-type-options": "nosniff",
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "96c90866-cc7b-4663-a8ae-17ad090dc620",
+  "x-request-id": "d610779f-374f-4635-b24c-eb813b55696c",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -2947,14 +2947,14 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db369990c56ce98-SJC",
+  "cf-ray": "7db36ba0fab92c89-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:56 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:19 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=OjM2dQtrX5zGL16s5R8WYHxZeuMQCVG1f%2Bql%2B%2FavK%2BjWjcA2hdFk30i6Vqngs7362Xk%2FF%2BIguw8vrHL7pc3MyuFPCS3g2l2N14jhVA5CKA%2BxsS8DZY%2BLJruTbCjEqTe4xw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=rUMkXudVJ5q1VUJRxeH8j6uMehVO8ZlTeTBV8UMcb1ZSQNZyKFGfi4xbJaoyn0Jv0uA0BDgg7VsA3PtcnxrYkM03YnfyhQdOEfnVFXsnaEolR6exfM7qMBjVv0oaw%2BQYiA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -2962,7 +2962,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "657c1b6f-cafd-4272-8343-4bba239629f4",
+  "x-request-id": "de0c8160-c82a-4e55-82db-eed0c86120f7",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -3021,7 +3021,7 @@ null
 
 #### Request
 ```
-GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2023-06-22T09%3A19%3A56.569Z
+GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueued&before=2023-06-22T09%3A21%3A19.644Z
 ```
 ##### Headers
 ```json
@@ -3048,14 +3048,14 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3699aac7317c4-SJC",
+  "cf-ray": "7db36ba20ce2474a-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:56 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:19 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=CHe50libqs46E8gpuYgB%2BT6wlDg98%2FwOp9FE0ac1RBTsdPdRsFR1gNcSKQBpaKa5kmbEJkuwugu6oeKCnWCkN7WPzyY4%2FD%2FleN%2FNNnRNwgPzgV0%2BX8PZlPH2a4w1Z4vy4A%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=IozrPSUFpHDbAZRQkKhnIBkkctV7JF5fljPP4zSSlKpguScbaVYD8Ko3Dhi1xOHwIGrmZonj4OhCdsmNDC5eKJWSuOJdHQazYcb%2F8ZqW7WfwlzU85e0R7erliTwoUhrTWQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -3063,7 +3063,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "52eec699-cee7-402c-b27e-5670ef31aafd",
+  "x-request-id": "d387a8a9-d908-4e5e-bbd0-6e5acbd4d445",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -3320,14 +3320,14 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db3693b3e442518-SJC",
+  "cf-ray": "7db36b3cefa9ea2e-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:41 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:03 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=YX3D3It8imUTdRV6cwmQUQdy0vVf3NXaM5wsbPwmsyGiICrHoLJlvCtrrAWhDjaB9GE8ihqA2F8K2fgQNXkOWHU5I%2BtFofFFhJksuIKX9zvtsf1%2BLPvqpOTpHzRLq1uWjw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=lSlbImrBCdcpmnhHWtqG7UHQRlKyVckgDFe8xbNFxhyGwdmCGjo6aZbKTyl3S1VbSwzRO5XXl8Av7L133jRfFK4QT8ZDKHbBz6CRB9rRprUrbi6BP6LgqqiwxHXCTwhVfg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -3335,7 +3335,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "c1754284-cd26-45c0-b967-552e7552155b",
+  "x-request-id": "2524ece4-ca8e-4aeb-887f-112ef1cab403",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -3408,14 +3408,14 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db369a7298cfac6-SJC",
+  "cf-ray": "7db36bae88984793-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:58 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:21 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=w%2FeZU56MS7DiwIim4pTxmgNWaB0IkDAshu96pE%2Fl1nrb2hKgT10fF5%2Fbveb%2BeglxMOr6NI3FaFsHbp1GM53jYFkHnXa01Uf4FgIM6BGOPxWKxuTF6dA%2FPF8wgFr2PhJM9Q%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Gap2RqL3vXXkWaOKOemfXjcXt2XzU1nChvyOJVFA2QlTFkaXxsnB9xi66kSOgjKodL0MHFSt%2FuNW44jaX2yzaIB6H%2BRNzqcAvKFbzD88OXj8scQ8d5qR6v4BVhRthn7DcA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -3423,7 +3423,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "fce0a136-e4ab-452b-b499-1722d4e4f1d1",
+  "x-request-id": "eb5c4116-31a0-4110-8b9f-c4dbe14d0b50",
   "x-xss-protection": "1; mode=block"
 }
 ```
@@ -3501,14 +3501,14 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "access-control-max-age": "1728000",
   "cache-control": "no-cache",
   "cf-cache-status": "DYNAMIC",
-  "cf-ray": "7db369a0ea5b237a-SJC",
+  "cf-ray": "7db36ba84d600c03-DFW",
   "connection": "close",
   "content-encoding": "br",
   "content-type": "application/json; charset=utf-8",
-  "date": "Thu, 22 Jun 2023 09:19:57 GMT",
+  "date": "Thu, 22 Jun 2023 09:21:20 GMT",
   "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
   "referrer-policy": "strict-origin-when-cross-origin",
-  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Zrk64J5v7T032JEH4s8mr69oTdz2WhP%2BBez74uh1qlqQtofpDGutFbcT0lCqSyXCZVtyfYnVCSWPgYarNdJXBHqYgEr4XHD2ak76G7NCR8nT%2BMMlfk5Q6XAm%2B0UnuRvpmQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=6cZA3aaWWoA%2FVbJU%2BkSiRE2zaCPxnBbot9fnsNiKvaVcZz61NR1tlubbnfoYL2BZcT%2F%2B2BHzwyH5tqB7hb90PPmgvZbG42y4vVSZNu8A2%2BsvfQLjZ1DiVIpkRwXsuHXqAg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
   "server": "cloudflare",
   "transfer-encoding": "chunked",
   "vary": "Accept-Encoding",
@@ -3516,7 +3516,7 @@ GET https://api.filebase.io/v1/ipfs/pins?status=failed%2Cpinned%2Cpinning%2Cqueu
   "x-download-options": "noopen",
   "x-frame-options": "SAMEORIGIN",
   "x-permitted-cross-domain-policies": "none",
-  "x-request-id": "cbd7bec8-bc43-4e7d-86a5-be36de10bc9a",
+  "x-request-id": "c9971165-09cc-4b90-b8c3-188658bee7c2",
   "x-xss-protection": "1; mode=block"
 }
 ```
