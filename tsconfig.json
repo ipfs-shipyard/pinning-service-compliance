@@ -1,7 +1,10 @@
 {
   "extends": "aegir/src/config/tsconfig.aegir.json",
   "compilerOptions": {
-    "outDir": "dist"
+    "outDir": "dist",
+    "paths": {
+      "@ipfs-shipyard/ignite-metrics/*": ["./node_modules/@ipfs-shipyard/ignite-metrics/dist/src/*"],
+    }
   },
   "include": [
     "test", // remove this line if you don't want to type-check tests

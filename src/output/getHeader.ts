@@ -48,6 +48,7 @@ const getHeader = async <T extends PinsApiResponseTypes>(details: Array<Required
   const reportHistory = linkToGithubRepo('Report History', `commits/gh-pages/${hostname}.md`)
 
   return `
+<script src="./telemetry.js"></script>
 # ${endpointUrl} compliance:
 
 Execution Date: ${dateString ?? '(Error getting date)'}
