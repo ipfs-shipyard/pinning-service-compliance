@@ -143,3 +143,24 @@ jobs:
         with:
           name: web3-report
           path: docs/api.web3.storage.md
+
+  check-scaleway-compliance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - uses: ipfs/aegir/actions/cache-node-modules@master
+      - name: Reports Cache
+        uses: actions/cache@v3
+        with:
+          path: docs
+          key: ${{ github.sha }}-scaleway
+      - run: npm run dev-start -- -s ${{ secrets.SCALEWAY_API_ENDPOINT }} ${{secrets.SCALEWAY_API_TOKEN}}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: scaleway-logs
+          path: docs/fr-par.ipfs.labs.scw.cloud
+      - uses: actions/upload-artifact@v3
+        with:
+          name: scaleway-report
+          path: docs/fr-par.ipfs.labs.scw.cloud.md

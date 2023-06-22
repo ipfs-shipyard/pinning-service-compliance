@@ -60,6 +60,11 @@ jobs:
         with:
           path: docs
           key: ${{ github.sha }}-crust
+      - name: Reports Cache
+        uses: actions/cache@v3
+        with:
+          path: docs
+          key: ${{ github.sha }}-scaleway
       - name: Scheduled deployment
         uses: s0/git-publish-subdir-action@92faf786f11dfa44fc366ac3eb274d193ca1af7e
         env:
