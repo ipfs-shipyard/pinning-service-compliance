@@ -59,7 +59,7 @@ jobs:
           echo "passed=$(jq -r '.passed' docs/$hostname.json)" >> $GITHUB_OUTPUT
           echo "total=$(jq -r '.total' docs/$hostname.json)" >> $GITHUB_OUTPUT
       - name: Notify
-        uses: actions/github-script@v3
+        uses: actions/github-script@v6
         with:
           script: |
             core.notice('${{ needs.run-compliance-tests.outputs.passed }}/${{ needs.run-compliance-tests.outputs.total}} checks passed')
@@ -70,7 +70,7 @@ jobs:
     if: ${{ inputs.fail_action_on_compliance_failure && needs.run-compliance-tests.outputs.success != true }}
     steps:
       - name: Fail
-        uses: actions/github-script@v3
+        uses: actions/github-script@v6
         with:
           script: |
             core.setFailed('Only ${{ needs.run-compliance-tests.outputs.passed }}/${{ needs.run-compliance-tests.outputs.total}} checks passed')
