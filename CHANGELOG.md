@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.4.1...v1.5.0) (2023-06-27)
+
+
+### Features
+
+* add 4EVERLAND pinning ([#301](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/301)) ([e5fdf56](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/e5fdf5660ddd68a2146dbeb2a5579a75a6f941f2))
+
 ## [1.4.1](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.4.0...v1.4.1) (2023-06-22)
 
 
