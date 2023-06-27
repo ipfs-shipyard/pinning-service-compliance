@@ -150,7 +150,7 @@
     "git-rev": "^0.2.1",
     "go-ipfs": "^0.15.0",
     "ipfs": "^0.63.3",
-    "ipfs-core": "^0.15.2",
+    "ipfs-core": "^0.18.1",
     "ipfsd-ctl": "^13.0.0",
     "kubo-rpc-client": "^3.0.1",
     "marked": "^4.0.16",
