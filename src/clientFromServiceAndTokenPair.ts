@@ -1,6 +1,3 @@
-import fetch from 'node-fetch'
-import type { RequestInfo, RequestInit } from 'node-fetch'
-
 import { RemotePinningServiceClient, Configuration, NodeFetch } from '@ipfs-shipyard/pinning-service-client'
 
 import { requestResponseLogger, RequestResponseLoggerOptions } from './middleware/requestReponseLogger.js'
@@ -13,8 +10,8 @@ function clientFromServiceAndTokenPair ([endpointUrl, accessToken]: ServiceAndTo
     accessToken,
     fetchApi: async (url: RequestInfo, init?: RequestInit) => {
       return await fetch(url, {
-        ...init,
-        highWaterMark: 1024 * 1024 * 2
+        ...init
+        // highWaterMark: 1024 * 1024 * 2
       })
     },
     middleware: [

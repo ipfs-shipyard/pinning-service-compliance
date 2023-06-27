@@ -1,5 +1,4 @@
 import type { NodeFetch, Pin } from '@ipfs-shipyard/pinning-service-client'
-import type { Response } from 'node-fetch'
 
 import { waitForDate } from '../utils/waitForDate.js'
 import type { ComplianceCheckDetailsCallbackArg, ServiceAndTokenPair } from '../types.js'

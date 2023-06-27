@@ -3,7 +3,7 @@
   "compilerOptions": {
     "outDir": "dist",
     "paths": {
-      "@ipfs-shipyard/ignite-metrics/*": ["./node_modules/@ipfs-shipyard/ignite-metrics/dist/src/*"],
+      "@ipfs-shipyard/ignite-metrics/*": ["./node_modules/@ipfs-shipyard/ignite-metrics/dist/src/*"]
     }
   },
   "include": [
