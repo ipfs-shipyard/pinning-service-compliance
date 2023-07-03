@@ -1,6 +1,6 @@
 {
   "name": "@ipfs-shipyard/pinning-service-compliance",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "",
   "author": "Russell Dempsey <1173416+SgtPooki@users.noreply.github.com>",
   "license": "Apache-2.0 OR MIT",
@@ -151,8 +151,8 @@
     "go-ipfs": "^0.15.0",
     "ipfs": "^0.63.3",
     "ipfs-core": "^0.15.2",
-    "ipfs-http-client": "^57.0.1",
-    "ipfsd-ctl": "^12.0.1",
+    "ipfsd-ctl": "^13.0.0",
+    "kubo-rpc-client": "^3.0.1",
     "marked": "^4.0.16",
     "marked-terminal": "^5.1.1",
     "multiformats": "^9.6.5",

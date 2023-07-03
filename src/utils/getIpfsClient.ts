@@ -1,8 +1,8 @@
 import { join } from 'path'
 
 import { createController } from 'ipfsd-ctl'
-import * as ipfsHttpClient from 'ipfs-http-client'
-import type { HTTPClientExtraOptions } from 'ipfs-http-client'
+import * as createKuboClient from 'kubo-rpc-client'
+import type { HTTPClientExtraOptions } from 'kubo-rpc-client'
 import type { API } from 'ipfs-core-types/src/root'
 
 import { logger } from './logs.js'
@@ -20,7 +20,7 @@ const getIpfsClient = async (): Promise<GetIpfsClientResponse> => {
   try {
     logger.debug('Attempting to use ipfsd-ctl to create a client')
     const ipfsd = await createController({
-      ipfsHttpModule: ipfsHttpClient,
+      kuboRpcModule: createKuboClient,
       ipfsBin: join('node_modules', '.bin', 'ipfs'),
       test: true,
       disposable: true

@@ -1,3 +1,10 @@
+## [1.6.0](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.5.0...v1.6.0) (2023-06-27)
+
+
+### Features
+
+* replace ipfs-http-client with kubo-rpc-client ([#302](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/302)) ([f6edd8c](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/f6edd8c6fd917df4adaa3a997a977560e04c0335))
+
 ## [1.5.0](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.4.1...v1.5.0) (2023-06-27)
 
 
