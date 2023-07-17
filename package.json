@@ -149,7 +149,7 @@
     "fetch-ponyfill": "^7.1.0",
     "git-rev": "^0.2.1",
     "go-ipfs": "^0.15.0",
-    "ipfs": "^0.63.3",
+    "ipfs": "^0.66.1",
     "ipfs-core": "^0.15.2",
     "ipfsd-ctl": "^13.0.0",
     "kubo-rpc-client": "^3.0.1",
