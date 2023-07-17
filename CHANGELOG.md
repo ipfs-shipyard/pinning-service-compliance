@@ -1,3 +1,10 @@
+## [1.7.0](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.6.0...v1.7.0) (2023-07-17)
+
+
+### Features
+
+* remove node-fetch ([#303](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/303)) ([750b1db](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/750b1db5d9db1c991bf41621bdb6c9a233d0f26b))
+
 ## [1.6.0](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.5.0...v1.6.0) (2023-06-27)
 
 
