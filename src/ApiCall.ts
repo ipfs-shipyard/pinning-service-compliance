@@ -1,6 +1,4 @@
 import type { Schema, ValidationError, ValidationResult } from '@hapi/joi'
-import { Request } from 'node-fetch'
-import type { RequestInit, Response } from 'node-fetch'
 import type { Logger } from 'winston'
 import pDefer from 'p-defer'
 
@@ -146,7 +144,8 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
   }
 
   get httpRequest () {
-    const request = new Request(this.requestContext.url, this.requestContext.init as RequestInit)
+    const { init, url } = this.requestContext
+    const request = new Request(url, init)
 
     return request
   }
