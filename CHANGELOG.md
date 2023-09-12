@@ -1,3 +1,10 @@
+## [1.8.0](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.7.0...v1.8.0) (2023-09-12)
+
+
+### Features
+
+* add scaleway pinning service ([#333](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/333)) ([ae3a975](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/ae3a975c8cdadc3fe5602a5fb48f676fcbb3b6f3))
+
 ## [1.7.0](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.6.0...v1.7.0) (2023-07-17)
 
 
