@@ -1,5 +1,3 @@
-import type { Response } from 'node-fetch'
-import type fetch from 'node-fetch'
 import type {
   NodeFetch,
   ConfigurationParameters as ConfigurationParameters_og,

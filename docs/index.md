@@ -12,6 +12,7 @@ Periodically tested:
 * [Pinata](./api.pinata.cloud.md)
 * [web3.storage](./api.web3.storage.md)
 * [nft.storage](./nft.storage.md)
+* [4EVERLAND](./api.4everland.dev.md)
 * [Scaleway](./fr-par.ipfs.labs.scw.cloud.md)
 
 Want to add your service to the list? [Open an issue](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/new).
