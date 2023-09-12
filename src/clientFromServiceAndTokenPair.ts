@@ -2,7 +2,6 @@ import { RemotePinningServiceClient, Configuration } from '@ipfs-shipyard/pinnin
 
 import { requestResponseLogger, RequestResponseLoggerOptions } from './middleware/requestReponseLogger.js'
 import type { ServiceAndTokenPair } from './types.js'
-import { logger } from './utils/logs.js'
 
 function clientFromServiceAndTokenPair ([endpointUrl, accessToken]: ServiceAndTokenPair, middleWareOptions?: Omit<RequestResponseLoggerOptions, 'pair'>): RemotePinningServiceClient {
   const requestResponseLoggerOptions: RequestResponseLoggerOptions = { ...middleWareOptions, pair: [endpointUrl, accessToken] }
@@ -14,12 +13,10 @@ function clientFromServiceAndTokenPair ([endpointUrl, accessToken]: ServiceAndTo
       const abortController = new AbortController()
       const { signal } = abortController
       setTimeout(() => abortController.abort(), 60000)
-      const result = await fetch(url, {
+      return await fetch(url, {
         ...init,
         signal: init?.signal ?? signal
       })
-      logger.debug('fetchApi result obtained')
-      return result
     },
     middleware: [
       requestResponseLogger(requestResponseLoggerOptions)
