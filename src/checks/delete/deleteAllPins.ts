@@ -15,21 +15,20 @@ let loopCount = 0
  *
  * @param apiCall - The root ApiCall instance that all expectations should be added to
  */
-const addPinDeletionExpectations = async (apiCall: ApiCall<PinResults>, pinTracker: PinTracker) => {
-  const pinResults: PinResults = (await apiCall.request)!
+const addPinDeletionExpectations = async (apiCall: ApiCall<PinResults>, pinTracker: PinTracker): Promise<void> => {
+  const pinResults: PinResults | null = await apiCall.request
 
   if (pinResults != null) {
     for await (const pin of pinResults.results) {
       if (pinTracker.has(pin.pin.cid)) {
         const requestid = getRequestid(pin, apiCall)
 
-        await new ApiCall({
+        new ApiCall({
           parent: apiCall,
           pair: apiCall.pair,
           fn: async (client) => client.pinsRequestidDelete({ requestid }),
           title: `Can delete pin with requestid '${requestid}'`
-        })
-          .expect(responseOk())
+        }).expect(responseOk())
       }
     }
 
@@ -62,7 +61,7 @@ const addPinDeletionExpectations = async (apiCall: ApiCall<PinResults>, pinTrack
   }
 }
 
-const deleteAllPins = async (pair: ServiceAndTokenPair) => {
+const deleteAllPins = async (pair: ServiceAndTokenPair): Promise<void> => {
   loopCount = 0
   const pinTracker = await getPinTracker(pair)
   const mainApiCall = new ApiCall({

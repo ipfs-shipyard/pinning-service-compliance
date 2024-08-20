@@ -26,7 +26,7 @@ const getRateLimitKeyFromContext = (context: NodeFetch.ResponseContext | NodeFet
   return key
 }
 
-const isPostMethod = (context: NodeFetch.RequestContext) => {
+const isPostMethod = (context: NodeFetch.RequestContext): boolean => {
   if (context.init.method === 'POST' || /^POST/.test(getRateLimitKeyFromContext(context))) {
     return true
   }
@@ -68,8 +68,8 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => NodeFetch.M
         }
       }
 
-      if (rateLimitHandlers.has(rateLimitKey)) {
-        const promises = rateLimitHandlers.get(rateLimitKey)!
+      const promises = rateLimitHandlers.get(rateLimitKey)
+      if (promises != null) {
         if (promises.length > 0) {
           try {
             await Promise.all(promises)
@@ -105,8 +105,12 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => NodeFetch.M
         logger.debug(`${rateLimitKey}: Rate limit is ${rateLimit} and we have ${rateRemaining} tokens remaining.`)
         if (rateRemaining === 0) {
           logger.debug(`${rateLimitKey}: No rate tokens remaining, we need to wait until ${dateOfReset.toString()}`)
-          const promises = rateLimitHandlers.get(rateLimitKey)!
-          promises.push(waitForDate(dateOfReset))
+          const promises = rateLimitHandlers.get(rateLimitKey)
+          if (promises != null) {
+            promises.push(waitForDate(dateOfReset))
+          } else {
+            rateLimitHandlers.set(rateLimitKey, [waitForDate(dateOfReset)])
+          }
         }
       }
       return response

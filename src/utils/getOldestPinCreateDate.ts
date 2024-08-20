@@ -1,6 +1,6 @@
 import type { PinStatus } from '@ipfs-shipyard/pinning-service-client'
 
-const getOldestPinCreateDate = (pins: Set<PinStatus>) => {
+const getOldestPinCreateDate = (pins: Set<PinStatus>): Date => {
   let oldestCreateDate = new Date()
   pins.forEach((pin) => {
     if (pin.created < oldestCreateDate) {

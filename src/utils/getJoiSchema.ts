@@ -19,7 +19,7 @@ interface InnerSchema {
   }
 }
 
-const getInnerSchema = (schema: Schema | JoiSchema, path: string[]) => {
+const getInnerSchema = (schema: Schema | JoiSchema, path: string[]): JoiSchema => {
   let finalSchema = schema as Schema
   for (const key of path) {
     const child = finalSchema._inner.children.find(({ key: childKey }) => childKey === key)
@@ -33,7 +33,7 @@ const getInnerSchema = (schema: Schema | JoiSchema, path: string[]) => {
   return finalSchema as JoiSchema
 }
 
-const setInnerSchema = (rootSchema: Schema | JoiSchema, path: string[], newSchema: Schema | JoiSchema) => {
+const setInnerSchema = (rootSchema: Schema | JoiSchema, path: string[], newSchema: Schema | JoiSchema): void => {
   let childSchema = rootSchema as Schema
   let child: InnerSchemaChild | undefined
   for (const key of path) {
@@ -76,19 +76,16 @@ const modifySchema = (schemaName: keyof PinningSpecJoiSchema, schema: JoiSchema)
 /**
  * Cached schema object so we don't have to keep calling to the spec
  */
-let schema: PinningSpecJoiSchema | null = null
-const getJoiSchema = async <T extends keyof PinningSpecJoiSchema>(schemaName: T): Promise<PinningSpecJoiSchema[T] | undefined> => {
-  if (schema == null) {
-    try {
-      schema = await oas2joi(specLocation)
-    } catch (err) {
-      logger.error('Could not get joi schema, returning undefined', err)
-      return undefined
-    }
+let schema: PinningSpecJoiSchema
+const getJoiSchema = async <T extends keyof PinningSpecJoiSchema>(schemaName: T): Promise<PinningSpecJoiSchema[T]> => {
+  try {
+    schema = schema ?? await oas2joi(specLocation)
+    modifySchema(schemaName, schema[schemaName])
+    return schema[schemaName]
+  } catch (err) {
+    logger.error('Could not get joi schema', err)
+    throw err
   }
-  modifySchema(schemaName, (schema!)[schemaName])
-
-  return (schema!)[schemaName]
 }
 
 export { getJoiSchema }

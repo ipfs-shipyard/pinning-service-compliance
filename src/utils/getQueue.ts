@@ -5,7 +5,7 @@ const queues = new Map<string, QueueInstance>()
 
 const getQueue = (endpointUrl: string, options: ConstructorParameters<typeof PQueue>[0] = { concurrency: 1, intervalCap: 1, interval: 1000 }): PQueue => {
   if (queues.has(endpointUrl)) {
-    return queues.get(endpointUrl)!
+    return queues.get(endpointUrl) as PQueue
   }
   const newQueueLimiter = new PQueue(options)
 

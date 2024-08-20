@@ -1,4 +1,4 @@
-import { Icons } from '../utils/constants.js'
+import { Icons, packageVersion } from '../utils/constants.js'
 import { getHostnameFromUrl } from '../utils/getHostnameFromUrl.js'
 import { gitHash } from '../utils/gitHash.js'
 import { logger } from '../utils/logs.js'
@@ -15,7 +15,7 @@ type RequiredHeaderProps<T extends PinsApiResponseTypes> = Pick<ComplianceCheckD
 interface HeaderOptions {
   markdownLinks: boolean
 }
-const getHeader = async <T extends PinsApiResponseTypes>(details: Array<RequiredHeaderProps<T>>, options: HeaderOptions = { markdownLinks: true }) => {
+const getHeader = async <T extends PinsApiResponseTypes>(details: Array<RequiredHeaderProps<T>>, options: HeaderOptions = { markdownLinks: true }): Promise<string> => {
   const endpointUrl = details[0].pair[0]
   const useMarkdownLinks = options.markdownLinks
   const hostname = getHostnameFromUrl(endpointUrl)
@@ -32,7 +32,7 @@ const getHeader = async <T extends PinsApiResponseTypes>(details: Array<Required
   } catch (err) {
     logger.error('Could not obtain latest git hash', err)
     logger.info('No git repository, using npm version')
-    revisionString = useMarkdownLinks ? linkToNpm() : process.env.npm_package_version!
+    revisionString = useMarkdownLinks ? linkToNpm() : packageVersion
   }
 
   const titles = details.map(({ title, successful }) => {

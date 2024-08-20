@@ -24,6 +24,9 @@ enum Icons {
   ERROR = '⚠️'
 }
 
+const packageName = process.env.npm_package_name ?? 'pinning-service-compliance'
+const packageVersion = process.env.npm_package_version ?? 'unknown'
+
 export {
   allPinStatuses,
   docsDir,
@@ -34,5 +37,7 @@ export {
   specVersion,
   Icons,
   publishedReportsUrl,
-  sourceRepoUrl
+  sourceRepoUrl,
+  packageName,
+  packageVersion
 }

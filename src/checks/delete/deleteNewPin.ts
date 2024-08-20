@@ -4,7 +4,7 @@ import { getInlineCid } from '../../utils/getInlineCid.js'
 import { getRequestid } from '../../utils/getRequestid.js'
 import type { ServiceAndTokenPair } from '../../types.js'
 
-const deleteNewPin = async (pair: ServiceAndTokenPair) => {
+const deleteNewPin = async (pair: ServiceAndTokenPair): Promise<void> => {
   const cid = await getInlineCid()
   const createNewPinApiCall = new ApiCall({
     pair,

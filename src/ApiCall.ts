@@ -5,10 +5,10 @@ import { isResponse } from './guards/isResponse.js'
 import { getSuccessIcon } from './output/getSuccessIcon.js'
 import { addApiCallToReport } from './output/reporting.js'
 import { Icons } from './utils/constants.js'
+import { getTextAndJson } from './utils/fetchSafe/getTextAndJson.js'
 import { getQueue } from './utils/getQueue.js'
 import { getServiceLogger, logger as consoleLogger } from './utils/logs.js'
 import { globalReport } from './utils/report.js'
-import { getTextAndJson } from './utils/fetchSafe/getTextAndJson.js'
 import type { ComplianceCheckDetailsCallbackArg, ExpectationResult, PinsApiResponseTypes, ServiceAndTokenPair } from './types.js'
 import type { Schema, ValidationError, ValidationResult } from '@hapi/joi'
 import type { RemotePinningServiceClient, RequestContext, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
@@ -42,6 +42,20 @@ interface ApiCallExpectation<T extends PinsApiResponseTypes> {
   context?: ApiCall<T>
   fn: ExpectationFn<T>
   title: string
+}
+
+export interface ReportData {
+  pair: ServiceAndTokenPair
+  errors: ExpectationError[]
+  title: string
+  httpRequest: Request
+  result: PinsApiResponseTypes | null
+  response: Response
+  expectationResults: ExpectationResult[]
+  successful: boolean
+  text: string | null
+  validationErrors: ValidationError | undefined
+  validationResult: ValidationResult | null
 }
 
 class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = never> {
@@ -137,23 +151,23 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
     })
   }
 
-  get httpResponse () {
+  get httpResponse (): Response {
     return this.response
   }
 
-  get httpRequest () {
+  get httpRequest (): Request {
     const { init, url } = this.requestContext
     const request = new Request(url, init)
 
     return request
   }
 
-  expect (expectation: ApiCallExpectation<T>) {
+  expect (expectation: ApiCallExpectation<T>): this {
     this.expectations.push(expectation)
     return this
   }
 
-  async runExpectations (fromParent = false) {
+  async runExpectations (fromParent = false): Promise<this> {
     const hasParent = this.parent != null
     let padding = ''
     if (hasParent) {
@@ -173,7 +187,7 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
       consoleLogger.error('Error occurred while waiting for request to conclude', err)
     }
 
-    const result = this.result!
+    const result = this.result
     for await (const expectation of this.expectations) {
       globalReport.incrementTotalExpectationsCount()
       const { fn, title } = expectation
@@ -230,19 +244,19 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
     return this
   }
 
-  addExpectationResults (results: ExpectationResult[]) {
+  addExpectationResults (results: ExpectationResult[]): void {
     if (results.length > 0) {
       this.expectationResults.push(...results)
     }
   }
 
-  addExpectationErrors (errors: ExpectationError[]) {
+  addExpectationErrors (errors: ExpectationError[]): void {
     if (errors.length > 0) {
       this.errors.push(...errors)
     }
   }
 
-  addSchema (schema: Schema) {
+  addSchema (schema: Schema): void {
     this.expect({
       title: 'Response object matches api spec schema',
       fn: async (): Promise<boolean> => {
@@ -265,23 +279,23 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
     })
   }
 
-  async reportData () {
+  async reportData (): Promise<ReportData> {
     await this.request
     const { pair, errors, title, httpRequest, result, response, expectationResults, successful, text, validationErrors, validationResult } = this
 
     return { pair, errors, title, httpRequest, result, response, expectationResults, successful, text, validationErrors, validationResult }
   }
 
-  addChild (child: ApiCall<any, any>) {
+  addChild (child: ApiCall<any, any>): void {
     this.children.push(child)
   }
 
-  private saveRequest (context: RequestContext) {
+  private saveRequest (context: RequestContext): void {
     consoleLogger.debug(`${this.title}: Saving request context for '${context.url}'`)
     this.requestContext = context
   }
 
-  private async saveResponse (context: ResponseContext) {
+  private async saveResponse (context: ResponseContext): Promise<void> {
     consoleLogger.debug(`${this.title}: Saving response context for '${context.url}'`)
     this.response = context.response as unknown as ApiCall<T>['response']
     this.responseContext = context
@@ -289,7 +303,7 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
       const { text, json, errors } = await getTextAndJson(this.response)
       this.text = text
       this.json = json as T
-      await this.addExpectationErrors(errors.map((err) => ({ error: err, title: 'Problem when attempting to get response text and json' })))
+      this.addExpectationErrors(errors.map((err) => ({ error: err, title: 'Problem when attempting to get response text and json' })))
     } catch (err) {
       this.errors.push(err as ExpectationError)
     }
@@ -306,7 +320,7 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
   /**
    * Details is set in {requestResponseLogger} middleware after the call is complete
    */
-  private saveDetails (details: ComplianceCheckDetailsCallbackArg) {
+  private saveDetails (details: ComplianceCheckDetailsCallbackArg): void {
     this.details = details
   }
 }

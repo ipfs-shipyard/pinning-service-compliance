@@ -4,7 +4,7 @@ import { getInlineCid } from '../../utils/getInlineCid.js'
 import { getJoiSchema } from '../../utils/getJoiSchema.js'
 import type { ServiceAndTokenPair } from '../../types.js'
 
-const addPin = async (pair: ServiceAndTokenPair) => {
+const addPin = async (pair: ServiceAndTokenPair): Promise<void> => {
   const cid = await getInlineCid()
   const schema = await getJoiSchema('PinStatus')
 

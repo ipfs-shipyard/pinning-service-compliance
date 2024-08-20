@@ -11,7 +11,7 @@
  *
  * @returns {string} A Markdown link to the header in the form of [text](converted_headerText)
  */
-const linkToHeading = (text: string, headerText = text) => {
+const linkToHeading = (text: string, headerText = text): string => {
   const link = headerText
     .replace(/['=()/\\:,]/g, '') // remove invalid characters first
     .replace(/[🟢]/gu, '') // remove invalid characters first

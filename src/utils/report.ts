@@ -8,27 +8,27 @@ class Report {
   failed = 0
   passed = 0
 
-  incrementApiCallsCount () {
+  incrementApiCallsCount (): void {
     this.apiCallCount++
   }
 
-  incrementTotalExpectationsCount () {
+  incrementTotalExpectationsCount (): void {
     this.totalExpectationsCount++
   }
 
-  incrementRunExpectationsCallCount () {
+  incrementRunExpectationsCallCount (): void {
     this.runExpectationsCallCount++
   }
 
-  incrementFailedExpectationsCount () {
+  incrementFailedExpectationsCount (): void {
     this.failed++
   }
 
-  incrementPassedExpectationsCount () {
+  incrementPassedExpectationsCount (): void {
     this.passed++
   }
 
-  toString () {
+  toString (): string {
     return `The total counts for this run are:
     Total Expectations          ${this.totalExpectationsCount}
     Total ApiCall instances     ${this.apiCallCount}

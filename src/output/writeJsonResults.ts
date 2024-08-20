@@ -6,7 +6,7 @@ import { logger } from '../utils/logs.js'
 import { globalReport } from '../utils/report.js'
 import type { ServiceAndTokenPair } from '../types.js'
 
-const writeJsonResults = async (pair: ServiceAndTokenPair) => {
+const writeJsonResults = async (pair: ServiceAndTokenPair): Promise<void> => {
   const { passed, failed } = globalReport
   const total = passed + failed
   const success = passed === total

@@ -5,7 +5,7 @@ import { resultNotNull, responseOk } from '../../expectations/index.js'
 import { getInlineCid } from '../../utils/getInlineCid.js'
 import type { ServiceAndTokenPair } from '../../types.js'
 
-const matchApiCallExpectation = async (parent: ApiCall<PinStatus>, match: TextMatchingStrategy, name: string, actualName: string) => {
+const matchApiCallExpectation = (parent: ApiCall<PinStatus>, match: TextMatchingStrategy, name: string, actualName: string): void => {
   new ApiCall({
     parent,
     pair: parent.pair,
@@ -31,13 +31,13 @@ const matchApiCallExpectation = async (parent: ApiCall<PinStatus>, match: TextMa
 /**
  * https://github.com/ipfs-shipyard/pinning-service-compliance/issues/9
  */
-const matchPin = async (pair: ServiceAndTokenPair) => {
+const matchPin = async (pair: ServiceAndTokenPair): Promise<void> => {
   const name = uuidv4().toLowerCase()
   const nameLength = name.length
   const size = nameLength / 4
   const partialName = name.slice(size, nameLength - (size))
   const cid = await getInlineCid()
-  const mainApiCall = await new ApiCall({
+  const mainApiCall = new ApiCall({
     pair,
     title: `Can create a pin with name='${name}'`,
     fn: async (client) => client.pinsPost({ pin: { name, cid } })
@@ -49,10 +49,10 @@ const matchPin = async (pair: ServiceAndTokenPair) => {
       fn: ({ result }) => result?.pin.name === name
     })
 
-  await matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Exact, name, name)
-  await matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Iexact, name.toUpperCase(), name)
-  await matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Partial, partialName, name)
-  await matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Ipartial, partialName.toUpperCase(), name)
+  matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Exact, name, name)
+  matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Iexact, name.toUpperCase(), name)
+  matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Partial, partialName, name)
+  matchApiCallExpectation(mainApiCall, TextMatchingStrategy.Ipartial, partialName.toUpperCase(), name)
   await mainApiCall.runExpectations()
 }
 

@@ -4,7 +4,7 @@ import type { ApiCall } from '../../ApiCall.js'
 import type { PinsApiResponseTypes } from '../../types.js'
 
 const TIMEOUT_SECONDS = 5
-const handleLargeRequests = async () => sleep(TIMEOUT_SECONDS * 1000).then(() => { throw new Error(`Attempted to get text from response but it wasn't available within ${TIMEOUT_SECONDS} seconds.`) })
+const handleLargeRequests = async (): Promise<never> => sleep(TIMEOUT_SECONDS * 1000).then(() => { throw new Error(`Attempted to get text from response but it wasn't available within ${TIMEOUT_SECONDS} seconds.`) })
 
 const getText = async <T extends PinsApiResponseTypes>(response: ApiCall<T>['response']): Promise<string> => {
   const actualTextPromise = new Promise((resolve, reject) => {
@@ -16,8 +16,8 @@ const getText = async <T extends PinsApiResponseTypes>(response: ApiCall<T>['res
       } catch {
         resolve(result)
       }
-    }, (error) => {
-      reject(error)
+    }, (error: any) => {
+      reject(error as Error)
     })
   })
 

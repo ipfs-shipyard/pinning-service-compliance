@@ -17,13 +17,11 @@ class PinTracker extends Set<string> {
 
 const pinTrackerMap = new Map<string, PinTracker>()
 
-const getPinTracker = async (pair: ServiceAndTokenPair) => {
+const getPinTracker = async (pair: ServiceAndTokenPair): Promise<PinTracker> => {
   const pairAsKey = pair.join('')
-  let pinTracker: PinTracker
+  let pinTracker: PinTracker | undefined = pinTrackerMap.get(pairAsKey)
   let count: number
-  if (pinTrackerMap.has(pairAsKey)) {
-    pinTracker = pinTrackerMap.get(pairAsKey)!
-  } else {
+  if (pinTracker == null) {
     const client = clientFromServiceAndTokenPair(pair)
     try {
       const pinResults = await client.pinsGet({ status: allPinStatuses })

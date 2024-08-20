@@ -1,7 +1,7 @@
 import type { ApiCallExpectation } from '../ApiCall.js'
 import type { PinsApiResponseTypes } from '../types.js'
 
-const addMsg = (msg?: string) => `${msg != null ? `: ${msg}` : ''}`
+const addMsg = (msg?: string): string => `${msg != null ? `: ${msg}` : ''}`
 
 const responseOk = <T extends PinsApiResponseTypes>(msg?: string): ApiCallExpectation<T> => ({
   title: `Response is ok${addMsg(msg)}`,

@@ -3,7 +3,7 @@ import { responseCode } from '../../expectations/index.js'
 import { getJoiSchema } from '../../utils/getJoiSchema.js'
 import type { ServiceAndTokenPair } from '../../types.js'
 
-const checkInvalidBearerToken = async (pair: ServiceAndTokenPair) => {
+const checkInvalidBearerToken = async (pair: ServiceAndTokenPair): Promise<void> => {
   const schema = await getJoiSchema('Failure')
 
   await new ApiCall({

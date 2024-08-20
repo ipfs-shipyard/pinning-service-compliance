@@ -5,7 +5,7 @@ import { getJoiSchema } from '../../utils/getJoiSchema.js'
 import type { ServiceAndTokenPair } from '../../types.js'
 import type { Schema } from '@hapi/joi'
 
-const getAllPins = async (pair: ServiceAndTokenPair) => {
+const getAllPins = async (pair: ServiceAndTokenPair): Promise<void> => {
   let schema: Schema | undefined
 
   try {

@@ -11,7 +11,7 @@ import type { ServiceAndTokenPair } from '../../types.js'
  * - expect different requestid in response
  * - confirm old requestid and CID are no longer to be found
  */
-const replacePin = async (pair: ServiceAndTokenPair) => {
+const replacePin = async (pair: ServiceAndTokenPair): Promise<void> => {
   const cid = await getInlineCid()
   const createPinApiCall = new ApiCall({
     pair,
@@ -53,7 +53,7 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
       fn: async () => newRequestid !== requestid
     })
 
-  await new ApiCall({
+  new ApiCall({
     parent: replaceCidApiCall,
     pair,
     fn: async (client) => client.pinsRequestidGet({ requestid }),
@@ -61,7 +61,7 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
   })
     .expect(responseCode(404, 'Original Pin\'s requestid cannot be found'))
 
-  await new ApiCall({
+  new ApiCall({
     parent: replaceCidApiCall,
     pair,
     fn: async (client) => client.pinsRequestidGet({ requestid: newRequestid }),

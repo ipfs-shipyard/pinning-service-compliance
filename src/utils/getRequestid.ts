@@ -1,7 +1,7 @@
 import type { ApiCall } from '../ApiCall.js'
 import type { PinResults, PinStatus } from '@ipfs-shipyard/pinning-service-client'
 
-const getRequestid = (pin: PinStatus | null, apiCall: ApiCall<PinResults> | ApiCall<PinStatus>) => {
+const getRequestid = (pin: PinStatus | null, apiCall: ApiCall<PinResults> | ApiCall<PinStatus>): string => {
   if (pin == null) {
     return 'null'
   }
@@ -14,7 +14,7 @@ const getRequestid = (pin: PinStatus | null, apiCall: ApiCall<PinResults> | ApiC
       /**
        * This workaround is needed because web3.storage is returning requestid as 'requestId' as of 2022-04-12
        */
-      const rawPinStatus = Array.from(pinResultsJson.results).find((pinStatus) => pinStatus.pin.cid === cid)!
+      const rawPinStatus = Array.from(pinResultsJson.results).find((pinStatus) => pinStatus.pin.cid === cid)
       requestid = (rawPinStatus as PinStatus & { requestId: string }).requestId
     } else if (pinStatusJson?.pin != null) {
       if (pinStatusJson.pin.cid === cid) {

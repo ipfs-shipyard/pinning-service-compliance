@@ -4,6 +4,6 @@ interface ComplianceCheckHeaderProps {
   title: string
   successful: boolean
 }
-const complianceCheckHeader = ({ title, successful }: ComplianceCheckHeaderProps) => `${title} - ${successful ? `${Icons.SUCCESS} SUCCESS` : `${Icons.FAILURE} FAILED`}`
+const complianceCheckHeader = ({ title, successful }: ComplianceCheckHeaderProps): string => `${title} - ${successful ? `${Icons.SUCCESS} SUCCESS` : `${Icons.FAILURE} FAILED`}`
 
 export { complianceCheckHeader }

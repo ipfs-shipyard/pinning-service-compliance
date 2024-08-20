@@ -1,11 +1,11 @@
-const sanitizeHeaders = (key: string, val: string) => {
+const sanitizeHeaders = (key: string, val: string): { key: string, val: string } => {
   if (/authorization/i.test(key)) {
     // Authorization: <auth-scheme> <authorization-parameters>
     val = `${val.split(' ')[0]} REDACTED`
   }
   return { key, val }
 }
-const stringifyHeaders = (headers?: Headers | Record<string, string> | string[][]) => {
+const stringifyHeaders = (headers?: Headers | Record<string, string> | string[][]): string => {
   const headerObj: Record<string, string> = {}
   if (headers != null) {
     if (headers.forEach != null) {

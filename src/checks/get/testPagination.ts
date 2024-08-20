@@ -9,7 +9,7 @@ import type { ServiceAndTokenPair } from '../../types.js'
  * https://github.com/ipfs-shipyard/pinning-service-compliance/issues/6
  *
  */
-const testPagination = async (pair: ServiceAndTokenPair) => {
+const testPagination = async (pair: ServiceAndTokenPair): Promise<void> => {
   const pinsNeededToTestPagination = 15
 
   const mainPaginationApiCall = new ApiCall({
@@ -28,7 +28,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
       /**
        * Catching pins == null with try catch so we can get an error object instead of creating one.
        */
-      // @ts-expect-error
+      // @ts-expect-error - pins can be null here.
       pinsNeededToBeCreated = pinsNeededToTestPagination - pins.count
     } catch (error) {
       mainPaginationApiCall.addExpectationErrors([{

@@ -1,7 +1,7 @@
 import { inspect } from 'util'
 import { Icons } from '../utils/constants.js'
 
-const errorToMarkdown = (error: Error) => {
+const errorToMarkdown = (error: Error): string => {
   let errorOutput = ''
   if (error.stack != null) {
     errorOutput = `
@@ -13,6 +13,6 @@ const errorToMarkdown = (error: Error) => {
   }
   return errorOutput
 }
-const getErrorsMarkdown = (errors: Error[]) => errors.map(errorToMarkdown).join('\n')
+const getErrorsMarkdown = (errors: Error[]): string => errors.map(errorToMarkdown).join('\n')
 
 export { getErrorsMarkdown }

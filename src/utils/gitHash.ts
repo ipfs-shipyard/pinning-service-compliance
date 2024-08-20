@@ -21,13 +21,13 @@ const gitHash = async (fromHead = 0): Promise<Revision> => {
         git.log((log) => {
           try {
             resolve(log[fromHead][0].slice(0, 7))
-          } catch (err) {
-            reject(err)
+          } catch (err: any) {
+            reject(err as Error)
           }
         })
       }
-    } catch (err) {
-      reject(err)
+    } catch (err: any) {
+      reject(err as Error)
     }
   })
 }
