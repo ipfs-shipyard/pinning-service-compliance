@@ -9,6 +9,7 @@ export default {
   build: {
     types: true,
     config: {
+      format: 'esm',
       platform: 'node',
       external: ['electron', '#ansi-styles', 'yargs/yargs', '#supports-color']
     },

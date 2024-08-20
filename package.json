@@ -12,26 +12,34 @@
   "bugs": {
     "url": "https://github.com/ipfs-shipyard/pinning-service-compliance/issues"
   },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "keywords": [
     "ipfs"
   ],
-  "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=7.0.0"
-  },
-  "main": "src/index.ts",
+  "bin": "./dist/src/index.js",
+  "type": "module",
+  "types": "./dist/src/index.d.ts",
   "files": [
     "src",
     "dist",
-    "downloaded"
+    "!dist/test",
+    "!**/*.tsbuildinfo"
   ],
-  "publishConfig": {
-    "access": "public"
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/src/index.js"
+    }
   },
-  "bin": "./dist/src/index.js",
-  "type": "module",
   "eslintConfig": {
-    "extends": "ipfs"
+    "extends": "ipfs",
+    "parserOptions": {
+      "project": true,
+      "sourceType": "module"
+    }
   },
   "release": {
     "branches": [
@@ -60,15 +68,15 @@
               "release": "patch"
             },
             {
-              "type": "chore",
-              "release": "patch"
-            },
-            {
               "type": "docs",
               "release": "patch"
             },
             {
               "type": "test",
+              "release": "patch"
+            },
+            {
+              "type": "deps",
               "release": "patch"
             },
             {
@@ -98,7 +106,11 @@
               },
               {
                 "type": "docs",
-                "section": "Trivial Changes"
+                "section": "Documentation"
+              },
+              {
+                "type": "deps",
+                "section": "Dependencies"
               },
               {
                 "type": "test",
@@ -115,40 +127,21 @@
     ]
   },
   "scripts": {
-    "clean": "rimraf downloaded/*.yaml generated dist",
-    "test": "aegir lint",
-    "build": "aegir build && run-s build:telemetry",
-    "build:telemetry": "esbuild src/telemetry.ts --outdir=dist --platform=browser --format=iife --bundle --target=chrome109,firefox109,edge108,safari16 && cp dist/telemetry.js docs",
+    "clean": "aegir clean downloaded/*.yaml generated dist",
+    "test": "run-s dep-check lint",
+    "lint": "aegir lint",
+    "build": "aegir build",
     "start": "node dist/src/index.js",
-    "dev-start": "NODE_OPTIONS='--unhandled-rejections=strict --trace-atomics-wait --trace-deprecation --trace-exit --trace-sigint --trace-uncaught --trace-warnings' ts-node-esm --esm -T --preferTsExts --logError src/index.ts",
+    "dep-check": "aegir dep-check",
+    "dev-start": "NODE_OPTIONS='--unhandled-rejections=strict --trace-atomics-wait --trace-deprecation --trace-exit --trace-sigint --trace-uncaught --trace-warnings' node dist/src/index.js",
     "release": "aegir release",
     "rebuild": "npm run clean && rimraf node_modules && npm install && npm run build"
   },
-  "devDependencies": {
-    "@types/git-rev": "^0.2.0",
-    "@types/hapi__joi": "^17.1.8",
-    "@types/marked": "^4.0.3",
-    "@types/marked-terminal": "^3.1.3",
-    "@types/node": "^18.7.6",
-    "@types/uuid": "^8.3.4",
-    "@types/yargs": "^17.0.10",
-    "aegir": "^37.0.15",
-    "chalk": "^5.0.1",
-    "check-aegir-project": "^1.1.1",
-    "cp-cli": "^2.0.0",
-    "npm-run-all": "^4.1.5",
-    "rimraf": "^3.0.2",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.6.4"
-  },
   "dependencies": {
     "@hapi/joi": "^17.1.1",
-    "@ipfs-shipyard/ignite-metrics": "^1.2.2",
     "@ipfs-shipyard/pinning-service-client": "^1.0.1",
-    "fetch-ponyfill": "^7.1.0",
+    "chalk": "^5.3.0",
     "git-rev": "^0.2.1",
-    "go-ipfs": "^0.15.0",
-    "ipfs": "^0.63.3",
     "ipfsd-ctl": "^14.1.0",
     "kubo": "^0.29.0",
     "kubo-rpc-client": "^4.1.1",
@@ -162,11 +155,22 @@
     "winston": "^3.7.2",
     "yargs": "^17.5.1"
   },
-  "todo": [
-    "test happy paths for each method in the spec: 1 for each right now"
-  ],
-  "contributors": [
-    "Russell Dempsey <1173416+SgtPooki@users.noreply.github.com>",
-    "Marcin Rataj <lidel@lidel.org>"
-  ]
+  "devDependencies": {
+    "@types/git-rev": "^0.2.0",
+    "@types/hapi__joi": "^17.1.8",
+    "@types/marked": "^4.0.3",
+    "@types/marked-terminal": "^3.1.3",
+    "@types/node": "^18.7.6",
+    "@types/uuid": "^8.3.4",
+    "@types/yargs": "^17.0.10",
+    "aegir": "^44.1.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  }
 }
