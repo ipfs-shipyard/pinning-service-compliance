@@ -1,6 +1,5 @@
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
-
 import { Status } from '@ipfs-shipyard/pinning-service-client'
 
 const _filename = fileURLToPath(import.meta.url)

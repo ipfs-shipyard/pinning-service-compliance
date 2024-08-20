@@ -1,5 +1,4 @@
 import { inspect } from 'util'
-
 import { Icons } from '../utils/constants.js'
 
 const errorToMarkdown = (error: Error) => {

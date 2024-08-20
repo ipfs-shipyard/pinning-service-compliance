@@ -1,9 +1,8 @@
 import oas2joi from 'oas2joi'
-import type { Schema as JoiSchema } from '@hapi/joi'
-
-import type { PinningSpecJoiSchema } from '../types.js'
-import { logger } from './logs.js'
 import { specLocation } from './constants.js'
+import { logger } from './logs.js'
+import type { PinningSpecJoiSchema } from '../types.js'
+import type { Schema as JoiSchema } from '@hapi/joi'
 
 type Schema = JoiSchema & InnerSchema
 interface InnerSchemaChild {
@@ -87,9 +86,9 @@ const getJoiSchema = async <T extends keyof PinningSpecJoiSchema>(schemaName: T)
       return undefined
     }
   }
-  modifySchema(schemaName, (schema as PinningSpecJoiSchema)[schemaName])
+  modifySchema(schemaName, (schema!)[schemaName])
 
-  return (schema as PinningSpecJoiSchema)[schemaName]
+  return (schema!)[schemaName]
 }
 
 export { getJoiSchema }

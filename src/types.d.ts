@@ -34,9 +34,9 @@ declare module '@ipfs-shipyard/pinning-service-client' {
 
     interface Middleware {
       // eslint-disable-next-line @typescript-eslint/no-invalid-void-type
-      pre?: (context: NodeFetch.RequestContext) => Promise<NodeFetch.FetchParams | void>
+      pre?(context: NodeFetch.RequestContext): Promise<NodeFetch.FetchParams | void>
       // eslint-disable-next-line @typescript-eslint/no-invalid-void-type
-      post?: (context: NodeFetch.ResponseContext) => Promise<Response | void>
+      post?(context: NodeFetch.ResponseContext): Promise<Response | void>
     }
 
     interface ConfigurationParameters extends ConfigurationParameters_og {

@@ -1,4 +1,3 @@
-import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 import { Icons } from '../utils/constants.js'
 import { getHostnameFromUrl } from '../utils/getHostnameFromUrl.js'
 import { gitHash } from '../utils/gitHash.js'
@@ -9,6 +8,7 @@ import { linkToCommit } from './linkToCommit.js'
 import { linkToGithubRepo } from './linkToGithubRepo.js'
 import { linkToHeading } from './linkToHeading.js'
 import { linkToNpm } from './linkToNpm.js'
+import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 
 type RequiredHeaderProps<T extends PinsApiResponseTypes> = Pick<ComplianceCheckDetails<T>, 'title' | 'successful' | 'pair'>
 
@@ -32,7 +32,7 @@ const getHeader = async <T extends PinsApiResponseTypes>(details: Array<Required
   } catch (err) {
     logger.error('Could not obtain latest git hash', err)
     logger.info('No git repository, using npm version')
-    revisionString = useMarkdownLinks ? linkToNpm() : process.env.npm_package_version as string
+    revisionString = useMarkdownLinks ? linkToNpm() : process.env.npm_package_version!
   }
 
   const titles = details.map(({ title, successful }) => {

@@ -2,17 +2,15 @@
 import { constants as fsConstants } from 'fs'
 import { access, mkdir, writeFile, appendFile, readFile } from 'fs/promises'
 import { join } from 'path'
-
 import chalk from 'chalk'
-
-import type { ApiCall } from '../ApiCall.js'
 import { docsDir } from '../utils/constants.js'
 import { getHostnameFromUrl } from '../utils/getHostnameFromUrl.js'
-import { getFormatter } from './formatter.js'
-import { getReportEntry } from './getReportEntry.js'
-import { getHeader, RequiredHeaderProps } from './getHeader.js'
-import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 import { logger } from '../utils/logs.js'
+import { getFormatter } from './formatter.js'
+import { getHeader, type RequiredHeaderProps } from './getHeader.js'
+import { getReportEntry } from './getReportEntry.js'
+import type { ApiCall } from '../ApiCall.js'
+import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 
 const successFormatter = getFormatter({
   paragraph: chalk.reset,
@@ -61,7 +59,7 @@ const addToReport = async <T extends PinsApiResponseTypes>(details: ComplianceCh
   }
 }
 
-const reportSummaryInfo: Map<string, Array<RequiredHeaderProps<any>>> = new Map()
+const reportSummaryInfo = new Map<string, Array<RequiredHeaderProps<any>>>()
 
 const addApiCallToReport = async <T extends PinsApiResponseTypes>(apiCall: ApiCall<T>) => {
   try {
@@ -95,7 +93,7 @@ const addApiCallToReport = async <T extends PinsApiResponseTypes>(apiCall: ApiCa
     }
     if (apiCall.parent == null) {
       if (reportSummaryInfo.has(hostname)) {
-        const hostReport = reportSummaryInfo.get(hostname) as Array<RequiredHeaderProps<any>>
+        const hostReport = reportSummaryInfo.get(hostname)!
         hostReport.push(headerProps)
       } else {
         reportSummaryInfo.set(hostname, [headerProps])

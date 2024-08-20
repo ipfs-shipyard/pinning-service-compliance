@@ -1,8 +1,8 @@
 import { ApiCall } from '../../ApiCall.js'
 import { responseCode, responseOk } from '../../expectations/index.js'
-import type { ServiceAndTokenPair } from '../../types.js'
 import { getInlineCid } from '../../utils/getInlineCid.js'
 import { getRequestid } from '../../utils/getRequestid.js'
+import type { ServiceAndTokenPair } from '../../types.js'
 
 /**
  * https://github.com/ipfs-shipyard/pinning-service-compliance/issues/8
@@ -15,7 +15,7 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
   const cid = await getInlineCid()
   const createPinApiCall = new ApiCall({
     pair,
-    fn: async (client) => await client.pinsPost({ pin: { cid } }),
+    fn: async (client) => client.pinsPost({ pin: { cid } }),
     title: 'Can create and replace a pin\'s CID'
   })
   const originalPin = await createPinApiCall.request
@@ -36,7 +36,7 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
     parent: createPinApiCall,
     pair,
     title: `Pin's with requestid '${requestid}' can have cid '${cid}' replaced with '${newCid}'`,
-    fn: async (client) => await client.pinsRequestidPost({ requestid, pin: { cid: newCid } })
+    fn: async (client) => client.pinsRequestidPost({ requestid, pin: { cid: newCid } })
   })
 
   const newPin = await replaceCidApiCall.request
@@ -56,7 +56,7 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
   await new ApiCall({
     parent: replaceCidApiCall,
     pair,
-    fn: async (client) => await client.pinsRequestidGet({ requestid: requestid }),
+    fn: async (client) => client.pinsRequestidGet({ requestid }),
     title: 'Get original pin via requestid'
   })
     .expect(responseCode(404, 'Original Pin\'s requestid cannot be found'))
@@ -64,7 +64,7 @@ const replacePin = async (pair: ServiceAndTokenPair) => {
   await new ApiCall({
     parent: replaceCidApiCall,
     pair,
-    fn: async (client) => await client.pinsRequestidGet({ requestid: newRequestid }),
+    fn: async (client) => client.pinsRequestidGet({ requestid: newRequestid }),
     title: 'Get new pin via requestid'
   })
     .expect(responseCode(200, 'New Pin\'s requestid can be found'))

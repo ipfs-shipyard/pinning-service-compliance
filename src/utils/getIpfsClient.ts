@@ -1,7 +1,6 @@
 import { createNode } from 'ipfsd-ctl'
-import { create, KuboRPCClient } from 'kubo-rpc-client'
 import { path } from 'kubo'
-
+import { create, type KuboRPCClient } from 'kubo-rpc-client'
 import { logger } from './logs.js'
 
 interface GetIpfsClientResponse {
@@ -9,7 +8,7 @@ interface GetIpfsClientResponse {
   /**
    * A function that should be called when you're done using the client so cleanup can be performed.
    */
-  done: () => Promise<void>
+  done(): Promise<void>
 }
 const getIpfsClient = async (): Promise<GetIpfsClientResponse> => {
   try {
@@ -23,7 +22,7 @@ const getIpfsClient = async (): Promise<GetIpfsClientResponse> => {
     })
     const client = ipfsd.api
 
-    if (await client.isOnline() === true) {
+    if (await client.isOnline()) {
       return {
         client,
         done: async () => { await ipfsd.stop() }

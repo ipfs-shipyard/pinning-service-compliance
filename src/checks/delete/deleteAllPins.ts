@@ -1,12 +1,11 @@
-import type { PinResults } from '@ipfs-shipyard/pinning-service-client'
-
 import { ApiCall } from '../../ApiCall.js'
 import { responseOk } from '../../expectations/index.js'
-import type { ServiceAndTokenPair } from '../../types.js'
 import { allPinStatuses } from '../../utils/constants.js'
 import { getOldestPinCreateDate } from '../../utils/getOldestPinCreateDate.js'
 import { getRequestid } from '../../utils/getRequestid.js'
-import { getPinTracker, PinTracker } from '../../utils/pinTracker.js'
+import { getPinTracker, type PinTracker } from '../../utils/pinTracker.js'
+import type { ServiceAndTokenPair } from '../../types.js'
+import type { PinResults } from '@ipfs-shipyard/pinning-service-client'
 
 const MAX_LOOP_TIMES = 10
 let loopCount = 0
@@ -17,7 +16,7 @@ let loopCount = 0
  * @param apiCall - The root ApiCall instance that all expectations should be added to
  */
 const addPinDeletionExpectations = async (apiCall: ApiCall<PinResults>, pinTracker: PinTracker) => {
-  const pinResults: PinResults = await apiCall.request as PinResults
+  const pinResults: PinResults = (await apiCall.request)!
 
   if (pinResults != null) {
     for await (const pin of pinResults.results) {
@@ -27,7 +26,7 @@ const addPinDeletionExpectations = async (apiCall: ApiCall<PinResults>, pinTrack
         await new ApiCall({
           parent: apiCall,
           pair: apiCall.pair,
-          fn: async (client) => await client.pinsRequestidDelete({ requestid }),
+          fn: async (client) => client.pinsRequestidDelete({ requestid }),
           title: `Can delete pin with requestid '${requestid}'`
         })
           .expect(responseOk())
@@ -56,7 +55,7 @@ const addPinDeletionExpectations = async (apiCall: ApiCall<PinResults>, pinTrack
       await addPinDeletionExpectations(new ApiCall({
         parent: apiCall,
         pair: apiCall.pair,
-        fn: async (client) => await client.pinsGet({ status: allPinStatuses, before }),
+        fn: async (client) => client.pinsGet({ status: allPinStatuses, before }),
         title: `Get all Pins created before '${before.toString()}'`
       }), pinTracker)
     }
@@ -68,7 +67,7 @@ const deleteAllPins = async (pair: ServiceAndTokenPair) => {
   const pinTracker = await getPinTracker(pair)
   const mainApiCall = new ApiCall({
     pair,
-    fn: async (client) => await client.pinsGet({ status: allPinStatuses }),
+    fn: async (client) => client.pinsGet({ status: allPinStatuses }),
     title: 'Can delete all pins created during compliance checks'
   })
 
@@ -77,7 +76,7 @@ const deleteAllPins = async (pair: ServiceAndTokenPair) => {
   new ApiCall({
     parent: mainApiCall,
     pair,
-    fn: async (client) => await client.pinsGet({ status: allPinStatuses }),
+    fn: async (client) => client.pinsGet({ status: allPinStatuses }),
     title: 'Call pinsGet after deletions'
   })
     .expect({

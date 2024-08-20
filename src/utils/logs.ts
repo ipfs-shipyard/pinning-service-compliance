@@ -1,11 +1,9 @@
 import { join } from 'path'
-
 import { format, createLogger, transports } from 'winston'
-import type { Logform, transport } from 'winston'
-
+import { argv } from '../cli/index.js'
 import { docsDir } from './constants.js'
 import { getHostnameFromUrl } from './getHostnameFromUrl.js'
-import { argv } from '../cli/index.js'
+import type { Logform, transport } from 'winston'
 
 const { combine, splat, timestamp, printf } = format
 

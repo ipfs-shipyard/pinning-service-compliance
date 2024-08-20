@@ -5,7 +5,7 @@ const sanitizeHeaders = (key: string, val: string) => {
   }
   return { key, val }
 }
-const stringifyHeaders = (headers?: Headers | HeadersInit) => {
+const stringifyHeaders = (headers?: Headers | Record<string, string> | string[][]) => {
   const headerObj: Record<string, string> = {}
   if (headers != null) {
     if (headers.forEach != null) {

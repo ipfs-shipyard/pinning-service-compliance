@@ -1,6 +1,5 @@
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
-
 import { serviceAndToken, verbose, debug } from './options/index.js'
 import type { ServiceAndTokenPair } from '../types.js'
 

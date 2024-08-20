@@ -1,5 +1,5 @@
-import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 import { Icons } from '../utils/constants.js'
+import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 
 const getExpectationsMarkdown = <T extends PinsApiResponseTypes>(details: ComplianceCheckDetails<T>): string => {
   let checks = 0

@@ -1,24 +1,22 @@
-import type { Schema, ValidationError, ValidationResult } from '@hapi/joi'
-import type { Logger } from 'winston'
 import pDefer from 'p-defer'
-
-import type { RemotePinningServiceClient, RequestContext, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
-
-import { getQueue } from './utils/getQueue.js'
 import { clientFromServiceAndTokenPair } from './clientFromServiceAndTokenPair.js'
-import type { ComplianceCheckDetailsCallbackArg, ExpectationResult, PinsApiResponseTypes, ServiceAndTokenPair } from './types.js'
-import { addApiCallToReport } from './output/reporting.js'
-import { getServiceLogger, logger as consoleLogger } from './utils/logs.js'
-import { getSuccessIcon } from './output/getSuccessIcon.js'
-import { Icons } from './utils/constants.js'
-import { globalReport } from './utils/report.js'
 import { isError } from './guards/isError.js'
-import { getTextAndJson } from './utils/fetchSafe/getTextAndJson.js'
 import { isResponse } from './guards/isResponse.js'
+import { getSuccessIcon } from './output/getSuccessIcon.js'
+import { addApiCallToReport } from './output/reporting.js'
+import { Icons } from './utils/constants.js'
+import { getQueue } from './utils/getQueue.js'
+import { getServiceLogger, logger as consoleLogger } from './utils/logs.js'
+import { globalReport } from './utils/report.js'
+import { getTextAndJson } from './utils/fetchSafe/getTextAndJson.js'
+import type { ComplianceCheckDetailsCallbackArg, ExpectationResult, PinsApiResponseTypes, ServiceAndTokenPair } from './types.js'
+import type { Schema, ValidationError, ValidationResult } from '@hapi/joi'
+import type { RemotePinningServiceClient, RequestContext, ResponseContext } from '@ipfs-shipyard/pinning-service-client'
+import type { Logger } from 'winston'
 
 interface ApiCallOptions<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes> {
   pair: ServiceAndTokenPair
-  fn: (client: RemotePinningServiceClient) => Promise<T>
+  fn(client: RemotePinningServiceClient): Promise<T>
   schema?: Schema
   title: string
   parent?: ApiCall<P> | undefined
@@ -47,7 +45,7 @@ interface ApiCallExpectation<T extends PinsApiResponseTypes> {
 }
 
 class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = never> {
-  request: Promise<T|null>
+  request: Promise<T | null>
   expectations: Array<ApiCallExpectation<T>> = []
   errors: ExpectationError[] = []
   title: string
@@ -175,7 +173,7 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
       consoleLogger.error('Error occurred while waiting for request to conclude', err)
     }
 
-    const result = this.result as T
+    const result = this.result!
     for await (const expectation of this.expectations) {
       globalReport.incrementTotalExpectationsCount()
       const { fn, title } = expectation

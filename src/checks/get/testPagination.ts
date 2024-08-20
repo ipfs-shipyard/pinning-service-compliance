@@ -1,9 +1,9 @@
 import { ApiCall } from '../../ApiCall.js'
 import { resultNotNull, responseOk } from '../../expectations/index.js'
-import type { ServiceAndTokenPair } from '../../types.js'
 import { allPinStatuses } from '../../utils/constants.js'
 import { getInlineCid } from '../../utils/getInlineCid.js'
 import { getOldestPinCreateDate } from '../../utils/getOldestPinCreateDate.js'
+import type { ServiceAndTokenPair } from '../../types.js'
 
 /**
  * https://github.com/ipfs-shipyard/pinning-service-compliance/issues/6
@@ -15,7 +15,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
   const mainPaginationApiCall = new ApiCall({
     pair,
     title: 'Pagination: Get all pins, create new pins (optional), get first and second pages',
-    fn: async (client) => await client.pinsGet({ status: allPinStatuses })
+    fn: async (client) => client.pinsGet({ status: allPinStatuses })
   })
     .expect(responseOk())
     .expect(resultNotNull())
@@ -50,7 +50,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
       parent: mainPaginationApiCall,
       pair,
       title: `Can create new pin for testing pagination cid='${cid}'`,
-      fn: async (client) => await client.pinsPost({ pin: { cid } })
+      fn: async (client) => client.pinsPost({ pin: { cid } })
     })
       .expect(responseOk())
       .expect(resultNotNull())
@@ -62,7 +62,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
     parent: mainPaginationApiCall,
     pair,
     title: 'Pagination: First page of pins',
-    fn: async (client) => await client.pinsGet({ status: allPinStatuses })
+    fn: async (client) => client.pinsGet({ status: allPinStatuses })
   })
     .expect(responseOk())
     .expect(resultNotNull())
@@ -79,7 +79,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
       fn: ({ result }) => result?.results.size === 10
     })
 
-  const requestIds: Set<string> = new Set()
+  const requestIds = new Set<string>()
   const firstPageResult = await firstPageOfPins.request
   let before = new Date()
   let firstPageSize = 0
@@ -100,7 +100,7 @@ const testPagination = async (pair: ServiceAndTokenPair) => {
     parent: mainPaginationApiCall,
     pair,
     title: 'Pagination: Retrieve the next page of pins',
-    fn: async (client) => await client.pinsGet({ status: allPinStatuses, before })
+    fn: async (client) => client.pinsGet({ status: allPinStatuses, before })
   })
     .expect(responseOk())
     .expect(resultNotNull())

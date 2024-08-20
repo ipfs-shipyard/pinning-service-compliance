@@ -1,6 +1,6 @@
-import type { ServiceAndTokenPair } from '../types.js'
 import { clientFromServiceAndTokenPair } from '../clientFromServiceAndTokenPair.js'
 import { allPinStatuses } from './constants.js'
+import type { ServiceAndTokenPair } from '../types.js'
 
 /**
  * Keep track of pins created by the compliance checker so we do not change/manipulate existing account pins.
@@ -15,14 +15,14 @@ class PinTracker extends Set<string> {
   }
 }
 
-const pinTrackerMap: Map<string, PinTracker> = new Map()
+const pinTrackerMap = new Map<string, PinTracker>()
 
 const getPinTracker = async (pair: ServiceAndTokenPair) => {
   const pairAsKey = pair.join('')
   let pinTracker: PinTracker
   let count: number
   if (pinTrackerMap.has(pairAsKey)) {
-    pinTracker = pinTrackerMap.get(pairAsKey) as PinTracker
+    pinTracker = pinTrackerMap.get(pairAsKey)!
   } else {
     const client = clientFromServiceAndTokenPair(pair)
     try {
