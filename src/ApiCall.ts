@@ -281,7 +281,11 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
 
   async reportData (): Promise<ReportData> {
     await this.request
-    const { pair, errors, title, httpRequest, result, response, expectationResults, successful, text, validationErrors, validationResult } = this
+    let { pair, errors, title, httpRequest, result, response, expectationResults, successful, text, validationErrors, validationResult } = this
+
+    if (response == null) {
+      response = new Response(null, { status: 0, statusText: 'No response received' })
+    }
 
     return { pair, errors, title, httpRequest, result, response, expectationResults, successful, text, validationErrors, validationResult }
   }
