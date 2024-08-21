@@ -31,42 +31,42 @@ jobs:
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     steps:
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-pinata
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-estuary
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-nft
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-web3
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-filebase
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-crust
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-4everland
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-scaleway

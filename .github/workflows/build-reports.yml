@@ -22,19 +22,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - uses: ipfs/aegir/actions/cache-node-modules@master
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-crust
       - run: npm run dev-start -- -s ${{ secrets.CRUST_API_ENDPOINT }} ${{secrets.CRUST_API_TOKEN}}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: crust-logs
           path: docs/pin.crustcode.com
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: crust-report
           path: docs/pin.crustcode.com.md
@@ -43,19 +43,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - uses: ipfs/aegir/actions/cache-node-modules@master
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-pinata
       - run: npm run dev-start -- -s ${{ secrets.PINATA_API_ENDPOINT }} ${{secrets.PINATA_API_TOKEN}}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: pinata-logs
           path: docs/api.pinata.cloud
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: pinata-report
           path: docs/api.pinata.cloud.md
@@ -64,19 +64,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - uses: ipfs/aegir/actions/cache-node-modules@master
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-estuary
       - run: npm run dev-start -- -s ${{ secrets.ESTUARY_API_ENDPOINT }} ${{secrets.ESTUARY_API_TOKEN}}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: estuary-logs
           path: docs/api.estuary.tech
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: estuary-report
           path: docs/api.estuary.tech.md
@@ -85,19 +85,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - uses: ipfs/aegir/actions/cache-node-modules@master
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-filebase
       - run: npm run dev-start -- -s ${{ secrets.FILEBASE_API_ENDPOINT }} ${{secrets.FILEBASE_API_TOKEN}}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: filebase-logs
           path: docs/api.filebase.io
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: filebase-report
           path: docs/api.filebase.io.md
@@ -106,19 +106,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - uses: ipfs/aegir/actions/cache-node-modules@master
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-nft
       - run: npm run dev-start -- -s ${{ secrets.NFT_API_ENDPOINT }} ${{secrets.NFT_API_TOKEN}}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: nft-logs
           path: docs/nft.storage
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: nft-report
           path: docs/nft.storage.md
@@ -127,19 +127,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - uses: ipfs/aegir/actions/cache-node-modules@master
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-web3
       - run: npm run dev-start -- -s ${{ secrets.WEB3_API_ENDPOINT }} ${{secrets.WEB3_API_TOKEN}}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: web3-logs
           path: docs/api.web3.storage
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: web3-report
           path: docs/api.web3.storage.md
@@ -148,19 +148,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - uses: ipfs/aegir/actions/cache-node-modules@master
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-4everland
       - run: npm run dev-start -- -s ${{ secrets.FOREVERLAND_API_ENDPOINT }} ${{secrets.FOREVERLAND_API_TOKEN}}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: 4everland-logs
           path: docs/api.4everland.dev
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: 4everland-report
           path: docs/api.4everland.dev.md
@@ -169,19 +169,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - uses: ipfs/aegir/actions/cache-node-modules@master
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}-scaleway
       - run: npm run dev-start -- -s ${{ secrets.SCALEWAY_API_ENDPOINT }} ${{secrets.SCALEWAY_API_TOKEN}}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: scaleway-logs
           path: docs/pl-waw.ipfs.labs.scw.cloud
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: scaleway-report
           path: docs/pl-waw.ipfs.labs.scw.cloud.md
