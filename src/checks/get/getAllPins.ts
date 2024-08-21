@@ -3,16 +3,9 @@ import { responseCode, responseOk } from '../../expectations/index.js'
 import { allPinStatuses } from '../../utils/constants.js'
 import { getJoiSchema } from '../../utils/getJoiSchema.js'
 import type { ServiceAndTokenPair } from '../../types.js'
-import type { Schema } from '@hapi/joi'
 
 const getAllPins = async (pair: ServiceAndTokenPair): Promise<void> => {
-  let schema: Schema | undefined
-
-  try {
-    schema = await getJoiSchema('PinResults')
-  } catch {
-    schema = undefined
-  }
+  const schema = await getJoiSchema('PinResults')
 
   await new ApiCall({
     pair,
