@@ -1,4 +1,4 @@
-import pDefer from 'p-defer'
+import pDefer, { type DeferredPromise } from 'p-defer'
 import { clientFromServiceAndTokenPair } from './clientFromServiceAndTokenPair.js'
 import { isError } from './guards/isError.js'
 import { isResponse } from './guards/isResponse.js'
@@ -85,7 +85,7 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
 
   private details!: ComplianceCheckDetailsCallbackArg
   private result!: T | null
-  private responseContext!: ResponseContext
+  private readonly responseContext: DeferredPromise<ResponseContext> = pDefer()
   private failureReason: Error | unknown
   private requestContext!: RequestContext
   private response!: Response
@@ -193,7 +193,7 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
       const { fn, title } = expectation
       try {
         const success = await fn({
-          responseContext: this.responseContext,
+          responseContext: await this.responseContext.promise,
           details: this.details,
           apiCall: this,
           result
@@ -298,7 +298,7 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
   private async saveResponse (context: ResponseContext): Promise<void> {
     consoleLogger.debug(`${this.title}: Saving response context for '${context.url}'`)
     this.response = context.response as unknown as ApiCall<T>['response']
-    this.responseContext = context
+    this.responseContext.resolve(context)
     try {
       const { text, json, errors } = await getTextAndJson(this.response)
       this.text = text
