@@ -12,6 +12,7 @@ interface InnerSchemaChild {
 
 interface InnerSchema {
   _inner: {
+    items: InnerSchema[]
     children: InnerSchemaChild[]
     dependencies: any[]
     patterns: any[]
@@ -19,10 +20,27 @@ interface InnerSchema {
   }
 }
 
+/**
+ * find a child either from .children or .items in the InnerSchema
+ */
+const findChild = (innerSchema: InnerSchema, key: string): InnerSchemaChild | undefined => {
+  if (innerSchema._inner.children != null) {
+    return innerSchema._inner.children.find((child) => child.key === key)
+  } else if (innerSchema._inner.items != null) {
+    for (const item of innerSchema._inner.items) {
+      const child = findChild(item, key)
+      if (child != null) {
+        return child
+      }
+    }
+  }
+  return undefined
+}
+
 const getInnerSchema = (schema: Schema | JoiSchema, path: string[]): JoiSchema => {
   let finalSchema = schema as Schema
   for (const key of path) {
-    const child = finalSchema._inner.children.find(({ key: childKey }) => childKey === key)
+    const child = findChild(finalSchema, key)
     if (child != null) {
       finalSchema = child.schema as Schema
     } else {
@@ -37,7 +55,7 @@ const setInnerSchema = (rootSchema: Schema | JoiSchema, path: string[], newSchem
   let childSchema = rootSchema as Schema
   let child: InnerSchemaChild | undefined
   for (const key of path) {
-    child = childSchema._inner.children.find(({ key: childKey }) => childKey === key)
+    child = findChild(childSchema, key)
     if (child != null) {
       childSchema = child.schema as Schema
     } else {
@@ -77,15 +95,19 @@ const modifySchema = (schemaName: keyof PinningSpecJoiSchema, schema: JoiSchema)
  * Cached schema object so we don't have to keep calling to the spec
  */
 let schema: PinningSpecJoiSchema
-const getJoiSchema = async <T extends keyof PinningSpecJoiSchema>(schemaName: T): Promise<PinningSpecJoiSchema[T]> => {
+const getJoiSchema = async <T extends keyof PinningSpecJoiSchema>(schemaName: T): Promise<PinningSpecJoiSchema[T] | undefined> => {
   try {
     schema = schema ?? await oas2joi(specLocation)
-    modifySchema(schemaName, schema[schemaName])
-    return schema[schemaName]
   } catch (err) {
-    logger.error('Could not get joi schema', err)
+    logger.error(`Could not get joi schema for '${schemaName}':`, err)
     throw err
   }
+  try {
+    modifySchema(schemaName, schema[schemaName])
+  } catch (err) {
+    logger.error(`Could not modify joi schema for '${schemaName}':`, err)
+  }
+  return schema?.[schemaName] ?? undefined
 }
 
 export { getJoiSchema }
