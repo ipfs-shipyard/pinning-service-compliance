@@ -60,27 +60,6 @@ jobs:
           name: pinata-report
           path: docs/api.pinata.cloud.md
 
-  check-estuary-compliance:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4
-      - uses: ipfs/aegir/actions/cache-node-modules@master
-      - name: Reports Cache
-        uses: actions/cache@v4
-        with:
-          path: docs
-          key: ${{ github.sha }}-estuary
-      - run: npm run dev-start -- -s ${{ secrets.ESTUARY_API_ENDPOINT }} ${{secrets.ESTUARY_API_TOKEN}}
-      - uses: actions/upload-artifact@v4
-        with:
-          name: estuary-logs
-          path: docs/api.estuary.tech
-      - uses: actions/upload-artifact@v4
-        with:
-          name: estuary-report
-          path: docs/api.estuary.tech.md
-
   check-filebase-compliance:
     runs-on: ubuntu-latest
     steps:

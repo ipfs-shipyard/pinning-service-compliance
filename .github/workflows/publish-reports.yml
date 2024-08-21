@@ -39,11 +39,6 @@ jobs:
         uses: actions/cache@v4
         with:
           path: docs
-          key: ${{ github.sha }}-estuary
-      - name: Reports Cache
-        uses: actions/cache@v4
-        with:
-          path: docs
           key: ${{ github.sha }}-nft
       - name: Reports Cache
         uses: actions/cache@v4
