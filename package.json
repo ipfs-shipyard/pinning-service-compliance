@@ -150,7 +150,7 @@
     "multiformats": "^9.6.5",
     "oas2joi": "^2.0.2",
     "p-defer": "^4.0.1",
-    "p-queue": "^7.2.0",
+    "p-queue": "^8.0.1",
     "uuid": "^8.3.2",
     "winston": "^3.7.2",
     "yargs": "^17.5.1"
