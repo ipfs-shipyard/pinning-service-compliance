@@ -1,5 +1,5 @@
-import type { PinStatus } from '@ipfs-shipyard/pinning-service-client'
 import { Status } from '@ipfs-shipyard/pinning-service-client'
+import type { PinStatus } from '@ipfs-shipyard/pinning-service-client'
 
 const knownFailureStatusPin: PinStatus = {
   requestid: 'N/A',

@@ -1,14 +1,13 @@
-import type { NodeFetch, Pin } from '@ipfs-shipyard/pinning-service-client'
-
-import { waitForDate } from '../utils/waitForDate.js'
-import type { ComplianceCheckDetailsCallbackArg, ServiceAndTokenPair } from '../types.js'
 import { logger } from '../utils/logs.js'
 import { getPinTracker } from '../utils/pinTracker.js'
+import { waitForDate } from '../utils/waitForDate.js'
+import type { ComplianceCheckDetailsCallbackArg, ServiceAndTokenPair } from '../types.js'
+import type { NodeFetch, Pin } from '@ipfs-shipyard/pinning-service-client'
 
 interface RequestResponseLoggerOptions {
-  finalCb?: (details: ComplianceCheckDetailsCallbackArg) => void | Promise<void>
-  preCb?: (context: NodeFetch.RequestContext) => void | Promise<void>
-  postCb?: (context: NodeFetch.ResponseContext) => void | Promise<void>
+  finalCb?(details: ComplianceCheckDetailsCallbackArg): void | Promise<void>
+  preCb?(context: NodeFetch.RequestContext): void | Promise<void>
+  postCb?(context: NodeFetch.ResponseContext): void | Promise<void>
   pair: ServiceAndTokenPair
 }
 
@@ -27,14 +26,14 @@ const getRateLimitKeyFromContext = (context: NodeFetch.ResponseContext | NodeFet
   return key
 }
 
-const isPostMethod = (context: NodeFetch.RequestContext) => {
+const isPostMethod = (context: NodeFetch.RequestContext): boolean => {
   if (context.init.method === 'POST' || /^POST/.test(getRateLimitKeyFromContext(context))) {
     return true
   }
   return false
 }
 
-const rateLimitHandlers: Map<RateLimitKey, Array<Promise<void>>> = new Map()
+const rateLimitHandlers = new Map<RateLimitKey, Array<Promise<void>>>()
 const requestResponseLogger: (opts: RequestResponseLoggerOptions) => NodeFetch.Middleware = ({ preCb, postCb, finalCb, pair }) => {
   return ({
     pre: async (context) => {
@@ -69,8 +68,8 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => NodeFetch.M
         }
       }
 
-      if (rateLimitHandlers.has(rateLimitKey)) {
-        const promises = rateLimitHandlers.get(rateLimitKey) as Array<Promise<void>>
+      const promises = rateLimitHandlers.get(rateLimitKey)
+      if (promises != null) {
         if (promises.length > 0) {
           try {
             await Promise.all(promises)
@@ -106,8 +105,12 @@ const requestResponseLogger: (opts: RequestResponseLoggerOptions) => NodeFetch.M
         logger.debug(`${rateLimitKey}: Rate limit is ${rateLimit} and we have ${rateRemaining} tokens remaining.`)
         if (rateRemaining === 0) {
           logger.debug(`${rateLimitKey}: No rate tokens remaining, we need to wait until ${dateOfReset.toString()}`)
-          const promises = rateLimitHandlers.get(rateLimitKey) as Array<Promise<void>>
-          promises.push(waitForDate(dateOfReset))
+          const promises = rateLimitHandlers.get(rateLimitKey)
+          if (promises != null) {
+            promises.push(waitForDate(dateOfReset))
+          } else {
+            rateLimitHandlers.set(rateLimitKey, [waitForDate(dateOfReset)])
+          }
         }
       }
       return response

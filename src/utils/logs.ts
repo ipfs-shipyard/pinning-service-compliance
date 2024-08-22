@@ -1,11 +1,8 @@
 import { join } from 'path'
-
-import { format, createLogger, transports } from 'winston'
-import type { Logform, transport } from 'winston'
-
+import { format, createLogger, transports, type Logform, type transport, type Logger } from 'winston'
+import { argv } from '../cli/index.js'
 import { docsDir } from './constants.js'
 import { getHostnameFromUrl } from './getHostnameFromUrl.js'
-import { argv } from '../cli/index.js'
 
 const { combine, splat, timestamp, printf } = format
 
@@ -63,7 +60,7 @@ const debugFilter = format((info: Logform.TransformableInfo, options) => {
   return info
 })
 
-const getServiceLogger = (endpointUrl: string) => {
+const getServiceLogger = (endpointUrl: string): Logger => {
   const hostname = getHostnameFromUrl(endpointUrl)
   const logFolder = join(docsDir, hostname)
   const loggerTransports: transport[] = [
@@ -94,7 +91,7 @@ const getServiceLogger = (endpointUrl: string) => {
   return logger
 }
 
-const getLogger = () => {
+const getLogger = (): Logger => {
   return createLogger({
     level: 'info',
     format: combine(

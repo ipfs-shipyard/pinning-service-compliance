@@ -1,5 +1,4 @@
-import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
-import { Icons } from '../utils/constants.js'
+import { Icons, packageVersion } from '../utils/constants.js'
 import { getHostnameFromUrl } from '../utils/getHostnameFromUrl.js'
 import { gitHash } from '../utils/gitHash.js'
 import { logger } from '../utils/logs.js'
@@ -9,13 +8,14 @@ import { linkToCommit } from './linkToCommit.js'
 import { linkToGithubRepo } from './linkToGithubRepo.js'
 import { linkToHeading } from './linkToHeading.js'
 import { linkToNpm } from './linkToNpm.js'
+import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 
 type RequiredHeaderProps<T extends PinsApiResponseTypes> = Pick<ComplianceCheckDetails<T>, 'title' | 'successful' | 'pair'>
 
 interface HeaderOptions {
   markdownLinks: boolean
 }
-const getHeader = async <T extends PinsApiResponseTypes>(details: Array<RequiredHeaderProps<T>>, options: HeaderOptions = { markdownLinks: true }) => {
+const getHeader = async <T extends PinsApiResponseTypes>(details: Array<RequiredHeaderProps<T>>, options: HeaderOptions = { markdownLinks: true }): Promise<string> => {
   const endpointUrl = details[0].pair[0]
   const useMarkdownLinks = options.markdownLinks
   const hostname = getHostnameFromUrl(endpointUrl)
@@ -32,7 +32,7 @@ const getHeader = async <T extends PinsApiResponseTypes>(details: Array<Required
   } catch (err) {
     logger.error('Could not obtain latest git hash', err)
     logger.info('No git repository, using npm version')
-    revisionString = useMarkdownLinks ? linkToNpm() : process.env.npm_package_version as string
+    revisionString = useMarkdownLinks ? linkToNpm() : packageVersion
   }
 
   const titles = details.map(({ title, successful }) => {
@@ -48,7 +48,6 @@ const getHeader = async <T extends PinsApiResponseTypes>(details: Array<Required
   const reportHistory = linkToGithubRepo('Report History', `commits/gh-pages/${hostname}.md`)
 
   return `
-<script src="./telemetry.js"></script>
 # ${endpointUrl} compliance:
 
 Execution Date: ${dateString ?? '(Error getting date)'}

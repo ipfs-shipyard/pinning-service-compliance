@@ -1,18 +1,17 @@
 #!/usr/bin/env node
 import { writeSync } from 'fs'
 import process from 'node:process'
-
 import { getAllPins, checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteAllPins, testPagination, deleteNewPin, replacePin, matchPin } from './checks/index.js'
 import { cli } from './cli/index.js'
 import { serviceAndToken } from './cli/options/index.js'
 import { writeHeaders } from './output/reporting.js'
 import { writeJsonResults } from './output/writeJsonResults.js'
-import type { ServiceAndTokenPair } from './types.js'
 import { logger } from './utils/logs.js'
 import { getPinTracker } from './utils/pinTracker.js'
 import { globalReport } from './utils/report.js'
+import type { ServiceAndTokenPair } from './types.js'
 
-const validatePinningService = async (pair: ServiceAndTokenPair) => {
+const validatePinningService = async (pair: ServiceAndTokenPair): Promise<void> => {
   const complianceCheckFunctions = [checkEmptyBearerToken, checkInvalidBearerToken, addPin, deleteNewPin, getAllPins, replacePin, matchPin, testPagination, deleteAllPins]
 
   for await (const complianceCheckFn of complianceCheckFunctions) {
@@ -27,7 +26,7 @@ const validatePinningService = async (pair: ServiceAndTokenPair) => {
   }
 }
 
-const main = async () => {
+const main = async (): Promise<void> => {
   const argv = await cli.option('serviceAndToken', { require: true, ...serviceAndToken }).argv
 
   for await (const serviceAndToken of argv.serviceAndToken) {

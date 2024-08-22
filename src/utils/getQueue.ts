@@ -1,11 +1,11 @@
 import PQueue from 'p-queue'
 
 type QueueInstance = InstanceType<typeof PQueue>
-const queues: Map<string, QueueInstance> = new Map()
+const queues = new Map<string, QueueInstance>()
 
 const getQueue = (endpointUrl: string, options: ConstructorParameters<typeof PQueue>[0] = { concurrency: 1, intervalCap: 1, interval: 1000 }): PQueue => {
   if (queues.has(endpointUrl)) {
-    return queues.get(endpointUrl) as QueueInstance
+    return queues.get(endpointUrl) as PQueue
   }
   const newQueueLimiter = new PQueue(options)
 

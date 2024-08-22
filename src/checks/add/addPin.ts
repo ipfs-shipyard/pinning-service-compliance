@@ -1,17 +1,16 @@
 import { Status } from '@ipfs-shipyard/pinning-service-client'
-
-import { getInlineCid } from '../../utils/getInlineCid.js'
 import { ApiCall } from '../../ApiCall.js'
-import type { ServiceAndTokenPair } from '../../types.js'
+import { getInlineCid } from '../../utils/getInlineCid.js'
 import { getJoiSchema } from '../../utils/getJoiSchema.js'
+import type { ServiceAndTokenPair } from '../../types.js'
 
-const addPin = async (pair: ServiceAndTokenPair) => {
+const addPin = async (pair: ServiceAndTokenPair): Promise<void> => {
   const cid = await getInlineCid()
   const schema = await getJoiSchema('PinStatus')
 
   const apiCall = new ApiCall({
     pair,
-    fn: async (client) => await client.pinsPost({ pin: { cid } }),
+    fn: async (client) => client.pinsPost({ pin: { cid } }),
     schema,
     title: `Pins post of CID '${cid}'`
   })

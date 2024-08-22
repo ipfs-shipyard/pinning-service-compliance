@@ -1,6 +1,5 @@
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
-
 import { Status } from '@ipfs-shipyard/pinning-service-client'
 
 const _filename = fileURLToPath(import.meta.url)
@@ -25,6 +24,9 @@ enum Icons {
   ERROR = '⚠️'
 }
 
+const packageName = process.env.npm_package_name ?? 'pinning-service-compliance'
+const packageVersion = process.env.npm_package_version ?? 'unknown'
+
 export {
   allPinStatuses,
   docsDir,
@@ -35,5 +37,7 @@ export {
   specVersion,
   Icons,
   publishedReportsUrl,
-  sourceRepoUrl
+  sourceRepoUrl,
+  packageName,
+  packageVersion
 }

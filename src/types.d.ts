@@ -1,7 +1,8 @@
+import type { Schema, ValidationResult } from '@hapi/joi'
 import type {
   NodeFetch,
-  ConfigurationParameters as ConfigurationParameters_og,
-  Configuration as Configuration_og,
+  ConfigurationParameters as ConfigurationParametersOrig,
+  Configuration as ConfigurationOrig,
   RemotePinningServiceClient
 } from '@ipfs-shipyard/pinning-service-client'
 
@@ -34,15 +35,15 @@ declare module '@ipfs-shipyard/pinning-service-client' {
 
     interface Middleware {
       // eslint-disable-next-line @typescript-eslint/no-invalid-void-type
-      pre?: (context: NodeFetch.RequestContext) => Promise<NodeFetch.FetchParams | void>
+      pre?(context: NodeFetch.RequestContext): Promise<NodeFetch.FetchParams | void>
       // eslint-disable-next-line @typescript-eslint/no-invalid-void-type
-      post?: (context: NodeFetch.ResponseContext) => Promise<Response | void>
+      post?(context: NodeFetch.ResponseContext): Promise<Response | void>
     }
 
-    interface ConfigurationParameters extends ConfigurationParameters_og {
+    interface ConfigurationParameters extends ConfigurationParametersOrig {
       middleware: NodeFetch.Middleware[]
     }
-    class Configuration extends Configuration_og {
+    class Configuration extends ConfigurationOrig {
       constructor (options: NodeFetch.ConfigurationParameters): Configuration
     }
   }
@@ -74,7 +75,7 @@ type ImplementableMethods = keyof Omit<RemotePinningServiceClient, 'withMiddlewa
 type PinsApiMethod<T extends ImplementableMethods = ImplementableMethods> = RemotePinningServiceClient[T] extends never ? never : T
 type PinsApiResponseTypes<T extends ImplementableMethods = ImplementableMethods> = Awaited<ReturnType<RemotePinningServiceClient[T]>>
 type SchemaNames = 'Delegates' | 'Failure' | 'Origins' | 'Pin' | 'PinMeta' | 'PinResults' | 'PinStatus' | 'StatusInfo' | 'Status' | 'TextMatchingStrategy'
-type PinningSpecJoiSchema = Record<SchemaNames, import('@hapi/joi').Schema>
+type PinningSpecJoiSchema = Record<SchemaNames, Schema>
 
 interface CheckResult {
   success: boolean
@@ -101,7 +102,7 @@ interface ComplianceCheckDetails<T extends PinsApiResponseTypes> {
   method: string
   title: string
   successful: boolean
-  validationResult: import('@hapi/joi').ValidationResult | null
+  validationResult: ValidationResult | null
   request: ComplianceCheckRequest
   response: ComplianceCheckResponse<T>
   result: T | null

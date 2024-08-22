@@ -1,31 +1,26 @@
-import { join } from 'path'
-
-import { createController } from 'ipfsd-ctl'
-import * as createKuboClient from 'kubo-rpc-client'
-import type { HTTPClientExtraOptions } from 'kubo-rpc-client'
-import type { API } from 'ipfs-core-types/src/root'
-
+import { createNode } from 'ipfsd-ctl'
+import { path } from 'kubo'
+import { create, type KuboRPCClient } from 'kubo-rpc-client'
 import { logger } from './logs.js'
 
-type InlineableClient = API<HTTPClientExtraOptions & {inline: boolean}>
-
 interface GetIpfsClientResponse {
-  client: InlineableClient
+  client: KuboRPCClient
   /**
    * A function that should be called when you're done using the client so cleanup can be performed.
    */
-  done: () => Promise<void>
+  done(): Promise<void>
 }
 const getIpfsClient = async (): Promise<GetIpfsClientResponse> => {
   try {
     logger.debug('Attempting to use ipfsd-ctl to create a client')
-    const ipfsd = await createController({
-      kuboRpcModule: createKuboClient,
-      ipfsBin: join('node_modules', '.bin', 'ipfs'),
+    const ipfsd = await createNode({
+      type: 'kubo',
+      rpc: create,
+      bin: path(),
       test: true,
       disposable: true
     })
-    const client = ipfsd.api as InlineableClient
+    const client = ipfsd.api
 
     if (await client.isOnline()) {
       return {

@@ -1,5 +1,4 @@
 import git from 'git-rev'
-
 import type { Revision } from '../types.js'
 
 /**
@@ -13,22 +12,22 @@ import type { Revision } from '../types.js'
  * @returns {Revision} The hash of the requested commit
  */
 const gitHash = async (fromHead = 0): Promise<Revision> => {
-  return await new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     try {
       if (fromHead === 0) {
-        git.short((commitHash) => resolve(commitHash))
+        git.short((commitHash) => { resolve(commitHash) })
       } else {
       // @see https://www.npmjs.com/package/git-rev#logfunction-array---
         git.log((log) => {
           try {
             resolve(log[fromHead][0].slice(0, 7))
-          } catch (err) {
-            reject(err)
+          } catch (err: any) {
+            reject(err as Error)
           }
         })
       }
-    } catch (err) {
-      reject(err)
+    } catch (err: any) {
+      reject(err as Error)
     }
   })
 }

@@ -1,6 +1,6 @@
+import chalk from 'chalk'
 import { marked } from 'marked'
 import TerminalRenderer from 'marked-terminal'
-import chalk from 'chalk'
 
 const getFormatter = (options: TerminalRenderer.TerminalRendererOptions) => (markdown: string) =>
   marked(markdown, { renderer: new TerminalRenderer(options) })

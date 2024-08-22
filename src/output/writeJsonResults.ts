@@ -1,13 +1,12 @@
 import { writeFile } from 'fs/promises'
 import { join } from 'path'
-
-import type { ServiceAndTokenPair } from '../types.js'
 import { docsDir } from '../utils/constants.js'
 import { getHostnameFromUrl } from '../utils/getHostnameFromUrl.js'
 import { logger } from '../utils/logs.js'
 import { globalReport } from '../utils/report.js'
+import type { ServiceAndTokenPair } from '../types.js'
 
-const writeJsonResults = async (pair: ServiceAndTokenPair) => {
+const writeJsonResults = async (pair: ServiceAndTokenPair): Promise<void> => {
   const { passed, failed } = globalReport
   const total = passed + failed
   const success = passed === total

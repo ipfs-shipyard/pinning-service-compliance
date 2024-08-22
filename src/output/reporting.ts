@@ -2,17 +2,15 @@
 import { constants as fsConstants } from 'fs'
 import { access, mkdir, writeFile, appendFile, readFile } from 'fs/promises'
 import { join } from 'path'
-
 import chalk from 'chalk'
-
-import type { ApiCall } from '../ApiCall.js'
 import { docsDir } from '../utils/constants.js'
 import { getHostnameFromUrl } from '../utils/getHostnameFromUrl.js'
-import { getFormatter } from './formatter.js'
-import { getReportEntry } from './getReportEntry.js'
-import { getHeader, RequiredHeaderProps } from './getHeader.js'
-import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 import { logger } from '../utils/logs.js'
+import { getFormatter } from './formatter.js'
+import { getHeader, type RequiredHeaderProps } from './getHeader.js'
+import { getReportEntry } from './getReportEntry.js'
+import type { ApiCall } from '../ApiCall.js'
+import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 
 const successFormatter = getFormatter({
   paragraph: chalk.reset,
@@ -24,13 +22,13 @@ const failureFormatter = getFormatter({
   heading: chalk.redBright
 })
 
-const getReportFilePath = (hostname: string) => {
+const getReportFilePath = (hostname: string): string => {
   const filename = `${hostname}.md`
   return join(docsDir, filename)
 }
 
 // Need summary at the top for each service: # pass/fail
-const addToReport = async <T extends PinsApiResponseTypes>(details: ComplianceCheckDetails<T>) => {
+const addToReport = async <T extends PinsApiResponseTypes>(details: ComplianceCheckDetails<T>): Promise<void> => {
   const reportEntryMarkdown = getReportEntry(details)
   const formatter = details.successful ? successFormatter : failureFormatter
 
@@ -61,9 +59,9 @@ const addToReport = async <T extends PinsApiResponseTypes>(details: ComplianceCh
   }
 }
 
-const reportSummaryInfo: Map<string, Array<RequiredHeaderProps<any>>> = new Map()
+const reportSummaryInfo = new Map<string, Array<RequiredHeaderProps<any>>>()
 
-const addApiCallToReport = async <T extends PinsApiResponseTypes>(apiCall: ApiCall<T>) => {
+const addApiCallToReport = async <T extends PinsApiResponseTypes>(apiCall: ApiCall<T>): Promise<void> => {
   try {
     const { pair, errors, title, httpRequest, result, response, expectationResults, successful, text, validationResult } = await apiCall.reportData()
     const { url, headers: requestHeaders } = httpRequest
@@ -80,7 +78,7 @@ const addApiCallToReport = async <T extends PinsApiResponseTypes>(apiCall: ApiCa
       url,
       method,
       validationResult,
-      result: await result,
+      result: result as T,
       request: {
         body: requestBody,
         headers: requestHeaders ?? {}
@@ -94,8 +92,8 @@ const addApiCallToReport = async <T extends PinsApiResponseTypes>(apiCall: ApiCa
       }
     }
     if (apiCall.parent == null) {
-      if (reportSummaryInfo.has(hostname)) {
-        const hostReport = reportSummaryInfo.get(hostname) as Array<RequiredHeaderProps<any>>
+      const hostReport = reportSummaryInfo.get(hostname)
+      if (hostReport != null) {
         hostReport.push(headerProps)
       } else {
         reportSummaryInfo.set(hostname, [headerProps])
@@ -109,7 +107,7 @@ const addApiCallToReport = async <T extends PinsApiResponseTypes>(apiCall: ApiCa
   }
 }
 
-const createReport = async <T extends PinsApiResponseTypes>(hostname: string, details: Array<RequiredHeaderProps<T>>) => {
+const createReport = async <T extends PinsApiResponseTypes>(hostname: string, details: Array<RequiredHeaderProps<T>>): Promise<void> => {
   const reportFilePath = getReportFilePath(hostname)
 
   // Write console output first
@@ -123,7 +121,7 @@ const createReport = async <T extends PinsApiResponseTypes>(hostname: string, de
   await writeFile(reportFilePath, header + fileContents)
 }
 
-const writeHeaders = async () => {
+const writeHeaders = async (): Promise<void> => {
   for await (const [hostname, details] of reportSummaryInfo.entries()) {
     await createReport(hostname, details)
   }

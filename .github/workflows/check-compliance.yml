@@ -39,15 +39,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - uses: ipfs/aegir/actions/cache-node-modules@master
       - name: Reports Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: docs
           key: ${{ github.sha }}
       - run: npm run dev-start -- -s ${{ inputs.API_ENDPOINT }} ${{ secrets.API_TOKEN }}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: docs
           path: docs
@@ -55,9 +55,9 @@ jobs:
         id: set_results
         run: |
           hostname="$( echo ${{inputs.API_ENDPOINT}} | perl -ne '/^[^\/]+[\/]+([^\/]+)/ && print $1')"
-          echo "success=$(jq -r '.success' docs/$hostname.json)" >> $GITHUB_OUTPUT
-          echo "passed=$(jq -r '.passed' docs/$hostname.json)" >> $GITHUB_OUTPUT
-          echo "total=$(jq -r '.total' docs/$hostname.json)" >> $GITHUB_OUTPUT
+          echo "success=$(jq -r '.success' dist/docs/$hostname.json)" >> $GITHUB_OUTPUT
+          echo "passed=$(jq -r '.passed' dist/docs/$hostname.json)" >> $GITHUB_OUTPUT
+          echo "total=$(jq -r '.total' dist/docs/$hostname.json)" >> $GITHUB_OUTPUT
       - name: Notify
         uses: actions/github-script@v6
         with:

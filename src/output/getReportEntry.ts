@@ -1,9 +1,9 @@
-import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 import { stringifyHeaders } from '../utils/stringifyHeaders.js'
 import { complianceCheckHeader } from './complianceCheckHeader.js'
 import { getErrorsMarkdown } from './getErrorsMarkdown.js'
 import { getExpectationsMarkdown } from './getExpectationsMarkdown.js'
 import { joiValidationAsMarkdown } from './joiValidationAsMarkdown.js'
+import type { ComplianceCheckDetails, PinsApiResponseTypes } from '../types.js'
 
 const getReportEntry = <T extends PinsApiResponseTypes>(details: ComplianceCheckDetails<T>): string => {
   const { request, response, title, url, method, validationResult, result: clientParsedResult, successful, errors } = details
