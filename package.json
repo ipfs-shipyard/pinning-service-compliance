@@ -146,7 +146,7 @@
     "kubo": "^0.29.0",
     "kubo-rpc-client": "^4.1.1",
     "marked": "^4.0.16",
-    "marked-terminal": "^5.1.1",
+    "marked-terminal": "^7.1.0",
     "multiformats": "^9.6.5",
     "oas2joi": "^2.0.2",
     "p-defer": "^4.0.1",
