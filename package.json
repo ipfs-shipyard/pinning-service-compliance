@@ -147,7 +147,7 @@
     "kubo-rpc-client": "^4.1.1",
     "marked": "^4.0.16",
     "marked-terminal": "^5.1.1",
-    "multiformats": "^9.6.5",
+    "multiformats": "^13.3.0",
     "oas2joi": "^2.0.2",
     "p-defer": "^4.0.1",
     "p-queue": "^7.2.0",
