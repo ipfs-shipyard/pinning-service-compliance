@@ -9,12 +9,9 @@ function clientFromServiceAndTokenPair ([endpointUrl, accessToken]: ServiceAndTo
     endpointUrl,
     accessToken,
     fetchApi: async (url: RequestInfo | URL, init?: RequestInit) => {
-      const abortController = new AbortController()
-      const { signal } = abortController
-      setTimeout(() => { abortController.abort() }, 60000)
       return fetch(url, {
         ...init,
-        signal: init?.signal ?? signal
+        signal: init?.signal ?? AbortSignal.timeout(60000)
       })
     },
     middleware: [
