@@ -52,7 +52,7 @@ const addToReport = async <T extends PinsApiResponseTypes>(details: ComplianceCh
     await appendFile(reportFilePath, reportEntryMarkdown)
     logger.debug(`Wrote markdown to ${reportFilePath}`)
 
-    logger.verbose(formatter(reportEntryMarkdown), { messageOnly: true })
+    logger.verbose(await formatter(reportEntryMarkdown), { messageOnly: true })
   } catch (err) {
     logger.error(`Unexpected error when attempting to write report entry markdown to ${reportFilePath}`)
     logger.error(err)
