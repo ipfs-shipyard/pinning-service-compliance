@@ -1,9 +1,14 @@
 import chalk from 'chalk'
 import { marked } from 'marked'
-import TerminalRenderer from 'marked-terminal'
+import { markedTerminal } from 'marked-terminal'
+import type { TerminalRendererOptions } from 'marked-terminal'
 
-const getFormatter = (options: TerminalRenderer.TerminalRendererOptions) => (markdown: string) =>
-  marked(markdown, { renderer: new TerminalRenderer(options) })
+const getFormatter = (options: TerminalRendererOptions) => async (markdown: string) => {
+  // @ts-expect-error types do not overlap
+  marked.use(markedTerminal(options))
+
+  return marked.parse(markdown)
+}
 
 const red = getFormatter({ paragraph: chalk.red })
 const regular = getFormatter({ paragraph: chalk.reset })

@@ -140,6 +140,9 @@ class ApiCall<T extends PinsApiResponseTypes, P extends PinsApiResponseTypes = n
         })
         throw error
       }
+    }, {
+      // https://github.com/sindresorhus/p-queue/issues/175
+      throwOnTimeout: true
     }).then((result) => {
       this.result = result
       return result
