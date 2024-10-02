@@ -1,3 +1,20 @@
+## [1.8.1](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.8.0...v1.8.1) (2024-10-02)
+
+### Bug Fixes
+
+* CI and update repo ([#344](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/344)) ([91f1e08](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/91f1e08ba1b224ed3bf3351b1f3ac639d711bddb))
+* update all deps and fix type errors ([#376](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/376)) ([2b0d781](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/2b0d7819e867d2ed86df0eaa0ad4d5882127b87c))
+* use AbortSignal.timeout instead of setTimeout ([#375](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/375)) ([f65ab4e](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/f65ab4e2590234967a8efada067baee943ab5833))
+
+### Trivial Changes
+
+* Update .github/dependabot.yml [skip ci] ([9c8c9e4](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/9c8c9e4748cd0369260d1a0936768b5abf5c4271))
+* update workflow ([dae6def](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/dae6defd08673152dd9186c74e754ea3886daf1b))
+
+### Dependencies
+
+* bump @ipfs-shipyard/pinning-service-client from 1.0.1 to 2.0.0 ([#357](https://github.com/ipfs-shipyard/pinning-service-compliance/issues/357)) ([24dc773](https://github.com/ipfs-shipyard/pinning-service-compliance/commit/24dc7734a8e216b846cb9675cdcf49618831e277))
+
 ## [1.8.0](https://github.com/ipfs-shipyard/pinning-service-compliance/compare/v1.7.0...v1.8.0) (2023-09-12)
 
 
