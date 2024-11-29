@@ -145,7 +145,7 @@
     "ipfsd-ctl": "^15.0.0",
     "kubo": "^0.30.0",
     "kubo-rpc-client": "^5.0.1",
-    "marked": "^13.0.3",
+    "marked": "^15.0.3",
     "marked-terminal": "^7.1.0",
     "multiformats": "^13.3.0",
     "oas2joi": "^2.0.2",
