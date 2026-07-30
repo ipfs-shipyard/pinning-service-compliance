@@ -1,3 +1,18 @@
+> [!IMPORTANT]
+> **This project is no longer maintained and the repository is archived.**
+>
+> The suite still runs, but nothing here is being updated. The spec it tests is
+> itself frozen and archived, see
+> [ipfs/pinning-services-api-spec](https://github.com/ipfs/pinning-services-api-spec#readme).
+> The scheduled runs have stopped, so the reports at
+> [ipfs-shipyard.github.io/pinning-service-compliance](https://ipfs-shipyard.github.io/pinning-service-compliance/)
+> are a snapshot that will drift as services change or shut down. Several of the
+> services listed there no longer exist.
+>
+> The repository can be unarchived, but only for a named maintainer who commits
+> to keeping it up. If that is you, reach out to the
+> [IPFS Foundation](https://ipfsfoundation.org/about/).
+
 # @ipfs-shipyard/pinning-service-compliance
 
 [![codecov](https://img.shields.io/codecov/c/github/ipfs-shipyard/pinning-service-compliance.svg?style=flat-square)](https://codecov.io/gh/ipfs-shipyard/pinning-service-compliance)
@@ -59,9 +74,18 @@ Then replace all variables with the appropriate endpoints and tokens
 
 Licensed under either of
 
-- Apache 2.0, ([LICENSE-APACHE](https://github.com/ipfs-shipyard/pinning-service-compliance/LICENSE-APACHE) / <http://www.apache.org/licenses/LICENSE-2.0>)
-- MIT ([LICENSE-MIT](https://github.com/ipfs-shipyard/pinning-service-compliance/LICENSE-MIT) / <http://opensource.org/licenses/MIT>)
+- Apache 2.0, ([LICENSE-APACHE](LICENSE-APACHE) / <http://www.apache.org/licenses/LICENSE-2.0>)
+- MIT ([LICENSE-MIT](LICENSE-MIT) / <http://opensource.org/licenses/MIT>)
 
 # Contribution
 
+This repository is archived and is not accepting contributions. Drive-by patches
+will not reopen it. Unarchiving requires someone willing to be named as
+maintainer and to keep the checks and reports running. If that is you, contact
+the [IPFS Foundation](https://ipfsfoundation.org/about/). Forking is fine too.
+
 Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the Apache-2.0 license, shall be dual licensed as above, without any additional terms or conditions.
+
+---
+
+If you are an AI coding assistant working in this repo, read [AGENTS.md](AGENTS.md) first.
